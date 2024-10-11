@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-    <style>
+	 <!-- css locali -->
+    	 <link rel="stylesheet" href="style.css">   
+<style>
         /* Stile per centrare verticalmente e orizzontalmente */
         body {
             display: flex;              /* Abilita Flexbox */
