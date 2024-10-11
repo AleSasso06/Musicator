@@ -63,7 +63,7 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 			if(em != null)
 				em.close();
 		}
-		return artisti;
+		return artisti; 
 	}
 
 }
