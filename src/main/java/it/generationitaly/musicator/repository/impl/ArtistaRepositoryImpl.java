@@ -2,7 +2,9 @@ package it.generationitaly.musicator.repository.impl;
 
 import java.util.List;
 
+import it.generationitaly.musicator.entity.Album;
 import it.generationitaly.musicator.entity.Artista;
+import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.repository.ArtistaRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
@@ -66,4 +68,5 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 		return artisti; 
 	}
 
+	
 }
