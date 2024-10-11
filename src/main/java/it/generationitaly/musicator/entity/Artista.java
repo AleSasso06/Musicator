@@ -54,8 +54,8 @@ public class Artista {
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
 
-	/*@OneToMany(mappedBy = "album")
-	private List<Album> album = new ArrayList<Album>();*/
+	@OneToMany(mappedBy = "album")
+	private List<Album> album = new ArrayList<Album>();
 	
 	public long getId() {
 		return id;
