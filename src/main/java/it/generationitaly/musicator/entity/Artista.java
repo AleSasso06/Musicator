@@ -45,7 +45,7 @@ public class Artista {
 	@Column(name = "data_nascita", nullable = false)
 	private Date dataNascita;
 	
-	@Column(name = "nazionalità", nullable = false, length = 45)
+	@Column(name = "nazionalita", nullable = false, length = 45)
 	private String nazionalita;
 	
 	@Column(name = "biografia", nullable = false, length = 4000)
@@ -54,7 +54,7 @@ public class Artista {
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
 
-	@OneToMany(mappedBy = "album")
+	@OneToMany(mappedBy = "artista")
 	private List<Album> album = new ArrayList<Album>();
 	
 	public long getId() {

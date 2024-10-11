@@ -1,5 +1,8 @@
 package it.generationitaly.musicator.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,11 +32,11 @@ public class Genere {
 	
 	
 	@OneToMany(mappedBy = "genere")
-	private Album album;
+	private List<Album> album = new ArrayList<Album>();
 	
 	
 	@OneToMany(mappedBy = "genere")
-	private Brano brani;
+	private List<Brano> brani = new ArrayList<Brano>();
 
 	public long getId() {
 		return id;
@@ -51,11 +54,21 @@ public class Genere {
 		this.nome = nome;
 	}
 
-	public Brano getBrani() {
+	
+
+	public List<Album> getAlbum() {
+		return album;
+	}
+
+	public void setAlbum(List<Album> album) {
+		this.album = album;
+	}
+
+	public List<Brano> getBrani() {
 		return brani;
 	}
 
-	public void setBrani(Brano brani) {
+	public void setBrani(List<Brano> brani) {
 		this.brani = brani;
 	}
 

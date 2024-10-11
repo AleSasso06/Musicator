@@ -36,7 +36,7 @@ public class Utente {
 	@Column(name = "email", nullable = false, length = 90)
 	private String email;
 
-	@Column(name = "nome", nullable = false, length = 4000)
+	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
 
 	@Temporal(TemporalType.DATE)
