@@ -4,7 +4,7 @@ import it.generationitaly.musicator.entity.Utente;
 
 public interface UtenteRepository extends JpaRepository<Utente, Long> {
 	
-	//findByUsername(String user)
-	//findByEmail(String email)
+	Utente findByUsername(String user);
+	Utente findByEmail(String email);
 
 }
