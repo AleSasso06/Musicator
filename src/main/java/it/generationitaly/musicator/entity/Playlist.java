@@ -41,9 +41,9 @@ public class Playlist {
 	@ManyToOne
 	private Utente utente;
 	
-	//@ManyToMany
-//	@JoinTable(name = "playlist_brano", joinColumns = @JoinColumn(name = "playlist_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
-	//private List<Brano> brani = new ArrayList<Brano>();
+	@ManyToMany
+	@JoinTable(name = "playlist_brano", joinColumns = @JoinColumn(name = "playlist_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
+	private List<Brano> brani = new ArrayList<Brano>();
 	
 	public long getId() {
 		return id;
