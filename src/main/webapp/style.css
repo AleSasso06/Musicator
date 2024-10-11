@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+body {
+	background-color:  #08263C; 
+}
+
+p {
+	color: white;
+}
+
+h2 {
+	color: white;
+}
+
 .navbar {
     background-color: #E3F2FD !important; 
 }
@@ -67,4 +79,16 @@
 
 .navbar-collapse .d-flex {
     margin-left: auto; 
+}
+
+
+.footer {
+    background-color: #E3F2FD !important; 
+    color: #343a40; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }

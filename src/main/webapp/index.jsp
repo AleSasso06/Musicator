@@ -12,11 +12,33 @@
 	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		 <!-- css locali -->
     	 <link rel="stylesheet" href="style.css">
-		
+	
+	
 	</head>
-	<body>
+	<body>	
 		<%@ include file="nav.jsp" %>
 
+		<div class="pt-3"></div>
+	        <!-- GLOBAL TOP 200 -->
+	        <div class="py-5"></div>
+	        <div class="container text-center mb-4"  data-aos="fade-up">
+	            <p class="text-secondary fw-bold fs-5 mb-0">GLOBAL TOP 200</p>
+	            <h2 class="h1 fw-bold">Top songs being discovered around the world right now</h2>
+	            <p class="fs-5 pb-4">See who made it on the list of the most Shazamed songs worldwide</p>
+	            <div class="ratio ratio-16x9" data-aos="zoom-in">
+	                <iframe src="https://www.youtube.com/embed/ucvLuGgsGS8?si=aIfEDTmfOoXB0O9Y" title="YouTube video" allowfullscreen></iframe>
+	           </div>
+	       </div>
+
+
+
+
+		    <!-- Footer -->
+		    <footer class="footer bg-light text-center py-3">
+		        <div class="container">
+		            <p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
+		        </div>
+		    </footer>
 		<!-- Bootstrap Js -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>
