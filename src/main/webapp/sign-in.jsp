@@ -11,7 +11,7 @@
 </head>
 <body >
 
-<div style="background-color:orange" class="container min-vh-100 d-flex  justify-content-center  align-items-center">
+<div class="container min-vh-100 d-flex  justify-content-center  align-items-center">
 
 <form>
 <h1 class="mb-5" >Registrazione</h1>
