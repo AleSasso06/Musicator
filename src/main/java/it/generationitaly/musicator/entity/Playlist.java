@@ -12,6 +12,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 public class Playlist {
 
@@ -28,7 +30,8 @@ public class Playlist {
 
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
-
+	
+	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione", nullable = false)
 	private Date dataCreazione;
 
