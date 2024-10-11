@@ -8,19 +8,41 @@
 <link rel="stylesheet" type="text/css"
 	href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="style.css">
+	 
+	 <style>
+.container {
+            max-width: 500px;           
+            padding: 20px;              
+             background-color: white;   
+            border-radius: 10px;    
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+</style>
+	
+	
+
 </head>
 <body >
+<%@ include file="nav.jsp" %>
+<div class="container  min-vh-100 d-flex  justify-content-center  align-items-center">
 
-<div class="container min-vh-100 d-flex  justify-content-center  align-items-center">
 
 <form>
-<h1 class="mb-5" >Registrazione</h1>
+
+
 <div  class=" container">
- 
+ <h1 style= "text-align:center "class="mb-3 " >Registrazione</h1>
   <div  class="form-row">
   <div class="form-row col-md-20">
-    <img  src="giradischi.jpg" class="rounded mx-auto d-block" alt= "...">
   
+  <div>
+  <form id="uploadForm">
+       <img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
+  <br><br>
+   <label for="profileImage">Scegli un'immagine:</label>
+ <input type="file" id="profileImage" accept="image/*">
+  </form>
+  </div>
       <label  for="input-nome">Nome</label>
       <input type="text" class="form-control" id="input-nome" >
     </div>
