@@ -25,6 +25,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
@@ -57,7 +58,7 @@ public class Utente {
 	@Column(name = "data_creazione")
 	private Date dataCreazione;
 	
-	// @ManyToOne
+	// @OneToMany(mappedBy = "utente")
 	// private List<Playlist> playlist = new ArrayList<Playlist>();
 
 	public long getId() {
