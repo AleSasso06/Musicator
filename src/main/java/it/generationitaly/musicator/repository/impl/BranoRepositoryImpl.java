@@ -16,8 +16,6 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 	public BranoRepositoryImpl() {
 		super(Brano.class);
 	}
-
-	// anche order by?
 	
 	@Override
 	public List<Brano> findByTitolo(String titolo) {
