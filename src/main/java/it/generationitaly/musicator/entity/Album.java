@@ -1,7 +1,9 @@
 package it.generationitaly.musicator.entity;
 
 import java.sql.Time;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,6 +11,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
@@ -65,6 +69,10 @@ public class Album {
 	@ManyToOne
 	@JoinColumn(name = "genere_id", nullable = false, unique = true)
 	private Genere genere;
+	
+	@ManyToMany
+	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
+	private List<Brano> brani = new ArrayList<Brano>();
 
 	public long getId() {
 		return id;
@@ -128,6 +136,14 @@ public class Album {
 
 	public void setGenere(Genere genere) {
 		this.genere = genere;
+	}
+	
+	public List<Brano> getBrano() {
+		return brani;
+	}
+
+	public void setBrano(List<Brano> brani) {
+		this.brani = brani;
 	}
 
 	@Override
