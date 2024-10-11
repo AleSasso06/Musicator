@@ -8,6 +8,10 @@ p {
 	color: white;
 }
 
+p .global {
+	color: #881141;
+}
+
 h2 {
 	color: white !important;
 }
