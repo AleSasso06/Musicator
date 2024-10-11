@@ -1,19 +1,4 @@
 package it.generationitaly.musicator.entity;
-/*
-CREATE TABLE utente(
-id BIGINT AUTO_INCREMENT NOT NULL,
-username VARCHAR(90) NOT NULL,
-password VARCHAR(90) NOT NULL,
-nome VARCHAR(90) NOT NULL,
-cognome VARCHAR(90) NOT NULL,
-email VARCHAR(90) NOT NULL,
-foto VARCHAR(4000) NOT NULL,
-data_creazione DATE NOT NULL,
-PRIMARY KEY (id),
-UNIQUE(username),
-UNIQUE(email)
-);
-*/
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -57,7 +42,7 @@ public class Utente {
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione")
 	private Date dataCreazione;
-	
+
 	// @OneToMany(mappedBy = "utente")
 	// private List<Playlist> playlist = new ArrayList<Playlist>();
 
@@ -122,9 +107,5 @@ public class Utente {
 		return "Utente [id=" + id + ", username=" + username + ", nome=" + nome + ", cognome=" + cognome + ", email="
 				+ email + ", foto=" + foto + ", dataCreazione=" + dataCreazione + "]";
 	}
-
-
-	
-	
 
 }
