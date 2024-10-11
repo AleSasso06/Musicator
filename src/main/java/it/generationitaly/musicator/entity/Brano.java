@@ -45,7 +45,7 @@ public class Brano {
 	
 	@Temporal(TemporalType.TIME)
 	@Column(name = "durata", nullable = false)
-	private int durata;
+	private Date durata;
 	
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_uscita", nullable = false)
@@ -60,16 +60,20 @@ public class Brano {
 	@Column(name = "yt_link", nullable = false, length = 1000)
 	private String ytLink;
 	
-	/*
 	@ManyToOne
 	@JoinColumn(name = "genere", nullable = false)
 	private Genere genere;
-	*/
 
 	/*
 	@ManyToMany
+	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumn = @JoinColumn(name = "brano_id"))
+	private Set<Album> album = new HashSet<>();
 	private Album album;
 	*/
+	
+	/*
+	 
+	 */
 
 	public long getId() {
 		return id;
@@ -101,12 +105,12 @@ public class Brano {
 	}
 
 
-	public int getDurata() {
+	public Date getDurata() {
 		return durata;
 	}
 
 
-	public void setDurata(int durata) {
+	public void setDurata(Date durata) {
 		this.durata = durata;
 	}
 
@@ -150,16 +154,15 @@ public class Brano {
 		this.ytLink = ytLink;
 	}
 
-/*
+	
 	public Genere getGenere() {
 		return genere;
 	}
-	*/
+	
 
-/*
 	public void setGenere(Genere genere) {
 		this.genere = genere;
-	}*/
+	}
 
 
 	@Override
