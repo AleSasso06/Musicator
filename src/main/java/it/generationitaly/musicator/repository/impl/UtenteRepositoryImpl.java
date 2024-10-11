@@ -50,7 +50,7 @@ public class UtenteRepositoryImpl extends JpaRepositoryImpl<Utente, Long> implem
 			tx = em.getTransaction();
 			tx.begin();
 			TypedQuery<Utente> query = em.createQuery("FROM Utente u WHERE u.email = :email", Utente.class);
-			query.setParameter("username", email);
+			query.setParameter("email", email);
 			List<Utente> utenti = query.getResultList();
 			utente = utenti.isEmpty() ? null : utenti.get(0);
 			tx.commit();
