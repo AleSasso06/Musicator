@@ -1,6 +1,8 @@
 package it.generationitaly.musicator.entity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,6 +10,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -63,16 +66,10 @@ public class Brano {
 	@JoinColumn(name = "genere", nullable = false)
 	private Genere genere;
 
-	/*
 	@ManyToMany
-	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumn = @JoinColumn(name = "brano_id"))
-	private Set<Album> album = new HashSet<>();
-	private Album album;
-	*/
+	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
+	private List<Album> album = new ArrayList<Album>(); 
 	
-	/*
-	 
-	 */
 
 	public long getId() {
 		return id;
@@ -161,6 +158,16 @@ public class Brano {
 
 	public void setGenere(Genere genere) {
 		this.genere = genere;
+	}
+
+
+	public List<Album> getAlbum() {
+		return album;
+	}
+
+
+	public void setAlbum(List<Album> album) {
+		this.album = album;
 	}
 
 
