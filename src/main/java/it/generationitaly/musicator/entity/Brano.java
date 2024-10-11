@@ -63,7 +63,7 @@ public class Brano {
 	private String ytLink;
 	
 	@ManyToOne
-	@JoinColumn(name = "genere", nullable = false)
+	@JoinColumn(name = "genere_id", nullable = false)
 	private Genere genere;
 
 	@ManyToMany
