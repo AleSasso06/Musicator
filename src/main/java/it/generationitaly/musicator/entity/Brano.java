@@ -43,9 +43,8 @@ public class Brano {
 	@Column(name = "testo", nullable = false, length = 4000)
 	private String testo;
 	
-	@Temporal(TemporalType.TIME)
 	@Column(name = "durata", nullable = false)
-	private Date durata;
+	private int durata;
 	
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_uscita", nullable = false)
@@ -105,12 +104,12 @@ public class Brano {
 	}
 
 
-	public Date getDurata() {
+	public int getDurata() {
 		return durata;
 	}
 
 
-	public void setDurata(Date durata) {
+	public void setDurata(int durata) {
 		this.durata = durata;
 	}
 

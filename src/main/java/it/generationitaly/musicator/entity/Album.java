@@ -1,6 +1,5 @@
 package it.generationitaly.musicator.entity;
 
-import java.sql.Time;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -34,35 +33,34 @@ CREATE TABLE album (
 @Entity
 @Table(name = "album")
 public class Album {
-	
+
 	// album N - artista 1
 	// album N - genere 1
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id", nullable = false)
 	private long id;
-	
+
 	@Column(name = "titolo", nullable = false, length = 200)
 	private String titolo;
-	
+
 	@Column(name = "descrizione", nullable = false, length = 4000)
 	private String descrizione;
-	
-	@Temporal(value = TemporalType.TIME)
+
 	@Column(name = "durata", nullable = false)
-	private Time durata;
-	
+	private int durata;
+
 	@Temporal(value = TemporalType.DATE)
 	@Column(name = "data_uscita", nullable = false)
 	private Date dataUscita;
-	
+
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "artista_id", nullable = false, unique = true)
 	private Artista artista;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "genere_id", nullable = false, unique = true)
 	private Genere genere;
@@ -91,11 +89,11 @@ public class Album {
 		this.descrizione = descrizione;
 	}
 
-	public Time getDurata() {
+	public int getDurata() {
 		return durata;
 	}
 
-	public void setDurata(Time durata) {
+	public void setDurata(int durata) {
 		this.durata = durata;
 	}
 
@@ -135,7 +133,6 @@ public class Album {
 	public String toString() {
 		return "Album [id=" + id + ", titolo=" + titolo + ", descrizione=" + descrizione + ", durata=" + durata
 				+ ", dataUscita=" + dataUscita + ", foto=" + foto + "]";
-	} 
-	
-	
+	}
+
 }

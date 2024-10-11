@@ -18,8 +18,8 @@ public class Playlist {
 	@Column(name = "titolo", nullable = false, length = 90)
 	private String titolo;
 
-	@Column(name = "durata", nullable = false)
-	private Date durata;
+	@Column(name = "durata")
+	private int durata;
 
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
@@ -49,11 +49,11 @@ public class Playlist {
 		this.titolo = titolo;
 	}
 
-	public Date getDurata() {
+	public int getDurata() {
 		return durata;
 	}
 
-	public void setDurata(Date durata) {
+	public void setDurata(int durata) {
 		this.durata = durata;
 	}
 
