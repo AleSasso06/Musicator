@@ -11,7 +11,7 @@
 </head>
 <body >
 
-<div class="container min-vh-100 d-flex  justify-content-center  align-items-center">
+<div style="background-color:orange" class="container min-vh-100 d-flex  justify-content-center  align-items-center">
 
 <form>
 <h1 class="mb-5" >Registrazione</h1>
@@ -19,6 +19,8 @@
  
   <div  class="form-row">
   <div class="form-row col-md-20">
+    <img  src="giradischi.jpg" class="rounded mx-auto d-block" alt= "...">
+  
       <label  for="input-nome">Nome</label>
       <input type="text" class="form-control" id="input-nome" >
     </div>
