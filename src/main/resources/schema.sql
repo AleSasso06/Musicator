@@ -9,8 +9,6 @@ CREATE TABLE genere (
     PRIMARY KEY (id)
 );
 
-
-
 CREATE TABLE artista (
     id BIGINT AUTO_INCREMENT NOT NULL,
     nome VARCHAR(90) NOT NULL,
@@ -22,14 +20,11 @@ CREATE TABLE artista (
     PRIMARY KEY (id)
 );
 
-
-
-
 CREATE TABLE album (
     id BIGINT AUTO_INCREMENT NOT NULL,
     titolo VARCHAR(200) NOT NULL,
     descrizione VARCHAR(4000) NOT NULL,
-    durata TIME NOT NULL,
+    durata INT NOT NULL,
     data_uscita DATE NOT NULL,
     foto VARCHAR(4000) NOT NULL,
     artista_id BIGINT NOT NULL,
@@ -46,7 +41,7 @@ CREATE TABLE brano (
     id BIGINT AUTO_INCREMENT NOT NULL,
     titolo VARCHAR(200) NOT NULL,
     testo VARCHAR(4000) NOT NULL,
-    durata TIME NOT NULL,
+    durata INT NOT NULL,
     data_uscita DATE NOT NULL,
     lingua VARCHAR(90) NOT NULL,
     foto VARCHAR(4000),
@@ -86,7 +81,7 @@ UNIQUE(email)
 CREATE TABLE playlist(
 id BIGINT AUTO_INCREMENT NOT NULL,
 titolo VARCHAR(90) NOT NULL,
-durata TIME NOT NULL,
+durata INT NOT NULL,
 foto VARCHAR(4000) NOT NULL,
 data_creazione DATE NOT NULL,
 pubblica BOOLEAN NOT NULL,

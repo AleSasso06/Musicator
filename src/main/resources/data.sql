@@ -35,7 +35,7 @@ INSERT INTO album VALUES (
     'My Dear Melancholy', 
     'My Dear Melancholy è un progetto di 6 tracce di The Weeknd, pubblicato nel 2018. L''album rappresenta un ritorno a sonorità più cupe e intime rispetto ai precedenti lavori, affrontando temi di amore, dolore e rimpianto.<br>
      Il progetto ha segnato il terzo debutto consecutivo di The Weeknd al primo posto nella Billboard Top 200.', 
-    '00:25:36', -- durata? come la mettiamo? in secondi?
+    1380, -- durata? come la mettiamo? in secondi?
     '2018-03-30', 
     'https://i.scdn.co/image/ab67616d0000b2731f6a2a40bb692936879db730',
     1,  
@@ -105,7 +105,7 @@ INSERT INTO brano VALUES (
 	<br>On my way
 	<br>
 	<br>On, on',  
-    '00:03:48',  
+    229,  -- Durata in secondi ????
     '2018-03-30',
     'Inglese',
     '',  -- cosa avevamo detto per la foto??
@@ -172,7 +172,7 @@ INSERT INTO brano VALUES (
 	<br>The way I fixed your heart
 	<br>Don''t you mess with me
 	<br>Don''t you mess with me', 
-    '00:03:41',
+    204,
     '2018-03-30',
     'Inglese',
     ' ',  -- foto??
@@ -240,7 +240,7 @@ INSERT INTO brano VALUES (
 	<br>If you ain''t layin'' next to me-e-e
 	<br>On me, me, on me, oh, I
 	<br>On me, on me, on me',  
-    '00:03:40', 
+    227, -- secondi??
     '2018-03-30',
     'Inglese',
     ' ',  -- foto??
@@ -304,7 +304,7 @@ INSERT INTO brano VALUES (
 	<br>Don''t you know?
 	<br>Don''t you know?
 	<br>Ooh, no',  
-    '00:04:01', -- secondi?
+    238, -- secondi?
     '2018-03-30',
     'Inglese',
     '',  -- Sostituisci con l'URL reale della foto
@@ -362,7 +362,7 @@ INSERT INTO brano VALUES (
 	<br>I don''t wanna, baby
 	<br>I don''t wanna, baby
 	<br>I don''t',  
-    '00:03:50', 
+    217, -- secondi
     '2018-03-30',
     'Inglese',
     '',  -- Sostituisci con l'URL reale della foto
@@ -396,7 +396,7 @@ INSERT INTO brano VALUES (
 	<br>I don''t wanna hear that no more, no more
 	<br>No more, no more
 	<br>I don''t wanna hear that no more',  
-    '00:02:50', -- secondi
+    153, -- secondi
     '2018-03-30',
     'Inglese',
     '',  
@@ -467,12 +467,12 @@ INSERT INTO brano VALUES (
 	<br>On my way
 	<br>
 	<br>On, on',  
-    '00:03:44',  
+    '224',  
     '2018-03-30',
     'Inglese',
     '',  -- cosa avevamo detto per la foto??
     'https://www.youtube.com/watch?v=HQfCoXAPowo',  -- Link ufficiale del video su YouTube
-    '6'  -- genere_id
+    '6' -- genere_id
 );
 
 -- id - brano_id - album_id BIGINT NOT NULL,
