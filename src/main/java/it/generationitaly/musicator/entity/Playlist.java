@@ -1,12 +1,19 @@
 package it.generationitaly.musicator.entity;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 
 public class Playlist {
 
@@ -23,7 +30,8 @@ public class Playlist {
 
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
-
+	
+	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione", nullable = false)
 	private Date dataCreazione;
 
@@ -32,7 +40,11 @@ public class Playlist {
 
 	@ManyToOne
 	private Utente utente;
-
+	
+	//@ManyToMany
+//	@JoinTable(name = "playlist_brano", joinColumns = @JoinColumn(name = "playlist_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
+	//private List<Brano> brani = new ArrayList<Brano>();
+	
 	public long getId() {
 		return id;
 	}

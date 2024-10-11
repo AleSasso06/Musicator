@@ -16,7 +16,7 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 	}
 
 	@Override
-	public Artista findByNome(String pseudonimo) {
+	public Artista findByPseudonimo(String pseudonimo) {
 		Artista artista = null;
 		EntityManager em = null;
 		EntityTransaction tx = null;
