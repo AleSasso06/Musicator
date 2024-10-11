@@ -43,7 +43,7 @@
 <body>
 
     <div class="container">
-        <h1 class="mb3">Login</h1> <!-- Titolo centrato -->
+        <h1 class="mb3">Login</h1> 
         <form class="px-4 py-3">
             <div class="mb-3">
                 <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
