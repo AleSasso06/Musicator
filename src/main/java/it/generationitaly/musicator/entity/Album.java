@@ -48,9 +48,8 @@ public class Album {
 	@Column(name = "descrizione", nullable = false, length = 4000)
 	private String descrizione;
 	
-	@Temporal(value = TemporalType.TIME)
 	@Column(name = "durata", nullable = false)
-	private Time durata;
+	private int durata;
 	
 	@Temporal(value = TemporalType.DATE)
 	@Column(name = "data_uscita", nullable = false)
@@ -91,11 +90,11 @@ public class Album {
 		this.descrizione = descrizione;
 	}
 
-	public Time getDurata() {
+	public int getDurata() {
 		return durata;
 	}
 
-	public void setDurata(Time durata) {
+	public void setDurata(int durata) {
 		this.durata = durata;
 	}
 
