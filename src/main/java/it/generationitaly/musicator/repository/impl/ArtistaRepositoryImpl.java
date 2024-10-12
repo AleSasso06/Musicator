@@ -18,8 +18,8 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 	}
 
 	@Override
-	public Artista findByPseudonimo(String pseudonimo) {
-		Artista artista = null;
+	public List<Artista> findByPseudonimo(String pseudonimo) {
+		List<Artista> artisti = null;
 		EntityManager em = null;
 		EntityTransaction tx = null;
 		try {
@@ -28,8 +28,8 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 			tx.begin();
 			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.pseudonimo = :pseudonimo", Artista.class);
 			query.setParameter("pseudonimo", pseudonimo);
-			List<Artista> artisti = query.getResultList();
-			artista = artisti.isEmpty() ? null : artisti.get(0);
+			/*List<Artista>*/ artisti = query.getResultList();
+			// artista = artisti.isEmpty() ? null : artisti.get(0);
 			tx.commit();
 		}catch(Exception e){
 			System.err.println(e.getMessage());
@@ -40,7 +40,7 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 			if(em != null)
 				em.close();
 		}
-		return artista;
+		return artisti;
 	}
 
 	@Override
