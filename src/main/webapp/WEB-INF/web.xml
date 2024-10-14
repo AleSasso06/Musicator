@@ -89,4 +89,34 @@
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/LogoutServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ArtistaServlet</display-name>
+    <servlet-name>ArtistaServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.ArtistaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArtistaServlet</servlet-name>
+    <url-pattern>/artista</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PlaylistServlet</display-name>
+    <servlet-name>PlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.PlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaylistServlet</servlet-name>
+    <url-pattern>/playlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GenereServlet</display-name>
+    <servlet-name>GenereServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.GenereServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GenereServlet</servlet-name>
+    <url-pattern>/genere</url-pattern>
+  </servlet-mapping>
 </web-app>

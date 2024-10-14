@@ -16,9 +16,10 @@ import it.generationitaly.musicator.repository.impl.AlbumRepositoryImpl;
 public class AlbumServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	AlbumRepository albumRepository= new AlbumRepositoryImpl();
+	private AlbumRepository albumRepository= new AlbumRepositoryImpl();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		long id = Long.parseLong(request.getParameter("id"));
 		
 		Album album = albumRepository.findById(id);

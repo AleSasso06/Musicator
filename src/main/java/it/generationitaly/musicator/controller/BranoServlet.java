@@ -16,9 +16,10 @@ import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
 public class BranoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
   
-	BranoRepository branoRepository = new BranoRepositoryImpl();
+	private BranoRepository branoRepository = new BranoRepositoryImpl();
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		long id = Long.parseLong(request.getParameter("id"));
 		
 		Brano brano = branoRepository.findById(id);
