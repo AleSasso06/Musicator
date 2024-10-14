@@ -9,20 +9,8 @@
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
 	href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="style.css">
-	 	 <style>
-	 .container {
-            
-            margin-top:50px;
-            margin-bottom: 50px;
-            max-width: 500px;           
-            padding: 20px;              
-            background-color: white;   
-            border-radius: 10px;    
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-</style>
+	<link rel="stylesheet" href="style.css">
+	
 </head>
 <body>
 <%List<Artista> artisti = (List<Artista>) request.getAttribute("artisti"); %>
