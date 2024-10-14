@@ -27,7 +27,7 @@
 
 </head>
 <body >
-<%@ include file="nav.jsp" %>
+
 <div class="container  min-vh-100 d-flex  justify-content-center  align-items-center">
 
 
