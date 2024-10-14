@@ -139,4 +139,14 @@
     <servlet-name>PlaylistsServlet</servlet-name>
     <url-pattern>/playlists</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ArtistiServlet</display-name>
+    <servlet-name>ArtistiServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.ArtistiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArtistiServlet</servlet-name>
+    <url-pattern>/artisti</url-pattern>
+  </servlet-mapping>
 </web-app>
