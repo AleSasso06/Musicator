@@ -40,8 +40,8 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 	}
 
 	@Override
-	public Album findByArtista(String pseudonimo) {
-		Album album = null;
+	public List<Album> findByArtista(String pseudonimo) {
+		List<Album> album = null;
 		EntityManager em = null;
 		EntityTransaction tx = null;
 		try {
@@ -51,8 +51,8 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			String sql = "FROM Album a inner join Artista ar on album.artista_id = artista.id WHERE ar.pseudonimo LIKE CONCAT('%',:pseudonimo ,'%')";
 			TypedQuery<Album> query = em.createQuery("sql", Album.class);
 			query.setParameter("pseudonimo", pseudonimo);
-			List<Album> album2 = query.getResultList();
-			album = album2.isEmpty() ? null : album2.get(0);
+			/*List<Album>*/ album = query.getResultList();
+			/*album = album2.isEmpty() ? null : album2.get(0);*/
 			tx.commit();
 		} catch(Exception e){
 			System.err.println(e.getMessage());
