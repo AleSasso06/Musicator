@@ -2,6 +2,7 @@ package it.generationitaly.musicator.repository.impl;
 
 import java.util.List;
 
+import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.entity.Playlist;
 import it.generationitaly.musicator.repository.PlaylistRepository;
 import jakarta.persistence.EntityManager;
@@ -16,7 +17,7 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 	}
 
 	@Override
-	public List<Playlist> findbyTitolo(String titolo) {
+	public List<Playlist> findByTitolo(String titolo) {
 		List<Playlist> playlist = null;
 		EntityManager em = null;
 		EntityTransaction tx = null;
@@ -39,4 +40,29 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 		return playlist;
 	}
 
+
+
+	@Override
+	public List<Playlist> findByBrano(Brano brano) {
+		List<Playlist> playlist = null;
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p INNER JOIN brano b WHERE b.titolo = :titolo", Playlist.class);
+			query.setParameter("titolo", brano.getTitolo());
+			playlist = query.getResultList();
+			tx.commit();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+		} finally {
+			if (em != null)
+				em.close();
+		}
+		return playlist;
+	}
 }

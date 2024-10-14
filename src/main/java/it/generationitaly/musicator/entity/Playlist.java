@@ -29,22 +29,22 @@ public class Playlist {
 	private int durata;
 
 	@Column(name = "foto", nullable = false, length = 4000)
-	private String foto;
-	
+	private String foto; // dovremo impostare una foto di default
+
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione", nullable = false)
-	private Date dataCreazione;
+	private Date dataCreazione = new Date();
 
 	@Column(name = "pubblica", nullable = false)
 	private boolean pubblica;
 
 	@ManyToOne
 	private Utente utente;
-	
+
 	@ManyToMany
 	@JoinTable(name = "playlist_brano", joinColumns = @JoinColumn(name = "playlist_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
 	private List<Brano> brani = new ArrayList<Brano>();
-	
+
 	public long getId() {
 		return id;
 	}
