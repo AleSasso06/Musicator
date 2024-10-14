@@ -37,14 +37,14 @@ public class Utente {
 	private String email;
 
 	@Column(name = "foto", nullable = false, length = 4000)
-	private String foto;
+	private String foto; //mettere valore di default
 
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione")
-	private Date dataCreazione;
+	private Date dataCreazione = new Date();
 
-	// @OneToMany(mappedBy = "utente")
-	// private List<Playlist> playlist = new ArrayList<Playlist>();
+	@OneToMany(mappedBy = "utente")
+	 private List<Playlist> playlist = new ArrayList<Playlist>();
 
 	public long getId() {
 		return id;
