@@ -23,7 +23,7 @@ public class BraniServlet extends HttpServlet {
 		
 		//inserire indirizzo della pagina visualizzazione lista brani
 		request.setAttribute("brani", brani);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("brani.jsp");
 		requestDispatcher.forward(request, response);
 		
 	}
