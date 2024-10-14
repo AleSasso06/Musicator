@@ -97,7 +97,7 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		}
 		
 		if(playlistInput != null) {
-			List<Playlist> playlistTitolo = playlistRepository.findbyTitolo(playlistInput);
+			List<Playlist> playlistTitolo = playlistRepository.findByTitolo(playlistInput);
 			// ne servono altre? forse anche findPlaylistByBrano non sarebbe male
 			// spotify ha anche qualcosa di simile a findPlaylistByArtista con le sue radio o this is *Nome Artista*
 			

@@ -52,7 +52,7 @@ public class RicercaGlobaleServlet extends HttpServlet {
 		List<Brano> brani = branoRepository.findByTitolo(inputUtente);
 		List<Artista> artisti = artistaRepository.findByPseudonimo(inputUtente);
 		List<Album> album = albumRepository.findByTitolo(inputUtente);
-		List<Playlist> playlist = playlistRepository.findbyTitolo(inputUtente);
+		List<Playlist> playlist = playlistRepository.findByTitolo(inputUtente);
 		List<Genere> generi = genereRepository.findByNome(inputUtente);
 		
 		request.setAttribute("brani", brani);
