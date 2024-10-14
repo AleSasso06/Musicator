@@ -10,19 +10,19 @@
 		    <div class="collapse navbar-collapse" id="navbarText">
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		        	<li class="nav-item">
-		          		<a class="nav-link active" href="#">New Music</a>
+		          		<a class="nav-link" href="#">Artisti</a>
+		        	</li>
+		        	<li class="nav-item">
+		          		<a class="nav-link" href="#">Album</a>
+		        	</li>
+		        	<li class="nav-item">
+		          		<a class="nav-link" href="#">Brani</a>
 		        	</li>
 		        	<li class="nav-item">
 		          		<a class="nav-link" href="#">Generi</a>
 		        	</li>
 		        	<li class="nav-item">
 		          		<a class="nav-link" href="#">Playlist</a>
-		        	</li>
-		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Artisti</a>
-		        	</li>
-		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Brani</a>
 		        	</li>
 		      </ul>
 		      
@@ -31,9 +31,9 @@
 				<form class="d-flex me-2" role="search">
 				    <div class="input-group">
 				        <input class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
-				        <span class="input-group-text bg-white border-0">
+				        <button class="input-group-text bg-white border-0">
 				            <i class="fas fa-search"></i> <!-- Icona di ricerca -->
-				        </span>
+				        </button>
 				    </div>
 				</form>
 <!-- 				    Barra di Ricerca
