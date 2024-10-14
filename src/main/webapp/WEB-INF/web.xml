@@ -59,4 +59,24 @@
     <servlet-name>AlbumServlet</servlet-name>
     <url-pattern>/album</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RicercaGlobaleServlet</display-name>
+    <servlet-name>RicercaGlobaleServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.RicercaGlobaleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RicercaGlobaleServlet</servlet-name>
+    <url-pattern>/ricerca_globale</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RicercheSpecificheServlet</display-name>
+    <servlet-name>RicercheSpecificheServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.RicercheSpecificheServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RicercheSpecificheServlet</servlet-name>
+    <url-pattern>/ricerche_specifiche</url-pattern>
+  </servlet-mapping>
 </web-app>
