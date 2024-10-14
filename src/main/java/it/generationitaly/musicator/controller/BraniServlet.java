@@ -17,6 +17,8 @@ public class BraniServlet extends HttpServlet {
 	private BranoRepository branoRepository = new BranoRepositoryImpl();
  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		/*in seguito aggiungere casistiche di ricerca diverse
+		   prendendno il parametro (request.getParameter("genere")*/
 		List<Brano> brani = branoRepository.findAll();
 		
 		//inserire indirizzo della pagina visualizzazione lista brani
