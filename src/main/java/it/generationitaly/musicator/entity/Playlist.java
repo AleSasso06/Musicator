@@ -33,7 +33,7 @@ public class Playlist {
 	
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione", nullable = false)
-	private Date dataCreazione;
+	private Date dataCreazione = new Date();
 
 	@Column(name = "pubblica", nullable = false)
 	private boolean pubblica;

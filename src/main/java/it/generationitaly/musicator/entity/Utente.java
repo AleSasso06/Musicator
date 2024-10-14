@@ -44,7 +44,7 @@ public class Utente {
 
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione")
-	private Date dataCreazione;
+	private Date dataCreazione = new Date();
 
 	// @OneToMany(mappedBy = "utente")
 	// private List<Playlist> playlist = new ArrayList<Playlist>();
