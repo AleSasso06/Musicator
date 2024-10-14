@@ -18,7 +18,8 @@ public class PlaylistServlet extends HttpServlet {
 	private PlaylistRepository playlistRepository = new PlaylistRepositoryImpl();
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+
+		// in seguito findByBrano e findByTitolo sempre sulla base del getParameter("");
 		long id = Long.parseLong(request.getParameter("id"));
 		
 		Playlist playlist = playlistRepository.findById(id);

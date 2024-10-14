@@ -119,4 +119,34 @@
     <servlet-name>GenereServlet</servlet-name>
     <url-pattern>/genere</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AlbumsServlet</display-name>
+    <servlet-name>AlbumsServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.AlbumsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlbumsServlet</servlet-name>
+    <url-pattern>/albums</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PlaylistServlet</display-name>
+    <servlet-name>PlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.PlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaylistServlet</servlet-name>
+    <url-pattern>/playlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>PlaylistsServlet</display-name>
+    <servlet-name>PlaylistsServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.PlaylistsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PlaylistsServlet</servlet-name>
+    <url-pattern>/playlists</url-pattern>
+  </servlet-mapping>
 </web-app>
