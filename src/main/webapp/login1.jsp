@@ -7,43 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-	 <!-- css locali -->
+	
     	 <link rel="stylesheet" href="style.css">   
 <style>
-        /* Stile per centrare verticalmente e orizzontalmente */
+ 
         body {
-            display: flex;              /* Abilita Flexbox */
-            justify-content: center;    /* Centra orizzontalmente */
-            align-items: center;        /* Centra verticalmente */
-            height: 100vh;             /* Imposta l'altezza del body alla vista */
-            margin: 0;                 /* Rimuove il margine di default */
-            background-color: #f0f0f0; /* Colore di sfondo chiaro */
+            display: flex;              
+            justify-content: center;    
+            align-items: center;        
+            height: 100vh;         
+            margin: 0;                 
+            background-color: #f0f0f0;
         }
         .container {
-            max-width: 500px;           /* Imposta una larghezza massima per il contenitore */
-            padding: 20px;              /* Padding interno */
-            margin: 0;                  /* Margine zero per il contenitore */
-            background-color: white;    /* Colore di sfondo del contenitore */
-            border-radius: 10px;        /* Angoli arrotondati per il contenitore */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per il contenitore */
+            max-width: 500px;          
+            padding: 20px;              
+            margin: 0;                  
+            background-color: white;    
+            border-radius: 10px;        
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
         }
         .mb3 {
-            margin-bottom: 1rem; /* Margine inferiore per il titolo */
-            text-align: center;   /* Centra il testo del titolo */
+            margin-bottom: 1rem; 
+            text-align: center;  
         }
         .custom-btn {
-            background-color: #C2185B;  /* Colore di sfondo rosa scuro */
-            color: white;                /* Colore del testo bianco */
-            border: 2px solid #C2185B;   /* Bordo rosa scuro */
-            padding: 6px 15px;           /* Padding verticale e orizzontale */
-            border-radius: 10px;         /* Angoli arrotondati */
-            font-weight: bold;            /* Testo in grassetto */
-            cursor: pointer;              /* Cambia il cursore al passaggio del mouse */
+            background-color: #C2185B;  
+            color: white;                
+            border: 2px solid #C2185B;   
+            padding: 6px 15px;           
+            border-radius: 10px;         
+            font-weight: bold;            
+            cursor: pointer;             
         }
     </style>
 </head>
 <body>
-
+	<%@ include file="nav.jsp" %>
     <div class="container">
         <h1 class="mb3">Login</h1> 
         <form class="px-4 py-3">
@@ -67,7 +67,7 @@
         <a class="dropdown-item" href="#">New around here? Sign up</a>
         <a class="dropdown-item" href="#">Forgot password?</a>
     </div>
-		<%@ include file="nav.jsp" %>
+	
     <script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
