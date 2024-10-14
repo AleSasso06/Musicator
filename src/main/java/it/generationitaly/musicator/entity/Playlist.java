@@ -101,6 +101,14 @@ public class Playlist {
 		this.utente = utente;
 	}
 
+	public List<Brano> getBrani() {
+		return brani;
+	}
+
+	public void setBrani(List<Brano> brani) {
+		this.brani = brani;
+	}
+
 	@Override
 	public String toString() {
 		return "Playlist [id=" + id + ", titolo=" + titolo + ", durata=" + durata + ", foto=" + foto
