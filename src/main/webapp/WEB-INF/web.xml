@@ -29,4 +29,14 @@
     <servlet-name>RegistratiServlet</servlet-name>
     <url-pattern>/registrati</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BraniServlet</display-name>
+    <servlet-name>BraniServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.BraniServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BraniServlet</servlet-name>
+    <url-pattern>/brani</url-pattern>
+  </servlet-mapping>
 </web-app>
