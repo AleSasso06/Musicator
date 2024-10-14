@@ -38,11 +38,15 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		// voglio capire da che pagina viene l'input
 		// quindi il frontend dovrebbe mettere dei name riconoscibili
 		// preferibilmente quelli già scritti qui sotto
-		// inoltre quelle in arrivo sono delle stringhe, possibilmente parziali
+		// inoltre quelle in arrivo sono delle stringhe, possibilmente parziali (ricerca LIKE)
 		String braniInput = request.getParameter("brani");
 		String artistiInput = request.getParameter("artisti");
 		String albumInput = request.getParameter("album");
 		String playlistInput = request.getParameter("playlist");
+		// si fanno delle ricerche nel genere? Dalla pagina dei generi con le card non ha senso cercare
+		// neanche in quella di dettaglio o forse si? tipo cercare delle playlist 
+		// o dei decenni (mi viene da pensare al rock e pop)
+		String generiInput = request.getParameter("generi");
 		
 		// avrebbe senso farlo con lo switch ma non so come
 		if(braniInput != null) {
@@ -101,6 +105,10 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
 			requestDispatcher.forward(request, response);
+		}
+		
+		if(generiInput != null) {
+			
 		}
 		
 	}
