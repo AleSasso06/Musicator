@@ -43,7 +43,7 @@
 </head>
 <body>
 <%@ include file="nav.jsp"%>
-    <div class="container">
+   <div class="container  min-vh-100 d-flex  justify-content-center  align-items-center">
         <h1 class="mb3">Login</h1> 
         <form class="px-4 py-3">
             <div class="mb-3">
