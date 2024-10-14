@@ -26,11 +26,8 @@
 	            <h2 class="h1 fw-bold">Top songs being discovered around the world right now</h2>
 	            <p class="fs-5 pb-4">See who made it on the list of the most Musicated songs worldwide</p>
 	            <div class="ratio ratio-16x9" data-aos="zoom-in">
-<<<<<<< HEAD
 	               <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=TtF7_lC2Bq1kVN9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-=======
 	                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=oj_yLUZIIH94tjEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
->>>>>>> refs/heads/index
 	           </div>
 	       </div>
      <!-- Sezione Classifica Globale -->
