@@ -11,9 +11,12 @@
 	 
 	 <style>
 .container {
+            
+            margin-top:50px;
+            margin-bottom: 50px;
             max-width: 500px;           
             padding: 20px;              
-             background-color: white;   
+           background-color: white;   
             border-radius: 10px;    
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -43,27 +46,27 @@
  <input type="file" id="profileImage" accept="image/*">
   </form>
   </div>
-      <label  for="input-nome">Nome</label>
+      <label class="mt-3" for="input-nome">Nome</label>
       <input type="text" class="form-control" id="input-nome" >
     </div>
     <div class="form-group col-md-20">
-      <label for="input-cognome">Cognome</label>
+      <label class="mt-3" for="input-cognome">Cognome</label>
       <input type="text" class="form-control" id="input-cognome" >
     </div>
     <div class="form-group col-md-20">
-      <label for="inputEmail4">Email</label>
+      <label class="mt-3" for="inputEmail4">Email</label>
       <input type="email" class="form-control" id="inputEmail4">
     </div>
     <div class="form-group col-md-20">
-      <label for="input-username">Username</label>
+      <label class="mt-3" for="input-username">Username</label>
       <input type="email" class="form-control" id="input-username" >
     </div>
     <div class="form-group col-md-20 ">
-      <label for="inputPassword4">Password</label>
+      <label class="mt-3" for="inputPassword4">Password</label>
       <input type="password" class="form-control" id="inputPassword4" >
     </div>
     <br>
-    <button class="btn" type="submit" >Accedi</button>
+    <button class="custom-register-btn" type="submit" >Accedi</button>
     
   </div>
   </div>
