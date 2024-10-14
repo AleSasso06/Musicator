@@ -10,16 +10,17 @@
 	 <link rel="stylesheet" href="style.css">
 	 
 	 <style>
-.container {
+	 .container {
             
             margin-top:50px;
             margin-bottom: 50px;
             max-width: 500px;           
             padding: 20px;              
-           background-color: white;   
+            background-color: white;   
             border-radius: 10px;    
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
 </style>
 	
 	
@@ -104,8 +105,15 @@
       </label>
     </div>
   </div>-->
- 
+
+  
+		   
 </div>
+  <footer class="footer bg-light text-center py-3">
+		        <div class="container">
+		            <p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
+		        </div>
+		    </footer>
 
 
 
