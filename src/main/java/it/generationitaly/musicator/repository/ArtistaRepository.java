@@ -8,8 +8,8 @@ import it.generationitaly.musicator.entity.Artista;
 
 public interface ArtistaRepository extends JpaRepository<Artista, Long>{
 
-	Artista findByPseudonimo(String pseudonimo);
-	List<Artista> findByNazionalita(String nazionalita); 
+	List<Artista> findByPseudonimo(String pseudonimo);
 	
+	List<Artista> findByNazionalita(String nazionalita); 
 	
 }
