@@ -39,4 +39,14 @@
     <servlet-name>BraniServlet</servlet-name>
     <url-pattern>/brani</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AlbumsServlet</display-name>
+    <servlet-name>AlbumsServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.AlbumsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AlbumsServlet</servlet-name>
+    <url-pattern>/albums</url-pattern>
+  </servlet-mapping>
 </web-app>
