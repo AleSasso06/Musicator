@@ -26,10 +26,9 @@ public class Utente {
 
 	@Column(name = "username", nullable = false, length = 90)
 	private String username;
-	
+
 	@Column(name = "password", nullable = false, length = 90)
 	private String password;
-
 
 	@Column(name = "nome", nullable = false, length = 90)
 	private String nome;
@@ -46,7 +45,7 @@ public class Utente {
 	@Temporal(TemporalType.DATE)
 	@Column(name = "data_creazione")
 	private Date dataCreazione;
-	
+
 	// @OneToMany(mappedBy = "utente")
 	// private List<Playlist> playlist = new ArrayList<Playlist>();
 
@@ -96,6 +95,14 @@ public class Utente {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public Date getDataCreazione() {
