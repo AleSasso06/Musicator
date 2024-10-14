@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
-	background-color:  #08263C; 
+ background-image: url("paper.gif");
+ background-color: #cccccc;
 }
-
 p {
 	color: white;
 }

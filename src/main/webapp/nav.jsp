@@ -27,12 +27,21 @@
 		      </ul>
 		      
 				<div class="d-flex align-items-center">
-				    <!-- Barra di Ricerca -->
+				<!-- Barra di Ricerca -->
+				<form class="d-flex me-2" role="search">
+				    <div class="input-group">
+				        <input class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
+				        <span class="input-group-text bg-white border-0">
+				            <i class="fas fa-search"></i> <!-- Icona di ricerca -->
+				        </span>
+				    </div>
+				</form>
+<!-- 				    Barra di Ricerca
 				    <form class="d-flex me-2" role="search">
 				        <input class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
 				        <button class="btn btn-outline-success" type="submit">Cerca</button>
 				    </form>
-				
+ -->				
 				   <!-- Pulsante Login -->
 				   	<form class="d-flex me-2" role="sign-in">
 					    <button id="reg" class="btn custom-login-btn" type="submit">Login</button>
