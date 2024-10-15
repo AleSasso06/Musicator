@@ -149,4 +149,14 @@
     <servlet-name>ArtistiServlet</servlet-name>
     <url-pattern>/artisti</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GeneriServlet</display-name>
+    <servlet-name>GeneriServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.GeneriServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GeneriServlet</servlet-name>
+    <url-pattern>/generi</url-pattern>
+  </servlet-mapping>
 </web-app>
