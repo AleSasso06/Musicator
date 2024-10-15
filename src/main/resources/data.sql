@@ -13,6 +13,7 @@ INSERT INTO genere VALUES ('12','Electronic');
 INSERT INTO genere VALUES ('13','Country');
 INSERT INTO genere VALUES ('14','Synthpop');
 INSERT INTO genere VALUES ('15','Disco-funk');
+INSERT INTO genere VALUES ('16','Folk');
 
 INSERT INTO artista VALUES (
 	'1',
@@ -2404,21 +2405,6 @@ INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto
 );
 
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
-'Dangerous Woman',
-'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.
-L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
-Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
-2340, -- durata in secondi
-'2016-05-20',
-'https://images.rockol.it/B5HsUf34_VBW6U1G8rC4XlU_m68=/1200x1200/smart/rockol-img/img/foto/upload/ariana-grande-dangerous-woman.1464168039.jpg',
-3,
-2
-);
-
-
-
 INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
 'Ariana Grande-Butera',
 'Ariana Grande',
@@ -2434,3 +2420,792 @@ Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un'
 Il 2017 ha rappresentato un anno particolarmente difficile per Ariana a causa dell''attentato terroristico durante il suo concerto a Manchester, che ha causato numerose vittime. In risposta, ha organizzato il concerto benefico One Love Manchester, dimostrando grande forza e solidarietà verso le vittime ',
 'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1'
 );
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+'Dangerous Woman',
+'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.
+L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
+Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
+2340, -- durata in secondi
+'2016-05-20',
+'https://images.rockol.it/B5HsUf34_VBW6U1G8rC4XlU_m68=/1200x1200/smart/rockol-img/img/foto/upload/ariana-grande-dangerous-woman.1464168039.jpg',
+3,
+2
+);
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES('Thomas Peter Odell','Tom Odell','1990-11-24','Britannico','Tom Odell nasce il 24 novembre 1990 nel West Sussex. Studia al Brighton Institute of Modern Music, ascoltando Elton John, Leonard Cohen e Bob Dylan. Nel 2012 realizza l’Ep di debutto, SONGS FROM ANOTHER LOVE, mentre nel 2013 arriva il primo disco sulla lunga distanza, LONG WAY DOWN.','https://www.google.com/url?sa=i&url=https%3A%2F%2Ffirst-avenue.com%2Fperformer%2Ftom-odell%2F&psig=AOvVaw1oTpLUXChA9jWNfw-MkMsy&ust=1729020091311000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCEh_rLjokDFQAAAAAdAAAAABAE');
+
+INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Long Way Down','Long Way Down è l''album di debutto in studio del cantautore britannico Tom Odell. Seguendo le orme di Adele, Emeli Sande e Jessie J, Tom ha ricevuto il Critics Choice Award ai BRIT Awards 2013.','2134','2013-06-21','https://www.google.com/imgres?q=long%20way%20down%20tom%20odell&imgurl=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b2739adb17697c5a5bb02b5cebb7&imgrefurl=https%3A%2F%2Fopen.spotify.com%2Fintl-it%2Falbum%2F3t0Quq8X7W90hRP5OQ5S4b&docid=OPsZqtkBYuSbtM&tbnid=PAOAgdoZBcBiWM&vet=12ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA..i&w=640&h=640&hcb=2&itg=1&ved=2ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA','4','16');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Grow Old With Me','I can feel you breathing
+<br>With your hair on my skin
+<br>As we lie here within
+<br>The night
+<br>
+<br>I''ll pull the sheets
+<br>When it''s cold on your feet
+<br>Cuz you''ll fall back to sleep
+<br>Every time
+<br>
+<br>Grow old with me
+<br>Let us share what we see
+<br>And oh the best it could be
+<br>Just you and I
+<br>
+<br>And our hands they might age
+<br>And our bodies will change
+<br>But we''ll still be the same
+<br>As we are
+<br>
+<br>We''ll still sing our song
+<br>When our hair ain''t so blonde
+<br>And our children have sung
+<br>We were right
+<br>
+<br>They''ll sing
+<br>Grow old with me
+<br>Let us share what we see
+<br>And oh the best it could be
+<br>Just you and I
+<br>
+<br>And the hairs they stand up
+<br>And my feet start to thump
+<br>Yer the feeling is dreaming
+<br>Around
+<br>
+<br>You''ll be the one
+<br>Make me hurt, make me come
+<br>Make me feel like I''m real
+<br>And alive
+<br>
+<br>Grow old with me
+<br>Let us share what we see
+<br>And oh the best it could be
+<br>Just you and I
+<br>
+<br>Grow old with me
+<br>Let us share what we see
+<br>And oh the best it could be
+<br>Just you and I','183','2013-06-21','inglese','','https://www.youtube.com/watch?v=5rgHYP0dD_4&pp=ygUbZ3JvdyBvbGQgd2l0aCAgbWUgdG9tIG9kZWxs','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Hold Me','I shouldn''t say it, but I''m starting to think I care
+<br>I''ve had a drink, you probably think my judgement isn''t clear
+<br>And it''s getting late now, we''re a long way from our homes
+<br>Before you leave, before you grieve, there''s one thing you should know
+<br>
+<br>When you hold me, when you hold me in your arms
+<br>Oh, when you hold me, yeah I can feel your heart
+<br>When you hold me, when you hold me in your arms
+<br>Oh, when you hold me, yeah I can feel your heart beating
+<br>
+<br>Suddenly I''m standing on a treetop up so high
+<br>And all the songs, and all the poems, suddenly they''re right
+<br>And I''m dumbfounded by the breaths of your self control
+<br>But I don''t care ''cause you''re here, and you and I both know
+<br>
+<br>When you hold me, when you hold me in your arms
+<br>Oh, when you hold me, yeah I''m picking out the stars
+<br>When you hold me, when you hold me in your arms
+<br>Oh, when you hold me, yeah I can feel your heart beating
+<br>
+<br>Oh, when you hold me, hold me in your arms
+<br>Hold me, I can feel your heart
+<br>Hold me, when you hold me in your arms
+<br>Hold me, yeah I can feel your heart
+<br>
+<br>When you hold me, hold me in your arms
+<br>Oh, when you hold me, I can feel your heart
+<br>Oh, when you hold me, when you hold me in your arms
+<br>Oh, when you hold me, yeah I can feel your heart beating','188','2013-06-21','inglese','','https://www.youtube.com/watch?v=ejdOAvl5by0&pp=ygURaG9sZCBtZSB0b20gb2RlbGw%3D','11');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Another Love','I wanna take you somewhere so you know I care
+<br>But it''s so cold and I don''t know where
+<br>I brought you daffodils in a pretty string
+<br>But they won''t flower like they did last spring
+<br>
+<br>And I wanna kiss you, make you feel alright
+<br>I''m just so tired to share my nights
+<br>I wanna cry and I wanna love
+<br>But all my tears have been used up
+<br>
+<br>On another love, another love
+<br>All my tears have been used up
+<br>On another love, another love
+<br>All my tears have been used up
+<br>On another love, another love
+<br>All my tears have been used up
+<br>
+<br>And if somebody hurts you, I wanna fight
+<br>But my hand''s been broken one too many times
+<br>So I''ll use my voice, I''ll be so fucking rude
+<br>Words they always win, but I know I''ll lose
+<br>
+<br>And I''d sing a song that''d be just ours
+<br>But I sang ''em all to another heart
+<br>And I wanna cry, I wanna learn to love
+<br>But all my tears have been used up
+<br>
+<br>On another love, another love
+<br>All my tears have been used up
+<br>On another love, another love
+<br>
+<br>All my tears have been used up
+<br>On another love, another love
+<br>All my tears have been used up
+<br>
+<br>Oh, need a love, now
+<br>My heart is thinking of...
+<br>
+<br>I wanna sing a song that''d be just ours
+<br>But I sang ''em all to another heart
+<br>And I wanna cry, I wanna fall in love
+<br>But all my tears have been used up
+<br>
+<br>On another love, another love
+<br>All my tears have been used up
+<br>On another love, another love
+<br>All my tears have been used up
+<br>On another love, another love
+<br>All my tears have been used up','244','2012-10-15','inglese','','https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DMwpMEbgC7DA&ved=2ahUKEwi4jKaM25CJAxUC2QIHHc5-JkAQ3yx6BAgvEAI&usg=AOvVaw2TsxnV0r3HpZLDIPFT4rYz','11');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('I Know','Cold hands, white light
+<br>Yellow lamps on blackened skies
+<br>Duffel hoods and deep brown eyes
+<br>I''ll sing you a song that I think you''ll like
+<br>
+<br>And we''ll walk the places we always go
+<br>A million faces I don''t know
+<br>I''ll say the words you''d always hope
+<br>Sets our hearts racing even though
+<br>
+<br>I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>Every time I run, yeah, I keep on falling
+<br>
+<br>I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>It''s just every time I run, yeah, I keep on falling on you
+<br>
+<br>On the way you stand, on the way you sway
+<br>The way your hair curls in the rain
+<br>The little lines that write your face
+<br>Or the winter nights, you''d come and stay
+<br>
+<br>Or the way you hit me when you wanna fight
+<br>The way you yearn, the way you cry
+<br>The way our love rolls with the tides
+<br>But we know we''ll make up every time
+<br>
+<br>I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>Every time I run, yeah, I keep on falling
+<br>
+<br>I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>It''s just every time I run, yeah, I keep on falling on you
+<br>
+<br>Oh, won''t you bring me all the things I need
+<br>Like falling rain to a rolling sea
+<br>Oh, won''t you bring me all the things I need
+<br>
+<br>I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>It''s just every time I run, I keep on falling
+<br>
+<br>I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>It''s just every time I run, I keep on falling
+<br>
+<br>And I know what you told me
+<br>I know that it''s all over
+<br>And I know I can''t keep calling
+<br>Every time I run, yeah, I keep on falling
+<br>
+<br>And I know what you told me
+<br>And I know that it''s all over
+<br>And I know I can''t keep calling
+<br>Every time I run, yeah, I keep on falling on you','233','2013-06-21','inglese','','https://www.youtube.com/watch?v=rPjJZRWAqkE&pp=ygUQaSBrbm93IHRvbSBvZGVsbA%3D%3D','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Sense','Hard to know
+<br>Maybe if I skim the stone
+<br>Walk a different way back home
+<br>It would all make sense
+<br>
+<br>Oh, shut my eyes
+<br>Lose myself in teenage lies
+<br>If I fell in love a thousand times
+<br>Would it all make sense?
+<br>
+<br>''Cause I
+<br>I''ve been feeling pretty small
+<br>Sometimes
+<br>Feel like I''m slipping down walls
+<br>And every line
+<br>I ever get a hold
+<br>It seems to break
+<br>
+<br>Ca-call you up
+<br>I can tell you just how much
+<br>No, no maybe I''ll just get drunk
+<br>And it will all make sense
+<br>
+<br>Or if I weren''t so nice
+<br>I convince my friends that you were right
+<br>I can promise you my heart don''t cry
+<br>Would it all make sense?
+<br>
+<br>''Cause I
+<br>I''ve been feeling pretty small
+<br>Sometimes
+<br>Feel like I''m slipping down walls
+<br>And every lie
+<br>I ever get a hold
+<br>It seems to break
+<br>
+<br>Oh I
+<br>I''ve been feeling pretty small
+<br>Sometimes
+<br>Feel like I''m slipping down walls
+<br>And every lie
+<br>I ever get a hold
+<br>It seems to break','265','2012-10-15','inglese','','https://www.youtube.com/watch?v=1vViTMfQo2o&pp=ygUPc2Vuc2UgdG9tIG9kZWxs','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Can''t Pretend','Love, I have wounds
+<br>Only you can mend
+<br>You can mend, oh, oh, oh
+<br>I guess that''s love
+<br>I can''t pretend
+<br>I can''t pretend, oh, oh, oh
+<br>Feel, my skin is rough
+<br>But it can be cleansed
+<br>It can be cleansed, oh, oh, oh
+<br>And my arms are tough
+<br>But they can be bent
+<br>They can be bent
+<br>And I wanna fight
+<br>But I can''t contend
+<br>I guess that''s love
+<br>I can''t pretend
+<br>I can''t pretend, oh, oh, ooh-oh
+<br>oh oh oh
+<br>Whoa
+<br>Yeah
+<br>Oh, oh, oh, oh
+<br>Oh, feel our bodies grow
+<br>And our souls they play, yeah
+<br>Yeah love I hope you know
+<br>How much my heart depends, yeah
+<br>But I guess that''s love I can''t pretend
+<br>I guess that''s love I can''t pretend, oh, oh
+<br>But I guess that''s love I can''t pretend
+<br>I guess that''s love I can''t pretend, oh, oh
+<br>Oh, feel our bodies grow
+<br>And our souls they play, yeah
+<br>Yeah love I hope you know
+<br>How much my heart depends, yeah
+<br>I guess that''s love
+<br>I can''t pretend
+<br>I can''t pretend, oh, oh, oh
+<br>I guess that''s love
+<br>I can''t pretend
+<br>I can''t pretend, oh, oh, oh','218','2012-10-15','inglese','','https://www.youtube.com/watch?v=B4-OxOmsqR0&pp=ygUXY2FuJ3QgcHJldGVuZCB0b20gb2RlbGw%3D','11');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Till I Lost','A coffee stain on a window sill
+<br>A bad translation to a foreign film
+<br>Or just wandering around with you
+<br>Just wandering town with you
+<br>Oh, oh, oh, oh
+<br>Would be enough
+<br>
+<br>The tiny cracks on the city stone
+<br>A welcome back to your troubled home
+<br>Or just wandering around with you
+<br>Just wandering town with you
+<br>Oh, oh, oh, oh
+<br>Would be enough
+<br>
+<br>But oh
+<br>I didn''t see the sea until I crossed
+<br>Oh
+<br>And I didn''t feel your love until I lost
+<br>
+<br>The moving shadows on your swaying light
+<br>All your picture notes of your porcupines
+<br>Or just wandering around with you
+<br>Just walking these towns with you
+<br>Oh, oh, oh, oh would be enough
+<br>
+<br>But oh
+<br>I didn''t see the sea until I crossed
+<br>Oh
+<br>And I didn''t feel your love until I lost
+<br>
+<br>Oh
+<br>I didn''t see the sea until I crossed
+<br>Oh
+<br>And I didn''t feel your love until I lost','233','2013-06-21','inglese','','https://www.youtube.com/watch?v=4kkKVVl3EF8&pp=ygUVdGlsbCBpIGxvc3QgdG9tIG9kZWxs','11');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Supposed To Be','Sat on the rooftop
+<br>Watching the birds flying free
+<br>Watching the clouds walk
+<br>And watching the rain become the sea
+<br>Hearing my love talk
+<br>Every breath she ever breathes
+<br>Like it was always supposed to be like that
+<br>
+<br>But then we broke up
+<br>And she went west and I went east
+<br>She got a new boyfriend
+<br>A little too soon if you''re asking me
+<br>I heard that she loves him
+<br>A little bit more than she''ll ever love me
+<br>And it was always supposed to be like that
+<br>
+<br>I look to the skyline
+<br>And said how many falls until I fly
+<br>Look to the old times and said
+<br>How many roads until I find
+<br>And oh it''s tough now
+<br>Cause love always, love always is unkind
+<br>
+<br>I sat on the rooftop
+<br>And I watched the birds flying free
+<br>I watched the clouds walk
+<br>And I watched the rain become the sea
+<br>And just for a moment, just for a moment
+<br>I felt so free from all I''m supposed to be
+<br>
+<br>I look to the skyline and said
+<br>How many falls until I fly
+<br>Look to the old times I said
+<br>How many roads until I find
+<br>And oh it''s tough now
+<br>Cause love always, love always is unkind','213','2013-06-21','inglese','','https://www.youtube.com/watch?v=OL-_xl-0dFg&pp=ygUYc3VwcG9zZWQgdG8gYmUgdG9tIG9kZWxs','11');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Long Way Down','Walking on the rooftops
+<br>Talking of time
+<br>With our eyes a glowing
+<br>Like the city lights
+<br>She stands on the ledge,
+<br>She says, "It looks so high"
+<br>
+<br>You know it''s a
+<br>
+<br>Long way down
+<br>Feels like a long way down
+<br>Feels like a long way down
+<br>Like a long way down
+<br>So honey don''t leave, don''t leave
+<br>Please don''t leave me now
+<br>
+<br>''Cause I can feel the rivers
+<br>Winding through the lands
+<br>Two lines, and a poet
+<br>Like a kind old rye
+<br>You know we could talk in that language
+<br>Only we understand
+<br>
+<br>But you know, honey
+<br>
+<br>It''s a long way down
+<br>You know it''s a long way down
+<br>Feels like a long way down
+<br>Love it feels like a long way down
+<br>So honey don''t leave, don''t leave
+<br>Please don''t leave me now','150','2013-06-21','inglese','','https://www.youtube.com/watch?v=OA276QPvPq4&pp=ygUXbG9uZyB3YXkgZG93biB0b20gb2RlbGw%3D','11');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Sirens','Tear me down
+<br>Tell me I don''t need to fear
+<br>Tell me now
+<br>Tell me some bodies near
+<br>''Cause sirens
+<br>Sirens are all I hear
+<br>
+<br>They keep calling out
+<br>Calling out someone''s name
+<br>Keep calling out And all you can do is pray
+<br>That these sirens
+<br>Sirens don''t come our way
+<br>
+<br>Or we''ll be
+<br>All run run running away
+<br>We''ll be
+<br>All run run running away
+<br>All run run running away
+<br>When sirens they come our way
+<br>
+<br>It''s raining now
+<br>Raining on someone''s fears
+<br>Raining down
+<br>I''ve heard the rain is the city''s tears
+<br>But these sirens
+<br>These sirens are all I hear
+<br>
+<br>And they keep calling out
+<br>Calling out someone''s name Keep calling out
+<br>And all I can do is pray
+<br>That these sirens
+<br>Sirens don''t come our way
+<br>
+<br>Or we''ll be
+<br>All run run running away
+<br>We''ll be
+<br>All run run running away
+<br>All run run running away
+<br>When sirens they come our way','220','2013-06-21','inglese','','https://www.youtube.com/watch?v=F1fwVVvVVvI&pp=ygUQc2lyZW5zIHRvbSBvZGVsbA%3D%3D','11');
+
+INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Black Friday','Black Friday è il sesto album in studio del cantautore britannico Tom Odell. È stato rilasciato il 26 gennaio 2024 tramite UROK Management. La title track Black Friday è stata nominata per la migliore canzone musicalmente e liricamente al Premio Ivor Novello giovedì 23 maggio 2024.','1721','2024-01-26','https://www.google.com/imgres?q=tom%20odell%20black%20friday&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2FA1Oqa6nvPDL._UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.it%2FBlack-Friday-Tom-Odell%2Fdp%2FB0CKDS95Z3&docid=PO1WXyqwvG79bM&tbnid=IwSfet1wx_Cn_M&vet=12ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA','4','2');
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Answer Phone','Here I go again
+<br>Wasting all my days away
+<br>It''s a funny thing how some things never seem to change
+<br>Twenty-seven years of age
+<br>Head spin like a satellite
+<br>If you thought I was gonna behave tonight, you''re wrong
+<br>
+<br>I''m drunk, and I''m a mess
+<br>Dressed up like it''s Halloween
+<br>Dancing alone to "Billie Jean"
+<br>Praying that somebody takes me home
+<br>Praying that tonight I won''t have to sleep alone
+<br>With your answering phone
+<br>
+<br>Here I go again
+<br>Wasting all my money, babe
+<br>It''s a funny thing how some things never seem to change
+<br>I''m sick of all this cheap cocaine
+<br>I ain''t got no appetite
+<br>If you thought I was going to behave tonight, you''re wrong
+<br>
+<br>I don''t wanna be a star
+<br>Famous on the party scene
+<br>Dancing alone to "Billie Jean"
+<br>Praying that somebody takes me home
+<br>Praying that tonight I won''t have to sleep alone
+<br>With your answering phone
+<br>
+<br>Smile
+<br>Smile
+<br>Smile
+<br>Smile, even if you''re feeling sad','161','2024-01-26','inglese','','https://www.youtube.com/watch?v=xrb5Y9m3q8o&pp=ygUWdG9tIG9kZWxsIGFuc3dlciBwaG9uZQ%3D%3D','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Black Friday','I wanna go party, I wanna have fun
+<br>I wanna be happy, could you show me how it''s done?
+<br>You look so pretty, pretty like the sun
+<br>I could watch forever while you shine on everyone
+<br>
+<br>It''s Black Friday, we''re in a black taxi
+<br>You take my hand and hold it gently on the middle seat
+<br>It''s all in my head, it''s all in my mind
+<br>I''m so selfish, you''re so kind
+<br>It''s all in my head, baby, I can''t breathe
+<br>I look in the mirror, what has happened to me?
+<br>
+<br>I wanna better body, I want better skin
+<br>I wanna be perfect like all your other friends
+<br>You look so pretty, pretty like the wind
+<br>Every time you touch me, I feel adrenaline
+<br>
+<br>It''s Black Friday, the end of the week
+<br>You take my hand and hold it gently up against your cheek
+<br>It''s all in my head, it''s all in my mind
+<br>I see the darkness where you see the light
+<br>It''s all in my head, who do I trust?
+<br>I thought that you loved me, what is happening to us?
+<br>
+<br>What is happening to us?
+<br>What is happening to us?','222','2024-01-26','inglese','','https://www.youtube.com/watch?v=KMIKzWyZPSA&pp=ygUWdG9tIG9kZWxsIGJsYWNrIGZyaWRheQ%3D%3D','2');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Loving You Will Be The Death Of Me','Jesus Christ, look at us in the toilet making love
+<br>We should slow down
+<br>I don''t know how
+<br>Jesus Christ, look at us using each other like a drug
+<br>We should slow down
+<br>I don''t know how
+<br>
+<br>Time is passing by so fast
+<br>It''s Friday night in front of the TV
+<br>I''m saying a prayer, making God aware
+<br>Loving you will be the death of me
+<br>
+<br>Jesus Christ, should I let you put my hand around your neck?
+<br>I don''t know but we should slow down
+<br>Jesus Christ, you''re the best, I''ll do anything you ask
+<br>We should slow down
+<br>I don''t know how
+<br>
+<br>Time is passing by
+<br>I look inside and see things I don''t wanna see
+<br>I''m helpless
+<br>I''m scared
+<br>But I don''t fucking care
+<br>If loving you will be the death of me
+<br>
+<br>It''s Sunday, I''m in love
+<br>It''s Sunday, I''m in love
+<br>It''s Sunday, I''m in love
+<br>I''m in love, I''m in–
+<br>
+<br>Jesus Christ, look at us in the toilet making love
+<br>We should slow down
+<br>I don''t know how','132','2024-01-26','inglese','','https://www.youtube.com/watch?v=fiM4ZNN0YPw&pp=ygUsdG9tIG9kZWxsIGxvdmluZyB5b3Ugd2lsbCBiZSB0aGUgZGVhdGggb2YgbWU%3D','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The Orchestra Tunes Up','Yeah
+<br>What was it was on the scale?
+<br>What scale was it on?
+<br>It was F Major, I think we''ll keep
+<br>Let''s keep it in B Major
+<br>Should I check what pieces it in?
+<br>No, no, no
+<br>
+<br>Let''s take those five out
+<br>F Sharp, D Sharp, A Sharp, C Sharp, D Sharp
+<br>Nice, easy
+<br>F Sharp, D Sharp, A Sharp, C Sharp, D Sharp
+<br>Yeah, please, form back
+<br>I got a feeling that it''s like
+<br>All the gutter will roam
+<br>
+<br>Is that alright?
+<br>Yeah
+<br>You try that
+<br>And smack four bars and that''s off
+<br>And how peaceful was that?','50','2024-01-26','inglese','','https://www.youtube.com/watch?v=Y64ZVIbTnpk&pp=ygUhdG9tIG9kZWxsIHRoZSBvcmNoZXN0cmEgdHVuZXMgdXAg','2');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Spinning','You make me feel like I am alive
+<br>When you take off your shirt
+<br>You make me see the stars late at night
+<br>You love me at my worst
+<br>
+<br>But we can''t be together
+<br>And we can''t be apart
+<br>We''re gonna spin round forever
+<br>With two broken hearts
+<br>
+<br>You tell me that you''d take your own life
+<br>Just to see if it hurts
+<br>I wake up, and you''re holding me tight
+<br>You are my universe
+<br>
+<br>But we can''t be together
+<br>And we can''t be apart
+<br>We''re gonna spin round forever
+<br>With two broken hearts
+<br>
+<br>We can''t be together
+<br>We can''t be apart
+<br>We''re gonna spin round forever
+<br>With two broken hearts','132','2024-01-26','inglese','','https://www.youtube.com/watch?v=n7Eb8-WrQUs&pp=ygUSc3Bpbm5pbmcgdG9tIG9kZWxs','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The End Of The Summer','You broke my heart at the end of the summer
+<br>You broke my heart at the end of the summer
+<br>
+<br>Me and you went
+<br>Back to school, and
+<br>Nobody cares at all
+<br>I miss you
+<br>Can''t believe I used to get to kiss you
+<br>In front of everyone
+<br>Now those days are gone
+<br>
+<br>You broke my heart at the end of the summer
+<br>The sky went dark at the end of the summer
+<br>
+<br>Flowers died, and
+<br>I was crying
+<br>Nobody cares at all
+<br>I need you
+<br>You told me that you loved me, I believed you
+<br>Look at what you''ve done
+<br>Autumn has begun
+<br>
+<br>I''m cold
+<br>Like the autumn leaves, I think I''m falling
+<br>A little bit in love with you
+<br>Now that summer''s through','128','2024-01-26','inglese','','https://www.youtube.com/watch?v=24LQBvzIbFU&pp=ygUedGhlIGVuZCBvZiB0aGUgc3VtbWVydG9tIG9kZWxs','2');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The Orchestra Takes Flight','Traccia strumentale','46','2024-01-26','inglese','','https://www.youtube.com/watch?v=BnZRVq1syfw&pp=ygUkdGhlIG9yY2hlc3RyYSB0YWtlcyBmbGlnaHQgdG9tIG9kZWxs','2');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Somebody Else','I''m walking down the road
+<br>I saw you driving past
+<br>In somebody else''s car
+<br>
+<br>I''m thinking to myself
+<br>I bet you''re probably breaking
+<br>Somebody else''s heart
+<br>
+<br>Blow a kiss
+<br>I am happy that you exist
+<br>Feel that light-headed feeling that I''ve missed
+<br>Oh, I''ve missed
+<br>
+<br>I wonder where you are
+<br>You''re probably waking up
+<br>In somebody else''s arms
+<br>
+<br>We tried to make it work
+<br>But all you really needed
+<br>Was somebody else''s love
+<br>
+<br>Shut my eyes
+<br>And I call your name, you reply
+<br>That your heart will heal, it just needs time
+<br>Just need time','204','2024-01-26','inglese','','https://www.youtube.com/watch?v=5oQgb0oAnwc&pp=ygUXc29tZWJvZHkgZWxzZSB0b20gb2RlbGw%3D','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Parties','We''re on the trampoline
+<br>I am imagining
+<br>How good it would be
+<br>If you kissed me
+<br>Look up at the sky
+<br>Say something like
+<br>"If I died tonight
+<br>Would you miss me?"
+<br>
+<br>I don''t know why, I come to these parties anyway, ay-ay
+<br>The only thing that happens
+<br>Is I end up saying shit I shouldn''t say
+<br>I don''t know why, I come to these parties anyway, ay-ay
+<br>Hiding all my feelings
+<br>You''re the only reason that I came
+<br>
+<br>Jump in the swimming pool
+<br>With all my clothes on
+<br>You ask me what is wrong
+<br>And I ignore you
+<br>My skin is shivering
+<br>I am considering
+<br>
+<br>Ruining everything
+<br>I adore you
+<br>The sun is coming up
+<br>Let''s watch it rise
+<br>Sitting by the pool
+<br>With tears in our eyes
+<br>
+<br>I don''t know why, I come to these parties anyway, ay-ay
+<br>The only thing that happens
+<br>Is I end up saying shit I shouldn''t say
+<br>I don''t know why, I come to these parties anyway, ay-ay
+<br>Hiding all my feelings
+<br>You''re the only reason that I came','136','2024-01-26','inglese','','https://www.youtube.com/watch?v=J-jofgjSreE&pp=ygURcGFydGllcyB0b20gb2RlbGw%3D','2');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The Orchestra is Feeling Tense','Your phone''s on
+<br>Quite frustrating this
+<br>Hang on a minute','34','2024-01-26','inglese','','https://www.youtube.com/watch?v=YADbBwwmEUs&pp=ygUodGhlIG9yY2hlc3RyYSBpcyBmZWVsaW5nIHRlbnNlIHRvbSBvZGVsbA%3D%3D','2');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Nothing Hurts Like Love','You''re sitting across a table
+<br>The wind is in your hair
+<br>Your scent is on my skin again
+<br>There''s music in the air
+<br>The barman clicks his pen
+<br>You don''t know what you wanna drink
+<br>An injured bird leaps off a branch
+<br>To fly with broken wings
+<br>
+<br>For nothing really hurts like love
+<br>Nothing knocks you down, and picks you back up
+<br>And now you''ve got to go
+<br>You don''t know who I am
+<br>And suddenly I know
+<br>Nothing really hurts like love
+<br>Nothing really hurts like love
+<br>
+<br>Autumn turns to winter
+<br>And winter turns to spring
+<br>And I''m out on the road again
+<br>The wind beneath my wings
+<br>My fingers hit the piano
+<br>The hammers hit the strings
+<br>I get up on the stage each night
+<br>I shut my eyes and I sing
+<br>
+<br>Nothing really hurts likе love
+<br>And every singlе word makes me think of us
+<br>But now I''ve let you go
+<br>The music starts to slow
+<br>I look out at the crowd
+<br>And they already know
+<br>Nothing really hurts like love
+<br>Nothing really hurts like love','232','2024-01-26','inglese','','https://www.youtube.com/watch?v=bYfRXTCuHlM&pp=ygUgbm90aGluZyBodXJ0cyBsaWtlIGxvdmV0b20gb2RlbGw%3D','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Getaway (voice note)','I scream, I fight, I kick, I bite
+<br>But they don''t stop
+<br>I hide, I run, I try to jump
+<br>But my heart drops
+<br>
+<br>Every time I get away
+<br>Every time they pull, pull me right back
+<br>Every time I get away
+<br>Every time they pull, pull me right back
+<br>I got a gun to my head','46','2024-01-26','inglese','','https://www.youtube.com/watch?v=nV0BJOexKxs&pp=ygUcdm9pY2Ugbm90ZSBnZXRhd2F5IHRvbSBvZGVsbA%3D%3D','11');
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The End','I was twenty days clean yesterday
+<br>Got a key ring if I make it through to May
+<br>Can we talk? Is that okay?
+<br>If you''ve got time, I know a place
+<br>
+<br>A rose garden in the north side of the park
+<br>They shut the gates about an hour after dark
+<br>We could walk there, we can laugh
+<br>Ain''t it funny how owners look like their dogs
+<br>
+<br>Oh, I''ll claw back my confidence
+<br>You''ll say, "Do you think we can be friends?"
+<br>Or maybe we have reached the end
+<br>Or maybe we have reached the end
+<br>
+<br>Do you remember when Taylor Hawkins died?
+<br>Did you see his son playing the drums live?
+<br>It made me sad, did it make you cry?
+<br>I thought of you, I don''t know why
+<br>
+<br>Oh, give me back my oxygen
+<br>You''ll say, "Do you think we can be friends?"
+<br>Or maybe we have reached the end
+<br>Maybe we have reached the end','206','2024-01-26','inglese','','https://www.youtube.com/watch?v=_uBi6ABJdFs&pp=ygURdGhlIGVuZCB0b20gb2RlbGw%3D','2');
+
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','38');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','39');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','40');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','41');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','42');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','43');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','44');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','45');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','46');
+INSERT INTO album_brano(album_id, brano_id) VALUES('5','47');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','48');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','49');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','50');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','51');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','52');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','53');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','54');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','55');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','56');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','57');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','58');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','59');
+INSERT INTO album_brano(album_id, brano_id) VALUES('6','60');
