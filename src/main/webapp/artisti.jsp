@@ -12,12 +12,12 @@
 		
 			<style>
 			.card {
-				width: 18rem; /* Larghezza fissa per tutte le card */
-				height: 20rem; /* Altezza fissa per tutte le card */
-			}
+				width: 18rem; 
+				height: 20rem; 
+				
 			.card-img-top {
-				height: 15rem; /* Altezza fissa per l'immagine */
-				object-fit: cover; /* L'immagine riempie lo spazio senza distorsioni */
+				height: 15rem; 
+				object-fit: cover; 
 			}
 			.card-body {
 				display: flex;
@@ -54,46 +54,14 @@
 			    <div class="card">
 			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." ">
 			      <div class="card-body text-center">
-			        <a class="card-title h5" href="<%=artista.getPseudonimo() %>"><%=artista.getPseudonimo() %></a>
+			        <a class="card-title h5" href="artista?id=<%= artista.getId() %>"><%= artista.getPseudonimo() %></a>
 			      </div>
 			    </div>
 			  </div>
 			  <%} %>
-			  <!--  
-			  <div class="col">
-			    <div class="card">
-			      <img src="..." class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Card title</h5>
-			        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			      </div>
-			    </div>
-			  </div>
-			  
-			  <div class="col">
-			    <div class="card">
-			      <img src="..." class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Card title</h5>
-			        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-			      </div>
-			    </div>
-			  </div>
-			  
-			  <div class="col">
-			    <div class="card">
-			      <img src="..." class="card-img-top" alt="...">
-			      <div class="card-body">
-			        <h5 class="card-title">Card title</h5>
-			        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			      </div>
-			    </div>
-			  </div>
-		</div>
-		-->
 		</div>
 		<!-- fine card -->
-	
+		
 		<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
