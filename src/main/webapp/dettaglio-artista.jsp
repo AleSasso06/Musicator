@@ -32,21 +32,31 @@
 	    <!-- inizio foto -->
 	    <div class="col-md-4">
 	      <picture>
-	        <img src="<%=artista.getFoto() %>"   class="img-fluid img-thumbnail rounded-circle" 
-	             alt="..."   style="width: 300px; height: 300px;">
+	        <img src="<%=artista.getFoto() %>" class="img-fluid img-thumbnail rounded-circle" alt="..." 
+		       style="width: 300px; height: 300px; position: relative; right: -50px; top: -100px; z-index: 10;">
 	      </picture>
 	    </div>
 	    <!-- fine foto -->
     
-	    <!-- dati -->
+	    <!-- nome -->
 	    <div class="col-md-8 text-center">
 	       <h1 style="color: white"><%= artista.getPseudonimo() %></h1>
 	    </div>
-	    <!-- fine dati -->
+	    <!-- fine nome -->
     
 		</div>
 		</div>
     
+    	<!-- inizio dati -->
+    	
+    	  <h6 style="color: white">Nome Artista: <%= artista.getNome() %></h6>
+    	  <h6 style="color: white">Data di nascita: <%= artista.getDataNascita() %></h6>
+    	  <h6 style="color: white">Nazionalità: <%= artista.getNazionalita() %></h6>
+    	  <h6 style="color: white">Biografia: <%= artista.getBiografia() %></h6>
+    	  
+    	
+    	
+    	<!-- fine dati -->
       
 		
 		<!-- inizio footer -->
