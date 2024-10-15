@@ -1,5 +1,6 @@
 <%@page import="java.util.List"%>
 <%@page import="it.generationitaly.musicator.entity.Brano"%>
+<%@page import="it.generationitaly.musicator.entity.Album"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,13 +20,31 @@
 	<%
 	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
 	%>
-	
+
 	<%
 	for (Brano brano : brani) {
+		 
 	%>
-	<p>
-		-<%=brano.getTitolo()%></p>
-	<%
+		<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="<%=brano.getFoto() %>" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h3 class="card-title"><%=brano.getTitolo() %> </h3>
+        <!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
+        <p class="card-text"><%=brano.getDataUscita() %></p>
+        <!-- inserire l'artista sempre attraverso lo stesso giro -->
+        <p class="card-text"><small class="text-body-secondary">Artista</small></p>
+        
+      </div>
+    </div>
+  
+  </div>
+  
+</div>
+  <%
 	}
 	%>
 
