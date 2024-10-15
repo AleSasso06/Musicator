@@ -10,6 +10,8 @@
 <title>Elenco Generi Musicali</title>
 <link rel="stylesheet" type="text/css"
 	href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="style2.css">
+
 
    <style>
    .button-spacing {
@@ -26,7 +28,9 @@
     border-radius: 5px;
     color: #FFFFFF;
 }
-  
+     
+       
+        
     </style>
 </head>
 
@@ -35,6 +39,7 @@
 <body>
 
 	<%@ include file="nav.jsp"%>
+	
 	<div class="container min-vh-10 d-flex  justify-content-center mt-5">
 		<input type="text" class="form-control" style="border-radius: 30px"
 			placeholder="Cerca il tuo genere preferito"
@@ -42,6 +47,7 @@
 		<button class="btn btn-outline-secondary" type="button"
 			id="button-addon2">Cerca</button>
 	</div>
+	
 
 	<%
 	// Recupero della lista dei generi musicali 
@@ -50,7 +56,8 @@
 
 	<div class="container">
 	 
-		<h1 class="text-center my-5">Elenco Generi Musicali</h1>
+	<h1 class="text-center my-5" style="color: #E3F2FD;">Elenco Generi Musicali</h1>
+	
 		<form action="generi" method="get">
 			<div id="genereButtons" class="d-grid gap-2 col-6 mx-auto"></div>
 		</form>
