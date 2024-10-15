@@ -45,8 +45,16 @@
         
         </div>
         
-   
+        <div class="container min-vh-10 d-flex  justify-content-center mt-5">
+   <h1 style="color:white" > Elenco brani</h1>
+</div>
 
+<div class="container">
+<ol >
+       <li>
+    </ol>
+
+</div>
 
 <footer class="footer bg-light text-center py-3">
 		        <div class="container">
