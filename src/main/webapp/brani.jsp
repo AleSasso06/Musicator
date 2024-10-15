@@ -23,31 +23,30 @@
 
 	<%
 	for (Brano brano : brani) {
-		 
 	%>
-		<div class="card mb-3" style="max-width: 1000px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="<%=brano.getFoto() %>" class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-    <div class="card-body">
-    <form action="brano" method="get">
-    
-       <a class="card-title h3" href=""><%=brano.getTitolo() %></a>
-        <!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
-        <p class="card-text"><%=brano.getDataUscita() %></p>
-        <!-- inserire l'artista sempre attraverso lo stesso giro -->
-        <p class="card-text"><small class="text-body-secondary">Artista</small></p>
-        </form>
-        
-      </div>
-    </div>
-  
-  </div>
-  
-</div>
-  <%
+	<div class="card mb-3" style="max-width: 1000px;">
+		<div class="row g-0">
+			<div class="col-md-4">
+				<img src="<%=brano.getFoto()%>" class="img-fluid rounded-start"
+					alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<form action="brano" method="get">
+
+						<a class="card-title h3" href=><%=brano.getTitolo()%></a>
+						<!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
+						<p class="card-text"><%=brano.getDataUscita()%></p>
+						<!-- inserire l'artista sempre attraverso lo stesso giro -->
+						<p class="card-text">
+							<small class="text-body-secondary">Artista</small>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<%
 	}
 	%>
 
