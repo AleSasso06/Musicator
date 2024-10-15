@@ -25,12 +25,13 @@
 			<!-- Fine Barra di Ricerca -->	
 		</div>
 			
+			<div class="container ml-3 mr-3">
 			<!-- inizio card -->
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 			  <div class="col mb-3">
 			  <%for(Artista artista : artisti) {%>
 			    <div class="card">
-			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="...">
+			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." >
 			      <div class="card-body">
 			        <h5 class="card-title"><%=artista.getPseudonimo() %></h5>
 			      </div>
@@ -69,6 +70,7 @@
 			  </div>
 		</div>
 		-->
+		</div>
 		<!-- fine card -->
 	
 		<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
