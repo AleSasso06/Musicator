@@ -32,6 +32,25 @@ INSERT INTO artista VALUES (
     'https://rapteratura.it/wp-content/uploads/2022/03/231294089_532702488154524_4967683313458270906_n-e1647948813460-720x600.jpg'  
 );
 
+INSERT INTO artista VALUES (
+'2',
+'Ariana Grande-Butera',
+'Ariana Grande',
+'1993-06-26 ',
+'Statunitense',
+'Ariana Grande è una cantante, attrice e produttrice musicale statunitense, la cui carriera artistica si è evoluta con grande successo nel corso degli anni.
+Il suo debutto risale al 2008, quando ha partecipato al musical di Broadway 13, ottenendo riconoscimenti per le sue capacità canore e recitative. 
+La grande svolta è arrivata con il ruolo di Cat Valentine nella serie televisiva di Nickelodeon Victorious (2010-2013). Successivamente ha continuato a interpretare lo stesso personaggio nello spin-off Sam & Cat (2013-2014).
+Nel frattempo, Ariana ha coltivato anche il suo talento musicale. Nel 2013 ha pubblicato il suo primo album, Yours Truly, che ha subito ottenuto un grande successo, raggiungendo il primo posto nella classifica Billboard 200. 
+Il singolo "The Way" è stato particolarmente apprezzato, contribuendo a far emergere Ariana come una delle nuove voci più interessanti nel panorama pop. Il suo secondo album, My Everything (2014), ha consolidato il suo successo. 
+Hit come "Problem", "Break Free" e "Bang Bang" hanno dominato le classifiche internazionali e l ''hanno trasformata in una star globale. Questo disco ha mostrato la sua abilità nel mescolare pop, R&B e dance. 
+Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un''immagine e un sound più maturi. Il singolo omonimo, insieme a brani come "Into You" e "Side to Side", ha confermato il suo status di icona pop. 
+Il 2017 ha rappresentato un anno particolarmente difficile per Ariana a causa dell''attentato terroristico durante il suo concerto a Manchester, che ha causato numerose vittime. In risposta, ha organizzato il concerto benefico One Love Manchester, dimostrando grande forza e solidarietà verso le vittime ',
+'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1'
+);
+
+
+
 INSERT INTO album VALUES (
 	'1',
     'My Dear Melancholy', 
@@ -43,6 +62,21 @@ INSERT INTO album VALUES (
     1,  
     6 
 );
+
+INSERT INTO album VALUES (
+'2',
+'Dangerous Woman',
+'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.[22]
+L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
+ Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
+2340, -- durata in secondi
+'2016-05-20',
+'https://images.rockol.it/B5HsUf34_VBW6U1G8rC4XlU_m68=/1200x1200/smart/rockol-img/img/foto/upload/ariana-grande-dangerous-woman.1464168039.jpg',
+2,
+2
+);
+
+
 
 INSERT INTO brano VALUES (
 	'1',
@@ -2359,3 +2393,4 @@ INSERT INTO album_brano VALUES ('34','34','3');
 INSERT INTO album_brano VALUES ('35','35','3');
 INSERT INTO album_brano VALUES ('36','36','3');
 INSERT INTO album_brano VALUES ('37','37','3');
+
