@@ -15,14 +15,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
-<<<<<<< HEAD
-@Entity
-@Table(name = "playlist")
-=======
 
 @Entity
 @Table(name = "playlist")
->>>>>>> refs/remotes/origin/ricerca_globale
 public class Playlist {
 
 	@Id
@@ -109,11 +104,7 @@ public class Playlist {
 	public void setUtente(Utente utente) {
 		this.utente = utente;
 	}
-<<<<<<< HEAD
-
-=======
 	
->>>>>>> refs/remotes/origin/ricerca_globale
 	public List<Brano> getBrani() {
 		return brani;
 	}
