@@ -25,7 +25,7 @@ public class BranoServlet extends HttpServlet {
 		Brano brano = branoRepository.findById(id);
 		
 		request.setAttribute("brano", brano);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-brano.jsp");
 		requestDispatcher.forward(request, response);
 		
 		
