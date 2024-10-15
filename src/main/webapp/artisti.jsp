@@ -9,6 +9,24 @@
 		<title>Artisti</title>
 		<link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
+		
+			<style>
+			.card {
+				width: 18rem; /* Larghezza fissa per tutte le card */
+				height: 20rem; /* Altezza fissa per tutte le card */
+			}
+			.card-img-top {
+				height: 15rem; /* Altezza fissa per l'immagine */
+				object-fit: cover; /* L'immagine riempie lo spazio senza distorsioni */
+			}
+			.card-body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+		
 	</head>
 	
 	<body>
@@ -19,21 +37,24 @@
 		
 			 <!-- Barra di Ricerca -->
 			<div class="input-group mb-3">
-			  <input type="text" class="form-control" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
-			  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>
+			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
+			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
+			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+			 </form>
 			</div>
 			<!-- Fine Barra di Ricerca -->	
 		</div>
 			
-			<div class="container ml-3 mr-3">
+			<div class="container">
 			<!-- inizio card -->
 			<div class="row row-cols-1 row-cols-md-3 g-4">
-			  <div class="col mb-3">
-			  <%for(Artista artista : artisti) {%>
+			<%for(Artista artista : artisti) {%>
+			  <div class="col-md-4 d-flex justify-content-center mb-3">
+			  
 			    <div class="card">
-			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." >
-			      <div class="card-body">
-			        <h5 class="card-title"><%=artista.getPseudonimo() %></h5>
+			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." ">
+			      <div class="card-body text-center">
+			        <a class="card-title h5" href="<%=artista.getPseudonimo() %>"><%=artista.getPseudonimo() %></a>
 			      </div>
 			    </div>
 			  </div>
