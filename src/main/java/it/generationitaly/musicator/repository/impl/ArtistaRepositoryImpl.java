@@ -26,7 +26,7 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.pseudonimo = :pseudonimo", Artista.class);
+			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.pseudonimo LIKE CONCAT('%',:pseudonimo,'%')", Artista.class);
 			query.setParameter("pseudonimo", pseudonimo);
 			/*List<Artista>*/ artisti = query.getResultList();
 			// artista = artisti.isEmpty() ? null : artisti.get(0);
@@ -52,7 +52,7 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.nazionalita = :nazionalita", Artista.class);
+			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.nazionalita LIKE CONCAT('%',:pseudonimo,'%')", Artista.class);
 			query.setParameter("nazionalita", nazionalita);
 			artisti = query.getResultList();
 			tx.commit();
