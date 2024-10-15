@@ -21,6 +21,9 @@ public class ArtistiServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	List<Artista> artisti = artistaRepository.findAll();
 	
+	for(Artista artista : artisti) {
+		System.out.println(artista);
+	}
 	request.setAttribute("artisti", artisti);
 	RequestDispatcher requestDispatcher = request.getRequestDispatcher("artisti.jsp");
 	requestDispatcher.forward(request, response);

@@ -25,7 +25,7 @@ public class AlbumServlet extends HttpServlet {
 		Album album = albumRepository.findById(id);
 		
 		request.setAttribute("album", album);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-album.jsp");
 		requestDispatcher.forward(request, response);
 		
 	}

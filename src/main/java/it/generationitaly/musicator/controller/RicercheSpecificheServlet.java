@@ -147,7 +147,7 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			request.setAttribute("albums", albums);
 			request.setAttribute("genereAlbum", genereAlbum);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("albums.jsp");
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("album.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		

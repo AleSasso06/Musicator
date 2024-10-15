@@ -66,6 +66,7 @@ public class Brano {
 	@ManyToOne
 	@JoinColumn(name = "genere_id", nullable = false)
 	private Genere genere;
+	
 
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
