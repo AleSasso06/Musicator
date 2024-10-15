@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.LinkedHashSet;
+import java.util.ArrayList;
 import java.util.List;
 import it.generationitaly.musicator.entity.*;
 import it.generationitaly.musicator.repository.AlbumRepository;
@@ -72,15 +72,34 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		
 		if(artistiInput != null) {
 			// importante fare il findByNome
+			List<Artista> artisti = new ArrayList<Artista>();
 			List<Artista> artistiPseudonimo = artistaRepository.findByPseudonimo(artistiInput);
 			List<Artista> artistiNazionalita = artistaRepository.findByNazionalita(artistiInput);
+			if (artistiPseudonimo != null && !artistiPseudonimo.isEmpty()) {
+				for (Artista artista : artistiPseudonimo) {
+					artisti.add(artista);
+					System.out.println(artista);
+				}
+				}
+				if (artistiNazionalita != null && !artistiNazionalita.isEmpty()) {
+					for (Artista artista : artistiNazionalita) {
+						artisti.add(artista);
+						System.out.println(artista);
+					}
+					}
 			
-			request.setAttribute("artistiPseudonimo", artistiPseudonimo);
-			request.setAttribute("artistiNazionalita", artistiNazionalita);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
-			requestDispatcher.forward(request, response);
-		}
+			   
+				request.setAttribute("artisti", artisti);
+				
+				
+				//request.setAttribute("artisti", artistiPseudonimo);
+				//request.setAttribute("artistiNazionalita", artistiNazionalita);
+				
+				
+				RequestDispatcher requestDispatcher = request.getRequestDispatcher("artisti.jsp");
+				requestDispatcher.forward(request, response);
+			}
 		
 		if(albumInput != null) {
 			List<Album> albumTitolo = albumRepository.findByTitolo(albumInput);
