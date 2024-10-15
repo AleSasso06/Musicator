@@ -3,7 +3,6 @@ package it.generationitaly.musicator.entity;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,14 +15,8 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
-<<<<<<< HEAD
-
 @Entity
 @Table(name = "playlist")
-=======
-@Entity
-@Table(name= "playlist")
->>>>>>> refs/heads/artista.jsp-rosa
 public class Playlist {
 
 	@Id
@@ -110,10 +103,6 @@ public class Playlist {
 		this.utente = utente;
 	}
 
-<<<<<<< HEAD
-=======
-	
->>>>>>> refs/heads/artista.jsp-rosa
 	public List<Brano> getBrani() {
 		return brani;
 	}
