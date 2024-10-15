@@ -10,7 +10,7 @@
 <title>Album</title>
 <link rel="stylesheet" type="text/css"
 	href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-	 <link rel="stylesheet" href="style.css">
+	 <link rel="stylesheet" href="style2.css">
 </head>
 <body>
 <%
@@ -23,7 +23,7 @@ List<Album> albums = (List<Album>) request.getAttribute("albums");
 		
 		<div class="input-group mb-3">
 			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
-			  <input type="text" class="form-control" name="" style="border-radius:30px" placeholder="Cerca il tuo album preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
+			  <input type="text" class="form-control" name="album" style="border-radius:30px" placeholder="Cerca il tuo album preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
 			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
 			 </form>
 			</div>
@@ -32,7 +32,6 @@ List<Album> albums = (List<Album>) request.getAttribute("albums");
 		
 	
 <div class="container min-vh-10 d-flex  justify-content-center mt-5">
-<a style="color:black;text-decoration:none;"href="#" >
 <div class="row">
 <div class="col-4">
  <% if (albums != null && !albums.isEmpty()){
@@ -40,7 +39,10 @@ for (Album album : albums){%>
 <div class="card"style="width: 18rem; ">
 <img src="<%=album.getFoto() %>" class="card-img-top" alt="...">
  <div class="card-body">
+ <a class="card-title h5" href="artista?id=<%= album.getId() %>"><%= album.getTitolo() %>
+ 
    <h5 style="text-align:center;" class="card-title"><%= album.getTitolo() %></h5>
+   </a>
    <p style="color:black;text-align:center;" class="card-text "><%= album.getArtista() %></p>
    </div>
    
@@ -58,7 +60,7 @@ for (Album album : albums){%>
    
   </div>
   </div>
-  </a>
+  
   </div>
   
   
@@ -90,7 +92,11 @@ for (Album album : albums){%>
 </div>
 -->
 </div>
-
+<footer class="footer bg-light text-center py-3">
+		        <div class="container">
+		            <p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
+		        </div>
+		    </footer>
 
 				
 	<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>

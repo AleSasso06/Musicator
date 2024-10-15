@@ -67,7 +67,7 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			request.setAttribute("braniLingua", braniLingua);
 			request.setAttribute("genereBrani", genereBrani);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("album.jsp");
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
 			requestDispatcher.forward(request, response);
 		}
 		
@@ -113,7 +113,7 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			request.setAttribute("albumBrano", albumBrano);
 			request.setAttribute("genereAlbum", genereAlbum);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("album.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
