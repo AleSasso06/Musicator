@@ -75,52 +75,10 @@
     <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
     <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
 
-
-    <!-- HERO 
-    <section id="hero" class="hero-gradient text-white d-flex align-items-center overflow-hidden" >
-        <div class="container">
-            <div class="row align-items-center  flex-column-reverse flex-md-row">
-                <div class="col-12 col-md-6"><img src="assets/immagini/hero-smartphone.webp" alt=""
-                        class="img-fluid img-shadow px-5" data-aos="fade-up"></div>
-                <div class="col-12 col-md-6 text-center text-md-start mb-5">
-                    <h1 class="fw-bolder display-5" data-aos="fade-left" data-aos-delay="600">Name songs <br
-                            class="d-none d-lg-block">in seconds</h1>
-                    <p class="fs-4 mb-4" data-aos="fade-left" data-aos-delay="900">Find music, concerts and more with
-                        Shazam</p>
-                    <div class="rounded-4 p-3 d-flex" style="background-color: #ffffff2f;" data-aos="fade-up"
-                        data-aos-delay="900">
-                        <img src="assets/immagini/qrcode.webp" alt="" class="rounded-3 me-4" width="95" height="95">
-                        <div>
-                            <p>Get the app</p>
-                            <p class="opacity-75 mb-0">Scan the code with your smart phone camera to download the free
-                                app</p>
-                        </div>
-                    </div>
-                    <p class="mb-0 mt-3" data-aos="fade-up" data-aos-delay="1200">Available on iOS, Android, and more
-                        devices</p>
-                </div>
-            </div>
-        </div>
-    </section>
     <main class="overflow-hidden">
-        <div class="pt-3"></div>-->
-        
-        
-        <!-- BANNER RADIOSPINS 
-        <a href="#" class=" link-underline link-underline-opacity-0 d-block my-5" data-aos="zoom-in">
-            <span class="mt-5 container rounded-4 text-white p-4 p-md-5" style= "background-image: url(assets/immagini/radiospins-banner-bg.webp); background-size:cover; background-position: center center">
-                <img src="assets/immagini/shazam-logo-white-trans.svg" width="64" height="64" alt="">
-                <div>
-                <p class="fs-5 mb-1">New &#8226; Radio Spins</p>
-                <h2 class="fw-bolder h1"><span style="color:#b3b9ff">Check out Shazam's new Airplay
-                        Charts</span><br>Discover current global radio trends</h2>
-                <div class="my-5 py-lg-3 py-xl-4 px-xxl-5"></div>
-                <div class="bg-white rounded-3 py-2 px-4 text-primary d-block d-md-inline-block fw-bolder text-center"> VIEW NOW</div>
-                </div> 
-            </span>
-        </a>
-        <div class="pt-3"></div>-->
-        
+        <div class="pt-3"></div>
+
+
         <div class="svg-container mt-3">
            <img alt="" src="images/logo header.svg">
                 
@@ -280,93 +238,13 @@
 
             </div>
         </div>
-        <div class="container pb-2 mb-3 border-bottom" data-aos="fade-left">
-            <h2 class="h3 fw-bold mb-0">Featured Top Artists</h2>
-        </div>
-        <!-- Swiper FEATURED-TOP-ARTISTS -->
-        <div class="container" data-aos="fade-up">
-            <div class="Swiper featured-slider mb-5" id="featured-top-artists">
-                <!-- Slides -->
-                <div class="swiper-wrapper">
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Sabrina Carpenter, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="images/img slider/topart.webp" alt="">
-                        </div>
-                        <p>Sabrina Carpenter</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Disturbed, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-02-300x300ac.webp" alt="">
-                        </div>
-                        <p>Disturbed</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Teddy Swims, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-03-300x300ac.webp" alt="">
-                        </div>
-                        <p>Teddy Swims</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Artemas, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-04-300x300ac.webp" alt="">
-                        </div>
-                        <p>Artemas</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Hozier, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-05-300x300ac.webp" alt="">
-                        </div>
-                        <p>Hozier</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Jaxomy, Agatino Romero & Raffaella Carrà, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-06-300x300ac.webp" alt="">
-                        </div>
-                        <p>Jaxomy, Agatino Romero & Raffaella Carrà</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to фрози, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-07-300x300ac.webp" alt="">
-                        </div>
-                        <p>фрози</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Taylor Swift, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-08-300x300ac.webp" alt="">
-                        </div>
-                        <p>Taylor Swift</p>
-                    </a>
-                    <!-- Slide -->
-                    <a class="swiper-slide" href="#"
-                        title="Listen to Vitamin String Quartet, watch music video, read bio, see tour dates and more!">
-                        <div class="verticale">
-                            <img src="assets/immagini/featured-top-artist/featured-top-artist-09-300x300ac.webp" alt="">
-                        </div>
-                        <p>Vitamin String Quartet</p>
-                    </a>
-                </div>
+ </div>
+  </div>              
                 <!-- paginazione (puntini) -->
                 <div class="swiper-pagination"></div>
-            </div>
-        </div>
+        
         <!-- DISCOVER ITALY -->
-        <section class=" py-5">
+        <section class="bg-body-secondary py-5">
             <div class="container text-center">
                 <img class="rounded-circle border border-white border-5 shadow"
                     src="assets/immagini/discovery-italy/left.jpg" alt=""
@@ -547,9 +425,104 @@
                     </div>
                 </div>
             </div>
-
+            <div class="container pb-2 mb-3 border-bottom mt-5" data-aos="fade-left">
+                <h2 class="h3 fw-bold mb-0">Featured Discovery Artists</h2>
+            </div>
+            <!-- Swiper FEATURED-DISCOVERY-ARTISTS -->
+            <div class="container" data-aos="fade-up">
+                <div class="swiper featured-slider mb-5" id="featured-discovery-artists">
+                    <!-- Slides -->
+                    <div class="swiper-wrapper">
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Sabrina Carpenter, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-01-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Sabrina Carpenter</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Disturbed, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-02-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Disturbed</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Teddy Swims, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-03-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Teddy Swims</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Artemas, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-04-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Artemas</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Hozier, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-05-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Hozier</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Jaxomy, Agatino Romero & Raffaella Carrà, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-06-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Jaxomy, Agatino Romero & Raffaella Carrà</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to фрози, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-07-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>фрози</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Taylor Swift, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-08-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Taylor Swift</p>
+                        </a>
+                        <!-- Slide -->
+                        <a class="swiper-slide" href="#"
+                            title="Listen to Vitamin String Quartet, watch music video, read bio, see tour dates and more!">
+                            <div class="verticale">
+                                <img src="assets/immagini/featured-top-artist/featured-top-artist-09-300x300ac.webp"
+                                    alt="">
+                            </div>
+                            <p>Vitamin String Quartet</p>
+                        </a>
+                    </div>
+                    <!-- paginazione (puntini) -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </section>
- </main>
+
+    </main>
+
 
     <footer class="bg-dark text-light py-5">
         <div class="container text-center text-lg-start">
