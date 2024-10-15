@@ -43,14 +43,10 @@
 				    </form>
  -->				
 				   <!-- Pulsante Login -->
-				   	<form class="d-flex me-2" role="sign-in">
-					    <button id="reg" class="btn custom-login-btn" type="submit">Login</button>
-					</form>
+				   <a href="./login1.jsp" class="btn custom-login-btn" id="reg">Login</a>
 				   
 					<!-- Pulsante Registrati -->
-					<form class="d-flex" role="login">
-					    <button id="log" class="btn custom-register-btn" type="submit">Registrati</button>
-					</form>
+					<a href="./sign-in.jsp" class="btn custom-register-btn" id="log">Registrati</a>
 				</div>			 <!-- 
 			 	<form class="d-flex" role="search">
 			      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
