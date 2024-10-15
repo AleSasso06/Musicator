@@ -31,12 +31,15 @@
       <img src="<%=brano.getFoto() %>" class="img-fluid rounded-start" alt="...">
     </div>
     <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title"><%=brano.getTitolo() %> </h3>
+    <div class="card-body">
+    <form action="brano" method="get">
+    
+       <a class="card-title h3" href=""><%=brano.getTitolo() %></a>
         <!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
         <p class="card-text"><%=brano.getDataUscita() %></p>
         <!-- inserire l'artista sempre attraverso lo stesso giro -->
         <p class="card-text"><small class="text-body-secondary">Artista</small></p>
+        </form>
         
       </div>
     </div>
