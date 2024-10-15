@@ -44,8 +44,10 @@
 		<input type="text" class="form-control" style="border-radius: 30px"
 			placeholder="Cerca il tuo genere preferito"
 			aria-label="Recipient's username" aria-describedby="button-addon2">
+			<!--  
 		<button class="btn btn-outline-secondary" type="button"
 			id="button-addon2">Cerca</button>
+			 -->
 	</div>
 	
 
