@@ -23,7 +23,7 @@ public class GeneriServlet extends HttpServlet {
 		List<Genere> generi = genereRepository.findAll();
 		
 		request.setAttribute("generi", generi);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("generi.jsp");
 		requestDispatcher.forward(request, response);
 	}
 
