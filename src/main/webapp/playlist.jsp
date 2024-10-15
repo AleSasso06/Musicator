@@ -31,12 +31,14 @@
 		    <%for (Playlist playlist : playlists) {
 		    	%>
 		    <div class="row">
+		    	<a href="playlist?id=<%=playlist.getId()%>">
 		    	<div class="col">
 		    		<img src="<%=playlist.getFoto()%>">
 		    	</div>
 		    	<div class="col">
 		    		<span><%=playlist.getTitolo()%></span>
 		    	</div>
+		    	</a>
 		    </div>
 		    <%} %>
 		    <%} else { %>

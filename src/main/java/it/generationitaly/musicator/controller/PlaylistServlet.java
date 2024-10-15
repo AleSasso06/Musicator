@@ -25,7 +25,7 @@ public class PlaylistServlet extends HttpServlet {
 		Playlist playlist = playlistRepository.findById(id);
 		
 		request.setAttribute("playlist", playlist);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio_playlist.jsp");
 		requestDispatcher.forward(request, response);
 	
 	}
