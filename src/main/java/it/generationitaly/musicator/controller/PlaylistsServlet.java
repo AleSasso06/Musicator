@@ -21,7 +21,7 @@ public class PlaylistsServlet extends HttpServlet {
 			throws ServletException, IOException {
 		List<Playlist> playlists = playlistRepository.findAll();
 		request.setAttribute("playlists", playlists);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("playlist.jsp");
 		requestDispatcher.forward(request, response);
 	}
 

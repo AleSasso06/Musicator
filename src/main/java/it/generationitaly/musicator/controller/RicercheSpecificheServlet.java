@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.LinkedHashSet;
 import java.util.List;
 import it.generationitaly.musicator.entity.*;
 import it.generationitaly.musicator.repository.AlbumRepository;
@@ -97,13 +98,17 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		}
 		
 		if(playlistInput != null) {
+			LinkedHashSet<Playlist> playlists = null;
+			
 			List<Playlist> playlistTitolo = playlistRepository.findByTitolo(playlistInput);
 			// ne servono altre? forse anche findPlaylistByBrano non sarebbe male
 			// spotify ha anche qualcosa di simile a findPlaylistByArtista con le sue radio o this is *Nome Artista*
 			
-			request.setAttribute("playlistTitolo", playlistTitolo);
+			playlists.addAll(playlistTitolo);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+			request.setAttribute("playlists", playlists);
+			
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("playlist.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
