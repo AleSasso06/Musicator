@@ -43,7 +43,7 @@
 				    </form>
  -->				
 				   <!-- Pulsante Login -->
-				   <a href="./login.jsp" class="btn custom-login-btn" id="reg">Login</a>
+				   <a href="./login.jsp" class="btn custom-login-btn me-2 " id="reg">Login</a>
 				   
 					<!-- Pulsante Registrati -->
 					<a href="./sign-in.jsp" class="btn custom-register-btn" id="log">Registrati</a>

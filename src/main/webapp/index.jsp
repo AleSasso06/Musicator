@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Welcome to Musicator!</title>
 		 <!-- Bootstrap css -->
-		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 		 <!-- Bs Icons -->
 	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		 <!-- css locali -->
@@ -16,6 +17,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		
+		
 
 		
 		    <style>
@@ -425,96 +429,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container pb-2 mb-3 border-bottom mt-5" data-aos="fade-left">
-                <h2 class="h3 fw-bold mb-0">Featured Discovery Artists</h2>
-            </div>
-            <!-- Swiper FEATURED-DISCOVERY-ARTISTS -->
-            <div class="container" data-aos="fade-up">
-                <div class="swiper featured-slider mb-5" id="featured-discovery-artists">
-                    <!-- Slides -->
-                    <div class="swiper-wrapper">
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Sabrina Carpenter, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-01-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Sabrina Carpenter</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Disturbed, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-02-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Disturbed</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Teddy Swims, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-03-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Teddy Swims</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Artemas, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-04-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Artemas</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Hozier, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-05-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Hozier</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Jaxomy, Agatino Romero & Raffaella Carrà, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-06-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Jaxomy, Agatino Romero & Raffaella Carrà</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to фрози, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-07-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>фрози</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Taylor Swift, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-08-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Taylor Swift</p>
-                        </a>
-                        <!-- Slide -->
-                        <a class="swiper-slide" href="#"
-                            title="Listen to Vitamin String Quartet, watch music video, read bio, see tour dates and more!">
-                            <div class="verticale">
-                                <img src="assets/immagini/featured-top-artist/featured-top-artist-09-300x300ac.webp"
-                                    alt="">
-                            </div>
-                            <p>Vitamin String Quartet</p>
-                        </a>
-                    </div>
+
                     <!-- paginazione (puntini) -->
                     <div class="swiper-pagination"></div>
                 </div>
@@ -599,7 +514,7 @@
             </div>
         </div>
     </footer>
-    <!-- barra fissa promo -->
+    <!-- barra fissa promo 
     <div class="fixed-bottom py-2 px-4 bg-redpromo">
         <div href="#" class="link-light  link-underline link-underline-opacity-0">
             <div class="container-fluid d-flex justify-content-between align-items-center fw-bold">
@@ -607,7 +522,7 @@
                 <div class="bg-white rounded-3 text-danger py-2 px-4 text-redpromo">TRY NOW</div>
             </div>
         </div>
-    </div>
+    </div>-->
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
