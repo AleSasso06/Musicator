@@ -37,8 +37,8 @@
 				    </div>
 				</form>
 <!-- 				    Barra di Ricerca
-				    <form class="d-flex me-2" role="search">
-				        <input class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
+					<form class="d-flex me-2" role="search" action="ricerca_globale" method="get">
+					    <input name="ricercaUtente" class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
 				        <button class="btn btn-outline-success" type="submit">Cerca</button>
 				    </form>
  -->				

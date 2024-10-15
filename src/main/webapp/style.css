@@ -12,6 +12,11 @@ p .global {
 	color: #881141;
 }
 
+.h1center {
+	text-align: center;
+	padding: 50px !important;
+}
+
 h2 {
 	color: white !important;
 }

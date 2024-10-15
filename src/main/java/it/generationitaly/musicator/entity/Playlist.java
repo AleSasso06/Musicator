@@ -15,6 +15,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
+
 @Entity
 @Table(name = "playlist")
 public class Playlist {
@@ -41,6 +42,7 @@ public class Playlist {
 	private boolean pubblica;
 
 	@ManyToOne
+	@JoinColumn(name = "utente_id")
 	private Utente utente;
 
 	@ManyToMany
@@ -102,7 +104,7 @@ public class Playlist {
 	public void setUtente(Utente utente) {
 		this.utente = utente;
 	}
-
+	
 	public List<Brano> getBrani() {
 		return brani;
 	}
