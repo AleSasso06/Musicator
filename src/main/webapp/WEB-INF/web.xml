@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" 
-xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
   <display-name>musicator</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -139,5 +138,25 @@ xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/n
   <servlet-mapping>
     <servlet-name>PlaylistsServlet</servlet-name>
     <url-pattern>/playlists</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ArtistiServlet</display-name>
+    <servlet-name>ArtistiServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.ArtistiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArtistiServlet</servlet-name>
+    <url-pattern>/artisti</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GeneriServlet</display-name>
+    <servlet-name>GeneriServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.GeneriServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GeneriServlet</servlet-name>
+    <url-pattern>/generi</url-pattern>
   </servlet-mapping>
 </web-app>

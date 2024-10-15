@@ -7,6 +7,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import it.generationitaly.musicator.entity.*;
@@ -47,10 +48,13 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		// si fanno delle ricerche nel genere? Dalla pagina dei generi con le card non ha senso cercare
 		// neanche in quella di dettaglio o forse si? tipo cercare delle playlist 
 		// o dei decenni (mi viene da pensare al rock e pop)
+		// Qui voglio che se cerco 'rock' mi venga fuori il genere
+		// su cui schiacciare per vedere tutti i brani (e album?) rock
 		String generiInput = request.getParameter("generi");
 		
 		// avrebbe senso farlo con lo switch ma non so come
 		if(braniInput != null) {
+			List<Brano> brani = new ArrayList<Brano>();
 			List<Brano> braniTitolo = branoRepository.findByTitolo(braniInput);
 			List<Brano> braniArtista = branoRepository.findByArtista(braniInput);
 			List<Brano> braniAlbum = branoRepository.findByAlbum(braniInput);
@@ -58,53 +62,108 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			// metto anche qui la ricercaByGenere ma ci andrà l'if
 			List<Genere> genereBrani = genereRepository.findByNome(braniInput);
 			
+			if(braniTitolo != null && !braniTitolo.isEmpty()) {
+				for(Brano brano : braniTitolo) {
+					brani.add(brano);
+				}
+			}
+			if(braniArtista != null && !braniArtista.isEmpty()) {
+				for(Brano brano : braniArtista) {
+					brani.add(brano);
+				}
+			}
+			if(braniAlbum != null && !braniAlbum.isEmpty()) {
+				for(Brano brano : braniAlbum) {
+					brani.add(brano);
+				}
+			}
+			if(braniLingua != null && !braniLingua.isEmpty()) {
+				for(Brano brano : braniLingua) {
+					brani.add(brano);
+				}
+			}
+			
+			// manca il genere come attribute?
+			
 			// poi che succede? ora ho le ricerche. Le devo restituire alla pagina giusta
 			// forse poi dovrò switchare le request con le session
-			request.setAttribute("braniTitolo", braniTitolo);
-			request.setAttribute("braniArtista", braniArtista);
-			request.setAttribute("braniAlbum", braniAlbum);
-			request.setAttribute("braniLingua", braniLingua);
+			request.setAttribute("brani", brani);
 			request.setAttribute("genereBrani", genereBrani);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("brani.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
 		if(artistiInput != null) {
 			// importante fare il findByNome
+			List<Artista> artisti = new ArrayList<Artista>();
 			List<Artista> artistiPseudonimo = artistaRepository.findByPseudonimo(artistiInput);
 			List<Artista> artistiNazionalita = artistaRepository.findByNazionalita(artistiInput);
 			
-			request.setAttribute("artistiPseudonimo", artistiPseudonimo);
-			request.setAttribute("artistiNazionalita", artistiNazionalita);
-			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+			if (artistiPseudonimo != null && !artistiPseudonimo.isEmpty()) {
+				for (Artista artista : artistiPseudonimo) {
+					artisti.add(artista);
+					System.out.println(artista);
+				}
+			}
+			if (artistiNazionalita != null && !artistiNazionalita.isEmpty()) {
+				for (Artista artista : artistiNazionalita) {
+					artisti.add(artista);
+					System.out.println(artista);
+				}
+			}
+				
+			request.setAttribute("artisti", artisti);
+			//request.setAttribute("artisti", artistiPseudonimo);
+			//request.setAttribute("artistiNazionalita", artistiNazionalita);
+				
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("artisti.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
 		if(albumInput != null) {
+			List<Album> albums = new ArrayList<Album>();
 			List<Album> albumTitolo = albumRepository.findByTitolo(albumInput);
 			List<Album> albumArtista = albumRepository.findByArtista(albumInput);
 			List<Album> albumBrano = albumRepository.findByBrano(albumInput);
 			List<Genere> genereAlbum = genereRepository.findByNome(albumInput);
 			
-			request.setAttribute("albumTitolo", albumTitolo);
-			request.setAttribute("albumArtista", albumArtista);
-			request.setAttribute("albumBrano", albumBrano);
+			if(albumTitolo != null && !albumTitolo.isEmpty()) {
+				for(Album album : albumTitolo) {
+					albums.add(album);
+				}
+			}
+			if(albumArtista != null && !albumArtista.isEmpty()) {
+				for(Album album : albumArtista) {
+					albums.add(album);
+				}
+			}
+			if(albumBrano != null && !albumBrano.isEmpty()) {
+				for(Album album : albumBrano) {
+					albums.add(album);
+				}
+			}
+			
+			request.setAttribute("albums", albums);
 			request.setAttribute("genereAlbum", genereAlbum);
 			
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("albums.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
 		if(playlistInput != null) {
-			LinkedHashSet<Playlist> playlists = null;
+			List<Playlist> playlists = null;
 			
 			List<Playlist> playlistTitolo = playlistRepository.findByTitolo(playlistInput);
 			// ne servono altre? forse anche findPlaylistByBrano non sarebbe male
 			// spotify ha anche qualcosa di simile a findPlaylistByArtista con le sue radio o this is *Nome Artista*
 			
-			playlists.addAll(playlistTitolo);
+			if(playlistTitolo != null && !playlistTitolo.isEmpty()) {
+				for(Playlist playlist : playlistTitolo) {
+					playlists.add(playlist);
+				}
+			}
+			// playlists.addAll(playlistTitolo);
 			
 			request.setAttribute("playlists", playlists);
 			
