@@ -12,9 +12,21 @@
 	href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 
    <style>
-        .button-spacing {
-            margin-bottom: 30px;
-        }
+   .button-spacing {
+    padding: 10px 20px;
+    background-color: #C2185B;
+      }
+        
+        .btn-custom {
+       .genre-list li {
+    
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: #C2185B;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+  
     </style>
 </head>
 
@@ -37,24 +49,34 @@
 	%>
 
 	<div class="container">
+	 
 		<h1 class="text-center my-5">Elenco Generi Musicali</h1>
 		<form action="generi" method="get">
 			<div id="genereButtons" class="d-grid gap-2 col-6 mx-auto"></div>
 		</form>
 		</div>
 	<div class="container ">
-	<div class="row row-cols-1 row-cols-md-3 g-4">
+	 
+	<div class="row row-cols-1 row-cols-md-3 g-4">  
 		<%
 		// Verifica se la lista di generi se non null
 		if (generi != null && !generi.isEmpty()) {
 
 			for (Genere genere : generi) {
 		%>
+		<div class="col-md-4">
+    <button type="button" class="btn btn-secondary btn-lg w-100 button-spacing" onclick="window.location.href='genere?id=<%= genere.getId() %>'">
+        <%= genere.getNome() %>
+    </button>
+</div>
+		
+	<!--  
 <button type="button" class="btn btn-secondary btn-lg">
 		<a href="genere"?id=<%=genere.getId()%> " class="btn btn-custom">
 			<%=genere.getNome()%>
-		</a>
+			</a>
 		</button>
+		-->
 		<%
 		}
 		} else {
@@ -65,7 +87,11 @@
 		%>
 	</div>
 </div>
-
+<footer class="footer bg-light text-center py-3">
+		        <div class="container">
+		            <p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
+		        </div>
+		    </footer>
 	<script type="text/javascript"
 		src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 
