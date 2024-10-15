@@ -52,7 +52,7 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.nazionalita LIKE CONCAT('%',:pseudonimo,'%')", Artista.class);
+			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.nazionalita = :nazionalita", Artista.class);
 			query.setParameter("nazionalita", nazionalita);
 			artisti = query.getResultList();
 			tx.commit();

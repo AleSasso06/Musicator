@@ -2394,3 +2394,43 @@ INSERT INTO album_brano VALUES ('35','35','3');
 INSERT INTO album_brano VALUES ('36','36','3');
 INSERT INTO album_brano VALUES ('37','37','3');
 
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+'Mitski Miyawaki',
+'Mitski',
+'1990-09-27',
+'Giapponese',
+'A volte Mitski sente che la vita sarebbe più facile senza speranza, senza un''anima o senza amore. Ma quando chiude gli occhi e pensa a ciò che è veramente suo, a ciò che non può essere ripreso o demolito, vede l''amore. "La cosa migliore che abbia mai fatto nella mia vita è stata amare le persone," dice. "Vorrei poter lasciare dietro di me tutto l''amore che ho dopo la mia morte, così da poter illuminare gli altri con tutta questa bontà, tutto questo amore che ho creato." Spera che il suo ultimo album, The Land Is Inhospitable and So Are We, possa risplendere d''amore a lungo dopo che lei se ne sarà andata. È proprio così che si sente: come un amore che perseguita la terra. "Questo è il mio album più americano," dice. La musica sembra un atto profondo di testimonianza di questo paese, con tutte le sue sofferenze private e contraddizioni. Musicalmente, è l''album più epico e saggio di Mitski, introduce ferite e poi le guarisce attivamente. Qui, l''amore viaggia nel tempo per benedire i nostri giorni teneri, come la luce di una stella lontana. È pieno del dolore dei cuori spezzati e delle gioie apparentemente banali ma enormi che spesso non vengono cantate. È una piccola epica. Dal fondo di un bicchiere, a un vialetto fangoso di memoria e neve, a un treno merci che sfreccia attraverso il Midwest, fino alla luna, sembra che tutto e tutti stiano gridando di dolore, protendendosi verso l''amore. L''amore è quella terra inospitale, che ci chiama e poi ci respinge. Amare questo posto, questa terra, questa America, questo corpo richiede lavoro. Potrebbe essere impossibile. Le cose migliori lo sono.',
+'https://cdn.prod.website-files.com/61b0d97defe7049ee34fa045/65ca57e1c8fceb53db7d5276_240604%20Mitski-600x400.png'
+);
+
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+'Dangerous Woman',
+'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.
+L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
+Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
+2340, -- durata in secondi
+'2016-05-20',
+'https://images.rockol.it/B5HsUf34_VBW6U1G8rC4XlU_m68=/1200x1200/smart/rockol-img/img/foto/upload/ariana-grande-dangerous-woman.1464168039.jpg',
+3,
+2
+);
+
+
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+'Ariana Grande-Butera',
+'Ariana Grande',
+'1993-06-26',
+'Statunitense',
+'Ariana Grande è una cantante, attrice e produttrice musicale statunitense, la cui carriera artistica si è evoluta con grande successo nel corso degli anni.
+Il suo debutto risale al 2008, quando ha partecipato al musical di Broadway 13, ottenendo riconoscimenti per le sue capacità canore e recitative.
+La grande svolta è arrivata con il ruolo di Cat Valentine nella serie televisiva di Nickelodeon Victorious (2010-2013). Successivamente ha continuato a interpretare lo stesso personaggio nello spin-off Sam & Cat (2013-2014).
+Nel frattempo, Ariana ha coltivato anche il suo talento musicale. Nel 2013 ha pubblicato il suo primo album, Yours Truly, che ha subito ottenuto un grande successo, raggiungendo il primo posto nella classifica Billboard 200.
+Il singolo "The Way" è stato particolarmente apprezzato, contribuendo a far emergere Ariana come una delle nuove voci più interessanti nel panorama pop. Il suo secondo album, My Everything (2014), ha consolidato il suo successo.
+Hit come "Problem", "Break Free" e "Bang Bang" hanno dominato le classifiche internazionali e l ''hanno trasformata in una star globale. Questo disco ha mostrato la sua abilità nel mescolare pop, R&B e dance.
+Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un''immagine e un sound più maturi. Il singolo omonimo, insieme a brani come "Into You" e "Side to Side", ha confermato il suo status di icona pop.
+Il 2017 ha rappresentato un anno particolarmente difficile per Ariana a causa dell''attentato terroristico durante il suo concerto a Manchester, che ha causato numerose vittime. In risposta, ha organizzato il concerto benefico One Love Manchester, dimostrando grande forza e solidarietà verso le vittime ',
+'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1'
+);
