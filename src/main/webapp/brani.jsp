@@ -16,15 +16,13 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<%@ include file="nav.jsp"%>
-	<%
+<%
+
 	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
 	%>
-
-	<%
-	for (Brano brano : brani) {
-	%>
-	 <!-- Barra di Ricerca -->
+	<%@ include file="nav.jsp"%>
+	
+ <!-- Barra di Ricerca -->
 			<div class="input-group mb-3">
 			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
 			  <input type="text" class="form-control" name="brani" style="border-radius:30px" placeholder="Cerca il tuo brano preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -32,7 +30,12 @@
 			 </form>
 			</div>
 			<!-- Fine Barra di Ricerca -->
-	<div class="card mb-3" style="max-width: 1000px;">
+	<%
+	for (Brano brano : brani) {
+	%>
+	
+			<!-- inizio card -->
+	<div class="card mb-3 ms-3" style="max-width: 1000px;">
 		<div class="row g-0">
 			<div class="col-md-4">
 				<img src="<%=brano.getFoto()%>" class="img-fluid rounded-start"
@@ -42,12 +45,12 @@
 				<div class="card-body">
 					<form action="brano" method="get">
 
-						<a class="card-title h3" href=><%=brano.getTitolo()%></a>
+						 <a class="card-title h3" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %></a>
 						<!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
-						<p class="card-text"><%=brano.getDataUscita()%></p>
+						<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
 						<!-- inserire l'artista sempre attraverso lo stesso giro -->
 						<p class="card-text">
-							<small class="text-body-secondary">Artista</small>
+							<small class="text-body-secondary">Artista </small>
 						</p>
 					</form>
 				</div>
