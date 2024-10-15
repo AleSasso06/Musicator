@@ -61,7 +61,7 @@ public class RicercaGlobaleServlet extends HttpServlet {
 		request.setAttribute("playlist", playlist);
 		// qui nel jsp andrà un "if generi != null mostra, else nascondi"
 		request.setAttribute("generi", generi); 
-		
+		request.setAttribute("inputUtente", inputUtente);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("ricerca-globale.jsp");
 		requestDispatcher.forward(request, response);
 		

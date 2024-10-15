@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -12,9 +13,12 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
+@Entity
+@Table(name = "playlist")
 public class Playlist {
 
 	@Id
@@ -39,6 +43,7 @@ public class Playlist {
 	private boolean pubblica;
 
 	@ManyToOne
+	@JoinColumn(name = "utente_id")
 	private Utente utente;
 
 	@ManyToMany
@@ -99,6 +104,14 @@ public class Playlist {
 
 	public void setUtente(Utente utente) {
 		this.utente = utente;
+	}
+	
+	public List<Brano> getBrani() {
+		return brani;
+	}
+
+	public void setBrani(List<Brano> brani) {
+		this.brani = brani;
 	}
 
 	@Override

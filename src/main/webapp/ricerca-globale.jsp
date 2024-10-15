@@ -32,13 +32,13 @@
 	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
 	%>
 	<%
-	Artista artisti = (Artista) request.getAttribute("artisti");
+	List<Artista> artisti = (List<Artista>) request.getAttribute("artisti");
 	%>
 	<%
-	Playlist playlists = (Playlist) request.getAttribute("playlist");
+	List<Playlist> playlists = (List<Playlist>) request.getAttribute("playlist");
 	%>
 	<%
-	Genere generi = (Genere) request.getAttribute("generi");
+	List<Genere> generi = (List<Genere>) request.getAttribute("generi");
 	%>
 	<%@ include file="nav.jsp"%>
 
@@ -49,13 +49,17 @@
 		<div class="col">
 			<div class="p-8">
 				<h1 class="fw-bold text-light h1center">
-					Risultati ricerca '<%=request.getParameter("inputUtente")%>'
+					Risultati ricerca '<%=request.getAttribute("inputUtente")%>'
 				</h1>
 			</div>
 		</div>
-
+		
 		<!-- Griglia delle card -->
 		<div class="row">
+		<% if (!artisti.isEmpty()) { %>
+		<h2 style="margin-bottom: 15px">Brani</h2>
+			<% for (Brano brano : brani) { %>
+			<% for (Artista artista : artisti) { %>
 			<div class="col-md-6 mb-3">
 				<div class="card song-card">
 					<div class="row no-gutters align-items-center">
@@ -66,8 +70,8 @@
 						</div>
 						<div class="col">
 							<div class="card-body">
-								<h5 class="card-title">Die With A Smile</h5>
-								<p class="text-dark card-text">Lady Gaga & Bruno Mars</p>
+								<h5 class="card-title"><%= brano.getTitolo() %></h5>
+								<p class="text-dark card-text">Ci pensiamo domani</p>
 							</div>
 						</div>
 						<div class="col-auto">
@@ -78,179 +82,89 @@
 					</div>
 				</div>
 			</div>
+			<% } %>
+			<% } %>
+			<% } else { %>
+			<p></p>
+		<% } %>
 			<!-- Ripeti per altre card -->
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://i.scdn.co/image/ab67616d0000b27391b4bc7c88d91a42e0f3a8b7"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">Good Luck, Babe!</h5>
-								<p class="text-dark card-text">Chappell Roan</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://m.media-amazon.com/images/I/41E4aY7ZVnL._UXNaN_FMjpg_QL85_.jpg"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">m%n</h5>
-								<p class="text-dark card-text">thasup</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
-								<p class="text-dark card-text">Marracash</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
-								<p class="text-dark card-text">Marracash</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
-								<p class="text-dark card-text">Marracash</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
-								<p class="text-dark card-text">Marracash</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
-								<p class="text-dark card-text">Marracash</p>
-							</div>
-						</div>
-						<div class="col-auto">
-							<button class="btn btn-play">
-								<i class="bi bi-play-circle-fill"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- Aggiungi altre card simili per ogni canzone -->
 		</div>
+		<!-- <div class="row mb-4">
+			<div class="col d-flex justify-content-center">
+				<a class="carousel-control-prev" href=""
+					role="button" data-slide="prev"> <span
+					class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+					class="sr-only"></span>
+				</a> <a class="carousel-control-next" href=""
+					role="button" data-slide="next"> <span
+					class="carousel-control-next-icon" aria-hidden="true"></span> <span
+					class="sr-only"></span>
+				</a>
+			</div>
+		</div> -->
+	<% if (!artisti.isEmpty()) { %>
+		<h2 style="margin-bottom: 15px">Artisti</h2>
+		<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+		<% for (Artista artista : artisti) { %>
+		<a class="card-title h5" href="artista?id=<%= artista.getId() %>"><%= artista.getPseudonimo() %>
+		<div class="col-p-3 mx-4 mb-4">
+			<div class="card" style="width: 275px;">
+				<img src="<%= artista.getFoto() %>" height="275" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title text-center"><%= artista.getPseudonimo() %></h5>
+				</div>
+			</div>
+		</div>
+		</a>
+		<% } %>
+		</div>
+		<% } else { %>
+			<p></p>
+		<% } %>
+		<!-- <div class="col-p-3 mx-4 mb-4">
+			<div class="card" style="width: 275px;">
+				<img src="https://i.scdn.co/image/ab6761610000517460f57316669a4ba12eb37b94" height="275" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title text-center">Lady Gaga</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-p-3 mx-4 mb-4">
+			<div class="card" style="width: 275px;">
+				<img src="https://i.scdn.co/image/ab6761610000e5eb2ab61d146599aeea3bdd771a" height="275" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title text-center">thasup</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-p-3 mx-4 mb-4">
+			<div class="card" style="width: 275px;">
+				<img src="https://i.scdn.co/image/ab6761610000e5eb4bfa622806527d4dd894185a" height="275" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title text-center">Marracash</h5>
+				</div>
+			</div>
+		</div>
+		 </div> -->
+		 <% if (!albums.isEmpty()) { %>
+			<h2 style="margin-bottom: 15px">Album</h2>
+			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+			<% for (Album album : albums) { %>
+			<div class="col-p-3 mx-4 mb-4">
+				<div class="card" style="width: 275px;">
+					<img src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title text-center"><%= album.getTitolo() %></h5>
+					</div>
+				</div>
+			</div>
+			<% } %>
+		<% } else { %>
+			<p></p>
+		<% } %>
+			
 
-		<!-- Slider per navigare tra le pagine della classifica -->
-		<div class="row mt-4">
-			<div class="col d-flex justify-content-end">
-				<button class="btn btn-slider-prev">
-					<i class="bi bi-arrow-left-circle"></i>
-				</button>
-				<button class="btn btn-slider-next ms-2">
-					<i class="bi bi-arrow-right-circle"></i>
-				</button>
-			</div>
-		</div>
 	</div>
-
-
-
 	<!-- Footer -->
 	<footer class="footer bg-light text-center py-3">
 		<div class="container">
