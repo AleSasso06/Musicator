@@ -1,5 +1,11 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="it.generationitaly.musicator.entity.Album"%>
+<%@ page import="it.generationitaly.musicator.entity.Brano"%>
+<%@ page import="it.generationitaly.musicator.entity.Artista"%>
+<%@ page import="it.generationitaly.musicator.entity.Playlist"%>
+<%@ page import="it.generationitaly.musicator.entity.Genere"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +25,21 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<%
+	List<Album> albums = (List<Album>) request.getAttribute("album");
+	%>
+	<%
+	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
+	%>
+	<%
+	Artista artisti = (Artista) request.getAttribute("artisti");
+	%>
+	<%
+	Playlist playlists = (Playlist) request.getAttribute("playlist");
+	%>
+	<%
+	Genere generi = (Genere) request.getAttribute("generi");
+	%>
 	<%@ include file="nav.jsp"%>
 
 	<!-- Sezione Classifica Globale -->
@@ -39,13 +60,14 @@
 				<div class="card song-card">
 					<div class="row no-gutters align-items-center">
 						<div class="col-auto">
-							<img src="images/img_album/lady gaga B.webp"
-								class="img-fluid rounded-start song-img" alt="...">
+							<img
+								src="https://i.discogs.com/my-Hw-OAoNKQoTss4C8BhpJUPCPa4WXOJNcFY9myKls/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNDky/NjM0LTE3MjQzMjYw/NzItOTIwNi5qcGVn.jpeg"
+								height="110" class="rounded song-img" alt="...">
 						</div>
 						<div class="col">
 							<div class="card-body">
 								<h5 class="card-title">Die With A Smile</h5>
-								<p class="card-text">Lady Gaga & Bruno Mars</p>
+								<p class="text-dark card-text">Lady Gaga & Bruno Mars</p>
 							</div>
 						</div>
 						<div class="col-auto">
@@ -61,13 +83,146 @@
 				<div class="card song-card">
 					<div class="row no-gutters align-items-center">
 						<div class="col-auto">
-							<img src="path-to-image2.jpg"
-								class="img-fluid rounded-start song-img" alt="...">
+							<img
+								src="https://i.scdn.co/image/ab67616d0000b27391b4bc7c88d91a42e0f3a8b7"
+								height="110" class="rounded song-img" alt="...">
 						</div>
 						<div class="col">
 							<div class="card-body">
 								<h5 class="card-title">Good Luck, Babe!</h5>
-								<p class="card-text">Chappell Roan</p>
+								<p class="text-dark card-text">Chappell Roan</p>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-play">
+								<i class="bi bi-play-circle-fill"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="https://m.media-amazon.com/images/I/41E4aY7ZVnL._UXNaN_FMjpg_QL85_.jpg"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<h5 class="card-title">m%n</h5>
+								<p class="text-dark card-text">thasup</p>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-play">
+								<i class="bi bi-play-circle-fill"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
+								<p class="text-dark card-text">Marracash</p>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-play">
+								<i class="bi bi-play-circle-fill"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
+								<p class="text-dark card-text">Marracash</p>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-play">
+								<i class="bi bi-play-circle-fill"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
+								<p class="text-dark card-text">Marracash</p>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-play">
+								<i class="bi bi-play-circle-fill"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
+								<p class="text-dark card-text">Marracash</p>
+							</div>
+						</div>
+						<div class="col-auto">
+							<button class="btn btn-play">
+								<i class="bi bi-play-circle-fill"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="https://i.scdn.co/image/ab67616d00001e0289070654f69ee060803403f3"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<h5 class="card-title">QUELLI CHE NON PENSANO - Il cervello</h5>
+								<p class="text-dark card-text">Marracash</p>
 							</div>
 						</div>
 						<div class="col-auto">
