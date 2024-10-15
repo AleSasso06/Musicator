@@ -19,15 +19,29 @@ public class AlbumsServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
 		/*
 		 * in seguito aggiungere casistiche di ricerca diverse prendendno il parametro
 		 * (request.getParameter("genere")
 		 */
+		//List<Album> albums = albumRepository.findAll();
+		
+		/*for(Album album : albums) {
+			System.out.println(album);
+		}*/
+		
 		List<Album> albums = albumRepository.findAll();
+		  /*if (!albums.isEmpty()) {
+		  for (Album album : albums) {
+		   System.out.println(albums);
+		  }
+		  } else {
+		   System.out.println("Nessun brano trovato");
+		  }*/
 
 		// inserire indirizzo della pagina visualizzazione lista brani
 		request.setAttribute("albums", albums);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("album.jsp");
 		requestDispatcher.forward(request, response);
 	}
 

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body {
+ background-image: url("paper.gif");
+ background-color: #cccccc;
+}
+p {
+	color: white;
+}
+
+p .global {
+	color: #881141;
+}
+
+h2 {
+	color: white !important;
+}
+
+.navbar {
+    background-color: #E3F2FD !important; 
+}
+
+.navbar .nav-link {
+    color: #000000 !important;
+}
+
+
+.custom-register-btn {
+    background-color: #C2185B; 
+    color: white; 
+    border: 2px solid #C2185B; 
+    padding: 6px 15px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+}
+
+.custom-login-btn {
+    background-color: transparent; 
+    color: #C2185B; 
+    border: 2px solid #C2185B; 
+    padding: 6px 15px; 
+    border-radius: 10px; 
+    font-weight: bold; 
+}
+
+/* hover registrati */
+.custom-register-btn:hover {
+    background-color: transparent; 
+    color: #C2185B; 
+    border: 2px solid #C2185B; 
+}
+
+/* hover login */
+.custom-login-btn:hover {
+    background-color: #C2185B; 
+    color: white; 
+}
+
+/* button ricerca */
+.btn-outline-success {
+	background-color: transparent;
+	color: black;
+	border: 2px solid #08263C; 
+	padding: 5px 8px; 
+	border-radius: 0px 8px 8px 0px; 
+    font-weight: regular;
+}
+/* hover ricerca */
+.btn-outline-success:hover {
+	background-color: #08263C; 
+	color: white;
+	border: 2px solid #08263C; 
+}
+
+.form-control {
+	border: 2px 2px 2px 0px solid #c0c0c0; 
+	border-radius: 8px 0px 0px 8px; 
+}
+
+.navbar-collapse {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.navbar-collapse .d-flex {
+    margin-left: auto; 
+}
+
+
+.footer {
+    background-color: #E3F2FD !important; 
+    color: #343a40; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+}
