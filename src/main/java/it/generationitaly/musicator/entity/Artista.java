@@ -6,6 +6,7 @@ import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -54,7 +55,7 @@ public class Artista {
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
 
-	@OneToMany(mappedBy = "artista")
+	@OneToMany(mappedBy = "artista", fetch = FetchType.EAGER)
 	private List<Album> album = new ArrayList<Album>();
 	
 	public long getId() {
