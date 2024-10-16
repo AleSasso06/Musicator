@@ -81,11 +81,14 @@
 			for (Genere genere : generi) {
 		%>
 		<div class="col-md-4">
-    <button type="button" class="btn btn-secondary btn-lg w-100 button-spacing" onclick="window.location.href='genere?id=<%= genere.getId() %>'">
-        <%= genere.getNome() %>
-    </button>
-</div>
 		
+    <a type="button" class="btn btn-secondary btn-lg w-100 button-spacing" href="genere?id=<%= genere.getId() %>">
+        <%= genere.getNome() %>
+        </a>
+
+    
+</div>
+
 	<!--  
 <button type="button" class="btn btn-secondary btn-lg">
 		<a href="genere"?id=<%=genere.getId()%> " class="btn btn-custom">
@@ -103,8 +106,14 @@
 		%>
 	</div>
 </div>
+<<<<<<< HEAD
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>
+=======
+<%@ include file="footer.jsp" %>
+	<script type="text/javascript"
+		src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+>>>>>>> refs/heads/dettaglio-genere
 
 
     <!-- Bootstrap JavaScript Libraries -->
