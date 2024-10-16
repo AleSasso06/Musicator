@@ -272,13 +272,36 @@
                 <h2 class="h3 fw-bold mb-0">Discovery Italy Tracks</h2>
                 <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
             </div>
-            <div class="container" data-aos="fade-up">
+           <!--  <div class="container" data-aos="fade-up">
                 <div class="swiper swiper-colonne" >
-                    <div class="swiper-wrapper pb-4">
+                    <div class="swiper-wrapper pb-4"> -->
                     
-                        <!-- SLIDE 01 -->
+                    
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <iframe width="560" height="315" class="center "  src="https://www.youtube.com/embed/cZTlRmNgJz4?si=LkVhANEcwZlH7Ip0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					    </div>
+					    <div class="carousel-item">
+					      <img src="..." class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="..." class="d-block w-100" alt="...">
+					    </div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+                    
+<!--                         SLIDE 01
                         <div class="swiper-slide home-covers">
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">1</p>
@@ -289,7 +312,7 @@
                                     <p class="mb-0">Floyy Menor &amp; Cris Mj</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">2</p>
@@ -300,7 +323,7 @@
                                     <p class="mb-0">Benson Boone</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">3</p>
@@ -312,9 +335,9 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- SLIDE 02 -->
+                        SLIDE 02
                         <div class="swiper-slide home-covers">
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">4</p>
@@ -325,7 +348,7 @@
                                     <p class="mb-0">Disturbed</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">5</p>
@@ -336,7 +359,7 @@
                                     <p class="mb-0">Artemas</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3 d-block link-dark link-underline link-underline-opacity-0 ">
                                 <p class="mb-0 fw-bold">6</p>
@@ -348,9 +371,9 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- SLIDE 03 -->
+                        SLIDE 03
                         <div class="swiper-slide home-covers">
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">7</p>
@@ -361,7 +384,7 @@
                                     <p class="mb-0">Hozier</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">8</p>
@@ -372,7 +395,7 @@
                                     <p class="mb-0">Lithe</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">9</p>
@@ -384,9 +407,9 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- SLIDE 04 -->
+                        SLIDE 04
                         <div class="swiper-slide home-covers">
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">10</p>
@@ -397,7 +420,7 @@
                                     <p class="mb-0">Kendrik Lamar</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">11</p>
@@ -408,7 +431,7 @@
                                     <p class="mb-0">CYRIL</p>
                                 </div>
                             </a>
-                            <!-- ALBUM -->
+                            ALBUM
                             <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                                 <p class="mb-0 fw-bold">12</p>
@@ -420,7 +443,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- paginazione (puntini) -->
                     <div class="swiper-pagination"></div>
