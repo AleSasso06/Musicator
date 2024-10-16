@@ -115,6 +115,15 @@ public class Artista {
 	}
 	
 	
+	
+	public List<Album> getAlbum() {
+		return album;
+	}
+
+	public void setAlbum(List<Album> album) {
+		this.album = album;
+	}
+
 	@Override
 	public String toString() {
 		return "Artista [id=" + id + ", nome=" + nome + ", pseudonimo=" + pseudonimo + ", dataNascita=" + dataNascita
