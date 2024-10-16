@@ -1,7 +1,9 @@
 <%@page import="org.hibernate.internal.build.AllowSysOut"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="it.generationitaly.musicator.entity.Album"%>
+<%@ page import="it.generationitaly.musicator.entity.*"%>
+<%@ page import ="java.util.List" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +24,7 @@
 <body>
 <%@ include file="nav.jsp" %>
 <%Album album = (Album) request.getAttribute("album"); %>
-
+<% List <Brano> brani = album.getBrano(); %>
 <div class="pt-3"></div>
 
 
@@ -62,7 +64,31 @@
    <h1 style="color:white" > Elenco brani</h1>
 </div>
 
+<%for (Brano brano : brani){%>
+	<div class="card mb-3 ms-3" style="max-width: 1000px;">
+		<div class="row g-0">
+			<div class="col-md-4">
+				<img src="<%=brano.getFoto()%>" class="img-fluid rounded-start"
+					alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<form action="brano" method="get">
 
+						 <a class="card-title h3" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %></a>
+						<!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
+						<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
+						<!-- inserire l'artista sempre attraverso lo stesso giro -->
+						<p class="card-text">
+							<small class="text-body-secondary">Artista </small>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<%} %>
 	
 	
 
