@@ -47,12 +47,13 @@
 			 <!-- Barra di Ricerca -->
 			<div class="input-group mb-3">
 			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
-			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
+			  <input type="text" class="form-control" name="album" style="border-radius:30px" placeholder="Cerca il tuo album preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
 			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
 			 </form>
 			</div>
 			<!-- Fine Barra di Ricerca -->	
 		</div>
+			
 			
 			<div class="container">
 			<!-- inizio card -->

@@ -29,36 +29,48 @@
            <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
         </div>
         <!-- Fine Logo -->
-	<%
-	Brano brano = (Brano) request.getAttribute("brano");
-	
-	%>
-		<div class="container mt-5">
-  		<div class="row align-items-center">
-  		
-	<div class="card mb-3 song-card" style="max-width: 800px; opacity: 0.8; transition: opacity 0.3s ease;"">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h4 class="card-title"><%=brano.getTitolo() %></h4>
-        <p class="card-text">Descrizione della canzone o ulteriori dettagli.</p>
-        <p class="card-text"><small class="text-body-secondary">Ultimo aggiornamento: 3 minuti fa</small></p>
-      </div>
-    </div>
-  </div>
-</div>
+        
+        <!-- pulsante per tornare all'index -->
+     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+     		 <!-- fine pulsante per tornare all'index -->
+			
+        
+<%
+Brano brano = (Brano) request.getAttribute("brano");
+%>
 
-<!-- testo della canzone -->
-<div class="container mt">
-<div class="col-md-8 mx-auto text-light text-align: justify">
-      <p><%=brano.getTesto() %> </p>
-  </div>
-</div>
-</div>
-</div>
+<div class="container">
+    <!-- Card centrata -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-3 song-card" style="max-width: 800px; opacity: 0.8; transition: opacity 0.3s ease;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title"><%=brano.getTitolo() %></h4>
+                            <p class="card-text">Descrizione della canzone o ulteriori dettagli.</p>
+                            <p class="card-text">
+                                <small class="text-body-secondary">cosa mettiamo qui?</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testo della canzone centrato -->
+     <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+            <div class="text-light text-justify">
+                <p><%=brano.getTesto() %></p>
+            </div>
+        </div>
+    </div>
+    </div>
 
 	
 	
