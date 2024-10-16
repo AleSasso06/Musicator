@@ -114,8 +114,6 @@ public class Artista {
 		this.foto = foto;
 	}
 	
-	
-	
 	public List<Album> getAlbum() {
 		return album;
 	}
