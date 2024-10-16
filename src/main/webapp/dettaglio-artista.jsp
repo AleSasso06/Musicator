@@ -65,7 +65,7 @@
     	<div class="container mt">
    		 <div class="col-md-8 mx-auto text-light text-align: justify">
        	 <p><strong>Nome Artista:</strong> <%= artista.getNome() %></p>
-       	 <p><strong>Data di nascita:</strong> <%= artista.getDataNascita() %></p>
+       	 <p><strong>Data di nascita:</strong> <%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(artista.getDataNascita()) %></p>
        	 <p><strong>Nazionalità:</strong> <%= artista.getNazionalita() %></p>
        	 <p><strong>Biografia:</strong> <%= artista.getBiografia() %></p>
       </div>
