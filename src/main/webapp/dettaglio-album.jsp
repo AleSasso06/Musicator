@@ -1,3 +1,4 @@
+<%@page import="org.hibernate.internal.build.AllowSysOut"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="it.generationitaly.musicator.entity.Album"%>
@@ -21,15 +22,14 @@
 <body>
 <%@ include file="nav.jsp" %>
 <%Album album = (Album) request.getAttribute("album"); %>
-<% %>
+
 <div class="pt-3"></div>
 
 
-        <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg">
-                
-            
+             <div class="svg-container mt-3">
+           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
         </div>
+
         
        <!--   <div class="container min-vh-10 d-flex justify-content-center mt-5 ">
         
@@ -62,13 +62,19 @@
    <h1 style="color:white" > Elenco brani</h1>
 </div>
 
-<div class="container">
+
+	
+	
+
+	
+
+<!-- <div class="container">
 <ol >
        <li style="padding:20px; margin-bottom: 5px; background-color:white ;  border-radius: 4px;">Foto-Titolo canzone 
        </li>
     </ol>
     
-</div>
+</div> -->
 
 <%@ include file="footer.jsp" %>
 
