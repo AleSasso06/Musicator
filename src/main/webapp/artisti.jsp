@@ -35,7 +35,7 @@
 	<body>
 		<%List<Artista> artisti = (List<Artista>) request.getAttribute("artisti"); %>
 		<%@ include file="nav.jsp" %>
-		
+		<div>
 		<div class="container min-vh-10 d-flex  justify-content-center mt-5">
 		
 			 <!-- Barra di Ricerca -->
@@ -64,6 +64,7 @@
 			  <%} %>
 		</div>
 		<!-- fine card -->
+		</div>
 		
 		<!-- inizio footer -->
        <%@ include file="footer.jsp" %>
