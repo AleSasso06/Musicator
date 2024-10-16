@@ -10,27 +10,27 @@
 		    <div class="collapse navbar-collapse" id="navbarText">
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Artisti</a>
+		          		<a class="nav-link" href="artisti.jsp">Artisti</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Album</a>
+		          		<a class="nav-link" href="album.jsp">Album</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Brani</a>
+		          		<a class="nav-link" href="brani.jsp">Brani</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Generi</a>
+		          		<a class="nav-link" href="generi.jsp">Generi</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Playlist</a>
+		          		<a class="nav-link" href="playlist.jsp">Playlist</a>
 		        	</li>
 		      </ul>
 		      
 				<div class="d-flex align-items-center">
 				<!-- Barra di Ricerca -->
-				<form class="d-flex me-2" role="search">
+				<form class="d-flex me-2" role="search" action="ricerca_globale" method="get">
 				    <div class="input-group">
-				        <input class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
+				        <input name="ricercaUtente" class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
 				        <button class="input-group-text bg-white border-0">
 				            <i class="fas fa-search"></i> <!-- Icona di ricerca -->
 				        </button>

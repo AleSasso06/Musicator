@@ -6,44 +6,56 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>Playlists</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		 <!-- Bs Icons -->
 	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		 <!-- css locali -->
     	 <link rel="stylesheet" href="style.css">
 	</head>
+	
 	<body>
-		<%
-		List<Playlist> playlists = (List<Playlist>) request.getAttribute("playlists");
-		%>
+	
+		<% List<Playlist> playlists = (List<Playlist>) request.getAttribute("playlists"); %>
+		
+		<header>
 		<%@ include file="nav.jsp" %>
+		</header>
+		
 		<div class="container">
-			<div class="row">
-				<div class="col">
-				<form class="d-flex" role="search" action="ricerche-specifiche" method="get">
-			   		<input class="form-control me-2" type="search" placeholder="Cerca le tue playlist preferite..." aria-label="Search" name="playlist">
-			   		<button class="btn btn-outline-danger" type="submit">Cerca</button>
-			    </form>
-			    </div>
-		    </div>
+		    
+		    <div class="container min-vh-10 d-flex  justify-content-center mt-5">
+		
+				<!-- Barra di Ricerca -->
+				<div class="input-group mb-3">
+					<form action="ricerche_specifiche" method="get" class="input-group mb-3">
+						<input type="text" class="form-control" name="playlist" style="border-radius:30px" placeholder="Cerca le tue playlist preferite" aria-label="Recipient's username" aria-describedby="button-addon2">
+						<!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+					</form>
+				</div>
+				<!-- Fine Barra di Ricerca -->	
+				
+			</div>
+		    
 		    <%if (playlists != null && !playlists.isEmpty()){ %>
-		    <%for (Playlist playlist : playlists) {
-		    	%>
-		    <div class="row">
-		    	<a href="playlist?id=<%=playlist.getId()%>">
-		    	<div class="col">
-		    		<img src="<%=playlist.getFoto()%>">
-		    	</div>
-		    	<div class="col">
-		    		<span><%=playlist.getTitolo()%></span>
-		    	</div>
-		    	</a>
-		    </div>
+			    <%for (Playlist playlist : playlists) {%>
+			    <div class="row">
+			    	
+			    	<a href="playlist?id=<%=playlist.getId()%>">
+			    	<div class="col-2">
+			    		<img src="<%=playlist.getFoto()%>">
+			    	</div>
+			    	<div class="col-10">
+			    		<span><%=playlist.getTitolo()%></span>
+			    	</div>
+			    	</a>
+			    	
+			    </div>
+			    <%} 
+			} else { %>
+		    	<span>Nessuna playlist trovata...</span>
 		    <%} %>
-		    <%} else { %>
-		    <span>Nessuna playlist trovata...</span>
-		    <%} %>
+		    
 		</div>
 		<div>
 		<!-- Footer -->
