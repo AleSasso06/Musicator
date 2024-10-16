@@ -54,7 +54,7 @@
 			    <div class="card">
 			      <img src="<%= album.getFoto() %>" class="card-img-top" alt="..." ">
 			      <div class="card-body text-center">
-			        <a class="card-title h5" href="artista?id=<%= album.getId() %>"><%= album.getTitolo() %></a>
+			        <a class="card-title h5" href="album?id=<%= album.getId() %>"><%= album.getTitolo() %></a>
 			      </div>
 			    </div>
 			  </div>
