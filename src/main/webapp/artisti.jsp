@@ -8,7 +8,10 @@
 	<meta charset="UTF-8">
 		<title>Artisti</title>
 		<link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style2.css">
+		<!-- Bs Icons -->
+	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		 <!-- css locali -->
+    	 <link rel="stylesheet" href="style2.css">
 		
 			<style>
 			.card {
