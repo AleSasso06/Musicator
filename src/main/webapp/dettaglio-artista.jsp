@@ -48,13 +48,13 @@
     
 	    <!-- nome -->
 	    <div class="col-md-4 text-md-start  text-center">
-	        <h1 class="display-3 text-light text-center" ><%= artista.getPseudonimo() %></h1>
+	         <h1 class="display-3 text-light text-center" style="position: relative; top: -150px;"><%= artista.getPseudonimo() %></h1>
 	    </div>
 	    <!-- fine nome -->
     	</div>
 		</div>
 	
-    
+    	<div style="position: relative; top: -150px;">
     	<!-- inizio dati -->
     	<div class="container mt">
    		 <div class="col-md-8 mx-auto text-light text-align: justify">
@@ -87,7 +87,7 @@
 			<% } %>
 			</div>
 		<!-- fine album -->
-		
+		</div>
 		
 		<!-- inizio footer -->
        <%@ include file="footer.jsp" %>
