@@ -1,7 +1,7 @@
 <%@page import="java.util.List"%>
 <%@page import="it.generationitaly.musicator.entity.Brano"%>
 <%@page import="it.generationitaly.musicator.entity.Album"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -19,11 +19,30 @@
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
+
 <body>
+
+<body>	
+
+<%@ include file="nav.jsp"%>
+
+<!-- Inizio Logo -->
+        <div class="svg-container mt-3">
+           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+        <!-- Fine Logo -->
+<%
+
+
 
 <%List<Brano> brani = (List<Brano>) request.getAttribute("brani");%>
 
 	<%@ include file="nav.jsp"%>
+
+	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
+	%>
+
+
 	
 	<div class="container justify-content-center mt-5">
  		<!-- Barra di Ricerca -->
