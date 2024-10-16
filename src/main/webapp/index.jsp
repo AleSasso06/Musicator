@@ -440,7 +440,7 @@
 
     </main>
 
-
+<%@ include file="footer.jsp" %>
  
   <!-- barra fissa promo 
     <div class="fixed-bottom py-2 px-4 bg-redpromo">
