@@ -102,7 +102,7 @@
         <!-- TOP 200 ALBUMS -->
         <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
             <h2 class="h3 fw-bold mb-0">Global Top 200 Chart</h2>
-            <p class="mb-0"><a href="#" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
+            <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
         </div>
         <div class="container mb-5" data-aos="fade-up">
             <div class="row home-covers">
