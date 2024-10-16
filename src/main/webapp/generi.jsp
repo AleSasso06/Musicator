@@ -78,7 +78,7 @@
         <%= genere.getNome() %>
     </button>
 </div>
-		
+
 	<!--  
 <button type="button" class="btn btn-secondary btn-lg">
 		<a href="genere"?id=<%=genere.getId()%> " class="btn btn-custom">
