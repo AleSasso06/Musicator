@@ -38,6 +38,7 @@
 		
 
 
+<div class="row justify-content-center">
 
 <!-- prova card -->
 <!-- Griglia delle card -->
@@ -76,6 +77,7 @@
 		<% } %>
 		</div>
 		</div>
+</div>
 
 	<%@ include file="footer.jsp" %>
 	<!-- Bootstrap JavaScript Libraries -->
