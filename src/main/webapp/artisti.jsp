@@ -65,6 +65,10 @@
 		</div>
 		<!-- fine card -->
 		
+		<!-- inizio footer -->
+       <%@ include file="footer.jsp" %>
+		<!--  fine footer -->
+		
 		<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

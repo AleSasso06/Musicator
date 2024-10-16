@@ -76,8 +76,8 @@
 			for (Album album : albums) { %>
 				<a class="card-title h5" href="album?id=<%= album.getId() %>">
 					<div class="col-p-3 mx-4 mb-4">
-						<div class="card" style="width: 275px;">
-							<img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="...">
+						<div class="card" style="width: 250px;">
+							<img style="object-fit: cover;" src="<%= album.getFoto() %>" height="250" class="card-img-top" alt="...">
 							<div class="card-body">
 								<h5 class="card-title text-center"><%= album.getTitolo() %></h5>
 							</div>
