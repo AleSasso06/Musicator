@@ -41,7 +41,7 @@
         <div class="col-8 mt-4">
         <ul style="list-style-decoration:none; color:white">
         <li>Titolo:<%=album.getTitolo() %></li>
-        <li>Artista:<%=album.getArtista().getNome() %></li>
+        <li>Artista:<%=album.getArtista().getPseudonimo() %></li>
         <li>Genere:<%=album.getGenere().getNome() %></li>
         <li>Durata:<%=album.getDurata() %></li>
         <li>Data di Uscita:<%=album.getDataUscita() %></li>
