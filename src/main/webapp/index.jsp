@@ -7,8 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Welcome to Musicator!</title>
 		 <!-- Bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+ 		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 		 <!-- Bs Icons -->
 	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 		 <!-- css locali -->
@@ -72,9 +72,9 @@
 	
 	</head>
 	<body>	
-	<header>
+	
 	<%@ include file="nav.jsp" %>
-	</header>
+	
     <!-- ELEMENTI FIXED 
     <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
     <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
@@ -248,20 +248,21 @@
                 <div class="swiper-pagination"></div>
         
         <!-- DISCOVER ITALY -->
-        <section class="bg-body-secondary py-5">
+        <section class="bg-body-dark py-5">
             <div class="container text-center">
                 <img class="rounded-circle border border-white border-5 shadow"
-                    src="assets/immagini/discovery-italy/left.jpg" alt=""
+                    src="images/img_album/billie.webp" alt=""
                     style="width:120px; height:auto; position:relative; z-index:1; margin-right: -3rem"
                     data-aos="fade-right">
                 <img class="rounded-circle border border-white border-5 shadow"
-                    src="assets/immagini/discovery-italy/center.jpg" alt=""
+                    src="images/img_album/creep.webp" alt=""
                     style="width:160px; height:auto; position:relative; z-index:2" data-aos="fade-up">
                 <img class="rounded-circle border border-white border-5 shadow"
-                    src="assets/immagini/discovery-italy/right.jpg" alt=""
+                    src="images/img_album/ladyGB.webp" alt=""
                     style="width:120px; height:auto; position:relative; z-index:1; margin-left: -3rem"
                     data-aos="fade-left">
             </div>
+            
             <div class="container text-center mt-4" data-aos="fade-up">
                 <p class=" fw-bold">DISCOVERY ITALY</p>
                 <h2 class="h1">Rising tracks from new<br /> and upcoming artists</h2>
@@ -274,6 +275,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="swiper swiper-colonne" >
                     <div class="swiper-wrapper pb-4">
+                    
                         <!-- SLIDE 01 -->
                         <div class="swiper-slide home-covers">
                             <!-- ALBUM -->
@@ -439,82 +441,8 @@
     </main>
 
 
-    <footer class="bg-dark text-light py-5">
-        <div class="container text-center text-lg-start">
-            <div class="row">
-                <!-- footer logo e selettore lingua-->
-                <div class="col-12 col-lg-6">
-                    <p class="mb-4 pb-2"><img src="assets/immagini/shazam-logo-footer.svg" alt="logo"
-                            id="footer-logo"></p>
-                    <p class="mb-2">Select language</p>
-                    <div class="dropdown mb-5">
-                        <a class="btn btn-outline-light dropdown-toggle fs-6 rounded-0" href="#" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Italian</a></li>
-                            <li><a class="dropdown-item" href="#">French</a></li>
-                            <li><a class="dropdown-item" href="#">Netherlands</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- footer menu links sx -->
-                <div class="col-6 col-md-4 offset-md-2 col-lg-3 offset-lg-0 text-start fs-5">
-                    <p class="text-secondary mb-2">Company</p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">About
-                            us</a></p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Apps</a>
-                    </p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Careers</a>
-                    </p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Help
-                            for Apple Devices</a></p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Help
-                            for Android Devices</a></p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">ShazamKit
-                            for Developers</a></p>
-                </div>
-                <!-- footer menu links dx -->
-                <div class="col-6  col-md-4 offset-md-1 col-lg-3 offset-lg-0 text-start fs-5">
-                    <p class="text-secondary mb-2">Legal</p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Terms</a>
-                    </p>
-                    <p class="mb-2"><a href="#" class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Privacy
-                            policy</a></p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Manage
-                            your data</a></p>
-                    <p class="mb-2"><a href="#"
-                            class="link-light  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">My
-                            library</a></p>
-                </div>
-                <!-- footer social + copyright -->
-                <div class="col-12 mb-5 pb-5 mt-5 text-center">
-                    <p class="text-secondary mb-2">Follow Us</p>
-                    <div class="mb-3">
-                        <a href="#" class="btn btn-lg btn-outline-light border-0"><i
-                                class="bi bi-facebook fs-2"></i></a>
-                        <a href="#" class="btn btn-lg btn-outline-light border-0"><i
-                                class="bi bi-twitter-x fs-2"></i></a>
-                        <a href="#" class="btn btn-lg btn-outline-light border-0"><i
-                                class="bi bi-instagram fs-2"></i></a>
-                        <a href="#" class="btn btn-lg btn-outline-light border-0"><i
-                                class="bi bi-snapchat fs-2"></i></a>
-                    </div>
-                    <p id="footer-copy">&copy; Copyright 2024 Apple Inc. and its affiliates</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- barra fissa promo 
+ 
+  <!-- barra fissa promo 
     <div class="fixed-bottom py-2 px-4 bg-redpromo">
         <div href="#" class="link-light  link-underline link-underline-opacity-0">
             <div class="container-fluid d-flex justify-content-between align-items-center fw-bold">
