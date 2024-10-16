@@ -52,7 +52,7 @@
 			  <div class="col-md-4 d-flex justify-content-center mb-3">
 			  
 			    <div class="card">
-			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." ">
+			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." >
 			      <div class="card-body text-center">
 			        <a class="card-title h5" href="artista?id=<%= artista.getId() %>"><%= artista.getPseudonimo() %></a>
 			      </div>

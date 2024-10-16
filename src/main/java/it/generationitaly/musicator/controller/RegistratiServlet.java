@@ -40,7 +40,9 @@ public class RegistratiServlet extends HttpServlet {
 			return;
 		}*/
 		
-		if (utente.getUsername().equals(username)) {
+		System.out.println(username);
+		
+		if (utente.getUsername().equalsIgnoreCase(username)) {
 			response.sendRedirect("registrati.jsp?erroreUsernameEsistente");
 			return;
 		}
@@ -71,4 +73,6 @@ public class RegistratiServlet extends HttpServlet {
 		}
 	}
 
+	
+	
 }
