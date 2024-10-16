@@ -60,7 +60,7 @@
 
     <h3>Album</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-     
+     <%List<Album> albums = (List<Album>) request.getAttribute("album"); %>
         <% for(Album album : albums) { %>
             <div class="col mb-3">
                 <div class="card">
