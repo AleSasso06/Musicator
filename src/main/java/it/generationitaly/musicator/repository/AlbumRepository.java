@@ -13,4 +13,5 @@ public interface AlbumRepository extends JpaRepository<Album, Long>{
 	List<Album> findByArtista(String pseudonimo);
 	List<Album> findByBrano(String titolo);
 	List<Album> findByGenere(String nome);
+	List<Album> findByGenereId(long id);
 }

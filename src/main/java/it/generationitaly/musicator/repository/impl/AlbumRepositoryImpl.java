@@ -118,4 +118,30 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 		return album;
 	}
 
+	@Override
+	public List<Album> findByGenereId(long id) {
+		List<Album> album = null;
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			String sql = "FROM Album a inner join Genere g on album.genere_id = genere.id WHERE g.id = :id";
+			TypedQuery<Album> query = em.createQuery(sql, Album.class);
+			query.setParameter("id", id);
+			album = query.getResultList();
+			tx.commit();
+		}catch(Exception e){
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+			
+		}finally {
+			if(em != null)
+				em.close();
+		}
+		return album;
+	}
+
 }

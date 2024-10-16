@@ -32,8 +32,8 @@ public class GenereServlet extends HttpServlet {
 		
 		Genere genere = genereRepository.findById(id);
 		
-		List<Brano> braniGenere = branoRepository.findByGenere(genere.getNome());
-		List<Album> albumGenere = albumRepository.findByGenere(genere.getNome());
+		List<Brano> braniGenere = branoRepository.findByGenereId(id);
+		List<Album> albumGenere = albumRepository.findByGenereId(id);
 		
 		request.setAttribute("brani", braniGenere);
 		request.setAttribute("album", albumGenere);
