@@ -18,15 +18,12 @@ import it.generationitaly.musicator.repository.GenereRepository;
 import it.generationitaly.musicator.repository.impl.AlbumRepositoryImpl;
 import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
 import it.generationitaly.musicator.repository.impl.GenereRepositoryImpl;
-import it.generationitaly.musicator.repository.BranoRepository;
-import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
-import it.generationitaly.musicator.repository.AlbumRepository;
-import it.generationitaly.musicator.repository.impl.AlbumRepositoryImpl;
+
+
 public class GenereServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	//private BranoRepository branoRepository = new BranoRepositoryImpl();
-	//private AlbumRepository albumRepository = new AlbumRepositoryImpl();
+	
 	private GenereRepository genereRepository = new GenereRepositoryImpl();
 	private BranoRepository branoRepository = new BranoRepositoryImpl();
 	 private AlbumRepository albumRepository = new AlbumRepositoryImpl();
@@ -40,10 +37,11 @@ public class GenereServlet extends HttpServlet {
 		List<Album> albumGenere = albumRepository.findByGenereId(id);
 		
 		request.setAttribute("brani", braniGenere);
-		request.setAttribute("album", albumGenere);
+		request.setAttribute("albums", albumGenere);
 		request.setAttribute("genere", genere);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-genere.jsp");
 		requestDispatcher.forward(request, response);
+		
 	
 	}
 
