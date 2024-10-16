@@ -39,7 +39,10 @@
         </div>
         <!-- Fine Logo -->
        
-        
+        <!-- pulsante per tornare all'index -->
+        <a href="artisti" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+      <!-- fine pulsante per tornare all'index -->
+      
     	<div class="container mt-5">
   		<div class="row align-items-center">
     
@@ -54,7 +57,7 @@
     
 	    <!-- nome -->
 	    <div class="col-md-4 text-md-start  text-center">
-	         <h1 class="display-3 text-light text-center" style="position: relative; top: -150px;"><%= artista.getPseudonimo() %></h1>
+	         <h1 class="display-3 text-light text-center" style="position: relative; top: -180px;"><%= artista.getPseudonimo() %></h1>
 	    </div>
 	    <!-- fine nome -->
     	</div>

@@ -29,6 +29,12 @@
            <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
         </div>
         <!-- Fine Logo -->
+        
+        <!-- pulsante per tornare all'index -->
+     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+     		 <!-- fine pulsante per tornare all'index -->
+			
+        
 <%
 Brano brano = (Brano) request.getAttribute("brano");
 %>
