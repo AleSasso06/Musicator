@@ -55,7 +55,7 @@
 						</div>
 						<div class="col">
 							<div class="card-body">
-								<a class="card-title h5" href="<%= brano.getYtLink() %>">
+								<a class="card-title h5" href="brano?id=<%= brano.getId() %>">
 									<h5 class="card-title"><%= brano.getTitolo() %></h5>
 									<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
 									
@@ -64,7 +64,7 @@
 							</div>
 						</div>
 						<div class="col-auto">
-							<a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
+							<a class="btn btn-play" href="<%= brano.getYtLink()%>">
 								<i class="bi bi-play-circle-fill"></i>
 							</a>
 						</div>
