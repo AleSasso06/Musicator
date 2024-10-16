@@ -83,10 +83,8 @@
         <div class="pt-3"></div>
 
 
-        <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg">
-                
-            
+        <div class="svg-container mt-3 pt-3">
+           <img alt="logo" src="images/logo header.svg">
         </div>
         
         <!-- GLOBAL TOP 200 -->
@@ -94,7 +92,7 @@
         <div class="container text-center mb-4"  data-aos="fade-up">
             <p class="text-secondary fw-bold fs-5 mb-0">GLOBAL TOP 200</p>
             <h2 class="h1 fw-bold">Top songs being discovered around the world right now</h2>
-            <p class="fs-5 pb-4">See who made it on the list of the most Musicated songs worldwide</p>
+            <p class="fs-5 pb-4">Scopri chi è entrato nella lista delle canzoni più ascoltate al mondo su Musicator</p>
             <div class="ratio ratio-16x9" data-aos="zoom-in">
 	                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=oj_yLUZIIH94tjEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -251,25 +249,25 @@
         <section class="bg-body-dark py-5">
             <div class="container text-center">
                 <img class="rounded-circle border border-white border-5 shadow"
-                    src="images/img_album/billie.webp" alt=""
-                    style="width:120px; height:auto; position:relative; z-index:1; margin-right: -3rem"
+                    src="images/images/logoV.svg" alt=""
+                    style="width:120px; height:auto; position:relative; z-index:2; margin-right: -3rem"
                     data-aos="fade-right">
-                <img class="rounded-circle border border-white border-5 shadow"
-                    src="images/img_album/creep.webp" alt=""
+                <img class="rounded-circle border border-white border-5 bg-light shadow"
+                    src="images/teamL.svg" alt=""
                     style="width:160px; height:auto; position:relative; z-index:2" data-aos="fade-up">
                 <img class="rounded-circle border border-white border-5 shadow"
-                    src="images/img_album/ladyGB.webp" alt=""
-                    style="width:120px; height:auto; position:relative; z-index:1; margin-left: -3rem"
+                    src="Musicator/src/main/webapp/images/ML.svg" alt=""
+                    style="width:120px; height:auto; position:relative; z-index:2; margin-left: -3rem"
                     data-aos="fade-left">
             </div>
             
             <div class="container text-center mt-4" data-aos="fade-up">
                 <p class=" fw-bold">DISCOVERY ITALY</p>
-                <h2 class="h1">Rising tracks from new<br /> and upcoming artists</h2>
-                <p class="lead">Be the first to listen to these future hit songs</p>
+                <h2 class="h1">Brani in ascesa di artisti emergenti</h2>
+                <p class="lead">Sii il primo ad ascoltare questi futuri successi musicali</p>
             </div>
             <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left">
-                <h2 class="h3 fw-bold mb-0">Discover Live Session!</h2>
+                <h2 class="h3 fw-bold mb-0">Scopri Video Music Live!</h2>
             </div>
                     
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -302,167 +300,19 @@
             </div>
         </div>
     </div>
-    <!-- Aggiungi controlli se necessario -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-                             
-<!--                         SLIDE 01
-                        <div class="swiper-slide home-covers">
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">1</p>
-                                <img src="assets/immagini/covers/cover-gata-only_FloyyMenor-and-Cris-Me.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Gata only</strong></p>
-                                    <p class="mb-0">Floyy Menor &amp; Cris Mj</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">2</p>
-                                <img src="assets/immagini/covers/cover-beautiful-things_benson-boone.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Beautiful things</strong></p>
-                                    <p class="mb-0">Benson Boone</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">3</p>
-                                <img src="assets/immagini/covers/cover-million-dollars-babe_tommy-richman.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Million dollars babe</strong></p>
-                                    <p class="mb-0">Tommy Richman</p>
-                                </div>
-                            </a>
-                        </div>
-                        SLIDE 02
-                        <div class="swiper-slide home-covers">
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">4</p>
-                                <img src="assets/immagini/covers/cover-the-sound-of-silence_disturbed.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>The sound of silence</strong></p>
-                                    <p class="mb-0">Disturbed</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">5</p>
-                                <img src="assets/immagini/covers/cover-i-like-the-way-you-kiss-me_artemas.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>I like the way you kiss me</strong></p>
-                                    <p class="mb-0">Artemas</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3 d-block link-dark link-underline link-underline-opacity-0 ">
-                                <p class="mb-0 fw-bold">6</p>
-                                <img src="assets/immagini/covers/cover-lose-control_teddy-swims.webp" alt="" width="75"
-                                    height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Lose Control</strong></p>
-                                    <p class="mb-0">Teddy Swims</p>
-                                </div>
-                            </a>
-                        </div>
-                        SLIDE 03
-                        <div class="swiper-slide home-covers">
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">7</p>
-                                <img src="assets/immagini/covers/cover-too-sweet_hozier.webp" alt="" width="75"
-                                    height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Too sweet</strong></p>
-                                    <p class="mb-0">Hozier</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">8</p>
-                                <img src="assets/immagini/covers/cover-fall-back_lithe.webp" alt="" width="75"
-                                    height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Fall back</strong></p>
-                                    <p class="mb-0">Lithe</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">9</p>
-                                <img src="assets/immagini/covers/cover-a-bar-song_shaabozey.webp" alt="" width="75"
-                                    height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>A bar song</strong></p>
-                                    <p class="mb-0">Shaabozey</p>
-                                </div>
-                            </a>
-                        </div>
-                        SLIDE 04
-                        <div class="swiper-slide home-covers">
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">10</p>
-                                <img src="assets/immagini/covers/cover-not-like-us_kendrick-lamar.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Not like us</strong></p>
-                                    <p class="mb-0">Kendrik Lamar</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">11</p>
-                                <img src="assets/immagini/covers/cover-stumblin-in_cyril.webp" alt="" width="75"
-                                    height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Stumblin' In</strong></p>
-                                    <p class="mb-0">CYRIL</p>
-                                </div>
-                            </a>
-                            ALBUM
-                            <a href="#"
-                                class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                                <p class="mb-0 fw-bold">12</p>
-                                <img src="assets/immagini/covers/cover-pedro_jacksony-agatino-romero.webp" alt=""
-                                    width="75" height="75" class="rounded-3 mx-3">
-                                <div>
-                                    <p class="mb-0"><strong>Pedro</strong></p>
-                                    <p class="mb-0">Jacksony, Agatino Romero</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div> -->
+	 <!-- Aggiungi controlli se necessario -->
+	    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+	        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	        <span class="visually-hidden">Previous</span>
+	    </button>
+	    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+	        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	        <span class="visually-hidden">Next</span>
+	    </button>
+	</div>
 
                     <!-- paginazione (puntini) -->
                     <div class="swiper-pagination"></div>
-                </div>
-            </div>
         </section>
 
     </main>
@@ -478,6 +328,7 @@
             </div>
         </div>
     </div>-->
+    
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

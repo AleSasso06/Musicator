@@ -1,5 +1,5 @@
 	
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
 		  <div class="container-fluid">
 		    <a class="navbar-brand" href="index.jsp">
 		    	<img src="images/logo.svg" width="200" height="50" alt="">
