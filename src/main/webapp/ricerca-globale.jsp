@@ -75,10 +75,9 @@
 		
 		<!-- Griglia delle card -->
 		<div class="row">
-		<% if (!brani.isEmpty() && !artisti.isEmpty()) { %>
+		<% if (!brani.isEmpty()) { %>
 		<h2 style="margin-bottom: 15px;">Brani</h2>
 			<% for (Brano brano : brani) { %>
-			<% for (Artista artista : artisti) { %>
 			<div class="col-md-6 mb-3">
 				<div class="card song-card">
 					<div class="row no-gutters align-items-center">
@@ -92,7 +91,7 @@
 								<a class="card-title h5" href="brano?id=<%= brano.getId() %>">
 									<h5 class="card-title"><%= brano.getTitolo() %></h5>
 								</a>
-								<a href="artista?id=<%= artista.getId() %>"><p class="text-dark card-text"><%= artista.getPseudonimo() %></p></a>
+								<!-- <a href="artista?id=<% // %>"><p class="text-dark card-text"><% // %></p></a> -->
 							</div>
 						</div>
 						<div class="col-auto">
@@ -103,7 +102,6 @@
 					</div>
 				</div>
 			</div>
-			<% } %>
 			<% } %>
 			<% } else { %>
 			<p></p>
