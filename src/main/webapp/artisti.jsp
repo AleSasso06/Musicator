@@ -8,7 +8,10 @@
 	<meta charset="UTF-8">
 		<title>Artisti</title>
 		<link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style2.css">
+		<!-- Bs Icons -->
+	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		 <!-- css locali -->
+    	 <link rel="stylesheet" href="style2.css">
 		
 			<style>
 			.card {
@@ -52,7 +55,7 @@
 			  <div class="col-md-4 d-flex justify-content-center mb-3">
 			  
 			    <div class="card">
-			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." ">
+			      <img src="<%= artista.getFoto() %>" class="card-img-top" alt="..." >
 			      <div class="card-body text-center">
 			        <a class="card-title h5" href="artista?id=<%= artista.getId() %>"><%= artista.getPseudonimo() %></a>
 			      </div>
@@ -61,6 +64,10 @@
 			  <%} %>
 		</div>
 		<!-- fine card -->
+		
+		<!-- inizio footer -->
+       <%@ include file="footer.jsp" %>
+		<!--  fine footer -->
 		
 		<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 	</body>

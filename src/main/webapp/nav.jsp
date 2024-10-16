@@ -10,19 +10,19 @@
 		    <div class="collapse navbar-collapse" id="navbarText">
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Artisti</a>
+		          		<a class="nav-link" href="artisti">Artisti</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Album</a>
+		          		<a class="nav-link" href="albums">Album</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Brani</a>
+		          		<a class="nav-link" href="brani">Brani</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Generi</a>
+		          		<a class="nav-link" href="generi">Generi</a>
 		        	</li>
 		        	<li class="nav-item">
-		          		<a class="nav-link" href="#">Playlist</a>
+		          		<a class="nav-link" href="playlists">Playlist</a>
 		        	</li>
 		      </ul>
 		      

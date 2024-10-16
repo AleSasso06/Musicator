@@ -15,6 +15,7 @@ INSERT INTO genere VALUES ('14','Synthpop');
 INSERT INTO genere VALUES ('15','Disco-funk');
 INSERT INTO genere VALUES ('16','Folk');
 
+-- INSERT ARTISTI
 INSERT INTO artista VALUES (
 	'1',
     'Abel Makkonen Tesfaye', 
@@ -33,51 +34,167 @@ INSERT INTO artista VALUES (
     'https://rapteratura.it/wp-content/uploads/2022/03/231294089_532702488154524_4967683313458270906_n-e1647948813460-720x600.jpg'  
 );
 
-INSERT INTO artista VALUES (
-'2',
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
 'Ariana Grande-Butera',
 'Ariana Grande',
-'1993-06-26 ',
+'1993-06-26',
 'Statunitense',
 'Ariana Grande è una cantante, attrice e produttrice musicale statunitense, la cui carriera artistica si è evoluta con grande successo nel corso degli anni.
-Il suo debutto risale al 2008, quando ha partecipato al musical di Broadway 13, ottenendo riconoscimenti per le sue capacità canore e recitative. 
+Il suo debutto risale al 2008, quando ha partecipato al musical di Broadway 13, ottenendo riconoscimenti per le sue capacità canore e recitative.
 La grande svolta è arrivata con il ruolo di Cat Valentine nella serie televisiva di Nickelodeon Victorious (2010-2013). Successivamente ha continuato a interpretare lo stesso personaggio nello spin-off Sam & Cat (2013-2014).
-Nel frattempo, Ariana ha coltivato anche il suo talento musicale. Nel 2013 ha pubblicato il suo primo album, Yours Truly, che ha subito ottenuto un grande successo, raggiungendo il primo posto nella classifica Billboard 200. 
-Il singolo "The Way" è stato particolarmente apprezzato, contribuendo a far emergere Ariana come una delle nuove voci più interessanti nel panorama pop. Il suo secondo album, My Everything (2014), ha consolidato il suo successo. 
-Hit come "Problem", "Break Free" e "Bang Bang" hanno dominato le classifiche internazionali e l ''hanno trasformata in una star globale. Questo disco ha mostrato la sua abilità nel mescolare pop, R&B e dance. 
-Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un''immagine e un sound più maturi. Il singolo omonimo, insieme a brani come "Into You" e "Side to Side", ha confermato il suo status di icona pop. 
+Nel frattempo, Ariana ha coltivato anche il suo talento musicale. Nel 2013 ha pubblicato il suo primo album, Yours Truly, che ha subito ottenuto un grande successo, raggiungendo il primo posto nella classifica Billboard 200.
+Il singolo "The Way" è stato particolarmente apprezzato, contribuendo a far emergere Ariana come una delle nuove voci più interessanti nel panorama pop. Il suo secondo album, My Everything (2014), ha consolidato il suo successo.
+Hit come "Problem", "Break Free" e "Bang Bang" hanno dominato le classifiche internazionali e l ''hanno trasformata in una star globale. Questo disco ha mostrato la sua abilità nel mescolare pop, R&B e dance.
+Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un''immagine e un sound più maturi. Il singolo omonimo, insieme a brani come "Into You" e "Side to Side", ha confermato il suo status di icona pop.
 Il 2017 ha rappresentato un anno particolarmente difficile per Ariana a causa dell''attentato terroristico durante il suo concerto a Manchester, che ha causato numerose vittime. In risposta, ha organizzato il concerto benefico One Love Manchester, dimostrando grande forza e solidarietà verso le vittime ',
 'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1'
 );
 
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+'Mitski Miyawaki',
+'Mitski',
+'1990-09-27',
+'Giapponese',
+'A volte Mitski sente che la vita sarebbe più facile senza speranza, senza un''anima o senza amore. Ma quando chiude gli occhi e pensa a ciò che è veramente suo, a ciò che non può essere ripreso o demolito, vede l''amore. "La cosa migliore che abbia mai fatto nella mia vita è stata amare le persone," dice. "Vorrei poter lasciare dietro di me tutto l''amore che ho dopo la mia morte, così da poter illuminare gli altri con tutta questa bontà, tutto questo amore che ho creato." Spera che il suo ultimo album, The Land Is Inhospitable and So Are We, possa risplendere d''amore a lungo dopo che lei se ne sarà andata. È proprio così che si sente: come un amore che perseguita la terra. "Questo è il mio album più americano," dice. La musica sembra un atto profondo di testimonianza di questo paese, con tutte le sue sofferenze private e contraddizioni. Musicalmente, è l''album più epico e saggio di Mitski, introduce ferite e poi le guarisce attivamente. Qui, l''amore viaggia nel tempo per benedire i nostri giorni teneri, come la luce di una stella lontana. È pieno del dolore dei cuori spezzati e delle gioie apparentemente banali ma enormi che spesso non vengono cantate. È una piccola epica. Dal fondo di un bicchiere, a un vialetto fangoso di memoria e neve, a un treno merci che sfreccia attraverso il Midwest, fino alla luna, sembra che tutto e tutti stiano gridando di dolore, protendendosi verso l''amore. L''amore è quella terra inospitale, che ci chiama e poi ci respinge. Amare questo posto, questa terra, questa America, questo corpo richiede lavoro. Potrebbe essere impossibile. Le cose migliori lo sono.',
+'https://cdn.prod.website-files.com/61b0d97defe7049ee34fa045/65ca57e1c8fceb53db7d5276_240604%20Mitski-600x400.png'
+);
 
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+'Thomas Peter Odell',
+'Tom Odell',
+'1990-11-24',
+'Britannico',
+'Tom Odell nasce il 24 novembre 1990 nel West Sussex. Studia al Brighton Institute of Modern Music, ascoltando Elton John, Leonard Cohen e Bob Dylan. Nel 2012 realizza l’Ep di debutto, SONGS FROM ANOTHER LOVE, mentre nel 2013 arriva il primo disco sulla lunga distanza, LONG WAY DOWN.',
+'https://www.google.com/url?sa=i&url=https%3A%2F%2Ffirst-avenue.com%2Fperformer%2Ftom-odell%2F&psig=AOvVaw1oTpLUXChA9jWNfw-MkMsy&ust=1729020091311000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCEh_rLjokDFQAAAAAdAAAAABAE');
 
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+"Billie Eilish Pirate Baird O'Connell",
+'Billie Eilish',
+'2001-12-18',
+'Statunitense',
+'Billie Eilish è una cantautrice americana.
+Nata a Los Angeles, California, Eilish è nota per la sua voce sussurrata, il suono atmosferico e lo stile della moda spesso composto da abiti larghi e oversize.
+Ha pubblicato la sua prima canzone, "Ocean Eyes", nel 2015. Scritta, mixata e prodotta da suo fratello maggiore, Finneas O''Connell (noto semplicemente come Finneas), i fratelli hanno caricato la canzone su SoundCloud, dove alla fine è decollata. Da lì, Eilish e Finneas hanno iniziato a scrivere e fare musica come una squadra, e hanno pubblicato il suo secondo singolo, "Six Foot Under", nel giugno 2016.
+Quell''agosto, Eilish ha firmato un contratto con Darkroom e Interscope Records.
+Dopo aver pubblicato una serie di singoli e remix, Eilish ha pubblicato l''EP "Don''t Smile at Me" nell''agosto 2017, che ha raggiunto la posizione numero 14 nella Billboard 200. Il suo album di debutto, "When We All Fall Asleep, Where Do We Go" ?”, pubblicato a marzo 2019.
+L''album ha raggiunto la vetta della Billboard 200, rendendola la prima artista nata negli anni 2000 a raggiungere la vetta della classifica degli album. Tutte le 14 canzoni dell''album sono state classificate nella Hot 100, che ha battuto il record per il maggior numero di canzoni simultaneamente in classifica nella Hot 100 da parte di un''artista donna.
+"Bad Guy", uno dei singoli dell''album, ha raggiunto il numero 1 nella Hot 100. Ai Grammy 2020, Eilish è diventata la persona più giovane a vincere tutte e quattro le categorie principali: miglior nuovo artista, disco, album e canzone dell''anno.
+Eilish ha pubblicato il suo secondo album, "Happier Than Ever", il 30 luglio 2021.',
+'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uhdpaper.com%2F2020%2F03%2Fbillie-eilish-4k-6894.html&psig=AOvVaw05ksQC5Uw87ZLz97IBjZ1z&ust=1729149555323000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjxvKGukokDFQAAAAAdAAAAABAE'
+);
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Flavio Bruno Pardini',  
+    'Gazzelle', 
+    '1989-12-07',  
+    'Italiana', 
+    'Gazzelle è il nome d''arte di Flavio Bruno Pardini, cantautore romano di genere indie pop. Ha debuttato nel 2017 con l''album "Superbattito", che lo ha fatto emergere sulla scena indie italiana. Le sue canzoni sono spesso caratterizzate da testi malinconici e melodie orecchiabili, che hanno riscosso grande successo tra i giovani. Nel corso degli anni, ha consolidato la sua presenza con singoli di successo come "Sopra", "Polynesia" e "Scusa".',
+    'https://i.scdn.co/image/ab67616100005174a37800344d499444125dead5'  
+);
+-- INSERT ALBUM da fare dopo aver popolato artista e genere
 INSERT INTO album VALUES (
 	'1',
     'My Dear Melancholy', 
     'My Dear Melancholy è un progetto di 6 tracce di The Weeknd, pubblicato nel 2018. L''album rappresenta un ritorno a sonorità più cupe e intime rispetto ai precedenti lavori, affrontando temi di amore, dolore e rimpianto.<br>
      Il progetto ha segnato il terzo debutto consecutivo di The Weeknd al primo posto nella Billboard Top 200.', 
-    1380, -- durata? come la mettiamo? in secondi?
+    1380, 
     '2018-03-30', 
     'https://i.scdn.co/image/ab67616d0000b2731f6a2a40bb692936879db730',
     1,  
     6 
 );
-
-INSERT INTO album VALUES (
-'2',
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'After Hours',
+    'After Hours è il quarto album in studio di The Weeknd, rilasciato il 20 marzo 2020. L''album esplora temi di cuori spezzati, auto-riflessione e decadenza, mescolando sonorità R&B con influenze synthwave e pop anni ''80. È stato trainato da singoli di successo come "Blinding Lights" e "Heartless".',
+    3377,  
+    '2020-03-20',
+    'https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36',
+    1,  
+    6  
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Dawn FM', 
+    'Dawn FM è il quinto album in studio di The Weeknd, pubblicato il 7 gennaio 2022. Il disco si caratterizza per un sound futuristico, ispirato agli anni ''80, con elementi di pop, R&B ed elettronica. 
+    <br>L''album è stato acclamato per la sua produzione sofisticata e la narrazione unica, che esplora temi di introspezione e rinascita. Include collaborazioni con artisti come Tyler, The Creator e Lil Wayne, ed è stato presentato come una trasmissione radiofonica immaginaria.', 
+    3117,  -- Durata totale in secondi (es. 51 minuti e 57 secondi)
+    '2022-01-07', 
+    'https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d',  
+    1, 
+    6   
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id)  -- Ariana what are you doing here
+VALUES (
 'Dangerous Woman',
-'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.[22]
+'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.
 L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
- Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
-2340, -- durata in secondi
+Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
+2340,
 '2016-05-20',
 'https://images.rockol.it/B5HsUf34_VBW6U1G8rC4XlU_m68=/1200x1200/smart/rockol-img/img/foto/upload/ariana-grande-dangerous-woman.1464168039.jpg',
 2,
 2
 );
 
+INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES(
+'The Land Is Inhospitable and So Are We',
+'Poetico, malinconico, female vocalist, introspettiva',
+1920,
+'2023-09-15',
+'https://media.pitchfork.com/photos/64c03880f653299579f89e96/1:1/w_320,c_limit/mitski-TheLandIsInhospitableAndSoAreWe.jpg',
+3,
+11);
 
+INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Long Way Down',
+'Long Way Down è l''album di debutto in studio del cantautore britannico Tom Odell. Seguendo le orme di Adele, Emeli Sande e Jessie J, Tom ha ricevuto il Critics Choice Award ai BRIT Awards 2013.',
+'2134',
+'2013-06-21',
+'https://www.google.com/imgres?q=long%20way%20down%20tom%20odell&imgurl=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b2739adb17697c5a5bb02b5cebb7&imgrefurl=https%3A%2F%2Fopen.spotify.com%2Fintl-it%2Falbum%2F3t0Quq8X7W90hRP5OQ5S4b&docid=OPsZqtkBYuSbtM&tbnid=PAOAgdoZBcBiWM&vet=12ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA..i&w=640&h=640&hcb=2&itg=1&ved=2ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA',
+'4',
+'16');
+INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Black Friday',
+'Black Friday è il sesto album in studio del cantautore britannico Tom Odell. È stato rilasciato il 26 gennaio 2024 tramite UROK Management. La title track Black Friday è stata nominata per la migliore canzone musicalmente e liricamente al Premio Ivor Novello giovedì 23 maggio 2024.',
+'1721','2024-01-26',
+'https://www.google.com/imgres?q=tom%20odell%20black%20friday&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2FA1Oqa6nvPDL._UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.it%2FBlack-Friday-Tom-Odell%2Fdp%2FB0CKDS95Z3&docid=PO1WXyqwvG79bM&tbnid=IwSfet1wx_Cn_M&vet=12ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA',
+'4',
+'2');
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+'HIT ME HARD AND SOFT',
+'HIT ME HARD AND SOFT arriva comunque come un meteorite.
+Con un’ampia portata e una capacità di trasporto che sfidano perfino i suoi standard, è un progetto che brilla del coraggio e della teatralità di un’artista consapevole di avere il mondo ai propri piedi.
+In appena 45 minuti, Eilish mantiene le promesse e disorienta il pubblico con un mix di parodie infuocate, escursioni trance e sincopati tributi al piacere queer, ai quali si affiancano momenti dai contorni più smussati, come toccanti ballate che descrivono la fine di una relazione e puntate nei territori di un jazz informale. A garantire la coerenza dell’intera impresa è chiaramente la stessa cantante, con la sua voce tipicamente vitrea, i testi sagaci e un’abilità unica nel rendere così imponente la morbidezza del suono.
+Come i due precedenti album, anche questo è stato registrato con la complicità ormai consolidata del fratello FINNEAS.
+Nel concepirlo, il duo pluripremiato ha immaginato di creare il tipo di disco che dà al pubblico la sensazione di essere stato catapultato in un universo alternativo. Guarda caso, questa dimensione ha svariati tratti distintivi in comune con lo storico debutto ',
+2580, 
+'2024-05-17',
+'https://www.google.com/imgres?q=HIT%20ME%20HARD%20AND%20SOFT&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fa%2Faa%2FBillie_Eilish_-_Hit_Me_Hard_and_Soft.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHit_Me_Hard_and_Soft&docid=gRPxRLX2IEvk6M&tbnid=8qi8fO4SEoCzRM&vet=12ahUKEwiJjsDor5KJAxXrhv0HHWuFMFgQM3oECGoQAA..i&w=300&h=300&hcb=2&ved=2ahUKEwiJjsDor5KJAxXrhv0HHWuFMFgQM3oECGoQAA',
+5,
+2
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'OK',
+    'OK è il terzo album in studio del cantautore italiano Gazzelle, rilasciato il 12 febbraio 2021. L\'album tocca tematiche di solitudine, amore e malinconia, tipiche della scrittura dell''artista, e include brani di successo come "Destri" e "Scusa". Il sound dell''album fonde indie pop con influenze elettroniche, consolidando la carriera di Gazzelle nella scena musicale italiana.',
+    2363,  
+    '2021-02-12',
+    'https://i.scdn.co/image/ab67616d0000b273d5bcb4e1baec7e7413d6a2b9',  
+    6,  
+    11  
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Superbattito',
+    'Superbattito è l''album di debutto di Gazzelle, rilasciato il 3 marzo 2017. Il disco ha subito riscosso successo nella scena indie italiana, grazie a brani come "Nmrpm" e "Zucchero". L''album esplora temi di amore, malinconia e quotidianità, con un sound che fonde indie pop e atmosfere elettroniche.',
+	2146,  
+    '2017-03-03',
+    'https://i.scdn.co/image/ab67616d0000b2730d2873d3510791b2119dd30b',
+    3,  -- artista_id(da controllare
+    11 
+);
+-- INSERT BRANI da fare dopo aver popolato l'album(e di conseguenza genere e artista)
 
 INSERT INTO brano VALUES (
 	'1',
@@ -511,18 +628,6 @@ INSERT INTO brano VALUES (
     'https://www.youtube.com/watch?v=HQfCoXAPowo',  -- Link ufficiale del video su YouTube
     '6' -- genere_id
 );
-
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
-    'After Hours',
-    'After Hours è il quarto album in studio di The Weeknd, rilasciato il 20 marzo 2020. L''album esplora temi di cuori spezzati, auto-riflessione e decadenza, mescolando sonorità R&B con influenze synthwave e pop anni ''80. È stato trainato da singoli di successo come "Blinding Lights" e "Heartless".',
-    3377,  
-    '2020-03-20',
-    'https://i.scdn.co/image/ab67616d0000b2738863bc11d2aa12b54f5aeb36',
-    1,  -- The Weeknd
-    6  
-);
-
 INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
 VALUES (
     'Alone Again',
@@ -1381,19 +1486,6 @@ VALUES (
     'https://www.youtube.com/watch?v=i58MNnk6BhY',
     6  
 );
-
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
-    'Dawn FM', 
-    'Dawn FM è il quinto album in studio di The Weeknd, pubblicato il 7 gennaio 2022. Il disco si caratterizza per un sound futuristico, ispirato agli anni ''80, con elementi di pop, R&B ed elettronica. 
-    <br>L''album è stato acclamato per la sua produzione sofisticata e la narrazione unica, che esplora temi di introspezione e rinascita. Include collaborazioni con artisti come Tyler, The Creator e Lil Wayne, ed è stato presentato come una trasmissione radiofonica immaginaria.', 
-    3117,  -- Durata totale in secondi (es. 51 minuti e 57 secondi)
-    '2022-01-07', 
-    'https://i.scdn.co/image/ab67616d0000b2734ab2520c2c77a1d66b9ee21d',  
-    1, 
-    6   
-);
-
 INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
 VALUES (
     'Dawn FM',
@@ -2353,91 +2445,1375 @@ VALUES (
     'https://www.youtube.com/watch?v=vCOXTEzfoJ4',
     11  
 );
-
-select * from brano;
-
--- id - brano_id - album_id BIGINT NOT NULL,
-INSERT INTO album_brano VALUES ('1','1','1');
-INSERT INTO album_brano VALUES ('2','2','1');
-INSERT INTO album_brano VALUES ('3','3','1');
-INSERT INTO album_brano VALUES ('4','4','1');
-INSERT INTO album_brano VALUES ('5','5','1');
-INSERT INTO album_brano VALUES ('6','6','1');
-INSERT INTO album_brano VALUES ('7','7','1');
-INSERT INTO album_brano VALUES ('8','8','2');
-INSERT INTO album_brano VALUES ('9','9','2');
-INSERT INTO album_brano VALUES ('10','10','2');
-INSERT INTO album_brano VALUES ('11','11','2');
-INSERT INTO album_brano VALUES ('12','12','2');
-INSERT INTO album_brano VALUES ('13','13','2');
-INSERT INTO album_brano VALUES ('14','14','2');
-INSERT INTO album_brano VALUES ('15','15','2');
-INSERT INTO album_brano VALUES ('16','16','2');
-INSERT INTO album_brano VALUES ('17','17','2');
-INSERT INTO album_brano VALUES ('18','18','2');
-INSERT INTO album_brano VALUES ('19','19','2');
-INSERT INTO album_brano VALUES ('20','20','2');
-INSERT INTO album_brano VALUES ('21','21','2');
-INSERT INTO album_brano VALUES ('22','22','3');
-INSERT INTO album_brano VALUES ('23','23','3');
-INSERT INTO album_brano VALUES ('24','24','3');
-INSERT INTO album_brano VALUES ('25','25','3');
-INSERT INTO album_brano VALUES ('26','26','3');
-INSERT INTO album_brano VALUES ('27','27','3');
-INSERT INTO album_brano VALUES ('28','28','3');
-INSERT INTO album_brano VALUES ('29','29','3');
-INSERT INTO album_brano VALUES ('30','30','3');
-INSERT INTO album_brano VALUES ('31','31','3');
-INSERT INTO album_brano VALUES ('32','32','3');
-INSERT INTO album_brano VALUES ('33','33','3');
-INSERT INTO album_brano VALUES ('34','34','3');
-INSERT INTO album_brano VALUES ('35','35','3');
-INSERT INTO album_brano VALUES ('36','36','3');
-INSERT INTO album_brano VALUES ('37','37','3');
-
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
-'Mitski Miyawaki',
-'Mitski',
-'1990-09-27',
-'Giapponese',
-'A volte Mitski sente che la vita sarebbe più facile senza speranza, senza un''anima o senza amore. Ma quando chiude gli occhi e pensa a ciò che è veramente suo, a ciò che non può essere ripreso o demolito, vede l''amore. "La cosa migliore che abbia mai fatto nella mia vita è stata amare le persone," dice. "Vorrei poter lasciare dietro di me tutto l''amore che ho dopo la mia morte, così da poter illuminare gli altri con tutta questa bontà, tutto questo amore che ho creato." Spera che il suo ultimo album, The Land Is Inhospitable and So Are We, possa risplendere d''amore a lungo dopo che lei se ne sarà andata. È proprio così che si sente: come un amore che perseguita la terra. "Questo è il mio album più americano," dice. La musica sembra un atto profondo di testimonianza di questo paese, con tutte le sue sofferenze private e contraddizioni. Musicalmente, è l''album più epico e saggio di Mitski, introduce ferite e poi le guarisce attivamente. Qui, l''amore viaggia nel tempo per benedire i nostri giorni teneri, come la luce di una stella lontana. È pieno del dolore dei cuori spezzati e delle gioie apparentemente banali ma enormi che spesso non vengono cantate. È una piccola epica. Dal fondo di un bicchiere, a un vialetto fangoso di memoria e neve, a un treno merci che sfreccia attraverso il Midwest, fino alla luna, sembra che tutto e tutti stiano gridando di dolore, protendendosi verso l''amore. L''amore è quella terra inospitale, che ci chiama e poi ci respinge. Amare questo posto, questa terra, questa America, questo corpo richiede lavoro. Potrebbe essere impossibile. Le cose migliori lo sono.',
-'https://cdn.prod.website-files.com/61b0d97defe7049ee34fa045/65ca57e1c8fceb53db7d5276_240604%20Mitski-600x400.png'
-);
-
-
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
-'Ariana Grande-Butera',
-'Ariana Grande',
-'1993-06-26',
-'Statunitense',
-'Ariana Grande è una cantante, attrice e produttrice musicale statunitense, la cui carriera artistica si è evoluta con grande successo nel corso degli anni.
-Il suo debutto risale al 2008, quando ha partecipato al musical di Broadway 13, ottenendo riconoscimenti per le sue capacità canore e recitative.
-La grande svolta è arrivata con il ruolo di Cat Valentine nella serie televisiva di Nickelodeon Victorious (2010-2013). Successivamente ha continuato a interpretare lo stesso personaggio nello spin-off Sam & Cat (2013-2014).
-Nel frattempo, Ariana ha coltivato anche il suo talento musicale. Nel 2013 ha pubblicato il suo primo album, Yours Truly, che ha subito ottenuto un grande successo, raggiungendo il primo posto nella classifica Billboard 200.
-Il singolo "The Way" è stato particolarmente apprezzato, contribuendo a far emergere Ariana come una delle nuove voci più interessanti nel panorama pop. Il suo secondo album, My Everything (2014), ha consolidato il suo successo.
-Hit come "Problem", "Break Free" e "Bang Bang" hanno dominato le classifiche internazionali e l ''hanno trasformata in una star globale. Questo disco ha mostrato la sua abilità nel mescolare pop, R&B e dance.
-Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un''immagine e un sound più maturi. Il singolo omonimo, insieme a brani come "Into You" e "Side to Side", ha confermato il suo status di icona pop.
-Il 2017 ha rappresentato un anno particolarmente difficile per Ariana a causa dell''attentato terroristico durante il suo concerto a Manchester, che ha causato numerose vittime. In risposta, ha organizzato il concerto benefico One Love Manchester, dimostrando grande forza e solidarietà verso le vittime ',
-'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1'
-);
-
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
-'Dangerous Woman',
-'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.
-L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
-Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria miglior album pop vocale.',
-2340, -- durata in secondi
+-- Ariana
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Moonlight',
+'The sun is setting 
+<br>And you''re right here by my side
+<br>And the movie''s playing
+<br>But we won''t be watching tonight
+<br>Every look, every touch
+<br>Makes me wanna give you my heart
+<br>I''ll be crushin'' on you, baby
+<br>Stay the way you are
+<br>Cause I never knew, I never knew
+<br>You could hold moonlight in your hands
+<br>''Til the night I held you
+<br>You are my moonlight
+<br>Moonlight
+<br>I kiss his fingertips
+<br>As I''m wishing he''s all mine
+<br>He''s giving me Elvis
+<br>With some James Dean in his eyes
+<br>Puts his lips on my neck
+<br>Makes me want to give him my body
+<br>I''ll be fallin'' for you, baby
+<br>And I just can''t stop
+<br>Cause I never knew, I never knew
+<br>You could hold moonlight in your hands
+<br>''Til the night I held you
+<br>You are my moonlight
+<br>Moonlight
+<br>Baby, I''ll be fallin''
+<br>You are my moonlight
+<br>Moonlight
+<br>He''s so bossy
+<br>He makes me dance
+<br>Tryna sit in the back of his whip
+<br>And just cancel my plans
+<br>Sweet like candy
+<br>But he''s such a man
+<br>He knows just what it does
+<br>When he’s holding me tight
+<br>And he calls me "Moonlight" too',
+'194',
 '2016-05-20',
-'https://images.rockol.it/B5HsUf34_VBW6U1G8rC4XlU_m68=/1200x1200/smart/rockol-img/img/foto/upload/ariana-grande-dangerous-woman.1464168039.jpg',
-3,
-2
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=gJcIm87v0bc',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Dangerous Woman ',
+'Don''t need permission
+<br>Made my decision to test my limits
+<br>Cause it''s my business, God as my witness
+<br>Start what I finished
+<br>Don''t need no hold up
+<br>Taking control of this kind of moment
+<br>I''m locked and loaded
+<br>Completely focused, my mind is open
+<br>All that you got, skin to skin, oh my God
+<br>Don''t ya stop, boy
+<br>Somethin' 'bout you makes me feel like a dangerous woman
+<br>Somethin' 'bout, somethin' 'bout, somethin' 'bout you
+<br>Makes me wanna do things that I shouldn''t
+<br>Somethin' 'bout, somethin' 'bout, somethin'' ''bout
+<br>Nothing to prove and I''''m bulletproof and
+<br>Know what I''m doing
+<br>The way we''re movin'' like introducing
+<br>Us to a new thing
+<br>I wanna savor, save it for later
+<br>The taste of flavor, cause I''m a taker
+<br>Cause I''m a giver, it''s only nature
+<br>I live for danger
+<br>All that you got, skin to skin, oh my God
+<br>Don''t ya stop, boy
+<br>Somethin' 'bout you makes me feel like a dangerous woman
+<br>Somethin' 'bout, somethin' 'bout, somethin' 'bout you
+<br>Makes me wanna do things that I shouldn''t
+<br>Somethin' 'bout, somethin' 'bout, somethin'' ''bout you
+<br>All girls wanna be like that
+<br>Bad girls underneath, like that
+<br>You know how I''m feeling inside
+<br>Somethin'' ''bout, somethin' 'bout
+<br>All girls wanna be like that
+<br>Bad girls underneath, like that
+<br>You know how I''m feeling inside
+<br>Somethin' 'bout, somethin' 'bout
+<br>Somethin' 'bout you makes me feel like a dangerous woman
+<br>Somethin' 'bout, somethin' 'bout, somethin' 'bout you
+<br>Makes me wanna do things that I shouldn''t
+<br>Somethin'' ''bout, somethin'' ''bout, somethin'' ''bout you
+<br>All girls wanna be like that
+<br>Bad girls underneath like that
+<br>You know how I''m feeling inside
+<br>Somethin'' ''bout, somethin''''bout
+<br>All girls wanna be like that
+<br>Bad girls underneath like that
+<br>You know how I''m feeling inside
+<br>Somethin' 'bout, somethin' 'bout
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>(Somethin' 'bout, somethin' 'bout, somethin' 'bout you)
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>Yeah, there''s somethin'' ''bout you boy
+<br>(Somethin'' ''bout, somethin'' ''bout, somethin'' ''bout you)',
+'215',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=TFrMDGfW_Sg',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Be Alright',
+'Midnight shadows
+<br>When finding love is a battle
+<br>But daylight, is so close
+<br>So don''t you worry ''bout a thing
+<br>We''re gonna be alright
+<br>We''re gonna be alright
+<br>We''re gonna be alright
+<br>Baby don''t you know
+<br>All of them tears gon'' come and go
+<br>Baby you just gotta make up your mind
+<br>That every little thing is gonna be alright
+<br>Baby don''t you know
+<br>All of them tears gon'' come and go
+<br>Baby you just gotta make up your mind
+<br>We decided
+<br>We''re gonna be alright
+<br>We''re gonna be alright
+<br>We''re gonna be alright
+<br>Babe we''re in slow motion
+<br>Can''t seem to get where we''re going
+<br>But the hard times are golden
+<br>Cause they all lead to better days
+<br>We''re gonna be alright
+<br>We''re gonna be alright
+<br>We''re gonna be alright
+<br>Baby don''t you know
+<br>All of them tears gon'' come and go
+<br>Baby you just gotta make up your mind
+<br>That every little thing is gonna be alright
+<br>Baby don''t you know
+<br>All of them tears gon'' come and go
+<br>Baby you just gotta make up your mind
+<br>We decided
+<br>We''re gonna be alright
+<br>We''re gonna be alright, ooh baby
+<br>We''re gonna be alright
+<br>We''re gonna be alright',
+'180',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=eBAHqRnSgRw',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Into You',
+'I''m so into you,
+<br>I can barely breathe
+<br>And all I wanna do
+<br>is to fall in deep
+<br>But close ain''t close enough
+<br>''til we cross the line, hey, yeah
+<br>So name a game to play,
+<br>and I''ll roll the dice, hey
+<br>Oh baby, look what you started
+<br>The temperature''s rising in here
+<br>Is this gonna happen?
+<br>Been waiting and waiting for you
+<br>to make a move
+<br>(Woo, oh, oh,)
+<br>Before I make a move
+<br>(Woo, oh, oh, oh)
+<br>So baby, come light me up
+<br>and maybe I''ll let you on it
+<br>A little bit dangerous,
+<br>but baby, that''s how I want it
+<br>A little less conversation, and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you
+<br>Got everyone watchin'' us,
+<br>so baby, let''s keep it secret
+<br>A little bit scandalous,
+<br>but baby, don''t let them see it
+<br>A little less conversation and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you,
+<br>oh yeah
+<br>This could take some time, hey
+<br>I made too many mistakes
+<br>Better get this right, right, baby
+<br>Oh baby, look what you started
+<br>The temperature''s rising in here
+<br>Is this gonna happen?
+<br>Been waiting and waiting for you to make a move
+<br>(Woo, oh, oh, oh)
+<br>Before I make a move
+<br>(Woo, oh, oh, oh)
+<br>So baby, come light me up
+<br>and maybe I''ll let you on it
+<br>A little bit dangerous,
+<br>but baby, that''s how I want it
+<br>A little less conversation, and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you
+<br>Got everyone watchin'' us,
+<br>so baby, let''s keep it secret
+<br>A little bit scandalous,
+<br>but baby, don''t let them see it
+<br>A little less conversation and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you
+<br>Tell me what you came here for
+<br>Cause I can''t, I can''t wait no more
+<br>I''m on the edge with no control
+<br>And I need, I need you to know
+<br>You to know, oh
+<br>So baby, come light me up
+<br>and maybe I''ll let you on it
+<br>A little bit dangerous,
+<br>but baby, that''s how I want it
+<br>A little less conversation, and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you
+<br>Got everyone watchin'' us,
+<br>so baby, let''s keep it secret
+<br>A little bit scandalous,
+<br>but baby, don''t let them see it
+<br>A little less conversation and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you
+<br>So come light me up,
+<br>so come light me up my baby
+<br>A little dangerous,
+<br>a little dangerous my baby
+<br>A little less conversation and
+<br>a little more touch my body
+<br>Cause I''m so into you,
+<br>into you,
+<br>into you',
+'240',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=GB2aPHTDaqU',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Side To Side',
+'I''ve been here all night, (Ariana)
+<br>I''ve been here all day, (Nicki Minaj)
+<br>And boy, got me walkin' 'side to side
+<br>(Let them hoes know)
+<br>I''m talkin'' to ya
+<br>See you standing over there with your body
+<br>Feeling like I wanna rock with your body
+<br>And we don''t gotta think ''bout nothin'' 
+<br>I''m comin'' at ya
+<br>Cause I know you got a bad reputation
+<br>Doesn''t matter, ''cause you give me temptation
+<br>And we don''t gotta think ''bout nothin'' ''(''bout nothin'')''
+<br>These friends keep talkin'' way too much
+<br>Say I should give you up
+<br>Can''t hear them, no, ''cause I...
+<br>I''ve been here all night
+<br>I''ve been here all day
+<br>And boy, got me walkin'' side to side
+<br>I''ve been here all night
+<br>And boy, got me walkin'' side to side (side to side)
+<br>Been tryna hide it
+<br>Baby, what''s it gonna hurt if they don''t know?
+<br>Makin'' everybody think that we solo
+<br>Just as long as you know you got me (you got me)
+<br>And boy I got ya
+<br>''Cause tonight I''m making deals with the devil
+<br>And I know it''s gonna get me in trouble
+<br>Just as long as you know you got me
+<br>These friends keep talkin'' way too much
+<br>Say I should give you up
+<br>Can''t hear them, no, ''cause I...
+<br>I''ve been here all night
+<br>I''ve been here all day
+<br>And boy, got me walkin'' side to side (side to side)
+<br>I''ve been here all night (been here all night, baby)
+<br>I''ve been here all day (been here all day, baby)
+<br>And boy, got me walkin'' side to side (side to side)
+<br>This the new style with the fresh type of flow
+<br>Wrist icicle, ride dick, bicycle
+<br>Come through ya, get you this type of blow
+<br>If you wanna Minaj, I got a tricycle
+<br>All these bitches, flows is my mini-me
+<br>Body smoking, so they call me Young Nicki Chimney
+<br>Rappers in they feelings ''cause they feelin'' me
+<br>Uh, I-I give zero fucks and I got zero chill in me
+<br>Kissing me, copped the blue box that say Tiffany
+<br>Curry with the shot, just tell ''em to call me Stephanie
+<br>Gun pop and I make my gum pop
+<br>I''m the queen of rap, young Ariana run pop
+<br>These friends keep talkin' 'way too much
+<br>Say I should give him up
+<br>Can''t hear them, no, ''cause I...
+<br>I''ve been here all night (been here all night, baby)
+<br>I''ve been here all day (been here all day, baby)
+<br>And boy, got me walkin' 'side to side (side to side)
+<br>I''ve been here all night (been here all night, baby)
+<br>I''ve been here all day (been here all day, baby)
+<br>And boy, got me walkin'' side to side (side to side)
+<br>This the new style with the fresh type of flow
+<br>Wrist icicle, ride dick bicycle
+<br>Come through ya, get you this type of blow
+<br>If you wanna Minaj, I got a tricycle',
+'208',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=h0JrKnBE3nI',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Let Me Love You',
+'I just broke up with my ex
+<br>Now I’m out here single, I don’t really know what’s next
+<br>But I ain’t even trippin'', I''m just chilling and sit back
+<br>And I know they will be coming from the right and the left, left, left
+<br>I just broke up with my ex
+<br>You''re the one I’m feeling as I''m laying on your chest
+<br>Good conversation got me holding my breath
+<br>And I don’t normally say this but goddamn you''re the best, best, best
+<br>And if it feels right, promise I don''t mind
+<br>And if it feels right, promise I''ll stay here all night
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>As I''m laying on your chest
+<br>I''ll be out here thinkin' 'bout it, boys just to guess
+<br>Some of them keep telling me I''m better than the rest
+<br>And I ain''t tryna rush you, but goddamn I''m a mess, mess, mess
+<br>And if it feels right, promise I don''t mind
+<br>And if it feels right, promise I''ll stay here all night
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>I say, "Girl, you need a hot boy"
+<br>She say, "you need to stop fuckin' 'with them thots, boy"
+<br>I say you need a real nigga she said yes Lord
+<br>And what you need your ex for? I''m triple X, Lord
+<br>Okay, Ariana my lil mama, goodbye to the good girl
+<br>My ex tripping, it''s no Biggie, I 2Pac, shook her
+<br>I''m laid up with my new thing
+<br>She lay her head on my new chain
+<br>Then the mood change
+<br>My name change from Lil Wayne to Oooh Wayne
+<br>Oh Lord, she grinding on this Grande
+<br>Oh Lord, I''m drowning, I''m gonna need that coast guard
+<br>And when it comes to that nigga, I give her amnesia
+<br>She just looking for love
+<br>She says she single and I''m her feature, oh my God
+<br>(You''re no good, but it''s time I love you baby)
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>Tunechi, moonlight babe
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>(But it''s time I love you, yeah, yeah, ah)
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>She''s looking for love
+<br>(I''m looking for love)
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>She''s looking for love
+<br>(You''re looking for love baby)
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>She''s looking for love
+<br>Just let me lo-o-o-o-o-o-o-love you, you
+<br>(I''m looking for love babe)
+<br>She''s just looking for love
+<br>She''s just looking for love
+<br>I''m looking for that love
+<br>He''s looking for that love
+<br>She''s just looking for love
+<br>Boy, I''m looking for love baby
+<br>I''mma give her that love
+<br>I''mma give her that...
+<br>I''mma give her that...
+',
+'206',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=xbiv2QHcGYU',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Greedy',
+'Greedy
+You know that I''m greedy for love
+<br>Boy, you give me feelings, never felt before
+<br>I''m making it obvious by knocking at your door
+<br>I know that I''m coming tonight
+<br>You know I''m coming tonight
+<br>Don''t want to deny it anymore
+<br>Been in this state of mind
+<br>Been in this state of mind
+<br>Been in this state of mind, oh yeah
+<br>Baby, you got lucky ''cause you''re rocking with the best
+<br>And I''m greedy
+<br>''Cause I''m so greedy
+<br>''Cause I''m so
+<br>I ain''t talking money, I''m just physically obsessed
+<br>And I''m greedy
+<br>''Cause I''m so greedy
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love
+<br>''Cause I''m so
+<br>I don''t need a phone call
+<br>Got nothing to say
+<br>I''ma tell you when it''s over
+<br>Got no games to play
+<br>You know that I''m coming tonight
+<br>I know I''m coming tonight
+<br>I just need to get this out the way, oh baby!
+<br>Been in this state of mind
+<br>Been in this state of mind
+<br>Been in this state of mind, oh yeah
+<br>Baby, you got lucky cause you''re rocking with the best
+<br>And I''m greedy
+<br>''Cause I''m so greedy
+<br>''Cause I''m so
+<br>I ain''t talking money, I''m just physically obsessed
+<br>And I''m greedy
+<br>''Cause I''m so greedy
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love
+<br>''Cause I''m so
+<br>Greedy, I''m greedy, I''m greedy, I''m greedy
+<br>I''m greedy, I''m greedy, I''m greedy, I''m greedy for love
+<br>Greedy, I''m greedy, I''m greedy, I''m greedy
+<br>I''m greedy, I''m greedy, I''m greedy, I''m greedy for love
+<br>Baby, you got lucky cause you''re rocking with the best
+<br>And I''m greedy
+<br>''Cause I''m so greedy
+<br>''Cause I''m so
+<br>I ain''t talking money, I''m just physically obsessed
+<br>And I''m greedy
+<br>''Cause I''m so greedy
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love (you know I''m)
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love (oh, don''t you know I''m greedy?)
+<br>You know that I''m greedy for love (oh, don''t you know I''m greedy?)
+<br>''Cause I''m so greedy, ooh
+<br>You know that I''m greedy for love
+<br>You know that I''m greedy for love
+<br>''Cause I''m so',
+'194',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=oa11bHIZNaE',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Leave Me Lonely',
+'Dangerous love (ooh)
+<br>You''re no good for me, darling (ah)
+<br>Yeah, you turn me away (ooh)
+<br>Like I''m begging (ooh) for a dollar
+<br>Danger (ooh)
+<br>Oh, how you hold me (ah)
+<br>I get a chill inside (ooh)
+<br>And nothing frightens (ooh) me, baby (ay), oh
+<br>Is it love (ooh)
+<br>When so easily (ooh) said goodbye?
+<br>Is it love (ooh)
+<br>When we''ve given up (ooh) before we tried? Mm
+<br>Is it love (ooh)
+<br>When you stole my peace of mind? (Ah) yeah
+<br>Is it love when (ooh)
+<br>When you cry (ooh), and cry and cry?
+<br>So when you walk out that door (ooh)
+<br>Don''t you come back no more (ah)
+<br>My heart has had enough (ooh) of the give and take
+<br>And as much (ooh) as I want you to stay
+<br>You''re a dangerous love (ooh)
+<br>And baby, you''re no good for me, darling (ah)
+<br>''Cause if you''re gonna love me (ooh) and leave me hanging here
+<br>Then I''d rather you
+<br>Leave me lonely (ooh)
+<br>Even though it hurts
+<br>Ooh
+<br>You''re a dangerous (ooh) love, hey
+<br>Dangerous love (ooh)
+<br>You''re no good for me, darling (ah)
+<br>Yeah, you turn me away (ooh)
+<br>Like I''m begging (ooh) for a dollar
+<br>Danger (ooh)
+<br>Oh, how you hold me (ah)
+<br>I get a chill inside (ooh)
+<br>And nothing frightens (ooh) me, baby, oh
+<br>When you walk out that door
+<br>Don''t you come back no more
+<br>My heart has had enough of the give and take
+<br>And as much as I want you to stay
+<br>You''re a dangerous love (ooh)
+<br>Baby, you''re no good for me, darling (ah)
+<br>''Cause if you''re gonna love me (ooh) and leave me hanging here
+<br>Then I''d rather you leave
+<br>Leave me lonely
+<br>Even though it hurts (ah)
+<br>Mm
+<br>You''re a dangerous love, baby
+<br>Dangerous love (ooh)
+<br>You''re no good for me, darling (ah)
+<br>Yeah, you turn me away (ooh)
+<br>Like I''m begging (ooh) for a dollar
+<br>Danger (ooh)
+<br>Oh, how you hold me (ah)
+<br>I get a chill inside (ooh)
+<br>And nothing frightens (ooh) me, baby, oh',
+'210',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=-kYVljnA6rI',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Everyday',
+'Anytime I''m alone, I can''t help thinking about you
+<br>All I want, all I need, honestly, it''s just me and you
+<br>He giving me that good shit
+<br>That make me not quit, that good shit
+<br>He giving me that good shit
+<br>That make me not quit, that good shit
+<br>Oh, he give it to me
+<br>Everyday, everyday, everyday
+<br>He give it to me
+<br>Everyday, everyday, everyday
+<br>Oh, he give it to me
+<br>Everyday, everyday, everyday
+<br>He give it to me
+<br>Everyday, everyday, everyday
+<br>Anytime, anywhere, baby boy, I can misbehave
+<br>Breathe me in, breathe me out, fill me up
+<br>Running through your veins
+<br>He giving me that good shit
+<br>That make me not quit, that good shit
+<br>He giving me that good shit
+<br>That make me not quit, that good shit
+<br>Oh, he give it to me
+<br>Everyday, everyday, everyday
+<br>He give it to me
+<br>Everyday, everyday, everyday
+<br>Oh, he give it to me
+<br>Everyday, everyday, everyday
+<br>He give it to me
+<br>Everyday, everyday, everyday
+<br>Make me go
+<br>La, la, la, la, la, la, la, la
+<br>La, la, la, la, la, la
+<br>Everyday, everyday
+<br>La, la, la, la, la, la, la, la
+<br>La, la, la, la, la, la
+<br>Everyday, everyday
+<br>I put that work on you everyday
+<br>When the night fall ''til the sun come
+<br>You done fell in love with a bad guy
+<br>I don''t compromise my passion
+<br>It''s not what you do for me, I''m doing the same for you
+<br>I don''t be tripping or making mistakes
+<br>I made too many in my past (that''s right)
+<br>I fight for the things you believe in
+<br>I got your body and put it on drive and
+<br>I got the keys and
+<br>We about to take us a vacation
+<br>I''m about to put all this vintage loving on you
+<br>Baby like it was the late 80s
+<br>When you ride on me, baby rotate it
+<br>He giving me that good shit
+<br>That make me not quit, that good shit
+<br>Oh, he give it to me
+<br>Everyday, everyday, everyday
+<br>He give it to me
+<br>Everyday, everyday, everyday
+<br>Oh, he give it to me
+<br>Everyday, everyday, everyday
+<br>He give it to me
+<br>Everyday, everyday, everyday
+<br>Make me go
+<br>La, la, la, la, la, la, la, la
+<br>La, la, la, la, la, la
+<br>Everyday, everyday
+<br>La, la, la, la, la, la, la, la
+<br>La, la, la, la, la, la
+<br>Everyday, everyday
+<br>Give it to me, to me
+<br>(She got me on it)
+<br>Oh, he give it to me every day
+<br>(She got me on it)',
+'194',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=M3fxC5QDcxg',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Sometimes',
+'La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>I''ve never been so caught up
+<br>Still so into us
+<br>I never thought I''d be here
+<br>Should''ve turned to dust
+<br>Ooh, let''s be honest, baby
+<br>This is so unusual
+<br>Ooh, and I''m not tempted, baby
+<br>Even if they''re beautiful
+<br>I used to be cautious
+<br>A little too reckless
+<br>Now all my emotions
+<br>Are all cause of you
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go
+<br>I ain''t ever thought of going nowhere
+<br>I don''t even see it down the road
+<br>''Cause we''re collectin' 'moments
+<br>Tattoos on my mind
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go
+<br>Not even sometimes
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>Ooh, let''s be honest, baby
+<br>This is so unusual
+<br>Ooh, I''m not tempted, baby
+<br>Even if they''re beautiful
+<br>It used to be easy
+<br>For someone to steal me
+<br>Now all my emotions
+<br>Are all cause of you, boy
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go
+<br>I ain''t ever thought of going nowhere
+<br>I don''t even see it down the road
+<br>''Cause we''re collectin'' moments
+<br>Tattoos on my mind
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go
+<br>Not even sometimes, babe
+<br>I don''t know, I don''t know, I don''t know
+<br>Why it never worked, but it''s going to now
+<br>You don''t know, you don''t know, you don''t know
+<br>What it does to me when I feel you around
+<br>Is it love? Is it lust? Is it fear?
+<br>But it''s hard to breathe when you''re touching me there
+<br>Hard to breathe when you''re kissing me there
+<br>Hard to breathe when you''re not here
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go
+<br>I ain''t ever thought of going nowhere
+<br>I don''t even see it down the road
+<br>''Cause we''re collectin'' moments
+<br>Tattoos on my mind
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go
+<br>Not even sometimes
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>Not even sometimes
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+<br>''Cause we''re collectin' 'moments
+<br>Tattoos on my mind
+<br>I ain''t even think of leaving sometimes
+<br>I ain''t even think of letting go (no way)
+<br>Not even sometimes
+<br>La, la, la, la, la, la, la
+<br>Not even sometimes
+<br>Not even sometimes
+<br>La, la, la, la, la, la, la
+<br>La, la, la, la, la, la, la
+',
+'208',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=4yr6KzidJs0',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'I Don''t care',
+'Used to cry ''bout some crazy shit before
+<br>I used to feel so obligated to be so much more
+<br>I used to let some people tell me how to live and what to be
+<br>But if I can''t be me, then what''s the point? No
+<br>I don''t care about it anymore, oh
+<br>I don''t care about it anymore
+<br>Now I laugh about the things that used to be important to me
+<br>Used to have a hold on me, used to have a hold
+<br>Like what do you think
+<br>And what he thinks and what they think
+<br>But I love me
+<br>I don''t care about it anymore, oh
+<br>I don''t care about it anymore
+<br>I don''t care about it anymore
+<br>I don''t care about it anymore
+',
+'155',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=Ao87MtSwxsQ',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Bad Decisions',
+'Boy, you know that you drive me crazy
+<br>But it''s one of the things I like
+<br>Cause I know when you need it, baby
+<br>That I got that, ooh ooh
+<br>Let ''em keep, let ''em keep on talking
+<br>But it don''t matter what they say
+<br>Cause you know when you hear me knocking
+<br>Gonna get that, ooh ooh
+<br>I been doing stupid things
+<br>Wilder than I''ve ever been
+<br>You''ve become my favorite since
+<br>So let ''em keep, let ''em keep on talking
+<br>That''s right
+<br>We got that hood love
+<br>We got that good love
+<br>We got that hot love
+<br>We got that I don''t give a what love
+<br>We got that one life
+<br>Give me that all night
+<br>We got that Bonnie and Clyde love
+<br>They say it''s wrong
+<br>But that''s the way you turn me on
+<br>We got that hood love
+<br>We got that good love
+<br>Make me make bad
+<br>Boy, you make me make bad decisions
+<br>Bad, boy, you make me make bad decisions
+<br>No, they ain''t gonna understand it
+<br>Understand what I see in you
+<br>Better know when you touch my body
+<br>That I see the truth
+<br>Let ''em keep, let ''em keep on talking
+<br>Cause I know that I got someone
+<br>Anytime that I need some danger
+<br>Gonna get that, ooh ooh
+<br>I been doing stupid things
+<br>Wilder than I''ve ever been
+<br>You''ve become my favorite since
+<br>So let ''em keep, let ''em keep on talking
+<br>That''s right
+<br>We got that hood love
+<br>We got that good love
+<br>We got that hot love
+<br>We got that I don''t give a what love
+<br>We got that one life
+<br>Give me that all night
+<br>We got that Bonnie and Clyde love
+<br>They say it''s wrong
+<br>But that''s the way you turn me on
+<br>We got that hood love
+<br>We got that good love
+<br>Make me make bad
+<br>Boy, you make me make bad decisions
+<br>Bad, boy, you make me make bad decisions
+<br>Don''t you know I ain''t fucking with them good boys?
+<br>Know you love me like ain''t nobody here, boy
+<br>If you want it, boy, you got it
+<br>Ain’t you ever seen a princess be a bad bitch?
+<br>We got that hood love
+<br>We got that good love
+<br>We got that hot love
+<br>We got that I don''t give a what love
+<br>We got that one life
+<br>Give me that all night
+<br>We got that Bonnie and Clyde love
+<br>They say it''s wrong
+<br>But that''s the way you turn me on
+<br>We got that hood love
+<br>We got that good love
+<br>Make me make bad
+<br>Boy, you make me make bad decisions
+<br>Bad, boy, you make me make bad decisions
+<br>Bad, boy, you make me make bad decisions
+<br>Bad, boy, you make me make bad decisions',
+'208',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=RlRgnsyR00Y',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Touch It',
+'How do I make the phone ring?
+<br>Why do I even care?
+<br>How are you all around me?
+<br>When you''re not really there? (x2)
+<br>How do I feel you on me when you''re not on my skin?
+<br>Why do you say you want me?
+<br>Then tell me "I''m not coming in"
+<br>Baby, just come on in
+<br>Cause every time I''m with you
+<br>I go into my zone
+<br>And I''ll remember all the places you wanna go
+<br>Take me all the way
+<br>Ain''t nobody gonna touch it, touch it, touch it
+<br>Cause every time I see you I don''t wanna behave
+<br>I''m tired of being patient so let''s pick up the pace
+<br>Take me all the way
+<br>Ain''t nobody gonna touch it, touch it, touch it
+<br>How do you know I''m breathing when I''m holding my breath?
+<br>Why don''t we face the danger just for the night and forget?
+<br>Baby, let''s just forget
+<br>Remind me why we''re taking a break
+<br>It''s obviously insane
+<br>Cause we both know what we want
+<br>So why don''t we fall in love?
+<br>Baby let''s fall in love
+<br>Cause every time I''m with you
+<br>I go into my zone
+<br>And I''ll remember all the places you wanna go
+<br>Take me all the way
+<br>Ain''t nobody gonna touch it, touch it, touch it
+<br>Cause every time I see you I don''t wanna behave
+<br>I''m tired of being patient so let''s pick up the pace
+<br>Take me all the way
+<br>Ain''t nobody gonna touch it, touch it, touch it
+<br>Remind me why we''re taking a break
+<br>It''s obviously insane
+<br> we both know what we want
+<br>So why don''t we fall in love?
+<br>Baby let''s be in love
+<br>Cause every time I''m with you
+<br>I go into my zone
+<br>And I''ll remember all the places you wanna go
+<br>Take me all the way
+<br>Ain''t nobody gonna touch it, touch it, touch it
+<br>Cause every time I see you I don''t wanna behave
+<br>I''m tired of being patient so let''s pick up the pace
+<br>Take me all the way
+<br>Ain''t nobody gonna touch it, touch it, touch it',
+'252',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=hNRjI_biB18',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Knew Better/Forever Boy',
+'Say you could turn me on
+<br>Boy, but that''s about it
+<br>You can say what you wanna
+<br>But I wouldn''t believe it
+<br>You could write all them songs
+<br>That''s the game that you play
+<br>Tryna write all them bars
+<br>But you can''t make me stay
+<br>Cause I... see right through you, boy
+<br>And I, I... ain''t feeling you no more
+<br>I ain''t feelin'' you no more
+<br>If you knew better
+<br>Boy, you would do better
+<br>Can''t nobody love you there like I do
+<br>Baby, I could do better
+<br>Boy, if you knew better
+<br>You would do better
+<br>Baby, if you love me like I love you
+<br>Maybe we could be together
+<br>Cause ain''t nobody like me, ain''t nobody like me
+<br>Ain''t nobody like me, ain''t nobody like me
+<br>Ain''t nobody like me
+<br>Ain''t nobody like me
+<br>Ain''t nobody like me
+<br>Ain''t nobody like me
+<br>Ain''t nobody like me
+<br>Ain''t nobody like me, baby
+<br>Never been with a boy more than six months
+<br>I couldn''t do it, got too used to it
+<br>Ain''t nobody ever kept my attention
+<br>They couldn''t do it, yeah, boy, they blew it
+<br>But you showed me what it means to be happy ever after
+<br>In love forever
+<br>And you gave me the key to all your love and all your pleasure
+<br>Boy, I''m a treasure
+<br>Oh, be forever mine, you and I
+<br>Oh, be forever mine, boy, all the time
+<br>You''re my forever, boy
+<br>You''re my forever, boy
+<br>You''re my forever, boy
+<br>You''re my forever, boy
+<br>Been friends for a minute
+<br>So you know just what I like
+<br>You done seen boys come and go
+<br>So you know what makes me cry
+<br>So you just wanna treat me right
+<br>But you showed me what it means to be happy ever after
+<br>In love forever
+<br>And you gave me the key to all your love and all your pleasure
+<br>Boy I''m a treasure
+<br>Oh, be forever mine, you and I
+<br>Oh, be forever mine, boy, all the time
+<br>Mine, time
+<br>Mine, time
+<br>You''re my forever, boy
+<br>You''re my forever, boy
+<br>You''re my forever, boy
+<br>You''re my forever, boy',
+'300',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=ofLyuMIrOnI',
+'2'
+);
+INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Thinking Bout You',
+'Oh yeah, yeah
+<br>Ah, ah
+<br>I''ve been thinkin'' bout you
+<br>Yeah, I''ve been missing you
+<br>Where the hell are you?
+<br>Oh, when I need you?
+<br>I could still hear your voice
+<br>I ain''t got no choice
+<br>''Cause I''m here all alone
+<br>I know I can''t wait ''til you get home
+<br>Oh, I don''t have you here with me
+<br>But at least I have the memory
+<br>I try to make it through the night
+<br>But I can''t control my mind
+<br>I''m just thinkin' 'bout you
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (''bout you, ''bout you)
+<br>I''m just thinkin' 'bout you
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (''bout you,'' bout you''), mmm
+<br>Got these thoughts in my head
+<br>Ain''t no way to forget
+<br>Got me losing my breath
+<br>Nobody got me the way that you did
+<br>Had my eyes rolling back
+<br>Had me arching my back
+<br>Now you love me so good
+<br>I wish you would hurry up and come back
+<br>Oh, I don''t have you here with me
+<br>But at least I have the memory
+<br>I try to make it through the night
+<br>But I can''t control my mind
+<br>I''m just thinkin' 'bout you (''bout you,'' bout you'')
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (about you, baby)
+<br>I''m just thinkin' 'bout you (''bout you, ah)
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (I''m thinkin' 'bout you)
+<br>(I''m thinkin' 'bout you)
+<br>I''m just thinkin' 'bout you
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (say you don''t, baby, ''bout you)
+<br>Baby, I don''t want no one, no one else
+<br>So hurry, ''cause I need some, need some, need some help
+<br>And I''ve been waiting patient, patiently
+<br>''Cause I don''t have you here with, here with, here with me
+<br>But at least I have the memory
+<br>I''m just thinkin' 'bout you (''bout you)
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (I do)
+<br>I''m just thinkin' 'bout you
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you (thinkin' 'bout you, ooh, oh, yeah)
+<br>I''m just thinkin' 'bout you (thinking ''bout you, yeah)
+<br>I''m thinkin' 'bout you, I''m thinkin' 'bout you
+',
+'193',
+'2016-05-20',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=RFm4n7xrYxU',
+'2'
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES('Thomas Peter Odell','Tom Odell','1990-11-24','Britannico','Tom Odell nasce il 24 novembre 1990 nel West Sussex. Studia al Brighton Institute of Modern Music, ascoltando Elton John, Leonard Cohen e Bob Dylan. Nel 2012 realizza l’Ep di debutto, SONGS FROM ANOTHER LOVE, mentre nel 2013 arriva il primo disco sulla lunga distanza, LONG WAY DOWN.','https://www.google.com/url?sa=i&url=https%3A%2F%2Ffirst-avenue.com%2Fperformer%2Ftom-odell%2F&psig=AOvVaw1oTpLUXChA9jWNfw-MkMsy&ust=1729020091311000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCEh_rLjokDFQAAAAAdAAAAABAE');
+-- INSERT Mitski
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Bug Like An Angel',
+'There''s a bug like an angel
+<br>Stuck to the bottom
+<br>Of my glass, with a little bit left
+<br>As I got older
+<br>I learned I''m a drinker
+<br>Sometimes a drink feels like family
+<br>Family
+<br>
+<br>Hey, what''s the matter?
+<br>Lookin like your sticker
+Is stuck on a floor somewhere
+<br>Did you go and make promises you can''t keep?
+<br>Well, when you break them
+<br>They break you right back
+<br>Amateur mistake
+<br>You can take it from me
+<br>They break you right back
+<br>Break you right back
+<br>
+<br>Ooh, ooh-ooh-ooh, ooh
+<br>Ooh, ooh-ooh-ooh
+<br>
+<br>When I''m bent over
+<br>Wishin it was over
+<br>Makin all variety of vows I''ll never keep
+<br>I try to remember
+<br>The wrath of the devil
+<br>Was also given him by God
+<br>Ooh, ooh-ooh-ooh, ooh, ooh
+<br>Ooh, ooh-ooh-ooh, ooh, ooh',
+227,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=5WW7cuAm-7Y',
+11
+);
 
-INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Long Way Down','Long Way Down è l''album di debutto in studio del cantautore britannico Tom Odell. Seguendo le orme di Adele, Emeli Sande e Jessie J, Tom ha ricevuto il Critics Choice Award ai BRIT Awards 2013.','2134','2013-06-21','https://www.google.com/imgres?q=long%20way%20down%20tom%20odell&imgurl=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b2739adb17697c5a5bb02b5cebb7&imgrefurl=https%3A%2F%2Fopen.spotify.com%2Fintl-it%2Falbum%2F3t0Quq8X7W90hRP5OQ5S4b&docid=OPsZqtkBYuSbtM&tbnid=PAOAgdoZBcBiWM&vet=12ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA..i&w=640&h=640&hcb=2&itg=1&ved=2ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA','4','16');
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Buffalo Replaced',
+'Mosquitoes can enjoy me, I can''t go inside
+<br>I''m suckin'' up as much of the full moon, so bright
+<br>Fireflies zoomin'' through the yard like highway cars
+<br>Someone out here burnin'' something, kids feelin'' alive
+<br>
+<br>Freight train stampedin'' through my backyard
+<br>It''ll run across the plains like the new buffalo replaced
+<br>
+<br>Ooh-ooh-ooh-ooh-ooh-ooh-ooh-ooh
+<br>
+I have a hope and though she''s blind with no name
+<br>She shits where she''s supposed to, feeds herself while I''m away
+<br>Sometimes I think it would be easier without her
+<br>But I know nothing can hurt me when I see her sleepin'' face
+<br>
+<br>Freight train horn howlin'' out mad and wild
+<br>Headin'' somewhere far away like the new buffalo replaced
+<br>
+<br>Oooh, ahhh
+<br>Ooh, ooh',
+161,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=NafP0MbGEuE',
+11);
 
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Heaven',
+'All of our love
+<br>Fillin'' all of our room
+<br>Your low, warm voice
+<br>Curses as you find the string
+<br>To strike within me
+<br>That rings out a note
+<br>Heard in heaven
+<br>
+<br>Heaven
+<br>Heaven 
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>
+<br>Now I bend like a willow
+<br>Thinkin’ of you
+<br>Like a murmurin'' brook
+<br>Curvin'' about you
+<br>As I sip on the rest of the coffee you left
+<br>A kiss left of you
+<br>
+<br>Heaven
+<br>Heaven
+<br>Heaven
+<br>
+<br>Ooh-ooh-ooh, ooh-ooh-ooh, ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh',
+225,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=4zSHu-fY-yM',
+11);
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'I don''t like my mind',
+'I don''t like my mind, I don''t like being left alone in a room
+<br>With all its opinions about the things that I''ve done
+<br>So, yeah, I blast music loud, and I work myself to the bone
+<br>And on an inconvenient Christmas, I eat a cake
+<br>
+<br>A whole cake, all for me
+<br>Ooh, aah
+<br>
+<br>And then I get sick and throw up and there''s another memory that gets stuck
+<br>Inside the walls of my skull waiting for its turn to talk
+And it may be a few years, but you can bet it''s there, waiting still
+<br>For me to be left alone in a room full of things that I''ve done
+<br>
+<br>A whole cake, so please don''t take
+<br>Take this job from me
+<br>A whole cake, so please don''t take
+<br>Take my job from me	',
+146,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=qU5D49kfNEM',
+11);
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'The Deal',
+'There''s a deal you can make on a midnight walk alone
+<br>Look around, listen close, hear it fall from above
+<br>It will ask what you''d give and what you''d take for it in return
+<br>I once went on such walk and I found that I''d said
+<br>
+<br>I want someone to take this soul
+<br>I can''t bear to keep it
+<br>I''d give it just to give
+<br>And all I will take are the consequences
+<br>Will somebody take this soul?
+<br>Then, of course, nothing replied, nothing speaks to you in the night
+<br>And I walked my way home, there was no one in sight
+<br>Save a bird perched upon a streetlight, watchin'' me
+<br>So, I stopped and let it watch ''til I found that it said
+<br>
+<br>Now I''m taken, the night has me
+<br>You won''t hear me singin''
+<br>You''re a cage without me
+<br>Your pain is eased but you''ll never be free, for
+<br>Now I''m taken, the night has me
+<br>
+<br>There''s a deal that I made
+<br>There''s a deal that I made
+<br>There''s a deal that I made
+<br>There''s a deal',
+237,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=iFXwChLAyFM',
+11);
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'When Memories Snow',
+'When memories snow
+<br>And cover up the driveway
+<br>I shovel all those memories
+<br>Clear the path to drive to the store
+<br>And when memories melt
+<br>I hear them in the drainpipe
+<br>Drippin'' through the downspout
+<br>As I lie awake in the dark
+<br>
+<br>And if I break
+Could I go on break?
+<br>Be back in my room
+<br>Writin'' speeches in my head
+<br>Listenin'' to the thousand hands
+<br>That clap for me in the dark',
+105,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=wvDl4W0eZ_w',
+11);
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'My Love All Mine',
+'Moon, a hole of light
+<br>Through the big top tent up high
+<br>Here before and after me
+<br>Shinin'' down on me
+<br>Moon, tell me if I could
+<br>Send up my heart to you?
+<br>So, when I die, which I must do
+<br>Could it shine down here with you?
+<br>
+<br>''Cause my love is mine, all mine
+I love, mine, mine, mine
+<br>Nothing in the world belongs to me
+<br>But my love, mine, all mine, all mine
+<br>
+<br>My baby here on earth
+<br>Showed me what my heart was worth
+<br>So, when it comes to be my turn
+<br>Could you shine it down here for her?
+<br>
+<br>''Cause my love is mine, all mine
+<br>I love, mine, mine, mine
+<br>Nothing in the world belongs to me
+<br>But my love, mine, all mine
+<br>Nothing in the world is mine for free
+<br>But my love, mine, all mine, all mine',
+170,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=vx4kLgnFexo',
+11);
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'The Frost',
+'The frost, it looks like dust
+<br>Settled on the world
+<br>After everyone''s long been gone
+<br>But me, I was hidin'', or forgotten
+<br>The only one left
+<br>Now the world is mine alone
+<br>With no one, no one to share the memory
+<br>Of frost out the window this morning
+<br>After you''re gone
+<br>And the house is mine alone
+<br>You''re my best friend
+<br>Now I''ve no one to tell
+<br>How I lost my best friend
+<br>The frost, it looks
+<br>Like we''ve been left in the attic
+<br>But you''re not here to see
+<br>It''s just witness-less me',
+170,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=ECNey1cvdgY',
+11);
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'Star',
+'Remember when we met
+<br>We acted like two fools
+<br>We were so glad
+<br>So glad to have found it
+<br>
+<br>That love is like a star
+<br>It''s gone, we just see it shinin''
+<br>It''s traveled very far, I''ll
+<br>Keep a leftover light
+<br>Burnin'' so you can keep lookin'' up''
+Isn''t that worth holdin'' on?
+<br>
+<br>You know I''d always been alone
+<br>''Til you taught me
+<br>To live for somebody
+<br>
+<br>That love is like a star
+<br>It''s gone, we just see it shinin''
+<br>''Cause it''s traveled very far, I''ll
+<br>Keep a leftover light
+<br>Burnin'' so you can keep lookin'' up
+<br>I''m yours no matter
+<br>That love''s gone
+<br>We just see it shinin''
+<br>We''ve travеled very far, I''ll
+<br>Keep a leftovеr light
+<br>Burnin'' so you can keep lookin'' up
+<br>Isn''t that worth holdin'' on?',
+179,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=ECNey1cvdgY',
+11);
+
+
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'I''m Your Man',
+'You''re an angel, I''m a dog
+<br>Or you''re a dog and I''m your man
+<br>You believe me like a God
+<br>I destroy you like I am
+<br>
+<br>I''m sorry I''m the one you love
+<br>No-one will ever love me like you again
+<br>So when you leave me, I should die
+<br>I deserve it, don''t I?
+<br>
+I can feel it getting near
+<br>Like flashlights coming down the way
+<br>One day you''ll figure me out
+<br>I''ll meet judgement by the hounds
+<br>
+<br>People always gave me love
+<br>Others were never to blame after all
+<br>You believe me like a God
+<br>I betray you like a man',
+210,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=HvgX44ESvHQ',
+11);
+INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+'I Love Me After You',
+'Hmm
+<br>Hmm
+<br>Hmm
+<br>
+<br>Brushin'' my hair naked
+<br>Spritz my face with toner
+<br>Splash water on my neck
+<br>Laughin'' in the mirror
+<br>Cool water in a glass
+<br>Drink it down
+How I love me after you
+<br>King of all the land
+<br>
+<br>Stride through the house naked
+<br>Don''t even care that the
+<br>Curtains are open
+<br>Let the darkness see me
+<br>Streets are mine, the night is mine
+<br>All my own
+<br>How I love me after you
+<br>King of all the land
+<br>I''m king of all the land
+<br>
+<br>Ooh, ooh
+<br>Ooh, ooh
+<br>Ooh, ooh
+<br>Ooh, ooh
+<br>Ooh, ooh, ooh
+<br>Ooh, ooh, ooh',
+169,
+'2023-09-15',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=mrXJmsLTBpA',
+11);
+-- INSERT Tom Odell
 INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Grow Old With Me','I can feel you breathing
 <br>With your hair on my skin
 <br>As we lie here within
@@ -2863,9 +4239,6 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>All run run running away
 <br>All run run running away
 <br>When sirens they come our way','220','2013-06-21','inglese','','https://www.youtube.com/watch?v=F1fwVVvVVvI&pp=ygUQc2lyZW5zIHRvbSBvZGVsbA%3D%3D','11');
-
-INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Black Friday','Black Friday è il sesto album in studio del cantautore britannico Tom Odell. È stato rilasciato il 26 gennaio 2024 tramite UROK Management. La title track Black Friday è stata nominata per la migliore canzone musicalmente e liricamente al Premio Ivor Novello giovedì 23 maggio 2024.','1721','2024-01-26','https://www.google.com/imgres?q=tom%20odell%20black%20friday&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2FA1Oqa6nvPDL._UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.it%2FBlack-Friday-Tom-Odell%2Fdp%2FB0CKDS95Z3&docid=PO1WXyqwvG79bM&tbnid=IwSfet1wx_Cn_M&vet=12ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA','4','2');
-
 INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Answer Phone','Here I go again
 <br>Wasting all my days away
 <br>It''s a funny thing how some things never seem to change
@@ -3186,26 +4559,1755 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Or maybe we have reached the end
 <br>Maybe we have reached the end','206','2024-01-26','inglese','','https://www.youtube.com/watch?v=_uBi6ABJdFs&pp=ygURdGhlIGVuZCB0b20gb2RlbGw%3D','2');
 
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','38');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','39');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','40');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','41');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','42');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','43');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','44');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','45');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','46');
-INSERT INTO album_brano(album_id, brano_id) VALUES('5','47');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','48');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','49');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','50');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','51');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','52');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','53');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','54');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','55');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','56');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','57');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','58');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','59');
-INSERT INTO album_brano(album_id, brano_id) VALUES('6','60');
+-- Insert Billie Eilish
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('SKINNY',
+'Oh, oh
+<br>
+<br>I fell in love for the first time
+<br>With a friend, it''s a good sign
+<br>Feeling off when I feel fine
+<br>Twenty-one took a lifetime
+<br>People say I look happy
+<br>Just because I got skinny
+<br>But the old me is still me
+<br>Maybe the real me and I think she''s pretty
+<br>And I still cry, cry
+<br>And you know why
+<br>
+<br>Am I acting my age now?
+<br>Am I already on the way out?
+<br>When I step off the stage
+<br>I''m a bird in a cage
+<br>I''m a dog in a dog pound
+<br>And you said I was your secret
+<br>And you didn''t get to keep it
+<br>And the internet is hungry for the meat
+<br>It''s kinda funny that somebody''s gotta feed it
+<br>
+<br>Oh
+<br>Do you still cry?
+<br>Still cry?
+<br>Oh, cry
+<br>Cry
+<br>Ah-ah, I',
+220,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=g6YSdMnCOCU',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('LUNCH',
+'Oh-mm
+<br>
+<br>I could eat that girl for lunch
+<br>Yeah, she dances on my tongue
+<br>Tastes like she might be the one
+<br>And I could never get enough
+<br>I could buy her so much stuff
+<br>It''s a cravin'', not a crush, huh
+<br>Call me when you''re there
+<br>Said, "I bought you something rare"
+And I left it under "Claire"
+<br>So now she''s comin'' up the stairs
+<br>So I''m pullin'' up a chair
+<br>And I''m puttin'' up my hair
+<br>
+<br>Baby, I think you were made for me
+<br>Somebody write down the recipe
+<br>Been trying hard not to overeat
+<br>You''re just so sweet
+<br>I''ll run a shower for you like you want
+<br>Clothеs on the counter for you, try ''em on
+<br>If I''m allowеd, I''ll help you take ''em off
+<br>Huh
+<br>
+<br>I could eat that girl for lunch
+<br>Yeah, she dances on my tongue
+<br>Tastes like she might be the one
+<br>And I could never get enough
+<br>I could buy her so much stuff
+<br>It''s a cravin'', not a crush, huh
+<br>I just wanna get her off, oh
+<br>Oh
+<br>Oh, oh
+<br>Oh
+<br>
+<br>She''s takin'' pictures in the mirror
+<br>Oh my God, her skin''s so clear
+<br>Tell her, "Bring that over here"
+<br>You need a seat? I''ll volunteer
+<br>Now she''s smiling ear to ear
+<br>She''s the headlights, I''m the deer
+<br>
+<br>I''ve said it all before, but I''ll say it again
+<br>I''m interested in more than just being friends
+<br>I don''t wanna break it, just want it to bend
+<br>Do you know how to bend?
+<br>
+<br>I could eat that girl for lunch
+<br>She dances on my tongue
+<br>I know it''s just a hunch
+<br>But she might be the one
+<br>
+<br>I could
+<br>Eat that girl for lunch
+<br>Yeah, she
+<br>Tastes like she might be the one
+<br>I could, I could
+<br>Eat that girl for lunch
+<br>Yeah, she, yeah, she
+<br>Tastes like she might be the one',
+223,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=MB3VkzPdgLA',
+2);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('CHIHIRO',
+'To take my love away
+<br>When I come back around, will I know what to say?
+<br>Said you won''t forget my name
+<br>Not today, not tomorrow
+<br>Kind of strange, feelin'' sorrow
+<br>I got change (Yup), you could borrow (Borrow)
+<br>When I come back around, will I know what to say?
+<br>Not today, maybe tomorrow
+<br>
+<br>Open up the door, can you open up the door?
+I know you said before you can''t cope with any more
+<br>You told me it was war, said you''d show me what''s in store
+<br>I hope it''s not for sure, can you open up the door?
+<br>
+<br>Did you take
+<br>My love away
+<br>From me? Me
+<br>Me
+<br>
+<br>Saw your seat at the counter when I looked away
+<br>Saw you turned around, but it wasn''t your face
+<br>Said, "I need to be alone now, I''m takin'' a break"
+<br>How come whеn I returned, you werе gone away?
+<br>
+<br>I don''t, I don''t know why I called
+<br>I don''t know you at all
+<br>I don''t know you
+<br>Not at all
+<br>I don''t, I don''t know why I called
+<br>I don''t know you at all
+I don''t know you
+<br>
+<br>Did you take
+<br>My love away
+<br>From me? Me
+<br>
+<br>And that''s when you found me
+<br>
+<br>I was waitin'' in the garden
+<br>Contemplatin'', beg your pardon
+<br>But there''s a part of me that recognizes you
+<br>Do you feel it too?
+<br>When you told me it was serious
+<br>Were you serious? Mm
+<br>They told me they were only curious
+<br>Now it''s serious, mm
+<br>
+<br>Open up the door, can you open up the door?
+<br>I know you said before you can''t cope with any more
+<br>You told me it was war, said you''d show me what''s in store
+<br>I hope it''s not for sure, can you open up the door?
+<br>
+<br>Wringing my hands in my lap
+<br>And you tell me it''s all been a trap
+<br>And you don''t know if you''ll make it back
+<br>I said, "No, don''t say that"
+<br>
+<br>(Wringing my hands in my lap)
+<br>(And you tell me it''s all been a trap)
+<br>(And you don''t know if you''ll make it back)
+<br>(I said, "No, don''t say that")
+<br>(Wringing my hands in my lap)
+<br>(And you tell me it''s all been a trap)
+<br>(And you don''t know if you''ll make it back)
+<br>(No, don''t say that)
+<br>Hm-hm',
+304,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=e_AZJzYe7CU',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('BIRDS OF A FEATHER',
+'I want you to stay
+<br>''Til I''m in the grave
+<br>''Til I ride away, dead and buried
+<br>''Til I''m in the casket you carried
+<br>If you go, I''m going too, oh
+<br>''Cause it was always you, oh
+<br>And if I''m turning blue, please don''t save me
+<br>Nothing left to lose without my baby
+<br>
+<br>Birds of a feather, we should stick together
+I know I said I''d never think I wasn''t better alone
+<br>Can''t change the weather, might not be forever
+<br>But if it''s forever, it''s even better
+<br>
+<br>And I don''t know what I''m crying for
+<br>I don''t think I could love you more
+<br>It might not be long, but, baby, I
+<br>
+<br>I''ll love you ''til the day that I die
+<br>''Til the day that I die
+<br>''Til the light leaves my eyes
+<br>''Til the day that I die
+<br>
+<br>I want you to see, oh
+<br>All you mean to me, oh
+<br>You wouldn''t believe if I told ya
+<br>Who we would become, laments I wrote ya
+<br>But you''re so full of shit, oh
+<br>Tell me it''s a bit, oh
+<br>Say you don''t see it, your mind''s all brooding
+Say you wanna quit, don''t be stupid
+<br>
+<br>And I don''t know what I''m crying for
+<br>I don''t think I could love you more
+<br>Might not be long, but, baby, but I
+<br>Don''t wanna say goodbye
+<br>
+<br>(Birds of a feather, we should stick together)
+<br>''Til the day that I die
+<br>(I know I said I''d never think I wasn''t better alone)
+<br>''Til the light leaves my eyes
+<br>(Can''t change the weather, might not be forever)
+<br>''Til the day that I die
+<br>But if it''s forever, it''s even better
+<br>
+<br>How do you do nothing?
+<br>You had the same look in your eyes
+<br>I love you, don''t act so surprised',
+231,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=V9PVRfjEBTI',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('WILDFLOWER',
+'Things fall apart
+<br>And time breaks your heart
+<br>I wasn''t there but I know
+<br>She was your girl
+<br>You showed her the world
+<br>You fell out of love and you both let go
+<br>
+<br>She was cryin’ in my shoulder
+<br>All I could do was hold her
+<br>Only made us closer
+Until she lied
+<br>And I know that you love me
+<br>You don''t need to remind me
+<br>I should put it all behind me
+<br>Shouldn''t I?
+<br>
+<br>But I see her in the back of my mind
+<br>All the time
+<br>Like a fever
+<br>Like I’m burnin'' alive by her side
+<br>Did I cross the line? Mm
+<br>Mm
+<br>
+<br>Well, good things don''t last (Good things don''t last)
+<br>And life moves so fast (Life moves so fast)
+<br>I''d never ask who was better
+<br>''Cause she couldn''t be
+<br>More different from me
+<br>Happy and free in leather
+<br>
+And I know that you love me (You love me)
+<br>You don''t need to remind me (Remind me)
+<br>Put it all behind me
+<br>But, baby
+<br>
+<br>I see her in the back of my mind (Back of my mind)
+<br>All the time (All the time)
+<br>Feels like a fever (Like a fever)
+<br>Like I’m burnin’ alive (Burnin'' alive) by her side
+<br>Did I cross the line? (Cross the line), oh
+<br>
+<br>You say no one knows you so well
+<br>But every time you touch me, I just wonder I should feel
+<br>Valentines Day cryin’ in the hotel
+<br>I know you didn''t mean to hurt me, so I kept it to myself
+<br>
+<br>And I wonder
+<br>Do you see her in the back of your mind?
+<br>In my eyes
+<br>You say no one knows you so well
+<br>But every time you touch me, I just wonder I should feel
+<br>Valentines Day cryin'' in the hotel
+<br>I know you didn''t mean to hurt me, so I kept it to myself',
+262,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=l08Zw-RY__Q',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('THE GREATEST',
+'I''m trying my best
+<br>To keep you satisfied
+<br>Let you get your rest
+<br>While I stayed up all night
+<br>
+<br>And you don''t wanna know
+<br>How alone I''ve been (I''ve been)
+<br>Let you come and go
+<br>Whatever I state I''m in, ah
+<br>
+Man, am I the greatest?
+<br>My congratulations
+<br>All my love and patience
+<br>All my admiration
+<br>All the times I waited
+<br>For you to want me naked
+<br>Made it all look painless
+<br>Man, am I the greatest?
+<br>
+<br>Mm
+<br>Oh-oh
+<br>Mm
+<br>
+<br>Doing what''s right
+<br>Without a reward
+<br>And we don''t have to fight (Don''t have to fight)
+<br>When it''s not worth fighting for (Fighting for)
+<br>Mm
+<br>
+<br>And you don''t wanna know (Don''t wanna know)
+What I would''ve done (Done, mm)
+<br>Anything at all (Anything at all)
+<br>Worse than anyone
+<br>Mm, ooh
+<br>
+<br>Man, am I the greatest? (Greatest)
+<br>My congratulations (Congratulations)
+<br>All my love and patience (All my)
+<br>All my admiration (Admiration)
+<br>All the times I waited (I waited)
+<br>For you to want me naked (Naked)
+<br>I made it all look painless
+<br>Man, am I the greatest?
+<br>
+<br>The greatest
+<br>(Hey, hey, the greatest)
+<br>The greatest, ah-oh
+<br>Ah-ah-ah, ah-ah
+<br>I, I
+<br>I loved you and I still do
+<br>Just wanted passion from you
+<br>Just wanted what I gave you
+<br>I''ve waited and waited (Oh)
+<br>
+<br>Man, am I the greatest?
+<br>God, I hate it
+<br>All my love and patience
+<br>Unappreciated
+<br>You said your heart was jaded
+<br>You couldn''t even break it
+<br>I shouldn''t have to say it
+<br>You could have been the greatest',
+294,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=WkdQhfDRBKs',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('L''AMOUR DE MA VIE',
+'I wish you the best for the rest of your life
+<br>Felt sorry for you when I looked in your eyes
+<br>But I need to confess, I told you a lie
+<br>I said you, you were the love of my life
+<br>The love of my life
+<br>
+<br>Did I break your heart?
+<br>Did I waste your time?
+<br>I tried to be there for you
+<br>Then you tried to break mine
+<br>It isn''t asking for a lot for an apology
+<br>For making me feel like I killed you if I tried to leave
+<br>You said you''d never fall in love again because of me
+<br>Then you moved on immediately
+<br>
+<br>(Bum-bum-bum)
+<br>But I wish you the best for the rest of your life
+<br>Felt sorry for you when I looked in your eyes
+<br>But I need to confess
+<br>I told you a lie (Told you a lie)
+<br>When I said you (Said you, ooh), you (Ooh)
+<br>Were the love of my life
+<br>The love of my life
+<br>
+<br>So you found her, now go fall in love (Go fall in love)
+<br>Just like we were if I ever was
+<br>It''s not my fault (No)
+<br>I did what I could (I did what I could)
+<br>You made it so hard
+Like I knew you would
+<br>
+<br>Thought I was depressed or losing my mind
+<br>My stomach upset, almost all the time
+<br>But after I left, it was obvious why (Oh), mm
+<br>Because for you, you
+<br>I was the love of your life, mm
+<br>But you were not mine
+<br>
+<br>It isn''t asking for a lot for an apology
+<br>For making me feel like I killed you if I tried to leave
+<br>You said you''d never fall in love again because of me
+<br>Then you moved on, then you moved on
+<br>Then you moved on, then you moved on
+<br>Then you moved on, then you moved on
+<br>
+<br>
+<br>Ooh
+<br>You wanted to keep it
+<br>Like something you found
+<br>''Til you didn''t need it
+<br>But you should''ve seen it
+<br>The way it went down
+<br>You wouldn''t believe it
+<br>Wanna know when it''s over
+<br>With your hand on my shoulder
+<br>You were so mediocre
+<br>And we''re so glad it''s over now
+<br>It''s over now
+<br>It''s over now
+<br>It''s over now
+<br>
+<br>It''s over
+<br>Karma killer
+<br>The girls all kill her
+<br>The girls all fear her
+<br>Mm, misery
+<br>Say you want me
+<br>It''s such a pity
+<br>We''re both so pretty',
+335,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=am5FI9DkO80',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('THE DINER',
+'Don''t be afraid of me
+<br>I''m what you need
+<br>
+<br>I saw you on the screens
+<br>I know we''re meant to be
+<br>You''re starring in my dreams
+<br>In magazines
+<br>You''re looking right at me (You''re looking right at me)
+<br>I''m here around the clock
+<br>I''m waiting on your block (I''m waiting on your block)
+But please don''t call the cops
+<br>They''ll make me stop
+<br>And I just wanna talk (I just wanna talk)
+<br>
+<br>Bet I could change your life
+<br>You could be my wife (Wife, wife)
+<br>Could get into a fight (Fight)
+<br>I''ll say you''re right (I''ll say you''re right)
+<br>And you''ll kiss me goodnight
+<br>
+<br>I waited on the corner ''til I saw the sitter leave
+<br>Was easy getting over and I landed on my feet
+<br>I came in through the kitchen looking for something to eat
+<br>I left a calling card so they would know that it was me
+<br>
+<br>I tried to save you, but I failed
+<br>Two-fifty-thousand-dollar bail (Two hundred fifty thousand dollars)
+<br>While I''m away, don''t read my mail (Don''t read my mail)
+<br>Just bring a veil (Just bring a veil)
+<br>And come visit me in jail (Visit me in jail)
+<br>I''ll go back to the diner
+<br>I''ll write another letter (I''ll write another letter)
+<br>I hope you''ll read it this time
+<br>You better
+<br>
+<br>The cops around the corner stopped me when I tried to leave
+<br>They told me I was crazy and they knocked me off my feet (They told me I was crazy)
+<br>They came in through the kitchen looking for something discrete
+<br>I left a calling card so that they would know that it was me
+<br>
+<br>Know that it was me
+<br>
+<br>I memorized your number, now I call you when I please
+<br>I tried to end it all, but now I''m back up on my feet
+<br>I saw you in the car with someone else and couldn''t sleep
+<br>If something happens to him, you can bet that it was me
+<br>
+<br>3956
+<br>310-807-3956
+<br>310-807-3956',
+187,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=gDVw1l6QDOg',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('BITTERSUITE',
+'I can''t fall in love with you
+<br>
+<br>I''ve been overseas
+<br>I''ve been havin'' dreams
+<br>You were in the foyer
+<br>I was on my knees
+<br>Outside of my body
+<br>Watchin'' from above
+<br>I see the way you want me
+<br>I wanna be the one
+<br>But I gotta be careful
+<br>Gotta watch what I say
+<br>God, I hope it all goes away
+<br>
+<br>''Cause I can''t fall in love with you
+<br>No matter how bad I want to
+<br>
+<br>Mm
+<br>Ah, uh, uh
+<br>Ah, uh, uh
+<br>Mm
+<br>
+<br>I don''t need to breathe when you look at me, all I see is green
+<br>And I think that we''re in between everything I''ve seen
+<br>In my dream, have it once a week, can''t land on my feet
+<br>Can''t sleep, have you underneath all of my beliefs
+<br>Keep it briеf
+<br>I''ll wait in the suite
+<br>Keep me off my feet, mm
+<br>You seem so paranoid
+<br>I''m looking at thе boys
+<br>I''ve never filled the void
+<br>Out of spite
+<br>You seem so paralyzed
+<br>It''s so romanticized
+<br>If this is how I die
+<br>That''s alright
+<br>
+<br>I''ve been overseas
+<br>I don''t need to breathe when you look at me, all I see is green
+<br>And I think that we''re in between everything I''ve seen
+<br>In my dream, have it once a week, can''t land on my feet (I''ve been overseas)
+<br>Can''t sleep, have you underneath all of my beliefs
+<br>Keep it brief
+<br>I''ll see you in the suite
+<br>
+<br>We can be discrete
+<br>But I''ve been overseas
+<br>And I''ve been havin'' dreams
+<br>L''amour de ma vie
+<br>Love so bittersweet, mm
+<br>Open up the door for me, for me
+<br>''Cause I''m still on my knees
+<br>I''m stayin'' off my feet
+<br>
+<br>I got ya
+<br>Just want you to touch me
+<br>Come on, ha
+<br>I know it seems to just be the beginning
+<br>Listen up, hm
+<br>I want you to keep on doing it
+<br>It''s something I don''t know
+<br>I''ve never paid this much attention to you, I know',
+299,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=LmVw3u3SxoA',
+2);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES ('BLUE',
+'Lights out
+<br>You''re not here holding me
+<br>I count
+<br>Every tear down my cheek
+<br>Instead of sheep
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>
+<br>Sleepwalk
+Find myself on your street
+<br>Three knocks
+<br>Ring the bell then I leave
+<br>
+<br>I tried
+<br>To live in black and white but I''m so blue
+<br>I''d like
+<br>To mean it when I say I''m over you
+<br>But that''s still not true
+<br>
+<br>Cold days
+<br>Frozen lake in the park
+<br>Old ways
+<br>Made mistakes, made our marks
+<br>Now we''ve gone dark
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>Ooh-ooh-ooh-ooh
+<br>
+<br>Bad dreams
+Might not mean anything
+<br>But you seem
+<br>Not to need anything
+<br>
+<br>I tried
+<br>To live in black and white but I''m so blue
+<br>I''d like
+<br>To mean it when I say I''m over you
+<br>But that''s still not true
+<br>
+<br>And I''m still so blue
+<br>True blue, true blue
+<br>True blue
+<br>
+<br>I tried
+<br>To live in black and white but I''m so blue
+<br>I''d like
+<br>To mean it when I say I''m over you',
+346,
+'2024-05-17',
+'Inglese',
+'',
+'https://www.youtube.com/watch?v=mZqiawnNCQg',
+2);
+-- Insert Gazelle
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Blu',
+    'Tararara
+	<br>Tararara
+	<br>Tararara
+	<br>
+	<br>E ti guardo da qui
+	<br>Mentre scivoli via dentro al blu <br>Questa notte che non sei più mia
+	<br>Guarda come mi fa
+	<br>Male questa città, mentre tu <br>Sei più forte da quando sei qua
+	<br>
+	<br>La luce che entra dalla
+	<br>Finestra stacca a metà
+	<br>I tuoi discorsi come adesivi
+	<br>Ma non ti sciogli da un po''
+	<br>E tu sei come un gomitolo
+	<br>
+	<br>Che fine hai fatto? Si può
+	<br>Sapere come ti sei
+	<br>Cacciata in tutti i tuoi guai
+	<br>Da quando non sei più nei
+	<br>Tramonti e dentro le fotografie
+	<br>Nei giorni neri però
+	<br>Rimane come una scia
+	<br>
+	<br>E ti guardo da qui
+	<br>Mentre "vattenе via" dici a me
+	<br>Se hai il coraggio ripetilo dai
+	<br>Non è niеnte di che
+	<br>Quando brontoli e
+	<br>
+	Cerchi dentro il cappotto
+	<br>Un biscotto, un cerotto
+	<br>Qualcosa per essere te
+	<br>
+	<br>La luce che entra dalla
+	<br>Finestra rotta del tram
+	<br>Ti taglia in mezzo come una sigla
+	<br>Ma non ti accendi da un po''
+	<br>E tu sei come un fiammifero
+	<br>
+	<br>Che fine hai fatto? Si può
+	<br>Sapere come ti sei
+	<br>Cacciata in tutti i tuoi guai
+	<br>Da quando non sei più nei
+	<br>Tramonti e dentro le fotografie
+	<br>Nei giorni neri però
+	<br>Rimane come una scia
+	<br>Rimane come una scia
+	<br>
+	<br>Che fine hai fatto? Si può
+	<br>Sapere come ti sei
+	<br>Cacciata in tutti i tuoi guai
+	<br>Da quando non sei più nei
+	<br>Tramonti e dentro le fotografie
+	<br>Nei giorni neri però
+	<br>Rimane come una scia
+	<br>Che fine hai fatto? Si può
+	<br>Sapere come ti sei
+	<br>Cacciata in tutti i tuoi guai
+	<br>Da quando non sei più nei
+	<br>Tramonti e dentro le fotografie',
+    195,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=RZMypyxSTcA', 
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Destri',
+    'All''improvviso sei volata via
+	<br>lasciando indietro una nuvoletta
+	<br>almeno meritavo una bugia, chessò
+	<br>almeno l''ultima sigaretta
+	<br>siamo due fiori cresciuti male 
+    <br>sul ciglio della tangenziale, all''ombra di un ospedale
+	<br>
+	<br>Te l''ho già detto una volta, mi ricordavi il mare
+	<br>le luci di Natale, gli schiaffi sul sedere e lo spazzolino uguale
+	<br>la Panda manuale bruciare in una notte come una cattedrale
+	<br>
+	<br>E non è colpa mia <br>se tutta questa luce, luce, luce, non ti illumina più dentro casa mia
+	<br>e non è colpa tua
+	<br>se tutti questi destri, destri, destri, al muro non ci fanno ritornare lì
+	<br>a quei momenti lì
+	<br>
+	<br>A quando andava tutta a gonfie vele
+	<br>e mi faceva stare bene
+	<br>che mischiavi romano e l''inglese
+	<br>
+	<br>Te l''ho già detto una volta, mi ricordavi il mare
+	<br>gli occhiali di mia madre, le 4 del mattino
+	<br>le Winston Blue smezzate, le facce come zombie
+	<br>svegliarti mentre dormi, come le cazzo di zanzare
+	<br>
+	<br>E non è colpa mia <br>se tutta questa luce, luce, luce, non ti illumina più dentro casa mia
+	<br>e non è colpa tua
+	<br>se tutti questi destri, destri, destri, al muro non ci fanno ritornare lì
+	<br>
+	a quei momenti lì
+	<br>
+	<br>E non è colpa mia <br>se tutta questa luce, luce, luce, non ti illumina più dentro casa mia
+	<br>e non è colpa tua
+	<br>se tutti questi destri, destri, destri, al muro non ci fanno ritornare lì
+	<br>a quei momenti lì
+	<br>a quei momenti lì
+	<br>a quei momenti lì
+	<br>a quei momenti lì',  
+    190,  
+    '2021-02-12',
+    'Italiano',
+    '', 
+    'https://www.youtube.com/watch?v=8wlxTdDol70',  
+    2
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'GBTR',
+    'Sulla riva del fiume ti ho visto che andavi via lontano
+	<br>Con qualcosa di brutto e qualcosa di bello dentro la mano
+	<br>Ma non hai nulla da perdere
+	<br>Ma non hai nulla da vincere, eh
+	<br>
+	<br>Che bella serata
+	<br>Che luna gigante, sembra una barca
+	<br>E le foglie stanotte
+	<br>Che sembrano stelle e tu un astronauta
+	<br>Ma non hai nulla da perdere
+	<br>
+	E non hai nulla da vincere, eh
+	<br>Sta vita sembra un burrone ma non guardare giù
+	<br>Sta vita sembra un pallone ma tu non segni più
+	<br>
+	<br>Ma è sempre così
+	<br>Ad annegare
+	<br>Come un''oliva nel gin
+	<br>Going back to routine, fa così male?
+	<br>Come è tremendo il weekend
+	<br>Se non sai chi chiamare
+	<br>Se vuoi io resto qui
+	<br>Ma tu resta qui, non te ne andare
+	<br>
+	<br>Che bella eccezione
+	<br>Che sguardo feroce, sembri una tigre
+	<br>E le occhiate degli altri
+	<br>Che sembrano treni e tu una stazione
+	<br>Ma non hai nulla da piangere
+	<br>E non hai nulla da ridere, eh
+	<br>Sta vita sembra un burrone, ma non guardare giù
+	<br>
+	Sta vita sembra un pallone e tu non segni più
+	<br>
+	<br>Ma è sempre così
+	<br>Ad annegare
+	<br>Come un''oliva nel gin
+	<br>Going back to routine, fa così male?
+	<br>Come è tremendo il weekend
+	<br>Se non sai chi chiamare
+	<br>Se vuoi io resto qui
+	<br>Ma tu resta qui qui qui
+	<br>(Non te ne andare)
+	<br>Non te ne andare
+	<br>Anche se non vuoi, io resto qui',
+    198,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=ghXkNWdUmIs', 
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Però',
+    'Era bellissimissimissimissimissimo tra me e te
+	<br>avevi gli occhi spenti come duecento incendi
+	<br>come se fai un disegno ma hai tolto un anno 
+    <br>e mezzo fa il tappo ai pennarelli
+	<br>come una storia bella ma senza sbattimenti
+	<br>come una frase zozza ma con gli aggiustamenti
+	<br>come sporcarmi tutto con l''olio della macchina 
+    <br>e accarezzarti il viso con i polpastrelli
+	<br>
+	<br>Però che bello è quando ti giri e
+    <br>
+	mi fai vedere bene che vestito hai
+	<br>però che brutto è quando ti sposti e
+	<br>mi fai capire che non te lo toglierai
+	<br>però mannaggia oh
+	<br>però, però, però
+	<br>
+	<br>Era bruttissimissimissimissimissimo tra me e te
+	<br>avevo gli occhi spenti come quando ne hai venti
+	<br>e provi a stare dritto ma non ci hai mai capito niente con i movimenti
+	<br>come in un film di guerra senza i bombardamenti
+	<br>come se t''imbarazzi ma senza arrossamenti
+	<br>come tirare a palla il volume della macchina
+	<br>e te che fai un sorriso a trentamila denti
+	<br>
+	<br>Però che bello è quando ti giri e
+	<br>mi fai vedere bene che vestito hai
+	<br>però che brutto è quando ti sposti e
+	<br>mi fai capire che non te lo toglierai
+	<br>però mannaggia oh
+	<br>però, però, però
+	<br>
+	<br>Però che bello è quando ti giri e
+	<br>mi fai vedere bene che vestito hai
+	<br>però che brutto è quando ti sposti e
+	<br>mi fai capire che non te lo toglierai
+	<br>
+	<br>Però che bello è',
+    192,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=s7xhyJlFmUs',  
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Lacri-ma',
+    'Mentre ti scende una lacri-ma non sai da dove vie-nerissimi gli occhi si sporca-non è come pensavi te
+	<br>E ti fa un po’ male
+	<br>Tutto si sposta, si muove-loce come un uraga-non c’ero
+	<br>Ti chiedo scusa
+	<br>E non sapevo bene com’era
+	<br>E mi fa un po’ male
+	<br>
+	<br>Guarda che bella giornata-vrei tenuto vici-non potevo
+	<br>capire-spirami addosso ancora un po’, ti prego
+	<br>Non riesco a mangiare
+	<br>
+	<br>Mentre cammini per strada sola come un’astronave-rissima in mezzo alle stelle-mani tue sembrano fiumi
+	<br>Che portano al mare
+	<br>Perderti dentro la pioggia sono le otto di sera-ccontami cosa volevi
+	<br>Vivere non è poi male
+	<br>Se ti sai asciugare
+	<br>
+	<br>Guarda che bella giornata-vrei tenuto vici-non potevo capi-respirami addosso ancora un po’, ti prego
+	<br>Non riesco a mangiare
+	<br>
+	<br>Guarda che bella giornata-vrei tenuto vici-non potevo capi-respirami addosso ancora un po’, ti prego
+	<br>Non riesco a mangiare	', 
+    192,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=8GMZW2be1i4',  
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'OK',
+    'Come quando arrivi tardi
+	<br>E non c''è più nulla ormai
+	<br>Più nessuno ad aspettarti
+	<br>E nessuno a dirti: "Vai"
+	<br>Come quando ti imbarazzi
+	<br>E nessuno dice: "Sai
+	<br>Non ti preoccupare adesso che ti porto via con me"
+	<br>
+	<br>E tu rispondi: "Ok, O-K"
+	<br>E tu rispondi: "Ok, O-K"
+	<br>
+	<br>Come quando non ti incazzi, e rimane tutto li
+	<br>Ma vorresti vomitarlo, come il drink di giovedì
+	<br>
+	<br>Ma come fai? Non ridi più
+	<br>"Ma che ne sai?" Mi dici tu
+	<br>E io rispondo: "Ok, O-K"
+	<br>E io rispondo: "Ok, O-K"
+	<br>
+	<br>Come quando non riesci, pensi che non sei più tu
+	<br>Ed hai preso mille pesci, visto che non dormi più
+	<br>Perché collezioni schiaffi ma non li hai tirati mai
+	<br>"Voglio stare solo in piedi", è il tuo grido samurai
+	<br>
+	<br>Ma come fai? Non ridi più
+	<br>"Ma che ne sai?" Mi dici tu
+	<br>E io rispondo: "Ok, O-K"
+	<br>E io rispondo: "Ok, O-K"
+	<br>
+	<br>Ho cercato da mezzanotte, come un pazzo fino alle sei
+	<br>
+	In mezzo ai sassi, in mezzo alle foglie
+	<br>Dentro ai locali, dentro ai musei
+	<br>Seguito i passi, seguito le orme
+	<br>Ho chiesto ai gatti, ai lampioni, alle ombre
+	<br>Alle strade, alle buche, alle gocce
+	<br>Ok
+	<br>
+	<br>Ma come fai? Non ridi più
+	<br>"Ma che ne sai?" Mi dici tu
+	<br>E io rispondo: "Ok, O-K"
+	<br>E io rispondo: "Ok, O-K"
+	<br>E io rispondo: "Ok, O-K" (Ma come fai?)
+	<br>E io rispondo: "Ok, O-K" (Non ridi più)
+	<br>E io rispondo: "Ok, O-K" (Ma che ne sai?)',  
+    195,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=uS5Pm9o3gOk',  
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    '7',
+    'Non ti posso più vedere
+	<br>Vammi a prendere da bere
+	<br>Me l''hai detto tu
+	<br>E poi non c''eri più
+	<br>E adesso gira tutto forte, crolla pure la parete
+	<br>Resto impigliato nelle tue calze a rete
+	<br>Mhh
+	<br>Non mi tocchi più il sedere
+	<br>E non facciamo più l''amore
+	<br>E me l''hai detto tu
+	<br>
+	Non te lo tocco più
+	<br>E dentro c''hai l''apocalisse e sputi bolle di sapone
+	<br>Resto impigliato nei tuoi cambi d''umore
+	<br>Mhh
+	<br>Ma la verità è che non riesco più a perdere
+	<br>
+	<br>Liberati per le 7
+	<br>E portami dentro di te
+	<br>E smettila di fare a botte
+	<br>A botte con te
+	<br>Mhh
+	<br>
+	<br>Abbiamo preso un motoscafo e siamo andati via lontano
+	<br>In mezzo al mare blu, come volevi tu
+	<br>Abbiamo smesso di nuotare ancora prima di iniziare
+	<br>Siamo due frane, che te lo dico a fare
+	<br>Mhh
+	<br>Ma la verità è che non riesco più a perdere
+	<br>
+	<br>Liberati per le 7
+	<br>
+	E portami dentro di te
+	<br>E smettila di fare a botte
+	<br>A botte con te
+	<br>Mhh
+	<br>
+	<br>1, 2, 3, 4, 5, 6, 7
+	<br>
+	<br>Liberati per le 7
+	<br>E portami dentro di te
+	<br>E smettila di fare a botte
+	<br>A botte con te
+	<br>Mhh', 
+    175,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=llPFRnwwfjM',  
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Belva',
+    'Non mi chiedi mai veramente come sto
+	<br>come vuoi che sto? non lo so nemmeno io, boh
+	<br>guardami la faccia, poi decidi tu
+	<br>tienimi le braccia così non casco giù, giù
+	<br>giurami che cercherai di stare qui
+	<br>anche se vorrai strappartimi di dosso
+	<br>anche se perdo la testa e divento uno stronzo
+	<br>un mezzo orso
+	<br>
+	<br>Non mi chiedi mai veramente come sto
+	<br>
+	come vuoi che sto? non lo so nemmeno io, boh
+	<br>guardami la faccia, poi decidi tu
+	<br>tienimi le braccia così non casco giù, giù
+	<br>giurami che cercherai di stare qui
+	<br>anche se vorrai strappartimi di dosso
+	<br>anche se perdo la testa e divento uno stronzo
+	<br>un mezzo orso
+	<br>
+	<br>E non è vero che tutto sia giusto
+	<br>che tutto ha un senso, che tutto ci serve
+	<br>e non è detto sta frase sia giusta
+	<br>che se ti perdo pur te sei un po'' persa
+	<br>che non sto bene ma nemmeno di merda
+	<br>che se ti sposti io casco per terra
+	<br>che stavo in pace prima di questa guerra
+	<br>che tu sia buona, che io sia una belva
+	<br>
+	<br>Non mi chiedi mai veramente come sto
+	<br>come vuoi che sto? non lo so nemmeno io, boh
+	<br>guardami la faccia, poi decidi tu
+	<br>
+	tienimi le braccia così non casco giù, giù
+	<br>giurami che cercherai di stare qui
+	<br>anche se vorrai strappartimi di dosso
+	<br>anche se perdo la testa e divento uno stronzo
+	<br>un mezzo orso
+	<br>
+	<br>Non è veramente com''è
+	<br>se ti fa star meglio
+	<br>puoi dormirmi dentro 
+    <br>anche se poi non è mica il grand hotel
+	<br>
+	<br>Non mi chiedi mai veramente come sto
+	<br>come vuoi che sto? non lo so nemmeno io, boh
+	<br>guardami la faccia, poi decidi tu
+	<br>tienimi le braccia così non casco giù, giù
+	<br>giurami che cercherai di stare qui
+	<br>anche se vorrai strappartimi di dosso
+	<br>anche se perdo la testa e divento uno stronzo
+	<br>un mezzo orso', 
+    172,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=t_xwPXZoT1M',  
+    11  
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Coltellata',
+    'Mentre la notte s''accende come le sigarette
+	<br>Che mi fumo, una coltellata (una coltellata)
+	<br>Tempo di uno starnuto
+	<br>E t''ho già dimenticata
+	<br>E t''ho già dimenticata
+	<br>
+	<br>Mentre un altro infame parla (parla)
+	<br>Io prendo a mia madre casa (casa)
+	<br>Per te vinco come sempre ho vinto su ogni puttanata
+	<br>Non mi dire una cazzata (cazzata)
+	<br>Che penso al perché l''hai inventata
+	<br>Pensa che non saperne mai il motivo mi inizia quasi a mancar
+	<br>Oh oh no, oh no, non volo con low cost
+	<br>Ma nel senso che quando fumo e volo faccio un film da popcorn
+	<br>Non sto con modo
+	<br>Tra antidepressivi poi chiedo a me: "Ma chi è questo?"
+	<br>Oh non lo so, oh non lo so, oh non lo so, oh non lo so
+	<br>Oh non lo so, oh non lo so, oh non lo so, oh non lo so
+	<br>
+	<br>Con uno sconosciuto che non parla e non chiama
+    <br>
+	E non ti ama, io non t''aiuto
+	<br>Mentre la notte s''accende come le sigarette
+	<br>Che mi fumo, una coltellata
+	<br>Tempo di uno starnuto
+	<br>E t''ho già dimenticata
+	<br>E t''ho già dimenticata
+	<br>
+	<br>Oh non lo so, oh non lo so, oh non lo so, oh non lo so
+	<br>Oh non lo so, oh non lo so, oh non lo so, oh non lo so', 
+    168,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=8gbK5b_dqGU',  
+    2  
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Scusa',
+    'E non c''è niente a parte noi
+	<br>a parte i sogni rotti e quelli che non vuoi
+	<br>e fermati qui e resta così
+	<br>prima che il tempo porti via ogni cosa
+	<br>e forse però
+	<br>se poi ci penso un po'' non è mica così
+	<br>non è mica così
+	<br>
+	<br>E scusa, scusa, scusa, scusa, scusa, scusa, scusa, scusa
+	<br>e scusa, scusa, scusa, scusa, scusa, scusa, scusa, scusa
+	<br>
+	<br>E fermati qui
+	<br>e resta così
+	<br>prima che il tempo porti via ogni cosa e
+	<br>e sarò io e sarai te
+	<br>l''unica cosa al mondo da non perdere
+	<br>a parte però
+	<br>che se ci penso un po''
+	<br>non è mica così
+	<br>non è mica così
+	<br>
+	<br>E ho rovinato tutto un''altra volta <br>e sei sparita via con la tua roba
+	<br>pezzi di cuore a terra, pezzi di porta
+	<br>sono un disastro ok, chi se ne importa
+	<br>e ho rovinato tutto un''altra volta <br>e sei sparita via con la tua roba
+	<br>pezzi di cuore a terra, pezzi di porta
+	<br>sono una merda ok
+	<br>
+	<br>
+	E fermati qui
+	<br>e resta così
+	<br>prima che il tempo porti via ogni cosa e
+	<br>e sarò io e sarai te
+	<br>l''unica cosa al mondo da non perdere
+	<br>a parte però ( a parte però)
+	<br>che se ci penso un po''
+	<br>non è mica così
+	<br>non è mica così
+	<br>non è mica così
+	<br>non è mica così	', 
+    192,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=nessOSWzKmU',  
+    2  
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Un po'' come noi',
+    'Vado?
+	<br>Ok
+	<br>
+	<br>Nuda come una foglia in un giorno di pioggia
+	<br>Mentre scende la sera o mentre mangi una mela
+	<br>E pensi questa vita è una galera
+	<br>Nuda come la luna come quando hai paura
+	<br>Mentre guardi nel vuoto quando scatti una foto <br>E pensi questa notte duri poco
+	<br>
+	<br>
+	Ma tu lo sai come si fanno gli aeroplani di carta
+	<br>E come mai i nostri non rimangono mai in aria?
+	<br>Un po'' come noi
+	<br>Un po'' come noi
+	<br>Oh
+	<br>
+	<br>Nuda come questa canzone che sa strapparti una gioia
+	<br>Almeno una lacrima che ti devo dire io? Chi lo sa
+	<br>Nuda come una stella in mezzo alle stelle
+	<br>In mezzo all''oscurità ma che buio fa, che buio fa
+	<br>
+	<br>Ma tu lo sai come si fanno gli aeroplani di carta
+	<br>E come mai i nostri non rimangono mai in aria?
+	<br>Un po'' come noi
+	<br>Un po'' come noi
+	<br>Oh 
+    <br>Un po'' come noi
+	<br>Un po'' come noi
+	<br>Un po'' come noi
+	<br>Un po'' come noi
+	<br>
+	<br>Ma tu lo sai come si fanno gli aeroplani di carta
+	<br>E come mai i nostri non rimangono mai?
+	<br>
+	<br>Ok per me è buona', 
+    168,  
+    '2021-02-12',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=qCa9MlUAY0Q',  
+    2  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Non sei tu',
+    'I giorni passano, passano, passano
+	<br>e tu non torni qui
+	<br>e ho visto un sacco di, un sacco di lunedì
+	<br>venirmi sotto
+	<br>le mani addosso
+	<br>il naso rotto
+	<br>e la voglia di, voglia di, voglia di
+	<br>voglia di drink e di venerdì
+	<br>per non vederti più
+	<br>dentro gli occhi blu
+	<br>
+	di una sconosciuta dentro al letto mio
+	<br>che non sei tu
+	<br>che non sei tu...
+	<br>
+	<br>E che ne sanno gli altri
+	<br>Di quando tornavamo tardi pieni di graffi
+	<br>che ne sanno gli altri
+	<br>di quando ridevamo come matti
+	<br>e che ne sanno gli altri
+	<br>di quando correvamo come pazzi <br>e che ne sanno gli altri
+	<br>degli occhi nostri mescolarsi e diventare gialli
+	<br>gialli..
+	<br>
+	<br>I giorni restano, restano, restano
+	<br>e tu non torni piú
+	<br>e ho preso un sacco di stupidi lividi
+	<br>sopra la pelle
+	<br>sotto la pelle
+	<br>sotto alle stelle
+	<br>
+	e la voglia di, voglia di, voglia di,
+	<br>voglia di andarmene via da qui
+	<br>per non vederti più dentro gli occhi blu
+	<br>di una sconosciuta che sta al posto tuo e che non sei tu
+	<br>che non sei tu
+	<br>
+	<br>E che ne sanno gli altri
+	<br>di quando ridevamo come matti
+	<br>E che ne sanno gli altri
+	<br>di quando correvamo come pazzi
+	<br>Che ne sanno gli altri
+	<br>degli occhi nostri mescolarsi e diventare tanti',  
+    185,  
+    '2017-03-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=GIaXBzznj8I', 
+    11
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Quella te',
+    'Mi ricorderó dei giorni pallidi
+	<br>Quando pioveranno lunedì
+	<br>E correrò come l''estate del 2003
+	<br>Io e te a bere e a fingere
+	<br>E passeranno gli anni prima che tu ammetta che
+	<br>Che di me volevi solo te
+	<br>Quella te
+	<br>Che rideva
+	<br>Quella te
+	<br>Quella te, quella te
+	<br>
+	Che mi sconvolge ancora il sabato mattina
+	<br>Con la felpa sporca della sera prima
+	<br>Che diluvia ma cammina, cammina
+	<br>Cammina ahhh
+	<br>Mi ricorderó dei giorni stupidi
+	<br>Quando pioveranno venerdì
+	<br>E voleró come l''inverno del 2006
+	<br>Noi a Londra in un locale gay
+	<br>E passerano gli anni prima che tu ammetta che
+	<br>Che di me volevi solo te
+	<br>Solo te
+	<br>Solo te
+	<br>Solo te
+	<br>Solo te, solo te, solo te
+	<br>Solo te, solo te, solo te
+	<br>Solo te, solo te, solo tee
+	<br>Solo tee
+	<br>Che mi sconvolgi ancora il sabato mattina
+	<br>Con la felpa sporca della sera prima
+	<br>Che diluvia ma, dai Flavio, cammina
+	<br>
+	Cammina, cammina, cammina
+	<br>Cammina, cammina, cammina
+	<br>Cammina, cammina, cammina
+	<br>Cammina, cammina, cammina',
+    180,  -- Durata in secondi (3 minuti e 20 secondi)
+    '2017-03-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=sJ_1cTrX3qc',  
+    11
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Zucchero filato',
+    'Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi, Te lo ricordi, Te lo ricordi
+	<br>
+	<br>Gli amici, la piazza, il gelato
+	<br>
+	La notte che brucia la roba che brucia
+	<br>Le mani, la sete che graffia la gola
+	<br>L''aurora che arriva minacciosa
+	<br>Gli occhiali da sole, le occhiaie da soli
+	<br>I giorni e gli umori difettosi
+	<br>Il letto, le scarpe, la luce, le stelle
+	<br>La noia, l''odore delle cose
+	<br>
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi, Te lo ricordi, Te lo ricordi
+	<br>
+	<br>E poi andremo sopra un monte
+	<br>E costruiremo per noi
+	<br>La notte che vuoi, la notte che vuoi
+	<br>
+	E poi andremo sopra un monte
+	<br>E costruiremo per noi
+	<br>La notte che vuoi
+	<br>
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi lo zucchero filato
+	<br>Te lo ricordi, Te lo ricordi, Te lo ricordi',
+    195,  
+    '2017-03-03',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=T-3iJIWVKT8',  -- Sostituisci con il link YouTube effettivo
+    11
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Meltinpot',
+    'E fare la lotta è una cosa bellissima,
+	Voglio buttarmi giù da un elicottero
+	<br>Che vola in cielo rosa fenicottero
+	<br>Oppure andare fuori strada con la macchina di Marta
+	<br>La luce brucia la mia faccia, scoppierò
+	<br>Se non mi bevo due tre cose, zenzero
+	<br>Mi perderò nel sonno come uno straniero nel metrò
+	<br>La verità è che sei solo un inganno della mia testa
+	<br>La verità è che sei solo un inganno della mia testa
+	<br>E allora com''è com''è com''è com''è che non ci siamo ancora detti ciao
+	<br>Come distruggi le foto dandogli fuoco
+	<br>
+	Dandomi fuoco
+	<br>Dandoci fuoco
+	<br>Com''è com''è com''è com''è che non ci siamo ancora detti ciao
+	<br>Voglio buttarmi giù dal superattico
+	<br>Di Maggie cielo rosa superbattito
+	<br>E poi unire tutti i pezzi con le polaroid di Marco
+	<br>La luna gela e la mia faccia, ghiaccerò
+	<br>Persone miste nella stanza, Meltinpot
+	<br>Mi perderò negli occhi tuoi due volte al giorno come sport
+	<br>La verità è che sei solo un inganno della mia testa
+	<br>La verità è che sei solo un inganno della mia testa
+	<br>E allora com''è com''è com''è com''è che non ci siamo ancora detti ciao
+	<br>Come distruggi le foto dandogli fuoco
+	<br>Dandomi fuoco
+	<br>Dandoci fuoco
+	<br>Com''è com''è com''è com''è che non ci siamo ancora detti ciao
+	<br>E allora com''è com''è com''è com''è com''è com''è
+	<br>E allora com''è com''è com''è com''è com''è com''è
+	<br>E allora com''è com''è com''è com''è com''è com''è',
+    221, 
+    '2017-03-03',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=d95n85F7Ayw', 
+    11
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Balena',
+    'E fare la lotta è una cosa bellissima,
+	<br>e fare la spesa è una cosa bruttissima.
+	<br>A colazione mangio rimorsi
+	<br>e frutta di stagione
+	<br>e di stagione, stagione
+	<br>mangio rimorsi a colazione.
+	<br>
+	<br>Però da lunedì cambierà
+	<br>me lo sento sì.
+	<br>Da lunedì,
+	<br>
+	crollerà pure il pavimento.
+	<br>
+	<br>Ti porterò sopra la mia schiena
+	<br>sopra una montagna, sopra un''altalena,
+	<br>con la luna piena, con la pancia piena,
+	<br>come una balena,
+	<br>come una balena.
+	<br>
+	<br>Ti porterò sopra la mia schiena,
+	<br>ti porterò sopra la mia schiena. E fare le fusa è una cosa bellissima,
+	<br>e fare una torta è una cosa bruttissima.
+	<br>A colazione mangio cerotti
+	<br>e frutta di stagione
+	<br>e di stagione, stagione
+	<br>mangio cerotti a colazione.
+	<br>
+	<br>Però da lunedì cambierà
+	<br>me lo sento sì.
+	<br>Da lunedì,
+	<br>crollerà pure il pavimento. Ti porterò sopra la mia schiena
+	<br>
+	sopra una montagna, sopra un''altalena,
+	<br>con la luna piena, con la pancia piena,
+	<br>come una balena.
+	<br>Ti porterò sopra la mia schiena
+	<br>sopra una montagna, sopra un''altalena.
+	<br>Ti porterò sopra la mia schiena
+	<br>sopra una montagna, sopra un''altalena.
+	<br>Ti porterò sopra la mia schiena
+	<br>sopra la mia schiena,
+	<br>sopra la mia schiena,
+	<br>sopra la mia schiena,
+	<br>sopra la mia schiena (Ti porterò).',
+    174,  
+    '2017-03-03',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=67fJmh_aTTs',  -- Sostituisci con il link YouTube effettivo
+    11
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Démodé',
+    'Non ci vado più in discoteca
+	<br>Non ci vado più
+	<br>Da quando hai detto che
+	<br>Non ci si va più perché è démodé
+	<br>Ma da dentro il bar il cielo è grande
+	<br>Solo la metà
+	<br>E da dentro il bar il cielo è bello
+	<br>Solo la metà
+	<br>Non sei più com''eri da bambina
+	<br>Non hai più le All-Star
+	<br>
+	E il tramonto ci fa stare bene
+	<br>Ma non basterà
+	<br>E andare in una Spa non ci aiuterà
+	<br>E comprare casa non ci aiuterà
+	<br>
+	<br>Non ci vado più in discoteca
+	<br>Non ci vado più
+	<br>E non ci vado più in discoteca
+	<br>Non ci vado più
+	<br>
+	<br>Non ho più paura dell''aereo
+	<br>Ma non volo più
+	<br>E tuo padre che
+	<br>Mi parla di quand''era giovane
+	<br>Mi fa stare giù
+	<br>Che non esce più
+	<br>E mi fa stare giù
+	<br>Che non esco più
+	<br>
+	<br>Ma andare via di qua
+	<br>
+	Non ci aiuterà
+	<br>E guardare un film
+	<br>Non ci aiuterà
+	<br>
+	<br>Non ci vado più in discoteca
+	<br>Non ci vado più
+	<br>E non ci vado più in discoteca
+	<br>Non ci vado più
+	<br>E non ci vado più in discoteca
+	<br>Non ci vado più (Non hai più le All-Star)
+	<br>E non ci vado più in discoteca
+	<br>Non ci vado più (Non hai più le All-Star)
+	<br>Non ci vado più in discoteca
+	<br>Non ci vado più (Non hai più le All-Star)
+	<br>E non ci vado più in discoteca
+	<br>Non ci vado più',
+    195,  
+    '2017-03-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=Ute03Yiu-mk',  
+    11
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'NMRPM',
+    'Non mi ricordi più il mare
+	<br>Se penso a te ora vedo un centro commerciale
+	<br>O lo scorso Natale
+	<br>A cena dai tuoi a guardare le foto dell''estate
+	<br>
+	<br>Che fanno i tuoi?
+	<br>Chi è tuo padre?
+	<br>Insomma suoni, ma dai?
+	<br>Perché non provi a fare un talent
+	<br>Io conosco molto bene
+	<br>
+	Il produttore generale
+	<br>Ti prego passami il sale
+	<br>E non mi vedi più
+	<br>Posso aiutare a sparecchiare
+	<br>Ma non mi vedi più
+	<br>Meravigliose le foto
+	<br>Ma non mi vedi più
+	<br>
+	<br>Non mi ricordi più il mare
+	<br>Se penso a te ora vedo un albero che cade
+	<br>O le scorse serate
+	<br>A uscire coi tuoi amici del mare
+	<br>
+	<br>Che cosa fai?
+	<br>Quanti anni hai?
+	<br>Insomma suoni davvero?
+	<br>Perché non provi a lavorare
+	<br>Se vuoi ti posso presentare
+	<br>A un mio amico all''ospedale
+	<br>Ti prego passami il cocktail
+	<br>
+	E non mi vedi più
+	<br>Posso pagare, insisto
+	<br>Ma non mi vedi più
+	<br>Se vuoi ti posso accompagnare
+	<br>Ma non mi vedi più Ma non mi vedi più
+	<br>Ma non mi vedi più
+	<br>Sì non mi vedi più
+	<br>Sì non mi vedi più', 
+    189,  
+    '2017-03-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=PJOkelj3NDw',  
+    11  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Greta',
+    'Greta non ti muovere dal letto
+	<br>Fuori non c''è niente
+	<br>È inutile che usciamo
+	<br>Trova delle scuse buone
+	<br>Così non cresciamo più
+	<br>Così non cresciamo più
+	<br>Così non cresciamo più
+	<br>Greta non innamorarti mai
+	<br>Delle cose troppo vere, vere
+	<br>Dimmi un sacco di bugie
+	<br>
+	E ti dirò le mie, e io ti dirò le mie
+	<br>Abbiamo perso troppo tempo ad occupare il tempo
+	<br>Abbiamo perso troppo tempo ad occupare il tempo
+	<br>Abbiamo perso troppo tempo, abbiamo perso, abbiamo perso
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai
+	<br>Greta non innamorarti mai	',
+	140,  
+    '2017-03-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=z0KRFX-1Ve0', 
+    11  );
+
+-- INSERT album_brano the weeknd
+INSERT INTO album_brano(brano_id, album_id) VALUES (1,1);
+INSERT INTO album_brano (brano_id, album_id)VALUES (2,1);
+INSERT INTO album_brano(brano_id, album_id) VALUES (3,1);
+INSERT INTO album_brano(brano_id, album_id) VALUES (4,1);
+INSERT INTO album_brano(brano_id, album_id) VALUES (5,1);
+INSERT INTO album_brano(brano_id, album_id) VALUES (6,1);
+INSERT INTO album_brano(brano_id, album_id) VALUES (7,1);
+INSERT INTO album_brano(brano_id, album_id) VALUES (8,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (9,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (10,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (11,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (12,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (13,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (14,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (15,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (16,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (17,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (18,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (19,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (20,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (21,2);
+INSERT INTO album_brano(brano_id, album_id) VALUES (22,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (23,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (24,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (25,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (26,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (27,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (28,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (29,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (30,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (31,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (2,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (33,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (34,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (35,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (36,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (37,3);
+-- INSERT album_brano Ariana
+INSERT INTO album_brano(brano_id, album_id) VALUES (38,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (39,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (40,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (41,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (42,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (43,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (44,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (45,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (46,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (47,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (48,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (49,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (50,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (51,4);
+INSERT INTO album_brano(brano_id, album_id) VALUES (52,4);
+-- insert brano_album mitski
+INSERT INTO album_brano(brano_id, album_id) VALUES (53,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (54,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (55,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (56,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (57,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (58,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (59,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (60,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (61,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (62,5);
+INSERT INTO album_brano(brano_id, album_id) VALUES (63,5);
+-- insert tom odel
+INSERT INTO album_brano(brano_id, album_id) VALUES (64,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (65,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (66,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (67,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (68,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (69,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (70,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (71,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (72,6);
+INSERT INTO album_brano(brano_id, album_id) VALUES (73,6);
+-- black friday
+INSERT INTO album_brano(brano_id, album_id) VALUES (74,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (75,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (76,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (77,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (78,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (79,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (80,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (81,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (82,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (83,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (84,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (85,7);
+INSERT INTO album_brano(brano_id, album_id) VALUES (86,7);
+-- insert billie
+INSERT INTO album_brano(brano_id, album_id) VALUES (87,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (88,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (89,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (90,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (91,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (92,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (93,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (94,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (95,8);
+INSERT INTO album_brano(brano_id, album_id) VALUES (96,8);
+-- insert gazelle
+INSERT INTO album_brano(brano_id, album_id) VALUES (97,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (98,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (99,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (100,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (101,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (102,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (103,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (104,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (105,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (106,9);
+INSERT INTO album_brano(brano_id, album_id) VALUES (107,9);
+-- pt 2 NON SEI TU
+INSERT INTO album_brano(brano_id, album_id) VALUES (108,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (109,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (110,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (111,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (112,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (113,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (114,10);
+INSERT INTO album_brano(brano_id, album_id) VALUES (115,10);
+
+INSERT INTO utente(username, password, nome, cognome, email, foto, data_creazione) VALUES(
+'root',
+'admin',
+'Mario',
+'Rossi',
+'mariorossi@gmail.com',
+'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
+'2024-10-10');
+
+INSERT INTO utente(username, password, nome, cognome, email, foto, data_creazione) VALUES(
+'root2',
+'admin2',
+'Luigi',
+'Verdi',
+'luigiverdi@gmail.com',
+'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
+'2024-10-10');
+
+
+INSERT INTO playlist(titolo, durata, foto, data_creazione, pubblica, utente_id) VALUES(
+'PLAYLIST PROVA',
+100,
+'https://i.scdn.co/image/ab67616d00001e025ef878a782c987d38d82b605',
+'2023-10-11',
+TRUE,
+2);
+
+
+
+INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 44);
+INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 39);
+INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 47);
+
+

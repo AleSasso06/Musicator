@@ -114,6 +114,14 @@ public class Utente {
 		this.dataCreazione = dataCreazione;
 	}
 
+	public List<Playlist> getPlaylist() {
+		return playlist;
+	}
+
+	public void setPlaylist(List<Playlist> playlist) {
+		this.playlist = playlist;
+	}
+
 	@Override
 	public String toString() {
 		return "Utente [id=" + id + ", username=" + username + ", nome=" + nome + ", cognome=" + cognome + ", email="
