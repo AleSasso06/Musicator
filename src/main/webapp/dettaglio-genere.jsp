@@ -13,42 +13,39 @@
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css">
     <style>
-        .card {
-            width: 18rem;
+        
+        body {
+            background-color: #08263C;
         }
-        .card-img-top {
-            height: 15rem;
-            object-fit: cover;
+      
+        .brano-container {
+            margin-top: 10px;
+            background-color: #1a2730;
+            padding: 2px;
+            border-radius: 30px;
         }
-        .genre-header {
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .genre-description {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .footer {
-            margin-top: 3rem;
-            background-color: #f8f9fa;
-        }
-    </style>
+      
+         </style>
 </head>
 <body>
-
-<%@ include file="nav.jsp" %>
 <div class="container mt-5">
+<%@ include file="nav.jsp" %>
+        
+       
+	<div class="genere"> 
     <% Genere genere = (Genere) request.getAttribute("genere"); %>
-   
+   </div>
+     
     <% 
-    List<Album> albums = (List<Album>) request.getAttribute("albums"); 
+    List<Album> albums = (List<Album>) request.getAttribute("album"); 
     if (albums != null && !albums.isEmpty()) { 
     %>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <% for(Album album : albums) { %>
-            <div class="col mb-3">
-                <div class="card">
-                    <div class="card-body text-center">
+           <div class="col mb-5">
+                    <div class="album">
+                  <!--    <img src="images/album.jpg" alt="Album cover"> -->
+                   <div class="card-body text-center">
                         <a class="card-title h5" href="album?id=<%= album.getId() %>"><%= album.getTitolo() %></a>
                     </div>
                 </div>
@@ -58,21 +55,21 @@
     <% 
     } else { 
     %>
-    <p>Nessun album trovato per questo genere.</p>
+   <!--  <p>Nessun album trovato per questo genere.</p>-->
     <% 
     } 
     %>
+</div>
 
-    <h3>Brani</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <% 
         List<Brano> brani = (List<Brano>) request.getAttribute("brani"); 
         if (brani != null && !brani.isEmpty()) { 
         %>
         <% for(Brano brano : brani) { %>
-            <div class="col mb-3">
-                <div class="card">
-                    <div class="card-body text-center">
+            <div class="brano mb-3">
+            <!--  <img src="album.jpg" alt="Brano cover"> -->
+                     <div class="card-body text-center"> 
                         <a class="card-title h5" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %></a>
                     </div>
                 </div>
@@ -81,10 +78,11 @@
         <% 
         } else { 
         %>
-        <p>Nessun brano disponibile per questo genere.</p>
+       <p  style="color: white;">Nessun brano disponibile per questo genere.</p>
         <% } %>
     </div>
-    <%@ include file="footer.jsp" %>
+ 
+  <%@ include file="footer.jsp" %> 
 </div>
 
 <script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
