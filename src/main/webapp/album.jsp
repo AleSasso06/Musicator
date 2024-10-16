@@ -8,6 +8,7 @@
 <%@ page import="java.util.List"%>
 <%@ page import="it.generationitaly.musicator.entity.Album"%>
 <title>Album</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" type="text/css"
 	href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 	 <link rel="stylesheet" href="style2.css">
@@ -30,27 +31,27 @@ List<Album> albums = (List<Album>) request.getAttribute("albums");
 		
 		</div>
 		
-	
-<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+
+<div class="container"> 
+
 <div class="row">
 <div class="col-4">
- <% if (albums != null && !albums.isEmpty()){
+	 <% if (albums != null && !albums.isEmpty()){
 for (Album album : albums){%> 
 <div class="card"style="width: 18rem; ">
 <img src="<%=album.getFoto() %>" class="card-img-top" alt="...">
  <div class="card-body">
- <a class="card-title h5" href="artista?id=<%= album.getId() %>"><%= album.getTitolo() %>
+ <a style="text-decoration:none"class="card-title h5" href="artista?id=<%= album.getId() %>"><!-- <%= album.getTitolo() %> -->
  
-   <h5 style="text-align:center;" class="card-title"><%= album.getTitolo() %></h5>
+    <h5 style="text-align:center;text-decoration:none" class="card-title"><%= album.getTitolo() %></h5>
    </a>
-   <p style="color:black;text-align:center;" class="card-text "><%= album.getArtista() %></p>
+   <p style="color:black;text-align:center;" class="card-text "><%= album.getArtista().getNome() %></p>
    </div>
    
    </div>
-
 <%} %>
 <%}else{ %>
- <span>nessun brano</span>
+<span>nessun brano</span> 
  <%} %>
 
  
@@ -61,7 +62,7 @@ for (Album album : albums){%>
   </div>
   </div>
   
-  </div>
+   </div>
   
   
 
@@ -92,12 +93,12 @@ for (Album album : albums){%>
 </div>
 -->
 </div>
+
 <footer class="footer bg-light text-center py-3">
 		        <div class="container">
 		            <p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
 		        </div>
 		    </footer>
-
 				
 	<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 
