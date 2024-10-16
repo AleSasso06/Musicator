@@ -21,57 +21,61 @@
 </head>
 <body>
 
-<%
+<%List<Brano> brani = (List<Brano>) request.getAttribute("brani");%>
 
-	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
-	%>
 	<%@ include file="nav.jsp"%>
-	<!-- Inizio Logo -->
-        <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
-        </div>
-        <!-- Fine Logo -->
 	
- <!-- Barra di Ricerca -->
+	<div class="container justify-content-center mt-5">
+ 		<!-- Barra di Ricerca -->
 			<div class="input-group mb-3">
 			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
 			  <input type="text" class="form-control" name="brani" style="border-radius:30px" placeholder="Cerca il tuo brano preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
 			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
 			 </form>
 			</div>
-			<!-- Fine Barra di Ricerca -->
-	<%
-	for (Brano brano : brani) {
-	%>
-	
-			<!-- inizio card -->
-	<div class="card mb-3 ms-3" style="max-width: 1000px;">
-		<div class="row g-0">
-			<div class="col-md-4">
-				<img src="<%=brano.getFoto()%>" class="img-fluid rounded-start"
-					alt="...">
-			</div>
-			<div class="col-md-8">
-				<div class="card-body">
-					<form action="brano" method="get">
+		<!-- Fine Barra di Ricerca -->
+		
+		
 
-						 <a class="card-title h3" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %></a>
-						<!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
-						<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
-						<!-- inserire l'artista sempre attraverso lo stesso giro -->
-						<p class="card-text">
-							<small class="text-body-secondary">Artista </small>
-						</p>
-					</form>
+
+
+<!-- prova card -->
+<!-- Griglia delle card -->
+		<div class="container justify-content-center">
+		<% if (!brani.isEmpty()) { %>
+			<% for (Brano brano : brani) { %>
+		<div class="container mt-3">
+				<div class="card song-card" style="max-width: 800px; opacity: 0.7; transition: opacity 0.5s ease;">
+					<div class="row no-gutters align-items-center">
+						<div class="col-3">
+							<img
+								src=<%= brano.getFoto() %>
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<a class="card-title h5" href="<%= brano.getYtLink() %>">
+									<h5 class="card-title"><%= brano.getTitolo() %></h5>
+									<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
+									
+								</a>
+								
+							</div>
+						</div>
+						<div class="col-auto">
+							<a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
+								<i class="bi bi-play-circle-fill"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
+			<% } %>
+			<% } else { %>
+			<p></p>
+		<% } %>
 		</div>
-	</div>
-	<%
-	}
-	%>
-
-
+		</div>
 
 	<%@ include file="footer.jsp" %>
 	<!-- Bootstrap JavaScript Libraries -->
