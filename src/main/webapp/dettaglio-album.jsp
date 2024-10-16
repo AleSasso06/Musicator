@@ -65,6 +65,8 @@
 </div>
 
 <%for (Brano brano : brani){%>
+<div class="container mt-5 ">
+
 	<div class="card mb-3 ms-3" style="max-width: 1000px;">
 		<div class="row g-0">
 			<div class="col-md-4">
@@ -77,7 +79,7 @@
 
 						 <a class="card-title h3" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %></a>
 						<!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
-						<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
+						<p style="color:black" class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
 						<!-- inserire l'artista sempre attraverso lo stesso giro -->
 						<p class="card-text">
 							<small class="text-body-secondary">Artista </small>
@@ -88,6 +90,7 @@
 		</div>
 	</div>
 	
+	</div>
 <%} %>
 	
 	
