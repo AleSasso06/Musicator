@@ -28,9 +28,9 @@
 		      
 				<div class="d-flex align-items-center">
 				<!-- Barra di Ricerca -->
-				<form class="d-flex me-2" role="search">
+				<form class="d-flex me-2" role="search" action="ricerca_globale" method="get">
 				    <div class="input-group">
-				        <input class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
+				        <input name="ricercaUtente" class="form-control" type="search" placeholder="Cerca la tua musica..." aria-label="Cerca">
 				        <button class="input-group-text bg-white border-0">
 				            <i class="fas fa-search"></i> <!-- Icona di ricerca -->
 				        </button>
