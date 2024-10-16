@@ -41,6 +41,24 @@ function goTop() {
 }
 
 
+
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3, // Numero di slide visibili per volta
+    spaceBetween: 30, // Spazio tra le slide
+    loop: true, // Loop infinito
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
+
+
+
+
 /*****************************************  FEATURED TOP ARTISTS */
 var featured_slider = new Swiper("#featured-top-artists", {
     //Una volta terminate le slides, torna sulla prima
