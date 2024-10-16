@@ -55,7 +55,7 @@
 						</div>
 						<div class="col">
 							<div class="card-body">
-								<a class="card-title h5" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %>
+								<a class="card-title h5" href="brano?id=<%= brano.getId() %>">
 									<h5 class="card-title"></h5>
 									<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
 									
