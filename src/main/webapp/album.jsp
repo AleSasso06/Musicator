@@ -52,9 +52,9 @@
 			  <div class="col-md-4 d-flex justify-content-center mb-3">
 			  
 			    <div class="card">
-			      <img src="<%= album.getFoto() %>" class="card-img-top" alt="..." ">
+			      <img src="<%= album.getFoto() %>" class="card-img-top" alt="..." >
 			      <div class="card-body text-center">
-			        <a class="card-title h5" href="album?id=<%= album.getId() %>"><%= album.getTitolo() %></a>
+			        <a style="text-decoration:none"class="card-title h5" href="album?id=<%= album.getId() %>"><%= album.getTitolo() %></a>
 			      </div>
 			    </div>
 			  </div>

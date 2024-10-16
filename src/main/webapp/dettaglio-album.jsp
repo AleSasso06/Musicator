@@ -39,13 +39,13 @@
        </div> 
        
         <div class="col-8 mt-4">
-        <ul style="list-style-color:none; color:white">
+        <ul style="list-style-decoration:none; color:white">
         <li>Titolo:<%=album.getTitolo() %></li>
-        <li>Artista:<%=album.getArtista() %></li>
-        <li>Genere:<%=album.getGenere() %></li>
+        <li>Artista:<%=album.getArtista().getNome() %></li>
+        <li>Genere:<%=album.getGenere().getNome() %></li>
         <li>Durata:<%=album.getDurata() %></li>
-        <li>Data Uscita:<%=album.getDataUscita() %></li>
-        <li>Descrizione:<%=album.getDescrizione() %></li>
+        <li>Data di Uscita:<%=album.getDataUscita() %></li>
+         <li>Descrizione:<%=album.getDescrizione() %></li>
         </ul>
         </div>  
         </div>
@@ -55,7 +55,7 @@
         <div class="container min-vh-10 d-flex  justify-content-center mt-5">
    <h1 style="color:white" > Elenco brani</h1>
 </div>
-<%while() %>
+
 <div class="container">
 <ol >
        <li style="padding:20px; margin-bottom: 5px; background-color:white ;  border-radius: 4px;">Foto-Titolo canzone 
