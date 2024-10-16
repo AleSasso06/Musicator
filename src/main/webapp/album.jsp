@@ -60,7 +60,8 @@
 			  </div>
 			  <%} %>
 		</div>
-		<!-- fine card -->
+		
+		<%@ include file="footer.jsp" %>
 		
 		<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 	</body>
