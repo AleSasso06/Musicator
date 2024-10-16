@@ -20,16 +20,17 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-<!-- Inizio Logo -->
-        <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
-        </div>
-        <!-- Fine Logo -->
+
 <%
 
 	List<Brano> brani = (List<Brano>) request.getAttribute("brani");
 	%>
 	<%@ include file="nav.jsp"%>
+	<!-- Inizio Logo -->
+        <div class="svg-container mt-3">
+           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+        <!-- Fine Logo -->
 	
  <!-- Barra di Ricerca -->
 			<div class="input-group mb-3">
