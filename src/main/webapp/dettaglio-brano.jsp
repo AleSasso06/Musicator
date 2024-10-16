@@ -33,7 +33,32 @@
 	Brano brano = (Brano) request.getAttribute("brano");
 	
 	%>
-	<!--  card delle informazioni del brano -->
+	
+	<div class="card mb-3 song-card" style="max-width: 1200px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title"><%=brano.getTitolo() %></h4>
+        <p class="card-text">Descrizione della canzone o ulteriori dettagli.</p>
+        <p class="card-text"><small class="text-body-secondary">Ultimo aggiornamento: 3 minuti fa</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card per il testo della canzone -->
+<div class="card mt-3 song-lyrics-card">
+  <div class="card-body">
+    <h5 class="card-title">Testo della Canzone</h5>
+    <p class="card-text">
+      <%=brano.getTesto() %>
+    </p>
+  </div>
+</div>
+	<!--  card delle informazioni del brano 
 	
 	<div class="card mb-3" style="max-width: 1200px;">
   <div class="row g-0">
@@ -54,7 +79,7 @@
 	</div>
 	<div>
 	<%=brano.getTesto()%>
-	</div>
+	</div> -->
 	<%@ include file="footer.jsp" %>
 	<!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
