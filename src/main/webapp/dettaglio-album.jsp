@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="it.generationitaly.musicator.entity.Album"%>
 <!DOCTYPE html>
-<html>
+<html>   
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
