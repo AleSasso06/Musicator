@@ -27,6 +27,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			tx = em.getTransaction();
 			tx.begin();
 			// test like
+			// SELECT * FROM album_brano ab JOIN album a ON ab.album_id = a.id JOIN brano b ON ab.bano_id = b.id WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')
 			TypedQuery<Brano> query = em.createQuery("FROM Brano b WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')", Brano.class);
 			query.setParameter("titolo", titolo);
 			brani = query.getResultList();

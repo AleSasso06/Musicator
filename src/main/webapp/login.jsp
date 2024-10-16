@@ -50,7 +50,7 @@
 <div class="container min-vh-100 d-flex justify-content-center align-items-center text-center">
     <div>
         <h1 class="mb-3">Login</h1>
-        <form class="px-4 py-3">
+        <form class="px-4 py-3" action="login" method="post">
             <div class="mb-3">
                 <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleDropdownFormEmail1" name="email" placeholder="email@example.com">
@@ -67,12 +67,12 @@
                     <label class="form-check-label" for="dropdownCheck">Remember me</label>
                 </div>
                 <div class="text-end">
-                    <a class="dropdown-item d-inline" href="#">Not registered yet? Register!</a>
-                    <a class="dropdown-item d-inline" href="#">Forgot password?</a>
+                    <a class="dropdown-item d-inline" href="sign-in.jsp">Non sei ancora registrato? Registrati!</a>
+                    <a class="dropdown-item d-inline" href="#">Password dimenticata?</a>
                 </div>
             </div>
             <div style="text-align: center;">
-                <button type="submit" class="custom-btn">Sign in</button>
+                <button type="submit" class="custom-btn">Login</button>
             </div>
         </form>
         <div class="dropdown-divider"></div>

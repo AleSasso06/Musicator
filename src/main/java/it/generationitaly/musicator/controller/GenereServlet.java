@@ -7,14 +7,23 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
+import it.generationitaly.musicator.entity.Album;
+import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.entity.Genere;
+import it.generationitaly.musicator.repository.AlbumRepository;
+import it.generationitaly.musicator.repository.BranoRepository;
 import it.generationitaly.musicator.repository.GenereRepository;
+import it.generationitaly.musicator.repository.impl.AlbumRepositoryImpl;
+import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
 import it.generationitaly.musicator.repository.impl.GenereRepositoryImpl;
 
 public class GenereServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
+	private BranoRepository branoRepository = new BranoRepositoryImpl();
+	private AlbumRepository albumRepository = new AlbumRepositoryImpl();
 	private GenereRepository genereRepository = new GenereRepositoryImpl();
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -23,8 +32,13 @@ public class GenereServlet extends HttpServlet {
 		
 		Genere genere = genereRepository.findById(id);
 		
+		List<Brano> braniGenere = branoRepository.findByGenere(genere.getNome());
+		List<Album> albumGenere = albumRepository.findByGenere(genere.getNome());
+		
+		request.setAttribute("brani", braniGenere);
+		request.setAttribute("album", albumGenere);
 		request.setAttribute("genere", genere);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio_genere.jsp");
 		requestDispatcher.forward(request, response);
 	
 	}
