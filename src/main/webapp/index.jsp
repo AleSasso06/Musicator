@@ -19,9 +19,6 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 		
-		
-
-		
 		    <style>
 	        /************************************************ PRELOADER */
 	        #preloader {
@@ -72,7 +69,6 @@
 	
 	</head>
 	<body>	
-	
 	<%@ include file="nav.jsp" %>
 	
     <!-- ELEMENTI FIXED 
@@ -87,6 +83,10 @@
            <img alt="logo" src="images/logo header.svg">
         </div>
         
+      <!-- pulsante per tornare all'index -->
+        <a href="index.jsp" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+      <!-- fine pulsante per tornare all'index -->
+       
         <!-- GLOBAL TOP 200 -->
         <div class="py-5"></div>
         <div class="container text-center mb-4"  data-aos="fade-up">
@@ -250,14 +250,14 @@
             <div class="container text-center">
                 <img class="rounded-circle border border-white border-5 shadow"
                     src="images/images/logoV.svg" alt=""
-                    style="width:120px; height:auto; position:relative; z-index:2; margin-right: -3rem"
+                    style="width:120px; height:auto; position:relative; z-index:2; margin-right: -5rem"
                     data-aos="fade-right">
                 <img class="rounded-circle border border-white border-5 bg-light shadow"
                     src="images/teamL.svg" alt=""
-                    style="width:160px; height:auto; position:relative; z-index:2" data-aos="fade-up">
+                    style="width:120px; height:auto; position:relative; z-index:2" data-aos="fade-up">
                 <img class="rounded-circle border border-white border-5 shadow"
                     src="Musicator/src/main/webapp/images/ML.svg" alt=""
-                    style="width:120px; height:auto; position:relative; z-index:2; margin-left: -3rem"
+                    style="width:120px; height:auto; position:relative; z-index:2; margin-left: -5rem"
                     data-aos="fade-left">
             </div>
             
@@ -267,11 +267,15 @@
                 <p class="lead">Sii il primo ad ascoltare questi futuri successi musicali</p>
             </div>
             <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left">
-                <h2 class="h3 fw-bold mb-0">Scopri Video Music Live!</h2>
             </div>
                     
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
+	     <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	 	 </div>
         <!-- Primo elemento attivo con video YouTube -->
         <div class="carousel-item active">
             <div class="container d-flex justify-content-center">

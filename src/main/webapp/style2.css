@@ -200,7 +200,23 @@ a.navbar-brand img {
     width: 100%;
 }
 
-/*********************************************  Bottoni next prev/
+
+/********************************************* Bottone torna inditro */
+.btn-custom {
+    background-color: #C2185B; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center; 
+}
+
+.btn-custom i {
+    margin-right: 8px; /* Spazio tra l'icona e il testo */
+}
+/********************************************* Bottoni next, prev */
  
 .custom-carousel .carousel-control-prev,
 .custom-carousel .carousel-control-next {
@@ -217,6 +233,10 @@ a.navbar-brand img {
 
 .custom-carousel .carousel-control-next {
     right: 10px !important; 
+}
+
+.custom-carousel {
+    position: relative; /* Assicurati che il carosello abbia un contesto di posizionamento */
 }
 /******************************************* HEADROOM */
 #navigazione-principale {
