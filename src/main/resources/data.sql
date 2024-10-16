@@ -65,7 +65,7 @@ INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto
 '1990-11-24',
 'Britannico',
 'Tom Odell nasce il 24 novembre 1990 nel West Sussex. Studia al Brighton Institute of Modern Music, ascoltando Elton John, Leonard Cohen e Bob Dylan. Nel 2012 realizza l’Ep di debutto, SONGS FROM ANOTHER LOVE, mentre nel 2013 arriva il primo disco sulla lunga distanza, LONG WAY DOWN.',
-'https://www.google.com/url?sa=i&url=https%3A%2F%2Ffirst-avenue.com%2Fperformer%2Ftom-odell%2F&psig=AOvVaw1oTpLUXChA9jWNfw-MkMsy&ust=1729020091311000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCEh_rLjokDFQAAAAAdAAAAABAE');
+'https://first-avenue.com/wp-content/uploads/2013/06/TOM_ODELL_RLD_12-1080x1350-1.jpg');
 
 INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
 "Billie Eilish Pirate Baird O'Connell",
@@ -80,8 +80,9 @@ Dopo aver pubblicato una serie di singoli e remix, Eilish ha pubblicato l''EP "D
 L''album ha raggiunto la vetta della Billboard 200, rendendola la prima artista nata negli anni 2000 a raggiungere la vetta della classifica degli album. Tutte le 14 canzoni dell''album sono state classificate nella Hot 100, che ha battuto il record per il maggior numero di canzoni simultaneamente in classifica nella Hot 100 da parte di un''artista donna.
 "Bad Guy", uno dei singoli dell''album, ha raggiunto il numero 1 nella Hot 100. Ai Grammy 2020, Eilish è diventata la persona più giovane a vincere tutte e quattro le categorie principali: miglior nuovo artista, disco, album e canzone dell''anno.
 Eilish ha pubblicato il suo secondo album, "Happier Than Ever", il 30 luglio 2021.',
-'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.uhdpaper.com%2F2020%2F03%2Fbillie-eilish-4k-6894.html&psig=AOvVaw05ksQC5Uw87ZLz97IBjZ1z&ust=1729149555323000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjxvKGukokDFQAAAAAdAAAAABAE'
+'https://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_1789119319.png'
 );
+
 INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
 VALUES (
     'Flavio Bruno Pardini',  
@@ -150,13 +151,13 @@ INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, ge
 'Long Way Down è l''album di debutto in studio del cantautore britannico Tom Odell. Seguendo le orme di Adele, Emeli Sande e Jessie J, Tom ha ricevuto il Critics Choice Award ai BRIT Awards 2013.',
 '2134',
 '2013-06-21',
-'https://www.google.com/imgres?q=long%20way%20down%20tom%20odell&imgurl=https%3A%2F%2Fi.scdn.co%2Fimage%2Fab67616d0000b2739adb17697c5a5bb02b5cebb7&imgrefurl=https%3A%2F%2Fopen.spotify.com%2Fintl-it%2Falbum%2F3t0Quq8X7W90hRP5OQ5S4b&docid=OPsZqtkBYuSbtM&tbnid=PAOAgdoZBcBiWM&vet=12ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA..i&w=640&h=640&hcb=2&itg=1&ved=2ahUKEwiFzYDkjZGJAxVggP0HHRLBDqMQM3oECBgQAA',
+'https://i.scdn.co/image/ab67616d0000b2739adb17697c5a5bb02b5cebb7',
 '4',
 '16');
 INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Black Friday',
 'Black Friday è il sesto album in studio del cantautore britannico Tom Odell. È stato rilasciato il 26 gennaio 2024 tramite UROK Management. La title track Black Friday è stata nominata per la migliore canzone musicalmente e liricamente al Premio Ivor Novello giovedì 23 maggio 2024.',
 '1721','2024-01-26',
-'https://www.google.com/imgres?q=tom%20odell%20black%20friday&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2FA1Oqa6nvPDL._UF1000%2C1000_QL80_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.it%2FBlack-Friday-Tom-Odell%2Fdp%2FB0CKDS95Z3&docid=PO1WXyqwvG79bM&tbnid=IwSfet1wx_Cn_M&vet=12ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA..i&w=1000&h=1000&hcb=2&ved=2ahUKEwjSsdCZm5GJAxVR1gIHHZK6DR4QM3oECBwQAA',
+'https://upload.wikimedia.org/wikipedia/en/0/0b/Tom_Odell_-_Black_Friday.png',
 '4',
 '2');
 
@@ -170,7 +171,7 @@ Come i due precedenti album, anche questo è stato registrato con la complicità
 Nel concepirlo, il duo pluripremiato ha immaginato di creare il tipo di disco che dà al pubblico la sensazione di essere stato catapultato in un universo alternativo. Guarda caso, questa dimensione ha svariati tratti distintivi in comune con lo storico debutto ',
 2580, 
 '2024-05-17',
-'https://www.google.com/imgres?q=HIT%20ME%20HARD%20AND%20SOFT&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fa%2Faa%2FBillie_Eilish_-_Hit_Me_Hard_and_Soft.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHit_Me_Hard_and_Soft&docid=gRPxRLX2IEvk6M&tbnid=8qi8fO4SEoCzRM&vet=12ahUKEwiJjsDor5KJAxXrhv0HHWuFMFgQM3oECGoQAA..i&w=300&h=300&hcb=2&ved=2ahUKEwiJjsDor5KJAxXrhv0HHWuFMFgQM3oECGoQAA',
+'https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62',
 5,
 2
 );
@@ -191,7 +192,7 @@ VALUES (
 	2146,  
     '2017-03-03',
     'https://i.scdn.co/image/ab67616d0000b2730d2873d3510791b2119dd30b',
-    3,  -- artista_id(da controllare
+    6,  
     11 
 );
 -- INSERT BRANI da fare dopo aver popolato l'album(e di conseguenza genere e artista)
@@ -6309,5 +6310,3 @@ TRUE,
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 44);
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 39);
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 47);
-
-
