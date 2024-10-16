@@ -269,36 +269,50 @@
                 <p class="lead">Be the first to listen to these future hit songs</p>
             </div>
             <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left">
-                <h2 class="h3 fw-bold mb-0">Discovery Italy Tracks</h2>
-                <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
+                <h2 class="h3 fw-bold mb-0">Discover Live Session!</h2>
             </div>
-           <!--  <div class="container" data-aos="fade-up">
-                <div class="swiper swiper-colonne" >
-                    <div class="swiper-wrapper pb-4"> -->
-                    
                     
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					      <iframe width="560" height="315" class="center "  src="https://www.youtube.com/embed/cZTlRmNgJz4?si=LkVhANEcwZlH7Ip0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-					    </div>
-					    <div class="carousel-item">
-					      <img src="..." class="d-block w-100" alt="...">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="..." class="d-block w-100" alt="...">
-					    </div>
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Next</span>
-					  </button>
-					</div>
-                    
+    <div class="carousel-inner">
+        <!-- Primo elemento attivo con video YouTube -->
+        <div class="carousel-item active">
+            <div class="container d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 480px;">
+                    <iframe width="560" height="315" class="center" src="https://www.youtube.com/embed/cZTlRmNgJz4?si=LkVhANEcwZlH7Ip0" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Secondo elemento con immagine -->
+        <div class="carousel-item">
+        	 <div class="container d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 480px;">
+            		<iframe width="560" height="315" src="https://www.youtube.com/embed/Dpfv9P23uCM?si=7t8Ii8t_K_wP99Kj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+            </div>
+        </div>
+        <!-- Terzo elemento con immagine -->
+        <div class="carousel-item">
+        	 <div class="container d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 480px;">
+            		<iframe width="560" height="315" src="https://www.youtube.com/embed/xAWDqdpOlu8?si=lYmmDmxF5RDjj8M1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!-- Aggiungi controlli se necessario -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+                             
 <!--                         SLIDE 01
                         <div class="swiper-slide home-covers">
                             ALBUM
