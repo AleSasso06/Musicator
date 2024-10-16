@@ -84,7 +84,6 @@
         <p>Nessun brano disponibile per questo genere.</p>
         <% } %>
     </div>
-
     <%@ include file="footer.jsp" %>
 </div>
 
