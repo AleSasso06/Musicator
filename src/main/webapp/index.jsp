@@ -270,7 +270,7 @@
             </div>
             <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left">
                 <h2 class="h3 fw-bold mb-0">Discovery Italy Tracks</h2>
-                <p class="mb-0"><a href="#" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
+                <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
             </div>
             <div class="container" data-aos="fade-up">
                 <div class="swiper swiper-colonne" >
@@ -337,7 +337,7 @@
                                 </div>
                             </a>
                             <!-- ALBUM -->
-                            <a href="#" href="#"
+                            <a href="#"
                                 class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3 d-block link-dark link-underline link-underline-opacity-0 ">
                                 <p class="mb-0 fw-bold">6</p>
                                 <img src="assets/immagini/covers/cover-lose-control_teddy-swims.webp" alt="" width="75"
@@ -421,16 +421,6 @@
                             </a>
                         </div>
                     </div>
-                    <div class="swiper-button-next">
-                        <button class="btn btn-sm btn-primary rounded-circle" type="button"><i
-                                class="bi bi-chevron-right"></i></button>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <button class="btn btn-sm btn-primary rounded-circle" type="button"><i
-                                class="bi bi-chevron-left"></i></button>
-                    </div>
-                </div>
-            </div>
 
                     <!-- paginazione (puntini) -->
                     <div class="swiper-pagination"></div>
