@@ -79,7 +79,6 @@
     <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
     <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
 
-<<<<<<< HEAD
     <main class="overflow-hidden">
         <div class="pt-3"></div>
 
@@ -140,29 +139,6 @@
                         <p class="mb-0">Billie Eilish</p>
                     </div>
                 </a>
-=======
-		<div class="pt-3"></div>
-	     <!-- GLOBAL TOP 200 -->
-	        <div class="py-5"></div>
-	        <div class="container text-center mb-4"  data-aos="fade-up">
-	            <p class=" global text-secondary fw-bold fs-5 mb-0">GLOBAL TOP 200</p>
-	            <h2 class="h1 fw-bold">Top songs being discovered around the world right now</h2>
-	            <p class="fs-5 pb-4">See who made it on the list of the most Musicated songs worldwide</p>
-	            <div class="ratio ratio-16x9" data-aos="zoom-in">
-	               <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=TtF7_lC2Bq1kVN9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=oj_yLUZIIH94tjEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	           </div>
-	       </div>
-     <!-- Sezione Classifica Globale -->
-			<section class="global-top-200">
-			    <div class="container">
-			        <div class="row justify-content-between align-items-center mb-4  pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline">
-			            <div class="col">
-			               <h2 class="h3 fw-bold mb-0">Global Top 200 Chart</h2>
-			                 <p class="mb-0"><a href="#" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p> 
-			             </div>
-			        </div>
->>>>>>> refs/remotes/origin/ricerca_globale
 
                 <!-- ALBUM -->
                 <a href="#"
