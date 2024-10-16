@@ -20,11 +20,11 @@ public class GenereServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		long id = Long.parseLong(request.getParameter("id"));
-		
+		//String nome = request.getParameter("nome");
 		Genere genere = genereRepository.findById(id);
 		
 		request.setAttribute("genere", genere);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("#");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-genere.jsp");
 		requestDispatcher.forward(request, response);
 	
 	}

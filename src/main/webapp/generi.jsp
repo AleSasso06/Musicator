@@ -74,9 +74,12 @@
 			for (Genere genere : generi) {
 		%>
 		<div class="col-md-4">
-    <button type="button" class="btn btn-secondary btn-lg w-100 button-spacing" onclick="window.location.href='genere?id=<%= genere.getId() %>'">
+		
+    <a type="button" class="btn btn-secondary btn-lg w-100 button-spacing" href="genere?id=<%= genere.getId() %>">
         <%= genere.getNome() %>
-    </button>
+        </a>
+
+    
 </div>
 
 	<!--  
