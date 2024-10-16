@@ -4,12 +4,21 @@ body {
 	background-color: #08263C;
 }
 
+a {
+	text-decoration: none;
+}
+
 p {
 	color: white;
 }
 
 p .global {
 	color: #881141;
+}
+
+.hd1center {
+	text-align: center;
+	padding: 50px;
 }
 
 h2 {
