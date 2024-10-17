@@ -66,7 +66,7 @@ Brano brano = (Brano) request.getAttribute("brano");
             </div>
             <!-- tasto play -->
             <div class="col-md-2 d-flex justify-content-center me-auto">
-                <a class="btn btn-play" href="<%= brano.getYtLink() %>">
+                <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
                     <i class="bi bi-play-circle-fill"></i>
                 </a>
             </div>
