@@ -126,7 +126,7 @@
 		</div>
 
 
-   
+
    
             <% 
             List<Album> albums = genere.getAlbum();   %>
