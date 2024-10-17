@@ -14,6 +14,7 @@ INSERT INTO genere VALUES ('13','Country');
 INSERT INTO genere VALUES ('14','Synthpop');
 INSERT INTO genere VALUES ('15','Disco-funk');
 INSERT INTO genere VALUES ('16','Folk');
+INSERT INTO genere VALUES ('17','Raeggeton');
 
 -- INSERT ARTISTI
 INSERT INTO artista VALUES (
@@ -92,6 +93,102 @@ VALUES (
     'Gazzelle è il nome d''arte di Flavio Bruno Pardini, cantautore romano di genere indie pop. Ha debuttato nel 2017 con l''album "Superbattito", che lo ha fatto emergere sulla scena indie italiana. Le sue canzoni sono spesso caratterizzate da testi malinconici e melodie orecchiabili, che hanno riscosso grande successo tra i giovani. Nel corso degli anni, ha consolidato la sua presenza con singoli di successo come "Sopra", "Polynesia" e "Scusa".',
     'https://i.scdn.co/image/ab67616100005174a37800344d499444125dead5'  
 );
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Francesco Stasi',  
+    'Kid Yugi', 
+    '2001-04-14',  
+    'Italiana', 
+    'Kid Yugi, nome d''arte di Francesco Stasi, è un rapper italiano nato a Massafra. Ha iniziato la sua carriera musicale da adolescente e ha pubblicato il primo singolo ufficiale, "Grammelot", nel 2022, attirando l''attenzione dell''etichetta Thaurus. Ha poi pubblicato singoli di successo come "Sturm und Drang" e "Kabuki".
+
+	 Nel 2022, ha rilasciato il suo primo album The Globe, certificato oro, con brani come "Grammelot" e "Il ferro di Čechov". Nel 2023 ha pubblicato l''EP Quarto di bue e ha collaborato con artisti come Tedua, Guè, e altri. A marzo 2024 è uscito il suo secondo album I nomi del diavolo, che ha debuttato al primo posto in classifica e ha ricevuto il disco di platino.',
+    'https://www.ondarock.it/images/artisti/KidYugiArtista_1711193829.jpg'  
+);
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Gionata Boschetti',  
+    'Sfera Ebbasta', 
+    '1992-12-07',  
+    'Italiana', 
+    'Sfera Ebbasta, pseudonimo di Gionata Boschetti, è un rapper italiano. È salito alla ribalta grazie alla pubblicazione dell''album XDVR, inciso con la collaborazione del produttore discografico Charlie Charles, ottenendo un buon successo in Italia.',
+    'https://www.azalea.it/wp-content/uploads/2022/12/123986267_3911923168837741_2131548758059792753_n-e1671194204392.jpg'  
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Rosalía Vila Tobella',
+    'ROSALÍA',
+    '1992-09-25',
+    'Spagnola',
+    'ROSALÍA è una cantante, cantautrice e produttrice discografica spagnola, nata il 25 settembre 1992 a Sant Esteve Sesrovires, vicino a Barcellona. È diventata famosa a livello internazionale grazie alla sua innovativa fusione di flamenco tradizionale con generi contemporanei come reggaeton, trap e pop. Con il suo album "El Mal Querer" del 2018, ROSALÍA ha rivoluzionato la scena musicale globale, conquistando numerosi premi, tra cui Grammy e Latin Grammy. La sua capacità di mescolare generi musicali diversi, unita a uno stile visivo unico, l''ha resa una delle artiste più influenti della sua generazione.',
+    'https://media-assets.vanityfair.it/photos/645384edc8b926063a87a5e1/1:1/w_1359,h_1359,c_limit/Rosalia%201.png'
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Ghali Amdouni',
+    'Ghali',
+    '1993-05-21',
+    'Italiano',
+    'Ghali è un rapper e cantautore italiano, nato a Milano da genitori tunisini. È noto per il suo stile unico che mescola rap, pop e influenze arabe. Il suo album di debutto, "Ghali", è stato un successo e ha consolidato la sua posizione nella scena musicale italiana. Ghali è conosciuto anche per i suoi testi che affrontano temi di identità e multiculturalità.',
+'https://yt3.googleusercontent.com/r2zh1OlVcghWoaY1kLwENXJc6nhCyjVet9r1WQBTsTFrf0EVwry--P4yWuy6wpP5HI5NueEufQ=s900-c-k-c0x00ffffff-no-rj'
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+	'Niccolò Moriconi', 
+    'Ultimo,',
+    '1996-01-27', 
+    'Italiano', 
+    'Niccolò Moriconi nasce a Roma il 27 gennaio 1996 nel quartiere di San Basilio; figlio di Sandro Moriconi, ingegnere civile, e di Anna Sanseverino, impiegata dell''Enel, ha due fratelli maggiori di nome Lorenzo e Valerio.
+	Dagli 8 anni studia pianoforte e composizione al Conservatorio Santa Cecilia e inizia a scrivere e comporre canzoni all''età di quattordici anni. 
+	Nel 2010 inizia a frequentare la Melody Music School, dove studia canto e pianoforte; successivamente, inoltre, inizia anche a essere prodotto dalla Melody Studio Recording. Nel 2013 vince la terza edizione del concorso canoro Una voce per il Sud con il brano Regalami un sorriso, dedicato ai bambini del reparto di oncologia dell''Ospedale Bambino Gesù di Roma. 
+	Sempre nello stesso anno, in occasione di un concerto benefico, presenta un secondo brano inedito, Amo te.
+
+	Il 16 maggio 2014 viene pubblicato il singolo Una canzone che sogna, cui seguono il 6 febbraio 2015 il singolo Diamante nel cielo, brano scartato dal Festival di Sanremo 2015 e dedicato a un amico scomparso in un incidente stradale, e il 16 aprile Un uomo migliore, con la collaborazione di Giancarlo Giannini. 
+	A luglio, durante un concerto benefico per l''autismo, presenta il brano in tema Il bambino con le scarpe viola. Intanto, dal 2012 in poi, tenta la strada dei talent, iscrivendosi ai casting di Amici, X Factor e Sanremo Giovani (nelle edizioni dirette e condotte da Carlo Conti), venendo però scartato tre volte dal primo e due volte dagli altri due.
+	Nello stesso periodo, incomincia a esibirsi sui palchi dei locali romani, principalmente nel quartiere San Lorenzo, come quello di Spaghetti Unplugged, insieme ad alcuni futuri esponenti della scena musicale indipendente romana, tra cui Tommaso Paradiso e Motta.
+	Il 7 e il 16 maggio 2016 pubblica sul proprio canale YouTube i brani Fragile e Ritrova i tuoi passi.',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ultimo_performing_in_Rome.jpg/1024px-Ultimo_performing_in_Rome.jpg' 
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES (
+    'Annalisa Scarrone', 
+    'Annalisa',
+    '1985-07-05', 
+    'Italiano', 
+	'Annalisa Scarrone, nota semplicemente come Annalisa (Savona, 5 agosto 1985), è una cantautrice italiana.
+	Dopo alcune esperienze nell''ambito musicale con due gruppi, è divenuta nota come cantante solista nel 2011, partecipando alla decima edizione del talent show Amici di Maria De Filippi in cui ha ottenuto il Premio della critica, poi vinto anche l''anno dopo ad Amici Big.
+
+	Nel corso della sua carriera ha venduto oltre quattro milioni di unità sul suolo nazionale, diventando l''artista italiana con più copie vendute in era FIMI; inoltre conta oltre un miliardo di stream su Spotify.',
+    'https://statics.cedscdn.it/photos/MED_HIGH/80/97/7918097_10121848_annalisa_chi_e.jpg'
+);
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+	'William Martin Joel',
+    'Billy Joel',
+	'1949-05-09',
+	'Statunitense',
+	'William Martin Joel, detto Billy, è un cantautore, pianista e compositore statunitense.
+	Avendo venduto oltre 150 milioni di dischi in tutto il mondo, è uno degli artisti di maggior successo di tutti i tempi e il quarto solista più venduto negli Stati Uniti.',
+	'https://cdn-p.smehost.net/sites/005297e5d91d4996984e966fac4389ea/wp-content/uploads/2019/10/f9d9c240b6b7a5e3cf08b37fd9a91096.jpg'
+);
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+	'Fabrizio Cristiano De Andrè',
+    'Fabrizio De Andrè',
+	'1940-02-18',
+	'Italiana',
+	'Considerato uno dei maggiori cantautori italiani, è conosciuto anche con l''appellativo di Faber che gli dette l''amico Paolo Villaggio, con riferimento alla sua predilezione per i pastelli e le matite della Faber-Castell, oltre che per l''assonanza con il suo nome, e talvolta come "il cantautore degli emarginati" o il "poeta degli sconfitti".
+	In quasi quarant''anni di attività artistica, De André ha inciso quattordici album in studio, più alcune canzoni pubblicate solo come singoli e poi riedite in antologie. Molte sue canzoni raccontano storie di emarginati, ribelli e prostitute, e alcune per il loro valore poetico sono state accolte da antologie scolastiche già dai primi anni settanta. I testi hanno meritato a De André l''elogio del poeta Mario Luzi.
+	Insieme a Bruno Lauzi, Gino Paoli, Umberto Bindi e Luigi Tenco, è uno degli esponenti della cosiddetta scuola genovese, un nucleo di artisti che rinnovò profondamente la musica leggera italiana.
+	 È l''artista con il maggior numero di riconoscimenti da parte del Club Tenco, con sei Targhe e un Premio Tenco. La popolarità e l''alto livello artistico del suo canzoniere hanno spinto alcune istituzioni, dopo la sua morte, a dedicargli vie, piazze, parchi, teatri, biblioteche e scuole.
+	Di idee anarchiche e pacifiste,[18] è stato anche uno degli artisti che maggiormente hanno valorizzato la lingua ligure.',
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNd_THoATBKEPbju0JHvydwEzB1rAW9xLMiQ&s'
+);
+
 -- INSERT ALBUM da fare dopo aver popolato artista e genere
 INSERT INTO album VALUES (
 	'1',
@@ -194,6 +291,164 @@ VALUES (
     'https://i.scdn.co/image/ab67616d0000b2730d2873d3510791b2119dd30b',
     6,  
     11 
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'The Globe',
+    'The Globe è il primo album in studio del rapper italiano Kid Yugi, pubblicato il 3 novembre 2022 dalle etichette discografiche Underdog Music, Thaurus Music e Virgin Music/Universal Music.',
+	1843,  
+    '2022-11-03',
+    'https://i.scdn.co/image/ab67616d0000b27357a74373348984f3d97d248a',
+    7,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Quarto di Bue',
+    'Quarto di bue è un EP, uscito nel 2023 con la produzione di Night Skinny. Composto da sette tracce, include i singoli "Massafghanistan" e "Quarto di bue". Certificato disco d''oro, vede collaborazioni con Guè Steppers, Tony Boy e Artie 5ive, e include il successo "Sintetico", disco di platino.',
+	1085,  
+    '2023-05-11',
+    'https://i.scdn.co/image/ab67616d0000b273c6f48920f7bbb0d9f61cddf9',
+    7,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'I nomi del diavolo',
+    'I nomi del diavolo è il secondo album in studio del rapper italiano Kid Yugi, pubblicato il 1º marzo 2024 dalle etichette discografiche EMI Records e Universal Music Italia.',
+	2667,  
+    '2024-03-01',
+    'https://i.scdn.co/image/ab67616d0000b273a3df97b7a8513b5ff56ac44f',
+    7,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'XDVR Reloaded',
+    'XDVR è un album in studio del rapper italiano Sfera Ebbasta e del DJ producer Charlie Charles, pubblicato l''23 novembre 2015 dalla BHMG.',
+	2895,  
+    '2015-11-23',
+    'https://i.scdn.co/image/ab67616d0000b273a4d4c8c2b247bbb38ec6bc2a',
+    8,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Sfera Ebbasta',
+    'Sfera Ebbasta è il secondo album in studio del rapper italiano omonimo, pubblicato il 9 settembre 2016 dalla Universal Music Group e dalla Def Jam Recordings.',
+	2100,  
+    '2016-09-09',
+    'https://www.vinileshop.it/vinili/images/Sfera-Ebbasta-Sfera-Ebbasta-Album-Vinile-lp2.jpg',
+    8,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Rockstar',
+    'Rockstar è il terzo album in studio del rapper italiano Sfera Ebbasta, pubblicato il 19 gennaio 2018 dalla Universal Music Group e dalla Def Jam Recordings. L''album ha ottenuto un ottimo successo in madrepatria, dove è risultato essere il più venduto nell''anno.',
+	2088,  
+    '2018-01-18',
+    'https://i.scdn.co/image/ab67616d0000b273a7a64be797303ff304ca43b2',
+    8,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Famoso',
+    'Famoso è il quarto album in studio del rapper italiano Sfera Ebbasta, pubblicato il 20 novembre 2020 dalla Island Records e dalla Universal Music Group.',
+	3187,  
+    '2020-11-20',
+    'https://images.genius.com/a068444349a05a5637f4a6be6c76e595.999x999x1.png',
+    8,  
+    3
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'X2VR',
+    'X2VR è il quinto album in studio del rapper italiano Sfera Ebbasta, pubblicato il 17 novembre 2023 dalla Island Records e dalla Universal Music Group.',
+	2353,  
+    '2023-11-17',
+    'https://i.scdn.co/image/ab67616d0000b2733c0eada9fb45ba9d43116f1d',
+    8,  
+    3
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Motomami',
+    'Motomami è il terzo album in studio della cantante spagnola ROSALÍA, pubblicato il 18 marzo 2022. L''album mescola flamenco, reggaeton, trap e sperimentazione elettronica, rappresentando un''evoluzione stilistica per l''artista. Con singoli di successo come "Saoko", "Chicken Teriyaki", e "La Fama", l''album ha ricevuto lodi per la sua innovatività musicale e la sua forte identità visiva. "Motomami" riflette la dualità della forza (Moto) e della vulnerabilità (Mami) in un''esplorazione profonda delle emozioni.',
+    2520,
+    '2022-03-18',
+    'https://www.lafeltrinelli.it/images/0194399629727_0_424_0_75.jpg',  
+    9,
+    17
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'DNA',
+    'DNA è il secondo album in studio del rapper italiano Ghali, pubblicato il 26 ottobre 2018. L’album esplora temi di identità, cultura e la vita in un contesto urbano. Con una produzione moderna e influenze di vari generi, "DNA" è un lavoro che riflette la crescita artistica di Ghali. Include hit come "Cara Italia" e "Good Times".',
+    2430,
+   '2020-11-13',
+    'https://m.media-amazon.com/images/I/716FWRlrPrL._UF1000,1000_QL80_.jpg',   
+    10,
+    4  
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Altrove', 
+	'Altrove è il sesto album in studio del cantautore italiano Ultimo, pubblicato il 17 maggio 2024.',
+    1560,
+    '2024-05-17', 
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ultimo_performing_in_Rome.jpg/1024px-Ultimo_performing_in_Rome.jpg',
+    11,
+    2
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES (
+    'Solo', 
+	'Solo è il quarto album in studio del cantautore italiano Ultimo, pubblicato il 22 ottobre 2021.',
+    3529, -- durata? come la mettiamo? in secondi?
+    '2021-10-22', 
+    'https://www.romatoday.it/~media/horizontal-hi/48851025215895/ultimo-solo-cover-def-2.jpg',
+    11,  
+    2 
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES (
+    'E poi siamo finiti nel vortice', 
+	'E poi siamo finiti nel vortice è l''ottavo album in studio della cantante italiana Annalisa, pubblicato il 29 settembre 2023 dalla Warner Records.',
+	2280,
+    '2024-05-17', 
+    'https://ondarock.it/images/cover/Annalisa-Copertina-E-poi-siamo-finiti-nel-vortice_1695992716.jpg',
+    12,  
+    2
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id ) VALUES(
+	'The Stranger',
+	'The Stranger è il quinto album discografico in studio del cantautore statunitense Billy Joel, pubblicato nel settembre del 1977.
+	È stato inserito nella lista dei 500 migliori album di tutti i tempi secondo la rivista Rolling stone alla posizione 70.',
+	'2400',
+	'1977-09-29',
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVFvMFkVicwNGLtQaMBg1fdJWVtrMXbT6Zw&s',
+	'13',
+	'1'
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES(
+	'La buona novella',
+	'Il LP è un concept album (caratteristica comune ad altri lavori discografici di De André) tratto dalla lettura di alcuni Vangeli apocrifi (in particolare, come riportato nelle note di copertina, il Protovangelo di Giacomo ed il Vangelo arabo dell''infanzia), pubblicato nell''autunno del 1970 (le matrici riportano la data del 19 novembre).
+	«Avevo urgenza di salvare il cristianesimo dal cattolicesimo. - dichiarò a suo tempo De André - I vangeli apocrifi sono una lettura bellissima con molti punti di contatto con l''ideologia anarchica.[3]»
+	L''idea del disco fu del produttore Roberto Dané, che inizialmente pensava di realizzarla con Duilio Del Prete, ma poi la propose ad Antonio Casetta, che la dirottò a De André.
+	«Nel 1969 tornai da Casetta e gli sottoposi un''altra idea, che avevo intenzione di realizzare con Duilio Del Prete: un disco basato sui Vangeli apocrifi...lui, che era un grande discografico, di buon fiuto, mi ascoltò con attenzione ed alla fine disse: "Ma scusi, perché questa idea non la propone a Fabrizio De André? Sa, è un periodo che è un po'' in crisi, non sa cosa fare...". E io che cosa dovevo dire? Con De André c''era sicuramente una maggiore esposizione»(Roberto Dané)
+	Il lavoro di lettura e di scrittura dei testi, svolto con lo stesso Dané, è durato più di un anno.
+	Seguendo le caratteristiche degli Apocrifi, in questo album la narrazione della buona novella sottolinea l''aspetto più umano e meno spirituale assunto da alcune tradizionali figure bibliche (ad esempio, Giuseppe) e presta maggiore attenzione a figure minori della Bibbia, che qui invece diventano protagonisti (ad esempio Tito e Dimaco, i ladroni crocefissi insieme a Gesù).',
+	'2100',
+	'1970-11-01',
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxXyUDfKfBffTzEtSdaRpr--fg_bRMIjPmg&s',
+	'14',
+	'16'
 );
 -- INSERT BRANI da fare dopo aver popolato l'album(e di conseguenza genere e artista)
 
@@ -6153,7 +6408,1734 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=z0KRFX-1Ve0', 
     11  );
+    
+    -- Kid Yugi
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'GRAMMELOT',
+	'Ehi (yeah), Kid Yugi, ah
+	<br>G-g, ehi
+	<br>(Grammelot Freestyle, okay, e-ehi)
+	<br>G-g-g, ah (g-g-g, ah)
+    <br>
+	<br>Ehi, hittami Wickr me, no dealing su Whats
+	<br>Porto il commerciale anche se chiedono wox
+	<br>Qui c''é puzza di zolfo, i miei zanni fanno grammelot (g-g-g)
+	<br>G g g sulle roks, a ''ssafra siamo il south coast
+	<br>In giro coi pitbull, mastini, sgherri, rottweiler, red nose
+	<br>Back in game coi miei dawgs, sono il futurismo del flow
+	<br>Cumbagne s''arragnan pe nu per'' d'' tire d polvr
+	<br>Pezzi in padella popcorn
+	<br>Piscio sul tuo ultimo drop, let''s go
+	<br>Occhi nero corvino, inspiro gas nervino (yeah)
+	<br>Prima avevo solo caos, male in un turbinio (yeah-yeah)
+	<br>Cravatta colombiana, nodo stretto al cravattino
+	<br>Sto in overdose di drgher, piscio oro zecchino
+	<br>Sviluppo il negativo, non prendo colorito
+	<br>Tre punti la mia tariffa, movimenti e sparisco
+	<br>Sono ancora sbarbato, sono morto da piccolo
+	<br>Voglio i soldi dei Windsor, sto sulla k, faccio windsurf
+	<br>Non hanno mai visto un piattino caldo graffiato (padella)
+	<br>Sui Santini col mugshot al tuo amico lo warpo ubriaco
+	<br>Tutto drogato sul muble
+	<br>Spaghetti in vasca come il bambino di Gummo
+	<br>Rileggo e manco capisco (sto tutto toccato)
+	<br>Questa non é Chiraq (non è lei), questa é Massafganisthan
+	<br>Non é più Sud Italia, per me TA é già Nord Africa
+	<br>Porto un kilo di trap, un etto e non é bresaola
+	<br>Questa vita é un teatro
+	<br>Ho scritto il disco dell''anno my dawg',
+	96,  
+    '2022-11-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=6uAV6JJDs-A', 
+	3);
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Il Filmografo',
+    'Yeh, uoh, ah
+	<br>Sei distante, riesco lo stesso a sentirti piangere
+	<br>Il freddo del tuo sangue, il caldo delle tue lacrime
+	<br>Ci faremo entanglement anche ad un megaparsec
+	<br>Ogni volta che ti umilio mi fai sentire importante
+	<br>Perché l''amore è proprio come andare in tandem
+	<br>Uno guarda già al futuro e l''altro gli guarda le spalle
+	<br>Mi fai mille domande, ti metti pesante
+	<br>Mi prendi il torso a morsi, ti bagni ed esondi
+	<br>Anche se duro tre secondi sembra di farlo da giorni
+	<br>Mi disgusti quando vengo ma mi manchi se non torni
+	<br>Tu hai solo quella faccia io invece ho mille volti
+	<br>Fumo fino all''affanno, bevo fino a confondermi
+	<br>Brucia la pellicola ma il finale è immutabile
+	<br>L''occhio del regista è ineluttabile
+	<br>Neanche insieme lo possiamo battere
+	<br>Ora vattene, metto al sicuro in tasca un ultimo bacio volante, il più importante
+    <br>
+	<br>Se prende fuoco la pellicola, a come sei piccolo tu, fai un vampata sola, boom
+	<br>È stato il giorno in cui ho capito che c''era tutta un''intera vita dietro ad ogni cosa
+	<br>E io chi sono?
+	<br>Tu sei la star
+    <br>
+	<br>Baby, io sono vita
+	<br>E come vita sono caduco
+	<br>Materie in un corpo e quindi mi sento saturo
+	<br>Fisica dell''atomo e lo so di essere vacuo
+	<br>Un essere fallibile, solo un bambino armato
+	<br>Tu sparami, reinventami e poi scaldami
+	<br>Sei bella se sei calda, ti amo pure quando grandini
+	<br>Sorridi quando sanguini, lo farebbero i martiri
+	<br>Col cuore ghiacciato e nonostante ciò ci pattini
+	<br>Sono pieno di rimpianti, questo mi spaventa
+	<br>Ho il terrore della morte perché è quella che mi spetta
+	<br>Lo so che lei mi aspetta e vuole fare in fretta
+	<br>Era una palla di cristallo ma mo è una cortina ferrea
+	<br>Ti prego, afferrami
+	<br>Qui la caduta è lunga e c''è il tempo di scordarsene
+	<br>Una fenice brucia, un uomo non sa rinascere
+	<br>Disegnami un sorriso, tatuami le lacrime
+	<br>Le emozioni che mi muovono io non le ho mai provate
+    <br>
+	<br>Non c''era niente di vero
+	<br>Tu eri vero',
+	146,  
+    '2022-11-03',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=bQ40dbIvFkI', 
+    3);
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Massafghanistan',
+    'Massafghanistan
+	<br>(Ah) Skinny, Yugi (ah)
+	<br>(Massafghanistan) Massafghanistan
+	<br>Yeah, ah, uoh (uoh)
+	<br>(Mass-Mass-Mass-Mass-) yo
+    <br>
+	<br>Pugliese da tarantella, lei mi dà il suo tarallino (ah)
+	<br>Un eroe senza mantella, una dama senza ermellino (ah)
+	<br>Crepitio nella padella, nella trap col languorino (ah)
+	<br>Il mio amico da un po'' smascella, qui si pippano il digestivo
+    <br>
+	<br>Una traccia diventa un milli, un grammo è diventato un chilo
+	<br>Il chilo è diventato un giro, quel giro che adesso è mio
+	<br>Una grotta diventa trap, l''agnello il lupo cattivo
+	<br>Un ranocchio diventa un uomo, l''uomo ora è nel mirino
+	<br>La noia diventa pazza, la pazzia diventa omicidio
+	<br>Passamano diventa tratta, quella tratta ora è il mio destino
+	<br>Un nemico è un pagellino, Kid Yugi, sono unico e trino
+	<br>Mi ero perso come Pollicino, prendo dieci solo al palloncino (ah)
+    <br>
+	<br>Non venitе a ballare in Puglia
+	<br>None, no, no, no, no (ah)
+	<br>Massafra come Ruanda, T-A a sud comе Atlanta (ah)
+	<br>Non venite a ballare in Puglia
+	<br>None, no, no, no, no (ah)
+	<br>C''è il fuoco come in Islanda, la neve come in Finlandia (Ma-Ma-Ma-Ma-)
+    <br>
+	<br>Massafghanistan (Massafghanistan)
+	<br>(Ma-Ma-Ma-Ma-Ma–) Massafghanistan
+	<br>(Ma-Ma-Ma-Ma-Ma–) Massafghanistan (Massafghanistan)
+	<br>(Ma-Ma-Ma-Ma-Ma–) Massafghanistan
+	<br>(Ma-Ma-Ma–) Massaf– (ah)
+    <br>
+	<br>Scappo via dalla volante, bevo una birra croccante (ah)
+	<br>Sto pensando solo al contante, vestito bene come uno importante (ah)
+	<br>Ogni carico era abbondante, il guadagno era una costante
+	<br>Mi sta scomparendo il ferro, il ferro nelle mutande
+    <br>
+	<br>Se muoio, diventa white town, Massafra come l''O-Block
+	<br>Chi scende torna in shell-shock, pull up, pull up, pull up
+	<br>Cash flow, non mi serve il POS, talento, non mi serve il ghost
+	<br>Un tuo loss diventa un mio stonks, e dolle, e dolle, e dolle, e dolle
+    <br>
+	<br>I'' te truffe, money talk, Dregher, bevo con le Crocs
+	<br>Dieci ferri, non giocano a golf, street activity come a New York
+	<br>Vogghie nu sacco de solde, vogghie anghijrm i pold
+	<br>Te ''ngarte, voche acchianne l''olde
+	<br>No fé ''u paccio che qué l''ocqua è jolda (ah)
+    <br>
+	<br>Non venite a ballare in Puglia
+	<br>None, no, no, no, no (ah)
+	<br>Massafra come Ruanda, T-A a Sud come Atlanta (ah)
+	<br>Non venite a ballare in Puglia
+	<br>None, no, no, no, no (ah)
+	<br>C''è il fuoco come in Islanda, la neve come in Finlandia (Ma-Ma-Ma-Ma-)
+    <br>
+	<br>Massafghanistan (Massafghanistan)
+	<br>(Ma-Ma-Ma-Ma-Ma–) Massafghanistan
+	<br>(Ma-Ma-Ma-Ma-Ma–) Massafghanistan (Massafghanistan)
+	<br>(Ma-Ma-Ma-Ma-Ma–) Massafghanistan
+	<br>(Ma-Ma-Ma–) Massaf–',
+	152,  
+    '2023-05-11',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=qpCh76f7JNk', 
+    3);
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Sintetico',
+    'Nel mio cuore un dedalo quando ti spogli dell''ultimo petalo
+	<br>Conosco il tuo corpo e i mostri che ci albergano
+	<br>Non ti vedo da un giorno e già mi mangio il fegato
+	<br>Già mi sembra troppo, già mi sembra un secolo
+	<br>Ti dico: "Ti amo" solo se c''è il sintetico
+	<br>Mi fai vivere il sogno, fai sentire schizofrenico
+	<br>Fai finta di non essere una troia
+	<br>Perché sai quanto mi eccita, smettila
+    <br>
+	<br>Scusami se recito, ti ho in testa come un debito
+	<br>E questa non è musica, è il male che mi dedico, è quello che mi merito
+	<br>Non ti odio e non ti celebro, vai avanti, non mi vendico
+	<br>Rimani un bel ricordo del tempo in cui ti relego
+	<br>Mi hai rubato l''anima, hai lasciato carne e scheletro
+	<br>Te la sei portata all''estero, per sempre, non in prestito
+	<br>Dimmi che ne vuoi ancora, ne necessito
+	<br>Elimina i miei limiti, spingimi all''eccesso, Kid Yugi
+    <br>
+	<br>Adesso so che il tuo è un amore sintetico
+	<br>Per questi pensieri non arriva in tempo il medico
+	<br>Mi do una pacca sulla spalla mentre guardo il vuoto in metro
+	<br>Cresci e certe emozioni non puoi più chiederle indietro
+	<br>Ah, e tu vai contro tutti, hai fatto spalle (fatto spalle)
+	<br>Mi ricordo noi due sulle scale (sulle scale), ah
+	<br>Assorbo tutta l''ansia nello stomaco
+	<br>Da dove vengo c''è il buio, c''è il vuoto (c''è il vuoto), ah
+    <br>
+	<br>A Massafra c''è il burrone, ma vivevo il baratro
+	<br>Avevo solo polvere e problemi come un acaro
+	<br>Da bambino col mio amico vandalo
+	<br>Mo che li guadagno a Milano e li spendo a Taranto
+	<br>A scuola mi sentivo un asino, solo in questo ho dato il massimo
+	<br>Ai miei live i cristiani piangono
+	<br>A duecento all''ora per farmi uccidere da un frassino
+	<br>Ti ha mandato il cielo, sei una bomba o sei un angelo
+    <br>
+	<br>Yo, sei pioggia, sei diluvio, sei luce, sei buio
+	<br>Sei quiete, sei tsunami, sei niente e sei tutto
+	<br>Sei uno sgambetto, sei un passo, una carezza, un pugno
+	<br>Sei la pancia piena, sei il digiuno, sei gennaio e giugno
+	<br>Sei l''agnello, sei il lupo, sei l''amore, sei da stupro
+	<br>Sei uno sbaglio, sei il giusto, sei assoluta, sei il dubbio
+	<br>Sei tutta la vita o solo un minuto
+	<br>Mi fai sentire sia un valore sia un rifiuto
+    <br>
+	<br>Adesso so che il tuo è un amore sintetico
+	<br>Per questi pensieri non arriva in tempo il medico
+	<br>Mi do una pacca sulla spalla mentre guardo il vuoto in metro
+	<br>Cresci e certe emozioni non puoi più chiederle indietro
+	<br>Ah, e tu vai contro tutti, hai fatto spalle (fatto spalle)
+	<br>Mi ricordo noi due sulle scale (sulle scale), ah
+	<br>Assorbo tutta l''ansia nello stomaco
+	<br>Da dove vengo c''è il buio, c''è il vuoto (c''è il vuoto), ah',
+	166,  
+    '2023-05-11',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=umdg7hCEGI8', 
+    3);
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Capra a tre Teste',
+    'Yeah, yeah, yeah, yeah
+	<br>Ah, ah, ah
+	<br>Piccola peste, capra a tre teste
+	<br>Un artista in mezzo ai gangster, Gianni Celeste
+	<br>Sto con tutta la mia gente, voi chi sareste?
+	<br>''Sta roba, fra'', viene dal niente, dalle foreste
+	<br>Torno a vendere la droga, so che vorreste
+	<br>C''è chi mi ucciderebbe se solo potesse
+	<br>Non ho paura né dei rapper né della PS
+	<br>Stiamo parlando di affari
+	<br>Yeah, yeah, yeah, ah
+	<br>La mia folle gelosia, Desdemona e Otello
+	<br>Quando piovono proiettili, non basta l''ombrello
+	<br>Mille euro in tasca, prima solo il coltello
+	<br>Cinque stelle resort, prima manco l''ostello
+	<br>Prima manco le seghe, ora ho le troie per bene
+	<br>Ho fatto dalla strada il genio, il nuovo Martin Eden
+	<br>Dopo di me il gioco finisce, Friedrich Hegel
+	<br>Mischio cinque sostanze, non è un bicchiere, ma un becher
+	<br>Muoio come un berserkr, sento un formicolio
+	<br>Io sono morte, calamità livello Dio
+	<br>Ho preso tutto quel che c''era, non so più cos''è mio
+	<br>Il mio angelo custode mi ha appena detto, "Addio"
+	<br>Piccola peste, capra a tre teste
+	<br>Un artista in mezzo ai gangster, Gianni Celeste
+	<br>Sto con tutta la mia gente, voi chi sareste?
+	<br>''Sta roba, fra'', viene dal niente, dalle foreste
+	<br>Torno a vendere la droga, so che vorreste
+	<br>C''è chi mi ucciderebbe se solo potesse
+	<br>Non ho paura né dei rapper né della PS (yeah)
+	<br>Stiamo parlando di affari (ah, yeah)
+	<br>Piccola peste, non faccio il parrucchiere, ma cresco facendo creste
+	<br>Una capra sta da sola, poi cresce ed aggiunge due teste
+	<br>Pensavo fossi un G, ma in tasca hai solo due tessere
+	<br>Tratto il mio conto in banca come un bambino che cresce
+	<br>Pensando troppo in grande per chi è di questo mestiere
+	<br>Baby, se tutto va male, ritorno a fare il mestiere, baby
+	<br>Puoi essere incantato con lo sguardo sulle chain, baby
+	<br>Ci metti nel disco e ti ci salvi la carriera, baby
+	<br>E non serve che fai lo snob, artisti in mezzo ai gangster
+	<br>Copriamo dal sud al nord
+	<br>Tony, Yugi, Artie, faccio un crocifisso nuovo
+	<br>Sai già cosa rispondono se chiedi chi è il GOAT
+	<br>Piccola peste, capra a tre teste
+	<br>Un artista in mezzo ai gangster, Gianni Celeste
+	<br>Sto con tutta la mia gente, voi chi sareste?
+	<br>''Sta roba, fra'', viene dal niente, dalle foreste
+	<br>Torno a vendere la droga, so che vorreste
+	<br>C''è chi mi ucciderebbe se solo potesse
+	<br>Non ho paura né dei rapper né della PS
+	<br>Stiamo parlando di affari (5ive, 5ive)
+	<br>Capra a tre teste, vuoi fare il tête-à-tête?
+	<br>Ultimamente ce l''hanno tutti con me
+	<br>Tengo in mano la patata bollente, per te non c''è problema
+	<br>Sarà perché ho mostrato un po'' di soldi e qualche chain
+	<br>I need a dollar, ora parliamo in asset
+	<br>Il diavolo non veste Prada perché ha diversi outfit
+	<br>Sono sempre io, sto solo cambiando scarpe, ah
+	<br>Sarò sempre io, sto solo comprando casa
+	<br>Macchinone sport, lei mi dà il top, succhio un escargot
+	<br>Sono dal china, smezzo una birra con Tony Boy (Tony)
+	<br>I nemici sono morti e il tabellone segna il tot
+	<br>A me piacciono le thot, sì, mi piacciono le hoes
+	<br>Belle case, buon cibo, mangio in ristoranti top
+	<br>Come un nerd ho imparato a memoria tutti i cheat codes
+	<br>Ho rispetto del mio block, Artie da Milano Nord
+	<br>Baby, non finirà oggi la mia stagione in God mode, brah',
+	196,  
+    '2024-03-01',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=uX7PYIZ7CJ8', 
+    3);
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Lilith',
+    'Uoh, sei la mia Lilith, smetto di cercarti, noi non saremo amici
+	<br>Perché più dici: "Ti amo" e più continuerò a tradirti
+	<br>Poi, quando mi scopri, accorci tutti i tuoi vestiti
+	<br>Vai con altri maschi, sei convinta di ferirmi
+	<br>Tu sei Lilith, non vuoi manco più sentirmi
+	<br>Amore nel bicchiere fa sentire le vertigini
+	<br>Mi cancelli da IG, ti disegni le lentiggini
+	<br>Bruttissimi litigi, ne dimentico le origini
+    <br>
+	<br>Tu mi odi, io lo sento che mi odi
+	<br>Tingo i miei umori dei fuochi con cui ti ustioni
+	<br>Penso solo a me stesso, non so darti attenzioni
+	<br>Mi parli dei tuoi problemi, non so darti soluzioni
+	<br>E ti affidi alle pozioni, vieni sempre nelle stesse posizioni
+	<br>Ti affezioni nonostante conosci le mie intenzioni
+	<br>Una sola anima in pena, cambiano le confezioni
+	<br>Due bambini con i traumi, cambiano le situazioni
+    <br>
+	<br>Tutte ''ste relazioni mi sanno di asfissia
+	<br>La nostra storia che diventa un''elegia
+	<br>C''è chi insegue e chi respinge, non è solo una teoria
+	<br>Dopo l''orgasmo tutta la magia va via
+    <br>
+	<br>Uoh, sei la mia Lilith, smetto di cercarti, noi non saremo amici
+	<br>Perché più dici: "Ti amo" e più continuerò a tradirti
+	<br>Poi, quando mi scopri, accorci tutti i tuoi vestiti
+	<br>Vai con altri maschi, sei convinta di ferirmi
+	<br>Tu sei Lilith, non vuoi manco più sentirmi
+	<br>Amore nel bicchiere fa sentire le vertigini
+	<br>Mi cancelli da IG, ti disegni le lentiggini
+	<br>Bruttissimi litigi, ne dimentico le origini
+    <br>
+	<br>Cancelli i sextape, hai paura del revenge
+	<br>Ti senti una strega, tu sei Bellatrix Lestrange
+	<br>Tu sei Janet Leigh, io mi sento Norman Bates
+	<br>Vuoi una star come MJ o un gangsta come CJ
+    <br>
+	<br>Qua cambierà la musica, l''impianto, il DJ
+	<br>Non capisci cosa ho dentro, manco con gli X-Ray
+	<br>Invece tu mainframe per me che sono Bill Gates
+	<br>Sognavi un rapper in main stage, ma a casa sembra Carnage
+	<br>Mi blocchi dappertutto, ci sentiamo per e-mail
+	<br>Vorrei essere famoso per intasarti l''homepage
+	<br>Da risentimento ad esaurimento va il tuo range
+	<br>Cambierei soldi in amore se solo esistesse il change
+    <br>
+	<br>Uoh, sei la mia Lilith, smetto di cercarti, noi non saremo amici
+	<br>Perché più dici: "Ti amo" e più continuerò a tradirti
+	<br>Poi, quando mi scopri, accorci tutti i tuoi vestiti
+	<br>Vai con altri maschi, sei convinta di ferirmi
+	<br>Tu sei Lilith, non vuoi manco più sentirmi
+	<br>Amore nel bicchiere fa sentire le vertigini
+	<br>Mi cancelli da IG, ti disegni le lentiggini
+	<br>Bruttissimi litigi, ne dimentico le origini
+    <br>
+	<br>Sei dolore senza limiti, zodiaci di lividi
+	<br>La stanza degli spiriti, la danza delle Silfidi
+	<br>L''affetto di Misery, le fiamme degli inferi
+	<br>Il canto delle sirene nei tuoi occhi limpidi
+    <br>
+	<br>Uoh, sei la mia Lilith, smetto di cercarti, noi non saremo amici
+	<br>Perché più dici: "Ti amo" e più continuerò a tradirti
+	<br>Poi, quando mi scopri, accorci tutti i tuoi vestiti
+	<br>Vai con altri maschi, sei convinta di ferirmi
+	<br>Tu sei Lilith, non vuoi manco più sentirmi
+	<br>Amore nel bicchiere fa sentire le vertigini
+	<br>Mi cancelli da IG, ti disegni le lentiggini
+	<br>Bruttissimi litigi, ne dimentico le origini',
+	164,  
+    '2024-03-01',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=Vq5F6zj1MX4', 
+    3);
+    
+    -- Sfera Ebbasta, continuare
+    
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Ciny',
+    'La C con la mano è da dove veniamo
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>Ciny, Ciny
+    <br>
+	<br>Tiro su una canna lunga mezzo metro
+	<br>Passo nel quartiere sopra un mezzo nero
+	<br>La tua tipa chic succhia il mio Solero
+	<br>E a te non ti pompa, fra, ti fa un Pampero
+	<br>Grossi scarsi, grossi babbi fanno gossip, noi
+	<br>Con due pacchi troppo grossi nel back dell''Enjoy
+    <br>
+	<br>Sbirri guardano dall''alto, foto polaroid
+	<br>"Sorrido sempre, ciao", sì, ma fatti i cazzi tuoi
+	<br>Il tuo flow ebola, Il mio flow Legolas
+	<br>Cheese a Crai, Emmental, poi ci si regola
+	<br>Ed è chiaro che con noi non fotti
+	<br>Come con lei quando ti fai i pippotti
+    <br>
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+    <br>
+	<br>Vogliono rappare come quello di Ciny (come quello di Ciny, Ciny)
+	<br>Vogliono fumare come quelli di Ciny (come quelli di Ciny)
+	<br>Vogliono parlare come quelli di Ciny (come quelli di Ciny)
+	<br>Senza stare a Ciny (senza stare a Ciny)
+	<br>Solo qua vicini (solo qua vicini)
+    <br>
+	<br>Nati e morti a Ciny (squad)
+	<br>Nati e morti a Ciny (squad)
+	<br>Sognavo un futuro diverso da questo
+	<br>Sognavo diversi destini (squad, squad, squad)
+	<br>Ma siamo affini a crimini infimi
+	<br>Prima di vendere dischi in FIMI
+	<br>Vendevamo chili, giri su giri
+    <br>
+	<br>Come i ragazzi, come i ragazzi di Ciny
+	<br>Come i ragazzi di Ciny, come i ragazzi di Ciny
+	<br>Come i ragazzi di Ciny, come i ragazzi di Ciny
+	<br>Come i ragazzi di Ciny, come i ragazzi di Ciny
+	<br>Come i ragazzi di Ciny, come i ragazzi di Ciny
+    <br>
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>La C con la mano è da dove veniamo
+	<br>Ciny, Ciny
+	<br>Senza stare a Ciny
+	<br>Solo qua vicini',
+	166,  
+    '2015-11-23',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=LD3twV19uAo', 
+    3);
 
+	INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Mercedes nero',
+    'Giro sul Mercedes nero nella via
+	<br>Giro sul Mercedes nero nella via
+    <br>
+	<br>Dalle panchine ai sedili di pelle del Benz
+	<br>Mercedes nero si muove di notte
+	<br>C''è Vito con me
+	<br>Rumori nelle chiamate sgamate parliamo al rovescio
+	<br>Passiamo al posto di blocco sfrecciando
+	<br>Su un 150CV Kompressor
+	<br>E no fra'' non voglio finire su una camionetta
+	<br>Ormai poco il tempo che resta
+	<br>Mi scoppia la testa
+	<br>Registro ''sta roba di fretta
+	<br>Faccia da Clocker
+	<br>Nomi segnati sul block notes
+	<br>Giro nel blocco
+	<br>Mezz''etto nascosto dentro al sacchetto di Foot Locker
+	<br>E la fresca in tasca
+	<br>BillionHeadz, frà, controlla la piazza
+	<br>Se il rap fosse un''auto io sarei un Mercedes
+	<br>Se il rap fosse un''auto saresti una Panda
+	<br>Cerchi 18
+	<br>Passiamo in mezzo ai palazzi la gente si affaccia di sotto
+	<br>La gente si affaccia di sotto
+    <br>
+	<br>C''era quel Mercedes nero nella via
+	<br>Mi dicevo "un giorno ce la farò anch''io
+	<br>E non è grazie a Dio, no, chiedilo a Vito
+	<br>Prego il Cristo di Rio, di restare pulito
+    <br>
+	<br>Giro sul Mercedes nero nella via
+	<br>Giro sul Mercedes nero nella via
+	<br>Giro sul Mercedes nero nella via
+	<br>Nella via, nella via, nella via
+    <br>
+	<br>Mercedes nero, 24 ore
+	<br>Ho una maglia rossa Ralph Lauren
+	<br>Una maiala mi costa parecchio
+	<br>Frà, la mia troia mi porta rispetto
+	<br>Tedua! a casa vi ci mando con le rime nuove
+	<br>La TV non la guardo, non ho il decoder
+	<br>Tu sei mingherlino, mangi minestrone
+	<br>I miei li vedi in giro, cambi direzione
+	<br>Va a ripararti da tafferugli la sera
+	<br>Flow francese verlan, cedesMer Nera
+	<br>Strafogati ai pasti stiamo ben serviti
+	<br>Arriviamo al party siamo ben vestiti
+	<br>Baci baci, muah muah, fanculo
+	<br>Capi zarri, la scena in alto, passo dai ragazzi è Formula 1
+	<br>Quelli dei palazzi a forma di cubo
+	<br>Noi, il crash test non lo facciamo
+	<br>Se c''è Vito sull''auto
+	<br>La lancetta del contagiri non conta i chili che abbiam portato
+    <br>
+	<br>C''era quel Mercedes nero nella via
+	<br>Mi dicevo "un giorno ce la farò anch''io
+	<br>E non è grazie a Dio, no, chiedilo a Vito
+	<br>Prego il Cristo di Rio, di restare pulito
+    <br>
+	<br>Giro sul Mercedes nero nella via
+	<br>Giro sul Mercedes nero nella via
+	<br>Giro sul Mercedes nero nella via
+	<br>Nella via, nella via, nella via
+    <br>
+	<br>L''agente s''affaccia di sotto se passo sopra al mio Mercedes
+	<br>Manette che spacco, biscotto, le lancio sul 147
+	<br>Bastardo che insegue, non guasto mai come il lardo alle cene
+	<br>Bombardo ai live non per farmi vedere
+	<br>Tanto oramai tu puoi farmi le seghe
+	<br>Sto con Bandane, riunito tra capsule nere
+	<br>E fra macchine è vero, no chiacchiere, baybe
+	<br>Le chiacchiere contale a chi se le beve
+	<br>Che IZI beve altro
+	<br>Se sto cadendo dall''alto forse è perché c''abito
+	<br>Anche il Bimbo Magico cresce
+	<br>Chi dal limbo tragico ne esce
+	<br>I comuni mortali ne pagano spese
+	<br>Negro fai che c''ho l''assetto
+	<br>Per ''sta roba vedrai giusto giusto fra un annetto
+	<br>Per la droga ho perso molto più del tuo rispetto
+	<br>La mia gloria mentre premo secco sul grilletto ai 190
+	<br>Ma-ma-ma metti che qua si campa
+	<br>I miei proiettili sulla gamba
+	<br>I segni omettili o fa condanna
+	<br>Insegno, mettiti a fare danza
+	<br>Giro sul Mercedes nero nella via',
+	232,  
+    '2015-11-23',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=y2eejWX4ZGw', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Visiera a becco',
+    'E ''sta roba gli ha dato alla testa
+	<br>E non puoi più salvarli
+	<br>TomTom: sempre in giro
+	<br>Sto pensando ai soldi
+	<br>A farli solo per me e i miei fratelli
+	<br>Visiera a becco, TN ai piedi
+	<br>Si muovono svelti
+	<br>Luci blu vuol dire solo "corri"
+	<br>Non farti prendere dal panico quando li incontri
+	<br>No, visiera a becco nascondono gli occhi
+	<br>Visiera a becco nascondono tocchi
+    <br>
+	<br>La gente ti giudica e non cambia nulla
+	<br>E qui chi non ha nulla si sveglia e rinuncia
+	<br>A una vita normale, un lavoro normale
+	<br>Una tipa, una casa, un bambino ed un cane
+	<br>Le strade hanno fame, non stanno aspettare
+	<br>Non vanno di fretta, le strade hanno lame
+	<br>Con cui si riprendono ciò che gli spetta
+	<br>E fanno sanguinare, piangere mamma se tutto va male
+	<br>Visiera a becco di un nuovo cappello
+	<br>Di un nuovo pischello
+	<br>Che sta per riuscire a giocare
+	<br>Non cambia mai nulla quaggiù
+	<br>Non cambiano vita quaggiù
+	<br>Non cambia se non cambi tu
+	<br>No, poi certi non tornano più
+	<br>Amici che non vedi più
+    <br>
+	<br>Non vuoi essere il prossimo tu? (E ''sta roba gli ha dato alla testa)
+	<br>E non puoi più salvarli
+	<br>TomTom: sempre in giro
+	<br>Sto pensando ai soldi
+	<br>A farli solo per me e i miei fratelli
+	<br>Visiera a becco, TN ai piedi
+	<br>Si muovono svelti
+	<br>Luci blu vuol dire solo "corri"
+	<br>Non farti prendere dal panico quando li incontri
+	<br>No, visiera a becco nascondono gli occhi
+	<br>Visiera a becco nascondono tocchi
+    <br>
+	<br>Qui c''è un figlio che fa tre rapine
+	<br>Per ogni madre che fa tre lavori
+	<br>Qui c''è un padre che non ha lavoro
+	<br>Un figlio che la notte resta fuori
+	<br>Qui dove noi tutti siam cresciuti
+	<br>Qui dove abbiamo perso la testa
+	<br>La casa che ci manca se si parte
+	<br>Quella che ci uccide se si resta
+	<br>Visiera a becco ci proteggon dalla tempesta
+	<br>Quella che abbiamo dentro e invece dentro resta
+	<br>Queste vie buie non provano mai tenerezza
+	<br>Porta la strada di questi ragazzi
+    <br>
+	<br>A una destinazione diversa (E ''sta roba gli ha dato alla testa)
+	<br>E non puoi più salvarli
+	<br>TomTom: sempre in giro
+	<br>Sto pensando ai soldi
+	<br>A farli solo per me e i miei fratelli
+	<br>Visiera a becco, TN ai piedi
+	<br>Si muovono svelti
+	<br>Luci blu vuol dire solo "corri"
+	<br>Non farti prendere dal panico quando li incontri
+	<br>No, visiera a becco nascondono gli occhi
+	<br>Visiera a becco nascondono tocchi
+    <br>
+	<br>Non cambia mai nulla quaggiù
+	<br>Non cambiano vita quaggiù
+	<br>Non cambia se non cambi tu
+	<br>No, poi certi non tornano più
+	<br>Amici che non vedi più
+	<br>Non vuoi essere il prossimo tu?',
+	185,  
+    '2016-09-09',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=L6piiXrf-hA', 
+    3);
+    
+	INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Bang bang',
+    'Non è una canzone d''amore
+	<br>Non ne ha bisogno una vera Eva Kant
+	<br>Letali come due pistole
+	<br>Bang bang
+    <br>
+	<br>Dici che non ho più tempo per noi
+	<br>Ma se mi cerchi mi trovi, lo sai
+	<br>Dove vuoi, quando vuoi, ti aspetto giù
+	<br>Dove andiamo, quale, decidi tu
+	<br>Ma fidati di me
+	<br>Le altre non hanno nulla in comune con te
+	<br>Quindi neanche con me
+	<br>Quindi neanche con me, no
+	<br>Ti avrei portata a Paris
+	<br>Ma ero sotto i portici
+	<br>Solo tu potevi stare con uno stronzo così
+	<br>Mo'' vedi i video in TV
+	<br>Ma io e te non ci vediamo più
+	<br>Ti saluto prima di partire in tour
+	<br>Più soldi, più fans
+	<br>Ma con te forse ho perso ogni chance
+	<br>Hai il volo tra un''ora e io ti dico, "Resta qua"
+	<br>Ma sei già sparita quando ritorno in città, no
+    <br>
+	<br>Le notti in cui non torno
+	<br>Mi chiami e non rispondo
+	<br>Mi dici, "Sei uno stronzo"
+	<br>Sei il mio passato in fondo, già
+	<br>Sei il mio passato in fondo, già
+	<br>Sei il mio passato in fondo
+    <br>
+	<br>E sei bella, oh
+	<br>Te l''ho detto mille volte
+	<br>Non c''hai creduto mezza, no
+	<br>L''unica droga a darmi dipendenza
+	<br>Incastonata in testa
+	<br>Ci penso io a te
+	<br>Tu non andare, resta
+	<br>La mia vita è questa
+	<br>Ma tu resta qua
+    <br>
+	<br>Non è una canzone d''amore
+	<br>Non ne ha bisogno una vera Eva Kant
+	<br>Letali come due pistole
+	<br>Ce le puntiamo contro e dopo, bang-bang
+	<br>Ce le puntiamo contro e dopo, bang-bang
+	<br>Ce le puntiamo contro e dopo, bang-bang
+	<br>Ce le puntiamo contro e dopo, bang-bang
+	<br>Bang! Bang! Bang! Bang!
+    <br>
+	<br>Le notti in cui non torno
+	<br>Mi chiami e non rispondo
+	<br>Mi dici, "Sei uno stronzo"
+	<br>Sei il mio passato in fondo, già
+	<br>Sei il mio passato in fondo, già
+	<br>Sei il mio passato in fondo',
+	185,  
+    '2016-09-09',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=5-1guJoi5SI', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Rockstar',
+    'Ora puoi pure piangere se non ci sentiamo
+	<br>Ora non mi dispiace se non mi cercherai, ehi
+	<br>Resti nel locale col telefono in mano
+	<br>Sperando in un messaggio che non arriva mai
+	<br>Sono una rockstar, rockstar
+	<br>A uccidermi no, non sarà una stronza, ehi
+	<br>Il mio cuore è freddo, anche più del mio polso
+	<br>E se provi a scaldarlo rischi che si sciolga
+	<br>Pusher sul mio iPhone
+	<br>Pute sul mio iPad
+	<br>Mamma, guarda, senza mani, sono una rockstar
+	<br>Mamma, sai che a parte te non amo nessun''altra
+	<br>Non esco più di tre volte con una ragazza
+    <br>
+	<br>Non innamorarti mai di me (uh)
+	<br>Non potrò mai essere il tuo boyfriend, no (uh)
+	<br>Fumo dentro la stanza d''hotel
+	<br>Chiamano dalla reception
+	<br>C''era un ragazzo che come me
+	<br>Amava i Beatles e i Rolling Stones
+	<br>Metteva kush nelle Rolling Papers
+	<br>E lo sciroppo nel biberon (uh)
+    <br>
+	<br>Rockstar, rockstar
+	<br>Due tipe nel letto e le altre due di là
+	<br>Gli amici selvaggi, tutti dentro il privée
+	<br>Fanculo il Moët, prendiamo tutto il bar
+	<br>E ora puoi pure piangere se non ci sentiamo
+	<br>Ora non mi dispiace se non mi cercherai, ehi
+	<br>Persi nel locale col telefono in mano
+	<br>Sperando in un messaggio che non arriva mai
+    <br>
+	<br>Sono una rockstar, rockstar
+	<br>Rockstar, rockstar
+	<br>Sono una rockstar, rockstar
+	<br>Rockstar, rockstar
+    <br>
+	<br>Ehi, ehi, e-ehi, vuoi farti una foto?
+	<br>Yah, yah, ya-yah, la mia faccia è ovunque
+	<br>Ok, ok, sto correndo troppo
+	<br>Con lei due minuti e poi si arriva al dunque, uh
+	<br>Ho un bacio sul collo ma non è un tattoo
+	<br>La mia ex ragazza vuol farmi Voodoo
+	<br>La mia nuova tipa sembra Sailor Moon
+	<br>Sogno il posteriore su una BMW
+	<br>Ehi, ehi, uh, uh
+	<br>La differenza tra me e te
+	<br>Che-che tu-tu non sarai mai come me, eh
+	<br>Con questi rapper io ci faccio un frappè, eh-eh
+	<br>Non ho ancora sentito dire: "Grazie!" (Uh)
+    <br>
+	<br>Rockstar, rockstar
+	<br>Due tipe nel letto e le altre due di là
+	<br>Gli amici selvaggi, tutti dentro il privée
+	<br>Fanculo il Moët, prendiamo tutto il bar
+	<br>E ora puoi pure piangere se non ci sentiamo
+	<br>Ora non mi dispiace se non mi cercherai, ehi
+	<br>Persi nel locale col telefono in mano
+	<br>Sperando in un messaggio che non arriva mai
+    <br>
+	<br>Sono una rockstar, rockstar
+	<br>Rockstar, rockstar
+	<br>Sono una rockstar, rockstar
+	<br>Rockstar, rockstar
+	<br>Sono una Rockstar',
+	196,  
+    '2018-01-18',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=x8fDlAunwAE', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Cupido',
+	'Con le altre faccio lo stupido
+	<br>Ho bevuto troppo meglio se
+	<br>Mi riportano da te
+	<br>Ti ho colpita, sono Cupido
+	<br>Una tipa chic come te
+	<br>Vuole un trap boy come me
+	<br>E io l''ho capito subito
+    <br>
+	<br>Ami se rispondo male, se non mi faccio trovare
+	<br>A cena in quel ristorante che adori
+	<br>Però poi mi faccio aspettare
+	<br>Foto con altre, ma è tutto normale
+	<br>Fai la gelosa non rispondi al cellulare, ah
+	<br>E vieni qua, mentre fumo un blunt
+	<br>Ti verso la Sprite sul baby doll
+	<br>Siamo rock ''n'' roll
+	<br>Al mio collo flash, flash
+	<br>Foto, wow, ti compro una borsa di Dior
+	<br>Ti penso my love, yah
+	<br>Anche se la sera, quando si fa tardi
+	<br>Sono in giro con gli altri e siamo tutti bastardi
+	<br>Siamo tutti annebbiati dal fumo e dal Bacardi
+	<br>Forse questa volta meglio non incontrarsi
+    <br>
+	<br>Con le altre faccio lo stupido
+	<br>Ho bevuto troppo meglio se
+	<br>Mi riportano da te
+	<br>Ti ho colpita, sono Cupido
+	<br>Una tipa chic come te
+	<br>Vuole un trap boy come me
+	<br>Con le altre faccio lo stupido (skrt, skrt)
+	<br>Ma non le scambierei mai con te
+	<br>Non rispondere al tuo ex
+	<br>Ho una freccia come Cupido (skrt, skrt)
+	<br>E l''ho lanciata verso di te (pshh)
+    <br>
+	<br>Migos, Quavo (oh yeah)
+	<br>She fell in love with a trap nigga (yaa)
+	<br>I fell in love with a trap bitch (trap)
+	<br>Huncho havin'' it (Huncho)
+	<br>Huncho savage (yeah)
+	<br>No, she not average (no)
+	<br>She addicted to the carats (carats)
+	<br>Designer high fashion (designer)
+	<br>We gon'' ball like the Mavericks (ball)
+	<br>I whop up the dope with her brother (whip it up)
+	<br>Give a hundred racks to her mother (racks)
+	<br>Huncho came from the gutter (Huncho)
+	<br>Now we made it out, we together (we together)
+	<br>Ice on my neck, we together (together)
+	<br>Two seats the coupe, we together (skrt, skrt)
+	<br>Everytime I shoot, we together (shoot)
+	<br>Count racks in a room, we together (gang)
+	<br>Get back, we get it in wide loads (wide lows)
+	<br>Here comes the Five-O (yeah)
+	<br>Don''t tell nobody, your eyes closed (eyes closed)
+	<br>Your eyes closed (yeah)
+	<br>You didn''t see nothin'' (yeah)
+	<br>I''m with the phone out the country (yeah)
+	<br>I''m whippin'' dope but in Italy (Italy)
+	<br>Cupido Huncho is how they feelin'' me (Cupido)
+    <br>
+	<br>Con le altre faccio lo stupido
+	<br>Ho bevuto troppo meglio se
+	<br>Mi riportano da te
+	<br>Ti ho colpita, sono Cupido
+	<br>Una tipa chic come te
+	<br>Vuole un trap boy come me
+	<br>Con le altre faccio lo stupido (skrt, skrt)
+	<br>Ma non le scambierei mai con te
+	<br>Non rispondere al tuo ex
+	<br>Ho una freccia come Cupido (skrt, skrt)
+	<br>E l''ho lanciata verso di te (pshh)
+	<br>Con le altre faccio lo stupido (wooh)
+	<br>Ti ho colpita, sono Cupido (wooh)',
+	212,  
+    '2018-01-18',
+    'Italiano e Inglese',
+    '',  
+    'https://www.youtube.com/watch?v=jkveo88JgrA', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Bottiglie Privè',
+	'Tutto cambia, nulla resta uguale
+	<br>Tranne l''amore di tua madre
+	<br>La gente cambia, il cash ti cambia
+	<br>Più ne fai e più non ti basta
+	<br>Cambia il modo in cui la guardo mentre sta con lui
+	<br>Penso son troppo cambiato o forse è meglio lui
+	<br>Cambio vestiti, cambio appartamento
+	<br>Non ho mai cambiato quello che c''è dentro
+	<br>E non lo vedi che sono sincero?
+	<br>Che se son triste, piange pure il cielo?
+	<br>Mai tradito un frate per una tipa
+	<br>Mai tradito una tipa che amavo davvero
+	<br>Dimmi che ne sai dei momenti no
+	<br>Mi hai visto sorridere sopra uno yacht
+	<br>E pensi sia tutto okay, pensi sia tutto appo-
+	<br>Ma non è una cazzo appo-
+	<br>Son cambiato da un po''
+    <br>
+	<br>Ho cambiato un''altra tipa mentre pensavo a te, eh, eh
+	<br>E ho un po'' cambiato vita e un po'' lei ha cambiato me, eh, eh
+    <br>
+	<br>Bottiglie e privè
+	<br>Non valgono niente
+	<br>No, queste modelle, non sono come te
+	<br>Mi guardi e mi dici, "Per me sei lo stesso di sempre"
+	<br>Ma so che mi menti e non capisco perché
+    <br>
+	<br>Solo pure in mezzo alla gente tra bottiglie e privè
+	<br>Si fanno la foto e dopo non rimane più niente tra bottiglie e privè
+    <br>
+	<br>E facciamo l''amore dentro l''ascensore
+	<br>Ho messo le stelle come destinazione
+	<br>Sì, sono un tipo di poche parole
+	<br>Che le spreca per poche persone, tu
+	<br>Forse non te lo ricordi più
+	<br>Dicevano, "Non è cool, dura un mese o poco più"
+	<br>Mi volevano giù ma tu no, ma è da un po'' che non ti riconosco più
+    <br>
+	<br>E ho cambiato un''altra tipa mentre pensavo a te
+	<br>E ho un po'' cambiato vita e un po'' lei ha cambiato me
+    <br>
+	<br>Bottiglie e privè
+	<br>Non valgono niente
+	<br>No, queste modelle, non sono come te
+	<br>Mi guardi e mi dici, "Per me sei lo stesso di sempre"
+	<br>Ma so che mi menti e non capisco perché
+    <br>
+	<br>Bottiglie e privè
+	<br>Non valgono niente
+	<br>No, queste modelle, non sono come te
+	<br>Mi guardi e mi dici, "Per me sei lo stesso di sempre"
+	<br>Ma so che mi menti e non capisco perché
+    <br>
+	<br>Solo pure in mezzo alla gente tra bottiglie e privè
+	<br>Si fanno la foto e dopo non rimane più niente tra bottiglie e privè',
+	189,  
+    '2020-11-20',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=HxOUtlUGFgo', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Hollywood',
+	'La mia ex mi scrive
+	<br>Mi dice che le manco da morire
+	<br>Quando stavamo insieme non faceva che dire
+	<br>Questa relazione è ormai arrivata alla fine, ehi
+	<br>Okay, non me ne rendo conto
+	<br>Okay, okay, so che ho la faccia da stronzo
+	<br>Non è facile essere famoso perché quando ce la fai li hai tutti contro
+	<br>Stesso lifestyle
+	<br>Ora che tutta ''sta gente guarda
+	<br>Ora che tutta ''sta gente invidia
+	<br>E quando il culo brucia, spesso la bocca sparla, ahia
+    <br>
+	<br>Eh-eh-eh-eh
+	<br>Volevo solo dirti che oggi sono happy e forse so anche il perché
+	<br>Eh-eh-eh-eh
+	<br>Perché non mi interessa più di quello che pensi te, no
+    <br>
+	<br>Hollywood, Hollywood
+	<br>Guarda che cielo blu
+	<br>Avevo dei problemi adesso non ce li ho più
+	<br>Braccio fuori dal finestrino
+	<br>Sto tenendo il tempo col dito, uh
+    <br>
+	<br>Avrei voluto fare il rock come i Red Hot
+	<br>Bere solo Jack Daniel''s, mangiare hot dog
+	<br>L''auto senza tetto è drop top, Rolex drip drop
+	<br>Rapper senza tetto flop flop
+	<br>Vendi popcorn, oh no
+	<br>Lo so, tutti hanno sempre qualcosa da dire
+	<br>Ma poi non tutti sempre sono pronti a capire
+	<br>E qua vivi o sopravvivi mentre prendi da bere
+	<br>Può essere una stella o guardare le stelle cadere quaggiù
+    <br>
+	<br>Dove non ci sono eroi e ci sei solo tu
+	<br>Ed è solo un altro stupido giorno ad Hollywood
+    <br>
+	<br>Eh-eh-eh-eh
+	<br>Volevo solo dirti che oggi sono happy e forse so anche il perché
+	<br>Eh-eh-eh-eh
+	<br>Perché non mi interessa più di quello che pensi te, no
+	<br>Hollywood, Hollywood
+	<br>Guarda che cielo blu
+	<br>Avevo dei problemi, adesso non ce li ho più
+	<br>Braccio fuori dal finestrino-no-no-no-no-no
+	<br>(One, two, three, four)
+    <br>
+	<br>Hollywood, Hollywood
+	<br>Guarda che cielo blu
+	<br>Avevo dei problemi, adesso non ce li ho più
+	<br>Braccio fuori dal finestrino
+	<br>Sto tenendo il tempo col dito, uh
+	<br>Hollywood, Hollywood (Hollywood)
+	<br>Hollywood, Hollywood (Hollywood)
+	<br>Hollywood, Hollywood (Hollywood)
+	<br>Hollywood, Hollywood (Hollywood)',
+	191,  
+    '2020-11-20',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=FVJPmzpI8U0', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'G63',
+	'Oh, wow
+	<br>Money Gang
+    <br>
+	<br>G63 sotto l''hotel (G)
+	<br>Non ci penso alla mia ex
+	<br>Scendo dal van, salgo sul jet (wow)
+	<br>Ordino un Crispy McBac''
+	<br>Okay, check, è Money Gang (no)
+	<br>Sanno che sono la wave
+	<br>Aquanaut, nuovo Patek (brr)
+	<br>Lei che si bagna, acqua, splash
+    <br>
+	<br>Okay, un milli diventano tre
+	<br>Poi quattro, poi cinque, poi sei, poi sette (grr)
+	<br>Per i soldi c''abbiamo le antenne (bu-bu)
+	<br>Pure i muri qua c''hanno le orecchie (bu-bu)
+	<br>Culo su una BM, foto del suo culo nei miei DM
+	<br>Billion Headz, Money Gang, Billion Headz, Money Gang, ehi
+	<br>Lo stiamo facendo sul serio, mi ami o mi odi, io manco ti cago (no-no)
+	<br>Uscito pulito dai rovi, da un letto di chiodi, dal filo spinato (no-no)
+    <br>
+	<br>Sono al top, frate'', non me ne vado
+	<br>Richard Mille costa come una Lambo (skrrt)
+	<br>Chiamo Dani, arriva in un attimo
+	<br>Pedigree, c''ho la scena al guinzaglio
+	<br>Lei dice che ha la malinconia (eh) ogni volta che ripensa a me (bu)
+	<br>Dice che sono meglio dell''ex (bu), dice che sono meglio del next (bu)
+	<br>Siamo cresciuti in periferia (Money Gang), mo'' sono un principe come a Bel Air
+	<br>Ha dodici posti come gli apostoli questo jet (brr)
+    <br>
+	<br>G63 sotto l''hotel (G)
+	<br>Non ci penso alla mia ex
+	<br>Scendo dal van, salgo sul jet (wow)
+	<br>Ordino un Crispy McBac''
+	<br>Okay, check, è Money Gang (no)
+	<br>Sanno che sono la wave
+	<br>Aquanaut, nuovo Patek (brr)
+	<br>Lei che si bagna, acqua, splash
+    <br>
+	<br>Non fare il bad man oppure il randa
+	<br>Che non sei Batman, frate'', sei Rayman
+	<br>Laurea per strada, fra'', non ad Harvard
+	<br>Frate'', fai acqua, colpa del karma
+	<br>Non dire: "Bando" con la tua banda
+	<br>Un mio fra'' è Rambo, un mio bro'' è Van Damme
+	<br>Uno ha un''AK, l''altro farfalla
+	<br>Una come te strada come fa a farla?
+    <br>
+	<br>Ho una milf con me come Stifler (Sti'')
+	<br>Guardami in VFX come Spielberg (Spi'')
+	<br>Zzala, fra'', sono un cult come "Still D.R.E." (still)
+	<br>Tu non dubitare mai della mia street cred (no)
+	<br>Dice: "Ti amo", mentre cola il rimmel (ueh)
+	<br>Ma mi sembra una falsa, un po'' cagna (eh, sì)
+	<br>Tu hai creduto che fossero killer (eheh)
+	<br>Quattro bimbi col passamontagna (ah), eheheh
+    <br>
+	<br>Avevo finito il cash (mai)
+	<br>Però adesso sono back in biz (back)
+	<br>Gliel''ho dato in un motel (ahi)
+	<br>Cercava l''amore, Black Eyed Peas (muah)
+	<br>Il tuo disco, frate'', è un pacco vero, frate''
+	<br>È proprio un liscio meritato (bleah)
+	<br>Non ti faccio ''sto regalo (no)
+	<br>Non ti piscio che ti lavo (Santana) (ehi)
+    <br>
+	<br>Money Gang, Money Gang, Santana
+	<br>Ci inseguono i fans, falchi, droni in aria (bu, bu)
+	<br>Verso lean, non è acqua santa
+	<br>Solo mezza linea costa tre e cinquanta (glu, glu, glu)
+	<br>Sai che dietro ho sempre una .38
+	<br>Giga, non è mica il numero di scarpa (pew, pew)
+	<br>Le tue rime van dalla A alla Z
+	<br>Le mie vanno dalla A alla K (Milano)
+    <br>
+	<br>Fra'', come fanno ad odiarmi
+	<br>Se non so nemmeno che esistono? (Bu, bu, Milano)
+	<br>E solo se è stata scopata
+	<br>Dopo può far parte di un video (esatto)
+	<br>Conti larghi che scoppiano il PIN, bro
+	<br>Ho amici magri perché se la sippano (slime)
+	<br>Fanta esotica come uno strip show
+	<br>I miei ti strappano via il sorriso (ahah)
+    <br>
+	<br>Ho una stick dentro i jeans Evisu
+	<br>Ti può trasformare in zuppa di miso (okay)
+	<br>Raga' 'in guardia 24-7
+	<br>A vent''anni già le rughe in viso (okay)
+	<br>Metto Corsico sopra la mappa
+	<br>Dovrai abituarti a veder la mia faccia (Milano)
+	<br>Sono al top, chiamo Sfera, poi Lazza
+	<br>A Milano una corona non basta (Milano)
+    <br>',
+	229,  
+    '2023-11-17',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=fMvIFqmaYOg', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    '15 Piani',
+	'Non dormo la notte, mi scoppia la testa
+	<br>Piano A, piano B, non mi interessa
+	<br>Classe A, classe G, sorpasso a destra
+	<br>Dieci g, venti g, fumo alla finestra
+	<br>E, scusami, ho il cuore freddo, ma la testa è calda (grr)
+	<br>Ragazzini di provincia, sogni di città (grr)
+	<br>So come vendere un disco con su la mia faccia
+	<br>So come vendere il fumo se ritorno là
+	<br>Ti amano finché sei povero
+	<br>Fai due soldi in più di loro e non approvano (no, no)
+	<br>Popolare, però non sei più del popolo (uh)
+	<br>Solo perché ce l''hai fatta un po'' ti odiano, ehi
+	<br>Giuro, sono ancora io (grr) se riguardo foto di quando ero bimbo
+	<br>Facevamo le promesse con il mignolo
+	<br>E una carezza ti può lasciare un brivido, un livido, oh-oh (squad)
+	<br>Qua ti tengono a terra, non voglion vederti volare (no, no)
+	<br>Elicottero, passo sulle vecchie case dell''Aler
+	<br>Quando parli di me ti fai male (grr, pow)
+	<br>Religione tutte le mie barre (grr, pow)
+	<br>Qua si tatuano addosso il mio nome (grr, pow)
+	<br>Mi hanno visto diventare grande
+    <br>
+	<br>Un piano, due piani, tre piani, poi quattro, salgo gli scalini di corsa
+	<br>Il quinto, poi il sesto, poi il settimo, ottavo, sappiamo che la vita è corta
+	<br>Sopra ''sti palazzi non si vede il sole, sotto ''sti palazzi c''è l''ombra
+	<br>E per ogni fra'' che va via poi c''è n''è almeno uno che torna
+    <br>
+	<br>Quindici piani, dalle mie parti sono già grandi a quindic''anni
+	<br>Quindici in giro, quindici TMAX, quindici grammi
+	<br>Quindici in quindici metri quadrati, ma siamo riusciti a salvarci
+	<br>Siamo riusciti a salvarci
+    <br>
+	<br>Ricordo di me a quindic''anni, quindici zarri, quindici scatti
+	<br>Sul 15 che andava in centro, quindi a fare i danni
+	<br>Quindici traumi, quindici punti sui fianchi
+	<br>Quattro presenti su quindici banchi
+	<br>Quindici zaini, quindici pacchi
+	<br>Quindici sgrammi, quindi ci parti
+	<br>Poi da più grandi, quindici ore con gli straordinari
+	<br>Quindici giorni di ferie in due anni
+	<br>Quindici schiavi, quindici giorni e poi scappi
+	<br>Quindi le basi, quindi ci studia gli spasmi, quindici sudici stracci
+	<br>Quindici arresti, tre mesi fa scarsi, quindici anni davanti
+	<br>Quindici piani
+	<br>Non ho vinto al Lotto, però dopo anni che lotto
+	<br>Tutto il lotto adesso è roba mia
+	<br>Pure se li ho messi a posto
+	<br>Voglio chi mi è stato attorno al posto della nostalgia
+	<br>Spendevamo all''anno per vestirci in quattro
+	<br>Quanto sto pagando per la tintoria
+	<br>Arrivo ai concerti sopra un 720
+	<br>Come i presidenti con la Polizia
+    <br>
+	<br>Quindici piani, dalle mie parti sono già grandi a quindic''anni
+	<br>Quindici in giro, quindici TMAX, quindici grammi
+	<br>Quindici in quindici metri quadrati, ma siamo riusciti a salvarci
+	<br>Siamo riusciti a salvarci
+    <br>
+    <br>Quindici piani (quindici piani)
+	<br>Dalle mie parti sono già grandi a quindic''anni (a quindic''anni)
+	<br>Quindici in giro, quindici TMAX, quindici grammi (quindici grammi)
+	<br>Quindici in quindici metri quadrati, ma siamo riusciti a salvarci (uoh)
+	<br>Siamo riusciti a salvarci (uoh)
+    <br>
+	<br>Quindici piani (quindici piani)
+	<br>A quindic''anni (a quindic''anni)
+	<br>Quindici grammi (quindici grammi)
+	<br>Siamo riusciti a salvarci
+	<br>Siamo riusciti a salvarci (siamo riusciti a salvarci)',
+	206,  
+    '2023-11-17',
+    'Italiano',
+    '',  
+    'https://www.youtube.com/watch?v=7puLc-Nw5mc', 
+    3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Saoko',
+    'Saoko, papi, saoko<br> Saoko, papi, saoko<br> Saoko, papi, saoko<br> Saoko, papi, saoko<br> Cambio de tono, cambio de giro<br> Cambio de voz, cambio de estilo<br> Cambio de carro, hago de todo<br> Si no me entiendes, pues no me sigas, no<br> Y, ah<br> A cada noche le llego más loca<br> Y cómo lo hago pa\' hacerme notar<br> Para montarme lo tengo que dar<br> Dale replay, vuelve a estudiar<br> Dale replay, vuelve a estudiar<br> Dale replay...',
+    137,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=6o7bCAZSxsg',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Chicken Teriyaki',
+    'Chicken teriyaki, chicken teriyaki<br> Chicken teriyaki, chicken teriyaki<br> La cuenta, mami<br> La cuenta, mami<br> Chicken teriyaki, chicken teriyaki<br> Chicken teriyaki, chicken teriyaki<br> La cuenta, mami<br> La cuenta, mami<br> Estudio en un Airbnb, en la del biza o en la de Fer<br> Dos días en el tráfico y me lo llevé pa\' la Eixample, ¿qué?',
+    122, 
+     '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=OG4gq9fCoRE',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'La Fama',
+    'Lo que pasó a ti te lo cuento<br> No creas que dolerá, no<br> Si me quieres, pero sé<br> Que no vale la pena, eh<br> Ella siempre en el medio de la gente<br> La fama es cabrona, ¿por qué será?<br> No volveré, pero aquí te quedas<br> Yo te digo algo, no confíes en ella...',
+    204, 
+'2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=e-CEd6xrRQc',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Hentai',
+    'Te quiero ride como mi bike<br> Hazme un tape modo spike<br> Yo la batí hasta que se montó<br> Segundo es chingarte, lo primero es Dios<br> Ay, qué rico Dios mío<br> Ay, qué rico, Dios mío<br> Pa\' ti y pa\' mí, a-a-ah<br> Pa\' ti y pa\' mí, a-a-ah<br> Pa\' ti y pa\' mí...',
+    165, 
+'2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=_6YCNd3ONUU',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Motomami',
+    'A ti te atropella un trineo<br> Caliente como el sol de junio<br> El que llevo en las venas<br> Yo no soy yanki, pero ya quisiera<br> Ey, ey, motomami, motomami, motomami<br> Ey, ey, motomami, motomami, motomami...',
+    138,  
+'2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=EslzthDFm2w',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Bizcochito',
+    'Bizcochito, bizcochito<br> Me gusta que me digas<br> Que me quieres, que me quieres<br> Que me quieres, que me quieres<br> Quiero lo que tú quieras, si tú quieres<br> Yo no sé, yo no sé qué es el amor<br> Y, ah, ah, ah...',
+    126,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=aG5C32aATKc',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Diablo',
+    'Diablo, diablo, diablo<br> Tienes la mala suerte de ser<br> El amor de mi vida, diablo<br> Que aunque no me quieras<br> Sigues haciendo ruido, diablo<br> Diablo, que yo nunca he estado en el lado oscuro<br> Y tú sí...',
+    179,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=0GMeqmqUjEQ',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Como un G',
+    'Como un G, como un G<br> Y como un G, como un G<br> Te traigo el ritmo y el flow<br> Me gusta como brillas<br> Y la noche me llama y me quiere llamar<br> Me quiere llamar...',
+    162,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=kKyIKHpqBj0',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Sakura',
+    'Sakura, yo te vi<br> Y no sé qué hacer<br> Tanta belleza en una sola flor<br> Sakura, yo te vi, yo te vi<br> Como si el mundo se parara en un segundo<br> Yo te vi...',
+    151,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=5JeNKeb0glw',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Good Times',
+    'Good times, good vibes<br> Viviamo la vita come un sogno<br> Solo per un attimo, balla con me...',
+    210,  -- Durata in secondi (3 minuti e 30 secondi)
+    '2020-11-13',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=w2KZGGkvLe8',
+    4
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Barcellona',
+    'Questa è una lettera a Barcellona<br> Ti ricordi di noi due,<br> In quel bar all’angolo<br> Dove ci siamo persi in un attimo? ...',  -- Aggiungi il testo completo qui, utilizzando <br> per andare a capo
+    190,  -- Durata in secondi (3 minuti e 10 secondi)
+    '2020-11-13',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=k4uH8YBJfAI',
+    4  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Boogieman',
+    'Quando la notte arriva, io sono qui<br> Se hai paura, io ti porto via<br> Sono il boogieman, non temere... ',  -- Aggiungi il testo completo qui, utilizzando <br> per andare a capo
+    203,  
+    '2020-11-13',  
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=-7lqGbIE3aM',  
+    4  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Altrove',
+	'Oh, da quant''è che non sbagli senza più
+	<br>Senza fartene più una colpa?
+	<br>Oh, siamo presi e buttati al mondo noi
+	<br>Fermi in alto su questa giostra
+	<br>Dammi, dammi, dammi di più
+	<br>Da questa vita
+	<br>Oh, ti ricordi quel pomeriggio, eh?
+	<br>Oh, ti ricordi quel pomeriggio, eh?
+	<br>La mia pelle nelle tue tasche
+	<br>Oh, ti ricordi quel giorno grigio? Noi
+	<br>Stesso mare, diverse barche	
+	<br>Dammi, dammi, dammi di più
+	<br>Da questa vita
+	<br>Come stai?
+	<br>Da quant''è che non esce il sole?
+	<br>Come sai
+	<br>Non ho voglia di altre persone
+	<br>Non ho voglia di cose nuove
+	<br>Parlami, portami altrove
+	<br>Tra stelle accese e spiagge vuote
+	<br>Avanti, parlami, portami altrove
+	<br>Tra i miei testi e la tua voce
+	<br>Basta che sia altrove
+	<br>Oh, cosa c''è che non vuoi capire, eh?
+	<br>Certe cose non hanno fine
+	<br>Oh, fuori no, però dentro vive, eh
+	<br>Questa voglia di poter dire
+	<br>Dammi, dammi, dammi di più
+	<br>Da questa vita
+	<br>Come stai?
+	<br>Da quant''è che non esce il sole?
+	<br>Come sai
+	<br>Non ho voglia di altre persone
+	<br>Non ho voglia di cose nuove
+	<br>Parlami, portami altrove
+	<br>Tra stelle accese e spiagge vuote
+	<br>Avanti, parlami, portami altrove
+	<br>Tra i miei testi e la tua voce
+	<br>Basta che sia altrove
+	<br>Oh, oh, oh
+	<br>Da quant''è che non esci più?
+	<br>Che ci provi, ma cadi giù
+	<br>Come stai? Io sto bene e tu, amore?
+	<br>Oh, oh, oh
+	<br>Da quant''è che non esci più?
+	<br>Che ci provi, ma cadi giù
+	<br>Come stai? Io sto bene e tu, amore?
+	<br>Come stai?
+	<br>Da quant''è che non esce il sole?
+	<br>Come sai
+	<br>Non ho voglia di altre persone
+	<br>Non ho voglia di cose nuove
+	<br>Parlami, portami altrove
+	<br>Tra stelle accese e spiagge vuote
+	<br>Avanti, parlami, portami altrove
+	<br>Tra i miei testi e la tua voce
+	<br>Basta che sia altrove',
+    180,
+    '2024-05-17',
+    'Italiana',
+    '',
+    'https://www.youtube.com/watch?v=IpF9WqUS2S0',  -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Quando saremo vecchi', 
+	'Quando saremo vecchi avremo le montagne
+	<br>Per camminarci dentro senza le risposte
+	<br>E forse il bello è quello, parlarsi senza farlo
+	<br>Sentire che è risorsa il primo fresco a marzo
+	<br>Quando saremo vecchi ci sentiremo grandi
+	<br>E guarderemo i passi, non quello che è davanti
+	<br>Quando saremo vecchi tu resterai al mio fianco
+	<br>Con i ricordi avremo un sorriso e un po'' di pianto
+	<br>Tu mi fai credere che
+	<br>Ogni cosa parte sempre da dove sei te
+	<br>Tu mi fai credere che
+	<br>Puoi morire e dopo vivere, uoh-oh-oh-oh-oh
+	<br>Fai buon viaggio tra le rondini ad aprile
+	<br>Fai buon viaggio mentre incontrerai un confine
+	<br>Fai buon viaggio e non temere di cadere
+	<br>Io ti aspetto dove sai
+	<br>Quando saremo vecchi mi fermerò ridendo
+	<br>Guardando quei ragazzi sul mio stesso muretto
+	<br>Non mi avvicinerò, io so i loro discorsi
+	<br>Parlare del futuro senza dar peso mai ai giorni
+	<br>Quando saremo vecchi non avrò più una scusa
+	<br>Per dirti, "Notte, esco", mi annoio in questa casa
+	<br>Spero tu sarai sempre la donna di quel giorno
+	<br>Che senza dire niente aveva già detto tutto
+	<br>Tu mi fai credere che
+	<br>Ogni cosa parte sempre da dove sei te
+	<br>Tu mi fai credere che
+	<br>Puoi morire e dopo vivere, uoh-oh-oh-oh-oh
+	<br>Fai buon viaggio tra le rondini ad aprile
+	<br>Fai buon viaggio mentre incontrerai un confine
+	<br>Fai buon viaggio e non temere di cadere
+	<br>Io ti aspetto dove sai
+	<br>Quando saremo vecchi, portami dove credi
+	<br>Ricordami chi ero se avrò i ricordi ciechi
+	<br>Portami a casa e dimmi adesso cosa vedi
+	<br>Io vedo me bambino e non esiste ieri',
+	180,
+	'2024-05-17',
+	'Italiana',
+    '',
+    'https://youtu.be/MfRLybx1G4M',  -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+); 
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Quel filo che ci unisce',
+	'Io lo so cosa senti
+	<br>Non me lo devi spiegare
+	<br>Vedi dubbi davanti
+	<br>Ma non è qui la fine
+	<br>E certo adesso guardati, tu sei diversa
+	<br>In crisi con il mondo, no, sai, è con te stessa
+	<br>Io so che cosa senti quando guardi il mare
+	<br>Lo associ al tuo dolore che non ha una fine
+	<br>E certo adesso parlami, ti sto ascoltando
+	<br>Mi piaci perché butti i tuoi piedi nel fango
+	<br>Ma senza la paura che ti guardo male
+	<br>Tanto sai che è tutto un gioco e vince chi sorride
+	<br>Io lo so cosa senti
+	<br>Quando cerchi risposte
+	<br>I tuoi occhi diamanti
+	<br>Persi a un giro di giostre
+	<br>E certo che è un po'' strano, io non sono il tipo
+	<br>Di solito non parlo e resto sempre muto
+	<br>Perché ho parlato e, sai, sono stato incompreso
+	<br>Ma avevo un pianoforte come dolce amico
+	<br>Ma tu, tu sei diversa perché sei sbagliata
+	<br>Ma non per me che credo in chi non vien creduta
+	<br>Tu sei come un bicchiere fatto di cristallo
+	<br>Al bordo di una tavola e temi l''impatto
+	<br>Mi domando se ti domandi tu
+	<br>Che cosa faccio quando sono solo io
+	<br>Che cosa faccio quando penso al nome tuo
+	<br>E mi domando se ti domandi tu
+	<br>Che senso c''ha parlare di tristezza se
+	<br>Se accanto c''è qualcuno con cui ridere
+	<br>Io come te cerco solo l''amore
+	<br>Io come te cerco solo l''amore
+	<br>Io lo so non ci credi
+	<br>In fondo non ti conosco
+	<br>È che tu, nei pensieri
+	<br>Sei già un rifugio perfetto
+	<br>E certo che ci credo negli avvenimenti
+	<br>Cercare indietro per poi ritrovarlo avanti
+	<br>Quel filo che ci unisce puoi chiamarlo amore
+	<br>Ma tu sarai contraria perché non vuoi un nome
+	<br>E certo che so bene quanto dentro pesa
+	<br>Tu vedi l''abbandono come la tua casa
+	<br>Ed io vorrei bussarti, farti una sorpresa
+	<br>Portarti nei miei fogli come fa un poeta
+	<br>Mi domando se ti domandi tu
+	<br>Che cosa faccio quando sono solo io
+	<br>Che cosa faccio quando penso al nome tuo
+	<br>E mi domando se ti domandi tu
+	<br>Che senso c''ha parlare di tristezza se
+	<br>Se accanto c''è qualcuno con cui ridere
+	<br>Io come te cerco solo l''amore
+	<br>Io come te cerco solo l''amore',
+    254,
+    '2021-10-22',
+    'Italiana',
+	'',
+	'https://youtu.be/YDXkGR6INiI', -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+); 
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Mon Amour',
+	'Quindi ci piacciamo oppure no?
+	<br>Sangue nella dance floor, ci ballerò
+	<br><br>Anche se è soltanto un altro stupido
+	<br>Sexy boy, sexy boy, io ci sto
+	<br>E domani non lavoro quindi
+	<br>Uh, ce ne stiamo distesi
+	<br>Ah, sopra soldi già spesi
+	<br>Uh, colazioni francesi
+	<br>Ah, con gli avanzi di ieri
+	<br>Se non lo facciamo, me lo immagino
+	<br>Dovrei, non dovrei dirti che
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?	
+	<br>Io farò una strage stasera
+	<br>Ballo tra le lampade a sfera
+	<br>Lei piace sia a me che a te
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea
+	<br>Lei, lui (na-na-na, na-na)
+	<br>Lei, lui (na-na, na-na-na-na-na)
+	<br>Lei, un movimento tecnico (no, no, no, no)
+	<br>Lui, un sorso con l''arsenico (no, no, no, no)
+	<br>Io rimango sola come minimo
+	<br>Sexy boy, sexy boy, allora io ci sto
+	<br>E domani non lavoro, quindi
+	<br>Uh, ce ne stiamo distesi
+	<br>Ah, sopra soldi già spesi
+	<br>Uh, colazioni francesi
+	<br>Ah, con gli avanzi di ieri
+	<br>Se non lo facciamo, me lo immagino
+	<br>Dovrei, non dovrei dirti che
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Io farò una strage stasera
+	<br>Ballo tra le lampade a sfera
+	<br>Lei piace sia a me che a te
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea
+	<br>Lei, lui (na-na-na, na-na)
+	<br>Lei, lui (na-na, na-na-na)
+	<br>Ho visto lei che bacia lui (na-na-na-na-na-na)
+	<br>Lei che bacia lui (na-na-na, na-na-na-na)
+	<br>(Na-na-na, na-na-na-na-na-na)
+	Lei che bacia lui, lei che bacia lui (na-na-na)
+	<br>Dovrei, non dovrei dirti che
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Io farò una strage stasera
+	<br>Ballo tra le lampade a sfera
+	<br>Lei piace sia a me che a te
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea
+	<br>Lei, lui (na-na, na-na-na, na-na)
+	<br>Lei, lui (na-na, na-na-na, na-na-na-na-na)
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea',
+	180,
+	'2023-03-31',
+	'Italiana',
+	'',
+	'https://youtu.be/RzyD08-w-tk', -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+); 
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Movin''Out(Anthony''s Song)',
+	'Anthony works in the grocery store
+	<br>Savin'' his pennies for someday
+	<br>Mama Leone left a note on the door
+	<br>She said, "Sonny, move out to the country"
+	<br>Workin'' too hard can give you
+	<br>A heart attack (ack, ack, ack, ack, ack)
+	<br>You oughta know by now (oughta know)
+	<br>Who needs a house out in Hackensack
+	<br>Is that what you get for your money?',
+	'200',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=cJtL8vWNZ4o',
+	'1');
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'The Stranger',
+	'Well, we all have a face
+	<br>That we hide away forever
+	<br>And we take them out and show ourselves
+	<br>When everyone has gone
+	<br>Some are satin, some are steel
+	<br>Some are silk and some are leather
+	<br>They''re the faces of the stranger
+	<br>But we love to try them on
+	<br>Well, we all fall in love
+	<br>But we disregard the danger
+	<br>Though we share so many secrets
+	<br>There are some we never tell',
+	'300',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=E5ofVsxTPoc',
+	'1');
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Just The Way You Are',
+	'Oh, her eyes, her eyes
+	<br>Make the stars look like they''re not shinin''
+	<br>Her hair, her hair
+	<br>Falls perfectly without her tryin''
+	<br>She''s so beautiful and I tell her everyday
+	<br>Yeah, I know, I know
+	<br>When I compliment her, she won''t believe me
+	<br>And it''s so, it''s so
+	<br>Sad to think that she don''t see what I see
+	<br>But every time she asks me, "Do I look okay?"
+	<br>I say',
+	'271',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=HaA3YZ6QdJU',
+	'1');
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Scene From An Italian Restaurant',
+	'A bottle of whites, a bottle of red
+	<br>Perhaps a bottle of rose instead
+	<br>We''ll get a table near the street
+	<br>In our old familiar place
+	<br>You and I, face to face
+	<br>A bottle of red, a bottle of whites
+	<br>It all depends upon your appetite
+	<br>I''ll meet you any time you want
+	<br>In our Italian Restaurant',
+	'443',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=Hxx8IWIvKg0',
+	'1'
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Laudate Dominum',
+	'Laudate dominum
+	<br>Laudate dominum
+	<br>Il potere che cercava
+	<br>Il nostro umore
+	<br>Mentre uccideva
+	<br>Nel nome d''un dio
+	<br>Nel nome d''un dio
+	<br>Uccideva un uomo
+	<br>Nel nome di quel dio si assolse',
+	'22',
+	'1970-11-01',
+	'Latino e Italiano',
+	'',
+	'https://www.youtube.com/watch?v=2YfpZF6vy1g',
+	'16'
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'L''infanzia di Maria',
+	'Laudate dominum
+	<br>Laudate dominum
+	<br>Laudate dominum
+	<br>Forse fu all''ora terza forse alla nona
+	<br>Cucito qualche giglio sul vestitino alla buona
+	<br>Forse fu per bisogno o peggio per buon esempio
+	<br>Presero i tuoi tre anni e li portarono al tempio
+	<br>Presero i tuoi tre anni e li portarono al tempio
+	<br>Non fu più il seno di Anna fra le mura discrete
+	<br>A consolare il pianto a calmarti la sete
+	<br>Dicono fosse un angelo a raccontarti le ore
+	<br>A misurarti il tempo fra cibo e Signore
+	<br>A misurarti il tempo fra cibo e Signore',
+	'300',
+	'1970-11-01',
+	'Latino e Italiano',
+	'',
+	'https://www.youtube.com/watch?v=GXCrDa5f4Nw',
+	'16');
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Il ritorno di Giuseppe',
+	'Stelle, già dal tramonto
+	<br>Si contendono il cielo a frotte
+	<br>Luci meticolose
+	<br>Nell''insegnarti la notte
+	<br>Un asino dai passi uguali
+	<br>Compagno del tuo ritorno
+	<br>Scandisce la distanza
+	<br>Lungo il morire del giorno
+	<br>Ai tuoi occhi, il deserto
+	<br>Una distesa di segatura
+	<br>Minuscoli frammenti
+	<br>Della fatica della natura',
+	'240',
+	'1970-11-01',
+	'Italiano',
+	'',
+	'https://www.youtube.com/watch?v=B1aA014bFhg',
+	'16'
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Il Sogno Di Maria',
+	'Nel grembo umido, scuro del tempio
+	<br>L''ombra era fredda, gonfia d''incenso
+	<br>L''angelo scese come ogni sera
+	<br>Ad insegnarmi una nuova preghiera
+	<br>Poi d''improvviso mi sciolse le mani
+	<br>E le mie braccia divennero ali
+	<br>Quando mi chiese, "Conosci l''estate?"
+	<br>Io per un giorno, per un momento
+	<br>Corsi a vedere il colore del vento',
+	'240',
+	'1970-11-01',
+	'Italiano',
+	'',
+	'https://www.youtube.com/watch?v=6gqsQMQqZrc',
+	'16'
+);
 -- INSERT album_brano the weeknd
 INSERT INTO album_brano(brano_id, album_id) VALUES (1,1);
 INSERT INTO album_brano (brano_id, album_id)VALUES (2,1);
@@ -6186,7 +8168,7 @@ INSERT INTO album_brano(brano_id, album_id) VALUES (28,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (29,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (30,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (31,3);
-INSERT INTO album_brano(brano_id, album_id) VALUES (2,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (32,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (33,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (34,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (35,3);
@@ -6277,6 +8259,54 @@ INSERT INTO album_brano(brano_id, album_id) VALUES (112,10);
 INSERT INTO album_brano(brano_id, album_id) VALUES (113,10);
 INSERT INTO album_brano(brano_id, album_id) VALUES (114,10);
 INSERT INTO album_brano(brano_id, album_id) VALUES (115,10);
+-- kid yugi
+INSERT INTO album_brano(brano_id, album_id) VALUES (116,11);
+INSERT INTO album_brano(brano_id, album_id) VALUES (117,11);
+INSERT INTO album_brano(brano_id, album_id) VALUES (118,12);
+INSERT INTO album_brano(brano_id, album_id) VALUES (119,12);
+INSERT INTO album_brano(brano_id, album_id) VALUES (120,13);
+INSERT INTO album_brano(brano_id, album_id) VALUES (121,13);
+-- sfera ebbasta
+INSERT INTO album_brano(brano_id, album_id) VALUES (122,14);
+INSERT INTO album_brano(brano_id, album_id) VALUES (123,14);
+INSERT INTO album_brano(brano_id, album_id) VALUES (124,15);
+INSERT INTO album_brano(brano_id, album_id) VALUES (125,15);
+INSERT INTO album_brano(brano_id, album_id) VALUES (126,16);
+INSERT INTO album_brano(brano_id, album_id) VALUES (127,16);
+INSERT INTO album_brano(brano_id, album_id) VALUES (128,17);
+INSERT INTO album_brano(brano_id, album_id) VALUES (129,17);
+INSERT INTO album_brano(brano_id, album_id) VALUES (130,18);
+INSERT INTO album_brano(brano_id, album_id) VALUES (131,18);
+-- rosalia
+INSERT INTO album_brano(brano_id, album_id) VALUES (132,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (133,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (134,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (135,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (136,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (137,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (138,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (139,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (140,19);
+-- ghali
+INSERT INTO album_brano(brano_id, album_id) VALUES (141,20);
+INSERT INTO album_brano(brano_id, album_id) VALUES (142,20);
+INSERT INTO album_brano(brano_id, album_id) VALUES (143,20);
+-- ultimo
+INSERT INTO album_brano(brano_id, album_id) VALUES (144,21);
+INSERT INTO album_brano(brano_id, album_id) VALUES (145,21);
+INSERT INTO album_brano(brano_id, album_id) VALUES (146,22);
+-- annalisa
+INSERT INTO album_brano(brano_id, album_id) VALUES (147,23);
+-- billy joel
+INSERT INTO album_brano(brano_id, album_id) VALUES (148,24);
+INSERT INTO album_brano(brano_id, album_id) VALUES (149,24);
+INSERT INTO album_brano(brano_id, album_id) VALUES (150,24);
+INSERT INTO album_brano(brano_id, album_id) VALUES (151,24);
+-- fabrizio de andré
+INSERT INTO album_brano(brano_id, album_id) VALUES (152,25);
+INSERT INTO album_brano(brano_id, album_id) VALUES (153,25);
+INSERT INTO album_brano(brano_id, album_id) VALUES (154,25);
+INSERT INTO album_brano(brano_id, album_id) VALUES (155,25);
 
 INSERT INTO utente(username, password, nome, cognome, email, foto, data_creazione) VALUES(
 'root',

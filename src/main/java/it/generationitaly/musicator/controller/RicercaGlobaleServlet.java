@@ -43,13 +43,18 @@ public class RicercaGlobaleServlet extends HttpServlet {
 		// in quel caso penso ci sia bisogno di rispolverare sessioni e cookie
 		// e aggiungere un if
 		String inputUtente = request.getParameter("ricercaUtente");
-		
+		List<Album> albums = null;
 		// ricerca byGenere?
 		// forse è meglio cercare sempre by titolo, e in caso ci sia il match di genere viene fuori
 		// direttamente il genere (come se fosse a metà tra una playlist e un artista me l'immagino)
 		// dove cliccando porta ad una pagina con i brani e gli album di quel genere - quindi i findByGenere)
 		
 		List<Brano> brani = branoRepository.findByTitolo(inputUtente);
+		for (Brano brano : brani) {
+			albums = branoRepository.findAlbumsByBrano(brano.getId());
+			if (!albums.isEmpty())
+				brano.setAlbum(albums);
+		}
 		List<Artista> artisti = artistaRepository.findByPseudonimo(inputUtente);
 		List<Album> album = albumRepository.findByTitolo(inputUtente);
 		List<Playlist> playlist = playlistRepository.findByTitolo(inputUtente);

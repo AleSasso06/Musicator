@@ -1,5 +1,6 @@
-	
-		<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+
+	<%@ page import="it.generationitaly.musicator.entity.*" %>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		  <div class="container-fluid">
 		    <a class="navbar-brand" href="index.jsp">
 		    	<img src="images/logo.svg" width="200" height="50" alt="">
@@ -42,11 +43,39 @@
 				        <button class="btn btn-outline-success" type="submit">Cerca</button>
 				    </form>
  -->				
-				   <!-- Pulsante Login -->
-				   <a href="./login.jsp" class="btn custom-login-btn me-2 " id="reg">Login</a>
-				   
-					<!-- Pulsante Registrati -->
-					<a href="./sign-in.jsp" class="btn custom-register-btn" id="log">Registrati</a>
+ 
+ 					<!-- qui devo fare un if con la sessione dell'utente: se la sessione ha un utente faccio vedere la foto? lo username? e il bottone logout
+ 					se no si mostrano il login e registrati -->
+ 					
+ 					
+ 					<%Utente utente = (Utente)session.getAttribute("utente"); %>
+ 					<%if (utente == null){%>
+ 					
+						<!-- Pulsante Login -->
+						<a href="./login.jsp" class="btn custom-login-btn me-2 " id="reg">Login</a>
+					   
+						<!-- Pulsante Registrati -->
+						<a href="./sign-in.jsp" class="btn custom-register-btn" id="log">Registrati</a>
+						
+					<% } else {%>
+					
+						<!-- Pulsante Logout href="logout"-->
+						<form action="logout" method="post">
+				   			<button class="btn custom-login-btn me-2 " id="out" type="submit">Logout</button>
+						</form>
+						
+						<!-- inizio foto -->
+						<div >
+							<a href="profilo-utente">
+								<picture>
+								<img src="<%=utente.getFoto() %>" class="img-fluid img-thumbnail rounded-circle" alt="..." 
+									style="width: 45px; height: 45px; object-fit: cover;">
+								</picture>
+							</a>
+						</div>
+						<!-- fine foto -->
+					<% } %>
+				
 				</div>			 <!-- 
 			 	<form class="d-flex" role="search">
 			      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

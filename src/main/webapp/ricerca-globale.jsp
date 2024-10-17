@@ -11,7 +11,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Risultati ricerca</title>
+<title>Musicator - Risultati Ricerca</title>
 <!-- Bootstrap css -->
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -83,7 +83,7 @@
 					<div class="row no-gutters align-items-center">
 						<div class="col-auto">
 							<img
-								src=<%= brano.getFoto() %>
+								src=<%= brano.getAlbum().get(0).getFoto() %>
 								height="110" class="rounded song-img" alt="...">
 						</div>
 						<div class="col">

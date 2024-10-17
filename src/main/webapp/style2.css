@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 body {
-    margin: 0;
+	padding-top: 60px;
+    margin-top: 80px;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
@@ -11,6 +12,25 @@ body {
     background-color: #08263C;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+}
+
+.album-card {
+    background-color: rgba(227, 242, 253, 0.72); /* Colore di sfondo */
+    border: none; /* Rimuove il bordo predefinito */
+    border-radius: 15px; /* Arrotonda gli angoli della card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
+    color: black; /* Colore del testo impostato su nero */
+    padding: 20px; /* Aggiunge padding interno per un aspetto migliore */
+}
+
+.album-card .card-title {
+    color: black; /* Colore del titolo nero */
+    font-weight: bold;
+}
+
+.artist-img {
+    border: 3px solid white; /* Bordo bianco attorno all'immagine */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera all'immagine */
 }
 
 section .bg-body {
@@ -46,8 +66,11 @@ h2 {
 
 .navbar {
     background-color: #E3F2FD !important; 
+    position: fixed; 
+    top: 0;           
+    width: 100%;     
+    z-index: 1000;   
 }
-
 .navbar .nav-link {
     color: #000000 !important;
 }
@@ -112,8 +135,7 @@ h2 {
 .navbar-collapse .d-flex {
     margin-left: auto; 
 }
-
-
+/********************************************************/
 .footer { 
     color: black; 
     text-align: center; 
@@ -325,6 +347,15 @@ a.navbar-brand img {
     height: 60px;
 }
 
+#preloader {
+    transition: opacity 0.5s ease-out;
+}
+
+#preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+}
 
 
 @media screen and (min-width: 768px) {

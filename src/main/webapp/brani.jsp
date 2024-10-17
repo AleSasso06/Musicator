@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Musicator - Brani </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <!-- Bs Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,17 +21,19 @@
         /* Imposta una larghezza fissa per tutte le card */
         .song-card {
             width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
-            opacity: 0.7;
-            transition: opacity 0.5s ease;
+            opacity: 0.9;
+            transition: opacity 0.2s ease;
+            color: #E3F2FD
         }
 
         .card-body {
-            text-align: center; /* Allinea il testo al centro */
+            text-align: center; 
+            color: black
         }
 
         .btn-play {
             font-size: 1.5rem;
-            color: #007bff;
+            color: #C2185B;
         }
     </style>
 </head>
@@ -59,16 +61,18 @@
                     <div class="card song-card">
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <img src="<%= brano.getFoto() %>" height="110" class="rounded song-img" alt="...">
+                            <% if (!brano.getAlbum().isEmpty()){%>
+                                <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
                             </div>
                             <div class="col">
                                 <div class="card-body p-2">
                                     <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
                                         <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
                                     </a>
-                                     <h6 class="card-title text-start">da inserire Album?</h6>
+                                     <h6 class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo() %></h6>
                                      <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
                                 </div>
+                                   <% } %> 
                             </div>
                             <div class="col-auto">
                                 <a class="btn btn-play" href="<%= brano.getYtLink() %>">
@@ -77,7 +81,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             <% } %>
         <% } else { %>
             <p>Nessun brano trovato.</p>

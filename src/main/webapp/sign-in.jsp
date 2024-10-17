@@ -5,7 +5,7 @@
 	<head>
 		
 		<meta charset="UTF-8">
-		<title>Registrazione</title>
+		<title>Musicator - Registrazione</title>
 		<link rel="stylesheet" type="text/css"
 			href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="style2.css">

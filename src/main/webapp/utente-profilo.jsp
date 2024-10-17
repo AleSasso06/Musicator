@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Utente</title>
+		<title>Musicator - Utente</title>
 		 <!-- Bootstrap css -->
  		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -17,67 +17,86 @@
 	</head>
 	
 	<body>
-		
-		<% Utente utente = (Utente) session.getAttribute("utente"); %>
-		<% List<Playlist> playlists = utente.getPlaylist(); %>
 	
 		<header>
 		<%@ include file="nav.jsp" %>
 		</header>
 		
+		<% utente = (Utente) session.getAttribute("utente"); %>
+		<% List<Playlist> playlists = utente.getPlaylist(); %>
+		
 		<main class="overflow-hidden">
 		
 			<!-- Inizio Logo -->
 		    <div class="svg-container mt-3">
-		        <img alt="" src="images/logo header.svg">
+		        <img alt="" src="images/header Brano.svg">
 		    </div>
 		    <!-- Fine Logo -->
 
 			<div class="container mt-3">
+				<!-- intestazione -->
 		  		<div class="row d-flex align-items-center">
 		  		
 			  		<!-- inizio foto -->
 				    <div class="col-md-4">
 				      <picture>
 				        <img src="<%=utente.getFoto() %>" class="img-fluid img-thumbnail rounded-circle" alt="..." 
-					       style="width: 300px; height: 300px; position: relative; right: -50px; top: -100px; z-index: 10;">
+					       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -500px; top: -280px; z-index: 10;">
 				      </picture>
 				    </div>
 				    <!-- fine foto -->
 				    
-				    <!-- nome -->
-				    <div class="col-md-8 text-center">
-				       <h1 style="color: white"><%= utente.getUsername() %></h1>
+				    <!-- dati -->
+				    <div class="col-md-4 text-md-start  text-center">
+					    
+					    <!-- nome -->
+					    <h1 class="display-3 text-light text-center" style="position: relative; top: -50px;">
+					    <b> <%= utente.getUsername() %></b></h1>
+					    <!-- fine nome -->
+					    
+					    <!-- data creazione account -->
+						<h6 class="text-center" style="position: relative; top: -50px; color: #BACBE2;">Creato il <%= utente.getDataCreazione() %></h6>
+						<!-- fine data creazione account -->
+						
+						<!-- inizio bottone impostazioni -->
+						<a href="./user.jsp" type="button" class="btn btn-light" style="position: relative; top: -50px; left: 150px;">Impostazioni</a>
+				    	<!-- fine bottone impostazioni -->
+				    
 				    </div>
-				    <!-- fine nome -->
+				    <!-- fine dati -->
+			    </div>
+			    <!-- fine intestazione -->
+			    </div>
 			    
-			    </div>
-			</div>
-		
-			<!-- data creazione account -->
-			<h6 style="color: #BACBE2;">Creato il <%= utente.getDataCreazione() %></h6>
-			<!-- fine data creazione account -->
+				<h1 style="color:white; text-align: center; margin-top: 0px; margin-bottom: 80px">PLAYLIST</h1>
+				
+				<!-- inizio playlist -->
+				<div class="container">
+					<!-- forse si potrebbe mettere una linea opp -->		    
+				    <div class="container">
+						<!-- inizio card -->
+						<div class="row row-cols-1 row-cols-md-3 g-4">
+							<%if (playlists != null && !playlists.isEmpty()){ %>
+							    <%for (Playlist playlist : playlists) {%>
+							  <div class="col-md-4 d-flex justify-content-center mb-3">
+							  
+							    <div class="card">
+							      <img src="<%= playlist.getFoto() %>" class="card-img-top" alt="..." >
+							      <div class="card-body text-center">
+							        <a class="card-title h5" href="playlist?id=<%= playlist.getId() %>"><%= playlist.getTitolo() %></a>
+							      </div>
+							    </div>
+							  </div>
+							   <%} %>
+							<% } else { %>
+						    	<span>Non ci sono ancora playlist</span>
+						    <%} %>
+						</div>
+						<!-- fine card -->
+					</div>
+				</div>
+				<!-- fine playlist -->
 			
-			<!-- forse si potrebbe mettere una linea opp -->
-			
-			<%if (playlists != null && !playlists.isEmpty()){ %>
-			    <%for (Playlist playlist : playlists) {%>
-			    <div class="row">
-			    	
-			    	<a href="playlist?id=<%=playlist.getId()%>">
-			    	<div class="col-2">
-			    		<img src="<%=playlist.getFoto()%>">
-			    	</div>
-			    	<div class="col-10">
-			    		<span><%=playlist.getTitolo()%></span>
-			    	</div>
-			    	</a>
-			    	
-			    </div>
-			    <%} 
-			} else { %>
-		    	<span>Non ci sono ancora playlist</span>
-		    <%} %>
 			
 		</main>
 		<!-- inizio footer -->

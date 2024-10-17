@@ -9,13 +9,16 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-public class LogoutServlet extends HttpServlet {
+public class ProfiloUtenteServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
-		session.invalidate();
-		response.sendRedirect("index.jsp");
+		response.sendRedirect("utente-profilo.jsp");
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 	}
 
 }

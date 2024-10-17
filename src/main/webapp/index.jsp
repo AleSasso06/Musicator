@@ -75,20 +75,15 @@
     <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
     <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
 
-    <main class="overflow-hidden">
         <div class="pt-3"></div>
-
 
         <div class="svg-container mt-3 pt-3">
            <img alt="logo" src="images/logo header.svg">
         </div>
         
-      <!-- pulsante per tornare all'index -->
-        <a href="index.jsp" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-      <!-- fine pulsante per tornare all'index -->
        
         <!-- GLOBAL TOP 200 -->
-        <div class="py-5"></div>
+        <div class="py-4"></div>
         <div class="container text-center mb-4"  data-aos="fade-up">
             <p class="text-secondary fw-bold fs-5 mb-0">GLOBAL TOP 200</p>
             <h2 class="h1 fw-bold">Top songs being discovered around the world right now</h2>
@@ -98,7 +93,7 @@
             </div>
         </div>
         <!-- TOP 200 ALBUMS -->
-        <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
+        <div class="container pt-4 pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
             <h2 class="h3 fw-bold mb-0">Global Top 200 Chart</h2>
             <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
         </div>
@@ -240,13 +235,12 @@
 
             </div>
         </div>
- </div>
-  </div>              
+            
                 <!-- paginazione (puntini) -->
                 <div class="swiper-pagination"></div>
         
         <!-- DISCOVER ITALY -->
-        <section class="bg-body-dark py-5">
+        <section class="bg-body-dark py-4">
             <div class="container text-center">
                 <img class="rounded-circle border border-white border-5 shadow"
                     src="images/images/logoV.svg" alt=""
@@ -318,8 +312,7 @@
                     <!-- paginazione (puntini) -->
                     <div class="swiper-pagination"></div>
         </section>
-
-    </main>
+  
 
 <%@ include file="footer.jsp" %>
  
