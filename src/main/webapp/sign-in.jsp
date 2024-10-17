@@ -26,7 +26,9 @@
 	</head>
 
 	<body >
-	
+	<div class="container">
+	   <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+	   </div>
 		
 		<div class="container-sign-in mx-auto ">
 			<form action="registrati" method="post">
