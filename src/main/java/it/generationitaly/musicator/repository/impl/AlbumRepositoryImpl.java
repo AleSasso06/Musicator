@@ -127,7 +127,7 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String sql = "FROM Album a inner join Genere g on album.genere_id = genere.id WHERE g.id = :id";
+			String sql = "FROM Album a INNER JOIN Genere g ON a.genere_id = g.id WHERE g.id = :id";
 			TypedQuery<Album> query = em.createQuery(sql, Album.class);
 			query.setParameter("id", id);
 			album = query.getResultList();
