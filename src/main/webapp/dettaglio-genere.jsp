@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Dettaglio Genere</title>
+    <title>Musicator -  Genere</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style2.css">
     <style>

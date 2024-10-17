@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Musicator - Playlist</title>
 </head>
 <body>
 	<% Playlist playlist = (Playlist)request.getAttribute("playlist"); %>
