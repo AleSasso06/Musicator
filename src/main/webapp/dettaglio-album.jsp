@@ -5,7 +5,7 @@
 <%@ page import ="java.util.List" %>
 
 <!DOCTYPE html>
-<html>   
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Musicator - Album</title>
@@ -42,16 +42,17 @@
 <body>
 <%@ include file="nav.jsp" %>
 <%Album album = (Album) request.getAttribute("album"); %>
-<%List <Brano> brani = album.getBrano(); %>
-<%List<Playlist> playlists = utente.getPlaylist(); %>
+<% List <Brano> brani = album.getBrano(); %>
 <div class="pt-3"></div>
-
-
-             <div class="svg-container mt-3">
-           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
-        </div>
-		<a href="albums" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-
+		
+		<!-- Inizio Logo -->
+	        <div class="svg-container mt-3">
+	           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+	        </div>
+        <!-- Fine Logo -->
+ 	<!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+		
 		    <!-- nome album -->
 		    <div class="col-md-4 text-md-start  text-center">
 		       <picture>
@@ -60,82 +61,7 @@
 		    </div>
       
         <div class="container">
-	        <div class="row">
 		        <div class="col">
-<<<<<<< HEAD
-			        <h1 class="display-3 text-light text-center"   style="position:relative; right: -450px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
-	       </div> 
-       
-	        <div class="col-8 mt-4 ">
-		        <ul style="list-style-type:none; color:white; text-align: justify">
-			         <li>Artista: <%=album.getArtista().getPseudonimo() %></li>
-			         <li>Genere: <%=album.getGenere().getNome() %></li>
-			         <li>Durata: <%=album.getDurata() %></li>
-			         <li>Data di Uscita: <%=album.getDataUscita() %></li>
-			         <li>Descrizione: <%=album.getDescrizione() %></li>
-			         <li><%=album.getBrano().size() %> brani</li>
-		        </ul>
-		      </div>  
-	        </div>
-	      </div>
-        
-        <div class="container min-vh-10 d-flex  justify-content-center mt-5">
-   <h1 style="color:white" > Elenco brani</h1>
-</div>
-
- <!-- Griglia delle card -->
-    <div class="row justify-content-center">
-        <% if (!brani.isEmpty()) { %>
-            <% for (Brano brano : brani) { %>
-                <div class="col-12 mb-3 d-flex justify-content-center">
-                    <div class="card song-card">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
-                            </div>
-                            <div class="col">
-                                <div class="card-body p-2">
-                                    <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-                                        <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
-                                    </a>
-                                    
-                                     <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
-                                </div>
-                            </div>
-                             
-                            <!-- Button trigger modal -->
-                            <div class="col-auto">
-								<button style="margin-right: -30px" type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#exampleModal">
-									<i class="bi bi-plus"></i>
-								</button>
-							</div>
-							
-							<!-- Modal -->
-							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog">
-							    <div class="modal-content">
-							      <div class="modal-header">
-							        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-							        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							      </div>
-							      <div class="modal-body">
-							      	<% for (Playlist playlist : playlists) { %>
-							      		<img src=<%= playlist.getFoto() %>>
-							      	<% } %>
-							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-							        <button type="button" class="btn btn-primary">Save changes</button>
-							      </div>
-							    </div>
-							  </div>
-							</div>
-                            <div class="col-auto">
-                                 <a class="btn btn-play" href="<%= brano.getYtLink() %>">
-                                    <i class="bi bi-play-circle-fill"></i>
-                                </a>
-                            </div>
-=======
 			        <h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
 	       		</div> 
 	    
@@ -170,46 +96,67 @@
                                 <b>Data di Uscita:</b> <%= album.getDataUscita() %><br>
                                 <b> <%= album.getBrano().size() %> brani </b>
                             </p>
->>>>>>> refs/heads/dettaglio_brano_modifiche_dany
                         </div>
                     </div>
                 </div>
-            <% } %>
-        <% } else { %>
-            <p>Nessun brano trovato.</p>
-        <% } %>
-    </div>
-</div>
+            </div>
+
+
+			        </div>
+			    </div>
+			</div>
+          </div>
 
 	
-	
-
-	
-
-<!-- <div class="container">
-<ol >
-       <li style="padding:20px; margin-bottom: 5px; background-color:white ;  border-radius: 4px;">Foto-Titolo canzone 
-       </li>
-    </ol>
-    
-</div> -->
+		
+		<div class="container min-vh-10 d-flex justify-content-center mt-5 pt-2 py-3">
+		    <h1 style="color:white"> Elenco brani</h1>
+		</div>
+		
+		<!-- Griglia delle card -->
+		<div class="row justify-content-center">
+		    <% if (!brani.isEmpty()) { %>
+		        <% for (Brano brano : brani) { %>
+		            <div class="col-12 mb-3 d-flex justify-content-center">
+		                <div class="card song-card">
+		                    <div class="row no-gutters align-items-center">
+		                        <div class="col-auto">
+		                            <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+		                        </div>
+		                        <div class="col">
+		                            <div class="card-body p-2">
+		                                <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
+		                                    <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
+		                                </a>
+		                                <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
+		                            </div>
+		                        </div>
+		                        <div class="col-auto">
+		                            <a class="btn btn-play" href="<%= brano.getYtLink() %>">
+		                                <i class="bi bi-play-circle-fill"></i>
+		                            </a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        <% } %>
+		    <% } else { %>
+		        <p>Nessun brano trovato.</p>
+		    <% } %>
+		</div>
 
 <%@ include file="footer.jsp" %>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <!-- Swiper JS library -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- headroom JS library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js" integrity="sha512-9UsrKTYzS9smDm2E58MLs0ACtOki+UC4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- AOS JS library-->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Script locali -->
-    <script src="assets/javascript/bs5.js"></script>
-	<!-- Bootstrap Js -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<!-- Swiper JS library -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- headroom JS library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js" integrity="sha512-9UsrKTYzS9smDm2E58MLs0ACtOki+UC4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets/javascript/bs5.js"></script>
+<!-- Bootstrap Js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
