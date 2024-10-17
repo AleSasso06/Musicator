@@ -16,7 +16,7 @@
 	            margin-top:-60px;
 	            margin-bottom: 50px;
 	            max-width: 500px;           
-	            padding: 20px;              
+	            padding: 70px;              
 	            background-color: white;   
 	            border-radius: 10px;    
 	            
@@ -35,7 +35,7 @@
 					<h1 style= "text-align:center "class="mb-3">Registrazione</h1>
 					<div  class="form-row">
 						
-						<div class="form-row col-md-20">
+						<div class="form-row col-md-20 mb-1">
 							<form id="uploadForm">
 								<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
 								<br><br>
@@ -45,7 +45,7 @@
 							</form>
 						</div>
 						
-						<div class="form-row col-md-20">
+						<div style="margin-top: -50px"class="form-row col-md-20 ">
 						    <label class="mt-3" for="input-nome">Nome</label>
 						    <input type="text" class="form-control" id="input-nome" name="nome" required>
 						</div>
