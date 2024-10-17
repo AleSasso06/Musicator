@@ -42,7 +42,8 @@
 <body>
 <%@ include file="nav.jsp" %>
 <%Album album = (Album) request.getAttribute("album"); %>
-<% List <Brano> brani = album.getBrano(); %>
+<%List <Brano> brani = album.getBrano(); %>
+<%List<Playlist> playlists = utente.getPlaylist(); %>
 <div class="pt-3"></div>
 
 
@@ -100,6 +101,34 @@
                                      <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
                                 </div>
                             </div>
+                             
+                            <!-- Button trigger modal -->
+                            <div class="col-auto">
+								<button style="margin-right: -30px" type="button" class="btn btn-play" data-bs-toggle="modal" data-bs-target="#exampleModal">
+									<i class="bi bi-plus"></i>
+								</button>
+							</div>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+							        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							      </div>
+							      <div class="modal-body">
+							      	<% for (Playlist playlist : playlists) { %>
+							      		<img src=<%= playlist.getFoto() %>>
+							      	<% } %>
+							      </div>
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							        <button type="button" class="btn btn-primary">Save changes</button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
                             <div class="col-auto">
                                  <a class="btn btn-play" href="<%= brano.getYtLink() %>">
                                     <i class="bi bi-play-circle-fill"></i>
