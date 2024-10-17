@@ -84,6 +84,7 @@
 		
     <a type="button" class="btn btn-secondary btn-lg w-100 button-spacing" href="genere?id=<%= genere.getId() %>">
         <%= genere.getNome() %>
+        <%= genere.getId() %>
         </a>
 
     

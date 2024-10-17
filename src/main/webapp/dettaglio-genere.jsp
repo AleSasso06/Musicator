@@ -50,101 +50,95 @@
 </head>
 <body>
 
-   
+<header>
     <%@ include file="nav.jsp" %>
+    	</header>
     
-    <div class="container">
-	 <br>
-	
-<!-- 
+   
+   <%Genere genere = (Genere)request.getAttribute("genere"); %>
+	<!-- Inizio Logo -->
+	<div class="svg-container mt-3">
+           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+           <!-- Fine Logo -->
+           
+   
+       
+<!--  
 <form action="inserisciGenere" method="POST">
 <div id="genereButtons" class="d-grid gap-2 col-6 mx-auto"></div>
 <h1 class="text-center my-5" style="color: #E3F2FD;">Elenco Generi Musicali</h1>
 </form>  -->
-	</div> 
-    <div class="mb-3">
-        <label for="nomeGenere" class="form-label">ricerca genere</label>
-        <input type="text" class="form-control" id="nomeGenere" name="nomeGenere" required>
-    </div>
-  
-        <div class="mb-3">
- <form action="ricerche_specifiche" method="get" class="input-group mb-3">
-        <label for="artisti" class="form-label">Brani</label>
-        <input type="text" class="form-control" id="artisti" name="artisti" placeholder="Brani">
-   
-    </form>
-     </div>
 
-            <% 
-            List<Brano> brani = (List<Brano>) request.getAttribute("brani"); 
-            if (brani != null && !brani.isEmpty()) { 
-            %>
-                <% for (Brano brano : brani) { %>
-                 
-                    <div class="col-12 mb-3 d-flex justify-content-center">
-                    <div class="card song-card">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <img src="<%= brano.getFoto() %>" height="110" class="rounded song-img" alt="...">
-                            </div>
-                            <div class="col">
-                                <div class="card-body p-2">
-                                    <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-                                        <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
-                                    </a>
-                                     <h6 class="card-title text-start">da inserire Album?</h6>
-                                     <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                    
-                        <a href="brano?id=<%= brano.getId() %>" class="text-white"><%= brano.getTitolo() %></a>
-                    </div>
-                                             
-                        </div>
-                    </div>
-                </div>
-                <% } %>
-            <% 
-            } else {  %>
-                <p></p>
-            <% 
-            } 
-            %>
-    <div class="mb-3">
+       
+  <div class="container justify-content-center mt-5">
     	<form action="ricerche_specifiche" method="get" class="input-group mb-3">
-        <label for="album" class="form-label">Album </label>
-        <input type="text" class="form-control" id="album" name="album" placeholder="Album">
+        <label for="brani" class="form-label"></label>
+        <input type="text" class="form-control" id="brani" name="brani" placeholder="Brani">
          </form>
+   <%  List<Brano> brani = genere.getBrani();	 %>
+ 
+        	<!-- Griglia delle card -->
+		<div class="row">
+		<% if (brani != null && !brani.isEmpty()) { %>
+		<h2 style="margin-bottom: 15px;">Brani</h2>
+			<% for (Brano brano : brani) { %>
+			<div class="col-md-6 mb-3">
+				<div class="card song-card">
+					<div class="row no-gutters align-items-center">
+						<div class="col-auto">
+							<img
+								src="<%=brano.getAlbum().get(0).getFoto()%>"
+								height="110" class="rounded song-img" alt="...">
+						</div>
+						<div class="col">
+							<div class="card-body">
+								<a class="card-title h5" href="brano?id=<%= brano.getId() %>">
+									<h5 class="card-title"><%= brano.getTitolo() %></h5>
+								</a>
+								<!-- <a href="artista?id=<% // %>"><p class="text-dark card-text"><% // %></p></a> -->
+							</div>
+						</div>
+						<div class="col-auto">
+							<a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
+								<i class="bi bi-play-circle-fill"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<% } %>
+			<% } else { %>
+			<p></p>
+		<% } %>
+			<!-- Ripeti per altre card -->
+		</div>
+
+
+   
+   
+            <% 
+            List<Album> albums = genere.getAlbum();   %>
         
-            <% 
-            List<Album> albums = (List<Album>) request.getAttribute("album"); 
-            if (albums != null && !albums.isEmpty()) { 
-            %>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <% for (Album album : albums) { %>
-                         <div class="col-md-4 d-flex justify-content-center mb-3">
-			  
-			    <div class="card">
-                                <img src="images/album.jpg" class="card-img-top" alt="Copertina album">
-                                
-                                    <h5 class="card-title"><%= album.getTitolo() %></h5>
-                                    <a href="album?id=<%= album.getId() %>" class="btn btn-primary">Visualizza Album</a>
-                                </div>
-                            </div>
-                       </div>
-                    <% } %>
-           
-            <% 
-            } else { 
-            %>
-                <p></p>
-            <% 
-            } 
-            %>
-    </div>
-    
-    
+  <% if (albums != null && !albums.isEmpty()) { %>
+			<h2 style="margin-bottom: 15px; margin-top: 15px">Album</h2>
+			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+			<% for (Album album : albums) { %>
+				<a class="card-title h5" href="album?id=<%= album.getId() %>">
+					<div class="col-p-3 mx-4 mb-4">
+						<div class="card" style="width: 275px;">
+							<img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5 class="card-title text-center"><%= album.getTitolo() %></h5>
+							</div>
+						</div>
+					</div>
+				</a>
+			<% } %>
+			</div>
+		<% } else { %>
+			<p></p>
+		<% } %>  
     
   
 <%@ include file="footer.jsp" %>
