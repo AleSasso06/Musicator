@@ -50,14 +50,14 @@
 	    <div class="col-md-4">
 	      <picture>
 	        <img src="<%=artista.getFoto() %>" class="img-fluid img-thumbnail rounded-circle" alt="..." 
-		       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -50px; top: -200px; z-index: 10;">
+		       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -510px; top: -350px; z-index: 10;">
 	      </picture>
 	    </div>
 	    <!-- fine foto -->
     
 	    <!-- nome -->
 	    <div class="col-md-4 text-md-start  text-center">
-	         <h1 class="display-3 text-light text-center" style="position: relative; top: -180px;"><%= artista.getPseudonimo() %></h1>
+	         <h1 class="display-3 text-light text-center" style="position: relative; top: -120px;"><b> <%= artista.getPseudonimo() %></b></h1>
 	    </div>
 	    <!-- fine nome -->
     	</div>
@@ -79,8 +79,8 @@
       
 		<!-- inizio album -->
 		<hr>
-		<h3 class="text-light text-center" >Album</h3>
-			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+		<h3 class="text-light text-center pt-5" >Album</h3>
+			<div class="container min-vh-10 d-flex  justify-content-center mt-5 pt-2">
 			<% System.out.println(albums);
 			for (Album album : albums) { %>
 				<a class="card-title h5" href="album?id=<%= album.getId() %>">
