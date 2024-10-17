@@ -7,12 +7,9 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 import it.generationitaly.musicator.entity.Album;
-import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.repository.AlbumRepository;
-import it.generationitaly.musicator.repository.BranoRepository;
 import it.generationitaly.musicator.repository.impl.AlbumRepositoryImpl;
 
 public class AlbumServlet extends HttpServlet {
@@ -33,4 +30,3 @@ public class AlbumServlet extends HttpServlet {
 	}
 
 }
-//adesso dovrei popolare i brani di questo album con l'album avente questo id, perciò dovrei creare una servlet che mi consente di avere la list dei brani già popolata dell'album'

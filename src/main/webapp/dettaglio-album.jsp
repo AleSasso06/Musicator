@@ -70,7 +70,7 @@
 	<div class="card mb-3 ms-3" style="max-width: 1000px;">
 		<div class="row g-0">
 			<div class="col-md-4">
-				<img src="<%=brano.getFoto()%>" class="img-fluid rounded-start"
+				<img src="<%=brano.getAlbum().get(0).getFoto()%>" class="img-fluid rounded-start"
 					alt="...">
 			</div>
 			<div class="col-md-8">
