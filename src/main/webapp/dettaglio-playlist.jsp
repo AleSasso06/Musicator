@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ page import="it.generationitaly.musicator.entity.*" %>
@@ -20,6 +21,7 @@
 </head>
 <body>
 	<% Playlist playlist = (Playlist)request.getAttribute("playlist"); %>
+	<% List <Brano> brani = playlist.getBrani(); %>
 	<div class="container">
 	<div class="row">
 		<img src="logo header.svg"> <!-- sarebbe il logo Musicator con tutte le barre del suono -->
@@ -28,6 +30,34 @@
 		</div>
 		<div class="col-8">
 			<!-- ci andrebbe il titolo del brano -->
+			<%for (Brano brano : brani){%>
+<div class="container mt-5 ">
+
+	<div class="card mb-3 ms-3" style="max-width: 1000px;">
+		<div class="row g-0">
+			<div class="col-md-4">
+				<img src="<%=brano.getAlbum().get(0).getFoto()%>" class="img-fluid rounded-start"
+					alt="...">
+			</div>
+			<div class="col-md-8">
+				<div class="card-body">
+					<form action="brano" method="get">
+
+						 <a class="card-title h3" href="brano?id=<%= brano.getId() %>"><%= brano.getTitolo() %></a>
+						<!-- per il momento non scrivere l'album e arrivarci attraverso servlet?-->
+						<p style="color:black" class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
+						<!-- inserire l'artista sempre attraverso lo stesso giro -->
+						<p class="card-text">
+							<small class="text-body-secondary">Artista </small>
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</div>
+<%} %>
 		</div>
 	</div>
 	<div class="row">	
