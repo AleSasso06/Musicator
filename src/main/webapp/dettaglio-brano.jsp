@@ -43,8 +43,7 @@
 	<button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
    	 <main class="overflow-hidden">
 
-	<!-- pulsante per tornare all'index -->
-     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+	
 			
 <%
 Brano brano = (Brano) request.getAttribute("brano");
@@ -76,6 +75,9 @@ Brano brano = (Brano) request.getAttribute("brano");
         </div>
     </div>
     <!-- fine card -->
+
+<!-- pulsante per tornare all'index -->
+     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
 
     <!-- testo della canzone -->
      <div class="row justify-content-center mt-4">
