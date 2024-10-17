@@ -6,36 +6,46 @@
 		
 		<meta charset="UTF-8">
 		<title>Musicator - Registrazione</title>
-		<link rel="stylesheet" type="text/css"
-			href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-		<link rel="stylesheet" href="style2.css">
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+		 <!-- Bs Icons -->
+	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		 <!-- css locali -->
+    	 <link rel="stylesheet" href="style2.css">
+		<!-- Import Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	    <!-- Swiper css -->
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	 
 		<style>
-		.container {
+		.container-sign-in {
 	            
-	            margin-top:50px;
+	            margin-top:-80px;
 	            margin-bottom: 50px;
 	            max-width: 500px;           
-	            padding: 20px;              
+	            padding: 70px;              
 	            background-color: white;   
 	            border-radius: 10px;    
-	            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	            
 	    }
 		</style>
 		
 	</head>
 
 	<body >
-
-		<div class="container  min-vh-100 d-flex  justify-content-center  align-items-center">
+	
+	
+	<div class="container">
+	   <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+	   </div>
 		
+		
+		<div class="container-sign-in mx-auto ">
 			<form action="registrati" method="post">
-			
-				<div  class=" container">
-					<h1 style= "text-align:center "class="mb-3">Registrazione</h1>
-					<div  class="form-row">
+			<h1 style= "text-align:center "class="mb-3">Registrazione</h1>
+					
 						
-						<div class="form-row col-md-20">
+						<div class="form-row col-md-20 mb-1">
 							<form id="uploadForm">
 								<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
 								<br><br>
@@ -45,7 +55,7 @@
 							</form>
 						</div>
 						
-						<div class="form-row col-md-20">
+						<div style="margin-top: -50px"class="form-row col-md-20 ">
 						    <label class="mt-3" for="input-nome">Nome</label>
 						    <input type="text" class="form-control" id="input-nome" name="nome" required>
 						</div>
@@ -71,10 +81,10 @@
 						</div>
 						<br>
 						<button class="custom-register-btn" type="submit" >Registrati</button>
-					</div>
-				</div>
+					
+				
 			</form>
-			
+			</div>
 			<!-- <div class="form-group">
 			    <label for="inputAddress">Address</label>
 			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
@@ -111,12 +121,20 @@
 		   
 		</div>
 		
-		<footer class="footer bg-light text-center py-3">
-			<div class="container">
-				<p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
-			</div>
-		</footer>
+		<%@ include file="footer.jsp" %>
 
-	<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- Swiper JS library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- headroom JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js" integrity="sha512-9UsrKTYzS9smDm2E58MLs0ACtOki+UC4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- AOS JS library-->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Script locali -->
+    <script src="assets/javascript/bs5.js"></script>
+	<!-- Bootstrap Js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
