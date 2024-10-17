@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Mussicator - Utente</title>
+		<title>Musicator - Utente</title>
 		 <!-- Bootstrap css -->
  		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -41,7 +41,7 @@
 				    <div class="col-md-4">
 				      <picture>
 				        <img src="<%=utente.getFoto() %>" class="img-fluid img-thumbnail rounded-circle" alt="..." 
-					       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -510px; top: -350px; z-index: 10;">
+					       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -500px; top: -280px; z-index: 10;">
 				      </picture>
 				    </div>
 				    <!-- fine foto -->
@@ -50,16 +50,16 @@
 				    <div class="col-md-4 text-md-start  text-center">
 					    
 					    <!-- nome -->
-					    <h1 class="display-3 text-light text-center" style="position: relative; top: -120px;">
+					    <h1 class="display-3 text-light text-center" style="position: relative; top: -50px;">
 					    <b> <%= utente.getUsername() %></b></h1>
 					    <!-- fine nome -->
 					    
 					    <!-- data creazione account -->
-						<h6 class="text-center" style="position: relative; top: -120px; color: #BACBE2;">Creato il <%= utente.getDataCreazione() %></h6>
+						<h6 class="text-center" style="position: relative; top: -50px; color: #BACBE2;">Creato il <%= utente.getDataCreazione() %></h6>
 						<!-- fine data creazione account -->
 						
 						<!-- inizio bottone impostazioni -->
-						<button type="button" class="btn btn-light" style="position: relative; top: -120px; left: 150px;">Impostazioni</button>
+						<a href="./user.jsp" type="button" class="btn btn-light" style="position: relative; top: -50px; left: 150px;">Impostazioni</a>
 				    	<!-- fine bottone impostazioni -->
 				    
 				    </div>
@@ -83,7 +83,7 @@
 							    <div class="card">
 							      <img src="<%= playlist.getFoto() %>" class="card-img-top" alt="..." >
 							      <div class="card-body text-center">
-							        <a class="card-title h5" href="album?id=<%= playlist.getId() %>"><%= playlist.getTitolo() %></a>
+							        <a class="card-title h5" href="playlist?id=<%= playlist.getId() %>"><%= playlist.getTitolo() %></a>
 							      </div>
 							    </div>
 							  </div>
