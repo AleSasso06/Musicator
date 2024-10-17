@@ -35,7 +35,7 @@
 
 		<!-- Inizio Logo -->
         <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
         </div>
         <!-- Fine Logo -->
        
