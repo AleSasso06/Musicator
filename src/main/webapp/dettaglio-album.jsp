@@ -62,6 +62,7 @@
         <div class="container">
 	        <div class="row">
 		        <div class="col">
+<<<<<<< HEAD
 			        <h1 class="display-3 text-light text-center"   style="position:relative; right: -450px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
 	       </div> 
        
@@ -134,6 +135,42 @@
                                     <i class="bi bi-play-circle-fill"></i>
                                 </a>
                             </div>
+=======
+			        <h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
+	       		</div> 
+	    
+	    			  <!-- Descrizione dell'album fuori dalla card -->
+			            <div class="text-center" style="color: white">
+			                <h5><b>Descrizione:</b></h5>
+			                <p style="color: white;"> 
+			                    <%= album.getDescrizione() %>
+			                </p>
+			            </div>
+	   
+	   
+	    
+		<div class="container mt-5">
+		    <div class="row justify-content-center">
+           		 <div class="col-md-8">
+            <!-- Card -->
+            <div class="card album-card mt-3 mb-4">
+                <div class="row no-gutters align-items-center">
+                    <!-- Immagine dell'artista rotonda (a sinistra) -->
+                    <div class="col-md-4 text-center">
+                        <img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150">
+                    </div>
+                    <!-- Dettagli dell'album (a destra) -->
+                    <div class="col-md-8">
+                        <div class="card-body text-start"> <!-- Allineamento a sinistra -->
+                            <h3 class="card-title"><b><%= album.getTitolo() %></b></h3>
+                            <p class="card-text" style="color: black;">
+                              <b>Artista:</b> <%= album.getArtista().getPseudonimo() %><br>
+                                <b>Genere:</b> <%= album.getGenere().getNome() %><br>
+                                <b>Durata:</b> <%= album.getDurata() %><br>
+                                <b>Data di Uscita:</b> <%= album.getDataUscita() %><br>
+                                <b> <%= album.getBrano().size() %> brani </b>
+                            </p>
+>>>>>>> refs/heads/dettaglio_brano_modifiche_dany
                         </div>
                     </div>
                 </div>
