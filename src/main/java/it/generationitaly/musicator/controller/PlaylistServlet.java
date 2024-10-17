@@ -7,7 +7,9 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
+import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.entity.Playlist;
 import it.generationitaly.musicator.repository.PlaylistRepository;
 import it.generationitaly.musicator.repository.impl.PlaylistRepositoryImpl;
@@ -24,8 +26,22 @@ public class PlaylistServlet extends HttpServlet {
 		
 		Playlist playlist = playlistRepository.findById(id);
 		
+		if(playlist != null) {
+			System.out.println(playlist); 
+		}
+		
+		List<Brano> brani = playlist.getBrani();
+		if(brani != null && !brani.isEmpty()) {
+			for(Brano brano : brani) {
+				System.out.println(brano);
+			}
+		} else {
+			System.out.println("nessun brano");
+		}
+		
+		
 		request.setAttribute("playlist", playlist);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio_playlist.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-playlist.jsp");
 		requestDispatcher.forward(request, response);
 	
 	}
