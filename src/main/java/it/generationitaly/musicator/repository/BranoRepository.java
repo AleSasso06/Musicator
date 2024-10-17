@@ -20,4 +20,6 @@ public interface BranoRepository extends JpaRepository<Brano, Long>{
 	List<Brano> findByGenere(String genere);
 	
 	List<Brano> findByLingua(String lingua);
+	
+	List<Album> findAlbumsByBrano(Long id);
 }

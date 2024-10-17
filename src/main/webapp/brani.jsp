@@ -49,8 +49,9 @@
 				<div class="card song-card" style="max-width: 800px; opacity: 0.7; transition: opacity 0.5s ease;">
 					<div class="row no-gutters align-items-center">
 						<div class="col-3">
+						 <% if (!brano.getAlbum().isEmpty()) { %>
 							<img
-								src=<%= brano.getFoto() %>
+								src=<%= brano.getAlbum().get(0).getFoto() %>
 								height="110" class="rounded song-img" alt="...">
 						</div>
 						<div class="col">
@@ -60,7 +61,7 @@
 									<p class="card-text"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
 									
 								</a>
-								
+								<%} %>
 							</div>
 						</div>
 						<div class="col-auto">
