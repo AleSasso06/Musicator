@@ -57,9 +57,9 @@ Brano brano = (Brano) request.getAttribute("brano");
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
                 <div class="card-body">
-                    <h4 class="card-title"><%=brano.getTitolo() %></h4>
-                     <a class="card-title h6" href="album?id=<%= brano.getAlbum().get(0).getId() %>"">
-                    <h6 class="card-title"><%=brano.getAlbum().get(0).getTitolo() %></h6>
+                    <h3 class="card-title"><%=brano.getTitolo() %></h3>
+                     <a class="card-title h5" href="album?id=<%= brano.getAlbum().get(0).getId() %>"">
+                    <h5 class="card-title"><%=brano.getAlbum().get(0).getTitolo() %></h5>
                     </a>
                     <small class="text-body-secondary"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></small>
                 </div>
@@ -77,7 +77,8 @@ Brano brano = (Brano) request.getAttribute("brano");
     <!-- fine card -->
 
     <!-- pulsante per tornare ai brani -->
-    <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+    
 
     <!-- testo della canzone -->
     <div class="row justify-content-center mt-4" style="top: -150px" >

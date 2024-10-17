@@ -14,6 +14,7 @@ INSERT INTO genere VALUES ('13','Country');
 INSERT INTO genere VALUES ('14','Synthpop');
 INSERT INTO genere VALUES ('15','Disco-funk');
 INSERT INTO genere VALUES ('16','Folk');
+INSERT INTO genere VALUES ('17','Raeggeton');
 
 -- INSERT ARTISTI
 INSERT INTO artista VALUES (
@@ -114,7 +115,80 @@ VALUES (
     'Sfera Ebbasta, pseudonimo di Gionata Boschetti, è un rapper italiano. È salito alla ribalta grazie alla pubblicazione dell''album XDVR, inciso con la collaborazione del produttore discografico Charlie Charles, ottenendo un buon successo in Italia.',
     'https://www.azalea.it/wp-content/uploads/2022/12/123986267_3911923168837741_2131548758059792753_n-e1671194204392.jpg'  
 );
-select * from artista;
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Rosalía Vila Tobella',
+    'ROSALÍA',
+    '1992-09-25',
+    'Spagnola',
+    'ROSALÍA è una cantante, cantautrice e produttrice discografica spagnola, nata il 25 settembre 1992 a Sant Esteve Sesrovires, vicino a Barcellona. È diventata famosa a livello internazionale grazie alla sua innovativa fusione di flamenco tradizionale con generi contemporanei come reggaeton, trap e pop. Con il suo album "El Mal Querer" del 2018, ROSALÍA ha rivoluzionato la scena musicale globale, conquistando numerosi premi, tra cui Grammy e Latin Grammy. La sua capacità di mescolare generi musicali diversi, unita a uno stile visivo unico, l''ha resa una delle artiste più influenti della sua generazione.',
+    'https://media-assets.vanityfair.it/photos/645384edc8b926063a87a5e1/1:1/w_1359,h_1359,c_limit/Rosalia%201.png'
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+    'Ghali Amdouni',
+    'Ghali',
+    '1993-05-21',
+    'Italiano',
+    'Ghali è un rapper e cantautore italiano, nato a Milano da genitori tunisini. È noto per il suo stile unico che mescola rap, pop e influenze arabe. Il suo album di debutto, "Ghali", è stato un successo e ha consolidato la sua posizione nella scena musicale italiana. Ghali è conosciuto anche per i suoi testi che affrontano temi di identità e multiculturalità.',
+'https://yt3.googleusercontent.com/r2zh1OlVcghWoaY1kLwENXJc6nhCyjVet9r1WQBTsTFrf0EVwry--P4yWuy6wpP5HI5NueEufQ=s900-c-k-c0x00ffffff-no-rj'
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
+VALUES (
+	'Niccolò Moriconi', 
+    'Ultimo,',
+    '1996-01-27', 
+    'Italiano', 
+    'Niccolò Moriconi nasce a Roma il 27 gennaio 1996 nel quartiere di San Basilio; figlio di Sandro Moriconi, ingegnere civile, e di Anna Sanseverino, impiegata dell''Enel, ha due fratelli maggiori di nome Lorenzo e Valerio.
+	Dagli 8 anni studia pianoforte e composizione al Conservatorio Santa Cecilia e inizia a scrivere e comporre canzoni all''età di quattordici anni. 
+	Nel 2010 inizia a frequentare la Melody Music School, dove studia canto e pianoforte; successivamente, inoltre, inizia anche a essere prodotto dalla Melody Studio Recording. Nel 2013 vince la terza edizione del concorso canoro Una voce per il Sud con il brano Regalami un sorriso, dedicato ai bambini del reparto di oncologia dell''Ospedale Bambino Gesù di Roma. 
+	Sempre nello stesso anno, in occasione di un concerto benefico, presenta un secondo brano inedito, Amo te.
+
+	Il 16 maggio 2014 viene pubblicato il singolo Una canzone che sogna, cui seguono il 6 febbraio 2015 il singolo Diamante nel cielo, brano scartato dal Festival di Sanremo 2015 e dedicato a un amico scomparso in un incidente stradale, e il 16 aprile Un uomo migliore, con la collaborazione di Giancarlo Giannini. 
+	A luglio, durante un concerto benefico per l''autismo, presenta il brano in tema Il bambino con le scarpe viola. Intanto, dal 2012 in poi, tenta la strada dei talent, iscrivendosi ai casting di Amici, X Factor e Sanremo Giovani (nelle edizioni dirette e condotte da Carlo Conti), venendo però scartato tre volte dal primo e due volte dagli altri due.
+	Nello stesso periodo, incomincia a esibirsi sui palchi dei locali romani, principalmente nel quartiere San Lorenzo, come quello di Spaghetti Unplugged, insieme ad alcuni futuri esponenti della scena musicale indipendente romana, tra cui Tommaso Paradiso e Motta.
+	Il 7 e il 16 maggio 2016 pubblica sul proprio canale YouTube i brani Fragile e Ritrova i tuoi passi.',
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ultimo_performing_in_Rome.jpg/1024px-Ultimo_performing_in_Rome.jpg' 
+);
+
+INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES (
+    'Annalisa Scarrone', 
+    'Annalisa',
+    '1985-07-05', 
+    'Italiano', 
+	'Annalisa Scarrone, nota semplicemente come Annalisa (Savona, 5 agosto 1985), è una cantautrice italiana.
+	Dopo alcune esperienze nell''ambito musicale con due gruppi, è divenuta nota come cantante solista nel 2011, partecipando alla decima edizione del talent show Amici di Maria De Filippi in cui ha ottenuto il Premio della critica, poi vinto anche l''anno dopo ad Amici Big.
+
+	Nel corso della sua carriera ha venduto oltre quattro milioni di unità sul suolo nazionale, diventando l''artista italiana con più copie vendute in era FIMI; inoltre conta oltre un miliardo di stream su Spotify.',
+    'https://statics.cedscdn.it/photos/MED_HIGH/80/97/7918097_10121848_annalisa_chi_e.jpg'
+);
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+	'William Martin Joel',
+    'Billy Joel',
+	'1949-05-09',
+	'Statunitense',
+	'William Martin Joel, detto Billy, è un cantautore, pianista e compositore statunitense.
+	Avendo venduto oltre 150 milioni di dischi in tutto il mondo, è uno degli artisti di maggior successo di tutti i tempi e il quarto solista più venduto negli Stati Uniti.',
+	'https://cdn-p.smehost.net/sites/005297e5d91d4996984e966fac4389ea/wp-content/uploads/2019/10/f9d9c240b6b7a5e3cf08b37fd9a91096.jpg'
+);
+
+INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+	'Fabrizio Cristiano De Andrè',
+    'Fabrizio De Andrè',
+	'1940-02-18',
+	'Italiana',
+	'Considerato uno dei maggiori cantautori italiani, è conosciuto anche con l''appellativo di Faber che gli dette l''amico Paolo Villaggio, con riferimento alla sua predilezione per i pastelli e le matite della Faber-Castell, oltre che per l''assonanza con il suo nome, e talvolta come "il cantautore degli emarginati" o il "poeta degli sconfitti".
+	In quasi quarant''anni di attività artistica, De André ha inciso quattordici album in studio, più alcune canzoni pubblicate solo come singoli e poi riedite in antologie. Molte sue canzoni raccontano storie di emarginati, ribelli e prostitute, e alcune per il loro valore poetico sono state accolte da antologie scolastiche già dai primi anni settanta. I testi hanno meritato a De André l''elogio del poeta Mario Luzi.
+	Insieme a Bruno Lauzi, Gino Paoli, Umberto Bindi e Luigi Tenco, è uno degli esponenti della cosiddetta scuola genovese, un nucleo di artisti che rinnovò profondamente la musica leggera italiana.
+	 È l''artista con il maggior numero di riconoscimenti da parte del Club Tenco, con sei Targhe e un Premio Tenco. La popolarità e l''alto livello artistico del suo canzoniere hanno spinto alcune istituzioni, dopo la sua morte, a dedicargli vie, piazze, parchi, teatri, biblioteche e scuole.
+	Di idee anarchiche e pacifiste,[18] è stato anche uno degli artisti che maggiormente hanno valorizzato la lingua ligure.',
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNd_THoATBKEPbju0JHvydwEzB1rAW9xLMiQ&s'
+);
+
 -- INSERT ALBUM da fare dopo aver popolato artista e genere
 INSERT INTO album VALUES (
 	'1',
@@ -297,6 +371,84 @@ VALUES (
     'https://i.scdn.co/image/ab67616d0000b2733c0eada9fb45ba9d43116f1d',
     8,  
     3
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Motomami',
+    'Motomami è il terzo album in studio della cantante spagnola ROSALÍA, pubblicato il 18 marzo 2022. L''album mescola flamenco, reggaeton, trap e sperimentazione elettronica, rappresentando un''evoluzione stilistica per l''artista. Con singoli di successo come "Saoko", "Chicken Teriyaki", e "La Fama", l''album ha ricevuto lodi per la sua innovatività musicale e la sua forte identità visiva. "Motomami" riflette la dualità della forza (Moto) e della vulnerabilità (Mami) in un''esplorazione profonda delle emozioni.',
+    2520,
+    '2022-03-18',
+    'https://www.lafeltrinelli.it/images/0194399629727_0_424_0_75.jpg',  
+    9,
+    17
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'DNA',
+    'DNA è il secondo album in studio del rapper italiano Ghali, pubblicato il 26 ottobre 2018. L’album esplora temi di identità, cultura e la vita in un contesto urbano. Con una produzione moderna e influenze di vari generi, "DNA" è un lavoro che riflette la crescita artistica di Ghali. Include hit come "Cara Italia" e "Good Times".',
+    2430,
+   '2020-11-13',
+    'https://m.media-amazon.com/images/I/716FWRlrPrL._UF1000,1000_QL80_.jpg',   
+    10,
+    4  
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES (
+    'Altrove', 
+	'Altrove è il sesto album in studio del cantautore italiano Ultimo, pubblicato il 17 maggio 2024.',
+    1560,
+    '2024-05-17', 
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ultimo_performing_in_Rome.jpg/1024px-Ultimo_performing_in_Rome.jpg',
+    11,
+    2
+);
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES (
+    'Solo', 
+	'Solo è il quarto album in studio del cantautore italiano Ultimo, pubblicato il 22 ottobre 2021.',
+    3529, -- durata? come la mettiamo? in secondi?
+    '2021-10-22', 
+    'https://www.romatoday.it/~media/horizontal-hi/48851025215895/ultimo-solo-cover-def-2.jpg',
+    11,  
+    2 
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES (
+    'E poi siamo finiti nel vortice', 
+	'E poi siamo finiti nel vortice è l''ottavo album in studio della cantante italiana Annalisa, pubblicato il 29 settembre 2023 dalla Warner Records.',
+	2280,
+    '2024-05-17', 
+    'https://ondarock.it/images/cover/Annalisa-Copertina-E-poi-siamo-finiti-nel-vortice_1695992716.jpg',
+    12,  
+    2
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id ) VALUES(
+	'The Stranger',
+	'The Stranger è il quinto album discografico in studio del cantautore statunitense Billy Joel, pubblicato nel settembre del 1977.
+	È stato inserito nella lista dei 500 migliori album di tutti i tempi secondo la rivista Rolling stone alla posizione 70.',
+	'2400',
+	'1977-09-29',
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVFvMFkVicwNGLtQaMBg1fdJWVtrMXbT6Zw&s',
+	'13',
+	'1'
+);
+
+INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES(
+	'La buona novella',
+	'Il LP è un concept album (caratteristica comune ad altri lavori discografici di De André) tratto dalla lettura di alcuni Vangeli apocrifi (in particolare, come riportato nelle note di copertina, il Protovangelo di Giacomo ed il Vangelo arabo dell''infanzia), pubblicato nell''autunno del 1970 (le matrici riportano la data del 19 novembre).
+	«Avevo urgenza di salvare il cristianesimo dal cattolicesimo. - dichiarò a suo tempo De André - I vangeli apocrifi sono una lettura bellissima con molti punti di contatto con l''ideologia anarchica.[3]»
+	L''idea del disco fu del produttore Roberto Dané, che inizialmente pensava di realizzarla con Duilio Del Prete, ma poi la propose ad Antonio Casetta, che la dirottò a De André.
+	«Nel 1969 tornai da Casetta e gli sottoposi un''altra idea, che avevo intenzione di realizzare con Duilio Del Prete: un disco basato sui Vangeli apocrifi...lui, che era un grande discografico, di buon fiuto, mi ascoltò con attenzione ed alla fine disse: "Ma scusi, perché questa idea non la propone a Fabrizio De André? Sa, è un periodo che è un po'' in crisi, non sa cosa fare...". E io che cosa dovevo dire? Con De André c''era sicuramente una maggiore esposizione»(Roberto Dané)
+	Il lavoro di lettura e di scrittura dei testi, svolto con lo stesso Dané, è durato più di un anno.
+	Seguendo le caratteristiche degli Apocrifi, in questo album la narrazione della buona novella sottolinea l''aspetto più umano e meno spirituale assunto da alcune tradizionali figure bibliche (ad esempio, Giuseppe) e presta maggiore attenzione a figure minori della Bibbia, che qui invece diventano protagonisti (ad esempio Tito e Dimaco, i ladroni crocefissi insieme a Gesù).',
+	'2100',
+	'1970-11-01',
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZxXyUDfKfBffTzEtSdaRpr--fg_bRMIjPmg&s',
+	'14',
+	'16'
 );
 -- INSERT BRANI da fare dopo aver popolato l'album(e di conseguenza genere e artista)
 
@@ -7106,7 +7258,7 @@ VALUES (
 	<br>Ti ho colpita, sono Cupido (wooh)',
 	212,  
     '2018-01-18',
-    'Italiano',
+    'Italiano e Inglese',
     '',  
     'https://www.youtube.com/watch?v=jkveo88JgrA', 
     3);
@@ -7422,6 +7574,568 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=7puLc-Nw5mc', 
     3);
+    
+    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Saoko',
+    'Saoko, papi, saoko<br> Saoko, papi, saoko<br> Saoko, papi, saoko<br> Saoko, papi, saoko<br> Cambio de tono, cambio de giro<br> Cambio de voz, cambio de estilo<br> Cambio de carro, hago de todo<br> Si no me entiendes, pues no me sigas, no<br> Y, ah<br> A cada noche le llego más loca<br> Y cómo lo hago pa\' hacerme notar<br> Para montarme lo tengo que dar<br> Dale replay, vuelve a estudiar<br> Dale replay, vuelve a estudiar<br> Dale replay...',
+    137,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=6o7bCAZSxsg',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Chicken Teriyaki',
+    'Chicken teriyaki, chicken teriyaki<br> Chicken teriyaki, chicken teriyaki<br> La cuenta, mami<br> La cuenta, mami<br> Chicken teriyaki, chicken teriyaki<br> Chicken teriyaki, chicken teriyaki<br> La cuenta, mami<br> La cuenta, mami<br> Estudio en un Airbnb, en la del biza o en la de Fer<br> Dos días en el tráfico y me lo llevé pa\' la Eixample, ¿qué?',
+    122, 
+     '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=OG4gq9fCoRE',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'La Fama',
+    'Lo que pasó a ti te lo cuento<br> No creas que dolerá, no<br> Si me quieres, pero sé<br> Que no vale la pena, eh<br> Ella siempre en el medio de la gente<br> La fama es cabrona, ¿por qué será?<br> No volveré, pero aquí te quedas<br> Yo te digo algo, no confíes en ella...',
+    204, 
+'2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=e-CEd6xrRQc',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Hentai',
+    'Te quiero ride como mi bike<br> Hazme un tape modo spike<br> Yo la batí hasta que se montó<br> Segundo es chingarte, lo primero es Dios<br> Ay, qué rico Dios mío<br> Ay, qué rico, Dios mío<br> Pa\' ti y pa\' mí, a-a-ah<br> Pa\' ti y pa\' mí, a-a-ah<br> Pa\' ti y pa\' mí...',
+    165, 
+'2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=_6YCNd3ONUU',
+    17
+);
+
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Motomami',
+    'A ti te atropella un trineo<br> Caliente como el sol de junio<br> El que llevo en las venas<br> Yo no soy yanki, pero ya quisiera<br> Ey, ey, motomami, motomami, motomami<br> Ey, ey, motomami, motomami, motomami...',
+    138,  
+'2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=EslzthDFm2w',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Bizcochito',
+    'Bizcochito, bizcochito<br> Me gusta que me digas<br> Que me quieres, que me quieres<br> Que me quieres, que me quieres<br> Quiero lo que tú quieras, si tú quieres<br> Yo no sé, yo no sé qué es el amor<br> Y, ah, ah, ah...',
+    126,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=aG5C32aATKc',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Diablo',
+    'Diablo, diablo, diablo<br> Tienes la mala suerte de ser<br> El amor de mi vida, diablo<br> Que aunque no me quieras<br> Sigues haciendo ruido, diablo<br> Diablo, que yo nunca he estado en el lado oscuro<br> Y tú sí...',
+    179,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=0GMeqmqUjEQ',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Como un G',
+    'Como un G, como un G<br> Y como un G, como un G<br> Te traigo el ritmo y el flow<br> Me gusta como brillas<br> Y la noche me llama y me quiere llamar<br> Me quiere llamar...',
+    162,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=kKyIKHpqBj0',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Sakura',
+    'Sakura, yo te vi<br> Y no sé qué hacer<br> Tanta belleza en una sola flor<br> Sakura, yo te vi, yo te vi<br> Como si el mundo se parara en un segundo<br> Yo te vi...',
+    151,  
+    '2022-03-18',
+    'Spagnolo',
+    '',
+    'https://www.youtube.com/watch?v=5JeNKeb0glw',
+    17
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Good Times',
+    'Good times, good vibes<br> Viviamo la vita come un sogno<br> Solo per un attimo, balla con me...',
+    210,  -- Durata in secondi (3 minuti e 30 secondi)
+    '2020-11-13',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=w2KZGGkvLe8',
+    4
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Barcellona',
+    'Questa è una lettera a Barcellona<br> Ti ricordi di noi due,<br> In quel bar all’angolo<br> Dove ci siamo persi in un attimo? ...',  -- Aggiungi il testo completo qui, utilizzando <br> per andare a capo
+    190,  -- Durata in secondi (3 minuti e 10 secondi)
+    '2020-11-13',
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=k4uH8YBJfAI',
+    4  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Boogieman',
+    'Quando la notte arriva, io sono qui<br> Se hai paura, io ti porto via<br> Sono il boogieman, non temere... ',  -- Aggiungi il testo completo qui, utilizzando <br> per andare a capo
+    203,  
+    '2020-11-13',  
+    'Italiano',
+    '',
+    'https://www.youtube.com/watch?v=-7lqGbIE3aM',  
+    4  
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
+VALUES (
+    'Altrove',
+	'Oh, da quant''è che non sbagli senza più
+	<br>Senza fartene più una colpa?
+	<br>Oh, siamo presi e buttati al mondo noi
+	<br>Fermi in alto su questa giostra
+	<br>Dammi, dammi, dammi di più
+	<br>Da questa vita
+	<br>Oh, ti ricordi quel pomeriggio, eh?
+	<br>Oh, ti ricordi quel pomeriggio, eh?
+	<br>La mia pelle nelle tue tasche
+	<br>Oh, ti ricordi quel giorno grigio? Noi
+	<br>Stesso mare, diverse barche	
+	<br>Dammi, dammi, dammi di più
+	<br>Da questa vita
+	<br>Come stai?
+	<br>Da quant''è che non esce il sole?
+	<br>Come sai
+	<br>Non ho voglia di altre persone
+	<br>Non ho voglia di cose nuove
+	<br>Parlami, portami altrove
+	<br>Tra stelle accese e spiagge vuote
+	<br>Avanti, parlami, portami altrove
+	<br>Tra i miei testi e la tua voce
+	<br>Basta che sia altrove
+	<br>Oh, cosa c''è che non vuoi capire, eh?
+	<br>Certe cose non hanno fine
+	<br>Oh, fuori no, però dentro vive, eh
+	<br>Questa voglia di poter dire
+	<br>Dammi, dammi, dammi di più
+	<br>Da questa vita
+	<br>Come stai?
+	<br>Da quant''è che non esce il sole?
+	<br>Come sai
+	<br>Non ho voglia di altre persone
+	<br>Non ho voglia di cose nuove
+	<br>Parlami, portami altrove
+	<br>Tra stelle accese e spiagge vuote
+	<br>Avanti, parlami, portami altrove
+	<br>Tra i miei testi e la tua voce
+	<br>Basta che sia altrove
+	<br>Oh, oh, oh
+	<br>Da quant''è che non esci più?
+	<br>Che ci provi, ma cadi giù
+	<br>Come stai? Io sto bene e tu, amore?
+	<br>Oh, oh, oh
+	<br>Da quant''è che non esci più?
+	<br>Che ci provi, ma cadi giù
+	<br>Come stai? Io sto bene e tu, amore?
+	<br>Come stai?
+	<br>Da quant''è che non esce il sole?
+	<br>Come sai
+	<br>Non ho voglia di altre persone
+	<br>Non ho voglia di cose nuove
+	<br>Parlami, portami altrove
+	<br>Tra stelle accese e spiagge vuote
+	<br>Avanti, parlami, portami altrove
+	<br>Tra i miei testi e la tua voce
+	<br>Basta che sia altrove',
+    180,
+    '2024-05-17',
+    'Italiana',
+    '',
+    'https://www.youtube.com/watch?v=IpF9WqUS2S0',  -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Quando saremo vecchi', 
+	'Quando saremo vecchi avremo le montagne
+	<br>Per camminarci dentro senza le risposte
+	<br>E forse il bello è quello, parlarsi senza farlo
+	<br>Sentire che è risorsa il primo fresco a marzo
+	<br>Quando saremo vecchi ci sentiremo grandi
+	<br>E guarderemo i passi, non quello che è davanti
+	<br>Quando saremo vecchi tu resterai al mio fianco
+	<br>Con i ricordi avremo un sorriso e un po'' di pianto
+	<br>Tu mi fai credere che
+	<br>Ogni cosa parte sempre da dove sei te
+	<br>Tu mi fai credere che
+	<br>Puoi morire e dopo vivere, uoh-oh-oh-oh-oh
+	<br>Fai buon viaggio tra le rondini ad aprile
+	<br>Fai buon viaggio mentre incontrerai un confine
+	<br>Fai buon viaggio e non temere di cadere
+	<br>Io ti aspetto dove sai
+	<br>Quando saremo vecchi mi fermerò ridendo
+	<br>Guardando quei ragazzi sul mio stesso muretto
+	<br>Non mi avvicinerò, io so i loro discorsi
+	<br>Parlare del futuro senza dar peso mai ai giorni
+	<br>Quando saremo vecchi non avrò più una scusa
+	<br>Per dirti, "Notte, esco", mi annoio in questa casa
+	<br>Spero tu sarai sempre la donna di quel giorno
+	<br>Che senza dire niente aveva già detto tutto
+	<br>Tu mi fai credere che
+	<br>Ogni cosa parte sempre da dove sei te
+	<br>Tu mi fai credere che
+	<br>Puoi morire e dopo vivere, uoh-oh-oh-oh-oh
+	<br>Fai buon viaggio tra le rondini ad aprile
+	<br>Fai buon viaggio mentre incontrerai un confine
+	<br>Fai buon viaggio e non temere di cadere
+	<br>Io ti aspetto dove sai
+	<br>Quando saremo vecchi, portami dove credi
+	<br>Ricordami chi ero se avrò i ricordi ciechi
+	<br>Portami a casa e dimmi adesso cosa vedi
+	<br>Io vedo me bambino e non esiste ieri',
+	180,
+	'2024-05-17',
+	'Italiana',
+    '',
+    'https://youtu.be/MfRLybx1G4M',  -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+); 
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Quel filo che ci unisce',
+	'Io lo so cosa senti
+	<br>Non me lo devi spiegare
+	<br>Vedi dubbi davanti
+	<br>Ma non è qui la fine
+	<br>E certo adesso guardati, tu sei diversa
+	<br>In crisi con il mondo, no, sai, è con te stessa
+	<br>Io so che cosa senti quando guardi il mare
+	<br>Lo associ al tuo dolore che non ha una fine
+	<br>E certo adesso parlami, ti sto ascoltando
+	<br>Mi piaci perché butti i tuoi piedi nel fango
+	<br>Ma senza la paura che ti guardo male
+	<br>Tanto sai che è tutto un gioco e vince chi sorride
+	<br>Io lo so cosa senti
+	<br>Quando cerchi risposte
+	<br>I tuoi occhi diamanti
+	<br>Persi a un giro di giostre
+	<br>E certo che è un po'' strano, io non sono il tipo
+	<br>Di solito non parlo e resto sempre muto
+	<br>Perché ho parlato e, sai, sono stato incompreso
+	<br>Ma avevo un pianoforte come dolce amico
+	<br>Ma tu, tu sei diversa perché sei sbagliata
+	<br>Ma non per me che credo in chi non vien creduta
+	<br>Tu sei come un bicchiere fatto di cristallo
+	<br>Al bordo di una tavola e temi l''impatto
+	<br>Mi domando se ti domandi tu
+	<br>Che cosa faccio quando sono solo io
+	<br>Che cosa faccio quando penso al nome tuo
+	<br>E mi domando se ti domandi tu
+	<br>Che senso c''ha parlare di tristezza se
+	<br>Se accanto c''è qualcuno con cui ridere
+	<br>Io come te cerco solo l''amore
+	<br>Io come te cerco solo l''amore
+	<br>Io lo so non ci credi
+	<br>In fondo non ti conosco
+	<br>È che tu, nei pensieri
+	<br>Sei già un rifugio perfetto
+	<br>E certo che ci credo negli avvenimenti
+	<br>Cercare indietro per poi ritrovarlo avanti
+	<br>Quel filo che ci unisce puoi chiamarlo amore
+	<br>Ma tu sarai contraria perché non vuoi un nome
+	<br>E certo che so bene quanto dentro pesa
+	<br>Tu vedi l''abbandono come la tua casa
+	<br>Ed io vorrei bussarti, farti una sorpresa
+	<br>Portarti nei miei fogli come fa un poeta
+	<br>Mi domando se ti domandi tu
+	<br>Che cosa faccio quando sono solo io
+	<br>Che cosa faccio quando penso al nome tuo
+	<br>E mi domando se ti domandi tu
+	<br>Che senso c''ha parlare di tristezza se
+	<br>Se accanto c''è qualcuno con cui ridere
+	<br>Io come te cerco solo l''amore
+	<br>Io come te cerco solo l''amore',
+    254,
+    '2021-10-22',
+    'Italiana',
+	'',
+	'https://youtu.be/YDXkGR6INiI', -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+); 
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Mon Amour',
+	'Quindi ci piacciamo oppure no?
+	<br>Sangue nella dance floor, ci ballerò
+	<br><br>Anche se è soltanto un altro stupido
+	<br>Sexy boy, sexy boy, io ci sto
+	<br>E domani non lavoro quindi
+	<br>Uh, ce ne stiamo distesi
+	<br>Ah, sopra soldi già spesi
+	<br>Uh, colazioni francesi
+	<br>Ah, con gli avanzi di ieri
+	<br>Se non lo facciamo, me lo immagino
+	<br>Dovrei, non dovrei dirti che
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?	
+	<br>Io farò una strage stasera
+	<br>Ballo tra le lampade a sfera
+	<br>Lei piace sia a me che a te
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea
+	<br>Lei, lui (na-na-na, na-na)
+	<br>Lei, lui (na-na, na-na-na-na-na)
+	<br>Lei, un movimento tecnico (no, no, no, no)
+	<br>Lui, un sorso con l''arsenico (no, no, no, no)
+	<br>Io rimango sola come minimo
+	<br>Sexy boy, sexy boy, allora io ci sto
+	<br>E domani non lavoro, quindi
+	<br>Uh, ce ne stiamo distesi
+	<br>Ah, sopra soldi già spesi
+	<br>Uh, colazioni francesi
+	<br>Ah, con gli avanzi di ieri
+	<br>Se non lo facciamo, me lo immagino
+	<br>Dovrei, non dovrei dirti che
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Io farò una strage stasera
+	<br>Ballo tra le lampade a sfera
+	<br>Lei piace sia a me che a te
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea
+	<br>Lei, lui (na-na-na, na-na)
+	<br>Lei, lui (na-na, na-na-na)
+	<br>Ho visto lei che bacia lui (na-na-na-na-na-na)
+	<br>Lei che bacia lui (na-na-na, na-na-na-na)
+	<br>(Na-na-na, na-na-na-na-na-na)
+	Lei che bacia lui, lei che bacia lui (na-na-na)
+	<br>Dovrei, non dovrei dirti che
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Io farò una strage stasera
+	<br>Ballo tra le lampade a sfera
+	<br>Lei piace sia a me che a te
+	<br>Ho visto lei che bacia lui
+	<br>Che bacia lei, che bacia me
+	<br>Mon amour, amour, ma chi baci tu?
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea
+	<br>Lei, lui (na-na, na-na-na, na-na)
+	<br>Lei, lui (na-na, na-na-na, na-na-na-na-na)
+	<br>Disperata e anche leggera
+	<br>Vengo per rubarti la scena
+	<br>Ehi, garçon, ho un''idea',
+	180,
+	'2023-03-31',
+	'Italiana',
+	'',
+	'https://youtu.be/RzyD08-w-tk', -- Link ufficiale del video su YouTube
+    '2'  -- genere_id
+); 
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Movin''Out(Anthony''s Song)',
+	'Anthony works in the grocery store
+	<br>Savin'' his pennies for someday
+	<br>Mama Leone left a note on the door
+	<br>She said, "Sonny, move out to the country"
+	<br>Workin'' too hard can give you
+	<br>A heart attack (ack, ack, ack, ack, ack)
+	<br>You oughta know by now (oughta know)
+	<br>Who needs a house out in Hackensack
+	<br>Is that what you get for your money?',
+	'200',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=cJtL8vWNZ4o',
+	'1');
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'The Stranger',
+	'Well, we all have a face
+	<br>That we hide away forever
+	<br>And we take them out and show ourselves
+	<br>When everyone has gone
+	<br>Some are satin, some are steel
+	<br>Some are silk and some are leather
+	<br>They''re the faces of the stranger
+	<br>But we love to try them on
+	<br>Well, we all fall in love
+	<br>But we disregard the danger
+	<br>Though we share so many secrets
+	<br>There are some we never tell',
+	'300',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=E5ofVsxTPoc',
+	'1');
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Just The Way You Are',
+	'Oh, her eyes, her eyes
+	<br>Make the stars look like they''re not shinin''
+	<br>Her hair, her hair
+	<br>Falls perfectly without her tryin''
+	<br>She''s so beautiful and I tell her everyday
+	<br>Yeah, I know, I know
+	<br>When I compliment her, she won''t believe me
+	<br>And it''s so, it''s so
+	<br>Sad to think that she don''t see what I see
+	<br>But every time she asks me, "Do I look okay?"
+	<br>I say',
+	'271',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=HaA3YZ6QdJU',
+	'1');
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Scene From An Italian Restaurant',
+	'A bottle of whites, a bottle of red
+	<br>Perhaps a bottle of rose instead
+	<br>We''ll get a table near the street
+	<br>In our old familiar place
+	<br>You and I, face to face
+	<br>A bottle of red, a bottle of whites
+	<br>It all depends upon your appetite
+	<br>I''ll meet you any time you want
+	<br>In our Italian Restaurant',
+	'443',
+	'1977-09-01',
+	'Inglese',
+	'',
+	'https://www.youtube.com/watch?v=Hxx8IWIvKg0',
+	'1'
+);
+
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Laudate Dominum',
+	'Laudate dominum
+	<br>Laudate dominum
+	<br>Il potere che cercava
+	<br>Il nostro umore
+	<br>Mentre uccideva
+	<br>Nel nome d''un dio
+	<br>Nel nome d''un dio
+	<br>Uccideva un uomo
+	<br>Nel nome di quel dio si assolse',
+	'22',
+	'1970-11-01',
+	'Latino e Italiano',
+	'',
+	'https://www.youtube.com/watch?v=2YfpZF6vy1g',
+	'16'
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'L''infanzia di Maria',
+	'Laudate dominum
+	<br>Laudate dominum
+	<br>Laudate dominum
+	<br>Forse fu all''ora terza forse alla nona
+	<br>Cucito qualche giglio sul vestitino alla buona
+	<br>Forse fu per bisogno o peggio per buon esempio
+	<br>Presero i tuoi tre anni e li portarono al tempio
+	<br>Presero i tuoi tre anni e li portarono al tempio
+	<br>Non fu più il seno di Anna fra le mura discrete
+	<br>A consolare il pianto a calmarti la sete
+	<br>Dicono fosse un angelo a raccontarti le ore
+	<br>A misurarti il tempo fra cibo e Signore
+	<br>A misurarti il tempo fra cibo e Signore',
+	'300',
+	'1970-11-01',
+	'Latino e Italiano',
+	'',
+	'https://www.youtube.com/watch?v=GXCrDa5f4Nw',
+	'16');
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Il ritorno di Giuseppe',
+	'Stelle, già dal tramonto
+	<br>Si contendono il cielo a frotte
+	<br>Luci meticolose
+	<br>Nell''insegnarti la notte
+	<br>Un asino dai passi uguali
+	<br>Compagno del tuo ritorno
+	<br>Scandisce la distanza
+	<br>Lungo il morire del giorno
+	<br>Ai tuoi occhi, il deserto
+	<br>Una distesa di segatura
+	<br>Minuscoli frammenti
+	<br>Della fatica della natura',
+	'240',
+	'1970-11-01',
+	'Italiano',
+	'',
+	'https://www.youtube.com/watch?v=B1aA014bFhg',
+	'16'
+);
+INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+	'Il Sogno Di Maria',
+	'Nel grembo umido, scuro del tempio
+	<br>L''ombra era fredda, gonfia d''incenso
+	<br>L''angelo scese come ogni sera
+	<br>Ad insegnarmi una nuova preghiera
+	<br>Poi d''improvviso mi sciolse le mani
+	<br>E le mie braccia divennero ali
+	<br>Quando mi chiese, "Conosci l''estate?"
+	<br>Io per un giorno, per un momento
+	<br>Corsi a vedere il colore del vento',
+	'240',
+	'1970-11-01',
+	'Italiano',
+	'',
+	'https://www.youtube.com/watch?v=6gqsQMQqZrc',
+	'16'
+);
 -- INSERT album_brano the weeknd
 INSERT INTO album_brano(brano_id, album_id) VALUES (1,1);
 INSERT INTO album_brano (brano_id, album_id)VALUES (2,1);
@@ -7454,7 +8168,7 @@ INSERT INTO album_brano(brano_id, album_id) VALUES (28,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (29,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (30,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (31,3);
-INSERT INTO album_brano(brano_id, album_id) VALUES (2,3);
+INSERT INTO album_brano(brano_id, album_id) VALUES (32,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (33,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (34,3);
 INSERT INTO album_brano(brano_id, album_id) VALUES (35,3);
@@ -7563,6 +8277,37 @@ INSERT INTO album_brano(brano_id, album_id) VALUES (128,17);
 INSERT INTO album_brano(brano_id, album_id) VALUES (129,17);
 INSERT INTO album_brano(brano_id, album_id) VALUES (130,18);
 INSERT INTO album_brano(brano_id, album_id) VALUES (131,18);
+-- rosalia
+INSERT INTO album_brano(brano_id, album_id) VALUES (132,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (133,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (134,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (135,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (136,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (137,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (138,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (139,19);
+INSERT INTO album_brano(brano_id, album_id) VALUES (140,19);
+-- ghali
+INSERT INTO album_brano(brano_id, album_id) VALUES (141,20);
+INSERT INTO album_brano(brano_id, album_id) VALUES (142,20);
+INSERT INTO album_brano(brano_id, album_id) VALUES (143,20);
+-- ultimo
+INSERT INTO album_brano(brano_id, album_id) VALUES (144,21);
+INSERT INTO album_brano(brano_id, album_id) VALUES (145,21);
+INSERT INTO album_brano(brano_id, album_id) VALUES (146,22);
+-- annalisa
+INSERT INTO album_brano(brano_id, album_id) VALUES (147,23);
+-- billy joel
+INSERT INTO album_brano(brano_id, album_id) VALUES (148,24);
+INSERT INTO album_brano(brano_id, album_id) VALUES (149,24);
+INSERT INTO album_brano(brano_id, album_id) VALUES (150,24);
+INSERT INTO album_brano(brano_id, album_id) VALUES (151,24);
+-- fabrizio de andré
+INSERT INTO album_brano(brano_id, album_id) VALUES (152,25);
+INSERT INTO album_brano(brano_id, album_id) VALUES (153,25);
+INSERT INTO album_brano(brano_id, album_id) VALUES (154,25);
+INSERT INTO album_brano(brano_id, album_id) VALUES (155,25);
+
 INSERT INTO utente(username, password, nome, cognome, email, foto, data_creazione) VALUES(
 'root',
 'admin',
@@ -7595,5 +8340,3 @@ TRUE,
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 44);
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 39);
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 47);
-
-
