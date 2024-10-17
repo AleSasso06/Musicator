@@ -11,15 +11,15 @@
 		<link rel="stylesheet" href="style2.css">
 	 
 		<style>
-		.container {
+		.container-sign-in {
 	            
-	            margin-top:50px;
+	            margin-top:-60px;
 	            margin-bottom: 50px;
 	            max-width: 500px;           
 	            padding: 20px;              
 	            background-color: white;   
 	            border-radius: 10px;    
-	            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	            
 	    }
 		</style>
 		
@@ -27,11 +27,11 @@
 
 	<body >
 	
-		<div class="container  min-vh-100 d-flex  justify-content-center  align-items-center">
 		
+		<div class="container-sign-in mx-auto ">
 			<form action="registrati" method="post">
 			
-				<div  class=" container">
+				
 					<h1 style= "text-align:center "class="mb-3">Registrazione</h1>
 					<div  class="form-row">
 						
@@ -71,10 +71,10 @@
 						</div>
 						<br>
 						<button class="custom-register-btn" type="submit" >Registrati</button>
-					</div>
-				</div>
+					
+				
 			</form>
-			
+			</div>
 			<!-- <div class="form-group">
 			    <label for="inputAddress">Address</label>
 			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
