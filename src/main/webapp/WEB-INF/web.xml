@@ -169,4 +169,14 @@
     <servlet-name>ProfiloUtenteServlet</servlet-name>
     <url-pattern>/profilo-utente</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ModificaUtenteServlet</display-name>
+    <servlet-name>ModificaUtenteServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.ModificaUtenteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModificaUtenteServlet</servlet-name>
+    <url-pattern>/ModificaUtenteServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

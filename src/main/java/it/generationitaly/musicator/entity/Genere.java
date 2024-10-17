@@ -71,7 +71,7 @@ public class Genere {
 
 	@Override
 	public String toString() {
-		return "Genere [id=" + id + ", nome=" + nome + ", album=" + album + ", brani=" + brani + "]";
+		return "Genere [id=" + id + ", nome=" + nome + "]";
 	}
 	
 	
