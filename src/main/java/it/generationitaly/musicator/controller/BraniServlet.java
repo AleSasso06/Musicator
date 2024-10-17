@@ -19,24 +19,23 @@ public class BraniServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private BranoRepository branoRepository = new BranoRepositoryImpl();
 	private AlbumRepository albumRepository = new AlbumRepositoryImpl();
-	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		List<Album> albums = null;
 
 		List<Brano> brani = branoRepository.findAll();
 		// assegna al brano soltanto la lista di album in cui è presente
-		for(Brano brano: brani) {
-		albums = branoRepository.findAlbumsByBrano(brano.getId());
-			brano.setAlbum(albums);
-			
-	        }
-		
+		for (Brano brano : brani) {
+			albums = branoRepository.findAlbumsByBrano(brano.getId());
+			if (!albums.isEmpty())
+				brano.setAlbum(albums);
+		}
+
 		request.setAttribute("brani", brani);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("brani.jsp");
 		requestDispatcher.forward(request, response);
-		
-	}
 
-	
+	}
 
 }

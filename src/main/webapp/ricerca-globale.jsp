@@ -83,7 +83,7 @@
 					<div class="row no-gutters align-items-center">
 						<div class="col-auto">
 							<img
-								src=<%= brano.getFoto() %>
+								src=<%= brano.getAlbum().get(0).getFoto() %>
 								height="110" class="rounded song-img" alt="...">
 						</div>
 						<div class="col">
