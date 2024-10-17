@@ -77,7 +77,8 @@ Brano brano = (Brano) request.getAttribute("brano");
     <!-- fine card -->
 
     <!-- pulsante per tornare ai brani -->
-    <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+    
 
     <!-- testo della canzone -->
     <div class="row justify-content-center mt-4" style="top: -150px" >
