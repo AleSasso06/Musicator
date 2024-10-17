@@ -26,7 +26,7 @@
 	</head>
 
 	<body >
-
+	
 		<div class="container  min-vh-100 d-flex  justify-content-center  align-items-center">
 		
 			<form action="registrati" method="post">
@@ -111,11 +111,7 @@
 		   
 		</div>
 		
-		<footer class="footer bg-light text-center py-3">
-			<div class="container">
-				<p class="text-muted">© 2024 Musicator. Tutti i diritti riservati.</p>
-			</div>
-		</footer>
+		<%@ include file="footer.jsp" %>
 
 	<script type="text/javascript" src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
