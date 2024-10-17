@@ -37,65 +37,78 @@
             font-size: 1.5rem;
             color: #C2185B;
         }
-
-        /* Aggiungi margine negativo per alzare l'immagine */
-        .album-img {
-            margin-top: -50px;
-        }
-
-        /* Centra il titolo */
-        .album-title {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
 <%@ include file="nav.jsp" %>
-
 <%Album album = (Album) request.getAttribute("album"); %>
 <% List <Brano> brani = album.getBrano(); %>
+<div class="pt-3"></div>
 		
 		<!-- Inizio Logo -->
 	        <div class="svg-container mt-3">
 	           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
 	        </div>
         <!-- Fine Logo -->
+ 	<!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
 		
-		<div class="container mt-5">
-		    <div class="row justify-content-center text-center">
-		        <div class="col-md-4">
-		            <!-- Immagine dell'album -->
-		            <img src="<%=album.getFoto() %>" alt="Album image" class="img-thumbnail album-img" style="max-width: 100%; width:300px; height:300px;">
-		            
-		            <!-- Titolo dell'album centrato sotto l'immagine -->
-		            <h1 class="display-4 text-light mt-3 album-title">
-		                <b><%= album.getTitolo() %></b>
-		            </h1>
-		        </div>
+		    <!-- nome album -->
+		    <div class="col-md-4 text-md-start  text-center">
+		       <picture>
+		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; position:relative; right: -620px; top: -265px; z-index:10px">
+		   	</picture>
 		    </div>
-		</div>
-		
+      
+        <div class="container">
+		        <div class="col">
+			        <h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
+	       		</div> 
+	    
+	    			  <!-- Descrizione dell'album fuori dalla card -->
+			            <div class="text-center" style="color: white">
+			                <h5><b>Descrizione:</b></h5>
+			                <p style="color: white;"> 
+			                    <%= album.getDescrizione() %>
+			                </p>
+			            </div>
+	    
+	    
 		<div class="container mt-5">
-			<div class="row">
-		        <!-- Dettagli dell'album -->
-		        <div class="col-md-8">
-		            <div class="col-md-4">
-		                <img src="<%=album.getArtista().getFoto() %>" alt="Album image" class="img-thumbnail rounded song-img rounded-circle" style="max-width: 100%;">
-		            </div>
+		    <div class="row justify-content-center">
+           		 <div class="col-md-8">
+            <!-- Card -->
+            <div class="card album-card mt-3 mb-4">
+                <div class="row no-gutters align-items-center">
+                    <!-- Immagine dell'artista rotonda (a sinistra) -->
+                    <div class="col-md-4 text-center">
+                        <img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150">
+                    </div>
+                    <!-- Dettagli dell'album (a destra) -->
+                    <div class="col-md-8">
+                        <div class="card-body text-start"> <!-- Allineamento a sinistra -->
+                            <h3 class="card-title"><b><%= album.getTitolo() %></b></h3>
+                            <p class="card-text" style="color: black;">
+                              <b>Artista:</b> <%= album.getArtista().getPseudonimo() %><br>
+                                <b>Genere:</b> <%= album.getGenere().getNome() %><br>
+                                <b>Durata:</b> <%= album.getDurata() %><br>
+                                <b>Data di Uscita:</b> <%= album.getDataUscita() %><br>
+                                <b> <%= album.getBrano().size() %> brani </b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+			        </div>
+			    </div>
+			</div>
+          </div>
+
+	
 		
-		            <ul style="list-style-type: none; color: white; text-align: justify; padding: 0;">
-		                <li><b>Artista:</b> <%= album.getArtista().getPseudonimo() %></li>
-		                <li><b>Genere:</b> <%= album.getGenere().getNome() %></li>
-		                <li><b>Durata:</b> <%= album.getDurata() %></li>
-		                <li><b>Data di Uscita:</b> <%= album.getDataUscita() %></li>
-		                <li><b>Descrizione:</b> <%= album.getDescrizione() %></li>
-		                <li><%= album.getBrano().size() %> brani</li>
-		            </ul>
-		        </div>
-		    </div>
-		</div>
-		
-		<div class="container min-vh-10 d-flex justify-content-center mt-5">
+		<div class="container min-vh-10 d-flex justify-content-center mt-5 pt-2 py-3">
 		    <h1 style="color:white"> Elenco brani</h1>
 		</div>
 		

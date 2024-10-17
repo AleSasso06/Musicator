@@ -14,9 +14,23 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-.dett-alb {
-	background-color: rbga(227, 242, 253, 72) !important; 
-	
+.album-card {
+    background-color: rgba(227, 242, 253, 0.72); /* Colore di sfondo */
+    border: none; /* Rimuove il bordo predefinito */
+    border-radius: 15px; /* Arrotonda gli angoli della card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
+    color: black; /* Colore del testo impostato su nero */
+    padding: 20px; /* Aggiunge padding interno per un aspetto migliore */
+}
+
+.album-card .card-title {
+    color: black; /* Colore del titolo nero */
+    font-weight: bold;
+}
+
+.artist-img {
+    border: 3px solid white; /* Bordo bianco attorno all'immagine */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera all'immagine */
 }
 
 section .bg-body {
