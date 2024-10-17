@@ -22,11 +22,7 @@ import it.generationitaly.musicator.repository.impl.GenereRepositoryImpl;
 
 public class GenereServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
-<<<<<<< HEAD
-=======
-	
->>>>>>> branch 'master' of https://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@github.com/AleSasso06/Musicator
+
 	private GenereRepository genereRepository = new GenereRepositoryImpl();
 	private BranoRepository branoRepository = new BranoRepositoryImpl();
 	 private AlbumRepository albumRepository = new AlbumRepositoryImpl();
