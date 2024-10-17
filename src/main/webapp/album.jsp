@@ -53,7 +53,9 @@
 			</div>
 			<!-- Fine Barra di Ricerca -->	
 		</div>
-			
+		
+		<!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>	
 			
 			<div class="container">
 			<!-- inizio card -->

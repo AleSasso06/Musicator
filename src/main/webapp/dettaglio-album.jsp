@@ -37,6 +37,12 @@
             font-size: 1.5rem;
             color: #C2185B;
         }
+        
+		.album-description {
+		    margin-top: -150px; 
+		    position: relative; 
+		    z-index: 10; 
+		}
     </style>
 </head>
 <body>
@@ -62,17 +68,18 @@
       
         <div class="container">
 		        <div class="col">
-			        <h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
+			        <h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-225px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
 	       		</div> 
 	    
 	    			  <!-- Descrizione dell'album fuori dalla card -->
-			            <div class="text-center" style="color: white">
-			                <h5><b>Descrizione:</b></h5>
-			                <p style="color: white;"> 
-			                    <%= album.getDescrizione() %>
-			                </p>
-			            </div>
-	   
+	    			  <div class="album-description">
+					    <div class="text-center" style="color: white;">
+					        <h5><b>Descrizione:</b></h5>
+					        <p style="color: white;"> 
+					            <%= album.getDescrizione() %>
+					        </p>
+					    </div>
+					</div>
 	   
 	    
 		<div class="container mt-5">
@@ -90,7 +97,9 @@
                         <div class="card-body text-start"> <!-- Allineamento a sinistra -->
                             <h3 class="card-title"><b><%= album.getTitolo() %></b></h3>
                             <p class="card-text" style="color: black;">
+                            <a class="card-title" href="artista?id=<%= album.getArtista().getId() %>">
                               <b>Artista:</b> <%= album.getArtista().getPseudonimo() %><br>
+                              </a>
                                 <b>Genere:</b> <%= album.getGenere().getNome() %><br>
                                 <b>Durata:</b> <%= album.getDurata() %><br>
                                 <b>Data di Uscita:</b> <%= album.getDataUscita() %><br>

@@ -39,9 +39,8 @@
         </div>
         <!-- Fine Logo -->
        
-        <!-- pulsante per tornare all'index -->
-        <a href="artisti" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-      <!-- fine pulsante per tornare all'index -->
+       <!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
       
     	<div class="container mt-5">
   		<div class="row align-items-center">
@@ -78,9 +77,8 @@
       </main>
       
 		<!-- inizio album -->
-		<hr>
-		<h3 class="text-light text-center pt-5" >Album</h3>
-			<div class="container min-vh-10 d-flex  justify-content-center mt-5 pt-2">
+		<h3 class="text-light text-center" style="position: relative; top: -80px;">Album</h3>
+			<div class="container min-vh-10 d-flex  justify-content-center" style="position: relative; top: -40px;">
 			<% System.out.println(albums);
 			for (Album album : albums) { %>
 				<a class="card-title h5" href="album?id=<%= album.getId() %>">

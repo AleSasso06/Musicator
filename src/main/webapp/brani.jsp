@@ -18,23 +18,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
     <style>
-        /* Imposta una larghezza fissa per tutte le card */
-        .song-card {
-            width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
-            opacity: 0.9;
-            transition: opacity 0.2s ease;
-            color: #E3F2FD
-        }
+		 .song-card {
+		    width: 400px;
+		    height: 113px; 
+		    opacity: 0.9;
+		    transition: opacity 0.2s ease;
+		    color: #E3F2FD;
+		}
+		
+		.song-img {
+		    width: 113px;
+		    height: 113px;
+		    object-fit: cover;
+		}
+		
+		.card-title {
+   			 white-space: normal; /* Permette di andare a capo */
+    		word-wrap: break-word; /* Spezza le parole lunghe */
+		}
 
-        .card-body {
-            text-align: center; 
-            color: black
-        }
+		.card-body {
+		    text-align: left;
+		    color: black;
+		    overflow: hidden; 
+		}
 
         .btn-play {
             font-size: 1.5rem;
             color: #C2185B;
         }
+        
+        .carousel-control-prev {
+    		left: -115px;
+		}
+		
+		.carousel-control-next {
+		    right: -115px;
+		}
+
+
     </style>
 </head>
 
@@ -43,6 +65,10 @@
 <%@ include file="nav.jsp" %>
 
 <% List<Brano> brani = (List<Brano>) request.getAttribute("brani"); %>
+
+<!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+
 
 <div class="container justify-content-center mt-5">
     <!-- Barra di Ricerca -->
@@ -54,39 +80,65 @@
     <!-- Fine Barra di Ricerca -->
 
     <!-- Griglia delle card -->
-    <div class="row justify-content-center">
-        <% if (!brani.isEmpty()) { %>
-            <% for (Brano brano : brani) { %>
-                <div class="col-12 mb-3 d-flex justify-content-center">
-                    <div class="card song-card">
+   <div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+        <% 
+        int braniPerSlide = 12; // Numero di card per slide
+        int numeroDiBrani = brani.size();
+        boolean isFirstSlide = true;
+
+        for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
+        %>
+        <div class="carousel-item <%= isFirstSlide ? "active" : "" %>">
+           <div class="row justify-content-center d-flex align-items-stretch">
+                <% 
+                // Mostra fino a braniPerSlide card per slide
+                for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {
+                    Brano brano = brani.get(j);
+                %>
+                <div class="col-md-5 col-lg-4 mb-3">
+    				<div class="card song-card">
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                            <% if (!brano.getAlbum().isEmpty()){%>
-                                <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+                                <% if (!brano.getAlbum().isEmpty()) { %>
+                                    <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+                                <% } %>
                             </div>
                             <div class="col">
                                 <div class="card-body p-2">
                                     <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-                                        <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
+                                        <h6 class="card-title text-start"><%= brano.getTitolo() %></h6>
                                     </a>
-                                     <h6 class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo() %></h6>
-                                     <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
+                                    <p class="card-title text-start"><%= brano.getAlbum().get(0).getTitolo() %></p>
+                                    <p class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
                                 </div>
-                                   <% } %> 
                             </div>
                             <div class="col-auto">
-                                <a class="btn btn-play" href="<%= brano.getYtLink() %>">
+                                <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
                                     <i class="bi bi-play-circle-fill"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div> 
-            <% } %>
-        <% } else { %>
-            <p>Nessun brano trovato.</p>
-        <% } %>
+                </div>
+                <% } %> <!-- Fine ciclo per braniPerSlide -->
+            </div>
+        </div>
+        <% 
+            isFirstSlide = false; 
+        } %> <!-- Fine ciclo per le slide -->
     </div>
+
+    <!-- Controlli del Carosello -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#caroselloBrani" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#caroselloBrani" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 </div>
 
 <%@ include file="footer.jsp" %>

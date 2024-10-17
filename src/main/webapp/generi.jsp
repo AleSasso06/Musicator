@@ -47,43 +47,37 @@
 
 	<%@ include file="nav.jsp"%>
 	
-	
-	<!-- Inizio Logo -->
-	<div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
-        </div>
-           <!-- Fine Logo -->
-            
-           
 	<div class="container min-vh-10 d-flex  justify-content-center mt-5">
-		<input type="text" class="form-control" style="border-radius: 30px"
-			placeholder="Cerca il tuo genere preferito"
-			aria-label="Recipient's username" aria-describedby="button-addon2">
-			<!--  
-		<button class="btn btn-outline-secondary" type="button"
-			id="button-addon2">Cerca</button>
-			 -->
-	</div>
+		
+			 <!-- Barra di Ricerca -->
+			<div class="input-group mb-3">
+			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
+			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
+			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+			 </form>
+			</div>
+			<!-- Fine Barra di Ricerca -->	
+		</div>
+			
+			<!-- pulsante per tornare indietro -->
+    		<a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+			
+			<div class="container">
 	
 	<%
 	// Recupero della lista dei generi musicali 
 	List<Genere> generi = (List<Genere>) request.getAttribute("generi");
 	%>
-<!-- pulsante per tornare all'index -->
-     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-     		 <!-- fine pulsante per tornare all'index -->
-			
-
-	<div class="container">
 	 
-	<h1 class="text-center my-5" style="color: #E3F2FD;">Elenco Generi Musicali</h1>
+	<h1 class="text-center" style="color: #E3F2FD;">Elenco Generi Musicali</h1>
+	<div class="row row-cols-1 row-cols-md-3 g-4">
 	
 		<form action="generi" method="get">
 			<div id="genereButtons" class="d-grid gap-2 col-6 mx-auto"></div>
 		</form>
 		</div>
 	<div class="container ">
-	 
+	 <br>
 	<div class="row row-cols-1 row-cols-md-3 g-4">  
 		<%
 		// Verifica se la lista di generi se non null
@@ -116,7 +110,7 @@
 		<p class="text-center"></p>
 		<% } %>
 	</div>
-
+</div>
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>
 
