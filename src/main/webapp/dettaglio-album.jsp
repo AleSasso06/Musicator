@@ -47,36 +47,35 @@
 
 
              <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
         </div>
-  <a href="albums" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-        
-       <!--   <div class="container min-vh-10 d-flex justify-content-center mt-5 ">
-        
-       <h1 >Album</h1>
-        </div>-->
+		<a href="albums" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+
+		    <!-- nome album -->
+		    <div class="col-md-4 text-md-start  text-center">
+		       <picture>
+		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; position:relative; right: -620px; top: -265px; z-index:10px">
+		   	</picture>
+		    </div>
       
         <div class="container">
-        <div class="row">
-        <div class="col">
-             <picture>
-        <img src="<%=album.getFoto() %> " class="img-thumbnail" alt="..." style="widht:300px; height:300px; position:relative; right:-50px; top:-100px; z-index:10px">
-        </picture>
-       </div> 
+	        <div class="row">
+		        <div class="col">
+			        <h1 class="display-3 text-light text-center"   style="position:relative; right: -450px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
+	       </div> 
        
-        <div class="col-8 mt-4">
-        <ul style="list-style-decoration:none; color:white">
-        <li>Titolo:<%=album.getTitolo() %></li>
-        <li>Artista:<%=album.getArtista().getPseudonimo() %></li>
-        <li>Genere:<%=album.getGenere().getNome() %></li>
-        <li>Durata:<%=album.getDurata() %></li>
-        <li>Data di Uscita:<%=album.getDataUscita() %></li>
-         <li>Descrizione:<%=album.getDescrizione() %></li>
-        </ul>
-        </div>  
-        </div>
-        
-        </div>
+	        <div class="col-8 mt-4 ">
+		        <ul style="list-style-type:none; color:white; text-align: justify">
+			         <li>Artista: <%=album.getArtista().getPseudonimo() %></li>
+			         <li>Genere: <%=album.getGenere().getNome() %></li>
+			         <li>Durata: <%=album.getDurata() %></li>
+			         <li>Data di Uscita: <%=album.getDataUscita() %></li>
+			         <li>Descrizione: <%=album.getDescrizione() %></li>
+			         <li><%=album.getBrano().size() %> brani</li>
+		        </ul>
+		      </div>  
+	        </div>
+	      </div>
         
         <div class="container min-vh-10 d-flex  justify-content-center mt-5">
    <h1 style="color:white" > Elenco brani</h1>
