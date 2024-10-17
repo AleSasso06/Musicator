@@ -20,11 +20,12 @@ pageEncoding="UTF-8"%>
 	    <style>
 		.container-modifica {
 	            
+	           
 	            margin-top:50px;
 	            margin-bottom: 50px;
 	            max-width: 500px;           
-	            padding: 20px;              
-	            background-color: white;   
+	            padding: 20px;             
+	             background-color:white;
 	            border-radius: 10px;    
 	            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	    } 
@@ -49,8 +50,9 @@ pageEncoding="UTF-8"%>
 	 <div style="text-align:center"class="container mr-5 mt-5 mb-1">
 	  <h2>MODIFICA PROFILO </h2>
 	  </div>
-		 
-  <div class="container-modifica mr-4 ">
+		
+	<div class="container   ">	 
+  <div class="container-modifica mx-auto ">
 		<form action="#" method="post">
 		
 					<input type="hidden" name="id" value="#">
@@ -76,7 +78,7 @@ pageEncoding="UTF-8"%>
 					<button class="btn-custom mt-3 " type="submit">SALVA</button>
 				</form>
 </div>
-
+</div>
 <%@ include file="footer.jsp" %>
 
     <!-- Bootstrap JavaScript Libraries -->
