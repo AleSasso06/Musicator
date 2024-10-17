@@ -70,18 +70,24 @@
 <h1 class="text-center my-5" style="color: #E3F2FD;">Elenco Generi Musicali</h1>
 </form>  -->
 
-       
+    <!--   
   <div class="container justify-content-center mt-5">
     	<form action="ricerche_specifiche" method="get" class="input-group mb-3">
         <label for="brani" class="form-label"></label>
         <input type="text" class="form-control" id="brani" name="brani" placeholder="Brani">
          </form>
+          --> 
+   
+
+			
+          
    <%  List<Brano> brani = genere.getBrani();	 %>
- 
         	<!-- Griglia delle card -->
 		<div class="row">
 		<% if (brani != null && !brani.isEmpty()) { %>
-		<h2 style="margin-bottom: 15px;">Brani</h2>
+		<h2 style="margin-bottom: 15px; text-align: center;">Brani</h2>
+		
+	
 			<% for (Brano brano : brani) { %>
 			<div class="col-md-6 mb-3">
 				<div class="card song-card">
@@ -121,7 +127,8 @@
             List<Album> albums = genere.getAlbum();   %>
         
   <% if (albums != null && !albums.isEmpty()) { %>
-			<h2 style="margin-bottom: 15px; margin-top: 15px">Album</h2>
+			<h2 style="margin-bottom: 15px; text-align: center;">Album</h2>
+			
 			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
 			<% for (Album album : albums) { %>
 				<a class="card-title h5" href="album?id=<%= album.getId() %>">
