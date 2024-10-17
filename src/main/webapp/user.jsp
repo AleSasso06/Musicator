@@ -32,7 +32,7 @@ pageEncoding="UTF-8"%>
 		</style> 
 </head>
 <body>
-	<%// Utente utente = (Utente) request.getAttribute("utente"); %>
+	<% Utente utente = (Utente) request.getAttribute("utente"); %>
 		<header>
 		<%@ include file="nav.jsp" %>
 		</header>
@@ -55,23 +55,23 @@ pageEncoding="UTF-8"%>
   <div class="container-modifica mx-auto ">
 		<form action="#" method="post">
 		
-					<input type="hidden" name="id" value="#">
+					<input type="hidden" name="id" value="<%=utente.getId()%>">
 					
 					<div class="form-row col-md-20 ">
 					<label for="inputEmail4">Email</label>
-						<input class="form-control" id="inputEmail4" type="text"  name="email"  readonly value="">
+						<input class="form-control" id="inputEmail4" type="email"  name="email"  readonly value="<%=utente.getEmail()%>">
 						
 						
 					</div>
 					<div class="form-group col-md-20">
-					<label for="input-marca">Username</label>
-						<input class="form-control" id="input-username" type="text"  name="username"  value="">
+					<label for="input-username">Username</label>
+						<input class="form-control" id="input-username" type="text"  name="username"  value="<%=utente.getUsername()%>">
 						
 						
 					</div>
 					<div class="form-group col-md-20">
-					<label for="input-password">Password</label>
-						<input class="form-control" id="input-password" type="password" name="password"  value="">
+					<label for="inputPassword4">Password</label>
+						<input class="form-control" id="inputPassword4" type="password" name="password"  value="<%=utente.getPassword()%>">
 						
 						
 					</div>
