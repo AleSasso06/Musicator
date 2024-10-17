@@ -18,17 +18,11 @@
             background-color: #08263C;
         }
       
-        .brano-container {
-            margin-top: 10px;
-            background-color: #1a2730;
-            padding: 2px;
-            border-radius: 30px;
-        }
-      
+     
          </style>
 </head>
 <body>
-<div class="container mt-5">
+<div class="container-lg">
 <%@ include file="nav.jsp" %>
         
        
@@ -40,7 +34,7 @@
     List<Album> albums = (List<Album>) request.getAttribute("album"); 
     if (albums != null && !albums.isEmpty()) { 
     %>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="row row-cols-1 row-cols-md-3 g-4"> --> 
         <% for(Album album : albums) { %>
            <div class="col mb-5">
                     <div class="album">
