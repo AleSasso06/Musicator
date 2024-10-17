@@ -67,7 +67,7 @@
                                     <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
                                         <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
                                     </a>
-                                     <h6 class="card-title text-start">da inserire Album?</h6>
+                                     <h6 class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo() %></h6>
                                      <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
                                 </div>
                                    <% } %> 

@@ -46,7 +46,7 @@ Brano brano = (Brano) request.getAttribute("brano");
             <div class="card mb-3 song-card" style="max-width: 800px; opacity: 0.8; transition: opacity 0.3s ease;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
+                        <img src="<%=brano.getAlbum().get(0).getFoto() %>" class="img-thumbnail" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
