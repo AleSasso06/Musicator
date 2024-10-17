@@ -47,6 +47,14 @@
 
 	<%@ include file="nav.jsp"%>
 	
+	
+	<!-- Inizio Logo -->
+	<div class="svg-container mt-3">
+           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+        </div>
+           <!-- Fine Logo -->
+            
+           
 	<div class="container min-vh-10 d-flex  justify-content-center mt-5">
 		<input type="text" class="form-control" style="border-radius: 30px"
 			placeholder="Cerca il tuo genere preferito"
@@ -57,11 +65,14 @@
 			 -->
 	</div>
 	
-
 	<%
 	// Recupero della lista dei generi musicali 
 	List<Genere> generi = (List<Genere>) request.getAttribute("generi");
 	%>
+<!-- pulsante per tornare all'index -->
+     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+     		 <!-- fine pulsante per tornare all'index -->
+			
 
 	<div class="container">
 	 
@@ -84,6 +95,7 @@
 		
     <a type="button" class="btn btn-secondary btn-lg w-100 button-spacing" href="genere?id=<%= genere.getId() %>">
         <%= genere.getNome() %>
+      <!--  <%= genere.getId() %>-->
         </a>
 
     
@@ -96,26 +108,21 @@
 			</a>
 		</button>
 		-->
-		<%
-		}
+		<% }  %>
+		</div>
+		
 		} else {
 		%>
-		<p class="text-center">Nessun genere musicale trovato.</p>
-		<%
-		}
-		%>
+		<p class="text-center"></p>
+		<% } %>
 	</div>
-</div>
-<<<<<<< HEAD
+
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>
-=======
-<%@ include file="footer.jsp" %>
+
+
 	<script type="text/javascript"
 		src="webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
->>>>>>> refs/heads/dettaglio-genere
-
-
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

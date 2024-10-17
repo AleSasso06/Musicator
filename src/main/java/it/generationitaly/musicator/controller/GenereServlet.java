@@ -31,12 +31,13 @@ public class GenereServlet extends HttpServlet {
 		long id = Long.parseLong(request.getParameter("id"));
 		//String nome = request.getParameter("nome");
 		Genere genere = genereRepository.findById(id);
+		System.out.println(genere);
 		
-		List<Brano> braniGenere = branoRepository.findByGenereId(id);
-		List<Album> albumGenere = albumRepository.findByGenereId(id);
+	//	List<Brano> brani = branoRepository.findByGenereId(id);
+		//List<Album> album = albumRepository.findByGenereId(id);
 		
-		request.setAttribute("brani", braniGenere);
-		request.setAttribute("albums", albumGenere);
+	//	request.setAttribute("brani", brani);
+		//request.setAttribute("albums", album);
 		request.setAttribute("genere", genere);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-genere.jsp");
 		requestDispatcher.forward(request, response);
