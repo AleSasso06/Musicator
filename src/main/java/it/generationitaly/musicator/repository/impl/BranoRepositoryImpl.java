@@ -157,6 +157,33 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 		}
 		return brani;
 	}
+	@Override
+	public List<Brano> findByGenereId(long id) {
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		List<Brano> brani = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			// SELECT * FROM Brano b WHERE b.genere_id = :genere;
+			// SELECT * FROM brano JOIN genere ON brano.genere_id = genere.id WHERE genere.nome LIKE '%R&B%';
+			// manca case insensitive e testing
+			TypedQuery<Brano> query = em.createQuery("FROM brano b JOIN genere g ON b.genere_id = g.id WHERE g.id = :id", Brano.class);
+			query.setParameter("id", id);
+			brani = query.getResultList();
+			tx.commit();
+		} catch(Exception e) {
+			System.err.println(e.getMessage());
+			if(tx != null && tx.isActive())
+				tx.rollback();
+		} finally {
+			if(em != null)
+				em.close();
+		}
+		return brani;
+	}
+
 
 	@Override
 	public List<Album> findAlbumsByBrano(Long id) {

@@ -200,55 +200,44 @@ a.navbar-brand img {
     width: 100%;
 }
 
-/* .Swiper-colonne .swiper-button-next,
-.Swiper-colonne .swiper-button-prev {
-    position: static;
-    top: auto;
-    bottom: 0;
+
+/********************************************* Bottone torna inditro */
+.btn-custom {
+    background-color: #C2185B; 
+    color: white;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-flex; 
+    align-items: center; 
 }
 
-.Swiper-colonne .swiper-button-prev {
-    left: auto;
-    right: 50px;
+.btn-custom i {
+    margin-right: 8px; /* Spazio tra l'icona e il testo */
 }
-
-.Swiper-colonne .swiper-button-next:after,
-.Swiper-colonne .swiper-button-prev:after {
-    display: none;
-}
- */
+/********************************************* Bottoni next, prev */
  
- 
-/* Per centrare le immagini del carosello */
-.swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 33.33%; /* Per fare in modo che vengano mostrate 3 slide per volta */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    z-index: 1; 
 }
 
-/* Adatta le immagini alle slide */
-.swiper-slide img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%; /* Se vuoi mantenere l'effetto circolare */
-    border: 2px solid white; /* Bordo per evidenziare */
+/* Posiziona le frecce più vicino al video */
+.custom-carousel .carousel-control-prev {
+    left: 10px !important; 
 }
 
-/* Per posizionare correttamente i bottoni prev/next */
-.swiper-button-next,
-.swiper-button-prev {
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi trasparente */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.custom-carousel .carousel-control-next {
+    right: 10px !important; 
 }
 
+.custom-carousel {
+    position: relative; /* Assicurati che il carosello abbia un contesto di posizionamento */
+}
 /******************************************* HEADROOM */
 #navigazione-principale {
     transition: all 400ms ease 0s;

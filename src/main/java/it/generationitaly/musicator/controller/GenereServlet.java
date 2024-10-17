@@ -19,27 +19,32 @@ import it.generationitaly.musicator.repository.impl.AlbumRepositoryImpl;
 import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
 import it.generationitaly.musicator.repository.impl.GenereRepositoryImpl;
 
+
 public class GenereServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private BranoRepository branoRepository = new BranoRepositoryImpl();
-	private AlbumRepository albumRepository = new AlbumRepositoryImpl();
+<<<<<<< HEAD
+=======
+	
+>>>>>>> branch 'master' of https://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@github.com/AleSasso06/Musicator
 	private GenereRepository genereRepository = new GenereRepositoryImpl();
-
+	private BranoRepository branoRepository = new BranoRepositoryImpl();
+	 private AlbumRepository albumRepository = new AlbumRepositoryImpl();
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		long id = Long.parseLong(request.getParameter("id"));
-		
+		//String nome = request.getParameter("nome");
 		Genere genere = genereRepository.findById(id);
 		
-		List<Brano> braniGenere = branoRepository.findByGenere(genere.getNome());
-		List<Album> albumGenere = albumRepository.findByGenere(genere.getNome());
+		List<Brano> braniGenere = branoRepository.findByGenereId(id);
+		List<Album> albumGenere = albumRepository.findByGenereId(id);
 		
 		request.setAttribute("brani", braniGenere);
-		request.setAttribute("album", albumGenere);
+		request.setAttribute("albums", albumGenere);
 		request.setAttribute("genere", genere);
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio_genere.jsp");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-genere.jsp");
 		requestDispatcher.forward(request, response);
+		
 	
 	}
 

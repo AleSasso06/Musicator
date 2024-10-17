@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Brano</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 		 <!-- Bs Icons -->
@@ -18,69 +18,67 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-<header>
+	<header>
 	<%@ include file="nav.jsp" %>
 	</header>
-		 <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
+	<button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
    	 <main class="overflow-hidden">
 
-		<!-- Inizio Logo -->
+	<!-- Inizio Logo -->
         <div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg">
+           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
         </div>
         <!-- Fine Logo -->
-	<%
-	Brano brano = (Brano) request.getAttribute("brano");
-	
-	%>
-	
-	<div class="card mb-3 song-card" style="max-width: 1200px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h4 class="card-title"><%=brano.getTitolo() %></h4>
-        <p class="card-text">Descrizione della canzone o ulteriori dettagli.</p>
-        <p class="card-text"><small class="text-body-secondary">Ultimo aggiornamento: 3 minuti fa</small></p>
-      </div>
-    </div>
-  </div>
-</div>
+        
+        <!-- pulsante per tornare all'index -->
+     			   <a href="brani" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+     		 <!-- fine pulsante per tornare all'index -->
+			
+        
+<%
+Brano brano = (Brano) request.getAttribute("brano");
+%>
 
-<!-- Card per il testo della canzone -->
-<div class="card mt-3 song-lyrics-card">
-  <div class="card-body">
-    <h5 class="card-title">Testo della Canzone</h5>
-    <p class="card-text">
-      <%=brano.getTesto() %>
-    </p>
-  </div>
-</div>
-	<!--  card delle informazioni del brano 
-	
-	<div class="card mb-3" style="max-width: 1200px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
+<div class="container">
+    <!-- Card centrata -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card mb-3 song-card" style="max-width: 800px; opacity: 0.8; transition: opacity 0.3s ease;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="<%=brano.getFoto() %>" class="img-thumbnail" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title"><%=brano.getTitolo() %></h4>
+                            <p class="card-text">Descrizione della canzone o ulteriori dettagli.</p>
+                            <p class="card-text">
+                                <small class="text-body-secondary">cosa mettiamo qui?</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><%=brano.getTitolo() %></h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-      </div>
+
+    <!-- Testo della canzone centrato -->
+     <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+            <div class="text-light text-justify">
+                <p><%=brano.getTesto() %></p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-	<div> 
+    </div>
+
 	
-	</div>
-	<div>
-	<%=brano.getTesto()%>
-	</div> -->
-	<%@ include file="footer.jsp" %>
+	
+	<!-- inizio footer -->
+       <%@ include file="footer.jsp" %>
+	<!--  fine footer -->
+	
+	
 	<!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
