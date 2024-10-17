@@ -59,7 +59,8 @@
                     <div class="card song-card">
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
-                                <img src="<%= brano.getFoto() %>" height="110" class="rounded song-img" alt="...">
+                            <% if (!brano.getAlbum().isEmpty()){%>
+                                <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
                             </div>
                             <div class="col">
                                 <div class="card-body p-2">
@@ -69,6 +70,7 @@
                                      <h6 class="card-title text-start">da inserire Album?</h6>
                                      <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
                                 </div>
+                                   <% } %> 
                             </div>
                             <div class="col-auto">
                                 <a class="btn btn-play" href="<%= brano.getYtLink() %>">
@@ -77,7 +79,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
             <% } %>
         <% } else { %>
             <p>Nessun brano trovato.</p>
