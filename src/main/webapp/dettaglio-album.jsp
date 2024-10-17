@@ -35,7 +35,7 @@
 
         .btn-play {
             font-size: 1.5rem;
-            color: #007bff;
+            color: #C2185B;
         }
     </style>
 </head>
