@@ -21,17 +21,19 @@
         /* Imposta una larghezza fissa per tutte le card */
         .song-card {
             width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
-            opacity: 0.7;
-            transition: opacity 0.5s ease;
+            opacity: 0.9;
+            transition: opacity 0.2s ease;
+            color: #E3F2FD
         }
 
         .card-body {
-            text-align: center; /* Allinea il testo al centro */
+            text-align: center; 
+            color: black
         }
 
         .btn-play {
             font-size: 1.5rem;
-            color: #007bff;
+            color: #C2185B;
         }
     </style>
 </head>

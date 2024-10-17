@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 	<%@ page import="it.generationitaly.musicator.entity.*" %>
+=======
+
+>>>>>>> branch 'master' of https://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@github.com/AleSasso06/Musicator
 		<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		  <div class="container-fluid">
 		    <a class="navbar-brand" href="index.jsp">

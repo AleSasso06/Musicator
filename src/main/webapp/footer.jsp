@@ -3,7 +3,7 @@
             <div class="row">
                 <!-- footer logo e selettore lingua-->
                 <div class="col-12 col-lg-6">
-                    <p class="mb-4 pb-2"><img src="images/logo.svg" alt="logo"
+                    <p class="mt-2 mb-4 pb-2"><img src="images/logo.svg" alt="logo"
                             id="footer-logo"></p>
                     <p class="link-dark mb-2">Select language</p>
                     <div class="dropdown mb-5">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <!-- footer menu links sx -->
-                <div class="col-6 col-md-4 offset-md-2 col-lg-3 offset-lg-0 text-start fs-5">
+                <div class="col-6 col-md-4 mt-2 offset-md-2 col-lg-3 offset-lg-0 text-start fs-5">
                     <p class="text-secondary mb-2">Company</p>
                     <p class="mb-2"><a href="#"
                             class="link-dark  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">About
@@ -30,7 +30,7 @@
                             for Developers</a></p>
                 </div>
                 <!-- footer menu links dx -->
-                <div class="col-6  col-md-4 offset-md-1 col-lg-3 offset-lg-0 text-start fs-5">
+                <div class="col-6 mt-2 col-md-4 offset-md-1 col-lg-3 offset-lg-0 text-start fs-5">
                     <p class="text-secondary mb-2">Legal</p>
                     <p class="mb-2"><a href="#"
                             class="link-dark  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Terms</a>
@@ -45,7 +45,7 @@
                             library</a></p>
                 </div>
                 <!-- footer social + copyright -->
-                <div class="col-12 mb-5 pb-5 mt-5 text-center">
+                <div class="col-12 mb-2 pb-2 mt-3 text-center">
                     <p class="text-secondary mb-2">Follow Us</p>
                     <div class="mb-3">
                         <a href="#" class="btn btn-lg btn-outline-dark border-0"><i
