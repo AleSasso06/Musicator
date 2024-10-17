@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 body {
-    margin: 0;
+	padding-top: 60px;
+    margin-top: 80px;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
@@ -46,8 +47,11 @@ h2 {
 
 .navbar {
     background-color: #E3F2FD !important; 
+    position: fixed; 
+    top: 0;           
+    width: 100%;     
+    z-index: 1000;   
 }
-
 .navbar .nav-link {
     color: #000000 !important;
 }
@@ -325,6 +329,15 @@ a.navbar-brand img {
     height: 60px;
 }
 
+#preloader {
+    transition: opacity 0.5s ease-out;
+}
+
+#preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out;
+}
 
 
 @media screen and (min-width: 768px) {

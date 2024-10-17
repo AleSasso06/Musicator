@@ -75,9 +75,10 @@
     <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
     <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
 
+<div class="main-content">
+
     <main class="overflow-hidden">
         <div class="pt-3"></div>
-
 
         <div class="svg-container mt-3 pt-3">
            <img alt="logo" src="images/logo header.svg">
@@ -97,6 +98,7 @@
 	                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=oj_yLUZIIH94tjEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
+    </main>
         <!-- TOP 200 ALBUMS -->
         <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
             <h2 class="h3 fw-bold mb-0">Global Top 200 Chart</h2>
@@ -241,7 +243,7 @@
             </div>
         </div>
  </div>
-  </div>              
+            
                 <!-- paginazione (puntini) -->
                 <div class="swiper-pagination"></div>
         
@@ -318,8 +320,7 @@
                     <!-- paginazione (puntini) -->
                     <div class="swiper-pagination"></div>
         </section>
-
-    </main>
+  
 
 <%@ include file="footer.jsp" %>
  
