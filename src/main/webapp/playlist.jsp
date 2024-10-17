@@ -28,21 +28,23 @@
 		<%@ include file="nav.jsp" %>
 		</header>
 		
-		<div class="container">
-		    
-		    <div class="container min-vh-10 d-flex  justify-content-center mt-5">
+		<div class="container min-vh-10 d-flex  justify-content-center mt-5">
 		
-				<!-- Barra di Ricerca -->
-				<div class="input-group mb-3">
-					<form action="ricerche_specifiche" method="get" class="input-group mb-3">
-						<input type="text" class="form-control" name="playlist" style="border-radius:30px" placeholder="Cerca le tue playlist preferite" aria-label="Recipient's username" aria-describedby="button-addon2">
-						<!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
-					</form>
-				</div>
-				<!-- Fine Barra di Ricerca -->	
-				
+			 <!-- Barra di Ricerca -->
+			<div class="input-group mb-3">
+			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
+			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
+			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+			 </form>
 			</div>
-		    
+			<!-- Fine Barra di Ricerca -->	
+		</div>
+			
+			<!-- pulsante per tornare indietro -->
+    		<a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+			
+			<div class="container">
+			
 		    <%if (playlists != null && !playlists.isEmpty()){ %>
 			    <%for (Playlist playlist : playlists) {%>
 			    <div class="row">

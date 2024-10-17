@@ -20,15 +20,15 @@
     <style>
 		 .song-card {
 		    width: 400px;
-		    height: 113px; 
+		    height: 122px; 
 		    opacity: 0.9;
 		    transition: opacity 0.2s ease;
 		    color: #E3F2FD;
 		}
 		
 		.song-img {
-		    width: 113px;
-		    height: 113px;
+		    width: 120px;
+		    height: 120px;
 		    object-fit: cover;
 		}
 		
@@ -66,20 +66,24 @@
 
 <% List<Brano> brani = (List<Brano>) request.getAttribute("brani"); %>
 
-<!-- pulsante per tornare indietro -->
-    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-
-
-<div class="container justify-content-center mt-5">
-    <!-- Barra di Ricerca -->
-    <div class="input-group mb-3">
-        <form action="ricerche_specifiche" method="get" class="input-group mb-3">
-            <input type="text" class="form-control" name="brani" style="border-radius:30px" placeholder="Cerca il tuo brano preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
-        </form>
-    </div>
-    <!-- Fine Barra di Ricerca -->
-
-    <!-- Griglia delle card -->
+<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+		
+			 <!-- Barra di Ricerca -->
+			<div class="input-group mb-3">
+			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
+			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
+			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+			 </form>
+			</div>
+			<!-- Fine Barra di Ricerca -->	
+		</div>
+			
+			<!-- pulsante per tornare indietro -->
+    		<a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+			
+	<div class="container">
+	
+    <!-- carosello -->
    <div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
     <div class="carousel-inner">
         <% 
@@ -140,6 +144,7 @@
     </button>
 </div>
 </div>
+
 
 <%@ include file="footer.jsp" %>
 <!-- Bootstrap JavaScript Libraries -->
