@@ -49,6 +49,50 @@
 	            animation-duration: 2.4s;
 	            animation-iteration-count: infinite
 	        }
+				        
+			.song-card {
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    text-align: center;
+			    background-color: #f8f9fa;
+			    border-radius: 10px;
+			    padding: 15px;
+			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			}
+			
+			.numero-classifica h1 {
+			    font-size: 2em;
+			    font-weight: bold;
+			    color: #333;
+			    margin-bottom: 10px;
+			}
+			
+			.song-img {
+			    width: 120px;
+			    height: 120px;
+			    object-fit: cover;
+			    border-radius: 50%;
+			    margin-bottom: 10px;
+			}
+			
+			.card-title {
+			    font-size: 1.1em;
+			    color: #333;
+			    margin-bottom: 5px;
+			}
+			
+			.btn-play i {
+			    font-size: 2em;
+			    color: #007bff;
+			}
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 20%;
+    }
+}
+    
 	        
 	    </style>
 	   
@@ -62,13 +106,16 @@
     <!-- ELEMENTI FIXED -->
     <%@ include file="goTop.jsp" %>
             
+           
+            
+            
         <div class="pt-3"></div>
 
         <div class="svg-container mt-3 pt-3">
            <img alt="logo" src="images/logo header.svg">
         </div>
         
-       
+      <% List<Brano> brani = (List<Brano>) request.getAttribute("brani"); %>  
         <!-- GLOBAL TOP 200 -->
         <div class="py-4"></div>
         <div class="container text-center mb-4"  data-aos="fade-up">
@@ -85,50 +132,27 @@
             <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">VAI ALLA LISTA BRANI</a></p>
         </div>
         
-        <% List<Brano> brani = (List<Brano>) request.getAttribute("brani"); %>
-        <%for(Brano brano : brani) {%>
-        
-	   <!-- carosello -->
-	   <div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-	    <div class="carousel-inner">
-	        <% 
-	        int braniPerSlide = 12; // Numero di card per slide
-	        int numeroDiBrani = brani.size();
-	        boolean isFirstSlide = true;
-	
-	        for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
-	        %>
-	        <div class="carousel-item <%= isFirstSlide ? "active" : "" %>">
-	           <div class="row justify-content-center d-flex align-items-stretch">
-	                
-	        <% for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {%>
-	        
+      
         <div class="container mb-5" data-aos="fade-up">
             <div class="row home-covers">
+            <% int i = 1; %>
+            <% for (Brano brano : brani) { %>
+               <% if (!brano.getAlbum().isEmpty()) { %>
+               
                 <!-- ALBUM -->
-                
-                 <% if (!brano.getAlbum().isEmpty()) { %>
-                
-                <a href="brani"
-                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
-                    <p class="mb-0 fw-bold">1</p>
-                    
+                <a href="brano?id=<%= brano.getId() %>" class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                     <p class="mb-0 fw-bold"><%= i %></p>
+                     <% i++; %>
+                   <% } %>
                     <img src="<%= brano.getAlbum().get(0).getFoto() %>" alt="" width="75" height="75" class="rounded-3 mx-3" style="object-fit: cover">
                     <div>
-                    	<a class="card-title" href="brano?id=<%= brano.getId() %>"><p class="mb-0"><strong><%= brano.getTitolo() %></strong></p></a>
-                    	
+                        <p class="mb-0"><strong><%= brano.getTitolo() %></strong></p>
+                        <p class="mb-0"><%= brano.getAlbum().get(0).getArtista().getPseudonimo() %></p>
                     </div>
                 </a>
-                <% } %>
-                <% } %>
-                <% } %> <!-- Fine ciclo per braniPerSlide -->
-            </div>
-        </div>
-        <% 
-            isFirstSlide = false; 
-        } %> <!-- Fine ciclo per le slide -->
-    </div>
-                
+                 <% } %>
+                 
+                 
                 
 <!--                 ALBUM
                 <a href="#"

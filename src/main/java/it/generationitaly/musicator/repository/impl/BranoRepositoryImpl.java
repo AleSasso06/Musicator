@@ -222,9 +222,9 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String jpql = "SELECT DISTINCT b FROM Brano b JOIN b.album al JOIN al.artista a";
+			String jpql = "SELECT b FROM album_brano ab JOIN Brano b ON b.id = ab.brano_id JOIN Album a ON ab.album_id = a.id JOIN Artista ar ON a.artista_id = ar.id GROUP BY ar.id";
 
-			TypedQuery<Brano> query = em.createQuery(jpql, Brano.class);
+			TypedQuery<Brano> query = em.createQuery(jpql, Brano.class).setMaxResults(12);
 			brani = query.getResultList();
 			tx.commit();
 		} catch (Exception e) {

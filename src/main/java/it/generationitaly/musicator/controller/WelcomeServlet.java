@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.List;
 
+import it.generationitaly.musicator.entity.Album;
 import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.repository.BranoRepository;
 import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
@@ -21,7 +22,17 @@ public class WelcomeServlet extends HttpServlet {
    
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	 
+		List<Album> albums = null;
+
+		
 		List<Brano> brani = branoRepository.findDistinct();
+		for (Brano brano : brani) {
+			albums = branoRepository.findAlbumsByBrano(brano.getId());
+			if (!albums.isEmpty())
+				brano.setAlbum(albums);
+		}
+
+		
 		request.setAttribute("brani", brani);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
 		requestDispatcher.forward(request, response);

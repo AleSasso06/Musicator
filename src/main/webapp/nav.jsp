@@ -27,7 +27,7 @@
 	<nav class="navbar navbar-expand-lg bg-body-tertiary">
 	    <div class="container-fluid justify-content-center">
 	        <!-- Logo -->
-	        <a class="navbar-brand justify-content-center" href="index.jsp">
+	        <a class="navbar-brand justify-content-center" href="welcome">
 	            <img src="images/logo.svg" width="200" height="50" alt="Logo">
 	        </a>
 	        
