@@ -21,10 +21,24 @@ h2 {
     background-color: #E3F2FD !important; 
 }
 
-.navbar .nav-link {
-    color: #000000 !important;
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
 }
 
+/* Stile del logo */
+.navbar-brand {
+    margin-right: auto; 
+}
+
+
+@media (max-width: 992px) {
+    .navbar .container-fluid {
+        justify-content: space-between; 
+    }
+}
 
 .custom-register-btn {
     background-color: #C2185B; 
@@ -87,7 +101,6 @@ h2 {
     margin-left: auto; 
 }
 
-
 .footer {
     background-color: #E3F2FD !important; 
     color: #343a40; 
@@ -98,3 +111,7 @@ h2 {
     width: 100%; 
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }
+
+
+
+				

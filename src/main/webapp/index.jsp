@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+<%@page import="it.generationitaly.musicator.entity.Brano"%>
+<%@page import="it.generationitaly.musicator.entity.Album"%>    
+ 
 <!DOCTYPE html>
 <html>
 	<head>      
@@ -46,23 +49,7 @@
 	            animation-duration: 2.4s;
 	            animation-iteration-count: infinite
 	        }
-	
-	        @keyframes moveTop {
-	            0% {
-	                top: 100px;
-	                opacity: 0
-	            }
-	
-	            50% {
-	                top: 0;
-	                opacity: 1
-	            }
-	
-	            100% {
-	                top: -100px;
-	                opacity: 0
-	            }
-	        }
+	        
 	    </style>
 	   
 
@@ -70,11 +57,11 @@
 	</head>
 	<body>	
 	<%@ include file="nav.jsp" %>
-	
-    <!-- ELEMENTI FIXED 
-    <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
-    <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
 
+	
+    <!-- ELEMENTI FIXED -->
+    <%@ include file="goTop.jsp" %>
+            
         <div class="pt-3"></div>
 
         <div class="svg-container mt-3 pt-3">
@@ -94,23 +81,56 @@
         </div>
         <!-- TOP 200 ALBUMS -->
         <div class="container pt-4 pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
-            <h2 class="h3 fw-bold mb-0">Global Top 200 Chart</h2>
-            <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
+            <h2 class="h3 fw-bold mb-0">Classifica dei 12 brani più ascoltati del momento</h2>
+            <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">VAI ALLA LISTA BRANI</a></p>
         </div>
+        
+        <% List<Brano> brani = (List<Brano>) request.getAttribute("brani"); %>
+        <%for(Brano brano : brani) {%>
+        
+	   <!-- carosello -->
+	   <div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+	    <div class="carousel-inner">
+	        <% 
+	        int braniPerSlide = 12; // Numero di card per slide
+	        int numeroDiBrani = brani.size();
+	        boolean isFirstSlide = true;
+	
+	        for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
+	        %>
+	        <div class="carousel-item <%= isFirstSlide ? "active" : "" %>">
+	           <div class="row justify-content-center d-flex align-items-stretch">
+	                
+	        <% for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {%>
+	        
         <div class="container mb-5" data-aos="fade-up">
             <div class="row home-covers">
                 <!-- ALBUM -->
-                <a href="#"
+                
+                 <% if (!brano.getAlbum().isEmpty()) { %>
+                
+                <a href="brani"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">1</p>
-                    <img src="images/img_album/ladyGB.webp" alt="" width="75"
-                        height="75" class="rounded-3 mx-3">
+                    
+                    <img src="<%= brano.getAlbum().get(0).getFoto() %>" alt="" width="75" height="75" class="rounded-3 mx-3" style="object-fit: cover">
                     <div>
-                        <p class="mb-0"><strong>Die With A Smile</strong></p>
-                        <p class="mb-0">Lady Gaga &amp; Bruno Mars</p>
+                    	<a class="card-title" href="brano?id=<%= brano.getId() %>"><p class="mb-0"><strong><%= brano.getTitolo() %></strong></p></a>
+                    	
                     </div>
                 </a>
-                <!-- ALBUM -->
+                <% } %>
+                <% } %>
+                <% } %> <!-- Fine ciclo per braniPerSlide -->
+            </div>
+        </div>
+        <% 
+            isFirstSlide = false; 
+        } %> <!-- Fine ciclo per le slide -->
+    </div>
+                
+                
+<!--                 ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">2</p>
@@ -121,7 +141,7 @@
                         <p class="mb-0">Benson Boone</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">3</p>
@@ -133,7 +153,7 @@
                     </div>
                 </a>
 
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">4</p>
@@ -144,7 +164,7 @@
                         <p class="mb-0">Disturbed</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">5</p>
@@ -155,7 +175,7 @@
                         <p class="mb-0">Coldplay, Little Simz, Burna Boy, Elyanna &amp; TINI</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#" href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3 d-block link-dark link-underline link-underline-opacity-0 ">
                     <p class="mb-0 fw-bold">6</p>
@@ -166,7 +186,7 @@
                         <p class="mb-0">Lazza</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">7</p>
@@ -177,7 +197,7 @@
                         <p class="mb-0">Hozier</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">8</p>
@@ -188,7 +208,7 @@
                         <p class="mb-0">Falling In Reverse</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">9</p>
@@ -199,7 +219,7 @@
                         <p class="mb-0">Radiohead</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">10</p>
@@ -210,7 +230,7 @@
                         <p class="mb-0">Eminem</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">11</p>
@@ -221,7 +241,7 @@
                         <p class="mb-0">The Weeknd &amp; Playboi Carti</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">12</p>
@@ -232,7 +252,7 @@
                         <p class="mb-0">Jacksony, Agatino Romero</p>
                     </div>
                 </a>
-
+ -->
             </div>
         </div>
             
@@ -298,7 +318,7 @@
             </div>
         </div>
     </div>
-	 <!-- Aggiungi controlli se necessario -->
+	 <!-- controlli -->
 	    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
 	        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	        <span class="visually-hidden">Previous</span>
@@ -314,17 +334,7 @@
         </section>
   
 
-<%@ include file="footer.jsp" %>
- 
-  <!-- barra fissa promo 
-    <div class="fixed-bottom py-2 px-4 bg-redpromo">
-        <div href="#" class="link-light  link-underline link-underline-opacity-0">
-            <div class="container-fluid d-flex justify-content-between align-items-center fw-bold">
-                <div class="d-flex align-items-center"><i class="bi bi-music-note-beamed fs-4 bg-danger bg-gradient px-2 py-1 rounded-3 me-3 "></i>  Get up to two months free of Apple Music</div>
-                <div class="bg-white rounded-3 text-danger py-2 px-4 text-redpromo">TRY NOW</div>
-            </div>
-        </div>
-    </div>-->
+<%@ include file="footer.jsp" %>    
     
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -337,7 +347,7 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script locali -->
-    <script src="assets/javascript/bs5.js"></script>
+    <script src="bs5.js"></script>
 	<!-- Bootstrap Js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>
