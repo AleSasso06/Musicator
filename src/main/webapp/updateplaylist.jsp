@@ -18,13 +18,13 @@
 <div class="container mt-5">
     <h1 class="text-center">Modifica Playlist</h1>
     
-    <!-- Recupero della playlist dall'attributo della richiesta -->
+    <!-- Recupero della playlist -->
     <% Playlist playlist = (Playlist) request.getAttribute("playlist"); %>
 
-    <!-- Verifica se la playlist non è null prima di mostrare il form -->
+    <!-- Verifica se la playlist non è null -->
     <% if (playlist != null) { %>
 
-        <form action="modificaPlaylist" method="POST">
+        <form action="update-playlist" method="POST">
             <!-- Campo nascosto per l'ID della playlist -->
             <input type="hidden" name="id" value="<%= playlist.getId() %>">
 
@@ -45,7 +45,7 @@
         </form>
 
     <% } else { %>
-        <!-- Messaggio di errore se la playlist non è stata trovata -->
+        <!-- Messaggio di errore -->
         <p class="text-danger">Errore: La playlist non è disponibile.</p>
     <% } %>
 </div>

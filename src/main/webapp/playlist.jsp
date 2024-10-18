@@ -57,7 +57,12 @@
 			    		<span><%=playlist.getTitolo()%></span>
 			    	</div>
 			    	</a>
-			    	
+			    	<div class="card-body">
+                                <h5 class="card-title"><%= playlist.getTitolo() %></h5>
+                                <p class="card-text">Durata: <%= playlist.getDurata() %> minuti</p>
+                                
+                                
+                            </div>    
 			    </div>
 			    <%} 
 			} else { %>
