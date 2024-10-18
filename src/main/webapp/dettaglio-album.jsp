@@ -62,7 +62,7 @@
 		    <!-- nome album -->
 		    <div class="col-md-4 text-md-start  text-center">
 		       <picture>
-		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; position:relative; right: -620px; top: -265px; z-index:10px">
+		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -620px; top: -265px; z-index:10px">
 		   	</picture>
 		    </div>
       
@@ -141,7 +141,7 @@
 		                            </div>
 		                        </div>
 		                        <div class="col-auto">
-		                            <a class="btn btn-play" href="<%= brano.getYtLink() %>">
+		                            <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
 		                                <i class="bi bi-play-circle-fill"></i>
 		                            </a>
 		                        </div>
