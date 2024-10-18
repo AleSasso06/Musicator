@@ -100,77 +100,66 @@
 		<!-- Griglia delle card -->
 		<% if (!brani.isEmpty()) { %>
 		<h2 style="margin-bottom: 15px;">Brani</h2>
-		<div id="caroselloBrani" class="carousel slide"
-			data-bs-ride="carousel" data-bs-interval="15000">
-			<div class="carousel-inner">
-				<%
-				int braniPerSlide = 12; // Numero di card per slide
-				int numeroDiBrani = brani.size();
-				boolean isFirstSlide = true;
+		<!-- carosello -->
+   <div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
+    <div class="carousel-inner">
+        <% 
+        int braniPerSlide = 12; // Numero di card per slide
+        int numeroDiBrani = brani.size();
+        boolean isFirstSlide = true;
 
-				for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
-				%>
-				<div class="carousel-item <%=isFirstSlide ? "active" : ""%>">
-					<div class="row justify-content-center d-flex align-items-stretch">
-						<%
-						// Mostra fino a braniPerSlide card per slide
-						for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {
-							Brano brano = brani.get(j);
-						%>
-						<div class="col-md-5 col-lg-4 mb-3">
-							<div class="card song-card">
-								<div class="row no-gutters align-items-center">
-									<div class="col-auto">
-										<%
-										if (brano != null && !brano.getAlbum().isEmpty()) {
-										%>
-										<img src="<%=brano.getAlbum().get(0).getFoto()%>" height="110"
-											class="rounded song-img" alt="...">
-										<%
-										}
-										%>
-									</div>
-									<div class="col">
-										<div class="card-body p-2">
-											<a class="card-title h5" href="brano?id=<%=brano.getId()%>">
-												<h6 class="card-title text-start"><%=brano.getTitolo()%></h6>
-											</a>
-											<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
-											<p class="card-title text-start"><%=new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita())%></p>
-										</div>
-									</div>
-									<div class="col-auto">
-										<a class="btn btn-play" href="<%=brano.getYtLink()%>"
-											target="blank"> <i class="bi bi-play-circle-fill"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<%
-						}
-						%>
-						<!-- Fine ciclo per braniPerSlide -->
-					</div>
-				</div>
-				<%
-				isFirstSlide = false;
-				}
-				%>
-				<!-- Fine ciclo per le slide -->
-			</div>
-			<!-- Controlli del Carosello -->
-		<button class="carousel-control-prev" type="button"
-			data-bs-target="#caroselloBrani" data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-				class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button"
-			data-bs-target="#caroselloBrani" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span> <span
-				class="visually-hidden">Next</span>
-		</button>
-		</div>
+        for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
+        %>
+        <div class="carousel-item <%= isFirstSlide ? "active" : "" %>">
+           <div class="row justify-content-center d-flex align-items-stretch">
+                <% 
+                // Mostra fino a braniPerSlide card per slide
+                for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {
+                    Brano brano = brani.get(j);
+                %>
+                <div class="col-md-5 col-lg-4 mb-3">
+    				<div class="card song-card">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <% if (!brano.getAlbum().isEmpty()) { %>
+                                    <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+                                <% } %>
+                            </div>
+                            <div class="col">
+                                <div class="card-body p-1">
+                                    <a class="card-title" href="brano?id=<%= brano.getId() %>">
+                                        <p class="card-title text-start"><b><%= brano.getTitolo() %></b></p>
+                                    </a>
+                                    <a href="album?id=<%= brano.getAlbum().get(0).getId() %>" style="color: black">
+                                   		 <p class="card-title text-start"><%= brano.getAlbum().get(0).getTitolo() %></p>
+                                    </a>
+                                    <small class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></small>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
+                                    <i class="bi bi-play-circle-fill"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% } %> <!-- Fine ciclo per braniPerSlide -->
+            </div>
+        </div>
+        <% 
+            isFirstSlide = false; 
+        } %> <!-- Fine ciclo per le slide -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#caroselloBrani" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#caroselloBrani" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
 		<% } else { %>
 			<p></p>
 		<% } %>
@@ -321,6 +310,7 @@
 		}
 		%>
 	</div>
+</div>
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>
 	<!-- Bootstrap Js -->
