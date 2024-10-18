@@ -17,6 +17,10 @@
 	    color: #C2185B !important;
 	    border-bottom: 2px solid #C2185B !important;
 	}
+	
+	.navbar .nav-link:hover::after {
+		width: 100%;
+	}
 
 </style>
 	

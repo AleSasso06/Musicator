@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+<%@page import="it.generationitaly.musicator.entity.Brano"%>
+<%@page import="it.generationitaly.musicator.entity.Album"%>    
+ 
 <!DOCTYPE html>
 <html>
 	<head>      
@@ -47,46 +50,6 @@
 	            animation-iteration-count: infinite
 	        }
 	        
-	        #go-top {
-			    position: fixed;
-			    bottom: -50px; 
-			    right: 20px;
-			    z-index: 100; 
-			    width: 2.5rem;
-			    height: 2.5rem;
-			    background-color: #5C8AAD !important;
-			    transition: all 500ms ease;
-			    display: flex;
-			    justify-content: center;
-			    align-items: center;
-			    cursor: pointer;
-			    border: none;
-			}
-			
-			#go-top:hover {
-			    background-color: #C2185B !important;
-			}
-			
-			#go-top.attivo {
-			    bottom: 20px; 
-			}
-	        
-	        @keyframes moveTop {
-	            0% {
-	                top: 100px;
-	                opacity: 0
-	            }
-	
-	            50% {
-	                top: 0;
-	                opacity: 1
-	            }
-	
-	            100% {
-	                top: -100px;
-	                opacity: 0
-	            }
-	        }
 	    </style>
 	   
 
@@ -94,11 +57,10 @@
 	</head>
 	<body>	
 	<%@ include file="nav.jsp" %>
+
 	
     <!-- ELEMENTI FIXED -->
-	<button id="go-top" aria-label="go-top" onclick="goTop();" title="torna a inizio pagina">
-	    <img src="images/go-top.svg" alt="Torna su" width="40" height="40">
-	</button>
+    <%@ include file="goTop.jsp" %>
             
         <div class="pt-3"></div>
 
@@ -119,23 +81,56 @@
         </div>
         <!-- TOP 200 ALBUMS -->
         <div class="container pt-4 pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
-            <h2 class="h3 fw-bold mb-0">Global Top 200 Chart</h2>
-            <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">SEE ALL</a></p>
+            <h2 class="h3 fw-bold mb-0">Classifica dei 12 brani più ascoltati del momento</h2>
+            <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">VAI ALLA LISTA BRANI</a></p>
         </div>
+        
+        <% List<Brano> brani = (List<Brano>) request.getAttribute("brani"); %>
+        <%for(Brano brano : brani) {%>
+        
+	   <!-- carosello -->
+	   <div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+	    <div class="carousel-inner">
+	        <% 
+	        int braniPerSlide = 12; // Numero di card per slide
+	        int numeroDiBrani = brani.size();
+	        boolean isFirstSlide = true;
+	
+	        for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
+	        %>
+	        <div class="carousel-item <%= isFirstSlide ? "active" : "" %>">
+	           <div class="row justify-content-center d-flex align-items-stretch">
+	                
+	        <% for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {%>
+	        
         <div class="container mb-5" data-aos="fade-up">
             <div class="row home-covers">
                 <!-- ALBUM -->
+                
+                 <% if (!brano.getAlbum().isEmpty()) { %>
+                
                 <a href="brani"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">1</p>
-                    <img src="images/img_album/ladyGB.webp" alt="" width="75"
-                        height="75" class="rounded-3 mx-3">
+                    
+                    <img src="<%= brano.getAlbum().get(0).getFoto() %>" alt="" width="75" height="75" class="rounded-3 mx-3" style="object-fit: cover">
                     <div>
-                        <p class="mb-0"><strong>Die With A Smile</strong></p>
-                        <p class="mb-0">Lady Gaga &amp; Bruno Mars</p>
+                    	<a class="card-title" href="brano?id=<%= brano.getId() %>"><p class="mb-0"><strong><%= brano.getTitolo() %></strong></p></a>
+                    	
                     </div>
                 </a>
-                <!-- ALBUM -->
+                <% } %>
+                <% } %>
+                <% } %> <!-- Fine ciclo per braniPerSlide -->
+            </div>
+        </div>
+        <% 
+            isFirstSlide = false; 
+        } %> <!-- Fine ciclo per le slide -->
+    </div>
+                
+                
+<!--                 ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">2</p>
@@ -146,7 +141,7 @@
                         <p class="mb-0">Benson Boone</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">3</p>
@@ -158,7 +153,7 @@
                     </div>
                 </a>
 
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">4</p>
@@ -169,7 +164,7 @@
                         <p class="mb-0">Disturbed</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">5</p>
@@ -180,7 +175,7 @@
                         <p class="mb-0">Coldplay, Little Simz, Burna Boy, Elyanna &amp; TINI</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#" href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3 d-block link-dark link-underline link-underline-opacity-0 ">
                     <p class="mb-0 fw-bold">6</p>
@@ -191,7 +186,7 @@
                         <p class="mb-0">Lazza</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">7</p>
@@ -202,7 +197,7 @@
                         <p class="mb-0">Hozier</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">8</p>
@@ -213,7 +208,7 @@
                         <p class="mb-0">Falling In Reverse</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">9</p>
@@ -224,7 +219,7 @@
                         <p class="mb-0">Radiohead</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">10</p>
@@ -235,7 +230,7 @@
                         <p class="mb-0">Eminem</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">11</p>
@@ -246,7 +241,7 @@
                         <p class="mb-0">The Weeknd &amp; Playboi Carti</p>
                     </div>
                 </a>
-                <!-- ALBUM -->
+                ALBUM
                 <a href="#"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">12</p>
@@ -257,7 +252,7 @@
                         <p class="mb-0">Jacksony, Agatino Romero</p>
                     </div>
                 </a>
-
+ -->
             </div>
         </div>
             
@@ -323,7 +318,7 @@
             </div>
         </div>
     </div>
-	 <!-- Aggiungi controlli se necessario -->
+	 <!-- controlli -->
 	    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
 	        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 	        <span class="visually-hidden">Previous</span>
@@ -339,22 +334,7 @@
         </section>
   
 
-<%@ include file="footer.jsp" %>
- 
-    
-     <script>
-        
-     window.onscroll = function () {
-    	    console.log('Scorrimento attuale:', document.documentElement.scrollTop);
-    	    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    	        document.getElementById("go-top").classList.add("attivo");
-    	    } else {
-    	        document.getElementById("go-top").classList.remove("attivo");
-    	    }
-    	};    
-    	
-    </script>
-    
+<%@ include file="footer.jsp" %>    
     
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
