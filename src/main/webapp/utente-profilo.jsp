@@ -87,7 +87,7 @@
 			style="color: white; text-align: center; margin-top: 0px; margin-bottom: 80px">PLAYLIST</h1>
 
 		<!-- inizio playlist -->
-		<div class="container">
+	<div class="container">
 			<!-- forse si potrebbe mettere una linea opp -->
 			<div class="container">
 				<!-- inizio card -->

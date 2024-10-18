@@ -23,22 +23,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 /*******************************************  PULSANTE #go-top **********************************/
-// 1) Comparsa/scomparsa superati i 400px di scrolling
-// l'evento scroll, applicabile all'oggeto window, si verfifica ogni volta che l'utente scrolla la pagina
+// Mostra o nasconde il pulsante a seconda dello scrolling
 window.onscroll = function () {
-    //il metodo .scrollTop permette di rilevare a quanti pixel siamo con lo scrolling rispetto a body
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         document.getElementById("go-top").classList.add("attivo");
-    }
-    else {
+    } else {
         document.getElementById("go-top").classList.remove("attivo");
     }
-}
-// 2) Torna al punto 0 
+};
+
+// Funzione per scrollare verso l'alto
 function goTop() {
-    // la funzione scrollTo({ parametri }) consente di riposizionare lo scrolling ad una determinata altezza
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 
 
 

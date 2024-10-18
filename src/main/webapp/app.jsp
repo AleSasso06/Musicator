@@ -1,14 +1,14 @@
-<%@page import="org.hibernate.internal.build.AllowSysOut"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import="it.generationitaly.musicator.entity.*"%>
-<%@ page import ="java.util.List" %>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+<%@page import="it.generationitaly.musicator.entity.Brano"%>
+<%@page import="it.generationitaly.musicator.entity.Album"%>    
+ 
 <!DOCTYPE html>
-<html>   
-<head>
-<meta charset="UTF-8">
-<title>Musicator - Album</title>
+<html>
+	<head>      
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Welcome to Musicator!</title>
 		 <!-- Bootstrap css -->
  		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -20,116 +20,336 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	    
-	    <style>
-        /* Imposta una larghezza fissa per tutte le card */
-        .song-card {
-            width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
-            opacity: 0.7;
-            transition: opacity 0.5s ease;
-        }
 
-        .card-body {
-            text-align: center; /* Allinea il testo al centro */
-        }
+		
+		    <style>
+	        /************************************************ PRELOADER */
+	        #preloader {
+	            position: fixed;
+	            z-index: 1031;
+	            top: 0;
+	            display: flex;
+	            flex-direction: column;
+	            justify-content: center;
+	            align-items: center;
+	            width: 100vw;
+	            height: 100vh;
+	            background-color: #c1ff72;
+	            color: #fff;
+	            transition: 1s ease-out 1s
+	        }
+	
+	        #preloader.loaded {
+	            top: 100vh
+	        }
+	
+	        #preloader .loader {
+	            position: relative;
+	            animation-name: moveTop;
+	            animation-duration: 2.4s;
+	            animation-iteration-count: infinite
+	        }
+	        
+	        #go-top {
+			    position: fixed;
+			    bottom: -50px; 
+			    right: 20px;
+			    z-index: 100; 
+			    width: 2.5rem;
+			    height: 2.5rem;
+			    background-color: #5C8AAD !important;
+			    transition: all 500ms ease;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    cursor: pointer;
+			    border: none;
+			}
+			
+			#go-top:hover {
+			    background-color: #C2185B !important;
+			}
+			
+			#go-top.attivo {
+			    bottom: 20px; 
+			}
+	        
+	        @keyframes moveTop {
+	            0% {
+	                top: 100px;
+	                opacity: 0
+	            }
+	
+	            50% {
+	                top: 0;
+	                opacity: 1
+	            }
+	
+	            100% {
+	                top: -100px;
+	                opacity: 0
+	            }
+	        }
+	    </style>
+	   
 
-        .btn-play {
-            font-size: 1.5rem;
-            color: #C2185B;
-        }
-    </style>
-</head>
-<body>
-<%@ include file="nav.jsp" %>
-<%Album album = (Album) request.getAttribute("album"); %>
-<% List <Brano> brani = album.getBrano(); %>
-<div class="pt-3"></div>
+	
+	</head>
+	<body>	
+	<%@ include file="nav.jsp" %>
+	<%@ include file="goTop.jsp" %>
+	
+    <!-- ELEMENTI FIXED -->
+	<button id="go-top" aria-label="go-top" onclick="goTop();" title="torna a inizio pagina">
+	    <img src="images/go-top.svg" alt="Torna su" width="40" height="40">
+	</button>
+            
+        <div class="pt-3"></div>
 
-
-             <div class="svg-container mt-3">
-           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+        <div class="svg-container mt-3 pt-3">
+           <img alt="logo" src="images/logo header.svg">
         </div>
-		<a href="albums" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-
-		    <!-- nome album -->
-		    <div class="col-md-4 text-md-start  text-center">
-		       <picture>
-		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; position:relative; right: -620px; top: -265px; z-index:10px">
-		   	</picture>
-		    </div>
-      
-        <div class="container">
-	        <div class="row">
-		        <div class="col">
-			        <h1 class="display-3 text-light text-center"   style="position:relative; right: -450px; top:-190px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
-	       </div> 
-       
-	        <div class="col-8 mt-4 ">
-		        <ul style="list-style-type:none; color:white; text-align: justify">
-			         <li>Artista: <%=album.getArtista().getPseudonimo() %></li>
-			         <li>Genere: <%=album.getGenere().getNome() %></li>
-			         <li>Durata: <%=album.getDurata() %></li>
-			         <li>Data di Uscita: <%=album.getDataUscita() %></li>
-			         <li>Descrizione: <%=album.getDescrizione() %></li>
-			         <li><%=album.getBrano().size() %> brani</li>
-		        </ul>
-		      </div>  
-	        </div>
-	      </div>
         
-        <div class="container min-vh-10 d-flex  justify-content-center mt-5">
-   <h1 style="color:white" > Elenco brani</h1>
-</div>
-
- <!-- Griglia delle card -->
-    <div class="row justify-content-center">
-        <% if (!brani.isEmpty()) { %>
-            <% for (Brano brano : brani) { %>
-                <div class="col-12 mb-3 d-flex justify-content-center">
-                    <div class="card song-card">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
-                            </div>
-                            <div class="col">
-                                <div class="card-body p-2">
-                                    <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-                                        <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
-                                    </a>
-                                    
-                                     <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                 <a class="btn btn-play" href="<%= brano.getYtLink() %>">
-                                    <i class="bi bi-play-circle-fill"></i>
-                                </a>
-                            </div>
-                        </div>
+       
+        <!-- GLOBAL TOP 200 -->
+        <div class="py-4"></div>
+        <div class="container text-center mb-4"  data-aos="fade-up">
+            <p class="text-secondary fw-bold fs-5 mb-0">GLOBAL TOP 200</p>
+            <h2 class="h1 fw-bold">Top songs being discovered around the world right now</h2>
+            <p class="fs-5 pb-4">Scopri chi è entrato nella lista delle canzoni più ascoltate al mondo su Musicator</p>
+            <div class="ratio ratio-16x9" data-aos="zoom-in">
+	                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPa7bsKwL-c?si=oj_yLUZIIH94tjEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- TOP 200 ALBUMS -->
+        <div class="container pt-4 pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left"> 
+            <h2 class="h3 fw-bold mb-0">Classifica dei 12 brani più ascoltati del momento</h2>
+            <p class="mb-0"><a href="brani" class="link-underline  link-underline-opacity-0 fw-bolder">VAI ALLA LISTA BRANI</a></p>
+        </div>
+     
+        <div class="container mb-5" data-aos="fade-up">
+            <div class="row home-covers">
+               
+               
+                <!-- ALBUM -->
+                <a href="brani"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">1</p>
+                    
+                    <img src="images/img_album/ladyGB.webp" alt="" width="75" height="75" class="rounded-3 mx-3" style="object-fit: cover">
+                    <div>
+                        <p class="mb-0"><strong>Die with a smile</strong></p>
+                        <p class="mb-0">Lady Gaga &amp; Bruno Mars </p>
                     </div>
+                </a>
+
+                 <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">2</p>
+                    <img src="images/img_album/beautiful.webp" alt="" width="75"
+                        height="75" class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Beautiful things</strong></p>
+                        <p class="mb-0">Benson Boone</p>
+                    </div>
+                </a>
+              <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">3</p>
+                    <img src="images/img_album/billie.webp" alt="" width="75"
+                        height="75" class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Birds of feather</strong></p>
+                        <p class="mb-0">Billie Eilish</p>
+                    </div>
+                </a>
+
+               <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">4</p>
+                    <img src="images/img_album/disturbed.webp" alt="" width="75"
+                        height="75" class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>The sound of silence</strong></p>
+                        <p class="mb-0">Disturbed</p>
+                    </div>
+                </a>
+                <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">5</p>
+                    <img src="images/img_album/pray.webp" alt="" width="75"
+                        height="75" class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>WE PRAY</strong></p>
+                        <p class="mb-0">Coldplay, Little Simz, Burna Boy, Elyanna &amp; TINI</p>
+                    </div>
+                </a>
+                <!-- ALBUM -->
+                <a href="#" href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3 d-block link-dark link-underline link-underline-opacity-0 ">
+                    <p class="mb-0 fw-bold">6</p>
+                    <img src="images/img_album/100.webp" alt="" width="75" height="75"
+                        class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>100 MESSAGGI</strong></p>
+                        <p class="mb-0">Lazza</p>
+                    </div>
+                </a>
+              <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">7</p>
+                    <img src="images/img_album/hozier.webp" alt="" width="75" height="75"
+                        class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Too sweet</strong></p>
+                        <p class="mb-0">Hozier</p>
+                    </div>
+                </a>
+               <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">8</p>
+                    <img src="images/img_album/prequel.webp" alt="" width="75" height="75"
+                        class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Prequel</strong></p>
+                        <p class="mb-0">Falling In Reverse</p>
+                    </div>
+                </a>
+           <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">9</p>
+                    <img src="images/img_album/creep.webp" alt="" width="75" height="75"
+                        class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Creep</strong></p>
+                        <p class="mb-0">Radiohead</p>
+                    </div>
+                </a>
+               <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">10</p>
+                    <img src="images/img_album/eminem.webp" alt="" width="75"
+                        height="75" class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Mockingbird</strong></p>
+                        <p class="mb-0">Eminem</p>
+                    </div>
+                </a>
+                <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">11</p>
+                    <img src="images/img_album/timeless.webp" alt="" width="75" height="75"
+                        class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Timeless</strong></p>
+                        <p class="mb-0">The Weeknd &amp; Playboi Carti</p>
+                    </div>
+                </a>
+               <!-- ALBUM -->
+                <a href="#"
+                    class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
+                    <p class="mb-0 fw-bold">12</p>
+                    <img src="images/img_album/romero.webp" alt="" width="75"
+                        height="75" class="rounded-3 mx-3">
+                    <div>
+                        <p class="mb-0"><strong>Pedro</strong></p>
+                        <p class="mb-0">Jacksony, Agatino Romero</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+     
+                <!-- paginazione (puntini) -->
+                <div class="swiper-pagination"></div>
+        
+        <!-- DISCOVER ITALY -->
+        <section class="bg-body-dark py-4">
+            <div class="container text-center">
+                <img class="rounded-circle border border-white border-5 shadow"
+                    src="images/images/logoV.svg" alt=""
+                    style="width:120px; height:auto; position:relative; z-index:2; margin-right: -5rem"
+                    data-aos="fade-right">
+                <img class="rounded-circle border border-white border-5 bg-light shadow"
+                    src="images/teamL.svg" alt=""
+                    style="width:120px; height:auto; position:relative; z-index:2" data-aos="fade-up">
+                <img class="rounded-circle border border-white border-5 shadow"
+                    src="Musicator/src/main/webapp/images/ML.svg" alt=""
+                    style="width:120px; height:auto; position:relative; z-index:2; margin-left: -5rem"
+                    data-aos="fade-left">
+            </div>
+            
+            <div class="container text-center mt-4" data-aos="fade-up">
+                <p class=" fw-bold">DISCOVERY ITALY</p>
+                <h2 class="h1">Brani in ascesa di artisti emergenti</h2>
+                <p class="lead">Sii il primo ad ascoltare questi futuri successi musicali</p>
+            </div>
+            <div class="container pb-2 mb-3 border-bottom d-flex justify-content-between align-items-baseline" data-aos="fade-left">
+            </div>
+                    
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+	     <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	 	 </div>
+        <!-- Primo elemento attivo con video YouTube -->
+        <div class="carousel-item active">
+            <div class="container d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 480px;">
+                    <iframe width="560" height="315" class="center" src="https://www.youtube.com/embed/cZTlRmNgJz4?si=LkVhANEcwZlH7Ip0" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-            <% } %>
-        <% } else { %>
-            <p>Nessun brano trovato.</p>
-        <% } %>
+            </div>
+        </div>
+        <!-- Secondo elemento con immagine -->
+        <div class="carousel-item">
+        	 <div class="container d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 480px;">
+            		<iframe width="560" height="315" src="https://www.youtube.com/embed/Dpfv9P23uCM?si=7t8Ii8t_K_wP99Kj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+            </div>
+        </div>
+        <!-- Terzo elemento con immagine -->
+        <div class="carousel-item">
+        	 <div class="container d-flex justify-content-center">
+                <div class="ratio ratio-16x9" style="max-width: 480px;">
+            		<iframe width="560" height="315" src="https://www.youtube.com/embed/xAWDqdpOlu8?si=lYmmDmxF5RDjj8M1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+            </div>
+        </div>
     </div>
-</div>
+	 <!-- controlli -->
+	    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+	        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	        <span class="visually-hidden">Previous</span>
+	    </button>
+	    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+	        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	        <span class="visually-hidden">Next</span>
+	    </button>
+	</div>
 
-	
-	
-
-	
-
-<!-- <div class="container">
-<ol >
-       <li style="padding:20px; margin-bottom: 5px; background-color:white ;  border-radius: 4px;">Foto-Titolo canzone 
-       </li>
-    </ol>
-    
-</div> -->
+                    <!-- paginazione (puntini) -->
+                    <div class="swiper-pagination"></div>
+        </section>
+  
 
 <%@ include file="footer.jsp" %>
-
+ 
+     
+    
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -141,9 +361,8 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script locali -->
-    <script src="assets/javascript/bs5.js"></script>
+    <script src="bs5.js"></script>
 	<!-- Bootstrap Js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
+	</body>
 </html>
