@@ -58,7 +58,7 @@ Brano brano = (Brano) request.getAttribute("brano");
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
                 <div class="card-body">
                     <h3 class="card-title"><%=brano.getTitolo() %></h3>
-                     <a class="card-title h5" href="album?id=<%= brano.getAlbum().get(0).getId() %>"">
+                     <a class="card-title h5" href="album?id=<%= brano.getAlbum().get(0).getId() %>">
                     <h5 class="card-title"><%=brano.getAlbum().get(0).getTitolo() %></h5>
                     </a>
                     <small class="text-body-secondary"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></small>
