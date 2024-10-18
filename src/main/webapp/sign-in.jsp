@@ -35,9 +35,7 @@
 	<body >
 	
 	
-	<div class="container">
-	   <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-	   </div>
+	
 		
 		
 		<div class="container-sign-in mx-auto ">
@@ -46,9 +44,10 @@
 					
 						
 						<div class="form-row col-md-20 mb-1">
-							<!-- <form id="uploadForm">
+							
 								<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
 								<br><br>
+								<!-- <form id="uploadForm">
 								<!-- commento l'inserimento foto perchè non ho idea di come farlo dal lato servlet -->
 								<!-- <label for="profileImage">Scegli un'immagine:</label>
 								<input type="file" id="profileImage" accept="image/*">  
@@ -80,6 +79,13 @@
 							<input type="password" class="form-control" id="inputPassword4" name="password" required>
 						</div>
 						<br>
+						
+						<div class="container mb-1 ">
+	                    <a class="dropdown-item d-inline text-body-secondary" href="login.jsp">Sei già registrato? Accedi!</a>
+	                </div>
+	                <div class="container mb-4 ">
+	                    <a class="dropdown-item d-inline text-body-secondary" href="index.jsp">Torna alla Home</a>
+	                </div>
 						<button class="custom-register-btn" type="submit" >Registrati</button>
 					
 				
