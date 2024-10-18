@@ -36,6 +36,6 @@ public class RemoveBranoPlaylistServlet extends HttpServlet {
 			playlistRepository.update(playlist);
 		}
 
-		response.sendRedirect("playlist?id=" + playlistId);
+		response.sendRedirect("update-playlist?id=" + playlistId);
 	}
 }

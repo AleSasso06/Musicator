@@ -32,44 +32,42 @@
 		
 			 <!-- Barra di Ricerca -->
 			<div class="input-group mb-3">
-			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
-			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
-			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
-			 </form>
+				<form action="ricerche_specifiche" method="get" class="input-group mb-3">
+					<input type="text" class="form-control" name="playlist" style="border-radius:30px" placeholder="Cerca la tua playlist preferita" aria-label="Recipient's username" aria-describedby="button-addon2">
+					<!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+				</form>
 			</div>
 			<!-- Fine Barra di Ricerca -->	
+			
 		</div>
 			
-			<!-- pulsante per tornare indietro -->
-    		<a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-			
-			<div class="container">
-			
-		    <%if (playlists != null && !playlists.isEmpty()){ %>
-			    <%for (Playlist playlist : playlists) {%>
-			    <div class="row">
-			    	
-			    	<a href="playlist?id=<%=playlist.getId()%>">
-			    	<div class="col-2">
-			    		<img src="<%=playlist.getFoto()%>">
-			    	</div>
-			    	<div class="col-10">
-			    		<span><%=playlist.getTitolo()%></span>
-			    	</div>
-			    	</a>
-			    	<div class="card-body">
-                                <h5 class="card-title"><%= playlist.getTitolo() %></h5>
-                                <p class="card-text">Durata: <%= playlist.getDurata() %> minuti</p>
-                                
-                                
-                            </div>    
-			    </div>
-			    <%} 
-			} else { %>
-		    	<span>Nessuna playlist trovata...</span>
-		    <%} %>
-		   
+		<!-- pulsante per tornare indietro -->
+	    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+		
+		<div class="container" style="margin-bottom: 50px">
+			<!-- inizio card -->
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<%if (playlists != null && !playlists.isEmpty()){ %>
+				    <%for (Playlist playlist : playlists) {%>
+				  		<div class="col-md-4 d-flex justify-content-center mb-3">
+		
+						  	<div class="card">
+						    	<a href="playlist?id=<%= playlist.getId() %>"><img src="<%= playlist.getFoto() %>" class="card-img-top" alt="..." ></a>
+						    	<div class="card-body text-center">
+						        	<a class="card-title h5" href="playlist?id=<%= playlist.getId() %>"><%= playlist.getTitolo() %></a>
+						        	<p class="card-text" style="color: black"> <%= playlist.getBrani().size() %> brani</p>
+						    	</div>
+							</div>
+				  
+				  		</div>
+					<%}
+				} else { %>
+				    <span>Nessuna playlist trovata...</span>
+			    <%}%>
+			</div>
+			<!-- fine card -->
 		</div>
+		
 		<div>
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>

@@ -22,28 +22,28 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	    
 	    <style>
-        /* Imposta una larghezza fissa per tutte le card */
-        .song-card {
-            width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
-            opacity: 0.7;
-            transition: opacity 0.5s ease;
-        }
-
-        .card-body {
-            text-align: center; /* Allinea il testo al centro */
-        }
-
-        .btn-play {
-            font-size: 1.5rem;
-            color: #C2185B;
-        }
-        
-		.album-description {
-		    margin-top: -150px; 
-		    position: relative; 
-		    z-index: 10; 
-		}
-    </style>
+	        /* Imposta una larghezza fissa per tutte le card */
+	        .song-card {
+	            width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
+	            opacity: 0.7;
+	            transition: opacity 0.5s ease;
+	        }
+	
+	        .card-body {
+	            text-align: center; /* Allinea il testo al centro */
+	        }
+	
+	        .btn-play {
+	            font-size: 1.5rem;
+	            color: #C2185B;
+	        }
+	        
+			.album-description {
+			    margin-top: -150px; 
+			    position: relative; 
+			    z-index: 10; 
+			}
+	    </style>
 </head>
 <body>
 <%@ include file="nav.jsp" %>

@@ -83,11 +83,11 @@
 			<!-- fine intestazione -->
 		</div>
 
-		<h1
-			style="color: white; text-align: center; margin-top: 0px; margin-bottom: 80px">PLAYLIST</h1>
+		<h1 style="color: white; text-align: center; margin-top: 0px; margin-bottom: 80px">PLAYLIST</h1>
+		<hr style="color: white; margin-top: -50px; margin-bottom: 70px">
 
 		<!-- inizio playlist -->
-	<div class="container">
+	<div class="container" style="margin-bottom: 70px">
 			<!-- forse si potrebbe mettere una linea opp -->
 			<div class="container">
 				<!-- inizio card -->
@@ -99,18 +99,28 @@
 					<div class="col-md-4 d-flex justify-content-center mb-3">
 
 						<div class="card">
-							<img src="<%=playlist.getFoto()%>" class="card-img-top"
-								alt="...">
-							<div class="card-body text-center">
-								<a class="card-title h5"
-									href="playlist?id=<%=playlist.getId()%>"><%=playlist.getTitolo()%></a>
+							<a href="playlist?id=<%=playlist.getId()%>">
+								<img src="<%=playlist.getFoto()%>" class="card-img-top" alt="...">
+							</a>
+							<div class="card-body">
+								<a class="card-title h5 text-right"
+									href="playlist?id=<%=playlist.getId()%>"><%=playlist.getTitolo()%>
+								</a>
+								
+								<!-- inizio bottone dropdown opzioni -->
+								<div class="dropdown">
+								  <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								    <i class="bi bi-three-dots-vertical"></i>
+								  </button>
+								  <ul class="dropdown-menu">
+								    <li><a class="dropdown-item" href="update-playlist?id=<%=playlist.getId()%>">Modifica</a></li>
+								    <li><hr class="dropdown-divider"></li>
+								    <li><a class="dropdown-item" href="delete-playlist?playlistId=<%=playlist.getId()%>">Elimina</a></li>
+								  </ul>
+								</div>
+								<!-- fine bottone dropdown opzioni -->
 							</div>
 						</div>
-						<form action="update-playlist" method="GET">
-							<label for="playlistName">Nome della Playlist:</label><br>
-							 <input type="hidden" name="id" value="<%=playlist.getId()%>">
-							<button type= "submit">Modifica</button>
-						</form>
 					</div>
 
 					<%
@@ -128,6 +138,32 @@
 			</div>
 		</div>
 		<!-- fine playlist -->
+		
+		
+	<!-- inizio crea nuova playlist -->
+	<!-- <div class="container" style="margin-bottom: 70px">
+			forse si potrebbe mettere una linea opp
+			<div class="container">
+				inizio card
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+				
+					<div class="col-md-4 d-flex justify-content-center mb-3">
+
+						<div class="card">
+							<a href="#"> qui ci andrebbe il link alla pagina dove si crea la playlist
+								<img src="#" class="card-img-top" alt="..."> qui ci andrebbe un'img grigia con un +
+							</a>
+							<div class="card-body">
+								<a class="card-title h5 text-right" href="#"> </a> qui ci andrebbe il link alla pagina dove si crea la playlist
+								<i class="bi bi-plus-lg"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				fine card
+			</div>
+		</div> -->
+		<!-- fine crea nuova playlist -->
 
 
 	</main>
