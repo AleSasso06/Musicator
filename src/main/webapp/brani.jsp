@@ -54,11 +54,11 @@
         }
         
         .carousel-control-prev {
-    		left: -115px;
+    		left: -175px;
 		}
 		
 		.carousel-control-next {
-		    right: -115px;
+		    right: -175px;
 		}
 
 
@@ -110,7 +110,7 @@
                         <div class="row no-gutters align-items-center">
                             <div class="col-auto">
                                 <% if (!brano.getAlbum().isEmpty()) { %>
-                                    <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+                                    <a href="brano?id=<%= brano.getId() %>"><img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="..."></a>
                                 <% } %>
                             </div>
                             <div class="col">
