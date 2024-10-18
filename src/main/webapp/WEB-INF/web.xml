@@ -179,4 +179,44 @@
     <servlet-name>ModificaUtenteServlet</servlet-name>
     <url-pattern>/ModificaUtenteServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeletePlaylistServlet</display-name>
+    <servlet-name>DeletePlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.DeletePlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeletePlaylistServlet</servlet-name>
+    <url-pattern>/delete-playlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddToPlaylistServlet</display-name>
+    <servlet-name>AddToPlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.AddToPlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddToPlaylistServlet</servlet-name>
+    <url-pattern>/add-to-playlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RemoveBranoPlaylistServlet</display-name>
+    <servlet-name>RemoveBranoPlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.RemoveBranoPlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveBranoPlaylistServlet</servlet-name>
+    <url-pattern>/remove-brano-playlist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdatePlaylistServlet</display-name>
+    <servlet-name>UpdatePlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.UpdatePlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePlaylistServlet</servlet-name>
+    <url-pattern>/update-playlist</url-pattern>
+  </servlet-mapping>
 </web-app>

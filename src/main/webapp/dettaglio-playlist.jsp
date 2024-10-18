@@ -31,7 +31,8 @@
 		</div>
 		<div class="col-8">
 			<!-- ci andrebbe il titolo del brano -->
-			<%for (Brano brano : brani){%>
+			<% int i= 0;
+			for (Brano brano : brani){%>
 <div class="container mt-5 ">
 
 	<div class="card mb-3 ms-3" style="max-width: 1000px;">
@@ -52,13 +53,19 @@
 							<small class="text-body-secondary">Artista </small>
 						</p>
 					</form>
+					<!-- Idea bottone per rimuovere il brano dalla playlist,  -->
+					<form action="remove-brano-playlist" method="post">
+	    				<input type="hidden" name="branoPlace" value="<%= i %>">
+	    				<input type="hidden" name="playlistId" value="<%= playlist.getId() %>">
+	    				<button type="submit" class="btn btn-danger">Rimuovi</button>
+					</form>	
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	</div>
-<%} %>
+<% i++;}  %>
 		</div>
 	</div>
 	<div class="row">	
