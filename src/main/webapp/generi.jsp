@@ -47,17 +47,17 @@
 
 	<%@ include file="nav.jsp"%>
 	
-	<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+	<!--  <div class="container min-vh-10 d-flex  justify-content-center mt-5">
 		
-			 <!-- Barra di Ricerca -->
+			 <!-- Barra di Ricerca 
 			<div class="input-group mb-3">
 			<form action="ricerche_specifiche" method="get" class="input-group mb-3">
 			  <input type="text" class="form-control" name="artisti" style="border-radius:30px" placeholder="Cerca il tuo artista preferito" aria-label="Recipient's username" aria-describedby="button-addon2">
-			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>-->
+			 <!--   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Cerca</button>
 			 </form>
 			</div>
-			<!-- Fine Barra di Ricerca -->	
-		</div>
+			<!-- Fine Barra di Ricerca 	
+		</div>-->
 			
 			<!-- pulsante per tornare indietro -->
     		<a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
