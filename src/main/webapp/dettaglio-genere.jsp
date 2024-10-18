@@ -9,7 +9,11 @@
 <head>
     <meta charset="UTF-8">
 
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> refs/heads/mod.playlist
     <title>Pagina Musicator</title>
 
     <!-- Bootstrap CSS -->
@@ -17,10 +21,18 @@
 
     <!-- File CSS personalizzato -->
 
+<<<<<<< HEAD
     <title>Musicator -  Genere</title>
+=======
+ <title>Musicator Genere</title>
+>>>>>>> refs/heads/mod.playlist
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
 
+<<<<<<< HEAD
     <link rel="stylesheet" href="style2.css">
+=======
+<link rel="stylesheet" href="style2.css">
+>>>>>>> refs/heads/mod.playlist
 
     <style>
         /* Aggiunta di stili personalizzati */

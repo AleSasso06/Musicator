@@ -32,7 +32,7 @@ public class UpdatePlaylistServlet extends HttpServlet {
 		Playlist playlist = playlistRepository.findById(id);
 
 		request.setAttribute("playlist", playlist); // link modifica-playlist.jsp
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("");
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("updateplaylist");
 		requestDispatcher.forward(request, response);
 	}
 
@@ -50,6 +50,8 @@ public class UpdatePlaylistServlet extends HttpServlet {
 		playlistRepository.update(playlist);
 
 		response.sendRedirect("utente-profilo.jsp");
+
+
 
 	}
 
