@@ -54,6 +54,9 @@ public class Artista {
 	
 	@Column(name = "foto", nullable = false, length = 4000)
 	private String foto;
+	
+	@Column(name="band", nullable = false)
+	private boolean band;
 
 	@OneToMany(mappedBy = "artista", fetch = FetchType.EAGER)
 	private List<Album> album = new ArrayList<Album>();
@@ -114,6 +117,14 @@ public class Artista {
 		this.foto = foto;
 	}
 	
+	public boolean isBand() {
+		return band;
+	}
+
+	public void setBand(boolean band) {
+		this.band = band;
+	}
+
 	public List<Album> getAlbum() {
 		return album;
 	}
@@ -125,8 +136,7 @@ public class Artista {
 	@Override
 	public String toString() {
 		return "Artista [id=" + id + ", nome=" + nome + ", pseudonimo=" + pseudonimo + ", dataNascita=" + dataNascita
-				+ ", nazionalita=" + nazionalita + ", biografia=" + biografia + ", foto=" + foto + "]";
+				+ ", nazionalita=" + nazionalita + ", biografia=" + biografia + ", foto=" + foto + ", band=" + band
+				+ "]";
 	}
-
-	
 }

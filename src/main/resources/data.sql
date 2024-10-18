@@ -32,10 +32,10 @@ INSERT INTO artista VALUES (
 	Nel 2020, il brano nostalgico degli anni ''80 Blinding Lights è diventato un fenomeno mondiale, innescando sfide di danza virali sui social media, raggiungendo il primo posto in oltre 30 paesi e headliner della campagna Mercedes Benz EQC.<br>
 	After Hours ha mantenuto il primo posto nella Billboard 200 per 4 settimane consecutive, segnando il suo quarto album alla prima posizione e diventando il primo a classificarsi al primo posto nella Billboard 200, Hot 100 e Artist 100 contemporaneamente.<br>
 	After Hours è l''album R&B in streaming n. 1 di tutti i tempi (seguito da Starboy al n. 2).', 
-    'https://rapteratura.it/wp-content/uploads/2022/03/231294089_532702488154524_4967683313458270906_n-e1647948813460-720x600.jpg'  
+    'https://rapteratura.it/wp-content/uploads/2022/03/231294089_532702488154524_4967683313458270906_n-e1647948813460-720x600.jpg' , FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+INSERT INTO artista VALUES('2',
 'Ariana Grande-Butera',
 'Ariana Grande',
 '1993-06-26',
@@ -48,27 +48,27 @@ Il singolo "The Way" è stato particolarmente apprezzato, contribuendo a far eme
 Hit come "Problem", "Break Free" e "Bang Bang" hanno dominato le classifiche internazionali e l ''hanno trasformata in una star globale. Questo disco ha mostrato la sua abilità nel mescolare pop, R&B e dance.
 Nel 2016 è uscito Dangerous Woman, un album che ha segnato una svolta verso un''immagine e un sound più maturi. Il singolo omonimo, insieme a brani come "Into You" e "Side to Side", ha confermato il suo status di icona pop.
 Il 2017 ha rappresentato un anno particolarmente difficile per Ariana a causa dell''attentato terroristico durante il suo concerto a Manchester, che ha causato numerose vittime. In risposta, ha organizzato il concerto benefico One Love Manchester, dimostrando grande forza e solidarietà verso le vittime ',
-'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1'
+'https://variety.com/wp-content/uploads/2024/06/Screen-Shot-2024-06-11-at-11.54.30-AM-e1718634535872.png?w=1000&h=667&crop=1', FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+INSERT INTO artista VALUES('3',
 'Mitski Miyawaki',
 'Mitski',
 '1990-09-27',
 'Giapponese',
 'A volte Mitski sente che la vita sarebbe più facile senza speranza, senza un''anima o senza amore. Ma quando chiude gli occhi e pensa a ciò che è veramente suo, a ciò che non può essere ripreso o demolito, vede l''amore. "La cosa migliore che abbia mai fatto nella mia vita è stata amare le persone," dice. "Vorrei poter lasciare dietro di me tutto l''amore che ho dopo la mia morte, così da poter illuminare gli altri con tutta questa bontà, tutto questo amore che ho creato." Spera che il suo ultimo album, The Land Is Inhospitable and So Are We, possa risplendere d''amore a lungo dopo che lei se ne sarà andata. È proprio così che si sente: come un amore che perseguita la terra. "Questo è il mio album più americano," dice. La musica sembra un atto profondo di testimonianza di questo paese, con tutte le sue sofferenze private e contraddizioni. Musicalmente, è l''album più epico e saggio di Mitski, introduce ferite e poi le guarisce attivamente. Qui, l''amore viaggia nel tempo per benedire i nostri giorni teneri, come la luce di una stella lontana. È pieno del dolore dei cuori spezzati e delle gioie apparentemente banali ma enormi che spesso non vengono cantate. È una piccola epica. Dal fondo di un bicchiere, a un vialetto fangoso di memoria e neve, a un treno merci che sfreccia attraverso il Midwest, fino alla luna, sembra che tutto e tutti stiano gridando di dolore, protendendosi verso l''amore. L''amore è quella terra inospitale, che ci chiama e poi ci respinge. Amare questo posto, questa terra, questa America, questo corpo richiede lavoro. Potrebbe essere impossibile. Le cose migliori lo sono.',
-'https://cdn.prod.website-files.com/61b0d97defe7049ee34fa045/65ca57e1c8fceb53db7d5276_240604%20Mitski-600x400.png'
+'https://cdn.prod.website-files.com/61b0d97defe7049ee34fa045/65ca57e1c8fceb53db7d5276_240604%20Mitski-600x400.png', FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+INSERT INTO artista VALUES('4',
 'Thomas Peter Odell',
 'Tom Odell',
 '1990-11-24',
 'Britannico',
 'Tom Odell nasce il 24 novembre 1990 nel West Sussex. Studia al Brighton Institute of Modern Music, ascoltando Elton John, Leonard Cohen e Bob Dylan. Nel 2012 realizza l’Ep di debutto, SONGS FROM ANOTHER LOVE, mentre nel 2013 arriva il primo disco sulla lunga distanza, LONG WAY DOWN.',
-'https://first-avenue.com/wp-content/uploads/2013/06/TOM_ODELL_RLD_12-1080x1350-1.jpg');
+'https://first-avenue.com/wp-content/uploads/2013/06/TOM_ODELL_RLD_12-1080x1350-1.jpg', FALSE);
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto)VALUES(
+INSERT INTO artista VALUES('5',
 "Billie Eilish Pirate Baird O'Connell",
 'Billie Eilish',
 '2001-12-18',
@@ -81,21 +81,21 @@ Dopo aver pubblicato una serie di singoli e remix, Eilish ha pubblicato l''EP "D
 L''album ha raggiunto la vetta della Billboard 200, rendendola la prima artista nata negli anni 2000 a raggiungere la vetta della classifica degli album. Tutte le 14 canzoni dell''album sono state classificate nella Hot 100, che ha battuto il record per il maggior numero di canzoni simultaneamente in classifica nella Hot 100 da parte di un''artista donna.
 "Bad Guy", uno dei singoli dell''album, ha raggiunto il numero 1 nella Hot 100. Ai Grammy 2020, Eilish è diventata la persona più giovane a vincere tutte e quattro le categorie principali: miglior nuovo artista, disco, album e canzone dell''anno.
 Eilish ha pubblicato il suo secondo album, "Happier Than Ever", il 30 luglio 2021.',
-'https://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_1789119319.png'
+'https://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_1789119319.png', FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
-VALUES (
+INSERT INTO artista 
+VALUES ('6',
     'Flavio Bruno Pardini',  
     'Gazzelle', 
     '1989-12-07',  
     'Italiana', 
     'Gazzelle è il nome d''arte di Flavio Bruno Pardini, cantautore romano di genere indie pop. Ha debuttato nel 2017 con l''album "Superbattito", che lo ha fatto emergere sulla scena indie italiana. Le sue canzoni sono spesso caratterizzate da testi malinconici e melodie orecchiabili, che hanno riscosso grande successo tra i giovani. Nel corso degli anni, ha consolidato la sua presenza con singoli di successo come "Sopra", "Polynesia" e "Scusa".',
-    'https://i.scdn.co/image/ab67616100005174a37800344d499444125dead5'  
+    'https://i.scdn.co/image/ab67616100005174a37800344d499444125dead5', FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
-VALUES (
+INSERT INTO artista 
+VALUES ('7',
     'Francesco Stasi',  
     'Kid Yugi', 
     '2001-04-14',  
@@ -103,43 +103,43 @@ VALUES (
     'Kid Yugi, nome d''arte di Francesco Stasi, è un rapper italiano nato a Massafra. Ha iniziato la sua carriera musicale da adolescente e ha pubblicato il primo singolo ufficiale, "Grammelot", nel 2022, attirando l''attenzione dell''etichetta Thaurus. Ha poi pubblicato singoli di successo come "Sturm und Drang" e "Kabuki".
 
 	 Nel 2022, ha rilasciato il suo primo album The Globe, certificato oro, con brani come "Grammelot" e "Il ferro di Čechov". Nel 2023 ha pubblicato l''EP Quarto di bue e ha collaborato con artisti come Tedua, Guè, e altri. A marzo 2024 è uscito il suo secondo album I nomi del diavolo, che ha debuttato al primo posto in classifica e ha ricevuto il disco di platino.',
-    'https://www.ondarock.it/images/artisti/KidYugiArtista_1711193829.jpg'  
+    'https://www.ondarock.it/images/artisti/KidYugiArtista_1711193829.jpg', FALSE  
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
-VALUES (
+INSERT INTO artista 
+VALUES ('8',
     'Gionata Boschetti',  
     'Sfera Ebbasta', 
     '1992-12-07',  
     'Italiana', 
     'Sfera Ebbasta, pseudonimo di Gionata Boschetti, è un rapper italiano. È salito alla ribalta grazie alla pubblicazione dell''album XDVR, inciso con la collaborazione del produttore discografico Charlie Charles, ottenendo un buon successo in Italia.',
-    'https://www.azalea.it/wp-content/uploads/2022/12/123986267_3911923168837741_2131548758059792753_n-e1671194204392.jpg'  
+    'https://www.azalea.it/wp-content/uploads/2022/12/123986267_3911923168837741_2131548758059792753_n-e1671194204392.jpg', FALSE
 );
 
-INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
-VALUES (
+INSERT INTO artista  
+VALUES ('9',
     'Rosalía Vila Tobella',
     'ROSALÍA',
     '1992-09-25',
     'Spagnola',
     'ROSALÍA è una cantante, cantautrice e produttrice discografica spagnola, nata il 25 settembre 1992 a Sant Esteve Sesrovires, vicino a Barcellona. È diventata famosa a livello internazionale grazie alla sua innovativa fusione di flamenco tradizionale con generi contemporanei come reggaeton, trap e pop. Con il suo album "El Mal Querer" del 2018, ROSALÍA ha rivoluzionato la scena musicale globale, conquistando numerosi premi, tra cui Grammy e Latin Grammy. La sua capacità di mescolare generi musicali diversi, unita a uno stile visivo unico, l''ha resa una delle artiste più influenti della sua generazione.',
-    'https://media-assets.vanityfair.it/photos/645384edc8b926063a87a5e1/1:1/w_1359,h_1359,c_limit/Rosalia%201.png'
+    'https://media-assets.vanityfair.it/photos/645384edc8b926063a87a5e1/1:1/w_1359,h_1359,c_limit/Rosalia%201.png', FALSE
 );
 
-INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
-VALUES (
+INSERT INTO artista  
+VALUES ('10',
     'Ghali Amdouni',
     'Ghali',
     '1993-05-21',
     'Italiano',
     'Ghali è un rapper e cantautore italiano, nato a Milano da genitori tunisini. È noto per il suo stile unico che mescola rap, pop e influenze arabe. Il suo album di debutto, "Ghali", è stato un successo e ha consolidato la sua posizione nella scena musicale italiana. Ghali è conosciuto anche per i suoi testi che affrontano temi di identità e multiculturalità.',
-'https://yt3.googleusercontent.com/r2zh1OlVcghWoaY1kLwENXJc6nhCyjVet9r1WQBTsTFrf0EVwry--P4yWuy6wpP5HI5NueEufQ=s900-c-k-c0x00ffffff-no-rj'
+'https://yt3.googleusercontent.com/r2zh1OlVcghWoaY1kLwENXJc6nhCyjVet9r1WQBTsTFrf0EVwry--P4yWuy6wpP5HI5NueEufQ=s900-c-k-c0x00ffffff-no-rj', FALSE
 );
 
-INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) 
-VALUES (
+INSERT INTO artista  
+VALUES ('11',
 	'Niccolò Moriconi', 
-    'Ultimo,',
+    'Ultimo',
     '1996-01-27', 
     'Italiano', 
     'Niccolò Moriconi nasce a Roma il 27 gennaio 1996 nel quartiere di San Basilio; figlio di Sandro Moriconi, ingegnere civile, e di Anna Sanseverino, impiegata dell''Enel, ha due fratelli maggiori di nome Lorenzo e Valerio.
@@ -151,10 +151,11 @@ VALUES (
 	A luglio, durante un concerto benefico per l''autismo, presenta il brano in tema Il bambino con le scarpe viola. Intanto, dal 2012 in poi, tenta la strada dei talent, iscrivendosi ai casting di Amici, X Factor e Sanremo Giovani (nelle edizioni dirette e condotte da Carlo Conti), venendo però scartato tre volte dal primo e due volte dagli altri due.
 	Nello stesso periodo, incomincia a esibirsi sui palchi dei locali romani, principalmente nel quartiere San Lorenzo, come quello di Spaghetti Unplugged, insieme ad alcuni futuri esponenti della scena musicale indipendente romana, tra cui Tommaso Paradiso e Motta.
 	Il 7 e il 16 maggio 2016 pubblica sul proprio canale YouTube i brani Fragile e Ritrova i tuoi passi.',
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ultimo_performing_in_Rome.jpg/1024px-Ultimo_performing_in_Rome.jpg' 
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ultimo_performing_in_Rome.jpg/1024px-Ultimo_performing_in_Rome.jpg', FALSE
 );
 
-INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES (
+INSERT INTO artista VALUES (
+	'12',
     'Annalisa Scarrone', 
     'Annalisa',
     '1985-07-05', 
@@ -163,20 +164,20 @@ INSERT INTO artista (nome, pseudonimo, data_nascita, nazionalita, biografia, fot
 	Dopo alcune esperienze nell''ambito musicale con due gruppi, è divenuta nota come cantante solista nel 2011, partecipando alla decima edizione del talent show Amici di Maria De Filippi in cui ha ottenuto il Premio della critica, poi vinto anche l''anno dopo ad Amici Big.
 
 	Nel corso della sua carriera ha venduto oltre quattro milioni di unità sul suolo nazionale, diventando l''artista italiana con più copie vendute in era FIMI; inoltre conta oltre un miliardo di stream su Spotify.',
-    'https://statics.cedscdn.it/photos/MED_HIGH/80/97/7918097_10121848_annalisa_chi_e.jpg'
+    'https://statics.cedscdn.it/photos/MED_HIGH/80/97/7918097_10121848_annalisa_chi_e.jpg', FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+INSERT INTO artista VALUES('13',
 	'William Martin Joel',
     'Billy Joel',
 	'1949-05-09',
 	'Statunitense',
 	'William Martin Joel, detto Billy, è un cantautore, pianista e compositore statunitense.
 	Avendo venduto oltre 150 milioni di dischi in tutto il mondo, è uno degli artisti di maggior successo di tutti i tempi e il quarto solista più venduto negli Stati Uniti.',
-	'https://cdn-p.smehost.net/sites/005297e5d91d4996984e966fac4389ea/wp-content/uploads/2019/10/f9d9c240b6b7a5e3cf08b37fd9a91096.jpg'
+	'https://cdn-p.smehost.net/sites/005297e5d91d4996984e966fac4389ea/wp-content/uploads/2019/10/f9d9c240b6b7a5e3cf08b37fd9a91096.jpg', FALSE
 );
 
-INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto) VALUES(
+INSERT INTO artista VALUES('14',
 	'Fabrizio Cristiano De Andrè',
     'Fabrizio De Andrè',
 	'1940-02-18',
@@ -186,8 +187,18 @@ INSERT INTO artista(nome, pseudonimo, data_nascita, nazionalita, biografia, foto
 	Insieme a Bruno Lauzi, Gino Paoli, Umberto Bindi e Luigi Tenco, è uno degli esponenti della cosiddetta scuola genovese, un nucleo di artisti che rinnovò profondamente la musica leggera italiana.
 	 È l''artista con il maggior numero di riconoscimenti da parte del Club Tenco, con sei Targhe e un Premio Tenco. La popolarità e l''alto livello artistico del suo canzoniere hanno spinto alcune istituzioni, dopo la sua morte, a dedicargli vie, piazze, parchi, teatri, biblioteche e scuole.
 	Di idee anarchiche e pacifiste,[18] è stato anche uno degli artisti che maggiormente hanno valorizzato la lingua ligure.',
-	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNd_THoATBKEPbju0JHvydwEzB1rAW9xLMiQ&s'
+	'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNd_THoATBKEPbju0JHvydwEzB1rAW9xLMiQ&s', FALSE
 );
+
+INSERT INTO artista VALUES(
+	'15',
+	'Mark Knopfler, David Knopfler, John Illsley, Pick Withers',
+	'Dire Straits',
+	'1977-01-01',
+	'britannica',
+	'Gruppo musicale inglese fondato nel 1977. In uno scenario musicale caratterizzato dal punk, i D.S. si sono distinti per un rock elegante dai forti connotati country e blues, grazie all''estro del cantante e chitarrista M. Knopfler (n. 1949). Tra le loro incisioni: Making movies (1980), Brothers in arms (1985), il loro più grande successo, On every street (1991) e Live at the BBC (1995). La band si è sciolta nel 1995.',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz9fXiUmGj3UPROaCC5l560V9K5irXaCBotw&s' 
+   , TRUE);
 
 -- INSERT ALBUM da fare dopo aver popolato artista e genere
 INSERT INTO album VALUES (
@@ -201,8 +212,8 @@ INSERT INTO album VALUES (
     1,  
     6 
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('2',
     'After Hours',
     'After Hours è il quarto album in studio di The Weeknd, rilasciato il 20 marzo 2020. L''album esplora temi di cuori spezzati, auto-riflessione e decadenza, mescolando sonorità R&B con influenze synthwave e pop anni ''80. È stato trainato da singoli di successo come "Blinding Lights" e "Heartless".',
     3377,  
@@ -211,8 +222,8 @@ VALUES (
     1,  
     6  
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album 
+VALUES ('3',
     'Dawn FM', 
     'Dawn FM è il quinto album in studio di The Weeknd, pubblicato il 7 gennaio 2022. Il disco si caratterizza per un sound futuristico, ispirato agli anni ''80, con elementi di pop, R&B ed elettronica. 
     <br>L''album è stato acclamato per la sua produzione sofisticata e la narrazione unica, che esplora temi di introspezione e rinascita. Include collaborazioni con artisti come Tyler, The Creator e Lil Wayne, ed è stato presentato come una trasmissione radiofonica immaginaria.', 
@@ -222,8 +233,8 @@ VALUES (
     1, 
     6   
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id)  -- Ariana what are you doing here
-VALUES (
+INSERT INTO album   -- Ariana what are you doing here
+VALUES ('4',
 'Dangerous Woman',
 'Dangerous Woman è il terzo album in studio della cantante statunitense Ariana Grande, pubblicato il 20 maggio 2016 dalla Republic Records.
 L''album è composto da undici brani e presenta collaborazioni con Nicki Minaj, Lil Wayne, Future e Macy Gray.
@@ -235,7 +246,8 @@ Il disco ha ricevuto una candidatura ai Grammy Awards 2017 nella categoria migli
 2
 );
 
-INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES(
+INSERT INTO album VALUES(
+'5',
 'The Land Is Inhospitable and So Are We',
 'Poetico, malinconico, female vocalist, introspettiva',
 1920,
@@ -244,22 +256,22 @@ INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, ge
 3,
 11);
 
-INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Long Way Down',
+INSERT INTO album VALUES('6','Long Way Down',
 'Long Way Down è l''album di debutto in studio del cantautore britannico Tom Odell. Seguendo le orme di Adele, Emeli Sande e Jessie J, Tom ha ricevuto il Critics Choice Award ai BRIT Awards 2013.',
 '2134',
 '2013-06-21',
 'https://i.scdn.co/image/ab67616d0000b2739adb17697c5a5bb02b5cebb7',
 '4',
 '16');
-INSERT INTO album(titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES('Black Friday',
+INSERT INTO album VALUES('7','Black Friday',
 'Black Friday è il sesto album in studio del cantautore britannico Tom Odell. È stato rilasciato il 26 gennaio 2024 tramite UROK Management. La title track Black Friday è stata nominata per la migliore canzone musicalmente e liricamente al Premio Ivor Novello giovedì 23 maggio 2024.',
 '1721','2024-01-26',
 'https://upload.wikimedia.org/wikipedia/en/0/0b/Tom_Odell_-_Black_Friday.png',
 '4',
 '2');
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('8',
 'HIT ME HARD AND SOFT',
 'HIT ME HARD AND SOFT arriva comunque come un meteorite.
 Con un’ampia portata e una capacità di trasporto che sfidano perfino i suoi standard, è un progetto che brilla del coraggio e della teatralità di un’artista consapevole di avere il mondo ai propri piedi.
@@ -272,8 +284,8 @@ Nel concepirlo, il duo pluripremiato ha immaginato di creare il tipo di disco ch
 5,
 2
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('9',
     'OK',
     'OK è il terzo album in studio del cantautore italiano Gazzelle, rilasciato il 12 febbraio 2021. L\'album tocca tematiche di solitudine, amore e malinconia, tipiche della scrittura dell''artista, e include brani di successo come "Destri" e "Scusa". Il sound dell''album fonde indie pop con influenze elettroniche, consolidando la carriera di Gazzelle nella scena musicale italiana.',
     2363,  
@@ -282,8 +294,8 @@ VALUES (
     6,  
     11  
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('10',
     'Superbattito',
     'Superbattito è l''album di debutto di Gazzelle, rilasciato il 3 marzo 2017. Il disco ha subito riscosso successo nella scena indie italiana, grazie a brani come "Nmrpm" e "Zucchero". L''album esplora temi di amore, malinconia e quotidianità, con un sound che fonde indie pop e atmosfere elettroniche.',
 	2146,  
@@ -292,8 +304,8 @@ VALUES (
     6,  
     11 
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album 
+VALUES ('11',
     'The Globe',
     'The Globe è il primo album in studio del rapper italiano Kid Yugi, pubblicato il 3 novembre 2022 dalle etichette discografiche Underdog Music, Thaurus Music e Virgin Music/Universal Music.',
 	1843,  
@@ -302,8 +314,8 @@ VALUES (
     7,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('12',
     'Quarto di Bue',
     'Quarto di bue è un EP, uscito nel 2023 con la produzione di Night Skinny. Composto da sette tracce, include i singoli "Massafghanistan" e "Quarto di bue". Certificato disco d''oro, vede collaborazioni con Guè Steppers, Tony Boy e Artie 5ive, e include il successo "Sintetico", disco di platino.',
 	1085,  
@@ -312,8 +324,8 @@ VALUES (
     7,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('13',
     'I nomi del diavolo',
     'I nomi del diavolo è il secondo album in studio del rapper italiano Kid Yugi, pubblicato il 1º marzo 2024 dalle etichette discografiche EMI Records e Universal Music Italia.',
 	2667,  
@@ -322,8 +334,8 @@ VALUES (
     7,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('14',
     'XDVR Reloaded',
     'XDVR è un album in studio del rapper italiano Sfera Ebbasta e del DJ producer Charlie Charles, pubblicato l''23 novembre 2015 dalla BHMG.',
 	2895,  
@@ -332,8 +344,8 @@ VALUES (
     8,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album 
+VALUES ('15',
     'Sfera Ebbasta',
     'Sfera Ebbasta è il secondo album in studio del rapper italiano omonimo, pubblicato il 9 settembre 2016 dalla Universal Music Group e dalla Def Jam Recordings.',
 	2100,  
@@ -342,8 +354,8 @@ VALUES (
     8,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('16',
     'Rockstar',
     'Rockstar è il terzo album in studio del rapper italiano Sfera Ebbasta, pubblicato il 19 gennaio 2018 dalla Universal Music Group e dalla Def Jam Recordings. L''album ha ottenuto un ottimo successo in madrepatria, dove è risultato essere il più venduto nell''anno.',
 	2088,  
@@ -352,8 +364,8 @@ VALUES (
     8,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album
+VALUES ('17',
     'Famoso',
     'Famoso è il quarto album in studio del rapper italiano Sfera Ebbasta, pubblicato il 20 novembre 2020 dalla Island Records e dalla Universal Music Group.',
 	3187,  
@@ -362,8 +374,8 @@ VALUES (
     8,  
     3
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('18',
     'X2VR',
     'X2VR è il quinto album in studio del rapper italiano Sfera Ebbasta, pubblicato il 17 novembre 2023 dalla Island Records e dalla Universal Music Group.',
 	2353,  
@@ -373,8 +385,8 @@ VALUES (
     3
 );
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('19',
     'Motomami',
     'Motomami è il terzo album in studio della cantante spagnola ROSALÍA, pubblicato il 18 marzo 2022. L''album mescola flamenco, reggaeton, trap e sperimentazione elettronica, rappresentando un''evoluzione stilistica per l''artista. Con singoli di successo come "Saoko", "Chicken Teriyaki", e "La Fama", l''album ha ricevuto lodi per la sua innovatività musicale e la sua forte identità visiva. "Motomami" riflette la dualità della forza (Moto) e della vulnerabilità (Mami) in un''esplorazione profonda delle emozioni.',
     2520,
@@ -384,8 +396,8 @@ VALUES (
     17
 );
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('20',
     'DNA',
     'DNA è il secondo album in studio del rapper italiano Ghali, pubblicato il 26 ottobre 2018. L’album esplora temi di identità, cultura e la vita in un contesto urbano. Con una produzione moderna e influenze di vari generi, "DNA" è un lavoro che riflette la crescita artistica di Ghali. Include hit come "Cara Italia" e "Good Times".',
     2430,
@@ -395,8 +407,8 @@ VALUES (
     4  
 );
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
-VALUES (
+INSERT INTO album  
+VALUES ('21',
     'Altrove', 
 	'Altrove è il sesto album in studio del cantautore italiano Ultimo, pubblicato il 17 maggio 2024.',
     1560,
@@ -405,7 +417,8 @@ VALUES (
     11,
     2
 );
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES (
+INSERT INTO album VALUES (
+	'22',
     'Solo', 
 	'Solo è il quarto album in studio del cantautore italiano Ultimo, pubblicato il 22 ottobre 2021.',
     3529, -- durata? come la mettiamo? in secondi?
@@ -415,7 +428,8 @@ INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, g
     2 
 );
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES (
+INSERT INTO album VALUES (
+	'23',
     'E poi siamo finiti nel vortice', 
 	'E poi siamo finiti nel vortice è l''ottavo album in studio della cantante italiana Annalisa, pubblicato il 29 settembre 2023 dalla Warner Records.',
 	2280,
@@ -425,7 +439,8 @@ INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, g
     2
 );
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id ) VALUES(
+INSERT INTO album VALUES(
+	'24',
 	'The Stranger',
 	'The Stranger è il quinto album discografico in studio del cantautore statunitense Billy Joel, pubblicato nel settembre del 1977.
 	È stato inserito nella lista dei 500 migliori album di tutti i tempi secondo la rivista Rolling stone alla posizione 70.',
@@ -436,7 +451,8 @@ INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, g
 	'1'
 );
 
-INSERT INTO album (titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) VALUES(
+INSERT INTO album VALUES(
+	'25',
 	'La buona novella',
 	'Il LP è un concept album (caratteristica comune ad altri lavori discografici di De André) tratto dalla lettura di alcuni Vangeli apocrifi (in particolare, come riportato nelle note di copertina, il Protovangelo di Giacomo ed il Vangelo arabo dell''infanzia), pubblicato nell''autunno del 1970 (le matrici riportano la data del 19 novembre).
 	«Avevo urgenza di salvare il cristianesimo dal cattolicesimo. - dichiarò a suo tempo De André - I vangeli apocrifi sono una lettura bellissima con molti punti di contatto con l''ideologia anarchica.[3]»
@@ -884,8 +900,8 @@ INSERT INTO brano VALUES (
     'https://www.youtube.com/watch?v=HQfCoXAPowo',  -- Link ufficiale del video su YouTube
     '6' -- genere_id
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('8',
     'Alone Again',
     'Take off my disguise
 	<br>I''m living someone else''s life
@@ -923,8 +939,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('9',
     'Too Late',
     'No-no, no-no, no-no-no
 	<br>
@@ -970,8 +986,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('10',
     'Hardest to Love',
     'No, yeah
 	<br>Oh, yeah
@@ -1030,8 +1046,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('11',
     'Scared to Live',
     'When I saw the signs, I shoulda let you go
 	<br>But I kept you beside me
@@ -1084,8 +1100,8 @@ VALUES (
     14  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('12',
     'Snowchild',
     'I used to pray when I was sixteen
 	<br>If I didn''t make it then I''d probably make my wrist bleed
@@ -1156,8 +1172,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('13',
     'Escape from LA',
     'You pillow talk to me about the men who try to get in between us
 	<br>They buy you bags and jewelry, yeah
@@ -1253,8 +1269,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('14',
     'Heartless',
     '(Sheesh)
 	<br>I shouldn''t rush it
@@ -1326,8 +1342,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('15',
     'Faith',
     'Light a blunt up with the flame
 	<br>Put that cocaine on a plate
@@ -1399,8 +1415,8 @@ VALUES (
     14 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('16',
     'Blinding Lights',
     'Yeah
 	<br>
@@ -1456,8 +1472,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('17',
     'In Your Eyes',
     'I just pretend that I''m in the dark
 	<br>I don''t regret ''cause my heart can''t take a loss
@@ -1524,8 +1540,8 @@ VALUES (
     6 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('18',
     'Save Your Tears',
     'Ooh
 	<br>Na na, yeah
@@ -1583,8 +1599,8 @@ VALUES (
     14  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('19',
     'Repeat After Me (Interlude)',
     'You don''t love him, you don''t love him
 	<br>You don''t love him if you''re thinking of me
@@ -1621,8 +1637,8 @@ VALUES (
     6 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('20',
     'After Hours',
     'Thought I almost died in my dream again (Baby, almost died)
 	<br>Fightin'' for my life, I couldn''t breathe again
@@ -1701,8 +1717,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('21',
     'Until I Bleed Out',
     'I can''t move, I''m so paralyzed
 	<br>I''m so paralyzed
@@ -1742,8 +1758,8 @@ VALUES (
     'https://www.youtube.com/watch?v=i58MNnk6BhY',
     6  
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('22',
     'Dawn FM',
     'This part I do alone
 	<br>I''ll take my lead, I''ll take my lead on this road
@@ -1772,8 +1788,8 @@ VALUES (
     12  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('23',
     'Gasoline',
     'It''s 5 AM my time again
 	<br>I''ve soakin'' up the moon, can''t sleep
@@ -1831,8 +1847,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('24',
     'How Do I Make You Love Me?',
     'We''re goin'' back in time
 	<br>I''d like to see you try
@@ -1893,8 +1909,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('25',
     'Take My Breath',
     'Take my breath
 	<br>Take my breath
@@ -1969,8 +1985,8 @@ VALUES (
     12  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('26',
     'Sacrifice',
     'I was born in a city
 	<br>Where the winter nights don''t ever sleep
@@ -2042,8 +2058,8 @@ VALUES (
     15  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('27',
     'A Tale By Quincy',
     'That''s it
 	<br>Looking back now, I didn''t know what it was supposed to be
@@ -2074,8 +2090,8 @@ VALUES (
     6 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('28',
     'Out of Time',
     'Yeah, yeah
 	<br>
@@ -2142,8 +2158,8 @@ VALUES (
     6 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('29',
     'Here We Go... Again',
     'Strike a pose with my kinfolk
 	<br>Front page of the billboards
@@ -2210,8 +2226,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('30',
     'Best Friends',
     'Yeah, yeah, yeah
 	<br>Yeah, yeah, yeah, yeah
@@ -2280,8 +2296,8 @@ VALUES (
     6 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('31',
     'Is There Someone Else?',
     'I know that you''re hiding something from me
 	<br>That''s been close to your heart
@@ -2325,8 +2341,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('32',
     'Starry Eyes',
     'I only met you in my dreams before
 	<br>When I was young and alone in the world
@@ -2374,8 +2390,8 @@ VALUES (
     6  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('33',
     'Every Angel Is Terrifying',
     'Ooh
 	<br>Ooh, ooh
@@ -2423,8 +2439,8 @@ VALUES (
     6 
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('34',
     'Don''t Break My Heart',
     'Ooh (I''m paralyzed)
 	<br>Ooh
@@ -2500,8 +2516,8 @@ VALUES (
     6
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('35',
     'I Heard You''re Married',
     'Yeah
 	<br>Yeah, yeah (Ah)
@@ -2599,8 +2615,8 @@ VALUES (
     14  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('36',
     'Less Than Zero',
     'Remember I was your hero, yeah
 	<br>I''d wear your heart like a symbol
@@ -2651,8 +2667,8 @@ VALUES (
     11  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('37',
     'Phantom Regret by Jim',
     'You''re tuned to Dawn FM
 	<br>The middle of nowhere on your dial
@@ -2702,7 +2718,9 @@ VALUES (
     11  
 );
 -- Ariana
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano
+ VALUES(
+'38',
 'Moonlight',
 'The sun is setting 
 <br>And you''re right here by my side
@@ -2749,7 +2767,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=gJcIm87v0bc',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'39',
 'Dangerous Woman ',
 'Don''t need permission
 <br>Made my decision to test my limits
@@ -2816,7 +2835,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=TFrMDGfW_Sg',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'40',
 'Be Alright',
 'Midnight shadows
 <br>When finding love is a battle
@@ -2862,7 +2882,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=eBAHqRnSgRw',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'41',
 'Into You',
 'I''m so into you,
 <br>I can barely breathe
@@ -2966,7 +2987,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=GB2aPHTDaqU',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'42',
 'Side To Side',
 'I''ve been here all night, (Ariana)
 <br>I''ve been here all day, (Nicki Minaj)
@@ -3037,7 +3059,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=h0JrKnBE3nI',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'43',
 'Let Me Love You',
 'I just broke up with my ex
 <br>Now I’m out here single, I don’t really know what’s next
@@ -3110,7 +3133,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=xbiv2QHcGYU',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'44',
 'Greedy',
 'Greedy
 You know that I''m greedy for love
@@ -3191,7 +3215,8 @@ You know that I''m greedy for love
 'https://www.youtube.com/watch?v=oa11bHIZNaE',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'45',
 'Leave Me Lonely',
 'Dangerous love (ooh)
 <br>You''re no good for me, darling (ah)
@@ -3256,7 +3281,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=-kYVljnA6rI',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'46',
 'Everyday',
 'Anytime I''m alone, I can''t help thinking about you
 <br>All I want, all I need, honestly, it''s just me and you
@@ -3336,7 +3362,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=M3fxC5QDcxg',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'47',
 'Sometimes',
 'La, la, la, la, la, la, la
 <br>La, la, la, la, la, la, la
@@ -3424,7 +3451,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=4yr6KzidJs0',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'48',
 'I Don''t care',
 'Used to cry ''bout some crazy shit before
 <br>I used to feel so obligated to be so much more
@@ -3449,7 +3477,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=Ao87MtSwxsQ',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'49',
 'Bad Decisions',
 'Boy, you know that you drive me crazy
 <br>But it''s one of the things I like
@@ -3532,7 +3561,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=RlRgnsyR00Y',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'50',
 'Touch It',
 'How do I make the phone ring?
 <br>Why do I even care?
@@ -3589,7 +3619,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=hNRjI_biB18',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'51',
 'Knew Better/Forever Boy',
 'Say you could turn me on
 <br>Boy, but that''s about it
@@ -3656,7 +3687,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 'https://www.youtube.com/watch?v=ofLyuMIrOnI',
 '2'
 );
-INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'52',
 'Thinking Bout You',
 'Oh yeah, yeah
 <br>Ah, ah
@@ -3716,7 +3748,8 @@ INSERT INTO brano( titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 );
 
 -- INSERT Mitski
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'53',
 'Bug Like An Angel',
 'There''s a bug like an angel
 <br>Stuck to the bottom
@@ -3756,7 +3789,8 @@ Is stuck on a floor somewhere
 11
 );
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'54',
 'Buffalo Replaced',
 'Mosquitoes can enjoy me, I can''t go inside
 <br>I''m suckin'' up as much of the full moon, so bright
@@ -3786,7 +3820,8 @@ I have a hope and though she''s blind with no name
 11);
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'55',
 'Heaven',
 'All of our love
 <br>Fillin'' all of our room
@@ -3823,7 +3858,8 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 '',
 'https://www.youtube.com/watch?v=4zSHu-fY-yM',
 11);
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'56',
 'I don''t like my mind',
 'I don''t like my mind, I don''t like being left alone in a room
 <br>With all its opinions about the things that I''ve done
@@ -3849,7 +3885,8 @@ And it may be a few years, but you can bet it''s there, waiting still
 'https://www.youtube.com/watch?v=qU5D49kfNEM',
 11);
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'57',
 'The Deal',
 'There''s a deal you can make on a midnight walk alone
 <br>Look around, listen close, hear it fall from above
@@ -3883,7 +3920,8 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 'https://www.youtube.com/watch?v=iFXwChLAyFM',
 11);
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'58',
 'When Memories Snow',
 'When memories snow
 <br>And cover up the driveway
@@ -3907,7 +3945,8 @@ Could I go on break?
 'https://www.youtube.com/watch?v=wvDl4W0eZ_w',
 11);
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'59',
 'My Love All Mine',
 'Moon, a hole of light
 <br>Through the big top tent up high
@@ -3942,7 +3981,8 @@ I love, mine, mine, mine
 11);
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'60',
 'The Frost',
 'The frost, it looks like dust
 <br>Settled on the world
@@ -3967,7 +4007,8 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 '',
 'https://www.youtube.com/watch?v=ECNey1cvdgY',
 11);
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'61',
 'Star',
 'Remember when we met
 <br>We acted like two fools
@@ -4005,7 +4046,8 @@ Isn''t that worth holdin'' on?
 11);
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'62',
 'I''m Your Man',
 'You''re an angel, I''m a dog
 <br>Or you''re a dog and I''m your man
@@ -4032,7 +4074,8 @@ I can feel it getting near
 '',
 'https://www.youtube.com/watch?v=HvgX44ESvHQ',
 11);
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES(
+INSERT INTO brano VALUES(
+'63',
 'I Love Me After You',
 'Hmm
 <br>Hmm
@@ -4070,7 +4113,11 @@ How I love me after you
 'https://www.youtube.com/watch?v=mrXJmsLTBpA',
 11);
 -- INSERT Tom Odell
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Grow Old With Me','I can feel you breathing
+INSERT INTO brano 
+VALUES(
+'64',
+'Grow Old With Me',
+'I can feel you breathing
 <br>With your hair on my skin
 <br>As we lie here within
 <br>The night
@@ -4122,7 +4169,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Just you and I','183','2013-06-21','inglese','','https://www.youtube.com/watch?v=5rgHYP0dD_4&pp=ygUbZ3JvdyBvbGQgd2l0aCAgbWUgdG9tIG9kZWxs','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Hold Me','I shouldn''t say it, but I''m starting to think I care
+INSERT INTO brano
+VALUES(
+'65',
+'Hold Me',
+'I shouldn''t say it, but I''m starting to think I care
 <br>I''ve had a drink, you probably think my judgement isn''t clear
 <br>And it''s getting late now, we''re a long way from our homes
 <br>Before you leave, before you grieve, there''s one thing you should know
@@ -4152,7 +4203,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Oh, when you hold me, when you hold me in your arms
 <br>Oh, when you hold me, yeah I can feel your heart beating','188','2013-06-21','inglese','','https://www.youtube.com/watch?v=ejdOAvl5by0&pp=ygURaG9sZCBtZSB0b20gb2RlbGw%3D','11');
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Another Love','I wanna take you somewhere so you know I care
+INSERT INTO brano
+VALUES(
+'66',
+'Another Love',
+'I wanna take you somewhere so you know I care
 <br>But it''s so cold and I don''t know where
 <br>I brought you daffodils in a pretty string
 <br>But they won''t flower like they did last spring
@@ -4202,7 +4257,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>On another love, another love
 <br>All my tears have been used up','244','2012-10-15','inglese','','https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DMwpMEbgC7DA&ved=2ahUKEwi4jKaM25CJAxUC2QIHHc5-JkAQ3yx6BAgvEAI&usg=AOvVaw2TsxnV0r3HpZLDIPFT4rYz','11');
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('I Know','Cold hands, white light
+INSERT INTO brano
+VALUES(
+'67',
+'I Know',
+'Cold hands, white light
 <br>Yellow lamps on blackened skies
 <br>Duffel hoods and deep brown eyes
 <br>I''ll sing you a song that I think you''ll like
@@ -4267,7 +4326,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Every time I run, yeah, I keep on falling on you','233','2013-06-21','inglese','','https://www.youtube.com/watch?v=rPjJZRWAqkE&pp=ygUQaSBrbm93IHRvbSBvZGVsbA%3D%3D','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Sense','Hard to know
+INSERT INTO brano
+VALUES(
+'68',
+'Sense',
+'Hard to know
 <br>Maybe if I skim the stone
 <br>Walk a different way back home
 <br>It would all make sense
@@ -4312,7 +4375,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>It seems to break','265','2012-10-15','inglese','','https://www.youtube.com/watch?v=1vViTMfQo2o&pp=ygUPc2Vuc2UgdG9tIG9kZWxs','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Can''t Pretend','Love, I have wounds
+INSERT INTO brano
+ VALUES(
+ '69',
+ 'Can''t Pretend',
+ 'Love, I have wounds
 <br>Only you can mend
 <br>You can mend, oh, oh, oh
 <br>I guess that''s love
@@ -4352,7 +4419,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>I can''t pretend
 <br>I can''t pretend, oh, oh, oh','218','2012-10-15','inglese','','https://www.youtube.com/watch?v=B4-OxOmsqR0&pp=ygUXY2FuJ3QgcHJldGVuZCB0b20gb2RlbGw%3D','11');
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Till I Lost','A coffee stain on a window sill
+INSERT INTO brano
+VALUES(
+'70',
+'Till I Lost',
+'A coffee stain on a window sill
 <br>A bad translation to a foreign film
 <br>Or just wandering around with you
 <br>Just wandering town with you
@@ -4387,7 +4458,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Oh
 <br>And I didn''t feel your love until I lost','233','2013-06-21','inglese','','https://www.youtube.com/watch?v=4kkKVVl3EF8&pp=ygUVdGlsbCBpIGxvc3QgdG9tIG9kZWxs','11');
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Supposed To Be','Sat on the rooftop
+INSERT INTO brano
+VALUES(
+'71',
+'Supposed To Be',
+'Sat on the rooftop
 <br>Watching the birds flying free
 <br>Watching the clouds walk
 <br>And watching the rain become the sea
@@ -4424,7 +4499,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>And oh it''s tough now
 <br>Cause love always, love always is unkind','213','2013-06-21','inglese','','https://www.youtube.com/watch?v=OL-_xl-0dFg&pp=ygUYc3VwcG9zZWQgdG8gYmUgdG9tIG9kZWxs','11');
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Long Way Down','Walking on the rooftops
+INSERT INTO brano
+VALUES(
+'72',
+'Long Way Down',
+'Walking on the rooftops
 <br>Talking of time
 <br>With our eyes a glowing
 <br>Like the city lights
@@ -4456,7 +4535,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>So honey don''t leave, don''t leave
 <br>Please don''t leave me now','150','2013-06-21','inglese','','https://www.youtube.com/watch?v=OA276QPvPq4&pp=ygUXbG9uZyB3YXkgZG93biB0b20gb2RlbGw%3D','11');
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Sirens','Tear me down
+INSERT INTO brano
+VALUES(
+'73',
+'Sirens',
+'Tear me down
 <br>Tell me I don''t need to fear
 <br>Tell me now
 <br>Tell me some bodies near
@@ -4495,7 +4578,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>All run run running away
 <br>All run run running away
 <br>When sirens they come our way','220','2013-06-21','inglese','','https://www.youtube.com/watch?v=F1fwVVvVVvI&pp=ygUQc2lyZW5zIHRvbSBvZGVsbA%3D%3D','11');
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Answer Phone','Here I go again
+INSERT INTO brano
+VALUES(
+'74',
+'Answer Phone',
+'Here I go again
 <br>Wasting all my days away
 <br>It''s a funny thing how some things never seem to change
 <br>Twenty-seven years of age
@@ -4529,7 +4616,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Smile, even if you''re feeling sad','161','2024-01-26','inglese','','https://www.youtube.com/watch?v=xrb5Y9m3q8o&pp=ygUWdG9tIG9kZWxsIGFuc3dlciBwaG9uZQ%3D%3D','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Black Friday','I wanna go party, I wanna have fun
+INSERT INTO brano
+VALUES(
+'75',
+'Black Friday',
+'I wanna go party, I wanna have fun
 <br>I wanna be happy, could you show me how it''s done?
 <br>You look so pretty, pretty like the sun
 <br>I could watch forever while you shine on everyone
@@ -4557,7 +4648,10 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>What is happening to us?','222','2024-01-26','inglese','','https://www.youtube.com/watch?v=KMIKzWyZPSA&pp=ygUWdG9tIG9kZWxsIGJsYWNrIGZyaWRheQ%3D%3D','2');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Loving You Will Be The Death Of Me','Jesus Christ, look at us in the toilet making love
+INSERT INTO brano
+VALUES('76',
+'Loving You Will Be The Death Of Me',
+'Jesus Christ, look at us in the toilet making love
 <br>We should slow down
 <br>I don''t know how
 <br>Jesus Christ, look at us using each other like a drug
@@ -4592,7 +4686,10 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>I don''t know how','132','2024-01-26','inglese','','https://www.youtube.com/watch?v=fiM4ZNN0YPw&pp=ygUsdG9tIG9kZWxsIGxvdmluZyB5b3Ugd2lsbCBiZSB0aGUgZGVhdGggb2YgbWU%3D','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The Orchestra Tunes Up','Yeah
+INSERT INTO brano
+VALUES('77',
+'The Orchestra Tunes Up',
+'Yeah
 <br>What was it was on the scale?
 <br>What scale was it on?
 <br>It was F Major, I think we''ll keep
@@ -4615,7 +4712,10 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>And how peaceful was that?','50','2024-01-26','inglese','','https://www.youtube.com/watch?v=Y64ZVIbTnpk&pp=ygUhdG9tIG9kZWxsIHRoZSBvcmNoZXN0cmEgdHVuZXMgdXAg','2');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Spinning','You make me feel like I am alive
+INSERT INTO brano
+VALUES('78',
+'Spinning',
+'You make me feel like I am alive
 <br>When you take off your shirt
 <br>You make me see the stars late at night
 <br>You love me at my worst
@@ -4641,7 +4741,10 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>With two broken hearts','132','2024-01-26','inglese','','https://www.youtube.com/watch?v=n7Eb8-WrQUs&pp=ygUSc3Bpbm5pbmcgdG9tIG9kZWxs','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The End Of The Summer','You broke my heart at the end of the summer
+INSERT INTO brano
+VALUES('79',
+'The End Of The Summer',
+'You broke my heart at the end of the summer
 <br>You broke my heart at the end of the summer
 <br>
 <br>Me and you went
@@ -4669,10 +4772,13 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Now that summer''s through','128','2024-01-26','inglese','','https://www.youtube.com/watch?v=24LQBvzIbFU&pp=ygUedGhlIGVuZCBvZiB0aGUgc3VtbWVydG9tIG9kZWxs','2');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The Orchestra Takes Flight','Traccia strumentale','46','2024-01-26','inglese','','https://www.youtube.com/watch?v=BnZRVq1syfw&pp=ygUkdGhlIG9yY2hlc3RyYSB0YWtlcyBmbGlnaHQgdG9tIG9kZWxs','2');
+INSERT INTO brano VALUES('80','The Orchestra Takes Flight','Traccia strumentale','46','2024-01-26','inglese','','https://www.youtube.com/watch?v=BnZRVq1syfw&pp=ygUkdGhlIG9yY2hlc3RyYSB0YWtlcyBmbGlnaHQgdG9tIG9kZWxs','2');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Somebody Else','I''m walking down the road
+INSERT INTO brano VALUES(
+'81',
+'Somebody Else',
+'I''m walking down the road
 <br>I saw you driving past
 <br>In somebody else''s car
 <br>
@@ -4699,7 +4805,9 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Just need time','204','2024-01-26','inglese','','https://www.youtube.com/watch?v=5oQgb0oAnwc&pp=ygUXc29tZWJvZHkgZWxzZSB0b20gb2RlbGw%3D','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Parties','We''re on the trampoline
+INSERT INTO brano
+VALUES('82',
+'Parties','We''re on the trampoline
 <br>I am imagining
 <br>How good it would be
 <br>If you kissed me
@@ -4737,12 +4845,15 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>You''re the only reason that I came','136','2024-01-26','inglese','','https://www.youtube.com/watch?v=J-jofgjSreE&pp=ygURcGFydGllcyB0b20gb2RlbGw%3D','2');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The Orchestra is Feeling Tense','Your phone''s on
+INSERT INTO brano VALUES('83','The Orchestra is Feeling Tense','Your phone''s on
 <br>Quite frustrating this
 <br>Hang on a minute','34','2024-01-26','inglese','','https://www.youtube.com/watch?v=YADbBwwmEUs&pp=ygUodGhlIG9yY2hlc3RyYSBpcyBmZWVsaW5nIHRlbnNlIHRvbSBvZGVsbA%3D%3D','2');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Nothing Hurts Like Love','You''re sitting across a table
+INSERT INTO brano VALUES(
+'84',
+'Nothing Hurts Like Love',
+'You''re sitting across a table
 <br>The wind is in your hair
 <br>Your scent is on my skin again
 <br>There''s music in the air
@@ -4778,7 +4889,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Nothing really hurts like love','232','2024-01-26','inglese','','https://www.youtube.com/watch?v=bYfRXTCuHlM&pp=ygUgbm90aGluZyBodXJ0cyBsaWtlIGxvdmV0b20gb2RlbGw%3D','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('Getaway (voice note)','I scream, I fight, I kick, I bite
+INSERT INTO brano
+VALUES(
+'85',
+'Getaway (voice note)',
+'I scream, I fight, I kick, I bite
 <br>But they don''t stop
 <br>I hide, I run, I try to jump
 <br>But my heart drops
@@ -4790,7 +4905,11 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>I got a gun to my head','46','2024-01-26','inglese','','https://www.youtube.com/watch?v=nV0BJOexKxs&pp=ygUcdm9pY2Ugbm90ZSBnZXRhd2F5IHRvbSBvZGVsbA%3D%3D','11');
 
 
-INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES('The End','I was twenty days clean yesterday
+INSERT INTO brano
+VALUES(
+'86',
+'The End',
+'I was twenty days clean yesterday
 <br>Got a key ring if I make it through to May
 <br>Can we talk? Is that okay?
 <br>If you''ve got time, I know a place
@@ -4816,8 +4935,10 @@ INSERT INTO brano(titolo, testo, durata, data_uscita, lingua, foto, yt_link, gen
 <br>Maybe we have reached the end','206','2024-01-26','inglese','','https://www.youtube.com/watch?v=_uBi6ABJdFs&pp=ygURdGhlIGVuZCB0b20gb2RlbGw%3D','2');
 
 -- Insert Billie Eilish
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('SKINNY',
+INSERT INTO brano  
+VALUES (
+'87',
+'SKINNY',
 'Oh, oh
 <br>
 <br>I fell in love for the first time
@@ -4853,8 +4974,10 @@ VALUES ('SKINNY',
 '',
 'https://www.youtube.com/watch?v=g6YSdMnCOCU',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('LUNCH',
+INSERT INTO brano
+VALUES (
+'88',
+'LUNCH',
 'Oh-mm
 <br>
 <br>I could eat that girl for lunch
@@ -4922,8 +5045,9 @@ And I left it under "Claire"
 'https://www.youtube.com/watch?v=MB3VkzPdgLA',
 2);
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('CHIHIRO',
+INSERT INTO brano
+VALUES ('89',
+'CHIHIRO',
 'To take my love away
 <br>When I come back around, will I know what to say?
 <br>Said you won''t forget my name
@@ -4996,8 +5120,10 @@ I don''t know you
 '',
 'https://www.youtube.com/watch?v=e_AZJzYe7CU',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('BIRDS OF A FEATHER',
+INSERT INTO brano 
+VALUES (
+'90',
+'BIRDS OF A FEATHER',
 'I want you to stay
 <br>''Til I''m in the grave
 <br>''Til I ride away, dead and buried
@@ -5052,8 +5178,10 @@ Say you wanna quit, don''t be stupid
 '',
 'https://www.youtube.com/watch?v=V9PVRfjEBTI',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('WILDFLOWER',
+INSERT INTO brano
+VALUES (
+'91',
+'WILDFLOWER',
 'Things fall apart
 <br>And time breaks your heart
 <br>I wasn''t there but I know
@@ -5113,8 +5241,10 @@ And I know that you love me (You love me)
 '',
 'https://www.youtube.com/watch?v=l08Zw-RY__Q',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('THE GREATEST',
+INSERT INTO brano 
+VALUES (
+'92',
+'THE GREATEST',
 'I''m trying my best
 <br>To keep you satisfied
 <br>Let you get your rest
@@ -5183,8 +5313,10 @@ What I would''ve done (Done, mm)
 '',
 'https://www.youtube.com/watch?v=WkdQhfDRBKs',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('L''AMOUR DE MA VIE',
+INSERT INTO brano 
+VALUES (
+'93',
+'L''AMOUR DE MA VIE',
 'I wish you the best for the rest of your life
 <br>Felt sorry for you when I looked in your eyes
 <br>But I need to confess, I told you a lie
@@ -5260,8 +5392,9 @@ Like I knew you would
 '',
 'https://www.youtube.com/watch?v=am5FI9DkO80',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('THE DINER',
+INSERT INTO brano 
+VALUES ('94',
+'THE DINER',
 'Don''t be afraid of me
 <br>I''m what you need
 <br>
@@ -5318,8 +5451,9 @@ But please don''t call the cops
 '',
 'https://www.youtube.com/watch?v=gDVw1l6QDOg',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('BITTERSUITE',
+INSERT INTO brano 
+VALUES ('95',
+'BITTERSUITE',
 'I can''t fall in love with you
 <br>
 <br>I''ve been overseas
@@ -5389,8 +5523,9 @@ VALUES ('BITTERSUITE',
 '',
 'https://www.youtube.com/watch?v=LmVw3u3SxoA',
 2);
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES ('BLUE',
+INSERT INTO brano 
+VALUES ('96',
+'BLUE',
 'Lights out
 <br>You''re not here holding me
 <br>I count
@@ -5446,8 +5581,8 @@ Might not mean anything
 'https://www.youtube.com/watch?v=mZqiawnNCQg',
 2);
 -- Insert Gazelle
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('97',
     'Blu',
     'Tararara
 	<br>Tararara
@@ -5517,8 +5652,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('98',
     'Destri',
     'All''improvviso sei volata via
 	<br>lasciando indietro una nuvoletta
@@ -5566,8 +5701,8 @@ VALUES (
     2
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('99',
     'GBTR',
     'Sulla riva del fiume ti ho visto che andavi via lontano
 	<br>Con qualcosa di brutto e qualcosa di bello dentro la mano
@@ -5622,8 +5757,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('100',
     'Però',
     'Era bellissimissimissimissimissimo tra me e te
 	<br>avevi gli occhi spenti come duecento incendi
@@ -5671,8 +5806,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('101',
     'Lacri-ma',
     'Mentre ti scende una lacri-ma non sai da dove vie-nerissimi gli occhi si sporca-non è come pensavi te
 	<br>E ti fa un po’ male
@@ -5704,8 +5839,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('102',
     'OK',
     'Come quando arrivi tardi
 	<br>E non c''è più nulla ormai
@@ -5760,8 +5895,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('103',
     '7',
     'Non ti posso più vedere
 	<br>Vammi a prendere da bere
@@ -5815,8 +5950,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('104',
     'Belva',
     'Non mi chiedi mai veramente come sto
 	<br>come vuoi che sto? non lo so nemmeno io, boh
@@ -5876,8 +6011,8 @@ VALUES (
     'https://www.youtube.com/watch?v=t_xwPXZoT1M',  
     11  
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano
+VALUES ('105',
     'Coltellata',
     'Mentre la notte s''accende come le sigarette
 	<br>Che mi fumo, una coltellata (una coltellata)
@@ -5916,8 +6051,8 @@ VALUES (
     'https://www.youtube.com/watch?v=8gbK5b_dqGU',  
     2  
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('106',
     'Scusa',
     'E non c''è niente a parte noi
 	<br>a parte i sogni rotti e quelli che non vuoi
@@ -5966,8 +6101,8 @@ VALUES (
     'https://www.youtube.com/watch?v=nessOSWzKmU',  
     2  
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('107',
     'Un po'' come noi',
     'Vado?
 	<br>Ok
@@ -6012,8 +6147,8 @@ VALUES (
     2  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('108',
     'Non sei tu',
     'I giorni passano, passano, passano
 	<br>e tu non torni qui
@@ -6066,8 +6201,8 @@ VALUES (
     11
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('109',
     'Quella te',
     'Mi ricorderó dei giorni pallidi
 	<br>Quando pioveranno lunedì
@@ -6113,8 +6248,8 @@ VALUES (
     11
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('110',
     'Zucchero filato',
     'Te lo ricordi lo zucchero filato
 	<br>Te lo ricordi lo zucchero filato
@@ -6168,8 +6303,8 @@ VALUES (
     11
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('111',
     'Meltinpot',
     'E fare la lotta è una cosa bellissima,
 	Voglio buttarmi giù da un elicottero
@@ -6210,8 +6345,8 @@ VALUES (
     11
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('112',
     'Balena',
     'E fare la lotta è una cosa bellissima,
 	<br>e fare la spesa è una cosa bruttissima.
@@ -6265,8 +6400,8 @@ VALUES (
     11
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('113',
     'Démodé',
     'Non ci vado più in discoteca
 	<br>Non ci vado più
@@ -6324,8 +6459,8 @@ VALUES (
     11
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('114',
     'NMRPM',
     'Non mi ricordi più il mare
 	<br>Se penso a te ora vedo un centro commerciale
@@ -6375,8 +6510,8 @@ VALUES (
     11  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('115',
     'Greta',
     'Greta non ti muovere dal letto
 	<br>Fuori non c''è niente
@@ -6411,8 +6546,8 @@ VALUES (
     
     -- Kid Yugi
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('116',
     'GRAMMELOT',
 	'Ehi (yeah), Kid Yugi, ah
 	<br>G-g, ehi
@@ -6452,8 +6587,8 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=6uAV6JJDs-A', 
 	3);
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('117',
     'Il Filmografo',
     'Yeh, uoh, ah
 	<br>Sei distante, riesco lo stesso a sentirti piangere
@@ -6505,8 +6640,8 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=bQ40dbIvFkI', 
     3);
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('118',
     'Massafghanistan',
     'Massafghanistan
 	<br>(Ah) Skinny, Yugi (ah)
@@ -6575,8 +6710,8 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=qpCh76f7JNk', 
     3);
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('119',
     'Sintetico',
     'Nel mio cuore un dedalo quando ti spogli dell''ultimo petalo
 	<br>Conosco il tuo corpo e i mostri che ci albergano
@@ -6637,8 +6772,8 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=umdg7hCEGI8', 
     3);
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('120',
     'Capra a tre Teste',
     'Yeah, yeah, yeah, yeah
 	<br>Ah, ah, ah
@@ -6713,8 +6848,8 @@ VALUES (
     '',  
     'https://www.youtube.com/watch?v=uX7PYIZ7CJ8', 
     3);
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano
+VALUES ('121',
     'Lilith',
     'Uoh, sei la mia Lilith, smetto di cercarti, noi non saremo amici
 	<br>Perché più dici: "Ti amo" e più continuerò a tradirti
@@ -6793,8 +6928,8 @@ VALUES (
     
     -- Sfera Ebbasta, continuare
     
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('122',
     'Ciny',
     'La C con la mano è da dove veniamo
 	<br>La C con la mano è da dove veniamo
@@ -6859,8 +6994,8 @@ VALUES (
     'https://www.youtube.com/watch?v=LD3twV19uAo', 
     3);
 
-	INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+	INSERT INTO brano 
+VALUES ('123',
     'Mercedes nero',
     'Giro sul Mercedes nero nella via
 	<br>Giro sul Mercedes nero nella via
@@ -6955,8 +7090,8 @@ VALUES (
     'https://www.youtube.com/watch?v=y2eejWX4ZGw', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('124',
     'Visiera a becco',
     'E ''sta roba gli ha dato alla testa
 	<br>E non puoi più salvarli
@@ -7037,8 +7172,8 @@ VALUES (
     'https://www.youtube.com/watch?v=L6piiXrf-hA', 
     3);
     
-	INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+	INSERT INTO brano 
+VALUES ('125',
     'Bang bang',
     'Non è una canzone d''amore
 	<br>Non ne ha bisogno una vera Eva Kant
@@ -7103,8 +7238,8 @@ VALUES (
     'https://www.youtube.com/watch?v=5-1guJoi5SI', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('126',
     'Rockstar',
     'Ora puoi pure piangere se non ci sentiamo
 	<br>Ora non mi dispiace se non mi cercherai, ehi
@@ -7178,8 +7313,8 @@ VALUES (
     'https://www.youtube.com/watch?v=x8fDlAunwAE', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('127',
     'Cupido',
 	'Con le altre faccio lo stupido
 	<br>Ho bevuto troppo meglio se
@@ -7263,8 +7398,8 @@ VALUES (
     'https://www.youtube.com/watch?v=jkveo88JgrA', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('128',
     'Bottiglie Privè',
 	'Tutto cambia, nulla resta uguale
 	<br>Tranne l''amore di tua madre
@@ -7328,8 +7463,8 @@ VALUES (
     'https://www.youtube.com/watch?v=HxOUtlUGFgo', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('129',
     'Hollywood',
 	'La mia ex mi scrive
 	<br>Mi dice che le manco da morire
@@ -7393,8 +7528,8 @@ VALUES (
     'https://www.youtube.com/watch?v=FVJPmzpI8U0', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano
+VALUES ('130',
     'G63',
 	'Oh, wow
 	<br>Money Gang
@@ -7496,8 +7631,8 @@ VALUES (
     'https://www.youtube.com/watch?v=fMvIFqmaYOg', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+VALUES ('131',
     '15 Piani',
 	'Non dormo la notte, mi scoppia la testa
 	<br>Piano A, piano B, non mi interessa
@@ -7575,8 +7710,9 @@ VALUES (
     'https://www.youtube.com/watch?v=7puLc-Nw5mc', 
     3);
     
-    INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+    INSERT INTO brano 
+	VALUES (
+	'132',
     'Saoko',
     'Saoko, papi, saoko<br> Saoko, papi, saoko<br> Saoko, papi, saoko<br> Saoko, papi, saoko<br> Cambio de tono, cambio de giro<br> Cambio de voz, cambio de estilo<br> Cambio de carro, hago de todo<br> Si no me entiendes, pues no me sigas, no<br> Y, ah<br> A cada noche le llego más loca<br> Y cómo lo hago pa\' hacerme notar<br> Para montarme lo tengo que dar<br> Dale replay, vuelve a estudiar<br> Dale replay, vuelve a estudiar<br> Dale replay...',
     137,  
@@ -7588,8 +7724,8 @@ VALUES (
 );
 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('133',
     'Chicken Teriyaki',
     'Chicken teriyaki, chicken teriyaki<br> Chicken teriyaki, chicken teriyaki<br> La cuenta, mami<br> La cuenta, mami<br> Chicken teriyaki, chicken teriyaki<br> Chicken teriyaki, chicken teriyaki<br> La cuenta, mami<br> La cuenta, mami<br> Estudio en un Airbnb, en la del biza o en la de Fer<br> Dos días en el tráfico y me lo llevé pa\' la Eixample, ¿qué?',
     122, 
@@ -7601,8 +7737,8 @@ VALUES (
 );
 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('134',
     'La Fama',
     'Lo que pasó a ti te lo cuento<br> No creas que dolerá, no<br> Si me quieres, pero sé<br> Que no vale la pena, eh<br> Ella siempre en el medio de la gente<br> La fama es cabrona, ¿por qué será?<br> No volveré, pero aquí te quedas<br> Yo te digo algo, no confíes en ella...',
     204, 
@@ -7614,8 +7750,8 @@ VALUES (
 );
 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('135',
     'Hentai',
     'Te quiero ride como mi bike<br> Hazme un tape modo spike<br> Yo la batí hasta que se montó<br> Segundo es chingarte, lo primero es Dios<br> Ay, qué rico Dios mío<br> Ay, qué rico, Dios mío<br> Pa\' ti y pa\' mí, a-a-ah<br> Pa\' ti y pa\' mí, a-a-ah<br> Pa\' ti y pa\' mí...',
     165, 
@@ -7627,8 +7763,8 @@ VALUES (
 );
 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('136',
     'Motomami',
     'A ti te atropella un trineo<br> Caliente como el sol de junio<br> El que llevo en las venas<br> Yo no soy yanki, pero ya quisiera<br> Ey, ey, motomami, motomami, motomami<br> Ey, ey, motomami, motomami, motomami...',
     138,  
@@ -7639,8 +7775,8 @@ VALUES (
     17
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('137',
     'Bizcochito',
     'Bizcochito, bizcochito<br> Me gusta que me digas<br> Que me quieres, que me quieres<br> Que me quieres, que me quieres<br> Quiero lo que tú quieras, si tú quieres<br> Yo no sé, yo no sé qué es el amor<br> Y, ah, ah, ah...',
     126,  
@@ -7651,8 +7787,8 @@ VALUES (
     17
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('138',
     'Diablo',
     'Diablo, diablo, diablo<br> Tienes la mala suerte de ser<br> El amor de mi vida, diablo<br> Que aunque no me quieras<br> Sigues haciendo ruido, diablo<br> Diablo, que yo nunca he estado en el lado oscuro<br> Y tú sí...',
     179,  
@@ -7663,8 +7799,8 @@ VALUES (
     17
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('139',
     'Como un G',
     'Como un G, como un G<br> Y como un G, como un G<br> Te traigo el ritmo y el flow<br> Me gusta como brillas<br> Y la noche me llama y me quiere llamar<br> Me quiere llamar...',
     162,  
@@ -7675,8 +7811,8 @@ VALUES (
     17
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('140',
     'Sakura',
     'Sakura, yo te vi<br> Y no sé qué hacer<br> Tanta belleza en una sola flor<br> Sakura, yo te vi, yo te vi<br> Como si el mundo se parara en un segundo<br> Yo te vi...',
     151,  
@@ -7687,8 +7823,8 @@ VALUES (
     17
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('141',
     'Good Times',
     'Good times, good vibes<br> Viviamo la vita come un sogno<br> Solo per un attimo, balla con me...',
     210,  -- Durata in secondi (3 minuti e 30 secondi)
@@ -7699,8 +7835,8 @@ VALUES (
     4
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('142',
     'Barcellona',
     'Questa è una lettera a Barcellona<br> Ti ricordi di noi due,<br> In quel bar all’angolo<br> Dove ci siamo persi in un attimo? ...',  -- Aggiungi il testo completo qui, utilizzando <br> per andare a capo
     190,  -- Durata in secondi (3 minuti e 10 secondi)
@@ -7711,8 +7847,8 @@ VALUES (
     4  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano 
+VALUES ('143',
     'Boogieman',
     'Quando la notte arriva, io sono qui<br> Se hai paura, io ti porto via<br> Sono il boogieman, non temere... ',  -- Aggiungi il testo completo qui, utilizzando <br> per andare a capo
     203,  
@@ -7723,8 +7859,8 @@ VALUES (
     4  
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) 
-VALUES (
+INSERT INTO brano  
+VALUES ('144',
     'Altrove',
 	'Oh, da quant''è che non sbagli senza più
 	<br>Senza fartene più una colpa?
@@ -7790,7 +7926,9 @@ VALUES (
     'https://www.youtube.com/watch?v=IpF9WqUS2S0',  -- Link ufficiale del video su YouTube
     '2'  -- genere_id
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano 
+VALUES (
+	'145',
 	'Quando saremo vecchi', 
 	'Quando saremo vecchi avremo le montagne
 	<br>Per camminarci dentro senza le risposte
@@ -7836,7 +7974,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
     '2'  -- genere_id
 ); 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano 
+VALUES (
+	'146',
 	'Quel filo che ci unisce',
 	'Io lo so cosa senti
 	<br>Non me lo devi spiegare
@@ -7898,7 +8038,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
     '2'  -- genere_id
 ); 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano
+VALUES (
+	'147',
 	'Mon Amour',
 	'Quindi ci piacciamo oppure no?
 	<br>Sangue nella dance floor, ci ballerò
@@ -7980,7 +8122,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
     '2'  -- genere_id
 ); 
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano  
+VALUES (
+	'148',
 	'Movin''Out(Anthony''s Song)',
 	'Anthony works in the grocery store
 	<br>Savin'' his pennies for someday
@@ -7998,7 +8142,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'https://www.youtube.com/watch?v=cJtL8vWNZ4o',
 	'1');
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano 
+VALUES (
+	'149',
 	'The Stranger',
 	'Well, we all have a face
 	<br>That we hide away forever
@@ -8019,7 +8165,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'https://www.youtube.com/watch?v=E5ofVsxTPoc',
 	'1');
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano
+VALUES (
+	'150',
 	'Just The Way You Are',
 	'Oh, her eyes, her eyes
 	<br>Make the stars look like they''re not shinin''
@@ -8039,7 +8187,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'https://www.youtube.com/watch?v=HaA3YZ6QdJU',
 	'1');
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano
+VALUES (
+	'151',
 	'Scene From An Italian Restaurant',
 	'A bottle of whites, a bottle of red
 	<br>Perhaps a bottle of rose instead
@@ -8058,7 +8208,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'1'
 );
 
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano 
+VALUES (
+	'152',
 	'Laudate Dominum',
 	'Laudate dominum
 	<br>Laudate dominum
@@ -8076,7 +8228,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'https://www.youtube.com/watch?v=2YfpZF6vy1g',
 	'16'
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano
+VALUES (
+	'153',
 	'L''infanzia di Maria',
 	'Laudate dominum
 	<br>Laudate dominum
@@ -8097,7 +8251,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'',
 	'https://www.youtube.com/watch?v=GXCrDa5f4Nw',
 	'16');
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano
+VALUES (
+	'154',
 	'Il ritorno di Giuseppe',
 	'Stelle, già dal tramonto
 	<br>Si contendono il cielo a frotte
@@ -8118,7 +8274,9 @@ INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, ge
 	'https://www.youtube.com/watch?v=B1aA014bFhg',
 	'16'
 );
-INSERT INTO brano (titolo, testo, durata, data_uscita, lingua, foto, yt_link, genere_id) VALUES (
+INSERT INTO brano
+VALUES (
+	'155',
 	'Il Sogno Di Maria',
 	'Nel grembo umido, scuro del tempio
 	<br>L''ombra era fredda, gonfia d''incenso
@@ -8202,7 +8360,7 @@ INSERT INTO album_brano(brano_id, album_id) VALUES (60,5);
 INSERT INTO album_brano(brano_id, album_id) VALUES (61,5);
 INSERT INTO album_brano(brano_id, album_id) VALUES (62,5);
 INSERT INTO album_brano(brano_id, album_id) VALUES (63,5);
--- insert tom odel
+-- insert tom odell
 INSERT INTO album_brano(brano_id, album_id) VALUES (64,6);
 INSERT INTO album_brano(brano_id, album_id) VALUES (65,6);
 INSERT INTO album_brano(brano_id, album_id) VALUES (66,6);

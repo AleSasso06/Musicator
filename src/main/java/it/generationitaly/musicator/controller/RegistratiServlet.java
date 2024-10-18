@@ -37,7 +37,7 @@ public class RegistratiServlet extends HttpServlet {
 		 * System.err.println("Errore, formato non corretto"); return; }
 		 */
 
-		System.out.println(username);
+		System.out.println("username:" + username);
 
 		if (utenteRepository.findByUsername(username) != null) {
 			response.sendRedirect("registrati.jsp?erroreUsernameEsistente");
