@@ -32,10 +32,11 @@ pageEncoding="UTF-8"%>
 		</style> 
 </head>
 <body>
-	<% Utente utente = (Utente) request.getAttribute("utente"); %>
 		<header>
 		<%@ include file="nav.jsp" %>
 		</header>
+		
+		<%utente = (Utente) request.getAttribute("utente"); %>
 		
 		 <div class="svg-container mt-3">
 		        <img alt="" src="images/logo header.svg">
