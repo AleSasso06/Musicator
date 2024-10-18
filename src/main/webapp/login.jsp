@@ -66,7 +66,6 @@
 	                <div class="container mb-1">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="sign-in.jsp">Non sei ancora registrato? Registrati!</a>
 	                </div>
-	               <br>
 	                <div class="container mb-4">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="index.jsp">Torna alla Home</a>
 	                </div>
