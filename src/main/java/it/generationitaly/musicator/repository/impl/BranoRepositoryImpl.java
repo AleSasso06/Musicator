@@ -157,6 +157,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 		}
 		return brani;
 	}
+
 	@Override
 	public List<Brano> findByGenereId(long id) {
 		EntityManager em = null;
@@ -167,29 +168,30 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			tx = em.getTransaction();
 			tx.begin();
 			// SELECT * FROM Brano b WHERE b.genere_id = :genere;
-			// SELECT * FROM brano JOIN genere ON brano.genere_id = genere.id WHERE genere.nome LIKE '%R&B%';
+			// SELECT * FROM brano JOIN genere ON brano.genere_id = genere.id WHERE
+			// genere.nome LIKE '%R&B%';
 			// manca case insensitive e testing
-			TypedQuery<Brano> query = em.createQuery("FROM Brano b JOIN Genere g ON b.genere_id = g.id WHERE g.id = :id", Brano.class);
+			TypedQuery<Brano> query = em
+					.createQuery("FROM Brano b JOIN Genere g ON b.genere_id = g.id WHERE g.id = :id", Brano.class);
 			query.setParameter("id", id);
 			brani = query.getResultList();
 			tx.commit();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			System.err.println(e.getMessage());
-			if(tx != null && tx.isActive())
+			if (tx != null && tx.isActive())
 				tx.rollback();
 		} finally {
-			if(em != null)
+			if (em != null)
 				em.close();
 		}
 		return brani;
 	}
 
-
 	@Override
 	public List<Album> findAlbumsByBrano(Long id) {
 		EntityManager em = null;
 		EntityTransaction tx = null;
-		List<Album> albums  = null;
+		List<Album> albums = null;
 		try {
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
@@ -210,6 +212,29 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 		}
 		return albums;
 	}
-//		    return query.getResultList(); // Restituisce la lista di album associati al brano
 
+	@Override
+	public List<Brano> findDistinct() {
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		List<Brano> brani = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			String jpql = "SELECT DISTINCT b FROM Brano b JOIN b.album al JOIN al.artista a";
+
+			TypedQuery<Brano> query = em.createQuery(jpql, Brano.class);
+			brani = query.getResultList();
+			tx.commit();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+		} finally {
+			if (em != null)
+				em.close();
+		}
+		return brani;
+	}
 }

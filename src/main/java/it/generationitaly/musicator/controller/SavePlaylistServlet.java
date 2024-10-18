@@ -31,7 +31,7 @@ public class SavePlaylistServlet extends HttpServlet {
 		Utente utente = (Utente) session.getAttribute("utente");
 		Playlist playlist = new Playlist();
 		// magari si mette un if con una checkbox?
-		playlist.setPubblica(true);
+		playlist.setPrivata(true);
 		playlist.setTitolo(request.getParameter("titolo"));
 		playlist.setFoto(request.getParameter("foto"));
 		playlist.setUtente(utente);
