@@ -70,10 +70,10 @@
 	                </div>
 						<button class="custom-register-btn mt-2" type="submit" >Login</button>
 						<% if (request.getParameter("erroreCredenziali") != null) { %>
-				<div class="alert alert-danger mt-3" role="alert">
-					<p class="text-center my-0">Credenziali errate</p>
-				</div>
-			<% } %>
+							<div class="alert alert-danger mt-3" role="alert">
+								<p class="text-center my-0">Credenziali errate</p>
+							</div>
+						<% } %>
 			
 			</form>
 					</div>
