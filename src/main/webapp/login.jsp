@@ -51,7 +51,7 @@
 						
 						<div class="form-row col-md-20">
 						    <label for="exampleDropdownFormEmail1" class="form-label">Email</label>
-                			<input type="email" class="form-control" id="exampleDropdownFormEmail1" name="email" placeholder="email@example.com">
+                			<input type="email" class="form-control" id="exampleDropdownFormEmail1" name="email" placeholder="email@example.com" required>
 						</div>
 						
 						<div class="form-group col-md-20">
