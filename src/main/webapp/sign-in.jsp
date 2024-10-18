@@ -44,17 +44,15 @@
 					
 						
 						<div class="form-row col-md-20 mb-1">
-							
+							<a href="welcome">
 								<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
-								<br><br>
+							</a>
+							<br><br>
 								<!-- <form id="uploadForm">
 								<!-- commento l'inserimento foto perchè non ho idea di come farlo dal lato servlet -->
 								<!-- <label for="profileImage">Scegli un'immagine:</label>
-<<<<<<< HEAD
 								<input type="file" id="profileImage" accept="image/*">  
-=======
 								<input type="file" id="profileImage" accept="image/*"> 
->>>>>>> refs/heads/band
 							</form> -->
 						</div>
 						
@@ -87,9 +85,9 @@
 						<div class="container mb-1 ">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="login.jsp">Sei già registrato? Accedi!</a>
 	                </div>
-	                <div class="container mb-4 ">
+	                <!-- <div class="container mb-4 ">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="index.jsp">Torna alla Home</a>
-	                </div>
+	                </div> -->
 						<button class="custom-register-btn" type="submit" >Registrati</button>
 					
 				

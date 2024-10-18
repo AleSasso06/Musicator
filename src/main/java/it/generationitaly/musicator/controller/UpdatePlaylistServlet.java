@@ -42,6 +42,8 @@ public class UpdatePlaylistServlet extends HttpServlet {
 		long id = Long.parseLong(request.getParameter("id"));
 		String titolo = request.getParameter("titolo");
 		String foto = request.getParameter("foto");
+		
+		System.out.println("titolo: " + titolo);
 
 		Playlist playlist = playlistRepository.findById(id);
 		playlist.setTitolo(titolo);

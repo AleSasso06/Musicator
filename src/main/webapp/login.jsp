@@ -44,7 +44,9 @@
 					
 						
 						<div class="form-row col-md-20">
-							<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
+							<a href="welcome">
+								<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
+							</a>
 						</div>
 						
 						<div class="form-row col-md-20">
@@ -66,9 +68,9 @@
 	                <div class="container mb-1">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="sign-in.jsp">Non sei ancora registrato? Registrati!</a>
 	                </div>
-	                <div class="container mb-4">
+	                <!-- <div class="container mb-4">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="index.jsp">Torna alla Home</a>
-	                </div>
+	                </div> -->
 						<button class="custom-register-btn mt-2" type="submit" >Login</button>
 						<% if (request.getParameter("erroreCredenziali") != null) { %>
 							<div class="alert alert-danger mt-3" role="alert">
