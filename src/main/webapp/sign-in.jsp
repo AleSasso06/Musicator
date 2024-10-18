@@ -50,7 +50,11 @@
 								<!-- <form id="uploadForm">
 								<!-- commento l'inserimento foto perchè non ho idea di come farlo dal lato servlet -->
 								<!-- <label for="profileImage">Scegli un'immagine:</label>
+<<<<<<< HEAD
 								<input type="file" id="profileImage" accept="image/*">  
+=======
+								<input type="file" id="profileImage" accept="image/*"> 
+>>>>>>> refs/heads/band
 							</form> -->
 						</div>
 						

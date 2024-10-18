@@ -70,6 +70,7 @@
     	</header>
     	
    <%Genere genere = (Genere)request.getAttribute("genere"); %>
+  
    
    <!-- scritta risultato ricerca -->
 	<div class="container">
@@ -90,12 +91,13 @@
  <div class="container min-vh-10 d-flex justify-content-center">
     <div class="container" style="top: -15px;">
         <!-- carosello brani -->
-        
+   <%   List<Brano> brani = genere.getBrani();%>
+   <% if(brani != null && !brani.isEmpty()){ %>
         <h2 style="text-align: center;">Brani</h2>
         <div id="branoCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <%  
-                    List<Brano> brani = genere.getBrani();
+                  
                     int braniPerSlide = 9; 
                     boolean isFirstSlide = true;
 
@@ -117,12 +119,15 @@
                                     <div class="col">
                                         <div class="card-body">
                                             <a class="card-title" href="brano?id=<%= brano.getId() %>">
-                                                <h5 class="card-title"><%= brano.getTitolo() %></h5>
+                                                <h6 class="card-title"><%= brano.getTitolo() %></h6>
                                             </a>
+                                            <a href="album?id=<%= brano.getAlbum().get(0).getId() %>" style="color: black">
+                                   		 <small class="card-title text-start"><%= brano.getAlbum().get(0).getTitolo() %></small>
+                                    </a>
                                         </div>
                                     </div>
                                     <div class="col-auto">
-                                        <a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
+                                        <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
                                             <i class="bi bi-play-circle-fill"></i>
                                         </a>
                                     </div>
@@ -150,17 +155,21 @@
         <!-- fine carosello brani -->
     </div>
 </div>
+<%} else { %>
+<p></p>
+<%} %>
    <br>
    
-   
 <!-- album -->
+  <%   List<Album> albums = genere.getAlbum();%>
+   <% if(albums != null && !albums.isEmpty()){ %>
   <div class="container min-vh-10 d-flex justify-content-center">
     <div class="container" style="top: -15px;">
         <h2 style="text-align: center;">Album</h2>
         <div id="albumCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <% 
-                    List<Album> albums = genere.getAlbum(); 
+                   
                     int albumsPerSlide = 4; 
                     boolean isFirstSlide2 = true;
 
@@ -203,7 +212,10 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
+    <%} else { %>
+<p></p>
+<%} %>
+</div>
 </div>
 
     <%@ include file="footer.jsp" %>

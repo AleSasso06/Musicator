@@ -10,6 +10,8 @@ public interface ArtistaRepository extends JpaRepository<Artista, Long>{
 
 	List<Artista> findByPseudonimo(String pseudonimo);
 	
-	List<Artista> findByNazionalita(String nazionalita); 
+	List<Artista> findByNazionalita(String nazionalita);
+	
+	List<Artista> findByNome(String nome);
 	
 }

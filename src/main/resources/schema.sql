@@ -17,6 +17,7 @@ CREATE TABLE artista (
     nazionalita VARCHAR(45) NOT NULL,
     biografia VARCHAR(4000) NOT NULL,
     foto VARCHAR(4000) NOT NULL,
+    band BOOLEAN NOT NULL DEFAULT(FALSE),
     PRIMARY KEY (id)
 );
 
@@ -84,7 +85,7 @@ titolo VARCHAR(90) NOT NULL,
 durata INT NOT NULL,
 foto VARCHAR(4000) NOT NULL,
 data_creazione DATE NOT NULL,
-privata BOOLEAN NOT NULL,
+privata BOOLEAN NOT NULL DEFAULT(FALSE),
 utente_id BIGINT NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (utente_id)

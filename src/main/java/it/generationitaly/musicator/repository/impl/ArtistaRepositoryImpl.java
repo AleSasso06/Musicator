@@ -68,5 +68,31 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 		return artisti; 
 	}
 
+	@Override
+	public List<Artista> findByNome(String nome) {
+		List<Artista> artisti = null;
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			TypedQuery<Artista> query = em.createQuery("FROM Artista a WHERE a.nome LIKE CONCAT('%',:nome,'%')", Artista.class);
+			query.setParameter("nome", nome);
+			/*List<Artista>*/ artisti = query.getResultList();
+			// artista = artisti.isEmpty() ? null : artisti.get(0);
+			tx.commit();
+		}catch(Exception e){
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+			
+		}finally {
+			if(em != null)
+				em.close();
+		}
+		return artisti;
+	}
+
 	
 }
