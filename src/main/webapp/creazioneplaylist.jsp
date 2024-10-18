@@ -50,7 +50,7 @@
 
 <div class="container-lg mt-5">
 		<div class="container  min-vh-99 d-flex  justify-content-center  align-items-center">
-	<form action="#" method="post">
+	<form action="save-playlist" method="post">
 					<h1 style= "text-align:center "class="mx-auto">CREA LA TUA PLAYLIST</h1>
 					
 						
