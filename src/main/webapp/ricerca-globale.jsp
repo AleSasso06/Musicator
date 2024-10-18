@@ -24,24 +24,48 @@
 <!-- css locali -->
 <link rel="stylesheet" href="style2.css">
 <style>
-   .button-spacing {
-    padding: 10px 20px;
-    background-color: #C2185B;
-      }
-        
-        .btn-custom {
-       .genre-list li {
-    
-    margin-bottom: 20px;
-    font-size: 20px;
-    background-color: #C2185B;
-    border-radius: 5px;
-    color: #FFFFFF;
+.button-spacing {
+	padding: 10px 20px;
+	background-color: #C2185B;
 }
-     
-       
-        
-    </style>
+
+.song-card {
+	height: 122px;
+	opacity: 0.9;
+	transition: opacity 0.2s ease;
+	color: #E3F2FD;
+}
+
+.song-img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+}
+
+.card-title {
+	white-space: normal; /* Permette di andare a capo */
+	word-wrap: break-word; /* Spezza le parole lunghe */
+}
+
+.card-body {
+	text-align: left;
+	color: black;
+	overflow: hidden;
+}
+
+.btn-play {
+	font-size: 1.5rem;
+	color: #C2185B;
+}
+
+.carousel-control-prev {
+	left: -175px;
+}
+
+.carousel-control-next {
+	right: -175px;
+}
+</style>
 </head>
 <body>
 	<%
@@ -64,82 +88,123 @@
 	<!-- Sezione Classifica Globale -->
 
 	<div class="container">
-
 		<div class="col">
 			<div class="p-8">
-				<h1 style="padding: 50px 50px 40px 0px; text-align: left;" class="fw-bold text-light h1center">
+				<h1 style="padding: 50px 50px 40px 0px; text-align: left;"
+					class="fw-bold text-light h1center">
 					Risultati ricerca '<%=request.getAttribute("inputUtente")%>'
 				</h1>
 			</div>
 		</div>
-		
+
 		<!-- Griglia delle card -->
-		<div class="row">
 		<% if (!brani.isEmpty()) { %>
 		<h2 style="margin-bottom: 15px;">Brani</h2>
-			<% for (Brano brano : brani) { %>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src=<%= brano.getAlbum().get(0).getFoto() %>
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-									<h5 class="card-title"><%= brano.getTitolo() %></h5>
-								</a>
-								<!-- <a href="artista?id=<% // %>"><p class="text-dark card-text"><% // %></p></a> -->
+		<div id="caroselloBrani" class="carousel slide"
+			data-bs-ride="carousel" data-bs-interval="15000">
+			<div class="carousel-inner">
+				<%
+				int braniPerSlide = 12; // Numero di card per slide
+				int numeroDiBrani = brani.size();
+				boolean isFirstSlide = true;
+
+				for (int i = 0; i < numeroDiBrani; i += braniPerSlide) {
+				%>
+				<div class="carousel-item <%=isFirstSlide ? "active" : ""%>">
+					<div class="row justify-content-center d-flex align-items-stretch">
+						<%
+						// Mostra fino a braniPerSlide card per slide
+						for (int j = i; j < i + braniPerSlide && j < numeroDiBrani; j++) {
+							Brano brano = brani.get(j);
+						%>
+						<div class="col-md-5 col-lg-4 mb-3">
+							<div class="card song-card">
+								<div class="row no-gutters align-items-center">
+									<div class="col-auto">
+										<%
+										if (brano != null && !brano.getAlbum().isEmpty()) {
+										%>
+										<img src="<%=brano.getAlbum().get(0).getFoto()%>" height="110"
+											class="rounded song-img" alt="...">
+										<%
+										}
+										%>
+									</div>
+									<div class="col">
+										<div class="card-body p-2">
+											<a class="card-title h5" href="brano?id=<%=brano.getId()%>">
+												<h6 class="card-title text-start"><%=brano.getTitolo()%></h6>
+											</a>
+											<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+											<p class="card-title text-start"><%=new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita())%></p>
+										</div>
+									</div>
+									<div class="col-auto">
+										<a class="btn btn-play" href="<%=brano.getYtLink()%>"
+											target="blank"> <i class="bi bi-play-circle-fill"></i>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-auto">
-							<a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
-								<i class="bi bi-play-circle-fill"></i>
-							</a>
-						</div>
+						<%
+						}
+						%>
+						<!-- Fine ciclo per braniPerSlide -->
 					</div>
 				</div>
+				<%
+				isFirstSlide = false;
+				}
+				%>
+				<!-- Fine ciclo per le slide -->
 			</div>
-			<% } %>
-			<% } else { %>
-			<p></p>
-		<% } %>
-			<!-- Ripeti per altre card -->
-		</div>
-		<!-- <div class="row mb-4">
-			<div class="col d-flex justify-content-center">
-				<a class="carousel-control-prev" href=""
-					role="button" data-slide="prev"> <span
-					class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-					class="sr-only"></span>
-				</a> <a class="carousel-control-next" href=""
-					role="button" data-slide="next"> <span
-					class="carousel-control-next-icon" aria-hidden="true"></span> <span
-					class="sr-only"></span>
-				</a>
-			</div>
-		</div> -->
-	<% if (!artisti.isEmpty()) { %>
-		<h2 style="margin-bottom: 15px; margin-top: 15px">Artisti</h2>
-		<div class="container min-vh-10 d-flex  justify-content-center mt-5">
-		<% for (Artista artista : artisti) { %>
-		<a class="card-title h5" href="artista?id=<%= artista.getId() %>">
-		<div class="col-p-3 mx-4 mb-4">
-			<div class="card" style="width: 275px;">
-				<img src="<%= artista.getFoto() %>" height="275" class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title text-center"><%= artista.getPseudonimo() %></h5>
-				</div>
-			</div>
-		</div>
-		</a>
-		<% } %>
+			<!-- Controlli del Carosello -->
+		<button class="carousel-control-prev" type="button"
+			data-bs-target="#caroselloBrani" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+				class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button"
+			data-bs-target="#caroselloBrani" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span> <span
+				class="visually-hidden">Next</span>
+		</button>
 		</div>
 		<% } else { %>
 			<p></p>
 		<% } %>
+		
+		<%
+		if (!artisti.isEmpty()) {
+		%>
+		<h2 style="margin-bottom: 15px; margin-top: 15px">Artisti</h2>
+		<div class="container min-vh-10 d-flex justify-content-center mt-5">
+			<%
+			for (Artista artista : artisti) {
+			%>
+			<a class="card-title h5" href="artista?id=<%=artista.getId()%>">
+				<div class="col-p-3 mx-4 mb-4">
+					<div class="card" style="width: 275px;">
+						<img src="<%=artista.getFoto()%>" style="object-fit: cover" height="275"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center"><%=artista.getPseudonimo()%></h5>
+						</div>
+					</div>
+				</div>
+			</a>
+			<%
+			}
+			%>
+		</div>
+		<%
+		} else {
+		%>
+		<p></p>
+		<%
+		}
+		%>
 		<!-- <div class="col-p-3 mx-4 mb-4">
 			<div class="card" style="width: 275px;">
 				<img src="https://i.scdn.co/image/ab6761610000517460f57316669a4ba12eb37b94" height="275" class="card-img-top" alt="...">
@@ -165,59 +230,96 @@
 			</div>
 		</div>
 		 </div> -->
-		 <% if (!albums.isEmpty()) { %>
-			<h2 style="margin-bottom: 15px; margin-top: 15px">Album</h2>
-			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
-			<% for (Album album : albums) { %>
-				<a class="card-title h5" href="album?id=<%= album.getId() %>">
-					<div class="col-p-3 mx-4 mb-4">
-						<div class="card" style="width: 275px;">
-							<img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title text-center"><%= album.getTitolo() %></h5>
-							</div>
+		<%
+		if (!albums.isEmpty()) {
+		%>
+		<h2 style="margin-bottom: 15px; margin-top: 15px">Album</h2>
+		<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+			<%
+			for (Album album : albums) {
+			%>
+			<a class="card-title h5" href="album?id=<%=album.getId()%>">
+				<div class="col-p-3 mx-4 mb-4">
+					<div class="card" style="width: 275px;">
+						<img style="object-fit: cover;" src="<%=album.getFoto()%>"
+							height="275" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center"><%=album.getTitolo()%></h5>
 						</div>
 					</div>
-				</a>
-			<% } %>
+				</div>
+			</a>
+			<%
+			}
+			%>
+		</div>
+		<%
+		} else {
+		%>
+		<p></p>
+		<%
+		}
+		%>
+		<%
+		if (!generi.isEmpty()) {
+		%>
+		<h2 style="margin-bottom: 15px; margin-top: 15px">Generi</h2>
+		<div class="row row-cols-1 d-flex g-4 justify-content-center">
+			<div class="row row-cols-1 row-cols-md-3 g-4"></div>
+			<%
+			for (Genere genere : generi) {
+			%>
+			<div class="col-md-4">
+				<button type="button"
+					class="btn btn-secondary btn-lg w-100 button-spacing"
+					onclick="window.location.href='genere?id=<%=genere.getId()%>'">
+					<%=genere.getNome()%>
+				</button>
 			</div>
-		<% } else { %>
-			<p></p>
-		<% } %>
-		<% if (!generi.isEmpty()) { %>
-			<h2 style="margin-bottom: 15px; margin-top: 15px">Generi</h2>
-			<div class="row row-cols-1 d-flex g-4 justify-content-center"><div class="row row-cols-1 row-cols-md-3 g-4"> </div>
-			<% for (Genere genere : generi) { %>
-					<div class="col-md-4">
-    					<button type="button" class="btn btn-secondary btn-lg w-100 button-spacing" onclick="window.location.href='genere?id=<%= genere.getId() %>'">
-       						<%= genere.getNome() %>
-    					</button>
-    				</div>
-			<% } %>
-			</div>
-		<% } else { %>
-			<p></p>
-		<% } %>
-		<% if (!playlists.isEmpty()) { %>
-			<h2 style="margin-bottom: 15px; margin-top: 15px">Playlist</h2>
-			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
-			<% for (Playlist playlist : playlists) { %>
-				<a class="card-title h5" href="playlist?id=<%= playlist.getId() %>">
-					<div class="col-p-3 mx-4 mb-4">
-						<div class="card" style="width: 275px;">
-							<img src="<%= playlist.getFoto() %>" height="275" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title text-center"><%= playlist.getTitolo() %></h5>
-								<p class="card-text">creata da <%= playlist.getUtente() %></p>
-							</div>
+			<%
+			}
+			%>
+		</div>
+		<%
+		} else {
+		%>
+		<p></p>
+		<%
+		}
+		%>
+		<%
+		if (!playlists.isEmpty()) {
+		%>
+		<h2 style="margin-bottom: 15px; margin-top: 15px">Playlist</h2>
+		<div class="container min-vh-10 d-flex  justify-content-center mt-5">
+			<%
+			for (Playlist playlist : playlists) {
+			%>
+			<a class="card-title h5" href="playlist?id=<%=playlist.getId()%>">
+				<div class="col-p-3 mx-4 mb-4">
+					<div class="card" style="width: 275px;">
+						<img src="<%=playlist.getFoto()%>" height="275"
+							class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center"><%=playlist.getTitolo()%></h5>
+							<p class="card-text">
+								creata da
+								<%=playlist.getUtente()%></p>
 						</div>
 					</div>
-				</a>
-			<% } %>
-			</div>
-		<% } else { %>
-			<p></p>
-		<% } %>
+				</div>
+			</a>
+			<%
+			}
+			%>
+		</div>
+		<%
+		} else {
+		%>
+		<p></p>
+		<%
+		}
+		%>
 	</div>
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>
