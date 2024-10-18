@@ -69,7 +69,7 @@
 	                    <a class="dropdown-item d-inline text-body-secondary" href="sign-in.jsp">Non sei ancora registrato? Registrati!</a>
 	                </div>
 						<button class="custom-register-btn mt-2" type="submit" >Login</button>
-						<% if (request.getParameter("erroreCredenzali") != null) { %>
+						<% if (request.getParameter("erroreCredenziali") != null) { %>
 				<div class="alert alert-danger mt-3" role="alert">
 					<p class="text-center my-0">Credenziali errate</p>
 				</div>
