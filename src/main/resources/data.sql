@@ -8327,12 +8327,12 @@ INSERT INTO utente(username, password, nome, cognome, email, foto, data_creazion
 '2024-10-10');
 
 
-INSERT INTO playlist(titolo, durata, foto, data_creazione, pubblica, utente_id) VALUES(
+INSERT INTO playlist(titolo, durata, foto, data_creazione, privata, utente_id) VALUES(
 'PLAYLIST PROVA',
 100,
 'https://i.scdn.co/image/ab67616d00001e025ef878a782c987d38d82b605',
 '2023-10-11',
-TRUE,
+FALSE,
 2);
 
 

@@ -39,8 +39,8 @@ public class Playlist {
 	@Column(name = "data_creazione", nullable = false)
 	private Date dataCreazione = new Date();
 
-	@Column(name = "pubblica", nullable = false)
-	private boolean pubblica;
+	@Column(name = "privata", nullable = false)
+	private boolean privata;
 
 	@ManyToOne
 	@JoinColumn(name = "utente_id")
@@ -90,12 +90,12 @@ public class Playlist {
 		this.dataCreazione = dataCreazione;
 	}
 
-	public boolean isPubblica() {
-		return pubblica;
+	public boolean isPrivata() {
+		return privata;
 	}
 
-	public void setPubblica(boolean pubblica) {
-		this.pubblica = pubblica;
+	public void setPrivata(boolean privata) {
+		this.privata = privata;
 	}
 
 	public Utente getUtente() {
@@ -117,7 +117,7 @@ public class Playlist {
 	@Override
 	public String toString() {
 		return "Playlist [id=" + id + ", titolo=" + titolo + ", durata=" + durata + ", foto=" + foto
-				+ ", dataCreazione=" + dataCreazione + ", pubblica=" + pubblica + "]";
+				+ ", dataCreazione=" + dataCreazione + ", privata=" + privata + "]";
 	}
 
 }

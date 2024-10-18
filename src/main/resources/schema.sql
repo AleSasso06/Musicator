@@ -84,7 +84,7 @@ titolo VARCHAR(90) NOT NULL,
 durata INT NOT NULL,
 foto VARCHAR(4000) NOT NULL,
 data_creazione DATE NOT NULL,
-pubblica BOOLEAN NOT NULL,
+privata BOOLEAN NOT NULL,
 utente_id BIGINT NOT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (utente_id)
