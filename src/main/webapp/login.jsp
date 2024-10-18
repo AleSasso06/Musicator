@@ -34,9 +34,7 @@
 	
 	<body>
 	
-	  <div class="container-arrow">
-	   <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-	   </div>
+	 
 	 
 	<div class="container-lg">
 		<div class="container  min-vh-99 d-flex  justify-content-center  align-items-center">
@@ -65,8 +63,12 @@
 	                </div>
 	                 -->
 	                <br>
-	                <div class="text-end">
+	                <div class="container mb-1">
 	                    <a class="dropdown-item d-inline text-body-secondary" href="sign-in.jsp">Non sei ancora registrato? Registrati!</a>
+	                </div>
+	               <br>
+	                <div class="container mb-4">
+	                    <a class="dropdown-item d-inline text-body-secondary" href="index.jsp">Torna alla Home</a>
 	                </div>
 						<button class="custom-register-btn mt-2" type="submit" >Login</button>
 						<% if (request.getParameter("erroreCredenziali") != null) { %>
