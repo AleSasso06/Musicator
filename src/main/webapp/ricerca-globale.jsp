@@ -338,7 +338,6 @@
 		%>
 		
 		<%
-		System.out.println(playlists);
 		if (!playlists.isEmpty()) {
 		%>
 		<h2 style="margin-bottom: 15px; margin-top: 15px">Playlist</h2>
