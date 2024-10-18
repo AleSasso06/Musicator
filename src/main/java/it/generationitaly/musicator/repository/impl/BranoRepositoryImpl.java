@@ -1,5 +1,6 @@
 package it.generationitaly.musicator.repository.impl;
 
+import java.util.Arrays;
 import java.util.List;
 
 import it.generationitaly.musicator.entity.Album;
@@ -222,10 +223,11 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String jpql = "SELECT b FROM album_brano ab JOIN Brano b ON b.id = ab.brano_id JOIN Album a ON ab.album_id = a.id JOIN Artista ar ON a.artista_id = ar.id GROUP BY ar.id";
+			List<Long> ids = Arrays.asList(9L, 15L, 27L, 45L, 58L, 69L, 75L, 76L, 99L, 5L, 123L, 143L);
 
-			TypedQuery<Brano> query = em.createQuery(jpql, Brano.class).setMaxResults(12);
-			brani = query.getResultList();
+			TypedQuery<Brano> query = em.createQuery("SELECT b FROM Brano b WHERE b.id IN :ids", Brano.class);
+			query.setParameter("ids", ids);
+		    brani = query.getResultList();
 			tx.commit();
 		} catch (Exception e) {
 			System.err.println(e.getMessage());
