@@ -25,7 +25,7 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p WHERE p.titolo = :titolo", Playlist.class);
+			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p WHERE p.titolo LIKE CONCAT('%',:titolo ,'%')", Playlist.class);
 			query.setParameter("titolo", titolo);
 			playlist = query.getResultList();
 			tx.commit();
@@ -43,7 +43,7 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 
 
 	@Override
-	public List<Playlist> findByBrano(Brano brano) {
+	public List<Playlist> findByBrano(String titolo) {
 		List<Playlist> playlist = null;
 		EntityManager em = null;
 		EntityTransaction tx = null;
@@ -51,8 +51,8 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p INNER JOIN brano b WHERE b.titolo = :titolo", Playlist.class);
-			query.setParameter("titolo", brano.getTitolo());
+			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p INNER JOIN brano b WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')", Playlist.class);
+			query.setParameter("titolo", titolo);
 			playlist = query.getResultList();
 			tx.commit();
 		} catch (Exception e) {

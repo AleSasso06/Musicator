@@ -9,6 +9,6 @@ public interface PlaylistRepository extends JpaRepository<Playlist, Long> {
 
 	List<Playlist> findByTitolo(String titolo);
 	
-	List<Playlist> findByBrano(Brano brano);
+	List<Playlist> findByBrano(String titolo);
 
 }
