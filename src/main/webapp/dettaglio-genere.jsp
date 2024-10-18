@@ -8,165 +8,206 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-=======
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
->>>>>>> refs/heads/mod.playlist
     <title>Pagina Musicator</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-
-    <!-- File CSS personalizzato -->
-
-<<<<<<< HEAD
-    <title>Musicator -  Genere</title>
-=======
- <title>Musicator Genere</title>
->>>>>>> refs/heads/mod.playlist
-    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
-
-<<<<<<< HEAD
-    <link rel="stylesheet" href="style2.css">
-=======
-<link rel="stylesheet" href="style2.css">
->>>>>>> refs/heads/mod.playlist
+ <!-- Bootstrap css -->
+ 		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      	 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+		 <!-- Bs Icons -->
+	     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		 <!-- css locali -->
+    	 <link rel="stylesheet" href="style2.css">
+		<!-- Import Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	    <!-- Swiper css -->
+	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
-        /* Aggiunta di stili personalizzati */
-        .brano {
-            background-color: #C2185B;
-            border-radius: 5px;
-            padding: 10px;
-            color: white;
-            margin-bottom: 15px;
-        }
+      			
+			.song-card {
+				height: 122px;
+				opacity: 0.9;
+				transition: opacity 0.2s ease;
+				color: #E3F2FD;
+			}
+			
+			.song-img {
+				width: 120px;
+				height: 120px;
+				object-fit: cover;
+			}
+			
+			.card-title {
+				white-space: normal; /* Permette di andare a capo */
+				word-wrap: break-word; /* Spezza le parole lunghe */
+			}
+			
+			.card-body {
+				text-align: left;
+				color: black;
+				overflow: hidden;
+			}
+			
+			.btn-play {
+				font-size: 1.5rem;
+				color: #C2185B;
+			}
+			
+			.carousel-control-prev {
+				left: -175px;
+			}
+			
+			.carousel-control-next {
+				right: -175px;
+			}
+			
+		</style>
 
-        .album-card {
-            margin-bottom: 20px;
-        }
-
-        .no-content {
-            text-align: center;
-            color: white;
-            margin-top: 50px;
-        }
-
-        .min-vh-100 {
-            min-height: 100vh;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-        }
-    </style>
 </head>
 <body>
 
 <header>
     <%@ include file="nav.jsp" %>
     	</header>
-    
-   
+    	
    <%Genere genere = (Genere)request.getAttribute("genere"); %>
-	<!-- Inizio Logo -->
-	<div class="svg-container mt-3">
-           <img alt="" src="images/logo header.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
-        </div>
-           <!-- Fine Logo -->
-           
    
-       
-<!--  
-<form action="inserisciGenere" method="POST">
-<div id="genereButtons" class="d-grid gap-2 col-6 mx-auto"></div>
-<h1 class="text-center my-5" style="color: #E3F2FD;">Elenco Generi Musicali</h1>
-</form>  -->
-
-    <!--   
-  <div class="container justify-content-center mt-5">
-    	<form action="ricerche_specifiche" method="get" class="input-group mb-3">
-        <label for="brani" class="form-label"></label>
-        <input type="text" class="form-control" id="brani" name="brani" placeholder="Brani">
-         </form>
-          --> 
-   
-
-			
-          
-   <%  List<Brano> brani = genere.getBrani();	 %>
-        	<!-- Griglia delle card -->
-		<div class="row">
-		<% if (brani != null && !brani.isEmpty()) { %>
-		<h2 style="margin-bottom: 15px; text-align: center;">Brani</h2>
-		
-	
-			<% for (Brano brano : brani) { %>
-			<div class="col-md-6 mb-3">
-				<div class="card song-card">
-					<div class="row no-gutters align-items-center">
-						<div class="col-auto">
-							<img
-								src="<%=brano.getAlbum().get(0).getFoto()%>"
-								height="110" class="rounded song-img" alt="...">
-						</div>
-						<div class="col">
-							<div class="card-body">
-								<a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-									<h5 class="card-title"><%= brano.getTitolo() %></h5>
-								</a>
-								<!-- <a href="artista?id=<% // %>"><p class="text-dark card-text"><% // %></p></a> -->
-							</div>
-						</div>
-						<div class="col-auto">
-							<a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
-								<i class="bi bi-play-circle-fill"></i>
-							</a>
-						</div>
-					</div>
-				</div>
+   <!-- scritta risultato ricerca -->
+	<div class="container">
+		<div class="col">
+			<div class="p-8">
+				<h2 style="text-align: center;"
+					class="fw-bold text-light h1center">
+					Risultati ricerca '<%= genere.getNome()%>'
+				</h2>
 			</div>
-			<% } %>
-			<% } else { %>
-			<p></p>
-		<% } %>
-			<!-- Ripeti per altre card -->
 		</div>
-
-
-
+		</div>
+		
+		 <!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
    
-            <% 
-            List<Album> albums = genere.getAlbum();   %>
+
+ <div class="container min-vh-10 d-flex justify-content-center">
+    <div class="container" style="top: -15px;">
+        <!-- carosello brani -->
         
-  <% if (albums != null && !albums.isEmpty()) { %>
-			<h2 style="margin-bottom: 15px; text-align: center;">Album</h2>
-			
-			<div class="container min-vh-10 d-flex  justify-content-center mt-5">
-			<% for (Album album : albums) { %>
-				<a class="card-title h5" href="album?id=<%= album.getId() %>">
-					<div class="col-p-3 mx-4 mb-4">
-						<div class="card" style="width: 275px;">
-							<img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title text-center"><%= album.getTitolo() %></h5>
-							</div>
-						</div>
-					</div>
-				</a>
-			<% } %>
-			</div>
-		<% } else { %>
-			<p></p>
-		<% } %>  
-    
-  
-<%@ include file="footer.jsp" %>
+        <h2 style="text-align: center;">Brani</h2>
+        <div id="branoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <%  
+                    List<Brano> brani = genere.getBrani();
+                    int braniPerSlide = 9; 
+                    boolean isFirstSlide = true;
+
+                    for (int i = 0; i < brani.size(); i += braniPerSlide) {
+                %>
+                <div class="carousel-item <%= isFirstSlide ? "active" : "" %>">
+                    <div class="row justify-content-center">
+                        <% 
+                            for (int j = i; j < i + braniPerSlide && j < brani.size(); j++) {
+                                Brano brano = brani.get(j);
+                        %>
+                                        
+                        <div class="col-md-4 mb-3">
+                            <div class="card song-card">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <img src="<%= brano.getAlbum().get(0).getFoto() %>" class="rounded song-img" alt="Album Image">
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-body">
+                                            <a class="card-title" href="brano?id=<%= brano.getId() %>">
+                                                <h5 class="card-title"><%= brano.getTitolo() %></h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a class="btn btn-play" href="brano?id=<%= brano.getId() %>">
+                                            <i class="bi bi-play-circle-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+                <% 
+                    isFirstSlide = false;
+                } %>
+            </div>
+
+            <!-- controlli del carosello -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#branoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#branoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- fine carosello brani -->
+    </div>
+</div>
+   <br>
    
+   
+<!-- album -->
+  <div class="container min-vh-10 d-flex justify-content-center">
+    <div class="container" style="top: -15px;">
+        <h2 style="text-align: center;">Album</h2>
+        <div id="albumCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <% 
+                    List<Album> albums = genere.getAlbum(); 
+                    int albumsPerSlide = 4; 
+                    boolean isFirstSlide2 = true;
+
+                    for (int i = 0; i < albums.size(); i += albumsPerSlide) {
+                %>
+                <div class="carousel-item <%= isFirstSlide2 ? "active" : "" %>">
+                    <div class="row justify-content-center g-3">
+                        <% 
+                            for (int j = i; j < i + albumsPerSlide && j < albums.size(); j++) {
+                                Album album = albums.get(j);
+                        %>
+                        
+                        <div class="col-md-3 mb-4">
+                         <div class="card" style="width: 275px; height: 350px;">
+                            <a href="album?id=<%= album.getId() %>" class="text-decoration-none">
+                               
+                                    <img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="Album Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><%= album.getTitolo() %></h5>
+                                    </div>
+                                     </a>
+                                </div>
+                        </div>
+
+                        <% } %>
+                    </div>
+                </div>
+                <% 
+                    isFirstSlide2 = false;
+                } %>
+            </div>
+
+            <!-- Controlli del carosello -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#albumCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#albumCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+    <%@ include file="footer.jsp" %>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
