@@ -20,13 +20,20 @@ public class AddToPlaylistServlet extends HttpServlet {
 	private BranoRepository branoRepository = new BranoRepositoryImpl();
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		Long plId = Long.parseLong(request.getParameter("playlistId"));
 		Long brId = Long.parseLong(request.getParameter("branoId"));
+		
 		Playlist playlist = playlistRepository.findById(plId);
 		Brano brano = branoRepository.findById(brId);
+		
 		if(playlist!= null) {
 			playlist.getBrani().add(brano);
+			playlistRepository.update(playlist);
+			String sorgente = request.getHeader("Referer");
+			response.sendRedirect(sorgente);
 		}
+		
 		
 	}
 

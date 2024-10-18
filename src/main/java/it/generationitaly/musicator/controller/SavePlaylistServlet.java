@@ -20,9 +20,9 @@ public class SavePlaylistServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
-		// preso da automobile
+		// preso da automobile, ha senso?
 		HttpSession session = request.getSession();
+		
 		if (session.getAttribute("utente") == null) {
 			response.sendRedirect("login.jsp");
 			return;
