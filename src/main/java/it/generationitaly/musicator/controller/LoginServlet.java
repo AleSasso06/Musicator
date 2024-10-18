@@ -18,10 +18,10 @@ public class LoginServlet extends HttpServlet {
 	private UtenteRepository utenteRepository = new UtenteRepositoryImpl();
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String username = request.getParameter("username");
+		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		
-		Utente utente = utenteRepository.findByUsername(username);
+		Utente utente = utenteRepository.findByEmail(email);
 		if (utente != null && utente.getPassword().equals(password)) {
 			HttpSession session = request.getSession();
 			// autenticazione con successo
