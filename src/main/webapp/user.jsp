@@ -54,7 +54,7 @@ pageEncoding="UTF-8"%>
 		
 	<div class="container   ">	 
   <div class="container-modifica mx-auto ">
-		<form action="#" method="post">
+		<form action="ModificaUtenteServlet" method="post">
 		
 					<input type="hidden" name="id" value="<%=utente.getId()%>">
 					
