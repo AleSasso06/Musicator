@@ -38,7 +38,7 @@ public class SavePlaylistServlet extends HttpServlet {
 
 		playlistRepository.save(playlist);
 
-		response.sendRedirect("automobili.jsp");
+		response.sendRedirect("profilo-utente.jsp");
 
 	}
 }
