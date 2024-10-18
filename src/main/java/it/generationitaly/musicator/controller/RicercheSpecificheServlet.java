@@ -99,6 +99,7 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			List<Artista> artisti = new ArrayList<Artista>();
 			List<Artista> artistiPseudonimo = artistaRepository.findByPseudonimo(artistiInput);
 			List<Artista> artistiNazionalita = artistaRepository.findByNazionalita(artistiInput);
+			List<Artista> artistiNome = artistaRepository.findByNome(artistiInput);
 			
 			if (artistiPseudonimo != null && !artistiPseudonimo.isEmpty()) {
 				for (Artista artista : artistiPseudonimo) {
@@ -108,6 +109,12 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			}
 			if (artistiNazionalita != null && !artistiNazionalita.isEmpty()) {
 				for (Artista artista : artistiNazionalita) {
+					artisti.add(artista);
+					System.out.println(artista);
+				}
+			}
+			if (artistiNome != null && !artistiNome.isEmpty()) {
+				for (Artista artista : artistiNome) {
 					artisti.add(artista);
 					System.out.println(artista);
 				}
