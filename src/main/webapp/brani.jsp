@@ -33,14 +33,19 @@
 		}
 		
 		.card-title {
-   			 white-space: normal; /* Permette di andare a capo */
-    		word-wrap: break-word; /* Spezza le parole lunghe */
+   			 white-space: nowrap;       
+		    overflow: hidden;        
+		    text-overflow: ellipsis;  
+		    max-width: 175px;
+		     margin-left: -4px;
+
 		}
 
 		.card-body {
 		    text-align: left;
 		    color: black;
-		    overflow: hidden; 
+		    overflow: hidden;
+		    margin-top: -7px;
 		}
 
         .btn-play {
@@ -109,12 +114,14 @@
                                 <% } %>
                             </div>
                             <div class="col">
-                                <div class="card-body p-2">
-                                    <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-                                        <h6 class="card-title text-start"><%= brano.getTitolo() %></h6>
+                                <div class="card-body p-1">
+                                    <a class="card-title" href="brano?id=<%= brano.getId() %>">
+                                        <p class="card-title text-start"><b><%= brano.getTitolo() %></b></p>
                                     </a>
-                                    <p class="card-title text-start"><%= brano.getAlbum().get(0).getTitolo() %></p>
-                                    <p class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></p>
+                                    <a href="album?id=<%= brano.getAlbum().get(0).getId() %>" style="color: black">
+                                   		 <p class="card-title text-start"><%= brano.getAlbum().get(0).getTitolo() %></p>
+                                    </a>
+                                    <small class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></small>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -142,7 +149,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
-	</div>
+</div>
 </div>
 
 
