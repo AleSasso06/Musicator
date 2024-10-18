@@ -63,7 +63,7 @@
 			} else { %>
 		    	<span>Nessuna playlist trovata...</span>
 		    <%} %>
-		    
+		   
 		</div>
 		<div>
 	<!-- Footer -->
