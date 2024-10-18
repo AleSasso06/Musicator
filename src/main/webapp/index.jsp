@@ -46,7 +46,31 @@
 	            animation-duration: 2.4s;
 	            animation-iteration-count: infinite
 	        }
-	
+	        
+	        #go-top {
+			    position: fixed;
+			    bottom: -50px; 
+			    right: 20px;
+			    z-index: 100; 
+			    width: 2.5rem;
+			    height: 2.5rem;
+			    background-color: #5C8AAD !important;
+			    transition: all 500ms ease;
+			    display: flex;
+			    justify-content: center;
+			    align-items: center;
+			    cursor: pointer;
+			    border: none;
+			}
+			
+			#go-top:hover {
+			    background-color: #C2185B !important;
+			}
+			
+			#go-top.attivo {
+			    bottom: 20px; 
+			}
+	        
 	        @keyframes moveTop {
 	            0% {
 	                top: 100px;
@@ -71,10 +95,11 @@
 	<body>	
 	<%@ include file="nav.jsp" %>
 	
-    <!-- ELEMENTI FIXED 
-    <div id="preloader"><span class="loader">... loading, please wait ...</span></div>-->
-    <button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
-
+    <!-- ELEMENTI FIXED -->
+	<button id="go-top" aria-label="go-top" onclick="goTop();" title="torna a inizio pagina">
+	    <img src="images/go-top.svg" alt="Torna su" width="40" height="40">
+	</button>
+            
         <div class="pt-3"></div>
 
         <div class="svg-container mt-3 pt-3">
@@ -100,7 +125,7 @@
         <div class="container mb-5" data-aos="fade-up">
             <div class="row home-covers">
                 <!-- ALBUM -->
-                <a href="#"
+                <a href="brani"
                     class="col-13 col-md-6 col-xl-4 rounded-3 d-flex align-items-center border-bottom mb-4 py-3">
                     <p class="mb-0 fw-bold">1</p>
                     <img src="images/img_album/ladyGB.webp" alt="" width="75"
@@ -316,15 +341,20 @@
 
 <%@ include file="footer.jsp" %>
  
-  <!-- barra fissa promo 
-    <div class="fixed-bottom py-2 px-4 bg-redpromo">
-        <div href="#" class="link-light  link-underline link-underline-opacity-0">
-            <div class="container-fluid d-flex justify-content-between align-items-center fw-bold">
-                <div class="d-flex align-items-center"><i class="bi bi-music-note-beamed fs-4 bg-danger bg-gradient px-2 py-1 rounded-3 me-3 "></i>  Get up to two months free of Apple Music</div>
-                <div class="bg-white rounded-3 text-danger py-2 px-4 text-redpromo">TRY NOW</div>
-            </div>
-        </div>
-    </div>-->
+    
+     <script>
+        
+     window.onscroll = function () {
+    	    console.log('Scorrimento attuale:', document.documentElement.scrollTop);
+    	    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    	        document.getElementById("go-top").classList.add("attivo");
+    	    } else {
+    	        document.getElementById("go-top").classList.remove("attivo");
+    	    }
+    	};    
+    	
+    </script>
+    
     
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -337,7 +367,7 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script locali -->
-    <script src="assets/javascript/bs5.js"></script>
+    <script src="bs5.js"></script>
 	<!-- Bootstrap Js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>

@@ -21,22 +21,22 @@ h2 {
     background-color: #E3F2FD !important; 
 }
 
-/* Centra tutti gli elementi nel contenitore della navbar */
+
 .navbar .container-fluid {
     display: flex;
-    justify-content: center; /* Per centrare gli elementi orizzontalmente */
-    align-items: center;     /* Per centrare gli elementi verticalmente */
+    justify-content: center; 
+    align-items: center;     
 }
 
 /* Stile del logo */
 .navbar-brand {
-    margin-right: auto; /* Imposta il logo per essere allineato a sinistra */
+    margin-right: auto; 
 }
 
-/* Mobile: gli elementi restano centrati anche sullo schermo piccolo */
+
 @media (max-width: 992px) {
     .navbar .container-fluid {
-        justify-content: space-between; /* Distribuisce lo spazio tra gli elementi */
+        justify-content: space-between; 
     }
 }
 
@@ -112,28 +112,6 @@ h2 {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
 }
 
-#go-top {
-    position: fixed;
-    bottom: -50px; /* Posiziona il pulsante inizialmente fuori dallo schermo */
-    right: 20px; /* Un po' di spazio a destra */
-    z-index: 100; /* Un livello abbastanza alto per garantire che sia sopra gli altri elementi */
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: #9dcff4;
-    transition: all 500ms ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-}
 
-#go-top:hover {
-    background-color: #ff6600;
-}
-
-#go-top.attivo {
-    bottom: 20px; /* Quando è attivo, posiziona il pulsante sullo schermo */
-}
 
 				
