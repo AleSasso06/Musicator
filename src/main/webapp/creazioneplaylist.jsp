@@ -16,15 +16,61 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+
+.container-lg {
+	            
+	            margin-top:-80px;
+	            margin-bottom: 50px;
+	            max-width: 500px;           
+	            padding: 70px;              
+	            background-color: white;   
+	            border-radius: 10px;    
+
+	    }
+
+
+
+
+</style>
+
+
+
 <body>
 
-<%@ include file="nav.jsp" %>
+
+
+<header>
+		<%@ include file="nav.jsp" %>
+		</header>
 
 <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>	
 
 
 
-
+<div class="container-lg mt-5">
+		<div class="container  min-vh-99 d-flex  justify-content-center  align-items-center">
+	<form action="save-playlist" method="post">
+					<h1 style= "text-align:center "class="mx-auto">CREA LA TUA PLAYLIST</h1>
+					
+						
+						<div class="form-row col-md-20">
+							<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
+						</div>
+						
+						<div class="form-row col-md-20">
+						    <label for="input-titolo" class="form-label">Titolo</label>
+                			<input type="text" class="form-control" id="input-titolo" name="titolo"  required>
+						</div>
+						
+						
+				
+						<button class="custom-register-btn mt-2" type="submit" >Crea</button>
+						
+			
+			</form>
+					</div>
+			</div>
 
 
 
