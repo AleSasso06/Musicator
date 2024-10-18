@@ -8,19 +8,19 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Musicator</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <!-- File CSS personalizzato -->
-=======
-    <title>Musicator -  Genere</title>
+
+ <title>Musicator Genere</title>
     <link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.3.3/css/bootstrap.min.css">
->>>>>>> branch 'master' of https://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@github.com/AleSasso06/Musicator
-    <link rel="stylesheet" href="style2.css">
+
+<link rel="stylesheet" href="style2.css">
 
     <style>
         /* Aggiunta di stili personalizzati */
