@@ -219,4 +219,14 @@
     <servlet-name>UpdatePlaylistServlet</servlet-name>
     <url-pattern>/update-playlist</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SavePlaylistServlet</display-name>
+    <servlet-name>SavePlaylistServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.SavePlaylistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SavePlaylistServlet</servlet-name>
+    <url-pattern>/save-playlist</url-pattern>
+  </servlet-mapping>
 </web-app>
