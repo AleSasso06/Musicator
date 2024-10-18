@@ -229,4 +229,14 @@
     <servlet-name>SavePlaylistServlet</servlet-name>
     <url-pattern>/save-playlist</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>WelcomeServlet</display-name>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>it.generationitaly.musicator.controller.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
 </web-app>

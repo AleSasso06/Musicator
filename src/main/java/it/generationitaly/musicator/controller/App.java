@@ -20,10 +20,10 @@ public class App {
 	private static AlbumRepository albumRepository = new AlbumRepositoryImpl();
 
 	public static void main(String[] args) {
-		Brano brano= branoRepository.findById(Long.parseLong("45"));
-		List<Album> albums = brano.getAlbum();
-		for (Album album : albums) {
-			System.out.println(album);
+	 List<Brano> brani = branoRepository.findDistinct();
+	
+		for (Brano brano : brani) {
+			System.out.println(brano);
 		}
 			/*in seguito aggiungere casistiche di ricerca diverse
 			   prendendno il parametro (request.getParameter("genere")
