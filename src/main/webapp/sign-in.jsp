@@ -46,13 +46,13 @@
 					
 						
 						<div class="form-row col-md-20 mb-1">
-							<form id="uploadForm">
+							<!-- <form id="uploadForm">
 								<img width="150px"  src="giradischi.png" class="rounded mx-auto d-block " alt= "...">
 								<br><br>
 								<!-- commento l'inserimento foto perchè non ho idea di come farlo dal lato servlet -->
 								<!-- <label for="profileImage">Scegli un'immagine:</label>
-								<input type="file" id="profileImage" accept="image/*">  -->
-							</form>
+								<input type="file" id="profileImage" accept="image/*">  
+							</form> -->
 						</div>
 						
 						<div style="margin-top: -50px"class="form-row col-md-20 ">
