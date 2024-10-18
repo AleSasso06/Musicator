@@ -36,7 +36,7 @@ pageEncoding="UTF-8"%>
 		<%@ include file="nav.jsp" %>
 		</header>
 		
-		<%utente = (Utente) session.getAttribute("utente"); %>
+		<% utente = (Utente) session.getAttribute("utente"); %>
 		
 		 <div class="svg-container mt-3">
 		        <img alt="" src="images/logo header.svg">
