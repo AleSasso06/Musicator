@@ -90,7 +90,7 @@
                 <div class="row no-gutters align-items-center">
                     <!-- Immagine dell'artista rotonda (a sinistra) -->
                     <div class="col-md-4 text-center">
-                        <img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150">
+                        <img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150"; style="object-fit: cover;">
                     </div>
                     <!-- Dettagli dell'album (a destra) -->
                     <div class="col-md-8">
@@ -102,7 +102,7 @@
                               </a>
                                 <b>Genere:</b> <%= album.getGenere().getNome() %><br>
                                 <b>Durata:</b> <%= album.getDurata() %><br>
-                                <b>Data di Uscita:</b> <%= album.getDataUscita() %><br>
+                                <b>Data di Uscita:</b> <%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(album.getDataUscita()) %><br>
                                 <b> <%= album.getBrano().size() %> brani </b>
                             </p>
                         </div>

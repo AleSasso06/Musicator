@@ -68,7 +68,7 @@
 					<h6 class="text-center"
 						style="position: relative; top: -50px; color: #BACBE2;">
 						Creato il
-						<%=utente.getDataCreazione()%></h6>
+						<%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(utente.getDataCreazione()) %></h6>
 					<!-- fine data creazione account -->
 
 					<!-- inizio bottone impostazioni -->

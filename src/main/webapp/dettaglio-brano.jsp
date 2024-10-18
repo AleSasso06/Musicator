@@ -48,15 +48,15 @@ Brano brano = (Brano) request.getAttribute("brano");
 %>
 
     <!-- card -->
-   <div class="row mt-4">
+   <div class="row justify-content-center mt-1">
     <div class="card mb-3 song-card d-flex justify-content-between align-items-center" style="opacity: 0.8; transition: opacity 0.3s ease;">
         <div class="row g-0 align-items-center">
-            <div class="col-md-2 d-flex justify-content-center">
-              <img src="<%=brano.getAlbum().get(0).getFoto() %>" class="img-fluid img-thumbnail" alt="Album Image" style="max-width: 750px; height: 250px;">
+            <div class="col-md-3 d-flex justify-content-end align-items-start">
+              <img src="<%=brano.getAlbum().get(0).getFoto() %>" class="img-fluid img-thumbnail" alt="Album Image" style="max-width: 450px; height: 250px;">
 
             </div>
-            <div class="col-md-8 d-flex justify-content-center">
-                <div class="card-body md-8">
+            <div class="col-md-6 d-flex flex-column justify-content-end align-items-center">
+                <div class="card-body">
                     <h3 class="card-title"><%=brano.getTitolo() %></h3>
                      <a class="card-title h5" href="album?id=<%= brano.getAlbum().get(0).getId() %>">
                     <h5 class="card-title"><%=brano.getAlbum().get(0).getTitolo() %></h5>
@@ -65,7 +65,7 @@ Brano brano = (Brano) request.getAttribute("brano");
                 </div>
             </div>
             <!-- tasto play -->
-            <div class="col-md-2 d-flex justify-content-center">
+            <div class="col-md-2 d-flex justify-content-center me-auto">
                 <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
                     <i class="bi bi-play-circle-fill"></i>
                 </a>
@@ -73,6 +73,7 @@ Brano brano = (Brano) request.getAttribute("brano");
         </div>
     </div>
 </div>
+
     <!-- fine card -->
 
     <!-- pulsante per tornare indietro -->
@@ -80,7 +81,7 @@ Brano brano = (Brano) request.getAttribute("brano");
     
 
     <!-- testo della canzone -->
-    <div class="row justify-content-center mt-4" style="top: -150px" >
+    <div class="row justify-content-center  align-items-center" style="top: -150px" >
         <div class="col-md-3" >
             <div class="text-light text-justify" >
                 <p><%=brano.getTesto() %></p>
