@@ -1,4 +1,4 @@
-    <footer class="bg-footer py-4">
+    <footer style="margin-top: 100px" class="bg-footer py-4">
         <div class="container text-center text-lg-start">
             <div class="row">
                 <!-- footer logo e selettore lingua-->
