@@ -56,7 +56,8 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		if(braniInput != null) {
 			List<Brano> brani = new ArrayList<Brano>();
 			List<Brano> braniTitolo = branoRepository.findByTitolo(braniInput);
-			List<Brano> braniArtista = branoRepository.findByArtista(braniInput);
+			List<Brano> braniArtistaPseudonimo = branoRepository.findByArtistaPseudonimo(braniInput);
+			List<Brano> braniArtistaNome = branoRepository.findByArtistaNome(braniInput);
 			List<Brano> braniAlbum = branoRepository.findByAlbum(braniInput);
 			List<Brano> braniLingua = branoRepository.findByLingua(braniInput);
 			// metto anche qui la ricercaByGenere ma ci andrà l'if
@@ -67,8 +68,13 @@ public class RicercheSpecificheServlet extends HttpServlet {
 					brani.add(brano);
 				}
 			}
-			if(braniArtista != null && !braniArtista.isEmpty()) {
-				for(Brano brano : braniArtista) {
+			if(braniArtistaPseudonimo != null && !braniArtistaPseudonimo.isEmpty()) {
+				for(Brano brano : braniArtistaPseudonimo) {
+					brani.add(brano);
+				}
+			}
+			if(braniArtistaNome != null && !braniArtistaNome.isEmpty()) {
+				for(Brano brano : braniArtistaNome) {
 					brani.add(brano);
 				}
 			}

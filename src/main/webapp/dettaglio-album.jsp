@@ -68,8 +68,13 @@
 		   	<%-- <div class="row align-items-center">
 		    <div class="col-md-4 text-md-start text-center">
 		       <picture>
+<<<<<<< HEAD
 		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -510px; top: -265px; z-index:10px">
 		   	</picture>
+=======
+		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -620px; top: -265px; z-index:10px">
+		   		</picture>
+>>>>>>> branch 'master' of https://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@github.com/AleSasso06/Musicator
 		    </div>
       </div> --%>
       <div class="container">
@@ -115,7 +120,9 @@
                 <div class="row no-gutters align-items-center">
                     <!-- Immagine dell'artista rotonda (a sinistra) -->
                     <div class="col-md-4 text-center">
-                        <img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150"; style="object-fit: cover;">
+                    	<a href="artista?id=<%=album.getArtista().getId()%>">
+                        	<img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150"; style="object-fit: cover;">
+                    	</a>
                     </div>
                     <!-- Dettagli dell'album (a destra) -->
                     <div class="col-md-8">

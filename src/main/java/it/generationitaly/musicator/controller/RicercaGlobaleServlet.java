@@ -51,7 +51,7 @@ public class RicercaGlobaleServlet extends HttpServlet {
 		
 		List<Brano> brani = branoRepository.findByTitolo(inputUtente);
 		for (Brano brano : brani) {
-			albums = branoRepository.findAlbumsByBrano(brano.getId());
+			albums = albumRepository.findByBranoId(brano.getId());
 			if (!albums.isEmpty())
 				brano.setAlbum(albums);
 		}

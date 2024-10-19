@@ -27,7 +27,7 @@ public class BraniServlet extends HttpServlet {
 		List<Brano> brani = branoRepository.findAll();
 		// assegna al brano soltanto la lista di album in cui è presente
 		for (Brano brano : brani) {
-			albums = branoRepository.findAlbumsByBrano(brano.getId());
+			albums = albumRepository.findByBranoId(brano.getId());
 			if (!albums.isEmpty())
 				brano.setAlbum(albums);
 		}

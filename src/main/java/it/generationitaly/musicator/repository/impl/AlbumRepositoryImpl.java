@@ -75,7 +75,7 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String sql = "FROM Album a inner join album_brano ab on a.id = ab.album_id inner join Brano b on b.id = ab.brano_id WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')";
+			String sql = "SELECT a FROM Album a JOIN a.brani b WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')";
 			TypedQuery<Album> query = em.createQuery(sql, Album.class);
 			query.setParameter("titolo", titolo);
 			album = query.getResultList();
@@ -91,6 +91,33 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 		}
 		return album;
 	}
+	
+	@Override
+	public List<Album> findByBranoId(long id) {
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		List<Album> albums = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			String jpql = "SELECT a FROM Album a JOIN FETCH a.brani b WHERE b.id = :branoId";
+
+			TypedQuery<Album> query = em.createQuery(jpql, Album.class);
+			query.setParameter("branoId", id);
+			albums = query.getResultList();
+			tx.commit();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+		} finally {
+			if (em != null)
+				em.close();
+		}
+		return albums;
+	}
+
 
 	@Override
 	public List<Album> findByGenere(String nome) {
