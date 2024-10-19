@@ -23,6 +23,9 @@
 	    
 	    <style>
 	        /* Imposta una larghezza fissa per tutte le card */
+	        body {
+	        	overflow-x: hidden;
+	        }
 	        .song-card {
 	            width: 550px; /* Definisci una larghezza fissa per garantire uniformità */
 	            opacity: 0.7;
@@ -58,7 +61,7 @@
 		
 		<!-- Inizio Logo -->
 	        <div class="svg-container mt-3">
-	           <img alt="" src="images/header Brano.svg"  style="opacity: 0.7; transition: opacity 0.3s ease;">
+	           <img alt="" src="images/header Brano.svg" style="opacity: 0.7; transition: opacity 0.3s ease;">
 	        </div>
         <!-- Fine Logo -->
  	<!-- pulsante per tornare indietro -->
@@ -68,13 +71,10 @@
 		   	<%-- <div class="row align-items-center">
 		    <div class="col-md-4 text-md-start text-center">
 		       <picture>
-<<<<<<< HEAD
 		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -510px; top: -265px; z-index:10px">
 		   	</picture>
-=======
 		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -620px; top: -265px; z-index:10px">
 		   		</picture>
->>>>>>> branch 'master' of https://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@github.com/AleSasso06/Musicator
 		    </div>
       </div> --%>
       <div class="container">
@@ -133,7 +133,7 @@
                               <b>Artista:</b> <%= album.getArtista().getPseudonimo() %><br>
                               </a>
                                 <b>Genere:</b> <%= album.getGenere().getNome() %><br>
-                                <b>Durata:</b> <%= album.getDurata() %><br>
+                                <b>Durata:</b> <%=((album.getDurata()/60)%60) %>:<%=(album.getDurata()%60)%><br>
                                 <b>Data di Uscita:</b> <%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(album.getDataUscita()) %><br>
                                 <b> <%= album.getBrano().size() %> brani </b>
                             </p>
