@@ -17,13 +17,14 @@ public interface BranoRepository extends JpaRepository<Brano, Long>{
 	// samesies: id o titolo album?
 	List<Brano> findByAlbum(String album);
 	
+	List<Brano> findByAlbumId(long id);
+	
 	List<Brano> findByGenere(String genere);
 	
 	List<Brano> findByGenereId(long id);
 	
 	List<Brano> findByLingua(String lingua);
-	List<Brano> findDistinct();
 	
-	List<Album> findAlbumsByBrano(Long id);
+	List<Brano> findDistinct();
 	
 }

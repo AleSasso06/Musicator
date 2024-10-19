@@ -87,7 +87,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			// SELECT * FROM album_brano JOIN brano ON album_brano.brano_id = brano.id JOIN
 			// album ON album.id = album_brano.album_id;
 			TypedQuery<Brano> query = em.createQuery(
-					"FROM album_brano ab JOIN brano b ON ab.brano_id = b.id JOIN album a ON a.id = ab.album_id WHERE a.titolo LIKE CONCAT('%',:album ,'%')",
+					"FROM Brano b JOIN b.album a WHERE a.titolo LIKE CONCAT('%',:album ,'%')",
 					Brano.class);
 			query.setParameter("album", album);
 			brani = query.getResultList();
@@ -189,32 +189,6 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 	}
 
 	@Override
-	public List<Album> findAlbumsByBrano(Long id) {
-		EntityManager em = null;
-		EntityTransaction tx = null;
-		List<Album> albums = null;
-		try {
-			em = emf.createEntityManager();
-			tx = em.getTransaction();
-			tx.begin();
-			String jpql = "SELECT a FROM Album a JOIN a.brani b WHERE b.id = :branoId";
-
-			TypedQuery<Album> query = em.createQuery(jpql, Album.class);
-			query.setParameter("branoId", id);
-			albums = query.getResultList();
-			tx.commit();
-		} catch (Exception e) {
-			System.err.println(e.getMessage());
-			if (tx != null && tx.isActive())
-				tx.rollback();
-		} finally {
-			if (em != null)
-				em.close();
-		}
-		return albums;
-	}
-
-	@Override
 	public List<Brano> findDistinct() {
 		EntityManager em = null;
 		EntityTransaction tx = null;
@@ -239,4 +213,31 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 		}
 		return brani;
 	}
+
+	@Override
+	public List<Brano> findByAlbumId(long id) {
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		List<Brano> brani = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			// SELECT * FROM album_brano JOIN brano ON album_brano.brano_id = brano.id JOIN
+			// album ON album.id = album_brano.album_id;
+			TypedQuery<Brano> query = em.createQuery("FROM Brano b JOIN b.album a WHERE a.id = :id",Brano.class);
+			query.setParameter("id", id);
+			brani = query.getResultList();
+			tx.commit();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+		} finally {
+			if (em != null)
+				em.close();
+		}
+		return brani;
+	}
 }
+

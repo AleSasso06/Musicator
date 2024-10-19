@@ -20,18 +20,18 @@ public class App {
 	private static AlbumRepository albumRepository = new AlbumRepositoryImpl();
 
 	public static void main(String[] args) {
-	 List<Brano> brani = branoRepository.findDistinct();
 	
-		for (Brano brano : brani) {
-			System.out.println(brano);
+		Album album = albumRepository.findById(Long.parseLong("6"));
+		
+		List<Brano> brani = branoRepository.findByAlbumId(6);
+		
+		if(brani != null && !brani.isEmpty()) {
+			for (Brano brano : brani) {
+				System.out.println(brano.getTitolo());
+			}
+		} else {
+			System.out.println("Nessun brano trovato");
 		}
-			/*in seguito aggiungere casistiche di ricerca diverse
-			   prendendno il parametro (request.getParameter("genere")
-			List<Brano> brani = branoRepository.findAll();
-			for(Brano brano: brani) {
-				List<Album> albums = brano.getAlbum();	
-				System.out.println(albums.size());
-				}
-	*/
+	
 	}
 }
