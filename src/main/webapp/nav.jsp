@@ -40,7 +40,7 @@
 	        <div class="collapse navbar-collapse justify-content-center" id="navbarText">
 	            <ul class="navbar-nav mb-2 mb-lg-0">
 	                <li class="nav-item">
-	                    <a class="nav-link" href="artisti">Artisti</a>
+	                    <a class="nav-link" href="artisti" >Artisti</a>
 	                </li>
 	                <li class="nav-item">
 	                    <a class="nav-link" href="albums">Album</a>
