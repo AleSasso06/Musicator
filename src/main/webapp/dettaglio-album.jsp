@@ -33,7 +33,9 @@
 	        }
 	
 	        .card-body {
+	        	white-space: nowrap; /* Impedisce la rottura della riga */
 	            text-align: center; /* Allinea il testo al centro */
+	            width: 200px;
 	        }
 	
 	        .btn-play {
@@ -42,10 +44,14 @@
 	        }
 	        
 			.album-description {
-			    margin-top: -150px; 
+			    margin-top: -240px; 
 			    position: relative; 
 			    z-index: 10; 
 			}
+			.card-body p {
+		        line-height: 1.2; /* Riduce lo spazio tra le righe */
+		        margin: 0; /* Rimuove margini extra */
+   		 	}
 	    </style>
 </head>
 <body>
@@ -121,20 +127,24 @@
                     <!-- Immagine dell'artista rotonda (a sinistra) -->
                     <div class="col-md-4 text-center">
                     	<a href="artista?id=<%=album.getArtista().getId()%>">
-                        	<img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150"; style="object-fit: cover;">
+                        	<img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="200" height="200"; style="object-fit: cover;">
                     	</a>
                     </div>
                     <!-- Dettagli dell'album (a destra) -->
                     <div class="col-md-8">
                         <div class="card-body text-start"> <!-- Allineamento a sinistra -->
-                            <h3 class="card-title"><b><%= album.getTitolo() %></b></h3>
+                            <h3 class="card-text"><b><%= album.getTitolo() %></b></h3>
                             <p class="card-text" style="color: black;">
-                            <a class="card-title" href="artista?id=<%= album.getArtista().getId() %>">
+                            <a style="color: black" class="card-text" href="artista?id=<%= album.getArtista().getId() %>">
                               <b>Artista:</b> <%= album.getArtista().getPseudonimo() %><br>
                               </a>
                                 <b>Genere:</b> <%= album.getGenere().getNome() %><br>
-                                <b>Durata:</b> <%=((album.getDurata()/60)%60) %>:<%=(album.getDurata()%60)%><br>
-                                <b>Data di Uscita:</b> <%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(album.getDataUscita()) %><br>
+                                <% if (album.getDurata()%60 < 10) { %>
+                                	<b>Durata:</b> <%=((album.getDurata()/60)%60) %>:0<%=(album.getDurata()%60)%><br>
+                                <% } else { %>
+                                	<b>Durata:</b> <%=((album.getDurata()/60)%60) %>:<%=(album.getDurata()%60)%><br>
+                                <% } %>
+                                <b>Data di Uscita:</b> <%= new java.text.SimpleDateFormat("dd/MM/yyyy").format(album.getDataUscita()) %><br>
                                 <b> <%= album.getBrano().size() %> brani </b>
                             </p>
                         </div>
@@ -169,7 +179,9 @@
 		                                <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
 		                                    <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
 		                                </a>
-		                                <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
+		                                
+		                                <h6 class="text-start text-body-secondary"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></h6>
+		                                <h6 class="text-start text-body-secondary"><%=((brano.getDurata()/60)%60) %>:<%= (brano.getDurata()%60)%></h6>
 		                            </div>
 		                        </div>
 		                        <div class="col-auto">

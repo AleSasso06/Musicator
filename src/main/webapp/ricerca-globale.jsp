@@ -44,8 +44,10 @@
 }
 
 .card-title {
-	white-space: normal; /* Permette di andare a capo */
-	word-wrap: break-word; /* Spezza le parole lunghe */
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 175px;
 }
 
 .card-body {
@@ -215,7 +217,7 @@
 							<a class="card" href="artista?id=<%=artista.getId()%>" style="width: 285px;"> 
 							<img src="<%=artista.getFoto()%>" style="object-fit: cover; height: 285px;" class="card-img-top" alt="...">
 								<div class="card-body">
-									<h5 class="card-title text-center"><%=artista.getPseudonimo()%></h5>
+									<h5 class="card-text text-center"><%=artista.getPseudonimo()%></h5>
 								</div>
 							</a>
 						</div>
@@ -271,13 +273,13 @@
 							Album album = albums.get(j);
 						%>
 						<div class="col-3 d-flex justify-content-center mb-4">
-							<a class="card-title h5" href="album?id=<%=album.getId()%>">
+							<a href="album?id=<%=album.getId()%>">
 								<div class="col-p-3 mx-4 mb-4">
 									<div class="card" style="width: 285px;">
 										<img style="object-fit: cover;" src="<%=album.getFoto()%>"
 											height="285" class="card-img-top" alt="...">
 										<div class="card-body">
-											<h5 class="card-title text-center"><%=album.getTitolo()%></h5>
+											<h5 class="card-text text-center"><%=album.getTitolo()%></h5>
 										</div>
 									</div>
 								</div>
@@ -350,13 +352,13 @@
 			<%
 			for (Playlist playlist : playlists) {
 			%>
-			<a class="card-title h5" href="playlist?id=<%=playlist.getId()%>">
+			<a href="playlist?id=<%=playlist.getId()%>">
 				<div class="col-p-3 mx-4 mb-4">
 					<div class="card" style="width: 275px;">
 						<img src="<%=playlist.getFoto()%>" height="275"
 							class="card-img-top" alt="...">
 						<div class="card-body">
-							<h5 class="card-title text-start"><%=playlist.getTitolo()%></h5>
+							<h5 class="card-text text-start"><%=playlist.getTitolo()%></h5>
 							<p class="card-text text-secondary text-end fs-6">
 								Di
 								<%=playlist.getUtente().getUsername()%></p>

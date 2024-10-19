@@ -19,7 +19,6 @@
     
     <style>
 		 .song-card {
-		    width: 400px;
 		    height: 122px; 
 		    opacity: 0.9;
 		    transition: opacity 0.2s ease;
@@ -33,19 +32,16 @@
 		}
 		
 		.card-title {
-   			 white-space: nowrap;       
-		    overflow: hidden;        
-		    text-overflow: ellipsis;  
+   			 white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
 		    max-width: 175px;
-		     margin-left: -4px;
 
 		}
-
 		.card-body {
 		    text-align: left;
 		    color: black;
 		    overflow: hidden;
-		    margin-top: -7px;
 		}
 
         .btn-play {
@@ -109,32 +105,38 @@
                     Brano brano = brani.get(j);
                 %>
                 <div class="col-md-5 col-lg-4 mb-3">
-    				<div class="card song-card">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <% if (!brano.getAlbum().isEmpty()) { %>
-                                    <a href="brano?id=<%= brano.getId() %>"><img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="..."></a>
-                                <% } %>
-                            </div>
-                            <div class="col">
-                                <div class="card-body p-1">
-                                    <a class="card-title" href="brano?id=<%= brano.getId() %>">
-                                        <p class="card-title text-start"><b><%= brano.getTitolo() %></b></p>
-                                    </a>
-                                    <a href="album?id=<%= brano.getAlbum().get(0).getId() %>" style="color: black">
-                                   		 <p class="card-title text-start"><%= brano.getAlbum().get(0).getTitolo() %></p>
-                                    </a>
-                                    <small class="card-title text-start"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></small>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
-                                    <i class="bi bi-play-circle-fill"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+							<div class="card song-card">
+								<div class="row no-gutters align-items-center">
+									<div class="col-auto">
+										<%
+										if (!brano.getAlbum().isEmpty()) {
+										%>
+										<img src="<%=brano.getAlbum().get(0).getFoto()%>" height="110"
+											class="rounded song-img" alt="...">
+										<%
+										}
+										%>
+									</div>
+									<div class="col">
+										<div class="card-body p-1">
+											<a class="card-title" href="brano?id=<%=brano.getId()%>">
+												<p class="card-title text-start">
+													<b><%=brano.getTitolo()%></b>
+												</p>
+											</a> <a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
+												style="color: black">
+												<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+											</a> <small class="card-title text-start"><%=new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita())%></small>
+										</div>
+									</div>
+									<div class="col-auto">
+										<a class="btn btn-play" href="<%=brano.getYtLink()%>"
+											target="blank"> <i class="bi bi-play-circle-fill"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
                 <% } %> <!-- Fine ciclo per braniPerSlide -->
             </div>
         </div>
