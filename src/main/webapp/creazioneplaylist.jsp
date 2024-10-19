@@ -62,7 +62,16 @@
 						    <label for="input-titolo" class="form-label">Titolo</label>
                 			<input type="text" class="form-control" id="input-titolo" name="titolo"  required>
 						</div>
-						
+						   <div class="form-row col-md-20" style="margin-left:3px">
+		                <label for="foto" class="form-label">URL Immagine</label>
+		                <input type="text" class="form-control" id="foto" name="foto" value="" required>
+		            </div>
+		            <div class="form-check update-input" style="margin-top: 10px; margin-left: 3px">
+					  <input class="form-check-input" type="checkbox" value="" id="privata">
+					  <label class="form-check-label" for="flexCheckDefault" style="color:black">
+					    Privata
+					  </label>
+					</div>
 						
 				
 						<button class="custom-register-btn mt-2" type="submit" >Crea</button>

@@ -18,6 +18,22 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <!-- css locali -->
 <link rel="stylesheet" href="style2.css">
+	<style>
+			.card {
+				width: 18rem; 
+				height: 20rem; 
+				
+			.card-img-top {
+				height: 15rem; 
+				object-fit: cover; 
+			}
+			.card-body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
 </head>
 
 <body>
@@ -96,7 +112,7 @@
 					if (playlists != null && !playlists.isEmpty()) {
 					%>
 					<%for (Playlist playlist : playlists) {%>
-					<div class="col-md-4 d-flex justify-content-center mb-3">
+					<div class="col-md-4 d-flex justify-content-center mb-2">
 
 						<div class="card">
 							<a href="playlist?id=<%=playlist.getId()%>">
@@ -108,7 +124,7 @@
 								</a>
 								
 								<!-- inizio bottone dropdown opzioni -->
-								<div class="dropdown">
+								<div style="margin-top:-10px"class="dropdown ">
 								  <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 								    <i class="bi bi-three-dots-vertical"></i>
 								  </button>
@@ -122,48 +138,97 @@
 							</div>
 						</div>
 					</div>
+</div>
+                      
+                       <!--  <div class="container mt-4" style="margin-bottom: 70px">-->
+			
+			<!--  <div class="container">-->
+				
+				<!--  <div class="row row-cols-1 row-cols-md-3 g-4">-->
+				
+					<div style="margin-top:-325px"class="col d-flex justify-content-center ">
 
+						<div class="card ml-2">
+							<a href="creazioneplaylist.jsp"> 
+								<img src="./+.png" class="card-img-top" alt="..."> 
+							</a>
+							<div class="card-body">
+								<a class="card-title h5 text-right" href="creazioneplaylist.jsp"> Crea la tua playlist </a> 
+								
+							</div>
+						</div>
+					</div>
+					 </div> 
+				<!--  </div>  -->
+			
+		 
 					<%
 					}
 					%>
 					<%
 					} else {
 					%>
-					<span>Non ci sono ancora playlist</span>
+								 <div class="container "  style="margin-bottom: 70px">
+			
+			<div class="container">
+			<div style="color:white;text-align:center">Non ci sono ancora playlist</div>
+				<br>	
+					
+		
+				
+				<!--  <div class="row row-cols-1 row-cols-md-3 g-4">-->
+				
+					<div class="col d-flex justify-content-center mt-5 mb-3">
+
+						<div class="card " >
+							<a href="creazioneplaylist.jsp"> 
+								<img src="./+.png" class="card-img-top" alt="..."> 
+							</a>
+							<div class="card-body">
+								<a class="card-title h5 text-right" href="creazioneplaylist.jsp"> Crea la tua playlist! </a> 
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				</div>
+			
+		
 					<%
 					}
 					%>
-				</div>
+				
 				<!-- fine card -->
 			</div>
 		</div>
 		<!-- fine playlist -->
 		
 		
-	<!-- inizio crea nuova playlist -->
-	<!-- <div class="container" style="margin-bottom: 70px">
-			forse si potrebbe mettere una linea opp
+	
+	 <!--  <div class="container" style="margin-bottom: 70px">
+			
 			<div class="container">
-				inizio card
+				
 				<div class="row row-cols-1 row-cols-md-3 g-4">
 				
 					<div class="col-md-4 d-flex justify-content-center mb-3">
 
-						<div class="card">
-							<a href="#"> qui ci andrebbe il link alla pagina dove si crea la playlist
-								<img src="#" class="card-img-top" alt="..."> qui ci andrebbe un'img grigia con un +
+						<div class="card w-75 " >
+							<a href="creazioneplaylist.jsp"> 
+								<img src="./+.png" class="card-img-top" alt="..."> 
 							</a>
 							<div class="card-body">
-								<a class="card-title h5 text-right" href="#"> </a> qui ci andrebbe il link alla pagina dove si crea la playlist
+								<a class="card-title h5 text-right" href="creazioneplaylist.jsp"> Crea la tua playlist! </a> 
 								<i class="bi bi-plus-lg"></i>
 							</div>
 						</div>
 					</div>
 				</div>
-				fine card
+				
 			</div>
 		</div> -->
-		<!-- fine crea nuova playlist -->
+		
 
 
 	</main>
