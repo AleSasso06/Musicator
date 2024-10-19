@@ -25,6 +25,10 @@
 	<body>
 	<header>
 	<%@ include file="nav.jsp" %>
+	
+	    <!-- ELEMENTI FIXED -->
+    <%@ include file="goTop.jsp" %>
+	
 	</header>
 	
 	<%Artista artista = (Artista) request.getAttribute("artista"); %>
@@ -116,7 +120,7 @@
     <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Script locali -->
-    <script src="assets/javascript/bs5.js"></script>
+    <script src="bs5.js"></script>
 	<!-- Bootstrap Js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	</body>

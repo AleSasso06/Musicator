@@ -39,9 +39,16 @@
 <body>
 	<header>
 	<%@ include file="nav.jsp" %>
+	    <!-- ELEMENTI FIXED -->
+    <%@ include file="goTop.jsp" %>
+	
+	
+	
 	</header>
 	<button class="btn btn-primary" id="go-top" onclick="goTop();"><i class="bi bi-chevron-up"></i></button>
    	 <main class="overflow-hidden">
+
+
 
 <%
 Brano brano = (Brano) request.getAttribute("brano");
@@ -97,5 +104,9 @@ Brano brano = (Brano) request.getAttribute("brano");
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script locali -->
+    <script src="bs5.js"></script>
+
 </body>
 </html>

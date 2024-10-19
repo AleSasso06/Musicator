@@ -67,6 +67,11 @@
 
 <header>
     <%@ include file="nav.jsp" %>
+        <!-- ELEMENTI FIXED -->
+    <%@ include file="goTop.jsp" %>
+    
+    
+    
     	</header>
     	
    <%Genere genere = (Genere)request.getAttribute("genere"); %>
@@ -222,5 +227,9 @@
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Script locali -->
+    <script src="bs5.js"></script>
+
+
 </body>
 </html>
