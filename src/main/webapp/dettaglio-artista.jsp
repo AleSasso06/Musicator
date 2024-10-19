@@ -51,10 +51,10 @@
     
 	    <!-- inizio foto -->
 	    <div class="col-md-4">
-	      <picture>
+		  <picture>
 	        <img src="<%=artista.getFoto() %>" class="img-fluid img-thumbnail rounded-circle" alt="..." 
 		       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -510px; top: -350px; z-index: 10;">
-	      </picture>
+		  </picture>
 	    </div>
 	    <!-- fine foto -->
     

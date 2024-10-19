@@ -65,16 +65,36 @@
     <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
 		
 		    <!-- nome album -->
-		    <div class="col-md-4 text-md-start  text-center">
+		   	<%-- <div class="row align-items-center">
+		    <div class="col-md-4 text-md-start text-center">
 		       <picture>
-		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -620px; top: -265px; z-index:10px">
+		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -510px; top: -265px; z-index:10px">
 		   	</picture>
 		    </div>
-      
+      </div> --%>
+      <div class="container">
+  		<div class="row align-items-center">
+    
+	    <!-- inizio foto -->
+	    <div class="col-md-4">
+		  <picture>
+	        <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..." 
+		       style="width: 300px; height: 300px; object-fit: cover; position: relative; right: -510px; top: -350px; z-index: 10;">
+		  </picture>
+	    </div>
+	    <!-- fine foto -->
+    
+	    <!-- nome -->
+	    <div class="text-md-start text-center">
+	         <h1 class="display-3 text-light text-center" style="position: relative; top: -300px;"><b> <%= album.getTitolo() %></b></h1>
+	    </div>
+	    <!-- fine nome -->
+    	</div>
+		</div>
         <div class="container">
-		        <div class="col">
+		        <%-- <div class="col">
 			        <h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-225px; z-index:10px"> <b><%= album.getTitolo() %></b></h1>
-	       		</div> 
+	       		</div>  --%>
 	    
 	    			  <!-- Descrizione dell'album fuori dalla card -->
 	    			  <div class="album-description">
