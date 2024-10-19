@@ -150,7 +150,11 @@
 											</a> <a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
 												style="color: black">
 												<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
-											</a> <small class="card-title text-start"><%=new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita())%></small>
+											</a> <small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
+																	                        <%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
+																	                    <% } else { %>
+																	                        <%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
+																	                    <% } %></small>
 										</div>
 									</div>
 									<div class="col-auto">

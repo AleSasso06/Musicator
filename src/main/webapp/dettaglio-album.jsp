@@ -124,7 +124,6 @@
             <!-- Card -->
             <div class="card album-card mt-3 mb-4">
                 <div class="row no-gutters align-items-center">
-                    <!-- Immagine dell'artista rotonda (a sinistra) -->
                     <div class="col-md-4 text-center">
                     	<a href="artista?id=<%=album.getArtista().getId()%>">
                         	<img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="200" height="200"; style="object-fit: cover;">

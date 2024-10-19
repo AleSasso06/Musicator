@@ -28,8 +28,17 @@
 	        }
 	
 	        .card-body {
+	            white-space: nowrap; /* Impedisce la rottura della riga */
 	            text-align: center; /* Allinea il testo al centro */
+	            width: 200px;
 	        }
+	        
+	        .card-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 175px;
+}
 	
 	        .btn-play {
 	            font-size: 1.5rem;
@@ -37,7 +46,7 @@
 	        }
 	        
 			.album-description {
-			    margin-top: -150px; 
+			    margin-top: -240px; 
 			    position: relative; 
 			    z-index: 10; 
 			}
@@ -67,29 +76,29 @@
 	    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
 		
 		<!-- nome playlist -->
-		<div class="col-md-4 text-md-start  text-center">
-			<picture>
-		    	<img src="<%=playlist.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -580px; top: -265px; z-index:10px">
-		   	</picture>
-		</div>
-      
 		<div class="container">
-			<div class="col">
-				<h1 class="display-3 text-light text-center" style="position:relative; right: 0px; top:-225px; z-index:10px"> <b><%= playlist.getTitolo() %></b></h1>
-	       	</div>
-	       	
-	       	<div class="col">
-				<h6 class="text-center" style="position:relative; right: 0px; top:-225px; z-index:10px; color: #BACBE2;">Creata il <span style="color:white;"><%= new java.text.SimpleDateFormat("dd/MM/yyyy").format(playlist.getDataCreazione()) %></span> da <b style="color: white"><%= playlist.getUtente().getUsername()%></b></h6>
-	       	</div>
-	    
-		</div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center align-items-center" style="height: 300px;">
+            <picture>
+                <img src="<%=playlist.getFoto() %>" class="img-thumbnail" alt="..." style="margin-top: -650px; max-width: 100%; height: auto; object-fit: cover;">
+
+            </picture>
+        </div>
+    </div>
+    <div class="col text-center">
+        <h1 class="display-3 text-light" style="margin-top: -280px; z-index:10;"><b><%= playlist.getTitolo() %></b></h1>
+    </div>
+    <div class="col text-center">
+        <h6 style="color: #BACBE2;">Creata il <span style="color:white;"><%= new java.text.SimpleDateFormat("dd/MM/yyyy").format(playlist.getDataCreazione()) %></span> da <b style="color: white"><%= playlist.getUtente().getUsername()%></b></h6>
+    </div>
+</div>
 
 		<!-- <div class="container min-vh-10 d-flex justify-content-center mt-5 pt-2 py-3">
 		    <h1 style="color:white"> Elenco brani</h1>
 		</div> -->
 		
 		<!-- Griglia delle card -->
-		<div class="row justify-content-center" style="margin-top: -150px; margin-bottom: 100px">
+		<div class="row justify-content-center" style="margin-top: 50px; margin-bottom: 100px">
 		    <% if (!brani.isEmpty()) { %>
 		        <% for (Brano brano : brani) { %>
 		            <div class="col-12 mb-3 d-flex justify-content-center">
@@ -100,10 +109,19 @@
 		                        </div>
 		                        <div class="col">
 		                            <div class="card-body p-2">
-		                                <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
-		                                    <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
+		                                <a class="card-title" href="brano?id=<%= brano.getId() %>">
+		                                    <p class="card-title text-start">
+													<b><%=brano.getTitolo()%></b>
+											</p>
 		                                </a>
-		                                <h6 class="card-title text-start"><%= ((brano.getDurata()/60)%60) %>:<%= (brano.getDurata()%60) %> </h6>
+		                                <a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
+												style="color: black">
+												<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+											</a> <p class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
+																	                        <%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
+																	                    <% } else { %>
+																	                        <%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
+																	                    <% } %></p>
 		                            </div>
 		                        </div>
 		                        <div class="col-auto">

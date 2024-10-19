@@ -69,7 +69,11 @@ Brano brano = (Brano) request.getAttribute("brano");
                      <a class="card-title h5" href="album?id=<%= brano.getAlbum().get(0).getId() %>">
                     <h5 class="card-title"><%=brano.getAlbum().get(0).getTitolo() %></h5>
                     </a>
-                    <p class="text-body-secondary"><b><%=((brano.getDurata()/60)%60) %>:<%= (brano.getDurata()%60)%></b></p><br>
+                    <% if (brano.getDurata()%60 < 10) { %>
+                        <%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
+                    <% } else { %>
+                        <%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
+                    <% } %>
                     <small class="text-body-secondary"><%= new java.text.SimpleDateFormat("dd-MM-yyyy").format(brano.getDataUscita()) %></small>
                 </div>
             </div>
