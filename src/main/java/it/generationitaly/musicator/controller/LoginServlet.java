@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
 			// autenticazione con successo
 			session.setAttribute("utente", utente);
 			// request.getRequestDispatcher("index.jsp").forward(request, response);
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("welcome");
 		} else {
 			// request.setAttribute("erroreCredenziali", "Credenziali errate");
 			response.sendRedirect("login.jsp?erroreCredenziali");
