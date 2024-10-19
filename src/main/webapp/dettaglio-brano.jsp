@@ -59,8 +59,9 @@ Brano brano = (Brano) request.getAttribute("brano");
     <div class="card mb-3 song-card d-flex justify-content-between align-items-center" style="opacity: 0.8; transition: opacity 0.3s ease;">
         <div class="row g-0 align-items-center">
             <div class="col-md-3 d-flex justify-content-end align-items-start">
-              <img src="<%=brano.getAlbum().get(0).getFoto() %>" class="img-fluid img-thumbnail" alt="Album Image" style="max-width: 450px; height: 250px;">
-
+            	<a href="album?id=<%= brano.getAlbum().get(0).getId() %> ">
+              		<img src="<%=brano.getAlbum().get(0).getFoto() %>" class="img-fluid img-thumbnail" alt="Album Image" style="max-width: 450px; height: 250px;">
+				</a>
             </div>
             <div class="col-md-6 d-flex flex-column justify-content-end align-items-center">
                 <div class="card-body">

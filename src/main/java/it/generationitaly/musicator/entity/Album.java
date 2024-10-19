@@ -71,7 +71,7 @@ public class Album {
 	@JoinColumn(name = "genere_id", nullable = false, unique = true)
 	private Genere genere;
 	
-	@ManyToMany(fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
 	private List<Brano> brani = new ArrayList<Brano>();
 

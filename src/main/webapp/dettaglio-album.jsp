@@ -68,7 +68,7 @@
 		    <div class="col-md-4 text-md-start  text-center">
 		       <picture>
 		         <img src="<%=album.getFoto() %>" class="img-thumbnail" alt="..."  style="widht:300px; height:300px; object-fit: cover; position:relative; right: -620px; top: -265px; z-index:10px">
-		   	</picture>
+		   		</picture>
 		    </div>
       
         <div class="container">
@@ -95,7 +95,9 @@
                 <div class="row no-gutters align-items-center">
                     <!-- Immagine dell'artista rotonda (a sinistra) -->
                     <div class="col-md-4 text-center">
-                        <img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150"; style="object-fit: cover;">
+                    	<a href="artista?id=<%=album.getArtista().getId()%>">
+                        	<img src="<%= album.getArtista().getFoto() %>" alt="Artista image" class="rounded-circle artist-img" width="150" height="150"; style="object-fit: cover;">
+                    	</a>
                     </div>
                     <!-- Dettagli dell'album (a destra) -->
                     <div class="col-md-8">
