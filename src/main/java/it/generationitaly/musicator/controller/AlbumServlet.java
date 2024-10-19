@@ -28,15 +28,10 @@ public class AlbumServlet extends HttpServlet {
 		
 		Album album = albumRepository.findById(id);
 		List<Brano> brani = branoRepository.findByAlbumId(id);
-		album.setBrano(brani);
 		
-		if(brani != null && !brani.isEmpty()) {
-			for (Brano brano : brani) {
-				System.out.println("Brani:" + brano.getTitolo());
-			}
-		} else {
-			System.out.println("Nessun brano trovato");
-		}
+		if (!brani.isEmpty()) {
+			album.setBrano(brani);
+		}	
 		
 		request.setAttribute("album", album);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-album.jsp");

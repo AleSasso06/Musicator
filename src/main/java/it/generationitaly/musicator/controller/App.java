@@ -20,14 +20,14 @@ public class App {
 	private static AlbumRepository albumRepository = new AlbumRepositoryImpl();
 
 	public static void main(String[] args) {
-	
-		Album album = albumRepository.findById(Long.parseLong("6"));
 		
+		Album album = albumRepository.findById(Long.parseLong("6"));
 		List<Brano> brani = branoRepository.findByAlbumId(6);
+		album.setBrano(brani);
 		
 		if(brani != null && !brani.isEmpty()) {
 			for (Brano brano : brani) {
-				System.out.println(brano.getTitolo());
+				System.out.println("Brani:" + brano.getTitolo());
 			}
 		} else {
 			System.out.println("Nessun brano trovato");

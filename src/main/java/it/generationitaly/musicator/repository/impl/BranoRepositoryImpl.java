@@ -47,7 +47,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 	}
 
 	@Override
-	public List<Brano> findByArtista(String artista) {
+	public List<Brano> findByArtistaPseudonimo(String artista) {
 		EntityManager em = null;
 		EntityTransaction tx = null;
 		List<Brano> brani = null;
@@ -55,11 +55,8 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			// SELECT * FROM album_brano JOIN brano ON album_brano.brano_id = brano.id
-			// JOIN album ON album.id = album_brano.album_id
-			// JOIN artista ON album.artista_id = artista.id;
 			TypedQuery<Brano> query = em.createQuery(
-					"FROM album_brano ab JOIN brano b ON ab.brano_id = b.id JOIN album al ON al.id = ab.album_id JOIN artista ar ON al.artista_id = ar.id WHERE ar.id LIKE CONCAT('%',:artista ,'%')",
+					"FROM Brano b JOIN b.album al JOIN artista ar ON al.artista_id = ar.id WHERE ar.pseudonimo LIKE CONCAT('%',:artista ,'%')",
 					Brano.class);
 			query.setParameter("artista", artista);
 			brani = query.getResultList();
@@ -227,6 +224,32 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			// album ON album.id = album_brano.album_id;
 			TypedQuery<Brano> query = em.createQuery("FROM Brano b JOIN FETCH b.album a WHERE a.id = :id",Brano.class);
 			query.setParameter("id", id);
+			brani = query.getResultList();
+			tx.commit();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+			if (tx != null && tx.isActive())
+				tx.rollback();
+		} finally {
+			if (em != null)
+				em.close();
+		}
+		return brani;
+	}
+
+	@Override
+	public List<Brano> findByArtistaNome(String artista) {
+		EntityManager em = null;
+		EntityTransaction tx = null;
+		List<Brano> brani = null;
+		try {
+			em = emf.createEntityManager();
+			tx = em.getTransaction();
+			tx.begin();
+			TypedQuery<Brano> query = em.createQuery(
+					"FROM Brano b JOIN b.album al JOIN artista ar ON al.artista_id = ar.id WHERE ar.nome LIKE CONCAT('%',:artista ,'%')",
+					Brano.class);
+			query.setParameter("artista", artista);
 			brani = query.getResultList();
 			tx.commit();
 		} catch (Exception e) {
