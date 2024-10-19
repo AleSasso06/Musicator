@@ -225,7 +225,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			tx.begin();
 			// SELECT * FROM album_brano JOIN brano ON album_brano.brano_id = brano.id JOIN
 			// album ON album.id = album_brano.album_id;
-			TypedQuery<Brano> query = em.createQuery("FROM Brano b JOIN b.album a WHERE a.id = :id",Brano.class);
+			TypedQuery<Brano> query = em.createQuery("FROM Brano b JOIN FETCH b.album a WHERE a.id = :id",Brano.class);
 			query.setParameter("id", id);
 			brani = query.getResultList();
 			tx.commit();

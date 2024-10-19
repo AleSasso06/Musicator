@@ -101,7 +101,7 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String jpql = "SELECT a FROM Album a JOIN a.brani b WHERE b.id = :branoId";
+			String jpql = "SELECT a FROM Album a JOIN FETCH a.brani b WHERE b.id = :branoId";
 
 			TypedQuery<Album> query = em.createQuery(jpql, Album.class);
 			query.setParameter("branoId", id);
