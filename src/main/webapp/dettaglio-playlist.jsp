@@ -103,7 +103,7 @@
 		                                <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
 		                                    <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
 		                                </a>
-		                                <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("mm:ss").format(brano.getDurata()/60) %></h6>
+		                                <h6 class="card-title text-start"><%= ((brano.getDurata()/60)%60) %>:<%= (brano.getDurata()%60) %> </h6>
 		                            </div>
 		                        </div>
 		                        <div class="col-auto">

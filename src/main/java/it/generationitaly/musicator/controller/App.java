@@ -18,8 +18,9 @@ public class App {
 
 	private static BranoRepository branoRepository = new BranoRepositoryImpl();
 	private static AlbumRepository albumRepository = new AlbumRepositoryImpl();
-
+	private static PlaylistRepository playlistRepository = new PlaylistRepositoryImpl();
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		
 		Album album = albumRepository.findById(Long.parseLong("6"));
 		List<Brano> brani = branoRepository.findByAlbumId(6);
@@ -31,7 +32,27 @@ public class App {
 			}
 		} else {
 			System.out.println("Nessun brano trovato");
-		}
+=======
 	
+		Playlist playlist = playlistRepository.findById(Long.parseLong("1"));
+		List<Brano> brani = playlist.getBrani();
+		for (Brano brano : brani) {
+			System.out.println(brano);
+>>>>>>> branch 'playlists' of https://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@github.com/AleSasso06/Musicator
+		}
+		
+		
+//		Album album = albumRepository.findById(Long.parseLong("6"));
+//		
+//		List<Brano> brani = branoRepository.findByAlbumId(6);
+//		
+//		if(brani != null && !brani.isEmpty()) {
+//			for (Brano brano : brani) {
+//				System.out.println(brano.getTitolo());
+//			}
+//		} else {
+//			System.out.println("Nessun brano trovato");
+//		}
+//	
 	}
 }
