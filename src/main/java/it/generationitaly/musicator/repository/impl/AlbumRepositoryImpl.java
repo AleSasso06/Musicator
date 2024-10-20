@@ -48,8 +48,8 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String sql = "FROM Album a inner join Artista ar on album.artista_id = artista.id WHERE ar.pseudonimo LIKE CONCAT('%',:pseudonimo ,'%')";
-			TypedQuery<Album> query = em.createQuery("sql", Album.class);
+			String sql = "FROM Album a INNER JOIN a.artista ar WHERE ar.pseudonimo LIKE CONCAT('%',:pseudonimo ,'%')";
+			TypedQuery<Album> query = em.createQuery(sql, Album.class);
 			query.setParameter("pseudonimo", pseudonimo);
 			/*List<Album>*/ album = query.getResultList();
 			/*album = album2.isEmpty() ? null : album2.get(0);*/
@@ -128,7 +128,7 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String sql = "FROM Album a inner join Genere g on album.genere_id = genere.id WHERE g.nome = :nome";
+			String sql = "FROM Album a INNER JOIN a.genere g WHERE g.nome = :nome";
 			TypedQuery<Album> query = em.createQuery(sql, Album.class);
 			query.setParameter("nome", nome);
 			album = query.getResultList();
@@ -154,7 +154,7 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			String sql = "FROM Album a INNER JOIN Genere g ON a.genere_id = g.id WHERE g.id = :id";
+			String sql = "FROM Album a INNER JOIN a.genere g WHERE g.id = :id";
 			TypedQuery<Album> query = em.createQuery(sql, Album.class);
 			query.setParameter("id", id);
 			album = query.getResultList();

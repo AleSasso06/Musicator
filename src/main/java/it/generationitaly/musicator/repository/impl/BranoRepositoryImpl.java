@@ -56,7 +56,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			tx = em.getTransaction();
 			tx.begin();
 			TypedQuery<Brano> query = em.createQuery(
-					"FROM Brano b JOIN b.album al JOIN artista ar ON al.artista_id = ar.id WHERE ar.pseudonimo LIKE CONCAT('%',:artista ,'%')",
+					"FROM Brano b JOIN b.album al JOIN al.artista ar WHERE ar.pseudonimo LIKE CONCAT('%',:artista ,'%')",
 					Brano.class);
 			query.setParameter("artista", artista);
 			brani = query.getResultList();
@@ -114,7 +114,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			// genere.nome LIKE '%R&B%';
 			// manca case insensitive e testing
 			TypedQuery<Brano> query = em.createQuery(
-					"FROM brano b JOIN genere g ON b.genere_id = g.id WHERE g.nome LIKE CONCAT('%',:genere ,'%')",
+					"FROM brano b JOIN b.genere g WHERE g.nome LIKE CONCAT('%',:genere ,'%')",
 					Brano.class);
 			query.setParameter("genere", genere);
 			brani = query.getResultList();
@@ -170,7 +170,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			// genere.nome LIKE '%R&B%';
 			// manca case insensitive e testing
 			TypedQuery<Brano> query = em
-					.createQuery("FROM Brano b JOIN Genere g ON b.genere_id = g.id WHERE g.id = :id", Brano.class);
+					.createQuery("FROM Brano b JOIN b.genere g WHERE g.id = :id", Brano.class);
 			query.setParameter("id", id);
 			brani = query.getResultList();
 			tx.commit();
@@ -247,7 +247,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			tx = em.getTransaction();
 			tx.begin();
 			TypedQuery<Brano> query = em.createQuery(
-					"FROM Brano b JOIN b.album al JOIN artista ar ON al.artista_id = ar.id WHERE ar.nome LIKE CONCAT('%',:artista ,'%')",
+					"FROM Brano b JOIN b.album al JOIN al.artista ar WHERE ar.nome LIKE CONCAT('%',:artista ,'%')",
 					Brano.class);
 			query.setParameter("artista", artista);
 			brani = query.getResultList();

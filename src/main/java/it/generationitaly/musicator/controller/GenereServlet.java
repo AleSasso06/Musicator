@@ -33,11 +33,17 @@ public class GenereServlet extends HttpServlet {
 		Genere genere = genereRepository.findById(id);
 		System.out.println(genere);
 		
-	//	List<Brano> brani = branoRepository.findByGenereId(id);
-		//List<Album> album = albumRepository.findByGenereId(id);
+		List<Brano> brani = branoRepository.findByGenereId(id);
+		for (Brano brano : brani) {
+			List<Album> albums = albumRepository.findByBranoId(brano.getId());
+			if (!albums.isEmpty())
+				brano.setAlbum(albums);
+		}
+		List<Album> album = albumRepository.findByGenereId(id);
 		
-	//	request.setAttribute("brani", brani);
-		//request.setAttribute("albums", album);
+		genere.setAlbum(album);
+		genere.setBrani(brani);
+		
 		request.setAttribute("genere", genere);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-genere.jsp");
 		requestDispatcher.forward(request, response);

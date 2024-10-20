@@ -2,14 +2,15 @@ package it.generationitaly.musicator.controller;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
+
 import it.generationitaly.musicator.entity.*;
 import it.generationitaly.musicator.repository.AlbumRepository;
 import it.generationitaly.musicator.repository.ArtistaRepository;
@@ -35,24 +36,20 @@ public class RicercheSpecificheServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		// dunque in input voglio avere le ricerche che fanno gli utenti
-		// nelle singole pagine
-		// voglio capire da che pagina viene l'input
-		// quindi il frontend dovrebbe mettere dei name riconoscibili
-		// preferibilmente quelli già scritti qui sotto
-		// inoltre quelle in arrivo sono delle stringhe, possibilmente parziali (ricerca LIKE)
+		// bisogna trovare un modo per non rimandare alle pagine dei doppioni
+		
+		// input provenienti ripettivamente da
+		// brani.jsp
 		String braniInput = request.getParameter("brani");
+		// artisti.jsp
 		String artistiInput = request.getParameter("artisti");
+		// album.jsp
 		String albumInput = request.getParameter("album");
+		// playlist.jsp
 		String playlistInput = request.getParameter("playlist");
-		// si fanno delle ricerche nel genere? Dalla pagina dei generi con le card non ha senso cercare
-		// neanche in quella di dettaglio o forse si? tipo cercare delle playlist 
-		// o dei decenni (mi viene da pensare al rock e pop)
-		// Qui voglio che se cerco 'rock' mi venga fuori il genere
-		// su cui schiacciare per vedere tutti i brani (e album?) rock
+		// dettaglio-genere.jsp
 		String generiInput = request.getParameter("generi");
 		
-		// avrebbe senso farlo con lo switch ma non so come
 		if(braniInput != null) {
 			List<Brano> brani = new ArrayList<Brano>();
 			List<Brano> braniTitolo = branoRepository.findByTitolo(braniInput);
@@ -60,39 +57,51 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			List<Brano> braniArtistaNome = branoRepository.findByArtistaNome(braniInput);
 			List<Brano> braniAlbum = branoRepository.findByAlbum(braniInput);
 			List<Brano> braniLingua = branoRepository.findByLingua(braniInput);
-			// metto anche qui la ricercaByGenere ma ci andrà l'if
 			List<Genere> genereBrani = genereRepository.findByNome(braniInput);
 			
 			if(braniTitolo != null && !braniTitolo.isEmpty()) {
 				for(Brano brano : braniTitolo) {
-					brani.add(brano);
+					if(brani.contains(brano) == false) {
+						brani.add(brano);
+					}
 				}
 			}
 			if(braniArtistaPseudonimo != null && !braniArtistaPseudonimo.isEmpty()) {
 				for(Brano brano : braniArtistaPseudonimo) {
-					brani.add(brano);
+					if (brani.contains(brano) == false) {
+						brani.add(brano);
+					}
 				}
 			}
 			if(braniArtistaNome != null && !braniArtistaNome.isEmpty()) {
 				for(Brano brano : braniArtistaNome) {
-					brani.add(brano);
+					if (brani.contains(brano) == false) {
+						brani.add(brano);
+					}				
 				}
 			}
 			if(braniAlbum != null && !braniAlbum.isEmpty()) {
 				for(Brano brano : braniAlbum) {
-					brani.add(brano);
+					if (brani.contains(brano) == false) {
+						brani.add(brano);
+					}
 				}
 			}
 			if(braniLingua != null && !braniLingua.isEmpty()) {
 				for(Brano brano : braniLingua) {
-					brani.add(brano);
+					if (brani.contains(brano) == false) {
+						brani.add(brano);
+					}
 				}
 			}
 			
-			// manca il genere come attribute?
+			for (Brano brano : brani) {
+				List<Album> albums = albumRepository.findByBranoId(brano.getId());
+				if (!albums.isEmpty())
+					brano.setAlbum(albums);
+			}
 			
-			// poi che succede? ora ho le ricerche. Le devo restituire alla pagina giusta
-			// forse poi dovrò switchare le request con le session
+			// mando le ricerche alla pagina brani.jsp
 			request.setAttribute("brani", brani);
 			request.setAttribute("genereBrani", genereBrani);
 			
@@ -101,7 +110,7 @@ public class RicercheSpecificheServlet extends HttpServlet {
 		}
 		
 		if(artistiInput != null) {
-			// importante fare il findByNome
+			
 			List<Artista> artisti = new ArrayList<Artista>();
 			List<Artista> artistiPseudonimo = artistaRepository.findByPseudonimo(artistiInput);
 			List<Artista> artistiNazionalita = artistaRepository.findByNazionalita(artistiInput);
@@ -109,27 +118,29 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			
 			if (artistiPseudonimo != null && !artistiPseudonimo.isEmpty()) {
 				for (Artista artista : artistiPseudonimo) {
-					artisti.add(artista);
-					System.out.println(artista);
+					if (artisti.contains(artista) == false) {
+						artisti.add(artista);
+					}
 				}
 			}
 			if (artistiNazionalita != null && !artistiNazionalita.isEmpty()) {
 				for (Artista artista : artistiNazionalita) {
-					artisti.add(artista);
-					System.out.println(artista);
+					if (artisti.contains(artista) == false) {
+						artisti.add(artista);
+					}
 				}
 			}
 			if (artistiNome != null && !artistiNome.isEmpty()) {
 				for (Artista artista : artistiNome) {
-					artisti.add(artista);
-					System.out.println(artista);
+					if (artisti.contains(artista) == false) {
+						artisti.add(artista);
+					}
 				}
 			}
 				
 			request.setAttribute("artisti", artisti);
-			//request.setAttribute("artisti", artistiPseudonimo);
-			//request.setAttribute("artistiNazionalita", artistiNazionalita);
-				
+			
+			// mando le ricerche alla pagina artisti.jsp
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("artisti.jsp");
 			requestDispatcher.forward(request, response);
 		}
@@ -143,29 +154,36 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			
 			if(albumTitolo != null && !albumTitolo.isEmpty()) {
 				for(Album album : albumTitolo) {
-					albums.add(album);
+					if (albums.contains(album) == false) {
+						albums.add(album);
+					}
 				}
 			}
 			if(albumArtista != null && !albumArtista.isEmpty()) {
 				for(Album album : albumArtista) {
-					albums.add(album);
+					if (albums.contains(album) == false) {
+						albums.add(album);
+					}
 				}
 			}
 			if(albumBrano != null && !albumBrano.isEmpty()) {
 				for(Album album : albumBrano) {
-					albums.add(album);
+					if (albums.contains(album) == false) {
+						albums.add(album);
+					}
 				}
 			}
 			
 			request.setAttribute("albums", albums);
 			request.setAttribute("genereAlbum", genereAlbum);
 			
+			// mando le ricerche alla pagina album.jsp
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("album.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
 		if(playlistInput != null) {
-			List<Playlist> playlists = null;
+			List<Playlist> playlists = new ArrayList<Playlist>();
 			
 			List<Playlist> playlistTitolo = playlistRepository.findByTitolo(playlistInput);
 			// ne servono altre? forse anche findPlaylistByBrano non sarebbe male
@@ -173,19 +191,23 @@ public class RicercheSpecificheServlet extends HttpServlet {
 			
 			if(playlistTitolo != null && !playlistTitolo.isEmpty()) {
 				for(Playlist playlist : playlistTitolo) {
-					playlists.add(playlist);
+					if (playlists.contains(playlist) == false) {
+						playlists.add(playlist);
+					}
 				}
 			}
-			// playlists.addAll(playlistTitolo);
 			
 			request.setAttribute("playlists", playlists);
 			
+			// mando le ricerche alla pagina playlist.jsp
 			RequestDispatcher requestDispatcher = request.getRequestDispatcher("playlist.jsp");
 			requestDispatcher.forward(request, response);
 		}
 		
 		if(generiInput != null) {
-			
+			// questo proverrebbe da dettaglio-genere.jsp
+			// per fare ricerche tra brani e album di quel genere
+			// per titolo / artista / etc
 		}
 		
 	}
