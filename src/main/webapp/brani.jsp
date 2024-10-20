@@ -56,7 +56,16 @@
 			.carousel-control-next {
 			    right: -175px;
 			}
-	
+			
+			/* Ensures the modal is on top */
+			.modal {
+			  z-index: 1050 !important; 
+			}
+			
+			/* Ensures the backdrop is right behind the modal */
+			.modal-backdrop {
+			  z-index: 1040 !important; 
+			}
 	
 	    </style>
 	</head>
@@ -104,7 +113,7 @@
 			                    Brano brano = brani.get(j);
 			                %>
 			                <div class="col-md-5 col-lg-4 mb-3">
-								<div class="card song-card">
+								<div class="card song-card" style="overflow: visible !important; position: relative">
 									<div class="row no-gutters align-items-center">
 										<div class="col-auto">
 											<%if (!brano.getAlbum().isEmpty()) {%>
@@ -157,47 +166,32 @@
 										</div> -->
 										<!-- fine con modal -->
 										<!-- inizio con dropdown -->
-										<div class="dropdown col-auto" style="z-index:10">
 										<%if (session.getAttribute("utente") != null) { %>
-										  <button class="btn btn-light-outline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<div class="dropdown col-auto">
+										  <button style="position: relative; overflow: visible !important" class="btn btn-light-outline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 										    <i class="bi bi-plus-circle"></i>
 										  </button>
-										  <ul class="dropdown-menu dropdown-menu-dark" style="position: relative; z-index:100">
+										  <ul class="dropdown-menu dropdown-menu-dark" style="position: relative; z-index:1050 !important">
 										  	<% List<Playlist> playlists = utente.getPlaylist(); %>
 										  	<%for (Playlist playlist : playlists) { %>
 										  	<form action="add-to-playlist" method="post">
 										  		<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
 										  		<input type="hidden" name="branoId" value="<%=brano.getId()%>">
-										    	<li style="z-index:100"><button  type="submit" class="dropdown-item"><%=playlist.getTitolo() %></button></li>
+										    	<li><button  type="submit" class="dropdown-item"><%=playlist.getTitolo() %></button></li>
 										    </form>
 										    <%} %>
-										    <li style="z-index:100"><hr class="dropdown-divider"></li>
-										    <li style="z-index:100"><a class="dropdown-item" href="creazioneplaylist.jsp?branoId=<%=brano.getId()%>">Crea nuova playlist</a></li>
+										    <li><hr class="dropdown-divider"></li>
+										    <li><a class="dropdown-item" href="creazioneplaylist.jsp?branoId=<%=brano.getId()%>">Crea nuova playlist</a></li>
 										  </ul>
-										  <%} else { %>
+										 </div>
+										 <%} else { %>
+										 <div class="col-auto">
 										  	<!-- modal: registrati per iniziare a creare le tue playlist -->
 										  	<button class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano">
 												<i class="bi bi-plus-circle"></i>
 											</button>
-										  	<div class="modal" tabindex="-1" id="aggiungi-brano" style="position:relative; z-index:1000">
-											  <div class="modal-dialog modal-dialog-centered">
-											    <div class="modal-content">
-											      <div class="modal-header">
-											        <h5 class="modal-title">Necessario Account</h5>
-											        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-											      </div>
-											      <div class="modal-body">
-											        <p>Per creare delle playlist e aggiungervi brani è necessario avere un account.</p>
-											      </div>
-											      <div class="modal-footer">
-											        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
-											        <a href="sign-in.jsp"><button type="button" class="btn btn-primary">Registrati</button></a>
-											      </div>
-											    </div>
-											  </div>
-											</div>
-										  <%} %>
-										</div>
+										 </div>
+										 <%} %>
 										<!-- fine con dropdown -->
 										<!-- fine aggiunta brano a playlist -->
 										<div class="col-auto">
@@ -225,6 +219,24 @@
 			        <span class="carousel-control-next-icon" aria-hidden="true"></span>
 			        <span class="visually-hidden">Next</span>
 			    </button>
+			</div>
+		</div>
+		
+		<div class="modal" tabindex="-1" id="aggiungi-brano">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Necessario Account</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p style="color: black">Per creare delle playlist e aggiungervi brani è necessario avere un account.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+						<a href="sign-in.jsp"><button type="button" class="btn btn-primary">Registrati</button></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	
