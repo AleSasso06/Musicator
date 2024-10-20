@@ -127,7 +127,7 @@
         <!-- GLOBAL TOP 200 -->
         <div class="py-4"></div>
         <div class="container text-center mb-4"  data-aos="fade-up">
-            <p class="text-secondary fw-bold fs-5 mb-0">La musica a portata di click</p>
+            <p class="text-secondary fw-bold fs-5 mb-0">La Musica a Portata di Click</p>
             <h2 class="h1 fw-bold">Esplora il mondo della musica con <span class="musicator">Musicator</span>!</h2>
             <p class="fs-5 pb-4">Scopri artisti, album e crea le tue playlist personalizzate</p>
             <div class="ratio ratio-16x9" data-aos="zoom-in">
