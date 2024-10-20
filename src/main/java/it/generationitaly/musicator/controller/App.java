@@ -23,8 +23,20 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		metodo2();
+		metodo3();
 		
+	}
+	
+	private static void metodo3() {
+		
+		List<Playlist> playlists = playlistRepository.findByPrivata();
+		if (playlists != null && !playlists.isEmpty()) {
+			for (Playlist playlist : playlists) {
+				System.out.println("Playlist:" + playlist.getTitolo());
+			}
+		} else {
+			System.out.println("Nessuna playlist trovata");
+		}
 	}
 	
 	private static void metodo2() {

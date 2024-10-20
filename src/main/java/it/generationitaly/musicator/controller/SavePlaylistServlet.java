@@ -9,14 +9,18 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
+import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.entity.Playlist;
 import it.generationitaly.musicator.entity.Utente;
+import it.generationitaly.musicator.repository.BranoRepository;
 import it.generationitaly.musicator.repository.PlaylistRepository;
+import it.generationitaly.musicator.repository.impl.BranoRepositoryImpl;
 import it.generationitaly.musicator.repository.impl.PlaylistRepositoryImpl;
 
 public class SavePlaylistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private PlaylistRepository playlistRepository = new PlaylistRepositoryImpl();
+	private BranoRepository branoRepository = new BranoRepositoryImpl();
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -35,10 +39,23 @@ public class SavePlaylistServlet extends HttpServlet {
 		playlist.setTitolo(request.getParameter("titolo"));
 		playlist.setFoto(request.getParameter("foto"));
 		playlist.setUtente(utente);
+		
+		if (request.getParameter("branoId") != null) {
+			Long id = Long.parseLong(request.getParameter("branoId"));
+			
+			Brano brano = branoRepository.findById(id);
+			playlist.getBrani().add(brano);
+			
+			playlistRepository.save(playlist);
+
+			String sorgente = request.getHeader("Referer");
+			response.sendRedirect(sorgente);
+			return;
+		}
 
 		playlistRepository.save(playlist);
 
-		response.sendRedirect("profilo-utente.jsp");
+		response.sendRedirect("utente-profilo.jsp");
 
 	}
 }

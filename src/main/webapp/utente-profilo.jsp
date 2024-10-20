@@ -42,12 +42,8 @@
 		<%@ include file="nav.jsp"%>
 	</header>
 
-	<%
-	utente = (Utente) session.getAttribute("utente");
-	%>
-	<%
-	List<Playlist> playlists = utente.getPlaylist();
-	%>
+	<% utente = (Utente) session.getAttribute("utente"); %>
+	<% List<Playlist> playlists = utente.getPlaylist(); %>
 
 	<main class="overflow-hidden">
 
@@ -103,15 +99,14 @@
 		<hr style="color: white; margin-top: -50px; margin-bottom: 70px">
 
 		<!-- inizio playlist -->
-	<div class="container" style="margin-bottom: 70px">
-			<!-- forse si potrebbe mettere una linea opp -->
+		<div class="container" style="margin-bottom: 70px">
 			<div class="container">
-				<!-- inizio card -->
+				
 				<div class="row row-cols-1 row-cols-md-3 g-4">
-					<%
-					if (playlists != null && !playlists.isEmpty()) {
-					%>
+					<%if (playlists != null && !playlists.isEmpty()) { %>
+					<!-- inizio caso: ci sono playlist -->
 					<%for (Playlist playlist : playlists) {%>
+					<!-- inizio card playlist -->
 					<div class="col-md-4 d-flex justify-content-center mb-2">
 
 						<div class="card">
@@ -138,109 +133,57 @@
 							</div>
 						</div>
 					</div>
-</div>
-                      
-                       <!--  <div class="container mt-4" style="margin-bottom: 70px">-->
-			
-			<!--  <div class="container">-->
-				
-				<!--  <div class="row row-cols-1 row-cols-md-3 g-4">-->
-				
-					<div style="margin-top:-325px"class="col d-flex justify-content-center ">
+					<!-- fine card playlist -->
+					<%
+					}
+					%>
+					<!-- inzio card nuova playlist -->
+					<div class="col d-flex justify-content-center ">
 
 						<div class="card ml-2">
 							<a href="creazioneplaylist.jsp"> 
 								<img src="./+.png" class="card-img-top" alt="..."> 
 							</a>
 							<div class="card-body">
-								<a class="card-title h5 text-right" href="creazioneplaylist.jsp"> Crea la tua playlist </a> 
-								
+								<a class="card-title h5 text-right" href="creazioneplaylist.jsp" style="color:#686868"> Crea la tua playlist </a> 	
 							</div>
 						</div>
 					</div>
-					 </div> 
-				<!--  </div>  -->
+					<!-- fine card nuova playlist -->
+					<!-- fine caso: ci sono playlist -->
+					<% } else { %>
+					<!-- inizio caso: non ci sono playlist -->
+					<div class="container ">
+						<div class="container">
+							<h4 style="color:#BACBE2; text-align:center"><i>Non ci sono ancora playlist</i></h4>	
+							<!--  <div class="row row-cols-1 row-cols-md-3 g-4">-->
+							<div class="col d-flex justify-content-center mt-5">
 			
-		 
-					<%
-					}
-					%>
-					<%
-					} else {
-					%>
-								 <div class="container "  style="margin-bottom: 70px">
-			
-			<div class="container">
-			<div style="color:white;text-align:center">Non ci sono ancora playlist</div>
-				<br>	
-					
-		
-				
-				<!--  <div class="row row-cols-1 row-cols-md-3 g-4">-->
-				
-					<div class="col d-flex justify-content-center mt-5 mb-3">
-
-						<div class="card " >
-							<a href="creazioneplaylist.jsp"> 
-								<img src="./+.png" class="card-img-top" alt="..."> 
-							</a>
-							<div class="card-body">
-								<a class="card-title h5 text-right" href="creazioneplaylist.jsp"> Crea la tua playlist! </a> 
-								
+								<div class="card " >
+									<a href="creazioneplaylist.jsp"> 
+										<img src="./+.png" class="card-img-top" alt="..."> 
+									</a>
+									<div class="card-body">
+										<a class="card-title h5 text-right" href="creazioneplaylist.jsp" style="color:#686868"><h4> Crea la tua playlist! </h4></a> 	
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<% } %>
+					<!-- fine caso: non ci sono playlist -->
 				</div>
-				</div>
-				</div>
-			
-		
-					<%
-					}
-					%>
-				
-				<!-- fine card -->
 			</div>
 		</div>
 		<!-- fine playlist -->
-		
-		
-	
-	 <!--  <div class="container" style="margin-bottom: 70px">
-			
-			<div class="container">
-				
-				<div class="row row-cols-1 row-cols-md-3 g-4">
-				
-					<div class="col-md-4 d-flex justify-content-center mb-3">
-
-						<div class="card w-75 " >
-							<a href="creazioneplaylist.jsp"> 
-								<img src="./+.png" class="card-img-top" alt="..."> 
-							</a>
-							<div class="card-body">
-								<a class="card-title h5 text-right" href="creazioneplaylist.jsp"> Crea la tua playlist! </a> 
-								<i class="bi bi-plus-lg"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div> -->
-		
-
 
 	</main>
+	
 	<!-- inizio footer -->
-	<footer class="footer bg-light text-center py-3">
-		<div class="container">
-			<p class="text-muted">© 2024 Musicator. Tutti i diritti
-				riservati.</p>
-		</div>
-		 
+	<footer>
+		<%@ include file="footer.jsp" %>
 	</footer>
-	<!--  fine footer -->
+	<!-- fine footer -->
 
 
 	<!-- Script locali -->

@@ -19,7 +19,8 @@ public class PlaylistsServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		List<Playlist> playlists = playlistRepository.findAll();
+		// qui si trovano solo le playlist pubbliche
+		List<Playlist> playlists = playlistRepository.findByPrivata();
 		request.setAttribute("playlists", playlists);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("playlist.jsp");
 		requestDispatcher.forward(request, response);
