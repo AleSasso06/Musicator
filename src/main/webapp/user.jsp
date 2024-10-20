@@ -43,10 +43,11 @@ pageEncoding="UTF-8"%>
 		    </div>
 		
 	  
-	  
-	  <div class="container">
-	   <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
-	   </div>
+	  		 <!-- pulsante per tornare indietro -->
+    <a href="<%=request.getHeader("referer") %>" class="btn-custom"><i class="fas fa-arrow-left"></i></a>
+   
+
+ <div class="container">
 	 
 	 <div style="text-align:center"class="container mr-5 mt-5 mb-1">
 	  <h2>MODIFICA PROFILO </h2>
@@ -78,6 +79,7 @@ pageEncoding="UTF-8"%>
 					</div>
 					<button class="btn-custom mt-3 " type="submit">SALVA</button>
 				</form>
+</div>
 </div>
 </div>
 <%@ include file="footer.jsp" %>

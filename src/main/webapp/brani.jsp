@@ -17,48 +17,51 @@
     <!-- Swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     
-    <style>
-		 .song-card {
-		    height: 122px; 
-		    opacity: 0.9;
-		    transition: opacity 0.2s ease;
-		    color: #E3F2FD;
-		}
-		
-		.song-img {
-		    width: 120px;
-		    height: 120px;
-		    object-fit: cover;
-		}
-		
-		.card-title {
-   			 white-space: nowrap;
-		    overflow: hidden;
-		    text-overflow: ellipsis;
-		    max-width: 175px;
+<style>
+.button-spacing {
+	padding: 10px 20px;
+	background-color: #C2185B;
+}
 
-		}
-		.card-body {
-		    text-align: left;
-		    color: black;
-		    overflow: hidden;
-		}
+.song-card {
+	height: 122px;
+	opacity: 0.9;
+	transition: opacity 0.2s ease;
+	color: #E3F2FD;
+}
 
-        .btn-play {
-            font-size: 1.5rem;
-            color: #C2185B;
-        }
-        
-        .carousel-control-prev {
-    		left: -175px;
-		}
-		
-		.carousel-control-next {
-		    right: -175px;
-		}
+.song-img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+}
 
+.card-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 175px;
+}
 
-    </style>
+.card-body {
+	text-align: left;
+	color: black;
+	overflow: hidden;
+}
+
+.btn-play {
+	font-size: 1.5rem;
+	color: #C2185B;
+}
+
+.carousel-control-prev {
+	left: -175px;
+}
+
+.carousel-control-next {
+	right: -175px;
+}
+</style>
 </head>
 
 <body>
@@ -111,8 +114,10 @@
 										<%
 										if (!brano.getAlbum().isEmpty()) {
 										%>
-										<img src="<%=brano.getAlbum().get(0).getFoto()%>" height="110"
-											class="rounded song-img" alt="...">
+										<a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
+												style="color: black">
+												 <img src="<%= brano.getAlbum().get(0).getFoto() %>" class="rounded song-img" alt="Album Image">
+											</a>
 										<%
 										}
 										%>

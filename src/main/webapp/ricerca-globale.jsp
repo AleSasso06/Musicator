@@ -135,8 +135,10 @@
 										<%
 										if (!brano.getAlbum().isEmpty()) {
 										%>
-										<img src="<%=brano.getAlbum().get(0).getFoto()%>" height="110"
-											class="rounded song-img" alt="...">
+										 <a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
+												style="color: black">
+												 <img src="<%= brano.getAlbum().get(0).getFoto() %>" class="rounded song-img" alt="Album Image">
+											</a>
 										<%
 										}
 										%>
@@ -279,7 +281,7 @@
 						<div class="col-3 d-flex justify-content-center mb-4">
 							<a href="album?id=<%=album.getId()%>">
 								<div class="col-p-3 mx-4 mb-4">
-									<div class="card" style="width: 285px;">
+									<div class="card" style="width: 285px; height:">
 										<img style="object-fit: cover;" src="<%=album.getFoto()%>"
 											height="285" class="card-img-top" alt="...">
 										<div class="card-body">
