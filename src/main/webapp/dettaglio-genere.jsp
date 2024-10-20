@@ -22,8 +22,6 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
-    
-    
       			
 			.song-card {
 				height: 122px;
@@ -117,39 +115,44 @@
                                 Brano brano = brani.get(j);
                         %>
                                         
-                        <div class="col-md-4 mb-3">
-                            <div class="card song-card">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                    <a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
-												style="color: black">
-												 <img src="<%= brano.getAlbum().get(0).getFoto() %>" class="rounded song-img" alt="Album Image">
-											</a>
-                                    </div>
-                                   <div class="col">
-										<div class="card-body p-1">
-											<a class="card-title" href="brano?id=<%=brano.getId()%>">
-												<p class="card-title text-start">
-													<b><%=brano.getTitolo()%></b>
-												</p>
-											</a> <a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
-												style="color: black">
-												<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
-											</a> <small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
-																	                        <%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
-																	                    <% } else { %>
-																	                        <%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
-																	                    <% } %></small>
+                       <div class="col-md-5 col-lg-4 mb-3">
+								<div class="card song-card" style="overflow: visible !important; position: relative">
+									<div class="row no-gutters align-items-center">
+										<div class="col-auto">
+											<%if (!brano.getAlbum().isEmpty()) {%>
+												<a href="brano?id=<%=brano.getId()%>">
+													<img src="<%=brano.getAlbum().get(0).getFoto()%>" height="110"
+														class="rounded song-img" alt="...">
+												</a>
+											<%}%>
 										</div>
-									</div>
-									<div class="col-auto">
-										<a class="btn btn-play" href="<%=brano.getYtLink()%>"
-											target="blank"> <i class="bi bi-play-circle-fill"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
+										<div class="col">
+											<div class="card-body p-1">
+												<a class="card-title" href="brano?id=<%=brano.getId()%>">
+													<p class="card-title text-start">
+														<b><%=brano.getTitolo()%></b>
+													</p>
+												</a> 
+												<a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
+													style="color: black">
+													<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+												</a> 
+												<small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
+			                        				<%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
+			                    					<% } else { %>
+			                        				<%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
+			                   						<% } %>
+			                   					</small>
+											</div>
+										</div>
+                                    <div class="col-auto">
+                                        <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
+                                            <i class="bi bi-play-circle-fill"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <% } %>
                     </div>
                 </div>
@@ -198,18 +201,17 @@
                                 Album album = albums.get(j);
                         %>
                         
-                       	<div class="col-md-3 mb-4">
-    <div class="card album-card">
-        <a href="album?id=<%= album.getId() %>" class="text-decoration-none">
-            <img src="<%= album.getFoto() %>" alt="Album Image" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title"><%= album.getTitolo() %></h5>
-            </div>
-        </a>
-    </div>
-</div>
-
-					
+                        <div class="col-md-3 mb-4">
+                         <div class="card" style="width: 275px; height: 350px;">
+                            <a href="album?id=<%= album.getId() %>" class="text-decoration-none">
+                               
+                                    <img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="Album Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><%= album.getTitolo() %></h5>
+                                    </div>
+                                     </a>
+                                </div>
+                        </div>
 
                         <% } %>
                     </div>
