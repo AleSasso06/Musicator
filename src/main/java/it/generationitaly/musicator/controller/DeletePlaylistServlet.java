@@ -13,24 +13,43 @@ import java.io.IOException;
 import it.generationitaly.musicator.entity.Playlist;
 import it.generationitaly.musicator.entity.Utente;
 import it.generationitaly.musicator.repository.PlaylistRepository;
+import it.generationitaly.musicator.repository.UtenteRepository;
 import it.generationitaly.musicator.repository.impl.PlaylistRepositoryImpl;
+import it.generationitaly.musicator.repository.impl.UtenteRepositoryImpl;
 
 public class DeletePlaylistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
 	private PlaylistRepository playlistRepository = new PlaylistRepositoryImpl();
+	private UtenteRepository utenteRepository = new UtenteRepositoryImpl();
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
+
 		HttpSession session = request.getSession();
 		Utente utente = (Utente) session.getAttribute("utente");
 		Long id = Long.parseLong(request.getParameter("playlistId"));
 		Playlist playlist = playlistRepository.findById(id);
 		if (playlist != null) {
+			utente.getPlaylist().remove(playlist);
 			playlistRepository.delete(playlist);
-			RequestDispatcher requestDispatcher = request.getRequestDispatcher("utente-profilo.jsp");
-		}
-		
-	}
+			utenteRepository.update(utente);
 
+			// Ora ricarica l'utente dal database per aggiornare le playlist
+			Utente updatedUtente = utenteRepository.findById(utente.getId());
+			session.setAttribute("utente", updatedUtente);
+
+			// Debug: Verifica se le playlist sono state effettivamente rimosse
+			for (Playlist playlista : updatedUtente.getPlaylist()) {
+				System.out.println("playlist " + playlista.getTitolo());
+
+//		   session.setAttribute("utente", utente);
+//		   for(Playlist playlista: utente.getPlaylist()) {
+//		    System.out.println("playlist " + playlista.getTitolo());
+			}
+
+			RequestDispatcher requestDispatcher = request.getRequestDispatcher("utente-profilo.jsp");
+			requestDispatcher.forward(request, response);
+		}
+	}
 }

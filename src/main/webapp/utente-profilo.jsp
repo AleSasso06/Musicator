@@ -126,7 +126,10 @@
 										<ul class="dropdown-menu">
 									    	<li><a class="dropdown-item" href="update-playlist?id=<%=playlist.getId()%>">Modifica</a></li>
 									    	<li><hr class="dropdown-divider"></li>
-									    	<li><a class="dropdown-item" href="delete-playlist?playlistId=<%=playlist.getId()%>">Elimina</a></li>
+									    	<form action="delete-playlist" method="post">
+									    		<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
+									    		<li><button class="dropdown-item" type="submit">Elimina</button></li>
+											</form>
 										</ul>
 									</div>
 									<!-- fine bottone dropdown opzioni -->
