@@ -116,7 +116,12 @@
 			                   					</div>
 					                        </div>
 					                        <div class="col-auto">
-					                        <button type="submit" class="bi bi-x-circle" > </button>
+					                      
+					                        <button  type="submit" class="btn btn-light-outline" > </button>
+ 					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> 
+ 					                                <i style="margin-left:-10px" class="bi bi-x-circle"></i> 
+					                            </a> 
+					                        </div>
 <%-- 					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> --%>
 <!-- 					                                <i class="bi bi-x-circle"></i> -->
 <!-- 					                            </a> -->
