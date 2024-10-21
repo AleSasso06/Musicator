@@ -111,7 +111,9 @@
 		                <div class="card song-card">
 		                    <div class="row no-gutters align-items-center">
 		                        <div class="col-auto">
+		                        <a href="brano?id=<%= brano.getId() %>">
 		                            <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+		                       </a>
 		                        </div>
 		                        <div class="col">
 		                            <div class="card-body p-2">
