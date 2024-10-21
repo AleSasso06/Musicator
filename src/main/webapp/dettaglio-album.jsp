@@ -252,7 +252,7 @@
 					</div>
 					<div class="modal-footer">
 						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button> -->
-						<a href="sign-in.jsp"><button type="button" class="btn btn-danger fw-bold">Login</button></a>
+						<a href="login.jsp"><button type="button" class="btn btn-danger fw-bold">Login</button></a>
 					</div>
 				</div>
 			</div>
