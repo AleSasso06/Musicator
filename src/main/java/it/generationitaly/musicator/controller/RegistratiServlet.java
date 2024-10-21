@@ -40,7 +40,12 @@ public class RegistratiServlet extends HttpServlet {
 		System.out.println("username:" + username);
 
 		if (utenteRepository.findByUsername(username) != null) {
-			response.sendRedirect("registrati.jsp?erroreUsernameEsistente");
+			response.sendRedirect("sign-in.jsp?erroreUsernameEsistente");
+			return;
+		}
+		
+		if (utenteRepository.findByEmail(email) != null) {
+			response.sendRedirect("sign-in.jsp?erroreEmailGiaEsistente");
 			return;
 		}
 

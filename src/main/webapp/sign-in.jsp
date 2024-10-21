@@ -40,6 +40,25 @@
 		
 		<div class="container-sign-in mx-auto ">
 			<form action="registrati" method="post">
+			<%
+			if (request.getParameter("erroreEmailGiaEsistente") != null) {
+			%>
+				<div class="alert alert-danger mt-3" role="alert">
+					<p class="text-center text-dark">Email già registrata</p>
+				</div>
+			<%
+			}
+			%>
+			
+			<%
+			if (request.getParameter("erroreUsernameEsistente") != null) {
+			%>
+				<div class="alert alert-danger mt-3" role="alert">
+					<p class="text-center text-dark">Username già esisente</p>
+				</div>
+			<%
+			}
+			%>
 			<h1 style= "text-align:center "class="mb-3">Registrazione</h1>
 					
 						
