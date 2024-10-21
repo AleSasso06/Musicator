@@ -87,11 +87,11 @@
 			    color: #007bff;
 			}
 
-@media (min-width: 768px) {
-    .col-md-3 {
-        flex: 0 0 20%;
-    }
-}
+			@media (min-width: 768px) {
+			    .col-md-3 {
+			        flex: 0 0 20%;
+			    }
+			}
     
 			.musicator {
 			    color: white; /* Colore iniziale */
@@ -101,7 +101,7 @@
 			.musicator:hover {
 			    color: #C2185B; /* Colore al passaggio del mouse */
 			}
-	        
+				        
 	    </style>
 	   
 
@@ -113,8 +113,6 @@
 	
     <!-- ELEMENTI FIXED -->
     <%@ include file="goTop.jsp" %>
-            
-           
             
          
         <div class="pt-3"></div>
