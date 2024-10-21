@@ -108,7 +108,7 @@
 		<div class="container">
 		
 	    	<!-- carosello -->
-	   		<div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="position:relative; z-index: 0;">
+	   		<div id="caroselloBrani" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" style="position:relative; z-index: 0; overflow: visible !important;">
 	    		<div class="carousel-inner">
 			        <% 
 			        int braniPerSlide = 12; // Numero di card per slide
@@ -125,7 +125,7 @@
 			                    Brano brano = brani.get(j);
 			                %>
 			                <div class="col-md-5 col-lg-4 mb-3">
-								<div class="card song-card" style="overflow: visible !important; position: relative">
+								<div class="card song-card" style="overflow: visible !important; position: relative; z-index: 1;">
 									<div class="row no-gutters align-items-center">
 										<div class="col-auto">
 											<%if (!brano.getAlbum().isEmpty()) {%>
@@ -160,36 +160,20 @@
 										
 										
 										<!-- inizio aggiunta brano a playlist -->
-										<!-- inizio con modal -->
-										<!--<button type="button" data-bs-toggle="modal" data-bs-target="aggiungi-brano">
-											<i class="bi bi-plus-circle"></i>
-										</button>
-										<div class="modal" tabindex="-1" id="aggiungi-brano">
-										  <div class="modal-dialog">
-										    <div class="modal-content">
-										      <div class="modal-header">
-										        <h5 class="modal-title">Modal title</h5>
-										        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-										      </div>
-										      <div class="modal-body">
-										        <p>Modal body text goes here.</p>
-										      </div>
-										      <div class="modal-footer">
-										        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-										        <button type="button" class="btn btn-primary">Save changes</button>
-										      </div>
-										    </div>
-										  </div>
-										</div> -->
-										<!-- fine con modal -->
 										<!-- inizio con dropdown -->
 										<%if (session.getAttribute("utente") != null) { %>
-										<div class="dropdown col-2">
+										<!-- <div class="col-auto">
+										  	modal: registrati per iniziare a creare le tue playlist
+										  	<button style="position:relative; overflow: visible !important; display:flex;  " class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano-log">
+												<i class="bi bi-plus-circle"></i>
+											</button>
+										</div> -->
+										<div class="dropdown dropstart col-auto" style="overflow: visible !important">
 										  <button style="position: relative; overflow: visible !important" class="btn btn-light-outline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 										    <i class="bi bi-plus-circle"></i>
 										  </button>
 										  
-										  <ul class="dropdown-menu dropdown-menu-dark" style="position: relative; z-index:1050 !important">
+										  <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; z-index:9999 !important;">
 										  	<% List<Playlist> playlists = utente.getPlaylist(); %>
 										  	<%for (Playlist playlist : playlists) { %>
 										  	<form action="add-to-playlist" method="post">
@@ -264,10 +248,39 @@
 			</div>
 		</div>
 		<!-- fine modal utente non loggato -->
+		
+		<!-- inizio modal utente loggato -->
+		<%-- <div class="modal" tabindex="-1" id="aggiungi-brano-log">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Aggiungi brano a playlist</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+			      <% List<Playlist> playlists = utente.getPlaylist(); %>
+					<%for (Playlist playlist : playlists) { %>
+					<form action="add-to-playlist" method="post">
+						<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
+						<input type="hidden" name="branoId" value="<%=brano.getId()%>">
+						<!-- non so se la classe dropdown funzioni qui, forse è da cambiare con altro -->
+						<li><button  type="submit" class="dropdown-item"><%=playlist.getTitolo() %></button></li>
+					</form>
+				  <%} %>
+		      </div>
+		      <div class="modal-footer">
+		      <!-- non so se la classe dropdown funzioni qui, forse è da cambiare con altro -->
+		      	<a class="dropdown-item" href="creazioneplaylist.jsp?branoId=<%=brano.getId()%>">Crea nuova playlist</a>
+		      </div>
+		    </div>
+		  </div>
+		</div> --%>
+		<!-- fine modal utente loggato -->
 	
 		<footer>
 			<%@ include file="footer.jsp" %>
 		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js"></script>
 		<!-- Bootstrap JavaScript Libraries -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
