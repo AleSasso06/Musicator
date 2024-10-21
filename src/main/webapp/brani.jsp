@@ -16,7 +16,6 @@
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
 	    
 	    <style>
 	    	
@@ -52,7 +51,7 @@
 			}
 	
 	        .btn-play {
-	            font-size: 1 rem;
+	            font-size: 1.5rem;
 	            color: #C2185B;
 	        }
 	        
@@ -72,11 +71,6 @@
 			/* Ensures the backdrop is right behind the modal */
 			.modal-backdrop {
 			  z-index: 1040 !important; 
-			}
-			.truncate-text{
-			text-overflow: ellipsis;
-            max-width: 150px;
-			
 			}
 	
 	    </style>
@@ -138,15 +132,13 @@
 										<div class="col">
 											<div class="card-body p-1">
 												<a class="card-title" href="brano?id=<%=brano.getId()%>">
-													<p class="card-title text-start truncate-text">
+													<p class="card-title text-start">
 														<b><%=brano.getTitolo()%></b>
 													</p>
-													
-      
 												</a> 
 												<a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
 													style="color: black">
-													<p class="card-title text-start truncate-text"><%=brano.getAlbum().get(0).getTitolo()%></p>
+													<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
 												</a> 
 												<small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
 			                        				<%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
@@ -156,9 +148,6 @@
 			                   					</small>
 											</div>
 										</div>
-										
-										
-										
 										<!-- inizio aggiunta brano a playlist -->
 										<!-- inizio con modal -->
 										<!--<button type="button" data-bs-toggle="modal" data-bs-target="aggiungi-brano">
@@ -184,18 +173,16 @@
 										<!-- fine con modal -->
 										<!-- inizio con dropdown -->
 										<%if (session.getAttribute("utente") != null) { %>
-										<div class="dropdown col-2">
+										<div class="dropdown col-auto">
 										  <button style="position: relative; overflow: visible !important" class="btn btn-light-outline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 										    <i class="bi bi-plus-circle"></i>
 										  </button>
-										  
 										  <ul class="dropdown-menu dropdown-menu-dark" style="position: relative; z-index:1050 !important">
 										  	<% List<Playlist> playlists = utente.getPlaylist(); %>
 										  	<%for (Playlist playlist : playlists) { %>
 										  	<form action="add-to-playlist" method="post">
 										  		<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
 										  		<input type="hidden" name="branoId" value="<%=brano.getId()%>">
-										  		
 										    	<li><button  type="submit" class="dropdown-item"><%=playlist.getTitolo() %></button></li>
 										    </form>
 										    <%} %>
@@ -206,22 +193,18 @@
 										 <%} else { %>
 										 <div class="col-auto">
 										  	<!-- modal: registrati per iniziare a creare le tue playlist -->
-										  	<button style="position:relative; overflow: visible !important; display:flex;  " class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano">
+										  	<button class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano">
 												<i class="bi bi-plus-circle"></i>
 											</button>
 										 </div>
-										 
 										 <%} %>
-										 
 										<!-- fine con dropdown -->
 										<!-- fine aggiunta brano a playlist -->
-										
-										<div style="margin-left:-30px" class="col-2">
-											<a style="white-space: nowrap" class="btn btn-play" href="<%=brano.getYtLink()%>"
+										<div class="col-auto">
+											<a class="btn btn-play" href="<%=brano.getYtLink()%>"
 												target="blank"> <i class="bi bi-play-circle-fill"></i>
 											</a>
 										</div>
-										
 									</div>
 								</div>
 							</div>

@@ -24,7 +24,8 @@ public class SavePlaylistServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		if (session.getAttribute("utente") == null) {
-			response.sendRedirect("login.jsp");
+			//
+			response.sendRedirect("welcome");
 			return;
 			
 		}
