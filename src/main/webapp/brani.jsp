@@ -12,8 +12,9 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	    <!-- css locali -->
 	    <link rel="stylesheet" href="style2.css">
-		<!-- Import Font Awesome 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
+	    
+		<!-- Import Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 				
 		<!-- Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
