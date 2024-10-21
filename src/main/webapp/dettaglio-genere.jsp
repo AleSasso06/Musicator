@@ -82,7 +82,8 @@
     	</header>
     	
    <%Genere genere = (Genere)request.getAttribute("genere"); %>
-  
+  <%   List<Brano> brani = genere.getBrani();%>
+  <%   List<Album> albums = genere.getAlbum();%>
    
    <!-- scritta risultato ricerca -->
 	<div class="container">
@@ -103,7 +104,10 @@
  <div class="container min-vh-10 d-flex justify-content-center">
     <div class="container" style="top: -15px;">
         <!-- carosello brani -->
-   <%   List<Brano> brani = genere.getBrani();%>
+        <% if (brani.isEmpty() && albums.isEmpty()) { %>
+			<h5 class="text-center text-light">Nessun risultato trovato</h5>
+		<% } else { %>
+   
    <% if(brani != null && !brani.isEmpty()){ %>
         <h2 style="text-align: center;">Brani</h2>
         <div id="branoCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -187,7 +191,7 @@
    <br>
    
 <!-- album -->
-  <%   List<Album> albums = genere.getAlbum();%>
+  
    <% if(albums != null && !albums.isEmpty()){ %>
   <div class="container min-vh-10 d-flex justify-content-center">
     <div class="container" style="top: -15px;">
@@ -241,8 +245,10 @@
     <%} else { %>
 <p></p>
 <%} %>
+<% } %>
 </div>
 </div>
+
 
     <%@ include file="footer.jsp" %>
     
