@@ -29,6 +29,30 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
+    
+    .card-body-song p {
+    margin: 0; /* Rimuove i margini */
+    padding: 0; /* Rimuove il padding */
+    line-height: 1.9; /* Riduce lo spazio tra le righe di testo */
+}
+
+.card-body-song small {
+    margin: 0; /* Rimuove i margini */
+    padding: 0; /* Rimuove il padding */
+    line-height: 1.9; /* Riduce lo spazio tra le righe di testo */
+}
+      			.card-title-song {
+	   			 white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    max-width: 175px;
+	
+			}
+			.card-body-song {
+			    text-align: left;
+			    color: black;
+			    overflow: hidden;
+			}
       			
 			.song-card {
 				height: 122px;
@@ -82,7 +106,8 @@
     	</header>
     	
    <%Genere genere = (Genere)request.getAttribute("genere"); %>
-  
+  <%   List<Brano> brani = genere.getBrani();%>
+  <%   List<Album> albums = genere.getAlbum();%>
    
    <!-- scritta risultato ricerca -->
 	<div class="container">
@@ -103,7 +128,10 @@
  <div class="container min-vh-10 d-flex justify-content-center">
     <div class="container" style="top: -15px;">
         <!-- carosello brani -->
-   <%   List<Brano> brani = genere.getBrani();%>
+        <% if (brani.isEmpty() && albums.isEmpty()) { %>
+			<h5 class="text-center text-light">Nessun risultato trovato</h5>
+		<% } else { %>
+   
    <% if(brani != null && !brani.isEmpty()){ %>
         <h2 style="text-align: center;">Brani</h2>
         <div id="branoCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -122,8 +150,8 @@
                                 Brano brano = brani.get(j);
                         %>
                                         
-                       <div class="col-md-5 col-lg-4 mb-3">
-								<div class="card song-card" style="overflow: visible !important; position: relative">
+                     <div class="col-md-5 col-lg-4 mb-3">
+								<div class="card song-card" style="overflow: visible !important; position: relative; z-index: 1;">
 									<div class="row no-gutters align-items-center">
 										<div class="col-auto">
 											<%if (!brano.getAlbum().isEmpty()) {%>
@@ -134,17 +162,17 @@
 											<%}%>
 										</div>
 										<div class="col">
-											<div class="card-body p-1">
-												<a class="card-title" href="brano?id=<%=brano.getId()%>">
-													<p class="card-title text-start">
+											<div class="card-body-song p-1">
+												<a class="card-title-song" href="brano?id=<%=brano.getId()%>" style="color: black">
+													<p class="card-title-song text-start truncate-text" style="color: black">
 														<b><%=brano.getTitolo()%></b>
 													</p>
 												</a> 
 												<a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
 													style="color: black">
-													<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+													<p class="card-title-song text-start truncate-text" style="color: black"><%=brano.getAlbum().get(0).getTitolo()%></p>
 												</a> 
-												<small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
+												<small class="card-title-song text-start"><% if (brano.getDurata()%60 < 10) { %>
 			                        				<%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
 			                    					<% } else { %>
 			                        				<%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
@@ -187,7 +215,7 @@
    <br>
    
 <!-- album -->
-  <%   List<Album> albums = genere.getAlbum();%>
+  
    <% if(albums != null && !albums.isEmpty()){ %>
   <div class="container min-vh-10 d-flex justify-content-center">
     <div class="container" style="top: -15px;">
@@ -209,7 +237,7 @@
                         %>
                         
                         <div class="col-md-3 mb-4">
-                         <div class="card" style="width: 275px; height: 350px;">
+                         <div class="card">
                             <a href="album?id=<%= album.getId() %>" class="text-decoration-none">
                                
                                     <img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="Album Image">
@@ -241,8 +269,10 @@
     <%} else { %>
 <p></p>
 <%} %>
+<% } %>
 </div>
 </div>
+
 
     <%@ include file="footer.jsp" %>
     

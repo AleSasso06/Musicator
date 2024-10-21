@@ -37,8 +37,21 @@ public class AddToPlaylistServlet extends HttpServlet {
 				// response.sendRedirect(sorgente);
 				RequestDispatcher requestDispatcher = request.getRequestDispatcher(sorgente);
 				requestDispatcher.forward(request, response);
+				return;
 			}
 		}
+		// aggiunger messaggio di errore
+		/*
+		 * String erroreBranoDoppio = "Errore brano già presente";
+		 * request.setAttribute("erroreBranoDoppio", erroreBranoDoppio);
+		 */
+		
+		String sorgente = request.getHeader("Referer");
+		response.sendRedirect(sorgente);
+		/*
+		 * RequestDispatcher requestDispatcher = request.getRequestDispatcher(sorgente);
+		 * requestDispatcher.forward(request, response);
+		 */
 		
 	}
 

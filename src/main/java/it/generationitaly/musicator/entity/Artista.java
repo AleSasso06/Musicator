@@ -3,6 +3,7 @@ package it.generationitaly.musicator.entity;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -132,6 +133,23 @@ public class Artista {
 	public void setAlbum(List<Album> album) {
 		this.album = album;
 	}
+	
+	@Override
+    public boolean equals(Object o) {
+        if (this == o) return true; // Self-comparison
+        if (o == null || getClass() != o.getClass()) return false; // Null or class mismatch
+
+        Artista artista = (Artista) o; // Cast object to Person
+
+        // Compare relevant fields
+        return id == artista.id;
+    }
+
+    @Override
+    public int hashCode() {
+        // Combine fields to generate hash code
+        return Objects.hash(id);
+    }
 
 	@Override
 	public String toString() {
