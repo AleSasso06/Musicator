@@ -25,7 +25,10 @@
 		
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	
+	
 	</head>
+	
 	
 	<body>
 	
@@ -63,7 +66,8 @@
 				  		<div class="col-md-4 d-flex justify-content-center mb-3">
 		
 						  	<div class="card">
-						    	<a href="playlist?id=<%= playlist.getId() %>"><img src="<%= playlist.getFoto() %>" class="card-img-top" alt="..." ></a>
+						    	<a href="playlist?id=<%= playlist.getId() %>">
+						    	<img src="<%= playlist.getFoto() %>" alt="Playlist image" class="artist-img" width="200" height="200"; style="object-fit: cover;"></a>
 						    	<div class="card-body text-center">
 						        	<a class="card-title h5" href="playlist?id=<%= playlist.getId() %>"><%= playlist.getTitolo() %></a>
 						        	<p class="card-text" style="color: black"> <%= playlist.getBrani().size() %> brani</p>
