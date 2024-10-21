@@ -1,3 +1,4 @@
+   
 INSERT INTO genere VALUES ('1','Rock');
 INSERT INTO genere VALUES ('2','Pop');
 INSERT INTO genere VALUES ('3','Trap');
@@ -466,6 +467,58 @@ INSERT INTO album VALUES(
 	'14',
 	'16'
 );
+
+INSERT INTO album (id, titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES
+(26, 
+'House of Balloons', 
+'House of Balloons è il primo mixtape di The Weeknd, pubblicato nel 2011. L’album esplora temi di euforia, depressione e auto-distruzione con un mix di R&B, soul e elettronica.',
+ 2950, 
+'2011-03-21', 
+'https://m.media-amazon.com/images/I/81-blrK5yoL._UF1000,1000_QL80_.jpg', 
+1, 
+6);
+
+INSERT INTO album (id, titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES
+(27, 
+'Thursday', 
+'Thursday è il secondo mixtape di The Weeknd, pubblicato nel 2011. L’album è caratterizzato da testi riflessivi e sonorità sperimentali che continuano il percorso iniziato con House of Balloons.', 
+3140, 
+'2011-08-18',
+ 'https://m.media-amazon.com/images/I/81AtEOlBwML._UF1000,1000_QL80_.jpg', 
+1, 
+6);
+
+INSERT INTO album 
+VALUES
+(28, 
+'Echoes of Silence', 'Echoes of Silence è il terzo mixtape di The Weeknd, pubblicato nel 2011. Conclude la trilogia iniziata con House of Balloons e continua a esplorare temi oscuri con sonorità R&B e pop alternative.',
+ 3200, 
+'2011-12-21', 
+'https://m.media-amazon.com/images/I/71ILVoIweuL._UF1000,1000_QL80_.jpg', 
+1, 
+6);
+
+INSERT INTO album (id, titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES
+(29, 
+'Kiss Land',
+ 'Kiss Land è il primo album in studio di The Weeknd, pubblicato nel 2013. L’album mescola influenze di R&B, pop ed elettronica, raccontando temi di alienazione e celebrità.',
+ 3380, 
+'2013-09-10',
+ 'https://m.media-amazon.com/images/I/51v9h9nG91L._UF1000,1000_QL80_.jpg', 
+1, 
+6);
+
+INSERT INTO album (id, titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES
+(30, 'Beauty Behind the Madness', 'Beauty Behind the Madness è il secondo album in studio di The Weeknd, pubblicato nel 2015. Contiene hit internazionali come "Can''t Feel My Face" e "The Hills", ed esplora temi di amore e auto-distruzione.', 4210, '2015-08-28', 'https://m.media-amazon.com/images/I/91-slNFIINL._UF1000,1000_QL80_.jpg', 1, 6);
+
+INSERT INTO album (id, titolo, descrizione, durata, data_uscita, foto, artista_id, genere_id) 
+VALUES
+(31, 'Starboy', 'Starboy è il terzo album in studio di The Weeknd, pubblicato nel 2016. L’album esplora la sua vita dopo la fama, con suoni electro-pop e collaborazioni con Daft Punk.', 4020, '2016-11-25', 'https://m.media-amazon.com/images/I/814htMhuuML._UF1000,1000_QL80_.jpg', 1, 6);
+
 -- INSERT BRANI da fare dopo aver popolato l'album(e di conseguenza genere e artista)
 
 INSERT INTO brano VALUES (
@@ -8498,3 +8551,4 @@ FALSE,
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 44);
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 39);
 INSERT INTO playlist_brano(playlist_id, brano_id) VALUES(1, 47);
+
