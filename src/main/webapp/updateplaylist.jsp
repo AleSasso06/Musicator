@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-=======
+
 	 
 	
 	<style>
@@ -127,12 +127,8 @@
  					                                <i style="margin-left:-10px" class="bi bi-x-circle"></i> 
 					                            </a> 
 					                      
-					                        <button  type="submit" class="btn btn-light-outline" > </button>
- 					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> 
- 					                                <i style="margin-left:-10px" class="bi bi-x-circle"></i> 
-					                            </a> 
-					                        </div>
-					                            
+					                       
+					                         </div>   
 					                    </div>
 					                </div>
 					            </div>
