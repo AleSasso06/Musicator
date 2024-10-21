@@ -194,7 +194,7 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			List<Long> ids = Arrays.asList(9L, 15L, 27L, 45L, 58L, 69L, 75L, 76L, 99L, 5L, 123L, 143L);
+			List<Long> ids = Arrays.asList(9L, 82L, 150L, 45L, 58L, 69L, 115L, 76L, 99L, 5L, 123L, 143L);
 
 			TypedQuery<Brano> query = em.createQuery("SELECT b FROM Brano b WHERE b.id IN :ids", Brano.class);
 			query.setParameter("ids", ids);

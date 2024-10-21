@@ -10,10 +10,43 @@ body {
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
     background-color: #08263C;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
-}
+    position: relative;
+	}
+    
 
+body::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    background-image: 
+        url('images/bgE.svg'), 
+        url('images/bgE.svg'), 
+        url('images/bgE.svg'), 
+        url('images/bgE.svg'); 
+    
+    background-position: 
+		-12% 12%, 
+        50% 65%,  
+        -17% 88%,  
+        105% 41%; 
+           
+    background-repeat: no-repeat; 
+    
+    background-size: 
+        300px 300px, 
+        250px 250px, 
+        400px 400px, 
+        500px 500px; 
+    
+    opacity: 0.1; 
+    z-index: -1;
+}
+ 
+ 
 .album-card {
     background-color: rgba(227, 242, 253, 0.72); /* Colore di sfondo */
     border: none; /* Rimuove il bordo predefinito */
