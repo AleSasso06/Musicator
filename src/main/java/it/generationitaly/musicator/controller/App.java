@@ -20,10 +20,26 @@ public class App {
 	private static BranoRepository branoRepository = new BranoRepositoryImpl();
 	private static AlbumRepository albumRepository = new AlbumRepositoryImpl();
 	private static PlaylistRepository playlistRepository = new PlaylistRepositoryImpl();
+	private static UtenteRepository utenteRepository = new UtenteRepositoryImpl();
+
 
 	public static void main(String[] args) {
 		
-		metodo2();
+		metodo3();
+		
+	}
+	
+	private static void metodo3() {
+		
+		Utente utente = utenteRepository.findById(Long.parseLong("2"));
+		
+		Playlist playlist = playlistRepository.findById(Long.parseLong("3"));
+		
+		utente.getPlaylist().remove(playlist);
+		
+		for(Playlist playlista: utente.getPlaylist()) {
+			System.out.println("playlist " + playlista.getTitolo());
+		}
 		
 	}
 	
@@ -93,4 +109,7 @@ public class App {
 
 		}
 	}
+	
+	
+	
 }
