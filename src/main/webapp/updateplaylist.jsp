@@ -122,11 +122,11 @@
 					                        </div>
 					                        <div class="col-auto">
 
-					                        <button  type="submit" class="btn btn-light-outline" > </button>
+					                        <button  type="submit" class="btn btn-light-outline" > 
  					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> 
  					                                <i style="margin-left:-10px" class="bi bi-x-circle"></i> 
 					                            </a> 
-					                      
+					                      </button>
 					                       
 					                         </div>   
 					                    </div>
