@@ -1,5 +1,6 @@
 package it.generationitaly.musicator.controller;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -28,12 +29,16 @@ public class AddToPlaylistServlet extends HttpServlet {
 		Brano brano = branoRepository.findById(brId);
 		
 		if(playlist!= null) {
-			playlist.getBrani().add(brano);
-			playlistRepository.update(playlist);
-			String sorgente = request.getHeader("Referer");
-			response.sendRedirect(sorgente);
+			if (!playlist.getBrani().contains(brano)) {
+				playlist.getBrani().add(brano);
+				playlistRepository.update(playlist);
+				
+				String sorgente = request.getHeader("Referer");
+				// response.sendRedirect(sorgente);
+				RequestDispatcher requestDispatcher = request.getRequestDispatcher(sorgente);
+				requestDispatcher.forward(request, response);
+			}
 		}
-		
 		
 	}
 
