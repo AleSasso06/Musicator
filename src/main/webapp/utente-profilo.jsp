@@ -119,7 +119,7 @@
 									</a>
 									
 									<!-- inizio bottone dropdown opzioni -->
-									<div style="margin-top:-10px" class="dropdown ">
+									<div style="margin-top:-10px; margin-left: 230px" class="dropdown">
 										<button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 									    	<i class="bi bi-three-dots-vertical"></i>
 										</button>
