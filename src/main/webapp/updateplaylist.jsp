@@ -81,13 +81,20 @@
 					    Privata
 					  </label>
 					</div>
+					 <!-- Pulsante per salvare le modifiche -->
+		            <button type="submit" class="btn btn-primary" style="margin-left: 575px">Salva Modifiche</button>
+		        </form>
 					<!-- fine check privata -->
 					
 					<!-- inizio brani -->
 					<div class="row justify-content-center" style="margin-top: 50px; margin-bottom: 50px">
 					    <% List<Brano> brani = playlist.getBrani(); %>
 					    <% if (!brani.isEmpty()) { %>
-					        <% for (Brano brano : brani) { %>
+					        <%int i = 0; 
+					        for (Brano brano : brani) { %>
+					        <form  action ="remove-brano-playlist" method="post">
+					        <input type="hidden" name="playlistId" value="<%= playlist.getId() %>">
+					        <input type="hidden" name="branoPlace" value="<%= i %>">
 					            <div class="col-12 mb-3 d-flex justify-content-center">
 					                <div class="card song-card">
 					                    <div class="row no-gutters align-items-center">
@@ -99,28 +106,37 @@
 					                                <a class="card-title h5" href="brano?id=<%= brano.getId() %>">
 					                                    <h5 class="card-title text-start"><%= brano.getTitolo() %></h5>
 					                                </a>
-					                                <h6 class="card-title text-start"><%= new java.text.SimpleDateFormat("mm:ss").format(brano.getDurata()/60) %></h6>
-					                            </div>
+					                                 <small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
+			                        				<%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
+			                    					<% } else { %>
+			                        				<%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
+			                   						<% } %>
+			                   					</small>
+			                   					</div>
 					                        </div>
 					                        <div class="col-auto">
-					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>">
-					                                <i class="bi bi-x-circle"></i>
-					                            </a>
+					                        <button type="submit" class="bi bi-x-circle" > </button>
+<%-- 					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> --%>
+<!-- 					                                <i class="bi bi-x-circle"></i> -->
+<!-- 					                            </a> -->
 					                        </div>
 					                    </div>
 					                </div>
 					            </div>
-					        <% } %>
+					            </form>
+					        <%i++; }  %>
 					    <% } else { %>
 					        <p>Nessun brano trovato.</p>
 					    <% } %>
+					   
 					</div>
+					
 					<!-- fine brani -->
 		
-		            <!-- Pulsante per salvare le modifiche -->
+		            <!-- Pulsante per salvare le modifiche 
 		            <button type="submit" class="btn btn-primary" style="margin-left: 575px">Salva Modifiche</button>
 		        </form>
-		
+		        -->
 		    <% } else { %>
 		        <!-- Messaggio di errore -->
 		        <p class="text-danger">Errore: La playlist non è disponibile.</p>
