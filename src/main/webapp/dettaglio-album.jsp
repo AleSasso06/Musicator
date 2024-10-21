@@ -39,7 +39,7 @@
 	        }
 	
 	        .btn-play {
-	            font-size: 1.5rem;
+	            font-size: 1.1rem;
 	            color: #C2185B;
 	        }
 	        
@@ -183,11 +183,47 @@
 		                                <h6 class="text-start text-body-secondary"><%=((brano.getDurata()/60)%60) %>:<%= (brano.getDurata()%60)%></h6>
 		                            </div>
 		                        </div>
-		                        <div class="col-auto">
-		                            <a class="btn btn-play" href="<%= brano.getYtLink() %>" target="blank">
-		                                <i class="bi bi-play-circle-fill"></i>
-		                            </a>
-		                        </div>
+		                        <%if (session.getAttribute("utente") != null) { %>
+										<!-- <div class="col-auto">
+										  	modal: registrati per iniziare a creare le tue playlist
+										  	<button style="position:relative; overflow: visible !important; display:flex;  " class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano-log">
+												<i class="bi bi-plus-circle"></i>
+											</button>
+										</div> -->
+										<div class="dropdown dropstart col-auto" style="overflow: visible !important">
+										  <button style="position: relative; overflow: visible !important" class="btn btn-light-outline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+										    <i class="bi bi-plus-circle"></i>
+										  </button>
+										  
+										  <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute; z-index:9999 !important;">
+										  	<% List<Playlist> playlists = utente.getPlaylist(); %>
+										  	<%for (Playlist playlist : playlists) { %>
+										  	<form action="add-to-playlist" method="post">
+										  		<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
+										  		<input type="hidden" name="branoId" value="<%=brano.getId()%>">
+										  		
+										    	<li><button  type="submit" class="dropdown-item"><%=playlist.getTitolo() %></button></li>
+										    </form>
+										    <%} %>
+										    <li><hr class="dropdown-divider"></li>
+										    <li><a class="dropdown-item" href="creazioneplaylist.jsp?branoId=<%=brano.getId()%>">Crea nuova playlist</a></li>
+										  </ul>
+										 </div>
+										 <%} else { %>
+										 <div class="col-auto">
+										  	<!-- modal: registrati per iniziare a creare le tue playlist -->
+										  	<button style="position:relative; overflow: visible !important; display:flex;  " class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano">
+												<i class="bi bi-plus-circle"></i>
+											</button>
+										 </div>
+										 
+										 <%} %>
+		                        <div style="margin-left:-30px" class="col-2">
+											<a style="white-space: nowrap" class="btn btn-play" href="<%=brano.getYtLink()%>"
+												target="blank"> <i class="bi bi-play-circle-fill"></i>
+											</a>
+										</div>
+
 		                    </div>
 		                </div>
 		            </div>
@@ -196,12 +232,31 @@
 		        <p>Nessun brano trovato.</p>
 		    <% } %>
 		</div>
+				<!-- inizio modal utente non loggato -->
+		<div class="modal" tabindex="-1" id="aggiungi-brano">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Necessario Account</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<p style="color: black">Per creare delle playlist e aggiungervi brani è necessario avere un account.</p>
+					</div>
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button> -->
+						<a href="sign-in.jsp"><button type="button" class="btn btn-danger fw-bold">Registrati</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- fine modal utente non loggato -->
+		
 
 <%@ include file="footer.jsp" %>
 
 	<!-- Bootstrap JavaScript Libraries -->
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybEptPbAmWZKOW09d2MRnb4FFPsEOvbZ5oV9pUvR74CJRdV4/" crossorigin="anonymous"></script>
 	<!-- Swiper JS library -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<!-- headroom JS library -->

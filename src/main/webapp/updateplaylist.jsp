@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title> Musicator - Modifica Playlist</title>
  
+
 	<!-- Bootstrap css -->
  		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
       	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -18,6 +19,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+=======
+	 
 	
 	<style>
 	
@@ -65,27 +68,27 @@
 		            <input type="hidden" name="id" value="<%= playlist.getId() %>">
 		
 		            <!-- Campo per il titolo della playlist -->
-		            <div class="mb-3 update-input" style="margin-left: 250px">
+		            <div class="mb-3 update-input" style="margin-left: 250px; color:white">
 		                <label for="titolo" class="form-label">Titolo</label>
 		                <input type="text" class="form-control" id="titolo" name="titolo" value="<%= playlist.getTitolo() %>" required>
 		            </div>
 		
 		            <!-- Campo per l'immagine della playlist -->
-		            <div class="mb-3 update-input" style="margin-left: 250px">
+		            <div class="mb-3 update-input" style="margin-left: 250px; color:white">
 		                <label for="foto" class="form-label">URL Immagine</label>
 		                <input type="text" class="form-control" id="foto" name="foto" value="<%= playlist.getFoto() %>" required>
 		            </div>
 		            
 		            <!-- inizio check privata -->
 		            <!-- non ho idea di come si usi, come lo attivo? Che tipo di valori mi passa? -->
-		            <div class="form-check update-input" style="margin-top: 40px; margin-left: 250px">
-					  <input class="form-check-input" type="checkbox" value="" id="privata">
+		            <div class="form-check update-input" style="margin-top: 40px; margin-left: 250px; color:white">
+					  <input class="form-check-input" type="checkbox" value="" id="privata" >
 					  <label class="form-check-label" for="flexCheckDefault" style="color:white">
 					    Privata
 					  </label>
 					</div>
 					 <!-- Pulsante per salvare le modifiche -->
-		            <button type="submit" class="btn btn-primary" style="margin-left: 575px">Salva Modifiche</button>
+		            <button type="submit" class="btn custom-register-btn" style="margin-left: 575px">Salva Modifiche</button>
 		        </form>
 					<!-- fine check privata -->
 					
@@ -118,11 +121,18 @@
 			                   					</div>
 					                        </div>
 					                        <div class="col-auto">
+
+					                        <button  type="submit" class="btn btn-light-outline" > </button>
+ 					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> 
+ 					                                <i style="margin-left:-10px" class="bi bi-x-circle"></i> 
+					                            </a> 
+					                      
 					                        <button  type="submit" class="btn btn-light-outline" > </button>
  					                            <a class="btn btn-play" href="remove-brano-playlist?branoPlace=<%= brano.getId() %>"> 
  					                                <i style="margin-left:-10px" class="bi bi-x-circle"></i> 
 					                            </a> 
 					                        </div>
+					                            
 					                    </div>
 					                </div>
 					            </div>
@@ -152,6 +162,7 @@
 		</footer>
 		<!-- fine footer -->
 		
+
 		<!-- Script locali -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 		    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -167,5 +178,6 @@
 			<!-- Bootstrap Js -->
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	
+
 	</body>
 </html>
