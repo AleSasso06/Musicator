@@ -3,7 +3,7 @@
 body {
 	padding-top: 60px;
     margin-top: 80px;
-    font-family: var(--bs-body-font-family);
+    font-family: 'Poppins', sans-serif;
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -45,7 +45,6 @@ body::before {
     opacity: 0.1; 
     z-index: -1;
 }
- 
  
 .album-card {
     background-color: rgba(227, 242, 253, 0.72); /* Colore di sfondo */
@@ -95,6 +94,7 @@ p .global {
 
 h2 {
 	color: white !important;
+	font-family: 'Raleway', sans-serif;
 }
 
 .navbar {
@@ -281,7 +281,7 @@ a.navbar-brand img {
     z-index: 1; 
 }
 
-/* Posiziona le frecce più vicino al video */
+
 .custom-carousel .carousel-control-prev {
     left: 10px !important; 
 }
@@ -291,7 +291,7 @@ a.navbar-brand img {
 }
 
 .custom-carousel {
-    position: relative; /* Assicurati che il carosello abbia un contesto di posizionamento */
+    position: relative; /
 }
 /******************************************* HEADROOM */
 #navigazione-principale {
