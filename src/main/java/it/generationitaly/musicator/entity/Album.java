@@ -4,6 +4,7 @@ import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -70,7 +71,7 @@ public class Album {
 	@ManyToOne
 	@JoinColumn(name = "genere_id", nullable = false, unique = true)
 	private Genere genere;
-	
+
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "album_id"), inverseJoinColumns = @JoinColumn(name = "brano_id"))
 	private List<Brano> brani = new ArrayList<Brano>();
@@ -138,13 +139,32 @@ public class Album {
 	public void setGenere(Genere genere) {
 		this.genere = genere;
 	}
-	
+
 	public List<Brano> getBrano() {
 		return brani;
 	}
 
 	public void setBrano(List<Brano> brani) {
 		this.brani = brani;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true; // Self-comparison
+		if (o == null || getClass() != o.getClass())
+			return false; // Null or class mismatch
+
+		Album album = (Album) o; // Cast object to Person
+
+		// Compare relevant fields
+		return id == album.id;
+	}
+
+	@Override
+	public int hashCode() {
+		// Combine fields to generate hash code
+		return Objects.hash(id);
 	}
 
 	@Override

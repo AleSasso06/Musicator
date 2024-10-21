@@ -124,13 +124,13 @@ public class Playlist {
         Playlist playlist = (Playlist) o; // Cast object to Person
 
         // Compare relevant fields
-        return id == playlist.id && Objects.equals(titolo, playlist.titolo);
+        return id == playlist.id;
     }
 
     @Override
     public int hashCode() {
         // Combine fields to generate hash code
-        return Objects.hash(id, titolo);
+        return Objects.hash(id);
     }
 
 	@Override

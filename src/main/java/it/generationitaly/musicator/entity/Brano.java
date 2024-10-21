@@ -3,6 +3,7 @@ package it.generationitaly.musicator.entity;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -66,7 +67,6 @@ public class Brano {
 	@ManyToOne
 	@JoinColumn(name = "genere_id", nullable = false)
 	private Genere genere;
-	
 
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "album_brano", joinColumns = @JoinColumn(name = "brano_id"), inverseJoinColumns = @JoinColumn(name = "album_id"))
@@ -150,6 +150,25 @@ public class Brano {
 
 	public void setAlbum(List<Album> album) {
 		this.album = album;
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true; // Self-comparison
+		if (o == null || getClass() != o.getClass())
+			return false; // Null or class mismatch
+
+		Brano brano = (Brano) o; // Cast object to Person
+
+		// Compare relevant fields
+		return id == brano.id;
+	}
+
+	@Override
+	public int hashCode() {
+		// Combine fields to generate hash code
+		return Objects.hash(id);
 	}
 
 	@Override
