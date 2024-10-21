@@ -29,6 +29,18 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
+    
+    .card-body-song p {
+    margin: 0; /* Rimuove i margini */
+    padding: 0; /* Rimuove il padding */
+    line-height: 1.9; /* Riduce lo spazio tra le righe di testo */
+}
+
+.card-body-song small {
+    margin: 0; /* Rimuove i margini */
+    padding: 0; /* Rimuove il padding */
+    line-height: 1.9; /* Riduce lo spazio tra le righe di testo */
+}
       			.card-title-song {
 	   			 white-space: nowrap;
 			    overflow: hidden;
@@ -225,7 +237,7 @@
                         %>
                         
                         <div class="col-md-3 mb-4">
-                         <div class="card" style="width: 275px; height: 350px;">
+                         <div class="card">
                             <a href="album?id=<%= album.getId() %>" class="text-decoration-none">
                                
                                     <img style="object-fit: cover;" src="<%= album.getFoto() %>" height="275" class="card-img-top" alt="Album Image">
