@@ -86,24 +86,26 @@
       </main>
       
 		<!-- inizio album -->
-		<h3 class="text-light text-center" style="position: relative; top: -80px;">Album</h3>
-			<div class="container min-vh-10 d-flex  justify-content-center" style="position: relative; top: -40px;">
-			<% System.out.println(albums);
-			for (Album album : albums) { %>
-				<a class="card-title h5" href="album?id=<%= album.getId() %>">
-					<div class="col-p-3 mx-4 mb-4">
-						<div class="card" style="width: 250px;">
-							<img style="object-fit: cover;" src="<%= album.getFoto() %>" height="250" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title text-center"><%= album.getTitolo() %></h5>
-							</div>
-						</div>
-					</div>
-				</a>
-			<% } %>
-			</div>
-		<!-- fine album -->
-		</div>
+<h3 class="text-light text-center" style="position: relative; top: -50px;">Album</h3>
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <% for (Album album : albums) { %>
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <a class="card-title h5" href="album?id=<%= album.getId() %>">
+                    <div class="card" style="width: 250px;">
+                        <img style="object-fit: cover;" src="<%= album.getFoto() %>" height="250" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><%= album.getTitolo() %></h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <% } %>
+    </div>
+</div>
+<!-- fine album -->
+
+		
 		
 		<!-- inizio footer -->
        <%@ include file="footer.jsp" %>
