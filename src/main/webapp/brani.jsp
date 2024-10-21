@@ -16,6 +16,7 @@
 	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	    <!-- Swiper css -->
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 	    
 	    <style>
 	    	
@@ -51,7 +52,7 @@
 			}
 	
 	        .btn-play {
-	            font-size: 1.5rem;
+	            font-size: 1 rem;
 	            color: #C2185B;
 	        }
 	        
@@ -71,6 +72,11 @@
 			/* Ensures the backdrop is right behind the modal */
 			.modal-backdrop {
 			  z-index: 1040 !important; 
+			}
+			.truncate-text{
+			text-overflow: ellipsis;
+            max-width: 150px;
+			
 			}
 	
 	    </style>
@@ -132,13 +138,15 @@
 										<div class="col">
 											<div class="card-body p-1">
 												<a class="card-title" href="brano?id=<%=brano.getId()%>">
-													<p class="card-title text-start">
+													<p class="card-title text-start truncate-text">
 														<b><%=brano.getTitolo()%></b>
 													</p>
+													
+      
 												</a> 
 												<a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
 													style="color: black">
-													<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+													<p class="card-title text-start truncate-text"><%=brano.getAlbum().get(0).getTitolo()%></p>
 												</a> 
 												<small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
 			                        				<%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
@@ -148,6 +156,8 @@
 			                   					</small>
 											</div>
 										</div>
+										
+										
 										
 										<!-- inizio aggiunta brano a playlist -->
 										<!-- inizio con modal -->
@@ -196,17 +206,18 @@
 										 <%} else { %>
 										 <div class="col-auto">
 										  	<!-- modal: registrati per iniziare a creare le tue playlist -->
-										  	<button class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano">
+										  	<button style="position:relative; overflow: visible !important; display:flex;  " class="btn btn-light-outline" type="button" data-bs-toggle="modal" data-bs-target="#aggiungi-brano">
 												<i class="bi bi-plus-circle"></i>
 											</button>
 										 </div>
 										 
 										 <%} %>
+										 
 										<!-- fine con dropdown -->
 										<!-- fine aggiunta brano a playlist -->
 										
 										<div style="margin-left:-30px" class="col-2">
-											<a class="btn btn-play" href="<%=brano.getYtLink()%>"
+											<a style="white-space: nowrap" class="btn btn-play" href="<%=brano.getYtLink()%>"
 												target="blank"> <i class="bi bi-play-circle-fill"></i>
 											</a>
 										</div>
