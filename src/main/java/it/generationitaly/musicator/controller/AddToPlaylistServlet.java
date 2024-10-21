@@ -34,9 +34,7 @@ public class AddToPlaylistServlet extends HttpServlet {
 				playlistRepository.update(playlist);
 				
 				String sorgente = request.getHeader("Referer");
-				// response.sendRedirect(sorgente);
-				RequestDispatcher requestDispatcher = request.getRequestDispatcher(sorgente);
-				requestDispatcher.forward(request, response);
+				response.sendRedirect(sorgente);
 				return;
 			}
 		}
@@ -48,10 +46,6 @@ public class AddToPlaylistServlet extends HttpServlet {
 		
 		String sorgente = request.getHeader("Referer");
 		response.sendRedirect(sorgente);
-		/*
-		 * RequestDispatcher requestDispatcher = request.getRequestDispatcher(sorgente);
-		 * requestDispatcher.forward(request, response);
-		 */
 		
 	}
 
