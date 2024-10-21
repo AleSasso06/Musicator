@@ -111,8 +111,12 @@
 				</h1>
 			</div>
 		</div>
-
+		
 		<!-- Griglia delle card -->
+		<% if (brani.isEmpty() && artisti.isEmpty() && albums.isEmpty() && generi.isEmpty() && playlists.isEmpty()) { %>
+			<h5 class="text-light">Nessun risultato trovato</h5>
+		<% } else { %>
+		
 		<%
 		if (!brani.isEmpty()) {
 		%>
@@ -390,7 +394,7 @@
 		<%
 		}
 		%>
-	</div>
+		<% } %>
 	</div>
 	<!-- Footer -->
 	<%@ include file="footer.jsp"%>
