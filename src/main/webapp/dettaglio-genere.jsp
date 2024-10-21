@@ -29,6 +29,18 @@
 	    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
+      			.card-title-song {
+	   			 white-space: nowrap;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    max-width: 175px;
+	
+			}
+			.card-body-song {
+			    text-align: left;
+			    color: black;
+			    overflow: hidden;
+			}
       			
 			.song-card {
 				height: 122px;
@@ -126,8 +138,8 @@
                                 Brano brano = brani.get(j);
                         %>
                                         
-                       <div class="col-md-5 col-lg-4 mb-3">
-								<div class="card song-card" style="overflow: visible !important; position: relative">
+                     <div class="col-md-5 col-lg-4 mb-3">
+								<div class="card song-card" style="overflow: visible !important; position: relative; z-index: 1;">
 									<div class="row no-gutters align-items-center">
 										<div class="col-auto">
 											<%if (!brano.getAlbum().isEmpty()) {%>
@@ -138,17 +150,17 @@
 											<%}%>
 										</div>
 										<div class="col">
-											<div class="card-body p-1">
-												<a class="card-title" href="brano?id=<%=brano.getId()%>">
-													<p class="card-title text-start">
+											<div class="card-body-song p-1">
+												<a class="card-title-song" href="brano?id=<%=brano.getId()%>" style="color: black">
+													<p class="card-title-song text-start truncate-text" style="color: black">
 														<b><%=brano.getTitolo()%></b>
 													</p>
 												</a> 
 												<a href="album?id=<%=brano.getAlbum().get(0).getId()%>"
 													style="color: black">
-													<p class="card-title text-start"><%=brano.getAlbum().get(0).getTitolo()%></p>
+													<p class="card-title-song text-start truncate-text" style="color: black"><%=brano.getAlbum().get(0).getTitolo()%></p>
 												</a> 
-												<small class="card-title text-start"><% if (brano.getDurata()%60 < 10) { %>
+												<small class="card-title-song text-start"><% if (brano.getDurata()%60 < 10) { %>
 			                        				<%=((brano.getDurata()/60)%60) %>:0<%=(brano.getDurata()%60)%><br>
 			                    					<% } else { %>
 			                        				<%=((brano.getDurata()/60)%60) %>:<%=(brano.getDurata()%60)%><br>
