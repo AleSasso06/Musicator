@@ -148,6 +148,7 @@
 			                   					</small>
 											</div>
 										</div>
+										
 										<!-- inizio aggiunta brano a playlist -->
 										<!-- inizio con modal -->
 										<!--<button type="button" data-bs-toggle="modal" data-bs-target="aggiungi-brano">
@@ -173,16 +174,18 @@
 										<!-- fine con modal -->
 										<!-- inizio con dropdown -->
 										<%if (session.getAttribute("utente") != null) { %>
-										<div class="dropdown col-auto">
+										<div class="dropdown col-2">
 										  <button style="position: relative; overflow: visible !important" class="btn btn-light-outline" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 										    <i class="bi bi-plus-circle"></i>
 										  </button>
+										  
 										  <ul class="dropdown-menu dropdown-menu-dark" style="position: relative; z-index:1050 !important">
 										  	<% List<Playlist> playlists = utente.getPlaylist(); %>
 										  	<%for (Playlist playlist : playlists) { %>
 										  	<form action="add-to-playlist" method="post">
 										  		<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
 										  		<input type="hidden" name="branoId" value="<%=brano.getId()%>">
+										  		
 										    	<li><button  type="submit" class="dropdown-item"><%=playlist.getTitolo() %></button></li>
 										    </form>
 										    <%} %>
@@ -197,14 +200,17 @@
 												<i class="bi bi-plus-circle"></i>
 											</button>
 										 </div>
+										 
 										 <%} %>
 										<!-- fine con dropdown -->
 										<!-- fine aggiunta brano a playlist -->
-										<div class="col-auto">
+										
+										<div style="margin-left:-30px" class="col-2">
 											<a class="btn btn-play" href="<%=brano.getYtLink()%>"
 												target="blank"> <i class="bi bi-play-circle-fill"></i>
 											</a>
 										</div>
+										
 									</div>
 								</div>
 							</div>
