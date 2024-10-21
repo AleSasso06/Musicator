@@ -85,9 +85,9 @@
 		<!-- nome playlist -->
 		<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-4 d-flex justify-content-center align-items-center" style="height: 300px;">
+        <div class="col-md-4 d-flex justify-content-center align-items-center" style="height: 275px; width: 275px">
             <picture>
-                <img src="<%=playlist.getFoto() %>" class="img-thumbnail" alt="..." style="margin-top: -650px; max-width: 100%; height: auto; object-fit: cover;">
+                <img src="<%=playlist.getFoto() %>" class="img-thumbnail" alt="..." style="margin-top: -650px; height: 275px; width: 275px; object-fit: cover;">
 
             </picture>
         </div>
