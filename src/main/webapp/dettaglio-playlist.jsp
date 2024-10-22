@@ -41,11 +41,9 @@
 	        }
 	        
 	        .card-title {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 175px;
-}
+				white-space: nowrap;					overflow: hidden						text-overflow: ellipsi		
+				max-width: 175		;
+			}
 	
 	        .btn-play {
 	            font-size: 1.5rem;
@@ -110,9 +108,9 @@
 		            <div class="col-12 mb-3 d-flex justify-content-center">
 		                <div class="card song-card">
 		                    <div class="row no-gutters align-items-center">
-		                        <div class="col-auto">
-		                        <a href="brano?id=<%= brano.getId() %>">
-		                            <img src="<%= brano.getAlbum().get(0).getFoto() %>" height="110" class="rounded song-img" alt="...">
+		                        <div class="col-auto" style="height: 110px; weight: 110px; object-fit: cover">
+		                        <a h height="110" weight="110"tId() %>" style="height: 110px; weight: 110px; object-fit: cover">
+		                            <img src="<%= brano.getAlbum().get(0).getFoto() %>" style="height: 110px; weight: 110px; object-fit: cover" class="rounded song-img" alt="...">
 		                       </a>
 		                        </div>
 		                        <div class="col">
@@ -142,10 +140,11 @@
 		            </div>
 		        <% } %>
 		    <% } else { %>
+		    <div class="row justify-content-center text-center">
 		        <p>Nessun brano trovato.</p>
+		        </div>
 		    <% } %>
 		</div>
-
 <%@ include file="footer.jsp" %>
 	
 	    <!-- Bootstrap JavaScript Libraries -->
