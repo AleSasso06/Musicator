@@ -75,15 +75,9 @@ public class UpdatePlaylistServlet extends HttpServlet {
 		Utente utente = (Utente) session.getAttribute("utente");
 		List<Playlist> playlists = utente.getPlaylist();
 		
-		for(Playlist playlista : playlists) {
-			if (playlista.equals(playlist)) {
-				// faccio così
-				// playlistRepository.update(playlista);
-				// o così
-				playlists.remove(playlista);
-				playlists.add(playlist);
-				// ?
-			}
+		if (playlists.contains(playlist)) {
+			playlists.remove(playlist);
+			playlists.add(playlist);
 		}
 
 		response.sendRedirect("utente-profilo.jsp");
