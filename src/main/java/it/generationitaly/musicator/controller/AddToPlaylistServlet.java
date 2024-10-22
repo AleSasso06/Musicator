@@ -33,16 +33,17 @@ public class AddToPlaylistServlet extends HttpServlet {
 				playlist.getBrani().add(brano);
 				playlistRepository.update(playlist);
 				
+				request.setAttribute("successBrano", true);
+				
 				String sorgente = request.getHeader("Referer");
 				response.sendRedirect(sorgente);
 				return;
 			}
 		}
-		// aggiunger messaggio di errore
-		/*
-		 * String erroreBranoDoppio = "Errore brano già presente";
-		 * request.setAttribute("erroreBranoDoppio", erroreBranoDoppio);
-		 */
+		// aggiungerE messaggio di errore
+		
+		request.setAttribute("erroreBranoDoppio", true);
+		 
 		
 		String sorgente = request.getHeader("Referer");
 		response.sendRedirect(sorgente);
