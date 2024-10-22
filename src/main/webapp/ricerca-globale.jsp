@@ -113,12 +113,11 @@
 		</div>
 		
 		<!-- Griglia delle card -->
-		<% if (brani.isEmpty() && artisti.isEmpty() && albums.isEmpty() && generi.isEmpty() && playlists.isEmpty()) { %>
+		<% if (brani.isEmpty() && artisti.isEmpty() && albums.isEmpty() && generi.isEmpty() && playlists != null && playlists.isEmpty()) { %>
 			<h5 class="text-light">Nessun risultato trovato</h5>
-		<% } else { %>
-		
+		<% } else { %> 
 		<%
-		if (!brani.isEmpty()) {
+			if (!brani.isEmpty()) {
 		%>
 		<h2 style="margin-bottom: 15px;">Brani</h2>
 		<!-- carosello -->
@@ -362,7 +361,7 @@
 		%>
 		
 		<%
-		if (!playlists.isEmpty()) {
+		if (playlists != null && !playlists.isEmpty()) {
 		%>
 		<h2 style="margin-bottom: 15px; margin-top: 15px">Playlist</h2>
 		<div class="container min-vh-10 d-flex justify-content-center mt-5">
