@@ -25,7 +25,7 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p WHERE p.titolo LIKE CONCAT('%',:titolo ,'%')", Playlist.class);
+			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p WHERE p.titolo LIKE CONCAT('%',:titolo ,'%') && p.privata = FLASE", Playlist.class);
 			query.setParameter("titolo", titolo);
 			playlist = query.getResultList();
 			tx.commit();
@@ -51,7 +51,7 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 			em = emf.createEntityManager();
 			tx = em.getTransaction();
 			tx.begin();
-			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p INNER JOIN Brano b WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')", Playlist.class);
+			TypedQuery<Playlist> query = em.createQuery("FROM Playlist p INNER JOIN p.brani b WHERE b.titolo LIKE CONCAT('%',:titolo ,'%')", Playlist.class);
 			query.setParameter("titolo", titolo);
 			playlist = query.getResultList();
 			tx.commit();
