@@ -67,6 +67,12 @@ pageEncoding="UTF-8"%>
 					<input type="hidden" name="id" value="<%=utente.getId()%>">
 					
 					<div class="form-row col-md-20 ">
+					<label for="inputFoto">URL foto</label>
+						<input class="form-control" id="inputFoto" type="text"  name="foto"  value="<%=utente.getFoto()%>">
+						
+						
+					</div>
+					<div class="form-row col-md-20 ">
 					<label for="inputEmail4">Email</label>
 						<input class="form-control" id="inputEmail4" type="email"  name="email"  readonly value="<%=utente.getEmail()%>">
 						

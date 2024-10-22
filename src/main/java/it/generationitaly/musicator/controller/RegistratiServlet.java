@@ -22,7 +22,7 @@ public class RegistratiServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String foto = "https://img.freepik.com/vettori-premium/icona-del-profilo-utente-in-stile-piatto-illustrazione-del-vettore-avatar-membro-su-sfondo-isolato-concetto-di-business-del-segno-di-autorizzazione-umana_157943-15752.jpg";
+		String foto = request.getParameter("foto");
 		String nome = request.getParameter("nome");
 		String cognome = request.getParameter("cognome");
 		String email = request.getParameter("email");

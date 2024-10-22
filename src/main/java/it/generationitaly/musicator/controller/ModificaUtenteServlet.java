@@ -24,10 +24,12 @@ public class ModificaUtenteServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		Utente utente = (Utente)session.getAttribute("utente");
 		
+		String foto = request.getParameter("foto");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 		String username = request.getParameter("username");
 		
+		utente.setFoto(foto);
 		utente.setEmail(email);
 		utente.setPassword(password);
 		utente.setUsername(username);

@@ -83,6 +83,11 @@
 						</div>
 						
 						<div style="margin-top: -50px"class="form-row col-md-20 ">
+						    <label class="mt-3" for="input-foto">URL Foto</label>
+						    <input type="text" class="form-control" id="input-foto" name="foto" required>
+						</div>
+						
+						<div class="form-row col-md-20 ">
 						    <label class="mt-3" for="input-nome">Nome</label>
 						    <input type="text" class="form-control" id="input-nome" name="nome" required>
 						</div>
