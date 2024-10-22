@@ -126,13 +126,36 @@
 										<ul class="dropdown-menu">
 									    	<li><a class="dropdown-item" href="update-playlist?id=<%=playlist.getId()%>">Modifica</a></li>
 									    	<li><hr class="dropdown-divider"></li>
-									    	<form action="delete-playlist" method="post">
-									    		<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
-									    		<li><button class="dropdown-item" type="submit">Elimina</button></li>
-											</form>
+									    	<!-- trigger modal -->
+									    	<li><button class="dropdown-item"type="button" data-bs-toggle="modal" data-bs-target="#elimina_playlist_<%=playlist.getId()%>">
+									    		Elimina
+									    	</button></li>
+									    	<!-- fine trigger modal -->
 										</ul>
 									</div>
 									<!-- fine bottone dropdown opzioni -->
+									<!-- inizio modal -->
+									<div class="modal" tabindex="-1" id="elimina_playlist_<%=playlist.getId()%>">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+											        <h5 class="modal-title">Elimina Playlist</h5>
+											        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											    </div>
+												<div class="modal-body">
+											    	<p style="color: black">Sei sicuro di voler eliminare questa playlist?</p>
+											    </div>
+											    <div class="modal-footer">
+											    	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+											        <form action="delete-playlist" method="post">
+										    			<input type="hidden" name="playlistId" value="<%=playlist.getId()%>">
+										    			<button class="btn custom-register-btn" type="submit">Elimina</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- fine modal -->
 								</div>
 							</div>
 						</div>
