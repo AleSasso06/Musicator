@@ -178,7 +178,10 @@
 						<!-- fine caso: ci sono playlist -->
 						<!-- inizio caso: non ci sono playlist -->
 						<%} else {%>
-							<div style="color:#BACBE2; text-align:center"><h4><i>Non ci sono ancora playlist</i></h4></div>
+						
+				
+							<p style="color:white; text-align:center;"><h4 style="color:white; text-align:center;"><i>Non ci sono ancora playlist</i></h4></p>
+								</div>
 								<div class="col d-flex justify-content-center mt-5 mb-3">
 									<div class="card " >
 										<a href="creazioneplaylist.jsp"> 
