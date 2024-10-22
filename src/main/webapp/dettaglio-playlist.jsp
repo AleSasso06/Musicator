@@ -109,7 +109,7 @@
 		                <div class="card song-card">
 		                    <div class="row no-gutters align-items-center">
 		                        <div class="col-auto" style="height: 110px; weight: 110px; object-fit: cover">
-		                        <a h height="110" weight="110"tId() %>" style="height: 110px; weight: 110px; object-fit: cover">
+		                        
 		                            <img src="<%= brano.getAlbum().get(0).getFoto() %>" style="height: 110px; weight: 110px; object-fit: cover" class="rounded song-img" alt="...">
 		                       </a>
 		                        </div>
@@ -145,6 +145,7 @@
 		        </div>
 		    <% } %>
 		</div>
+
 <%@ include file="footer.jsp" %>
 	
 	    <!-- Bootstrap JavaScript Libraries -->
