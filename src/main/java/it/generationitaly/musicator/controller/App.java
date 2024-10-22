@@ -29,6 +29,20 @@ public class App {
 		
 	}
 	
+	private static void metodo4() {
+		
+		List<Playlist> playlists = playlistRepository.findByBrano("Danger");
+		
+		if ( playlists != null && !playlists.isEmpty()) {
+			for (Playlist playlist : playlists) {
+				System.out.println("Titolo : " + playlist.getTitolo());
+			}
+		} else {
+			System.out.println("Nessuna playlist trovata");
+		}
+		
+	}
+	
 	private static void metodo3() {
 		
 		Utente utente = utenteRepository.findById(Long.parseLong("2"));
