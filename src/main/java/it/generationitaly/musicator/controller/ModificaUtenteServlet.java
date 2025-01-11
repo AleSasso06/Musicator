@@ -38,7 +38,6 @@ public class ModificaUtenteServlet extends HttpServlet {
 		
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("utente-profilo.jsp");
 		requestDispatcher.forward(request, response);
-		
 	}
 
 }

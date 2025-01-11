@@ -20,7 +20,6 @@ public abstract class JpaRepositoryImpl<T, PK> implements JpaRepository<T, PK> {
 		this.entityClass = entityClass;
 		this.entityName = entityClass.getSimpleName();
 	}
-
 	@Override
 	public void save(T entity) {
 		EntityManager em = null;

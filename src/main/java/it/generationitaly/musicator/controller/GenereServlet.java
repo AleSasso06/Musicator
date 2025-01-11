@@ -47,7 +47,6 @@ public class GenereServlet extends HttpServlet {
 		request.setAttribute("genere", genere);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-genere.jsp");
 		requestDispatcher.forward(request, response);
-		
 	
 	}
 

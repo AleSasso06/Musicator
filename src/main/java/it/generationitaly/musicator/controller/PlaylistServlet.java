@@ -38,7 +38,6 @@ public class PlaylistServlet extends HttpServlet {
 		request.setAttribute("playlist", playlist);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-playlist.jsp");
 		requestDispatcher.forward(request, response);
-	
 	}
 
 }

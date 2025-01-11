@@ -17,7 +17,6 @@ public class BranoRepositoryImpl extends JpaRepositoryImpl<Brano, Long> implemen
 	public BranoRepositoryImpl() {
 		super(Brano.class);
 	}
-
 	@Override
 	public List<Brano> findByTitolo(String titolo) {
 		EntityManager em = null;

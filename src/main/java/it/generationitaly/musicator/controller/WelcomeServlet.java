@@ -41,5 +41,4 @@ public class WelcomeServlet extends HttpServlet {
 		requestDispatcher.forward(request, response);
 		
 	}
-
 }

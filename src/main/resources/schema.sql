@@ -8,7 +8,7 @@ CREATE TABLE genere (
     UNIQUE (nome),
     PRIMARY KEY (id)
 );
-
+ 
 CREATE TABLE artista (
     id BIGINT AUTO_INCREMENT NOT NULL,
     nome VARCHAR(90) NOT NULL,

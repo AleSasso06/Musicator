@@ -16,7 +16,6 @@ public class ArtistaRepositoryImpl extends JpaRepositoryImpl<Artista, Long> impl
 		super(Artista.class);
 		
 	}
-
 	@Override
 	public List<Artista> findByPseudonimo(String pseudonimo) {
 		List<Artista> artisti = null;

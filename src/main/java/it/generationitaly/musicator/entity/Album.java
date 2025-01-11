@@ -172,5 +172,4 @@ public class Album {
 		return "Album [id=" + id + ", titolo=" + titolo + ", descrizione=" + descrizione + ", durata=" + durata
 				+ ", dataUscita=" + dataUscita + ", foto=" + foto + "]";
 	}
-
 }

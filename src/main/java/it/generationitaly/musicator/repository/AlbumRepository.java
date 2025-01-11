@@ -5,7 +5,7 @@ import java.util.List;
 import it.generationitaly.musicator.entity.Album;
 
 public interface AlbumRepository extends JpaRepository<Album, Long>{
-	/*findByTitolo List
+	 /*findByTitolo List
 	findByArtista Album
 	findByBrano List
 	findByGenere List */

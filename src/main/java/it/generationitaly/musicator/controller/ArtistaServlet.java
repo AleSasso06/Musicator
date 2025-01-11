@@ -26,7 +26,6 @@ public class ArtistaServlet extends HttpServlet {
 		request.setAttribute("artista", artista);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-artista.jsp");
 		requestDispatcher.forward(request, response);
-		
 	}
 
 }

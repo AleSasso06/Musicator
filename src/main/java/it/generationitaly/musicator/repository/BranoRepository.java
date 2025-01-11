@@ -8,7 +8,7 @@ import it.generationitaly.musicator.entity.Brano;
 import it.generationitaly.musicator.entity.Genere;
 
 public interface BranoRepository extends JpaRepository<Brano, Long>{
-
+ 
 	List<Brano> findByTitolo(String titolo);
 	
 	// artista o string nome? uso l'id(Artista artista) o il nome(String artista)?

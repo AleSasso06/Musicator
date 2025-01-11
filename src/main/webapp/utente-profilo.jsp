@@ -25,7 +25,7 @@
 			.card-img-top {
 				height: 15rem; 
 				object-fit: cover; 
-			}
+			} 
 			.card-body {
 				display: flex;
 				flex-direction: column;

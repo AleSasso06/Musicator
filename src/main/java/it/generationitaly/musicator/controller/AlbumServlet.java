@@ -36,7 +36,6 @@ public class AlbumServlet extends HttpServlet {
 		request.setAttribute("album", album);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-album.jsp");
 		requestDispatcher.forward(request, response);
-		
 	}
 
 }

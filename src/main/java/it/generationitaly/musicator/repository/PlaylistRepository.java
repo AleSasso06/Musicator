@@ -12,5 +12,5 @@ public interface PlaylistRepository extends JpaRepository<Playlist, Long> {
 	List<Playlist> findByBrano(String titolo);
 	
 	List<Playlist> findByPrivata();
-
+ 
 }

@@ -26,7 +26,6 @@ public class App {
 	public static void main(String[] args) {
 		
 		metodo3();
-		
 	}
 	
 	private static void metodo4() {

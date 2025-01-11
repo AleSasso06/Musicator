@@ -28,7 +28,6 @@ public class ArtistiServlet extends HttpServlet {
 	RequestDispatcher requestDispatcher = request.getRequestDispatcher("artisti.jsp");
 	requestDispatcher.forward(request, response);
 	
-	
 	}
 
 }

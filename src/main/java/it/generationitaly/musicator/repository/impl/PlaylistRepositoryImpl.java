@@ -15,7 +15,6 @@ public class PlaylistRepositoryImpl extends JpaRepositoryImpl<Playlist, Long> im
 		super(Playlist.class);
 
 	}
-
 	@Override
 	public List<Playlist> findByTitolo(String titolo) {
 		List<Playlist> playlist = null;

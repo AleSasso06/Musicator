@@ -47,7 +47,6 @@ public class AddToPlaylistServlet extends HttpServlet {
 		
 		String sorgente = request.getHeader("Referer");
 		response.sendRedirect(sorgente);
-		
 	}
 
 }

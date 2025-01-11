@@ -81,9 +81,6 @@ public class UpdatePlaylistServlet extends HttpServlet {
 		}
 
 		response.sendRedirect("utente-profilo.jsp");
-
-
-
 	}
 
 }

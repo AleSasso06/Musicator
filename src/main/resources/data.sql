@@ -16,7 +16,7 @@ INSERT INTO genere VALUES ('14','Synthpop');
 INSERT INTO genere VALUES ('15','Disco-funk');
 INSERT INTO genere VALUES ('16','Folk');
 INSERT INTO genere VALUES ('17','Raeggeton');
-
+ 
 -- INSERT ARTISTI
 INSERT INTO artista VALUES (
 	'1',

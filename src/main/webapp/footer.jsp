@@ -46,7 +46,7 @@
                             your data</a></p>
                     <p class="mb-2"><a href="#"
                             class="link-dark  link-underline link-underline-opacity-0 link-underline-opacity-100-hover">My
-                            library</a></p>
+                            library</a></p> 
                 </div>
                 <!-- footer social + copyright -->
                 <div class="col-12 mb-2 pb-2 mt-3 text-center">

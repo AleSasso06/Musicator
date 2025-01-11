@@ -61,5 +61,4 @@ public class RegistratiServlet extends HttpServlet {
 		utenteRepository.save(utente);
 		response.sendRedirect("login.jsp");
 	}
-
 }

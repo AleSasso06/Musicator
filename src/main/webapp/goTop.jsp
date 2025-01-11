@@ -29,7 +29,7 @@
 	                top: 100px;
 	                opacity: 0
 	            }
-	
+	 
 	            50% {
 	                top: 0;
 	                opacity: 1

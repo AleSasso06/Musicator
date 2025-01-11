@@ -17,5 +17,5 @@ public interface JpaRepository<T, PK> {
 	List<T> findAll();
 
 	Long count();
-
+ 
 }

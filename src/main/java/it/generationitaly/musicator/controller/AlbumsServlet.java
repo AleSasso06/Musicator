@@ -19,7 +19,6 @@ public class AlbumsServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		
 		/*
 		 * in seguito aggiungere casistiche di ricerca diverse prendendno il parametro
 		 * (request.getParameter("genere")

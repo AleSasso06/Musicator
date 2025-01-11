@@ -7,5 +7,5 @@ import it.generationitaly.musicator.entity.Genere;
 public interface GenereRepository extends JpaRepository<Genere, Long>{
 
 	List<Genere> findByNome(String nome);
-	
+	 
 }

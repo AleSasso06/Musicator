@@ -13,7 +13,6 @@ public class GenereRepositoryImpl extends JpaRepositoryImpl<Genere, Long> implem
 	public GenereRepositoryImpl() {
 		super(Genere.class);
 	}
-
 	@Override
 	public List<Genere> findByNome(String nome) {
 		EntityManager em = null;

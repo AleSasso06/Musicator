@@ -50,7 +50,6 @@ public class SavePlaylistServlet extends HttpServlet {
 			Brano brano = branoRepository.findById(id);
 			playlist.getBrani().add(brano);
 		}
-
 		playlistRepository.save(playlist);
 		
 		utenteRepository.update(utente);

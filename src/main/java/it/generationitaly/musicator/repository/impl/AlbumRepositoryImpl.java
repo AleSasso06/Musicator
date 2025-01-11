@@ -13,7 +13,6 @@ public class AlbumRepositoryImpl extends JpaRepositoryImpl<Album, Long> implemen
 	public AlbumRepositoryImpl() {
 		super(Album.class);
 	}
-
 	@Override
 	public List<Album> findByTitolo(String titolo) {
 		List<Album> album = null;

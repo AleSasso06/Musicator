@@ -37,7 +37,6 @@ public class BranoServlet extends HttpServlet {
 		request.setAttribute("brano", brano);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("dettaglio-brano.jsp");
 		requestDispatcher.forward(request, response);
-
 	}
 
 }

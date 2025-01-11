@@ -69,7 +69,6 @@ public class RicercaGlobaleServlet extends HttpServlet {
 		request.setAttribute("inputUtente", inputUtente);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("ricerca-globale.jsp");
 		requestDispatcher.forward(request, response);
-		
 	}
 
 }

@@ -26,5 +26,4 @@ public class GeneriServlet extends HttpServlet {
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("generi.jsp");
 		requestDispatcher.forward(request, response);
 	}
-
 }

@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     }) }, 1400);
 })
-
+ 
 
 /*******************************************  PULSANTE #go-top **********************************/
 // Mostra o nasconde il pulsante a seconda dello scrolling

@@ -35,7 +35,6 @@ public class BraniServlet extends HttpServlet {
 		request.setAttribute("brani", brani);
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("brani.jsp");
 		requestDispatcher.forward(request, response);
-
 	}
 
 }

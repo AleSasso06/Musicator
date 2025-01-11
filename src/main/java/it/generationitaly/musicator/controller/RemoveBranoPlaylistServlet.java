@@ -30,7 +30,6 @@ public class RemoveBranoPlaylistServlet extends HttpServlet {
 
 		Playlist playlist = playlistRepository.findById(playlistId);
 		
-
 		if (playlist != null) {
 			playlist.getBrani().remove(branoOrdinal);
 			playlistRepository.update(playlist);

@@ -84,7 +84,7 @@
 					      <div class="card-body text-center">
 					        <a class="card-title h5" href="album?id=<%= album.getId() %>"><%= album.getTitolo() %></a>
 					      </div>
-					    </div>
+					    </div> 
 					  </div>
 					  <%} %>
 				</div>

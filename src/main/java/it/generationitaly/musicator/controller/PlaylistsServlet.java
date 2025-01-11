@@ -24,5 +24,4 @@ public class PlaylistsServlet extends HttpServlet {
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("playlist.jsp");
 		requestDispatcher.forward(request, response);
 	}
-
 }
