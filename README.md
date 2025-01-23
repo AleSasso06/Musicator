@@ -55,7 +55,7 @@ It's mainly a consultative website, with a couple interactive functions such as 
 
 <h3>Contributors:</h3>
 <ul>
-  <li> @icespice91
+  <li> @icepice-12
   </li>
   <li>
     @roosaapi
@@ -66,8 +66,9 @@ It's mainly a consultative website, with a couple interactive functions such as 
   <li>
     @game4play8
   </li>
-  </li>
+  <li>
   @Daeny002
+  </li>
   <li>
   @valeri90
   </li>
