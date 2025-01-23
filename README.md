@@ -55,6 +55,7 @@ It's mainly a consultative website, with a couple interactive functions such as 
 
 <h3>Contributors:</h3>
 <ul>
+  <li>@AleSasso06</li>
   <li> @icepice-12
   </li>
   <li>
