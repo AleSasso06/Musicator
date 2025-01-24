@@ -1,4 +1,6 @@
-<h1>Behold our group project: Musicator!</h1>
+<h1>Behold our group project: <br><br>
+<img src="./src/main/webapp/images/logo.svg" alt="logo Musicator" style="width: 500px;"></h1>
+<br>
 <p>This repository contains <b><i>"Musicator"</i></b>, the final project for a Junior Java Developer course.
   <br>
 <b><i>Musicator</i></b> is a website that allows you to browse and discover <b>new music!</b>
