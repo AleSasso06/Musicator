@@ -57,22 +57,11 @@ It's mainly a consultative website, with a couple interactive functions such as 
 
 <h3>Contributors:</h3>
 <ul>
-  <li>@AleSasso06</li>
-  <li> @icepice-12
-  </li>
-  <li>
-    @roosaapi
-  </li>
-  <li>
-    @chiarapagnini-0
-  </li>
-  <li>
-    @game4play8
-  </li>
-  <li>
-  @Daeny002
-  </li>
-  <li>
-  @valeri90
-  </li>
+  <li><a href="https://github.com/AleSasso06">@AleSasso06</li>
+  <li><a href="https://github.com/icepice-12"> @icepice-12</a></li>
+  <li><a href="https://github.com/roosaapi"> @roosaapi </li>
+  <li><a href="https://github.com/chiarapagnini-0">@chiarapagnini-0</li>
+  <li><a href="https://github.com/game4play8">@game4play8</li>
+  <li><a href="https://github.com/Daeny002"> @Daeny002 </a></li>
+  <li><a href="https://github.com/valeri90">@valeri90</a></li>
 </ul>
